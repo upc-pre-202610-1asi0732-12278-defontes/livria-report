@@ -97,10 +97,6 @@ URL del repositorio del Project Report en GitHub:
 - [Capítulo IV: Product Design](#capítulo-iv-product-design)
   - [4.1. Style Guidelines](#41-style-guidelines)
     - [4.1.1. General Style Guidelines](#411-general-style-guidelines)
-    - [4.1.2. Web Style Guidelines](#412-web-style-guidelines)
-    - [4.1.3. Mobile Style Guidelines](#413-mobile-style-guidelines)
-      - [4.1.3.1. iOS Mobile Style Guidelines](#4131-ios-mobile-style-guidelines)
-      - [4.1.3.2. Android Mobile Style Guidelines](#4132-android-mobile-style-guidelines)
   - [4.2. Information Architecture](#42-information-architecture)
     - [4.2.1. Organization Systems](#421-organization-systems)
     - [4.2.2. Labeling Systems](#422-labeling-systems)
@@ -116,23 +112,15 @@ URL del repositorio del Project Report en GitHub:
     - [4.4.3. Mobile Applications Mock-ups](#443-mobile-applications-mock-ups)
     - [4.4.4. Mobile Applications User Flow Diagrams](#444-mobile-applications-user-flow-diagrams)
   - [4.5. Mobile Applications Prototyping](#45-mobile-applications-prototyping)
-    - [4.5.1. Android Mobile Applications Prototyping](#451-android-mobile-applications-prototyping)
-    - [4.5.2. iOS Mobile Applications Prototyping](#452-ios-mobile-applications-prototyping)
-  - [4.6. Web Applications UX/UI Design](#46-web-applications-uxui-design)
-    - [4.6.1. Web Applications Wireframes](#461-web-applications-wireframes)
-    - [4.6.2. Web Applications Wireflow Diagrams](#462-web-applications-wireflow-diagrams)
-    - [4.6.3. Web Applications Mock-ups](#463-web-applications-mock-ups)
-    - [4.6.4. Web Applications User Flow Diagrams](#464-web-applications-user-flow-diagrams)
-  - [4.7. Web Applications Prototyping](#47-web-applications-prototyping)
-  - [4.8. Domain-Driven Software Architecture](#48-domain-driven-software-architecture)
-    - [4.8.1. Software Architecture Context Diagram](#481-software-architecture-context-diagram)
-    - [4.8.2. Software Architecture Container Diagrams](#482-software-architecture-container-diagrams)
-    - [4.8.3. Software Architecture Components Diagrams](#483-software-architecture-components-diagrams)
-  - [4.9. Software Object-Oriented Design](#49-software-object-oriented-design)
-    - [4.9.1. Class Diagrams](#491-class-diagrams)
-    - [4.9.2. Class Dictionary](#492-class-dictionary)
-  - [4.10. Database Design](#410-database-design)
-    - [4.10.1. Relational/Non-Relational Database Diagram](#4101-relationalnon-relational-database-diagram)
+  - [4.6. Domain-Driven Software Architecture](#46-domain-driven-software-architecture)
+    - [4.6.1. Software Architecture Context Diagram](#461-software-architecture-context-diagram)
+    - [4.6.2. Software Architecture Container Diagrams](#462-software-architecture-container-diagrams)
+    - [4.6.3. Software Architecture Components Diagrams](#463-software-architecture-components-diagrams)
+  - [4.7. Software Object-Oriented Design](#47-software-object-oriented-design)
+    - [4.7.1. Class Diagrams](#471-class-diagrams)
+    - [4.7.2. Class Dictionary](#472-class-dictionary)
+  - [4.8. Database Design](#48-database-design)
+    - [4.8.1. Relational/Non-Relational Database Diagram](#481-relationalnon-relational-database-diagram)
 - [Capítulo V: Product Implementation](#capítulo-v-product-implementation)
   - [5.1. Software Configuration Management](#51-software-configuration-management)
     - [5.1.1. Software Development Environment Configuration](#511-software-development-environment-configuration)
@@ -140,16 +128,12 @@ URL del repositorio del Project Report en GitHub:
     - [5.1.3. Source Code Style Guide & Conventions](#513-source-code-style-guide--conventions)
     - [5.1.4. Software Deployment Configuration](#514-software-deployment-configuration)
   - [5.2. Product Implementation & Deployment](#52-product-implementation--deployment)
-    - [5.2.1. Sprint 1](#521-sprint-1)
-      - [5.2.1.1. Sprint Planning 1](#5211-sprint-planning-1)
-      - [5.2.1.2. Aspect Leaders and Collaborators](#5212-aspect-leaders-and-collaborators)
-      - [5.2.1.3. Sprint Backlog 1](#5213-sprint-backlog-1)
-      - [5.2.1.4. Development Evidence for Sprint Review](#5214-development-evidence-for-sprint-review)
-      - [5.2.1.5. Testing Suite Evidence for Sprint Review](#5215-testing-suite-evidence-for-sprint-review)
-      - [5.2.1.6. Execution Evidence for Sprint Review](#5216-execution-evidence-for-sprint-review)
-      - [5.2.1.7. Services Documentation Evidence for Sprint Review](#5217-services-documentation-evidence-for-sprint-review)
-      - [5.2.1.8. Software Deployment Evidence for Sprint Review](#5218-software-deployment-evidence-for-sprint-review)
-      - [5.2.1.9. Team Collaboration Insights during Sprint](#5219-team-collaboration-insights-during-sprint)
+    - [5.2.1. Sprint Backlogs](#521-sprint-backlogs)
+    - [5.2.2. Implemented Landing Page Evidence](#522-implemented-landing-page-evidence)
+    - [5.2.3. Implemented Native-Mobile Application Evidence](#523-implemented-native-mobile-application-evidence)
+    - [5.2.4. Implemented RESTful API and/or Serverless Backend Evidence](#524-implemented-restful-api-andor-serverless-backend-evidence)
+    - [5.2.5. RESTful API documentation](#525-restful-api-documentation)
+    - [5.2.6. Team Collaboration Insights](#526-team-collaboration-insights)
   - [5.3. Video About-the-Product](#53-video-about-the-product)
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografía)
@@ -179,7 +163,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 ### 1.1.1. Descripción de la Startup
 
-Defontes es una startup liderada por estudiantes de la Universidad Peruana de Ciencias Aplicadas (UPC) dedicada a impulsar la lectura y facilitar su acceso en entornos digitales. Con el objetivo de acercar la literatura a más personas, se ha desarrollado el proyecto Livria, una aplicación web innovadora que permite a los usuarios descubrir, adquirir y disfrutar de libros en diversos formatos: físicos, electrónicos y audiolibros. 
+Defontes es una startup liderada por estudiantes de la Universidad Peruana de Ciencias Aplicadas (UPC) dedicada a impulsar la lectura y facilitar su acceso en entornos digitales. Con el objetivo de acercar la literatura a más personas, se ha desarrollado el proyecto Livria, una aplicación móvil innovadora que permite a los usuarios descubrir, adquirir y disfrutar de libros en diversos formatos: físicos, electrónicos y audiolibros. 
 
 En Defontes, creemos que la lectura es fundamental para el aprendizaje, la cultura y el desarrollo del pensamiento crítico. No solo se trata de un hábito, sino de una elección. Por ello, a través de una experiencia intuitiva y personalizada, Livria busca convertirse en el punto de encuentro ideal entre lectores y su próxima gran historia.
 
@@ -200,7 +184,7 @@ Visión: Convertirse en la plataforma líder en América Latina para la compra y
 
 ## 1.2. Solution Profile
 
-Livria es una aplicación web diseñada para revolucionar la manera en que las personas adquieren y disfrutan de los libros. A través de una plataforma intuitiva y accesible, ofrece una amplia selección de títulos, permitiendo a los usuarios explorar y comprar sus lecturas favoritas de forma fácil y rápida. Con el objetivo de fomentar el hábito de la lectura y crear una comunidad de amantes de los libros, Livria facilita la conexión entre los lectores y el mundo literario en un entorno digital moderno.
+Livria es una aplicación móvil diseñada para revolucionar la manera en que las personas adquieren y disfrutan de los libros. A través de una plataforma intuitiva y accesible, ofrece una amplia selección de títulos, permitiendo a los usuarios explorar y comprar sus lecturas favoritas de forma fácil y rápida. Con el objetivo de fomentar el hábito de la lectura y crear una comunidad de amantes de los libros, Livria facilita la conexión entre los lectores y el mundo literario en un entorno digital moderno.
 
 ### 1.2.1. Antecedentes y problemática
 
@@ -214,7 +198,7 @@ Livria nace como respuesta a una problemática alarmante: la falta de hábito de
 
 A esto se suma la influencia de las redes sociales y el consumo de contenido breve e inmediato, que ha desplazado el interés por la lectura profunda y reflexiva. Un estudio realizado en una institución educativa pública del distrito de El Agustino en 2022 reveló que el 72.2 % de los estudiantes de secundaria se encuentran en un nivel bajo de comprensión lectora, y solo un 1.9 % alcanzó un nivel alto (Torres-Vega, 2025). Esta situación refleja una crisis silenciosa en el desarrollo educativo y cognitivo de las nuevas generaciones.
 
-En este contexto, Livria se presenta como una solución innovadora que busca revertir esta tendencia preocupante. A través de una plataforma web moderna, accesible y atractiva, busca acercar los libros a los usuarios, fomentar el gusto por la lectura y construir una comunidad de lectores comprometidos, adaptada a los hábitos digitales de hoy.
+En este contexto, Livria se presenta como una solución innovadora que busca revertir esta tendencia preocupante. A través de una plataforma móvil moderna, accesible y atractiva, busca acercar los libros a los usuarios, fomentar el gusto por la lectura y construir una comunidad de lectores comprometidos, adaptada a los hábitos digitales de hoy.
 
 ##### ¿Cuál es la relación con la persona en cuestión?
 
@@ -245,7 +229,7 @@ Además, cuando el cliente desea compartir sus opiniones, descubrir nuevas lectu
 
 ##### ¿Dónde está el cliente cuando usa el producto?
 
-Livria está diseñada como una aplicación accesible tanto en versión web como móvil, lo que permite a los usuarios disfrutar de sus funcionalidades desde cualquier lugar con conexión a internet. De este modo, pueden acceder a la plataforma ya sea desde sus computadoras o dispositivos móviles, facilitando la lectura y el acceso a libros en cualquier momento y contexto.
+Livria está diseñada como una aplicación accesible tanto en versión IOS como Android, lo que permite a los usuarios disfrutar de sus funcionalidades desde cualquier lugar con conexión a internet. De este modo, pueden acceder a la plataforma ya sea desde sus computadoras o dispositivos móviles, facilitando la lectura y el acceso a libros en cualquier momento y contexto.
 
 ##### ¿Dónde surge el problema?
 
@@ -279,7 +263,7 @@ Otra causa significativa es la falta de estímulo lector en el hogar. Muchos ni�
 
 ##### ¿En qué condiciones los clientes utilizan nuestro producto?
 
-Los clientes utilizan Livria en diversas condiciones, principalmente desde su entorno cotidiano, como el hogar, el centro de estudios o el lugar de trabajo, a través de dispositivos como celulares, tablets o computadoras. Gracias a su disponibilidad tanto en versión web como en aplicación móvil, los usuarios pueden explorar o adquirir libros en sus momentos libres, durante viajes o en tiempos de ocio.
+Los clientes utilizan Livria en diversas condiciones, principalmente desde su entorno cotidiano, como el hogar, el centro de estudios o el lugar de trabajo, a través de dispositivos como celulares, tablets o computadoras. Gracias a su disponibilidad en diferentes sistemas operativos, los usuarios pueden explorar o adquirir libros en sus momentos libres, durante viajes o en tiempos de ocio.
 
 Además, muchos acceden a Livria cuando desean descubrir nuevas lecturas, mejorar su comprensión lectora o simplemente reconectar con el hábito de leer. Estas condiciones responden a intereses personales, necesidades académicas o al deseo de aprovechar mejor el tiempo libre. En general, la plataforma se adapta al usuario, priorizando la comodidad, la accesibilidad y la personalización de la experiencia lectora.
 
@@ -289,7 +273,7 @@ Los compradores conocen Livria mediante diversas vías de marketing, tales como 
 
 ##### ¿Cómo prefieren los lectores acceder a nuestro contenido?
 
-Los lectores prefieren acceder al contenido de Livria de manera rápida, sencilla y personalizada, ya sea desde la aplicación móvil o la versión web disponible en sus computadoras. Esta flexibilidad les permite realizar búsquedas y compras de libros desde cualquier lugar en el que se encuentren. Asimismo, valoran la propuesta de Livria por ofrecer un acceso dinámico y adaptado a sus hábitos digitales, donde la lectura se vive como una experiencia placentera y motivadora, más que como una obligación.
+Los lectores prefieren acceder al contenido de Livria de manera rápida, sencilla y personalizada en cualquier dispositivo móvil de Android o IOS. Esta flexibilidad les permite realizar búsquedas y compras de libros desde cualquier lugar en el que se encuentren. Asimismo, valoran la propuesta de Livria por ofrecer un acceso dinámico y adaptado a sus hábitos digitales, donde la lectura se vive como una experiencia placentera y motivadora, más que como una obligación.
 
 ##### ¿Qué llevó a la persona a llegar a esta situación?
 
@@ -353,11 +337,11 @@ Hemos observado un factor crítico que afecta el cumplimiento de estos objetivos
 ##### Business Outcomes
 Incentivar la lectura: El principal objetivo de Livria es promover el hábito de la lectura en las personas, ya sea con fines educativos, de entretenimiento o como una alternativa de pasatiempo saludable. Nuestra startup promueve el acceso a material de lectura de todo tipo de manera rápida y sencilla, ofreciendo al lector diferentes opciones, filtros de búsqueda y recomendaciones personalizadas, facilitando el proceso de encontrar un libro que se ajuste a sus intereses. Además, Livria incorpora una sección de comunidad, donde los usuarios pueden interactuar con otros lectores, compartir reseñas, participar en foros temáticos y descubrir lecturas recomendadas por personas con gustos similares.
 
-Generación de ingresos: Al habilitar la monetización a través del uso de la aplicación web y el modelo de negocio por suscripciones, nuestra startup podrá generar ganancias que pueden ser utilizadas para mejorar la calidad de nuestro servicio, expandir nuestra marca y ofrecer un catálogo más amplio de productos para nuestros usuarios. Estas mejoras garantizarán una mejor experiencia para los usuarios previos y captar nuevo público.
+Generación de ingresos: Al habilitar la monetización a través del uso de la aplicación móvil y el modelo de negocio por suscripciones, nuestra startup podrá generar ganancias que pueden ser utilizadas para mejorar la calidad de nuestro servicio, expandir nuestra marca y ofrecer un catálogo más amplio de productos para nuestros usuarios. Estas mejoras garantizarán una mejor experiencia para los usuarios previos y captar nuevo público.
 
-Livria generará ingresos principalmente mediante la venta de libros físicos y digitales a través de la aplicación web y móvil. Adicionalmente, se ofrece un plan de suscripción mensual para la comunidad. Esta combinación permite garantizar la sostenibilidad del negocio, mejorar continuamente la plataforma y ampliar el catálogo de productos y servicios para los usuarios.
+Livria generará ingresos principalmente mediante la venta de libros físicos y digitales a través de la aplicación móvil. Adicionalmente, se ofrece un plan de suscripción mensual para la comunidad. Esta combinación permite garantizar la sostenibilidad del negocio, mejorar continuamente la plataforma y ampliar el catálogo de productos y servicios para los usuarios.
 
-Diferenciación en el mercado: La aplicación web y móvil de Livria permitirá que nuestra startup se destaque en el mercado gracias a funcionalidades únicas, como algoritmos de recomendación de libros y la sección de comunidad. Estas características crean una experiencia de lectura digital diferenciada que atrae a lectores interesados en descubrir, compartir y conectar con otros usuarios.
+Diferenciación en el mercado: La aplicación móvil de Livria permitirá que nuestra startup se destaque en el mercado gracias a funcionalidades únicas, como algoritmos de recomendación de libros y la sección de comunidad. Estas características crean una experiencia de lectura digital diferenciada que atrae a lectores interesados en descubrir, compartir y conectar con otros usuarios.
 
 Formación de asociaciones comerciales: Las características únicas del servicio de Livria permitirán el establecimiento de alianzas estratégicas con negocios de rubros similares o relacionados al nuestro, tales como imprentas, distribuidoras y editoriales.
 
@@ -368,36 +352,6 @@ Formación de asociaciones comerciales: Las características únicas del servici
 * Experiencia accesible desde cualquier dispositivo, pensada para adolescentes, jóvenes y adultos que buscan flexibilidad y comodidad al leer.
 * Fomento del hábito lector mediante notificaciones personalizadas.
 * Ahorro de tiempo y esfuerzo en la búsqueda de libros adecuados, al centralizar en una sola plataforma la selección, compra y gestión de lecturas.
-
-1. Creo que mis usuarios, dueños, administradores y entrenadores de gimnasios o centros de entrenamiento, desean una solución integral que les permita gestionar su operación de forma más organizada, eficiente y profesional, sin depender de hojas de cálculo, registros manuales o múltiples plataformas dispersas. Al mismo tiempo, sus clientes también buscan una experiencia más clara y accesible, donde puedan consultar horarios, reservar clases y dar seguimiento a sus entrenamientos desde un solo lugar.
-2. Esto se puede resolver mediante FitManager, ya que centraliza todas las operaciones administrativas del gimnasio en una sola plataforma: control de pagos, programación de clases, gestión de membresías, historial de asistencia, métricas de rendimiento y más, todo desde un panel web accesible y fácil de usar.
-3. Mis usuarios iniciales son dueños de gimnasios pequeños y medianos, estudios de entrenamiento personalizado y entrenadores independientes que gestionan su propio espacio y enfrentan desafíos en la administración diaria de sus negocios. Estos usuarios buscan una solución integral que les permita organizar mejor su operación, optimizar recursos y profesionalizar la experiencia de sus servicios, sin depender de hojas de cálculo, registros manuales o plataformas dispersas. A su vez, los usuarios finales de estos gimnasios, sus clientes, también son usuarios de FitManager, ya que acceden a la plataforma para consultar horarios, reservar clases y gestionar su experiencia de entrenamiento.
-4. El valor #1 que un usuario quiere de FitManager es el control centralizado de sus operaciones, lo cual les permite ahorrar tiempo, reducir errores administrativos y enfocarse más en mejorar su servicio al cliente.
-5. El usuario también puede obtener el beneficio adicional de escalar su negocio con mayor facilidad, gracias a funciones como el acceso multiusuario, la personalización de planes y el monitoreo de métricas clave para la toma de decisiones.
-6. Voy a adquirir la mayoría de mis usuarios mediante estrategias de marketing digital dirigidas en redes sociales y contenido educativo en YouTube sobre gestión de gimnasios, además de posibles alianzas con distribuidores de equipos de entrenamiento y asociaciones deportivas locales.
-7. Haré dinero a través de planes de suscripción mensual o anual para los gimnasios, segmentados por funcionalidades o cantidad de usuarios permitidos.
-8. Mi competencia principal son otras plataformas de gestión que ofrecen soluciones de administración para centros fitness, pero a menudo están pensadas para mercados más grandes o tienen costos elevados.
-9. Los venceremos al enfocarnos en gimnasios independientes y estudios más pequeños, ofreciendo un producto localmente adaptado, más accesible en precio, fácil de implementar y con una curva de aprendizaje mínima para el usuario.
-10. Mi mayor riesgo de producto es que los usuarios perciban la plataforma como innecesaria o complicada, prefiriendo seguir usando métodos tradicionales como Excel, agendas físicas o WhatsApp para su gestión diaria.
-11. Resolveremos esto mediante una experiencia de usuario simple e intuitiva, acompañada de un onboarding guiado, tutoriales claros, soporte técnico constante y una propuesta de valor que enfatiza el ahorro de tiempo y la profesionalización del negocio.
-    
-**¿Quién es el usuario?**  
-El usuario principal de FitManager son los dueños y administradores de gimnasios independientes, estudios de entrenamiento personalizado y entrenadores que gestionan su propio espacio. También lo utilizan los entrenadores y el personal administrativo que participa en la operación diaria del gimnasio. Los clientes de los gimnasios también se benefician de la plataforma, ya que pueden consultar horarios, realizar reservas y gestionar sus entrenimientos.
-
-**¿Dónde encaja nuestro producto, en su trabajo o en su vida?**  
-FitManager se integra directamente en las labores diarias de gestión del gimnasio, permitiendo a los usuarios (dueños, administradores, entrenadores y personal administrativo) organizar clases, manejar pagos, controlar asistencia, segmentar entrenamientos y supervisar el rendimiento del negocio desde un solo lugar. Los clientes de los gimnasios lo utilizan para consultar horarios, hacer reservas y gestionar su experiencia de entrenamiento.
-
-**¿Qué problemas tiene nuestro producto y cómo se puede resolver?**  
-Los problemas potenciales del producto pueden incluir una curva de aprendizaje inicial, resistencia al cambio por parte del personal o falta de integración con ciertos sistemas de pago. Estos pueden resolverse mediante una interfaz intuitiva, tutoriales interactivos, soporte técnico constante y compatibilidad con múltiples métodos de pago y plataformas, asegurando también que los clientes de los gimnasios puedan navegar de manera fácil y rápida.
-
-**¿Cuándo y cómo es usado nuestro producto?**  
-FitManager se utiliza de forma diaria, tanto desde computadoras como desde dispositivos móviles, para gestionar la operación completa del gimnasio. Los dueños y administradores acceden al panel para revisar métricas y finanzas, mientras que entrenadores y personal administrativo lo usan para programar clases, controlar asistencias y organizar a los clientes.
-
-**¿Qué características son importantes?**  
-Las funciones más importantes incluyen: gestión centralizada de clientes y membresías, calendario dinámico con reservas, control automatizado de pagos y vencimientos, panel de métricas operativas, personalización de planes, y acceso multiusuario para distintos roles dentro del gimnasio. Los clientes del gimnasio también se beneficiarán de una visualización clara de horarios, opciones de reservas y su propio historial de entrenamientos.
-
-**¿Cómo debe verse nuestro producto y cómo comportarse?**  
-FitManager debe tener un diseño moderno, claro y profesional, con una interfaz amigable, adaptable a cualquier dispositivo y de navegación sencilla. Debe comportarse de forma fluida, sin tiempos de carga largos, con respuestas rápidas a las acciones del usuario y funcionalidades que simplifiquen, no compliquen, la gestión diaria del gimnasio, beneficiando tanto a los administradores como a los clientes del gimnasio.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
@@ -499,7 +453,7 @@ Este análisis es clave porque nos brinda una visión clara del panorama competi
 | **Estrategias de marketing** | Descuentos semanales, publicidad digital, marketing de temporada. | Descuentos frecuentes, marketing de temporada, publicidad digital, fuerte presencia en tiendas físicas. | Publicidad digital, presencia cuidada y refinada, eventos y presentaciones. | Eventos culturales, fuerte presencia en la comunidad lectora, colaboraciones con artistas y autores. |
 | **Productos y servicios** | Libros físicos y digitales, suscripción (Community Plan), comunidades, publicaciones y reseñas. | Libros digitales y físicos, merchandising. | Libros físicos. | Libros físicos. |
 | **Precios y costos** | Descuentos semanales y de temporada. <br> Promedio: S/. 30 – 90 <br> Suscripción: S/. 39.90 | Descuentos frecuentes y de temporada. <br> Promedio: S/. 40 – 200 <br> No cuenta con servicio de suscripción | Descuentos regulares y de temporada. <br> Promedio: S/. 40 – 130 <br> No cuenta con servicio de suscripción | Descuentos regulares. <br> Promedio: S/. 50 – 140 <br> No cuenta con servicio de suscripción |
-| **Canales de distribución** | Entrega a domicilio, compra en local, venta digital (app web y móvil). | Entrega a domicilio, compra en local (app web y móvil). | Entrega a domicilio, compra en local (web responsive). | Entrega a domicilio, compra en local (web básica). |
+| **Canales de distribución** | Entrega a domicilio, compra en local, venta digital (app móvil). | Entrega a domicilio, compra en local (app web y móvil). | Entrega a domicilio, compra en local (web responsive). | Entrega a domicilio, compra en local (web básica). |
 | **Fortalezas** | Diseño UX Nativo y Centralizado: A diferencia de Ibero o Communitas, que dependen de webs responsivas, Livria ofrece una app móvil fluida y optimizada. Nuestra velocidad de implementación de funciones como el lector de e-books integrado es superior, brindando una experiencia de uso más cohesiva y profesional.<br><br>Ecosistema Social Integrado: Mientras Crisol es netamente transaccional, nosotros integramos una comunidad activa. Nuestra capacidad para generar interacción directa (foros y reseñas) dentro de la app nos da una ventaja competitiva en retención de usuarios que la competencia tradicional no posee. | - Amplia cobertura local (tiendas físicas y envíos).<br>- Gran variedad de obras.<br>- Popularidad y marca establecida.<br>- Veinte años de experiencia en el mercado. | - Curaduría especializada en títulos educativos y culturales.<br>- Imagen profesional y cercana.<br>- Fidelización del público objetivo.<br>- Treinta años de experiencia en el mercado. | - Curaduría selectiva y refinada.<br>- Imagen de marca fuerte.<br>- Comunidad establecida.<br>- Diez años de experiencia. |
 | **Oportunidades** | Liderazgo en Formatos Digitales: Existe un vacío en la oferta de audiolibros y e-books en Ibero y **Communitas. Livria puede capturar este nicho joven mediante una distribución digital inmediata, superando la lentitud logística de la competencia física.<br><br>Modelo de Suscripción Inexistente en el Sector: Ningún competidor directo ofrece un "Community Plan". Implementar este modelo nos permite fidelizar clientes de forma recurrente, creando una barrera de salida que las librerías tradicionales no pueden replicar fácilmente. | - Posibilidad de expansión internacional.<br>- Convenios estratégicos con editoriales emergentes. | - Alianzas con centros educativos.<br>- Expansión al entorno digital con libros electrónicos. | - Expansión de marca en eventos o como agencia artística.<br>- Expansión al entorno digital con libros electrónicos. |
 | **Debilidades** | Penetración de Mercado Inicial: Al ser una startup liderada por estudiantes, carecemos del posicionamiento de marca de 20 años que tiene **Crisol**. Esto nos pone en desventaja en términos de confianza masiva del consumidor frente a sus locales físicos establecidos.<br><br>Economía de Escala Limitada: Nuestra capacidad de negociación con grandes editoriales es menor comparada con Ibero, lo que dificulta igualar ciertos precios de preventa o acceder a ediciones exclusivas de alto volumen en el corto plazo. | - Enfoque demasiado amplio en catálogo (riesgo de falta de títulos específicos). | - Falta de venta de libros digitales (dependencia de lo físico). | - Nicho pequeño y especializado, poco escalable comercialmente. |
@@ -1305,7 +1259,7 @@ Dado que el lector interactúa con la plataforma, **Cuando** el sistema presenta
 | **Title** | Usar la aplicación en diferentes dispositivos |
 | **Description** | Como lector, quiero ingresar a Livria desde distintos dispositivos, para acceder a mis libros y comunidades desde cualquier lugar y sin perder mi progreso. |
 | **Acceptance Criteria – Escenario 1: Portabilidad y consistencia entre plataformas** 
-Dado que el lector accede a la plataforma desde diferentes sistemas operativos (Web, Android, iOS, etc.), **Cuando** el sistema presenta el contenido y las funcionalidades, **Entonces** la plataforma debe ser completamente funcional y adaptable a la resolución de cualquier dispositivo compatible, **Y** todos los datos del lector (biblioteca, progreso, suscripción) deben estar sincronizados y accesibles de forma consistente. |
+Dado que el lector accede a la plataforma desde diferentes sistemas operativos (Android, iOS), **Cuando** el sistema presenta el contenido y las funcionalidades, **Entonces** la plataforma debe ser completamente funcional y adaptable a la resolución de cualquier dispositivo compatible, **Y** todos los datos del lector (biblioteca, progreso, suscripción) deben estar sincronizados y accesibles de forma consistente. |
 
 | Campo | Valor |
 |---|---|
@@ -1641,7 +1595,7 @@ Esta sección presenta una Guía de Estilo integral y estructurada, diseñada pa
 
 El diseño de Livria se sustenta en una Guía de Estilo integral y estructurada, cuya finalidad es proyectar una identidad de marca coherente que refleje nuestros valores de fomento de la lectura y accesibilidad digital. Esta sección define los pilares visuales y comunicacionales de la plataforma, abordando desde el Branding, con su estética cálida, moderna y cercana, hasta la selección de Tipografía y Paleta de Colores, y las directrices de Spacing. 
 
-Todas estas decisiones de diseño se basan en el principio de claridad funcional y cohesión, garantizando que cada interacción sea intuitiva y esté alineada con el espíritu inclusivo y transformador de Livria. Gracias a ello, son modulables para diferentes plataformas (web y móviles), formando parte de las Web Style Guidelines y Mobile Style Guidelines.
+Todas estas decisiones de diseño se basan en el principio de claridad funcional y cohesión, garantizando que cada interacción sea intuitiva y esté alineada con el espíritu inclusivo y transformador de Livria.
 
 **Branding y Logotipo**
 
@@ -1702,14 +1656,6 @@ El Tono de Comunicación de Livria es fundamental para establecer una conexión 
 
 En cuanto al Lenguaje Aplicado, se prioriza la Claridad y la Comprensión Directa, evitando tecnicismos o estructuras gramaticales complejas, lo que garantiza que el contenido sea accesible para usuarios de todas las edades y niveles de lectura. El estilo se mantiene Amigable (Casual), y se recurre a una narrativa accesible o ejemplos concretos cuando es apropiado, facilitando la identificación del usuario con los mensajes. Este enfoque comunicativo está diseñado para crear una experiencia acogedora, inspiradora y auténtica, alineada con los valores de Livria: fomentar el hábito lector y construir una comunidad conectada a través de los libros.
 
-### 4.1.2. Web Style Guidelines
-
-### 4.1.3. Mobile Style Guidelines
-
-#### 4.1.3.1. iOS Mobile Style Guidelines
-
-#### 4.1.3.2. Android Mobile Style Guidelines
-
 ## 4.2. Information Architecture
 
 La arquitectura de información es fundamental para plantear la manera en que se organizarán los diferentes componentes de Livria, de modo que el usuario pueda interactuar y adaptarse a ellos de manera intuitiva. La buena organización de la información se debe priorizar para retener la atención del usuario e incentivar el uso constante de la aplicación.
@@ -1722,12 +1668,6 @@ Los diagramas presentados a continuación están organizados de manera jerárqui
 
 <p align="center">
   <img src="https://i.imgur.com/8HVgxyz.jpeg" alt="12171">
-</p>
-
-**Web Application**
-
-<p align="center">
-  <img src="https://i.imgur.com/tpPYnTq.png" alt="12171">
 </p>
 
 **Admin Mobile Application**
@@ -1973,7 +1913,7 @@ La propuesta de diseño para la interfaz de usuario (UI) de la Landing Page de L
 
 ### 4.3.1. Landing Page Wireframe
 
-En primer lugar, se observa la pantalla de inicio de la Landing Page de Livria. Esta tiene una descripción sobre qué trata la aplicación web que se ofrece y un carrusel de imágenes relacionadas. Asimismo, tiene el header con los accesos a cada sección de la landing page.
+En primer lugar, se observa la pantalla de inicio de la Landing Page de Livria. Esta tiene una descripción sobre qué trata la aplicación móvil que se ofrece y un carrusel de imágenes relacionadas. Asimismo, tiene el header con los accesos a cada sección de la landing page.
 
 <p align="center">
   <img src="https://i.imgur.com/2WHRUgm.png" alt="12171">
@@ -1985,7 +1925,7 @@ En la sección siguiente aparece la información sobre los servicios de Livria: 
   <img src="https://i.imgur.com/M32uH0X.png" alt="12171">
 </p>
 
-La sección que continúa es la de “Sobre Nosotros”, la cual muestra información sobre la startup, Bookify, y la aplicación web, Livria. Se visualiza texto importante sobre quiénes somos, así como el logo representativo de cada uno.
+La sección que continúa es la de “Sobre Nosotros”, la cual muestra información sobre la startup, Bookify, y la aplicación, Livria. Se visualiza texto importante sobre quiénes somos, así como el logo representativo de cada uno.
 
 <p align="center">
   <img src="https://i.imgur.com/QBeEGEs.png" alt="12171">
@@ -2039,7 +1979,7 @@ El mockup del pie de página muestra los accesos de Navegación, Legal y Soporte
 
 ## 4.4. Mobile Applications UX/UI Design
 
-El diseño UX/UI de las aplicaciones móviles de Livria (tanto para el Usuario Cliente como para el Administrador) se ha abordado bajo la premisa de accesibilidad, rendimiento y optimización táctil. El objetivo principal es trasladar la experiencia de lectura y comunidad a un entorno móvil de forma fluida y nativa, respetando los patrones de diseño de cada sistema operativo. Se ha priorizado la simplicidad en la navegación y la claridad de la información, utilizando grandes zonas de toque, una tipografía legible y un contraste adecuado. Esto asegura que el usuario pueda interactuar con el catálogo, la comunidad y las funcionalidades administrativas de manera eficiente, haciendo de las aplicaciones móviles una extensión natural y poderosa de la plataforma web de Livria.
+El diseño UX/UI de las aplicaciones móviles de Livria (tanto para el Usuario Cliente como para el Administrador) se ha abordado bajo la premisa de accesibilidad, rendimiento y optimización táctil. El objetivo principal es trasladar la experiencia de lectura y comunidad a un entorno móvil de forma fluida y nativa, respetando los patrones de diseño de cada sistema operativo. Se ha priorizado la simplicidad en la navegación y la claridad de la información, utilizando grandes zonas de toque, una tipografía legible y un contraste adecuado. Esto asegura que el usuario pueda interactuar con el catálogo, la comunidad y las funcionalidades administrativas de manera eficiente.
 
 ### 4.4.1. Mobile Applications Wireframes
 
@@ -2550,39 +2490,862 @@ Video explicativo: [https://drive.google.com/file/d/1zC7zEfy8xk2KNJ6Z2aCdW8eQRqI
 
 Link al prototipo interactivo: [https://www.figma.com/proto/eKCqZoU0IF7n3wNTA8kuZc/livria?page-id=923%3A589\&node-id=923-591\&p=f\&viewport=263%2C65%2C0.18\&t=ykEtTTogjnebX157-1\&scaling=scale-down\&content-scaling=fixed](https://www.figma.com/proto/eKCqZoU0IF7n3wNTA8kuZc/livria?page-id=923%3A589&node-id=923-591&p=f&viewport=263%2C65%2C0.18&t=ykEtTTogjnebX157-1&scaling=scale-down&content-scaling=fixed)
 
-### 4.5.1. Android Mobile Applications Prototyping
+## 4.6. Domain-Driven Software Architecture
 
-### 4.5.2. iOS Mobile Applications Prototyping
+### Strategic-Level Domain-Driven Design
 
-## 4.6. Web Applications UX/UI Design
+En esta sección se introduce el proceso de Domain-Driven Design a nivel estratégico para Livria. Este enfoque nos ha permitido conceptualizar el sistema a partir de la lógica del negocio, con el fin de modelar una arquitectura de microservicios coherente. Para ello se identificaron los subconjuntos del sistema con límites claros y naturales, conocidos como Bounded Contexts. Las herramientas utilizadas para este propósito son el EventStorming, que nos permitió visualizar el flujo de eventos del negocio, y el Bounded Context Canvas, una herramienta para definir formalmente cada contexto y sus relaciones, garantizando así una base sólida para el desarrollo.
 
-### 4.6.1. Web Applications Wireframes
+## Event Storming
 
-### 4.6.2. Web Applications Wireflow Diagrams
+Event Storming es una técnica que consiste en la realización de una especie de taller facilitado en el que los integrantes del equipo identifican eventos clave del negocio y los requisitos para su funcionamiento, a lo largo de diferentes pasos que deben ser realizados colaborativamente.
 
-### 4.6.3. Web Applications Mock-ups
+Esta herramienta nos permite elaborar una arquitectura de aplicación más robusta, estructurada y acorde con el enfoque del Domain-Driven Design (DDD), además de visualizar posibles flujos de usuario y estructuras de código a utilizar. En nuestro caso, por motivos de mejor visualización y facilidad, se utilizó la plataforma Miro para la realización de los diferentes pasos de manera colaborativa.
 
-### 4.6.4. Web Applications User Flow Diagrams
+●	Step 1: Unstructured Exploration
 
-## 4.7. Web Applications Prototyping
+<p align="center">
+  <img src="https://imgur.com/391o69b.jpg" alt="12231">
+</p>
 
-## 4.8. Domain-Driven Software Architecture
+El primer paso del Event Storming, Unstructured Exploration (Exploración No Estructurada), consiste en escribir en post-its los eventos propios del negocio que cada miembro del equipo pueda detectar, generando una lluvia de ideas masiva con el objetivo de identificar la mayor cantidad de eventos de dominio posibles, estimar la complejidad del proyecto y permitir que se forme una base de conocimiento compartido entre los participantes.
 
-### 4.8.1. Software Architecture Context Diagram
+●	Step 2: Timelines
 
-### 4.8.2. Software Architecture Container Diagrams
+<p align="center">
+  <img src="https://imgur.com/cmderHR.jpg" alt="12231">
+</p>
 
-### 4.8.3. Software Architecture Components Diagrams
+El segundo paso del Event Storming, Timelines (Líneas de tiempo), consiste en organizar los post-its escritos en el paso anterior de izquierda a derecha a través de flechas y en orden cronológico, pudiendo seguir diferentes flujos según los eventos de dominio involucrados. El objetivo es organizar todos los eventos de dominio identificados de una manera más comprensible y clara para todos los miembros del equipo, ilustrando cómo es la secuencia en la que suceden.
 
-## 4.9. Software Object-Oriented Design
+●	Step 3: Pain Points
 
-### 4.9.1. Class Diagrams
+<p align="center">
+  <img src="https://imgur.com/Y0RnyN5.jpg" alt="12231">
+</p>
 
-### 4.9.2. Class Dictionary
+El tercer paso, Pain Points (Puntos de Dolor), consiste en identificar problemas y áreas de mejora dentro del flujo de eventos de dominio. Esto se realiza con el objetivo de visibilizar puntos críticos en los que concentrar esfuerzos de desarrollo y oportunidades de optimización a futuro para aumentar el impacto de la solución.
 
-## 4.10. Database Design
+●	Step 4: Pivotal Points
 
-### 4.10.1. Relational/Non-Relational Database Diagram
+<p align="center">
+  <img src="https://imgur.com/tmbX4f9.jpg" alt="12231">
+</p>
+
+El cuarto paso, Pivotal Points (Puntos Pivotes), consiste en identificar las causas y consecuencias de los eventos de dominio identificados, analizando cómo y por qué suceden. El objetivo es tener un mayor entendimiento de lo que sucede “antes” de un evento de dominio y descubrir reglas de dominio previamente no identificadas.
+En nuestro caso, utilizamos post-its en forma de rombo para señalizar los Pain Points detectados.
+
+●	Step 5: Commands
+
+<p align="center">
+  <img src="https://imgur.com/leGXzSJ.jpg" alt="12231">
+</p>
+
+El quinto paso, Commands (Comandos), se trata de identificar las intenciones y solicitudes que dan paso a los eventos de dominio, esto permite detectar las causas presentes justo antes de que se desencadene un evento determinado.
+
+●	Step 6: Policies
+
+<p align="center">
+  <img src="https://imgur.com/eQkhJBL.jpg" alt="12231">
+</p>
+
+El sexto paso, Policies (Políticas), permite al equipo identificar la lógica reactiva del negocio, es decir, lo que ocurre de forma automática inmediatamente después de un evento de dominio. Este paso es muy importante para modelar el comportamiento autónomo y la automatización presente dentro de la aplicación.
+
+●	Step 7: Read Models
+
+<p align="center">
+  <img src="https://imgur.com/i7ubvEL.jpg" alt="12231">
+</p>
+
+El séptimo paso, Read Models (Modelos de Lectura), consiste en realizar una revisión de todo el modelo y señalar los datos o información dentro del dominio, que están al alcance del usuario en determinado momento. Realizar este paso nos permite visualizar de una mejor manera cómo diseñar las vistas de usuario y tener en consideración la información a mostrar en diferentes etapas del flujo de uso.
+
+●	Step 8: External Systems
+
+<p align="center">
+  <img src="https://imgur.com/yiwBoz0.jpg" alt="12231">
+</p>
+
+Durante el octavo paso del Event Storming, External Systems (Sistemas Externos), el equipo debe identificar y colocar los componentes que no forman parte de la aplicación, usualmente dependencias externas y APIs pertenecientes a servicios de terceros. Este paso nos permite tener una visión más clara del funcionamiento de nuestra aplicación, permitiéndonos diseñar una arquitectura incluso más robusta, al identificar partes del sistema que interactúan con servicios que están fuera del control del equipo.
+
+### Candidate Context Discovery
+
+Tras la sesión de Event Storming para modelar el dominio de negocio, el equipo se enfocó en el proceso de Candidate Context Discovery con el objetivo de identificar los bounded contexts preliminares. Para ello, aplicamos una combinación de técnicas, utilizando look-for-pivotal-events para hallar eventos de dominio clave que indican cambios de estado significativos, start-with-simple para crear modelos con propósito y descomponer el timeline en pasos secuenciales, y start-with-value para priorizar los contextos que representan el core domain del negocio.
+
+En primera instancia, a partir del Event Storming, se delimitaron los bounded contexts identificando los flujos de negocio clave de la plataforma. Este proceso permitió agrupar comandos, eventos y vistas relacionados para crear modelos de dominio cohesionados y bien definidos. Los contextos que emergieron de este análisis inicial, centrados en funcionalidades como las reseñas, la gestión de comunidades, el proceso de compra y el inventario, son el resultado de aplicar técnicas de descubrimiento que buscan aislar las partes más valiosas y críticas del negocio.
+
+<p align="center">
+  <img src="https://i.imgur.com/KHhTA1v.png" alt="12231">
+</p>
+
+El Bounded Context de Search se centra en el comando principal "Buscar Libro". Esta acción es crucial porque inicia la interacción más frecuente y valiosa para el Usuario de Livria, facilitando el acceso a los productos del negocio. Por esta razón, la funcionalidad ha sido identificada como un dominio de soporte fundamental para el negocio. La cohesión de este comando y todas las funcionalidades asociadas como filtros, ordenación y sugerencia, justifican la delimitación de un Bounded Context independiente.
+
+<p align="center">
+  <img src="https://i.imgur.com/cXKfOp7.png" alt="12231">
+</p>
+
+El Bounded Context de Book se centra en el evento de "Vista de información de un libro". Esta acción es crucial porque representa la interacción con el producto principal del negocio: el libro.
+Por esta razón, la funcionalidad se ha identificado como un dominio central para el negocio. La cohesión de este evento y todas las funcionalidades asociadas, como ver reseñas, publicar una nueva, y marcar un libro como favorito o para no recomendar, justifican la delimitación de un Bounded Context independiente.
+
+<p align="center">
+  <img src="https://imgur.com/ckPfuaz.jpg" alt="12231">
+</p>
+
+El Bounded Context de Profile se centra en el comando principal de "Crear cuenta" e "Iniciar sesión". Estas acciones son cruciales porque habilitan la interacción del usuario con la plataforma, siendo la puerta de entrada a todas las demás funcionalidades.
+Por esta razón, la funcionalidad se ha identificado como un dominio de soporte fundamental para el negocio. La cohesión de estas acciones y todas las funcionalidades asociadas, como modificar el perfil y validar credenciales, justifican la delimitación de un Bounded Context independiente.
+
+<p align="center">
+  <img src="https://i.imgur.com/Ile7A86.png" alt="12231">
+</p>
+
+El Bounded Context de Communities se centra en el comando de "Crear comunidad". Esta acción es fundamental para el negocio, ya que fomenta la interacción social y aumenta la retención de usuarios, generando un valor significativo para la plataforma.
+
+La funcionalidad se identifica como un dominio central debido a que toda la lógica crucial para la interacción de la comunidad, desde la asignación de roles y permisos hasta la publicación de contenido, la moderación y las notificaciones, se agrupan de manera coherente. Esta cohesión justifica la delimitación de un contexto independiente, asegurando que todas las funcionalidades relacionadas con los grupos se gestionen de forma autónoma.
+
+<p align="center">
+  <img src="https://i.imgur.com/o5GXjC1.png" alt="12231">
+</p>
+
+El Bounded Context de Cart se centra en el comando de "Agregar libro a carrito de compra". Esta acción es fundamental, ya que inicia un flujo de valor que monetiza el catálogo y gestiona la interacción directa del cliente con los productos.
+
+Esta funcionalidad se identifica como un dominio central porque la lógica de la compra, la integración con la pasarela de pagos y la gestión de la transacción son críticas para el negocio. La cohesión de estas accione, desde la eliminación de ítems hasta la suscripción a planes, justifican su delimitación en un contexto independiente, asegurando que todo el proceso de compra se gestione de forma coherente y segura.
+
+<p align="center">
+  <img src="https://imgur.com/9xbekUP.jpg" alt="12231">
+</p>
+
+El Bounded Context de Stock se centra en los comandos de "Agregar" y "Eliminar libros del inventario". Estas acciones, ejecutadas por un administrador, son fundamentales para el negocio, ya que aseguran la disponibilidad de productos para la venta y mantienen la información de inventario actualizada.
+
+Esta funcionalidad se identifica como un dominio central porque el stock es crítico para la operación del negocio. La cohesión de las acciones relacionadas con la gestión de existencias y los metadatos de los libros justifica la delimitación de un contexto independiente, lo que permite que esta lógica de negocio se maneje de forma centralizada y eficiente.
+
+<p align="center">
+  <img src="https://i.imgur.com/oUpmZue.png" alt="12231">
+</p>
+
+El Bounded Context de Orders se centra en los comandos de "Buscar pedidos por ID" y "Buscar pedidos por cliente". Estas acciones, ejecutadas por administradores, son cruciales porque permiten la trazabilidad y la auditoría de ventas.
+
+Este dominio se identifica como un subdominio de soporte, ya que proporciona las herramientas necesarias para que el equipo de administración monitoree y gestione el flujo de capital y la actividad de los clientes. La cohesión de estas funcionalidades de búsqueda y visualización justifica la delimitación de un contexto independiente, asegurando que las herramientas de gestión interna operen de manera eficiente y autónoma.
+
+<p align="center">
+  <img src="https://i.imgur.com/rfyprh1.png" alt="12231">
+</p>
+
+El Bounded Context de Recommendations se centra en la "Funcionalidad de recomendaciones". Esta acción es fundamental para el negocio, ya que personaliza la experiencia del usuario y promueve el descubrimiento de nuevos productos.
+
+Esta funcionalidad se identifica como un dominio central porque un sistema de recomendaciones de calidad es una ventaja competitiva clave para la plataforma. La cohesión de las acciones relacionadas con la generación de recomendaciones, basada en favoritos y exclusiones, y su posterior visualización, justifica la delimitación de un contexto independiente, lo que permite el desarrollo y la mejora de algoritmos de forma autónoma.
+
+### Domain Message Flows Modelling
+
+En esta sección se modelan los Domain Message Flows para representar cómo los bounded contexts de Livria colaboran en la resolución de los casos de negocio. Para ello se utiliza la técnica de Domain Storytelling, que permite narrar e ilustrar los flujos de mensajes entre actores y contextos, mediante diagramas elaborados que evidencian dichas interacciones en escenarios clave del sistema.
+
+**Escenario 1: Compra de libro del catálogo de Livria**
+
+<p align="center">
+  <img src="https://imgur.com/v2pgFZF.jpg" alt="12231">
+</p>
+
+Este diagrama ilustra el flujo que sigue el usuario para completar la compra de un libro en Livria. Una vez agregado el libro al carrito, se genera un evento que confirma al usuario que el producto ha sido añadido con éxito. Al acceder al carrito, el usuario puede visualizar los artículos seleccionados y, al hacer clic en “Realizar pago”, el sistema valida la disponibilidad de los libros antes de redirigirlos a la pantalla de pago. Cuando el usuario selecciona la opción “Pagar”, el sistema valida sus credenciales a través de Izipay. Tras la confirmación, se dispara el evento de Pago exitoso, se actualiza el stock correspondiente y, finalmente, se emite el comprobante de compra.
+
+**Escenario 2: Creación de una publicación dentro de una comunidad existente**
+
+<p align="center">
+  <img src="https://imgur.com/nn7Z0GO.jpg" alt="12231">
+</p>
+
+Este diagrama representa el flujo para la creación de una publicación dentro de una comunidad en Livria. El proceso inicia cuando el usuario accede a una comunidad específica, momento en el que el sistema lo redirige y despliega la pantalla correspondiente, pudiendo unirse a la comunidad si no lo ha hecho ya. Desde allí, el usuario puede crear una nueva publicación proporcionando una descripción y una imagen; al enviarla, se genera un evento que confirma su creación exitosa y, de forma inmediata, se activa una política de moderación automatizada en el contexto de la comunidad. Además, el diagrama refleja un flujo secundario que permite al usuario navegar desde la comunidad hacia su perfil, donde se le muestra tanto su información personal como la lista de comunidades a las que pertenece.
+
+**Escenario 3: Vista de libros recomendados**
+
+<p align="center">
+  <img src="https://imgur.com/asKrnyt.jpg" alt="12231">
+</p>
+
+Este diagrama de flujo describe el proceso de visualización de libros recomendados en Livria. La secuencia comienza cuando el usuario selecciona un libro de su interés y es redirigido a la pantalla de detalle, donde puede consultar su título, descripción y autor, además de contar con la opción de marcarlo como “favorito”. Al hacerlo, el sistema muestra una notificación que confirma que el libro ha sido agregado a sus favoritos, acción que impacta directamente en su perfil. Posteriormente, al acceder a la sección de recomendaciones, el sistema despliega una lista personalizada de libros sugeridos en función de sus preferencias, sobre la cual se aplica una política de moderación automática para garantizar la calidad del contenido presentado.
+
+**Escenario 4: Agregar stock a un nuevo libro**
+
+<p align="center">
+  <img src="https://imgur.com/vbHGRsk.jpg" alt="12231">
+</p>
+
+Este diagrama ilustra el flujo que sigue un administrador para agregar stock a un libro nuevo en el sistema de Livria. El proceso comienza cuando el administrador registra un libro en el inventario, ingresando datos como título, autor y género, tras lo cual se ejecuta una política de validación de duplicados para garantizar que el libro no exista previamente. Si la validación es exitosa, se genera un evento que confirma la creación del libro. Luego, el administrador localiza el libro recién creado mediante una búsqueda y accede a su vista de datos iniciales, desde donde ejecuta el comando para añadir stock. Finalmente, esta acción desencadena una política que confirma la actualización del inventario y una notificación visual que informa al administrador que la operación se ha completado satisfactoriamente.
+
+#### 2.5.1.3.	Bounded Context Canvases
+
+En esta sección se presentan los candidate bounded contexts identificados para el dominio de Livria. Su elaboración se desarrolló mediante un proceso iterativo que incluyó la definición de cada contexto, la captura del lenguaje ubicuo, el análisis de reglas de negocio, capacidades y dependencias, así como la crítica de diseño. Este abordaje permitió establecer límites claros y responsabilidades bien delimitadas, asegurando la independencia y escalabilidad de cada contexto y, al mismo tiempo, la coherencia integral del sistema.
+
+Cabe señalar que algunos de estos bounded contexts no presentan comunicación de salida, ya que representan pasos finales dentro del flujo de la aplicación. Sin embargo, todos ellos fueron considerados y empleados en el modelado, puesto que resultan esenciales para completar el ciclo de negocio de Livria y garantizar la trazabilidad de los procesos.
+
+**Search Bounded Context:**
+
+<p align="center">
+  <img src="https://i.imgur.com/7QbOrF2.png" alt="12231">
+</p>
+
+**Book Bounded Context:**
+
+<p align="center">
+  <img src="https://i.imgur.com/2X3oKV8.png" alt="12231">
+</p>
+
+**Recommendations Bounded Context:**
+
+<p align="center">
+  <img src="https://i.imgur.com/eSkMtRm.png" alt="12231">
+</p>
+
+**Cart Bounded Context:**
+
+<p align="center">
+  <img src="https://i.imgur.com/mudi4P5.png" alt="12231">
+</p>
+
+**Profile Bounded Context:**
+
+<p align="center">
+  <img src="https://i.imgur.com/H9rtCYw.png" alt="12231">
+</p>
+
+**Orders Bounded Context:**
+
+<p align="center">
+  <img src="https://i.imgur.com/ZDfePga.png" alt="12231">
+</p>
+
+**Stock Bounded Context:**
+
+<p align="center">
+  <img src="https://imgur.com/U1HWDiu.jpg" alt="12231">
+</p>
+
+**Communities Bounded Context:**
+
+<p align="center">
+  <img src="https://i.imgur.com/cCMrxi5.png" alt="12231">
+</p>
+
+
+
+### 4.6.1. Software Architecture Context Diagram
+
+El Diagrama de Contexto es el primer nivel de abstracción del Modelo C4. Su propósito es definir el sistema a construir, en este caso Livria, y su interacción con los usuarios y otros sistemas externos. Este diagrama nos ofrece una vista de alto nivel que ayuda a entender el rol de Livria en su entorno sin profundizar en su estructura interna, lo que lo hace ideal para comunicárselo a las partes interesadas, tanto técnicas como no técnicas.
+
+<p align="center">
+  <img src="https://imgur.com/eZyBU79.jpg" alt="12231">
+</p>
+
+El diagrama de contexto de Livria ilustra los principales actores y sistemas externos con los que interactúa la aplicación. Se identifican dos tipos de usuarios: el Administrador de Livria, responsable de la supervisión y gestión de la plataforma, y el Usuario Cliente, que utiliza la aplicación para explorar, comprar libros y participar en la comunidad.
+En el ámbito de los sistemas externos, Livria se integra con servicios de terceros especializados para delegar funcionalidades específicas. Se utiliza Izipay para procesar los pagos de manera segura, permitiendo a los usuarios realizar transacciones sin que Livria tenga que gestionar directamente la lógica financiera. Para la autenticación y validación de cuentas, la plataforma se apoya en Gmail, que gestiona el envío de correos electrónicos de verificación. La comunicación entre todos estos componentes se establece a través del protocolo HTTPS, lo que garantiza la seguridad e integridad de la información transferida.
+
+### 4.6.2. Software Architecture Container Diagrams
+
+El Diagrama de Contenedores es el segundo nivel del Modelo C4. Este diagrama descompone el sistema de Livria en contenedores, que son unidades de despliegue y ejecución (como aplicaciones web, bases de datos o servicios de microservicios). Su objetivo es mostrar la arquitectura interna de Livria, especificando los roles y las interacciones entre los diferentes contenedores, lo cual es útil para los desarrolladores.
+
+<p align="center">
+  <img src="https://imgur.com/9MsTQ7m.jpg" alt="12231">
+</p>
+
+El diagrama de contenedores de Livria detalla la arquitectura de la aplicación, Livria Software System, que se ha diseñado con un enfoque de aplicación web única (SPA) y aplicaciones móviles separadas para los usuarios y los administradores. En el centro del sistema se encuentra el Livria API, un contenedor que expone todas las funcionalidades y servicios de la aplicación. Esta API se comunica con el Web Application y las Single Page Applications (tanto para el usuario como para el administrador) a través de llamadas JSON/HTTPS. Para la persistencia de datos, la API se conecta a una Base de datos (MySQL) donde se almacenan todos los registros del negocio. Además, las aplicaciones móviles –nativa y cross-platform, respectivamente– el administrador (Admin Mobile Application) y para el usuario (User Mobile Application) se comunican directamente con el Livria API. El sistema también mantiene sus interacciones con los servicios externos de Izipay y Gmail, que se detallaron en el diagrama de contexto.
+
+### 4.6.3. Software Architecture Components Diagrams
+
+#### 4.6.3.1. Bounded Context: Search
+
+<p align="center">
+  <img src="https://imgur.com/sln3W2x.jpg" alt="12231">
+</p>
+
+Este diagrama representa la arquitectura simplificada del Bounded Context de Search para una plataforma de libros, utilizando un enfoque de Arquitectura Limpia y Domain-Driven Design. Muestra cómo un Usuario interactúa con la Búsqueda API para buscar libros y ver su historial. La API orquesta internamente el flujo de trabajo: el BusquedaController recibe las peticiones y las delega a los Handlers de la Capa de Aplicación. Estos handlers, a su vez, usan el Motor de Búsqueda y el Repositorio para ejecutar la lógica de negocio y acceder a los datos de la Base de Datos. La arquitectura está diseñada para mantener una clara separación de responsabilidades y una baja dependencia entre las capas.
+
+#### 4.6.3.2. Bounded Context: Book
+
+<p align="center">
+  <img src="https://imgur.com/ndohIaH.jpg" alt="12231">
+</p>
+
+Este diagrama detalla la arquitectura para el Bounded Context de Libro. La Libro API actúa como la puerta de entrada, manejando las peticiones de un Usuario para crear, obtener o gestionar libros y reseñas. La lógica de negocio está segregada en la Capa de Aplicación y la Capa de Dominio, asegurando que el código de negocio sea independiente de la tecnología. 
+
+
+#### 4.6.3.3. Bounded Context: Recommendations
+
+<p align="center">
+  <img src="https://imgur.com/H2UiVZS.jpg" alt="12231">
+</p>
+
+La Recomendaciones API gestiona las solicitudes de un Usuario para obtener sugerencias de libros. Internamente, un RecomendacionController delega las peticiones a los Handlers de la Capa de Aplicación, quienes utilizan el AlgoritmoRecomendacion (un servicio de dominio) para generar las sugerencias. Este algoritmo accede a los datos de usuario y libros a través del IRecomendacionRepository, que se comunica con la base de datos MySQL.
+
+#### 4.6.3.4. Bounded Context: Cart
+
+<p align="center">
+  <img src="https://imgur.com/P5UHQTD.jpg" alt="12231">
+</p>
+
+La Carrito API gestiona todas las interacciones de un Usuario con su carrito de compras. Internamente, el CarritoController delega las operaciones a los Handlers de la Capa de Aplicación, los cuales son responsables de orquestar la lógica para agregar, eliminar o confirmar ítems. Estas acciones se llevan a cabo utilizando el ICarritoRepository, que define las operaciones de persistencia. 
+
+#### 4.6.3.5. Bounded Context: Profile
+
+<p align="center">
+  <img src="https://imgur.com/HEAN5BG.jpg" alt="12231">
+</p>
+
+El servicio expone una API que permite al Usuario ver y actualizar sus datos. Las peticiones son recibidas por el PerfilController y delegadas a los Handlers de la Capa de Aplicación, los cuales encapsulan la lógica para cada operación. Estos Handlers utilizan el IPerfilRepository para interactuar con la base de datos MySQL
+
+#### 4.6.3.6. Bounded Context: Orders
+
+<p align="center">
+  <img src="https://imgur.com/E9RXaSG.jpg" alt="12231">
+</p>
+
+La API permite al Administrador ver los pedidos. El OrdenController en la Capa de Interfaz delega las operaciones a los Handlers de la Capa de Aplicación. Estos Handlers utilizan el IOrdenRepository para interactuar con la base de datos MySQL a través de Entity Framework Core, gestionando la persistencia de las órdenes.
+
+#### 4.6.3.7. Bounded Context: Stock
+
+<p align="center">
+  <img src="https://imgur.com/EmLGzAn.jpg" alt="12231">
+</p>
+
+La API permite al Administrador consultar y actualizar el stock de libros. El flujo de trabajo es gestionado por los Handlers en la Capa de Aplicación, quienes encapsulan la lógica para cada tipo de movimiento de inventario. Estos Handlers se comunican con el IStockRepository para interactuar con la base de datos MySQL a través de Entity Framework Core, asegurando que el estado del inventario se mantenga consistente y que la lógica del dominio esté aislada de la infraestructura.
+
+#### 4.6.3.8. Bounded Context: Communities
+
+<p align="center">
+  <img src="https://imgur.com/cOUSoVD.jpg" alt="12231">
+</p>
+
+Utilizando una API, el servicio permite al Usuario crear, unirse y participar en comunidades. Las peticiones son gestionadas por el ComunidadController y delegadas a los Handlers de la Capa de Aplicación. Estos Handlers utilizan el IComunidadRepository para interactuar con la base de datos MySQL a través de Entity Framework Core.
+
+## 4.7. Software Object-Oriented Design
+
+### 4.7.1. Class Diagrams
+
+#### 4.7.1.1. Bounded Context: Search
+
+<p align="center">
+  <img src="https://imgur.com/2gFHXt6.jpg" alt="12231">
+</p>
+
+Este diagrama de clases UML detalla la capa de dominio del contexto Búsqueda. La clase BusquedaActiva, como la raíz del agregado, asegura la coherencia de una sesión de búsqueda. Se compone de una ConsultaBusqueda (la entidad de la búsqueda en sí), una lista de FiltroBusqueda (un objeto de valor inmutable) y una lista de ResultadoBusqueda. El MotorBusqueda es un servicio de dominio que encapsula la lógica de búsqueda, mientras que la interfaz IBusquedaRepository define el contrato para la persistencia, manteniendo el dominio desacoplado de la implementación de la base de datos.
+
+#### 4.7.1.2. Bounded Context: Book
+
+<p align="center">
+  <img src="https://imgur.com/TDyWhTD.jpg" alt="12231">
+</p>
+
+Este diagrama de clases UML detalla la capa de dominio del contexto Libro. El agregado LibroAggregate es la raíz del contexto, encapsulando y garantizando la consistencia de una Libro y sus Reseñas asociadas. Las entidades Libro y Reseña tienen relaciones de composición con el agregado, lo que significa que no pueden existir fuera de él. El Libro también se compone de objetos de valor inmutables como Autor, Titulo y Descripcion, que aseguran la validez de los datos. Además, el ReseñaService es un servicio de dominio que encapsula la lógica de negocio, como la validación de reseñas. Las interfaces de los repositorios, ILibroRepository e IReseñaRepository, definen los contratos para la persistencia, manteniendo el dominio desacoplado de la infraestructura.
+
+#### 4.7.1.3. Bounded Context: Recommendations
+
+<p align="center">
+  <img src="https://imgur.com/8r7DsdW.jpg" alt="12231">
+</p>
+
+Este diagrama de clases UML detalla la capa de dominio del contexto de Recomendaciones. La clase RecomendacionAggregate, como la raíz del agregado, orquesta la lógica de negocio central. Se compone de una Recomendacion (una entidad que representa la sugerencia generada), y se basa en el HistorialLectura del usuario y sus PreferenciasUsuario. Las relaciones de asociación indican que el agregado utiliza estas clases para su funcionamiento, pero no las posee de manera exclusiva. El AlgoritmoRecomendacion es un servicio de dominio que encapsula la lógica compleja para generar las recomendaciones, utilizando la interfaz IRecomendacionRepository para acceder a los datos persistidos.
+
+#### 4.7.1.4. Bounded Context: Cart
+
+<p align="center">
+  <img src="https://imgur.com/1EeF5nd.jpg" alt="12231">
+</p>
+
+Este diagrama de clases UML muestra el diseño de la capa de dominio para el contexto de Carrito. El CarritoAggregate es la raíz del agregado, asegurando que las operaciones sobre el Carrito y sus ItemCarrito sean consistentes. Las flechas de composición indican que la vida de los ItemCarrito y del Carrito está ligada a la del CarritoAggregate. La interfaz ICarritoRepository define el contrato para la persistencia, permitiendo que la lógica del dominio, encapsulada en el agregado, interactúe con la base de datos de manera abstracta y desacoplada. Este diseño separa claramente el comportamiento del negocio de los detalles de la infraestructura.
+
+#### 4.7.1.5. Bounded Context: Profile
+
+<p align="center">
+  <img src="https://imgur.com/pXcvDwa.jpg" alt="12231">
+</p>
+
+Este diagrama de clases UML muestra la estructura de la capa de dominio del contexto Perfil. El PerfilAggregate actúa como la raíz del agregado, garantizando la consistencia de las operaciones sobre un Perfil y sus Preferencias. La relación de composición indica que tanto la entidad Perfil como el objeto de valor Preferencias son partes esenciales del agregado y no pueden existir de forma independiente. La interfaz IPerfilRepository define el contrato para las operaciones de persistencia, manteniendo el dominio desacoplado de los detalles de la base de datos. Este diseño permite que toda la lógica de negocio relacionada con la gestión del perfil esté encapsulada y protegida dentro del agregado.
+
+#### 4.7.1.6. Bounded Context: Orders
+
+<p align="center">
+  <img src="https://imgur.com/djGlbY0.jpg" alt="12231">
+</p>
+
+Este diagrama de clases UML muestra la estructura de la capa de dominio del contexto de Órdenes. El OrdenAggregate es la raíz principal que asegura la integridad de una compra. Está compuesto por una entidad Orden y una lista de ItemOrden, que son objetos de valor inmutables que capturan el estado del libro en el momento de la compra. La relación de composición indica que los ItemOrden y la Orden no pueden existir sin el OrdenAggregate. Por último, la interfaz IOrdenRepository define el contrato de persistencia para el agregado, permitiendo que la lógica del negocio se mantenga independiente de la tecnología de la base de datos.
+
+#### 4.7.1.7. Bounded Context: Stock
+
+<p align="center">
+  <img src="https://imgur.com/0E2vCv1.jpg" alt="12231">
+</p>
+
+Este diagrama de clases UML muestra la estructura del Domain Layer para el contexto Stock. La clase StockAggregate actúa como la raíz del agregado, asegurando que las operaciones sobre el Inventario y sus MovimientoStock sean consistentes. La composición indica que tanto la entidad Inventario como los objetos de valor MovimientoStock son partes fundamentales del agregado. El Inventario encapsula el estado actual del stock, mientras que los MovimientoStock registran las variaciones de forma inmutable. La interfaz IStockRepository define el contrato de persistencia, manteniendo la lógica de negocio, encapsulada en el agregado, independiente de los detalles de la base de datos. Este diseño garantiza la integridad del inventario al centralizar su gestión en una única unidad transaccional.
+
+#### 4.7.1.8. Bounded Context: Communities
+
+<p align="center">
+  <img src="https://imgur.com/lwMyIFY.jpg" alt="12231">
+</p>
+
+Este diagrama de clases UML detalla la estructura del Domain Layer del contexto de Comunidades. El ComunidadAggregate es la raíz del agregado, asegurando la consistencia de una Comunidad, sus Miembros y Publicaciones. La relación de composición indica que las entidades Comunidad, Miembro y Publicacion no pueden existir de forma independiente. Cada Publicacion puede tener múltiples Comentarios, que se modelan como objetos de valor inmutables. La interfaz IComunidadRepository define el contrato para la persistencia, permitiendo que la lógica del negocio, encapsulada en el agregado, interactúe con la base de datos de manera abstracta y desacoplada.
+
+### 4.7.2. Class Dictionary
+
+#### 4.7.2.1. Bounded Context: Search
+
+##### Domain Layer
+
+**ConsultaBusqueda (Entity):** Representa la búsqueda iniciada por un usuario, es parte del agregado BusquedaActiva.
+* Atributos: idConsulta, textoBusqueda, fechaHora, usuarioId.
+* Métodos: validarConsulta(), registrarHistorial().
+
+**FiltroBusqueda (ValueObject):** Representa criterios inmutables de filtrado, se asocia a ConsultaBusqueda.
+* Atributos: categoria, rangoPrecio, idioma, disponibilidad.
+* Métodos: aplicarAFiltros(resultados).
+
+**ResultadoBusqueda (Entity):** Representa un libro encontrado como resultado, hace referencia a la entidad Libro del contexto Libro.
+* Atributos: libroId, titulo, autor, coincidenciaRelevancia.
+* Métodos: calcularRelevancia().
+
+**BusquedaActiva (Aggregate):** Agrupa la consulta, filtros y resultados de una sesión de búsqueda. Además, orquesta las entidades del contexto.
+* Atributos: consulta, listaFiltros, listaResultados.
+* Métodos: ejecutarBusqueda(), limpiarResultados().
+
+**MotorBusqueda (DomainService):** Ejecuta la lógica de búsqueda (indexación, coincidencia, ranking). Opera sobre BusquedaActiva, accede a datos de libros.
+* Métodos: buscar(consulta, filtros).
+
+**BusquedaRepository (Repository):** Define operaciones para guardar y recuperar búsquedas previas. Implementación en Infrastructure Layer.
+* Métodos: guardar(busqueda), obtenerPorUsuario(usuarioId).
+
+##### Interface Layer
+
+BusquedaController (Controller): Gestiona las peticiones HTTP del usuario para realizar búsquedas. Llama a Application Layer (CommandHandlers).
+●	Métodos: buscarLibros(request), verHistorial(usuarioId).
+
+##### Application Layer
+
+EjecutarBusquedaHandler (Command Handler): Maneja el comando de ejecutar una nueva búsqueda. Invoca a MotorBusqueda y guarda resultados en BusquedaRepository.
+* Métodos: handle(ejecutarBusquedaCommand).
+
+VerHistorialBusquedaHandler (Command Handler): Maneja el comando para recuperar búsquedas pasadas. Accede a BusquedaRepository.
+* Métodos: handle(verHistorialCommand).
+
+NuevaBusquedaRegistradaHandler (Event Handler): Reacciona al evento de nueva búsqueda registrada.
+* Métodos: onNuevaBusqueda(event).
+
+##### Infrastructure Layer
+
+BusquedaRepositoryImpl (Repository Impl):  Implementa la persistencia de búsquedas y la interfaz BusquedaRepository.
+* Métodos: guardar(busqueda), obtenerPorUsuario(usuarioId).
+
+
+#### 4.7.2.2. Bounded Context: Book
+
+##### Domain Layer
+
+**Libro (Entity):** Representa un libro dentro del sistema. Puede recibir reseñas y ser marcado como favorito por los usuarios.
+* Atributos: id, titulo, autor, descripcion, fechaPublicacion.
+* Métodos: agregarReseña(reseña), calcularPromedioReseñas(), marcarFavorito(usuarioId).
+
+**Reseña (Entity):** Representa una reseña asociada a un libro, creada por un usuario.
+* Atributos: id, usuarioId, contenido, puntuacion, fecha.
+* Métodos: editarContenido(nuevoContenido), editarPuntuacion(nuevaPuntuacion).
+
+**Autor (ValueObject):** Representa al autor del libro como un valor inmutable.
+* Atributos: nombre, biografia.
+* Métodos: validarNombre().
+
+**Titulo (ValueObject):** Representa el título del libro, asegurando su validez.
+* Atributos: valor.
+* Métodos: validarNoVacio().
+
+**Descripcion (ValueObject):** Representa la descripción del libro con una longitud controlada.
+* Atributos: texto.
+* Métodos: validarLongitudMaxima().
+
+**LibroAggregate (Aggregate):** Agrupa un libro con sus reseñas, garantizando consistencia en las operaciones.
+* Atributos: libro, listaReseñas.
+* Métodos: validarReseñaUnica(usuarioId), agregarReseñaValidada(reseña).
+
+**ReseñaService (DomainService):** Gestiona reglas de negocio relacionadas a reseñas.
+* Métodos: validarReseñaDuplicada(libroId, usuarioId), calcularPromedioLibro(libroId).
+
+**LibroRepository (Repository):** Define operaciones de persistencia para libros.
+* Métodos: guardar(libro), buscarPorId(id), buscarPorTitulo(titulo).
+
+**ReseñaRepository (Repository):** Define operaciones de persistencia para reseñas.
+* Métodos: guardar(reseña), buscarPorLibro(libroId), eliminar(reseñaId).
+
+##### Interface Layer
+
+**LibroController (Controller):** Gestiona las peticiones HTTP relacionadas con libros.
+* Métodos: crearLibro(request), obtenerLibro(id), listarLibrosPorTitulo(titulo).
+
+ReseñaController (Controller): Gestiona las operaciones sobre reseñas de libros.
+* Métodos: agregarReseña(libroId, request), editarReseña(reseñaId, request), eliminarReseña(reseñaId).
+
+
+##### Application Layer
+
+**CrearLibroHandler (Command Handler):** Maneja el comando de crear un nuevo libro.
+* Métodos: handle(crearLibroCommand).
+
+**AgregarReseñaHandler (Command Handler):** Maneja el comando de agregar una reseña a un libro.
+* Métodos: handle(agregarReseñaCommand).
+
+**EditarReseñaHandler (Command Handler):** Maneja el comando para modificar una reseña existente.
+* Métodos: handle(editarReseñaCommand).
+
+**ReseñaAgregadaHandler (Event Handler):** Reacciona al evento de reseña agregada.
+* Métodos: onReseñaAgregada(event).
+
+##### Infrastructure Layer
+
+**LibroRepositoryImpl (Repository Impl):** Implementa la persistencia de libros y la interfaz LibroRepository.
+* Métodos: guardar(libro), buscarPorId(id), buscarPorTitulo(titulo).
+
+**ReseñaRepositoryImpl (Repository Impl):** Implementa la persistencia de reseñas y la interfaz ReseñaRepository.
+* Métodos: guardar(reseña), buscarPorLibro(libroId), eliminar(reseñaId).
+
+#### 4.7.2.3. Bounded Context: Recommendations
+
+##### Domain Layer
+
+**Recomendacion (Entity):** Representa una recomendación generada para un usuario, basada en su historial o preferencias.
+* Atributos: id, usuarioId, listaLibros, fechaGeneracion.
+* Métodos: actualizarListaLibros(nuevaLista), marcarComoVista().
+
+**AlgoritmoRecomendacion (DomainService):** Encapsula la lógica de generación de recomendaciones.
+* Métodos: generar(usuarioId), reentrenarModelo().
+
+**PreferenciasUsuario (ValueObject):** Representa las preferencias inmutables del usuario que influyen en las recomendaciones.
+* Atributos: generosFavoritos, autoresFavoritos, rangoPrecio, idioma.
+* Métodos: validarPreferencias().
+
+**HistorialLectura (Entity):** Representa el conjunto de libros consumidos por el usuario.
+* Atributos: usuarioId, listaLibrosLeidos.
+* Métodos: registrarLectura(libroId), obtenerLibrosRecientes().
+
+**RecomendacionAggregate (Aggregate):** Agrupa la recomendación, el historial y las preferencias para generar sugerencias consistentes.
+* Atributos: recomendacion, historialLectura, preferenciasUsuario.
+* Métodos: generarRecomendacion(), validarRecomendacion().
+
+**RecomendacionRepository (Repository):** Define operaciones de persistencia para las recomendaciones.
+* Métodos: guardar(recomendacion), obtenerPorUsuario(usuarioId).
+
+##### Interface Layer
+
+**RecomendacionController (Controller):** Gestiona las peticiones HTTP relacionadas con recomendaciones.
+* Métodos: obtenerRecomendaciones(usuarioId), refrescarRecomendaciones(usuarioId).
+
+##### Application Layer
+
+**GenerarRecomendacionHandler (Command Handler):** Maneja el comando de generar una nueva recomendación para un usuario.
+* Métodos: handle(generarRecomendacionCommand).
+
+**ActualizarRecomendacionHandler (Command Handler):** Maneja el comando de actualizar la lista de recomendaciones de un usuario.
+* Métodos: handle(actualizarRecomendacionCommand).
+
+**RecomendacionGeneradaHandler (Event Handler):** Reacciona al evento de recomendación generada.
+* Métodos: onRecomendacionGenerada(event).
+
+##### Infrastructure Layer
+
+**RecomendacionRepositoryImpl (Repository Impl):** Implementa la persistencia de recomendaciones y la interfaz RecomendacionRepository.
+* Métodos: guardar(recomendacion), obtenerPorUsuario(usuarioId).
+
+#### 4.7.2.4. Bounded Context: Cart
+
+##### Domain Layer
+
+**Carrito (Entity):** Representa el carrito de un usuario, donde se almacenan los libros seleccionados para compra.
+*	Atributos: idCarrito, usuarioId, listaItems, fechaCreacion.
+*	Métodos: agregarItem(item), eliminarItem(itemId), vaciarCarrito(), calcularTotal().
+
+**ItemCarrito (Entity):** Representa un libro específico dentro del carrito con su cantidad.
+*	Atributos: libroId, cantidad, precioUnitario.
+*	Métodos: actualizarCantidad(nuevaCantidad), calcularSubtotal().
+
+**CarritoAggregate (Aggregate):** Agrupa el carrito y sus ítems para mantener consistencia en las operaciones.
+*	Atributos: carrito, listaItems.
+*	Métodos: confirmarCarrito(), validarStock().
+
+**CarritoRepository (Repository):** Define operaciones de persistencia sobre los carritos.
+*	Métodos: guardar(carrito), obtenerPorUsuario(usuarioId), eliminar(carritoId).
+
+##### Interface Layer
+
+**CarritoController (Controller):** Gestiona las peticiones HTTP relacionadas con el carrito.
+*	Métodos: verCarrito(usuarioId), agregarLibro(request), eliminarLibro(request), vaciar(usuarioId), confirmarCompra(usuarioId).
+
+##### Application Layer
+
+**AgregarItemCarritoHandler (Command Handler):** Maneja el comando para agregar un libro al carrito.
+*	Métodos: handle(agregarItemCarritoCommand).
+
+**EliminarItemCarritoHandler (Command Handler):** Maneja el comando para eliminar un libro del carrito.
+*	Métodos: handle(eliminarItemCarritoCommand).
+
+**ConfirmarCarritoHandler (Command Handler):** Maneja el comando de confirmar un carrito antes de generar una orden.
+*	Métodos: handle(confirmarCarritoCommand).
+
+**CarritoConfirmadoHandler (Event Handler):** Reacciona al evento de carrito confirmado (ej. generar una orden en el contexto Órdenes).
+*	Métodos: onCarritoConfirmado(event).
+
+##### Infrastructure Layer
+
+**CarritoRepositoryImpl (Repository Impl):** Implementa la persistencia de carritos y la interfaz CarritoRepository.
+*	Métodos: guardar(carrito), obtenerPorUsuario(usuarioId), eliminar(carritoId).
+
+#### 4.7.2.5. Bounded Context: Profile
+
+##### Domain Layer
+
+**Perfil (Entity):** Representa la información personal de un usuario en Livria.
+* Atributos: perfilId, usuarioId, nombre, fotoPerfil, frase, preferencias.
+* Métodos: actualizarDatos(datos), actualizarFoto(nuevaFoto), actualizarFrase(nuevaFrase).
+
+**Preferencias (ValueObject):** Define las configuraciones y gustos literarios de un usuario.
+* Atributos: generosFavoritos, idiomaPreferido, notificaciones.
+* Métodos: actualizarPreferencias(nuevasPreferencias).
+
+**PerfilAggregate (Aggregate):** Agrupa al perfil y sus preferencias, asegurando consistencia en las actualizaciones.
+* Atributos: perfil, preferencias.
+* Métodos: personalizarPerfil(), validarDatos().
+
+**PerfilRepository (Repository):** Define operaciones de persistencia de perfiles.
+* Métodos: guardar(perfil), obtenerPorUsuario(usuarioId), eliminar(perfilId).
+
+##### Interface Layer
+
+**PerfilController (Controller):** Gestiona las peticiones HTTP relacionadas con el perfil.
+* Métodos: verPerfil(usuarioId), actualizarPerfil(request), actualizarFoto(request), actualizarFrase(request).
+
+##### Application Layer
+
+**ActualizarPerfilHandler (Command Handler):** Maneja el comando de actualización de datos del perfil.
+* Métodos: handle(actualizarPerfilCommand).
+
+**ActualizarFotoHandler (Command Handler):** Maneja el comando de actualización de foto.
+* Métodos: handle(actualizarFotoCommand).
+
+**ActualizarFraseHandler (Command Handler):** Maneja el comando de actualización de frase en el perfil.
+* Métodos: handle(actualizarFraseCommand).
+
+**PerfilActualizadoHandler (Event Handler):** Reacciona al evento de perfil actualizado.
+* Métodos: onPerfilActualizado(event).
+
+##### Infrastructure Layer
+
+**PerfilRepositoryImpl (Repository Impl):** Implementa la persistencia de perfiles y la interfaz PerfilRepository.
+* Métodos: guardar(perfil), obtenerPorUsuario(usuarioId), eliminar(perfilId).
+
+#### 4.7.2.6. Bounded Context: Orders
+
+##### Domain Layer
+
+**Orden (Entity):** Representa una compra realizada por un usuario.
+* Atributos: ordenId, usuarioId, fecha, estado, total, listaItems.
+* Métodos: calcularTotal(), cambiarEstado(nuevoEstado).
+
+**ItemOrden (ValueObject):** Representa un libro dentro de una orden, con su cantidad y precio en el momento de la compra.
+* Atributos: libroId, titulo, cantidad, precioUnitario.
+* Métodos: calcularSubtotal().
+
+**OrdenAggregate (Aggregate):** Agrupa la orden y sus ítems, asegurando la consistencia en el flujo de compra.
+* Atributos: orden, listaItems.
+* Métodos: agregarItem(item), eliminarItem(libroId), confirmarOrden().
+
+**OrdenRepository (Repository):** Define operaciones de persistencia de órdenes.
+* Métodos: guardar(orden), obtenerPorId(ordenId), obtenerPorUsuario(usuarioId).
+
+##### Interface Layer
+
+**OrdenController (Controller):** Gestiona las peticiones HTTP relacionadas con las órdenes.
+* Métodos: verOrden(ordenId), verOrdenesPorUsuario(usuarioId), crearOrden(request), actualizarEstado(request).
+
+##### Application Layer
+
+**CrearOrdenHandler (Command Handler):** Maneja el comando para crear una nueva orden.
+* Métodos: handle(crearOrdenCommand).
+
+**ActualizarEstadoOrdenHandler (Command Handler):** Maneja el comando de cambio de estado de una orden.
+* Métodos: handle(actualizarEstadoOrdenCommand).
+
+**OrdenCreadaHandler (Event Handler):** Reacciona al evento de orden creada.
+* Métodos: onOrdenCreada(event).
+
+**OrdenActualizadaHandler (Event Handler):** Reacciona al evento de cambio de estado en la orden.
+* Métodos: onOrdenActualizada(event).
+
+##### Infrastructure Layer
+
+**OrdenRepositoryImpl (Repository Impl):** Implementa la persistencia de órdenes y la interfaz OrdenRepository.
+* Métodos: guardar(orden), obtenerPorId(ordenId), obtenerPorUsuario(usuarioId).
+
+#### 4.7.2.7. Bounded Context: Stock
+
+##### Domain Layer
+
+**Inventario (Entity):** Representa el estado del inventario de un libro.
+* Atributos: inventarioId, libroId, cantidadDisponible, ultimaActualizacion.
+* Métodos: aumentarStock(cantidad), disminuirStock(cantidad), verificarDisponibilidad(cantidad).
+
+**MovimientoStock (ValueObject):** Representa una variación puntual en el stock (entrada o salida).
+* Atributos: tipoMovimiento (entrada/salida), cantidad, fechaHora.
+* Métodos: esEntrada(), esSalida().
+
+**StockAggregate (Aggregate):** Agrupa el inventario y los movimientos de stock, asegurando consistencia en las actualizaciones.
+* Atributos: inventario, listaMovimientos.
+* Métodos: registrarEntrada(cantidad), registrarSalida(cantidad).
+
+**StockRepository (Repository):** Define operaciones de persistencia del inventario.
+* Métodos: guardar(inventario), obtenerPorLibro(libroId), registrarMovimiento(movimiento).
+
+##### Interface Layer
+
+**StockController (Controller):** Gestiona las peticiones HTTP relacionadas con el inventario.
+* Métodos: verStock(libroId), actualizarStock(request), registrarEntrada(request), registrarSalida(request).
+
+##### Application Layer
+
+**ActualizarStockHandler (Command Handler):** Maneja el comando de modificar las existencias de un libro.
+* Métodos: handle(actualizarStockCommand).
+
+**RegistrarEntradaHandler (Command Handler):** Maneja el comando de registrar una nueva entrada de inventario.
+* Métodos: handle(registrarEntradaCommand).
+
+**RegistrarSalidaHandler (Command Handler):** Maneja el comando de registrar una salida de inventario.
+* Métodos: handle(registrarSalidaCommand).
+
+**StockActualizadoHandler (Event Handler):** Reacciona al evento de stock actualizado.
+* Métodos: onStockActualizado(event).
+
+##### Infrastructure Layer
+
+**StockRepositoryImpl (Repository Impl):** Implementa la persistencia de inventarios y la interfaz StockRepository.
+* Métodos: guardar(inventario), obtenerPorLibro(libroId), registrarMovimiento(movimiento).
+
+#### 4.7.2.8. Bounded Context: Communities
+
+##### Domain Layer
+
+**Comunidad (Entity):** Representa una comunidad dentro de la plataforma.
+* Atributos: comunidadId, nombre, descripcion, politicaVisibilidad, fechaCreacion, creadorId.
+* Métodos: cambiarNombre(nuevoNombre), cambiarDescripcion(nuevaDescripcion), actualizarPolitica(visibilidad).
+
+**Miembro (Entity):** Representa a un usuario dentro de una comunidad.
+* Atributos: comunidadId, usuarioId.
+
+**Publicacion (Entity):** Representa una publicación dentro de una comunidad.
+* Atributos: publicacionId, comunidadId, autorId, contenido, fechaHora.
+* Métodos: editarContenido(nuevoContenido), eliminarPublicacion().
+
+**Comentario (ValueObject):** Representa un comentario asociado a una publicación.
+* Atributos: comentarioId, autorId, contenido, fechaHora.
+* Métodos: esValido().
+
+**ComunidadAggregate (Aggregate):** Agrupa comunidad, miembros y publicaciones para mantener consistencia en interacciones.
+* Atributos: comunidad, listaMiembros, listaPublicaciones.
+* Métodos: agregarMiembro(usuarioId, rol), removerMiembro(usuarioId), crearPublicacion(contenido).
+
+**ComunidadRepository (Repository):** Define operaciones de persistencia sobre comunidades y sus interacciones.
+* Métodos: guardar(comunidad), obtenerPorId(comunidadId), obtenerPorUsuario(usuarioId).
+
+##### Interface Layer
+
+**ComunidadController (Controller):** Gestiona las peticiones HTTP relacionadas con comunidades.
+* Métodos: crearComunidad(request), verComunidad(comunidadId), unirseComunidad(usuarioId, comunidadId), publicar(comunidadId, request).
+
+##### Application Layer
+
+**CrearComunidadHandler (Command Handler):** Maneja el comando de creación de una nueva comunidad.
+* Métodos: handle(crearComunidadCommand).
+
+**UnirseComunidadHandler (Command Handler):** Maneja el comando de adhesión de un usuario a una comunidad.
+* Métodos: handle(unirseComunidadCommand).
+
+**PublicarHandler (Command Handler):** Maneja el comando de crear una nueva publicación en una comunidad.
+* Métodos: handle(publicarCommand).
+
+**NuevaPublicacionHandler (Event Handler):** Reacciona al evento de publicación creada (ej. notificar a miembros).
+* Métodos: onNuevaPublicacion(event).
+
+##### Infrastructure Layer
+
+**ComunidadRepositoryImpl (Repository Impl):** Implementa la persistencia de comunidades y la interfaz ComunidadRepository.
+* Métodos: guardar(comunidad), obtenerPorId(comunidadId), obtenerPorUsuario(usuarioId).
+
+## 4.8. Database Design
+
+### 4.8.1. Relational/Non-Relational Database Diagram
+
+#### 4.8.1.1. Bounded Context: Search
+
+<p align="center">
+  <img src="https://imgur.com/LILcKls.jpg" alt="12231">
+</p>
+
+Debido a la funcionalidad específica del bounded context de Search, no es necesario incluir una tabla representativa dentro de la base de datos, ya que este se basa en un algoritmo que emplea la información de la entidad “Book" para mostrar resultados relacionados a una consulta escrita por el usuario en determinado momento. En este caso, la función de búsqueda realiza comparaciones con información como el título y autor para encontrar resultados asociados, facilitando la exploración del amplio catálogo de Livria y el descubrimiento de material relevante para el usuario.
+
+
+#### 4.8.1.2. Bounded Context: Book
+
+<p align="center">
+  <img src="https://imgur.com/itCc0rF.jpg" alt="12231">
+</p>
+
+El diseño de la base de datos para el bounded context de Book se basa en la separación de sus entidades centrales libro y reseña. Esta división estratégica en las tablas Book y Review asegura que cada entidad tenga su propia responsabilidad, lo que refuerza la cohesión del dominio.
+
+La tabla Book es el corazón de este contexto. Su importancia radica en que actúa como el agregado principal y se relaciona con múltiples tablas, como UserFavoriteBooks, UserBannedBooks, y CartItem, demostrando su papel central en el ecosistema de la aplicación. Por otro lado, la tabla Review tiene un rol más específico. Se relaciona solo con las tablas UserClient y Book, lo que refleja su naturaleza simple pero vital. Una reseña solo puede ser escrita por un único usuario y está ligada a un solo libro, lo que se representa con una relación de uno a muchos, manteniendo la integridad y la coherencia de los datos.
+
+#### 4.8.1.3. Bounded Context: Recommendations
+
+<p align="center">
+  <img src="https://imgur.com/1DtnCPm.jpg" alt="12231">
+</p>
+
+Para el bounded context de Recomendaciones, existe una tabla designada en la base de datos que actúa como intermediario entre las tablas Book y UserClient. Sin embargo, la funcionalidad de este bounded context se basa en un algoritmo que obtiene información de tablas ya existentes para procesar posibles títulos de interés para un usuario en específico. Este algoritmo utiliza la información del detalle de todos los libros, un historial de compra y visualizaciones del usuario, una lista de libros marcados como “Favoritos” y “No recomendar” y la información de un usuario individual, obtenida a través de su identificador único.
+
+Los atributos de la entidad “Recommendation” son tres: una foreign key de una tabla UserClient, una lista de identificadores de libros (foreign keys de tablas Book) y un identificador único (id) debido a las propiedades del gestor de base de datos. El uso del identificador único de esta entidad no es requerido para el funcionamiento de la aplicación, por lo que fue omitido durante el diseño del diagrama de base de datos.
+
+#### 4.8.1.4. Bounded Context: Cart
+
+<p align="center">
+  <img src="https://imgur.com/F72xCNp.jpg" alt="12231">
+</p>
+
+El diseño de la base de datos para el bounded context de Cart se basa en la división de sus entidades centrales el carrito y los artículos dentro del carrito. Esta segmentación en las tablas Cart y CartItem es fundamental para reflejar la lógica de negocio de la compra. La tabla Cart actúa como el contenedor principal que representa el carrito de un usuario, mientras que la tabla CartItem almacena los libros específicos y sus detalles de compra. Esta separación es clave para mantener la cohesión del dominio, permitiendo una gestión eficiente y autónoma del proceso de compra.
+
+La relación entre las tablas Cart y CartItem es de uno a muchos. Un carrito de compras puede contener múltiples artículos, pero cada artículo pertenece a un único carrito. Esta relación es crucial para reflejar con precisión la cantidad de libros agregados a un carrito de compra específico.
+
+#### 4.8.1.5. Bounded Context: Profile
+
+<p align="center">
+  <img src="https://imgur.com/evVrQGi.jpg" alt="12231">
+</p>
+
+El diseño de la base de datos para el bounded context de Profile se basa en la separación de las entidades UserClient y Preferences. La tabla UserClient encapsula el perfil público del usuario, mientras que la tabla Preferences funciona como un value object, conteniendo atributos que, aunque son cruciales, no requieren una identidad propia. Esta segmentación es fundamental para la cohesión del dominio, asegurando que la información de perfil y las preferencias de configuración se gestionen de manera eficiente y autónoma.
+
+La tabla UserClient es fundamental para el negocio, ya que representa la identidad del usuario y actúa como el centro de diversas funcionalidades clave. Su rol es crucial al interactuar con tablas como Order, Cart y la tabla intermedia de Comunidades, lo que demuestra su participación en los flujos de negocio más importantes de la plataforma. La relación de uno a uno con la tabla Preferences se ha diseñado intencionalmente, ya que Preferences funciona como un value object que encapsula la configuración personal del usuario sin requerir una identidad propia.
+
+#### 4.8.1.6. Bounded Context: Orders
+
+<p align="center">
+  <img src="https://imgur.com/4pJf81f.jpg" alt="12231">
+</p>
+
+El diseño de la base de datos para el bounded context de Órdenes se fundamenta en la distinción clara entre la orden en sí y los artículos que la componen. Esta segmentación en las tablas Order y OrderItem es esencial para modelar la naturaleza inmutable de una transacción finalizada. La tabla Order actúa como un agregado raíz que encapsula la información de la compra completa, mientras que OrderItem almacena los detalles específicos de cada libro adquirido. Esta separación asegura la cohesión del dominio y la integridad de los datos de la transacción.
+
+La tabla Order mantiene una relación de uno a muchos con la tabla OrderItem. Esta conexión es fundamental, ya que una orden puede contener uno o varios artículos, pero cada artículo pertenece a una sola orden. Por otro lado, la decisión de no relacionar directamente Order con Cart se alinea con una arquitectura orientada a eventos. El Carrito es una entidad temporal y mutable que representa una intención de compra. Una vez que se confirma la transacción, la orden se convierte en una entidad inmutable y permanente. Así, la orden se crea a partir del contenido del carrito, pero no depende de su existencia posterior. Este enfoque asegura la cohesión de cada dominio y evita dependencias innecesarias, lo que hace que el sistema sea más robusto y fácil de mantener.
+
+#### 4.8.1.7. Bounded Context: Stock
+
+<p align="center">
+  <img src="https://imgur.com/Xa6HYxx.jpg" alt="12231">
+</p>
+
+El bounded context de Stock no presenta tablas dentro de la base de datos debido a su funcionamiento específico, que utiliza la información contenida en tablas ya existentes, como Book y Order, para mostrar datos relevantes dentro de la vista de administrador tras una verificación exitosa (inicio de sesión de administrador). En el caso de esta funcionalidad, se muestran datos como la cantidad de libros en el inventario (atributo “stock” de la tabla Book) en una lista que permite una visualización rápida de sus detalles (atributos “title”, “cover” y “price”), lo que facilita el uso de la vista del administrador y optimiza los procesos de análisis de inventario.
+
+#### 4.8.1.8. Bounded Context: Communities
+
+<p align="center">
+  <img src="https://imgur.com/4dhzi4m.jpg" alt="12231">
+</p>
+
+El diseño de base de datos para el bounded context de Communities se basa en la segmentación de sus entidades clave en las tablas Community, UserCommunity, Post y Comment. Esta separación es crucial para la cohesión del dominio, ya que permite que cada entidad sea gestionada de manera autónoma, reflejando la complejidad del aspecto social del negocio de Livria. La tabla UserCommunity actúa como una tabla intermedia que resuelve la relación de muchos a muchos entre usuarios y comunidades, mientras que Post y Comment se relacionan con sus respectivos agregados y usuarios a través de claves foráneas, garantizando que el ecosistema social opere con integridad y eficiencia.
 
 ---
 
@@ -2592,6 +3355,62 @@ Link al prototipo interactivo: [https://www.figma.com/proto/eKCqZoU0IF7n3wNTA8ku
 
 ### 5.1.1. Software Development Environment Configuration
 
+#### Project Management
+
+Jira:  
+    Jira Software, una herramienta de gestión de proyectos ágiles desarrollada por Atlassian, fue seleccionada como herramienta de gestión de proyecto por su excelente compatibilidad con metodologías como Scrum o Kanban. Su propósito central es facilitar la planificación, organización y el seguimiento colaborativo del trabajo, ofreciendo funcionalidades esenciales como la gestión del backlog, la planificación detallada de sprints y el monitoreo del progreso en tiempo real mediante tableros personalizables. Para el proyecto de Livria, la utilidad de Jira es clave al permitir modelar el flujo de trabajo ágil, utilizándose específicamente para la gestión de Sprints y el manejo exhaustivo de las Historias de Usuario (User Stories) de la aplicación móvil, asegurando que el desarrollo de la aplicación móvil y sus funcionalidades se alinee consistentemente con los objetivos del producto y facilite la optimización continua del trabajo en equipo.  
+     
+    [https://www.atlassian.com/es/software/jira](https://www.atlassian.com/es/software/jira)
+<p align="center">
+  <img src="https://i.imgur.com/hL6B3qm.png" alt="12171">
+</p>
+
+#### Product UX/UI Design
+
+Figma  
+    Para el diseño de la Experiencia de Usuario (UX) y la Interfaz de Usuario (UI), se ha seleccionado Figma, una poderosa herramienta de diseño colaborativo que opera completamente en línea. Su propósito principal es permitir la creación, diseño y prototipado interactivo de las interfaces, facilitando una colaboración fluida y en tiempo real entre diseñadores y desarrolladores. Figma es altamente eficiente en entornos ágiles porque mantiene la fuente de verdad del diseño centralizada. En el desarrollo de Livria, la utilidad de Figma se centrará en elaborar la arquitectura de la información y los mockups de alta fidelidad para la aplicación móvil. Esto asegura que la estética, usabilidad y accesibilidad del producto final se definan antes de la codificación, reduciendo retrabajos y garantizando una experiencia de usuario coherente.
+
+    [https://www.figma.com/](https://www.figma.com/)
+<p align="center">
+  <img src="https://i.imgur.com/Qm8PVh7.png" alt="12171">
+</p>
+
+#### Software Development
+
+Android Studio  
+    Para el desarrollo del frontend de la aplicación móvil de Livria, se utilizará Android Studio, el Entorno de Desarrollo Integrado (IDE) oficial proporcionado por Google, diseñado para la creación de aplicaciones nativas de Android. Su propósito es ofrecer a los desarrolladores un conjunto de herramientas completo que incluye un sistema de compilación flexible (Gradle), un emulador avanzado de dispositivos Android (AVD), potentes herramientas de debugging y plantillas de código para acelerar el desarrollo. En este proyecto, Android Studio será la plataforma principal para construir la interfaz de usuario, tanto para vistas de administrador como de usuarios de tipo cliente, asegurando la optimización y el rendimiento en el ecosistema Android.
+
+    [https://developer.android.com/studio?hl=es-419](https://developer.android.com/studio?hl=es-419)
+<p align="center">
+  <img src="https://i.imgur.com/p9S4yaj.png" alt="12171">
+</p>
+
+ Rider  
+    Complementando el frontend, el Backend del proyecto será desarrollado y gestionado utilizando Rider, el IDE multiplataforma de JetBrains orientado a proyectos .NET y web. Rider es la herramienta escogida por su compatibilidad con ASP.NET Core y sus sólidas funcionalidades de integración con bases de datos, lo que lo hace ideal para construir una API robusta y escalable. Su utilidad en Livria radica en el desarrollo de la lógica de negocio central, la gestión de la autenticación de usuarios y el manejo de los endpoints que conectarán la aplicación Android con la base de datos propia del proyecto, garantizando un desarrollo eficiente y con un alto nivel de refactorización de código.  
+     
+    [https://www.jetbrains.com/rider/](https://www.jetbrains.com/rider/)
+<p align="center">
+  <img src="https://i.imgur.com/1vjtPzR.png" alt="12171">
+</p>
+
+#### Software Deployment 
+
+ Firebase  
+    Para el soporte de la infraestructura de la aplicación móvil, se utilizará Firebase, una plataforma de desarrollo de aplicaciones móviles y web respaldada por Google. Aunque el backend principal está desarrollado en Rider, Firebase proporciona un ecosistema de servicios clave para la aplicación Android. Su propósito principal es ofrecer herramientas de monitoreo de rendimiento y estabilidad (Crashlytics), servicios de mensajería push (FCM), y configuraciones dinámicas (Remote Config). En Livria, la utilidad de Firebase garantizará que el rendimiento de las funciones críticas, como las transacciones de la tienda y las interacciones de la comunidad, pueda ser supervisado y gestionado de manera eficiente tras el lanzamiento.  
+    
+    [https://firebase.google.com/?hl=es-419](https://firebase.google.com/?hl=es-419)
+<p align="center">
+  <img src="https://i.imgur.com/DlRwQDc.png" alt="12171">
+</p>
+
+  Google Play Console:
+    El proceso final de publicación y distribución de la aplicación móvil de Livria se llevará a cabo a través de Google Play Console. Esta es la plataforma oficial de Google para que los desarrolladores gestionen, publiquen y actualicen sus aplicaciones en la Google Play Store. Su propósito es funcionar como el canal de deployment directo al usuario final, proporcionando herramientas esenciales para la gestión de lanzamientos, pruebas beta, precios y la recopilación de métricas de instalación. La Console será fundamental para que el equipo logre una distribución controlada de las versiones de la aplicación, asegurando que las funcionalidades desarrolladas lleguen a los usuarios de Android de manera segura y gestionada.  
+     
+    [https://developer.android.com/distribute/console?hl=es-419](https://developer.android.com/distribute/console?hl=es-419) 
+<p align="center">
+  <img src="https://i.imgur.com/j3ISZ5H.png" alt="12171">
+</p>
+
 ### 5.1.2. Source Code Management
 
 La gestión del código fuente es fundamental para el desarrollo colaborativo de cualquier proyecto de software. En esta sección, el equipo establece el esquema de organización y control de versiones que aplicará para el seguimiento de modificaciones, utilizando GitHub como plataforma y sistema. Para ello, se empleará el modelo GitFlow y se definirán convenciones claras para nombres de ramas y mensajes de commits, además de usar Semantic Versioning para las versiones del proyecto. Esto garantizará una estructura organizada y accesible del código.
@@ -2600,7 +3419,7 @@ La gestión del código fuente es fundamental para el desarrollo colaborativo de
 
 Para optimizar la organización del código y las pruebas, se implementarán repositorios específicos en GitHub. Cada uno cumplirá una función definida dentro del desarrollo y control de calidad del proyecto, garantizando una gestión estructurada y eficiente del ciclo de trabajo.
 
-**LivriaLanding:**
+**landing**
 
 Este repositorio estará dedicado exclusivamente al desarrollo de la Landing Page de Livria. Incluirá todo el código y los recursos asociados a la interfaz inicial del proyecto, como archivos HTML, CSS, JavaScript, imágenes y demás elementos Front-End, orientados a ofrecer una presentación atractiva, funcional y coherente con la propuesta de valor de la aplicación para los visitantes.
 
@@ -2608,7 +3427,7 @@ Este repositorio estará dedicado exclusivamente al desarrollo de la Landing Pag
   <img src="https://i.imgur.com/iIrxsuJ.png" alt="12171">
 </p>
 
-**README-de-Livria:**
+**readme**
 
 Este repositorio estará destinado al almacenamiento y control de versiones del informe completo del proyecto Livria. Contendrá los documentos en formato .md vinculados al proceso de documentación, planificación y análisis del proyecto, permitiendo mantener un seguimiento estructurado y actualizado de los avances en la elaboración del informe.
 
@@ -2616,9 +3435,16 @@ Este repositorio estará destinado al almacenamiento y control de versiones del 
   <img src="https://i.imgur.com/TvfH5aY.png" alt="12171">
 </p>
 
-**LivriaAdmin:**
+**admin**
 
 Este repositorio albergará el código del Front-End de la aplicación móvil Livria. Contará con una estructura organizada por componentes, rutas, controladores y servicios, desarrollados íntegramente en Kotlin dentro de Android Studio. Representará el núcleo técnico del desarrollo funcional de la aplicación.
+
+<p align="center">
+  <img src="https://i.imgur.com/zpO9UXV.png" alt="12171">
+</p>
+
+**user**
+
 
 <p align="center">
   <img src="https://i.imgur.com/zpO9UXV.png" alt="12171">
@@ -2929,6 +3755,121 @@ class BookCard(
 * Evitar el uso innecesario de \!\! (operador de aserción nula), ya que puede provocar excepciones en el tiempo de ejecución.  
   Organizar el código por paquetes según su responsabilidad (por ejemplo: ui, data, domain, utils).
 
+**FLUTTER (DART)**
+
+**Convenciones de Formato**
+
+* Utilizar 2 espacios para la indentación.
+* Utilizar comas finales (trailing commas) en argumentos de funciones y constructores de Widgets para facilitar el formateo automático y la lectura.
+* Colocar la llave de apertura `{` en la misma línea que la declaración.
+* Limitar las líneas a un máximo de 80 caracteres para mejorar la legibilidad en pantallas divididas.
+
+**Ejemplo general:**
+
+```dart
+class BookListScreen extends StatelessWidget {
+  const BookListScreen({super.key, required this.books});
+
+  final List<Book> books;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Livria Catalog'),
+      ),
+      body: ListView.builder(
+        itemCount: books.length,
+        itemBuilder: (context, index) {
+          return BookTile(book: books[index]);
+        },
+      ),
+    );
+  }
+}
+```
+
+**Convenciones de Nomenclatura**
+
+* **Clases y Mixins:** Usar PascalCase.
+  Ejemplo: `OrderService`, `UserWidget`.
+* **Variables, Funciones y Parámetros:** Usar camelCase.
+  Ejemplo: `calculateTotal`, `isAvailable`.
+* **Archivos y Directorios:** Usar snake_case.
+  Ejemplo: `main_screen.dart`, `order_repository_impl.dart`.
+* **Extensiones:** Usar PascalCase.
+  Ejemplo: `StringExtensions`.
+* **Constantes:** Usar camelCase.
+  Ejemplo: `maxItemsCount`.
+
+**Buenas Prácticas**
+
+* Utilizar `const` en los constructores de Widgets siempre que sea posible para optimizar el rendimiento del renderizado.
+* Preferir el uso de `final` para variables que no serán reasignadas después de su inicialización.
+* Evitar el uso de "Magic Numbers"; definir constantes con nombres descriptivos.
+* Dividir Widgets grandes en sub-widgets más pequeños y reutilizables para mantener el principio de responsabilidad única.
+* Utilizar el operador de nulidad de Dart (`?`, `??`, `?.`) para manejar de forma segura los valores nulos.
+
+---
+
+**C# (.NET)**
+
+**Convenciones de Formato**
+
+* Utilizar 4 espacios para la indentación (estándar de Visual Studio).
+* Utilizar llaves en una nueva línea (Estilo Allman) para clases, métodos y bloques de control.
+* Incluir una línea en blanco entre métodos y propiedades.
+* Utilizar una sola instrucción por línea.
+
+**Ejemplo general:**
+
+```csharp
+namespace Livria.Api.Services
+{
+    public class OrderService : IOrderService
+    {
+        private readonly IOrderRepository _orderRepository;
+
+        public OrderService(IOrderRepository orderRepository)
+        {
+            _orderRepository = orderRepository;
+        }
+
+        public async Task<OrderResponse> ProcessOrderAsync(OrderRequest request)
+        {
+            if (request == null)
+            {
+                throw new ArgumentNullException(nameof(request));
+            }
+
+            var order = await _orderRepository.AddAsync(request.ToEntity());
+            return OrderResponse.FromEntity(order);
+        }
+    }
+}
+```
+
+**Convenciones de Nomenclatura**
+
+* **Clases, Métodos y Propiedades Públicas:** Usar PascalCase.
+  Ejemplo: `GetOrders`, `CustomerRepository`.
+* **Interfaces:** Usar PascalCase con el prefijo "I".
+  Ejemplo: `IBookService`, `IRepository`.
+* **Variables Locales y Parámetros:** Usar camelCase.
+  Ejemplo: `orderId`, `totalPrice`.
+* **Campos Privados (Private Fields):** Usar camelCase con prefijo de guion bajo (`_`).
+  Ejemplo: `_dbContext`, `_isInitialized`.
+* **Constantes:** Usar PascalCase (recomendado por Microsoft) o UPPER_SNAKE_CASE en configuraciones específicas.
+
+**Buenas Prácticas**
+
+* Utilizar `async` y `await` para todas las operaciones de entrada/salida (I/O) para evitar el bloqueo de hilos.
+* Preferir el uso de `var` cuando el tipo de la variable sea evidente en el lado derecho de la asignación.
+* Aplicar Inyección de Dependencias para desacoplar componentes y facilitar las pruebas unitarias.
+* Utilizar LINQ para operaciones de consulta y manipulación de colecciones de forma declarativa.
+* Manejar excepciones de forma específica, evitando bloques `catch (Exception e)` genéricos a menos que sea para logging en el nivel superior.
+* Seguir los principios SOLID para garantizar una arquitectura robusta y escalable.
+
 ### 5.1.4. Software Deployment Configuration
 
 La estrategia de despliegue de Livria implementa una arquitectura basada en la nube que maximiza la eficiencia operativa, la escalabilidad y la distribución multicanal de sus productos digitales. Esta configuración es híbrida, utilizando Microsoft Azure para los Web Services críticos y plataformas especializadas (GitHub Pages y Firebase) para la distribución de *front-end* y aplicaciones móviles, como se ilustra en el Deployment Diagram adjunto.
@@ -2996,58 +3937,519 @@ Pasos del Proceso de Despliegue
 
 ## 5.2. Product Implementation & Deployment
 
-### 5.2.1. Sprint 1
+### 5.2.1. Sprint Backlogs
 
-#### 5.2.1.1. Sprint Planning 1
+#### 5.2.1.1 Sprint  1
 
-| Sprint # | Sprint 1 |
-|----------|----------|
-| **Sprint Planning Background** | |
-| Date | YYYY-MM-DD |
-| Time | HH:MM AM/PM |
-| Location | |
-| Prepared By | |
-| Attendees (to planning meeting) | |
-| Sprint 0 Review Summary | |
-| Sprint 0 Retrospective Summary | |
-| **Sprint Goal & User Stories** | |
-| Sprint 1 Goal | |
-| Sprint 1 Velocity | |
-| Sum of Story Points | |
+##### Sprint Planning 1
 
-#### 5.2.1.2. Aspect Leaders and Collaborators
+| Sprint \# | Sprint 1 |
+| :---- | :---- |
+| **Sprint Planning Background** |  |
+| Date | 05/10/2025 |
+| Time | 3:30 PM |
+| Location | Virtual |
+| Prepared by | Ainhoa Lucía Castillo Garay, Cassius Estefano Martel Andrade |
+| Attendees (to planning meeting) | Ainhoa Lucía Castillo Garay / Marcelo Alejandro Binda Arbañil / Cassius Estefano Martel Andrade / Alex Tomio Nakamurakare Teruya / Gabriel Sebastián Borja Molina |
+| **Sprint Goal & User Stories** |  |
+| Sprint 1 Goal | Our focus is on delivering the foundational components of the Livria platform: a complete, visually engaging and interactive Landing Page, a functional core API service (backend) with Swagger documentation, and an initial mobile user experience preview (frontend) featuring an interactive prototype with core screens. We believe it delivers a strong foundation of clarity and trust to potential users and collaborators by clearly articulating Livria's purpose, demonstrating its core backend capabilities, and providing an early visualization of the mobile experience. This will be confirmed when an internal user can successfully navigate through all sections of the landing page like “About Us” and “Contact Us”, access the Swagger documentation to review all specified endpoints, and interact with the simulated user flows on the frontend mobile screens. |
+| Sprint 1 Velocity | 45 |
+| Sum of Story Points | 40 |
 
-| Team Member (Last Name, First Name) | GitHub Username | [Aspecto 1] L/C | [Aspecto 2] L/C | [Aspecto n] L/C |
-|-------------------------------------|-----------------|-----------------|-----------------|-----------------|
-| | | | | |
+##### Sprint Backlog 1
 
-#### 5.2.1.3. Sprint Backlog 1
+| Sprint n | Sprint 1 | | | | | | |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **User Story** | **Work-Item / Task** | | | | | | |
+| **User Story ID** | **Id** | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** | |
+| **US01: Presentar Servicios de Livria** | | | | | | | |
+| | 1 | Diseño UI de Sección Servicios – Wireframe | Crear el wireframe inicial de la sección de Servicios considerando disposición y jerarquía visual. | 1 | Developer Team | Done |
+| | 2 | Diseño UI de Sección Servicios – Versión Visual | Diseñar la versión final con estilos, colores e iconografía para presentar los servicios. | 1 | Developer Team | Done |
+| | 3 | Desarrollo Componentes UI de Servicios | Implementar los componentes visuales reutilizables para mostrar los servicios en la Landing Page. | 1.5 | Developer Team | Done |
+| | 4 | Integración de Contenido | Incorporar los textos descriptivos finales y asegurar correcta visualización responsiva. | 0.5 | Developer Team | Done |
+| **US02: Acceder a la sección “Sobre Nosotros”** | | | | | | | |
+| | 1 | Diseño de la Sección "Sobre Nosotros" | Definir la estructura y organización del contenido que mostrará la información del equipo y misión. | 1 | Developer Team | Done |
+| | 2 | Maquetación de la Sección "Sobre Nosotros" | Implementar la estructura visual de la sección respetando el diseño aprobado. | 1.5 | Developer Team | Done |
+| | 3 | Integración de Assets | Incorporar imágenes o ilustraciones aprobadas que complementen el contenido de la sección. | 0.5 | Developer Team | Done |
+| **US03: Cambiar de idioma en la Landing Page** | | | | | | | |
+| | 1 | Configuración de Internacionalización | Configurar el sistema de internacionalización para permitir múltiples idiomas en la Landing Page. | 1.5 | Developer Team | Done |
+| | 2 | Estructura de Archivos de Traducción | Crear la estructura base para los archivos de traducción con claves organizadas. | 1 | Developer Team | Done |
+| | 3 | Contenido de Traducción ES/EN | Redactar e insertar los textos de la Landing Page en español e inglés. | 2.5 | Developer Team | Done |
+| | 4 | Implementación del Selector de Idioma | Implementar el componente que permite cambiar el idioma desde el header. | 2 | Developer Team | Done |
+| | 5 | Aplicación del Cambio de Idioma | Asegurar que todos los textos cambien correctamente al idioma seleccionado. | 1 | Developer Team | Done |
+| **US04: Visualizar la sección “Home” en la landing page** | | | | | | | |
+| | 1 | Diseño de la Hero Section | Definir el contenido, estructura y elementos visuales de la sección principal. | 1 | Developer Team | Done |
+| | 2 | Implementación de la Hero Section | Desarrollar la sección principal con su mensaje clave y CTA. | 2 | Developer Team | Done |
+| | 3 | Navegación al Home | Configurar el logo y el enlace del menú para retornar al inicio con desplazamiento fluido. | 1 | Developer Team | Done |
+| **US05: Acceder a la sección “Contáctanos”** | | | | | | | |
+| | 1 | Maquetación del Formulario | Crear la estructura visual con campos: nombre, correo y mensaje. | 2 | Developer Team | Done |
+| | 2 | Validación y Lógica de Envío (Frontend) | Implementar validaciones básicas de campos y manejo del envío del formulario. | 2 | Developer Team | Done |
+| **US06: Navegar de manera simple entre secciones** | | | | | | | |
+| | 1 | Estructura Base del Navbar | Crear la estructura del navbar con enlaces ancla a secciones. | 2 | Developer Team | Done |
+| | 2 | Comportamiento Sticky y Scroll Suave | Implementar navbar fijo y desplazamiento suave hacia secciones. | 2 | Developer Team | Done |
+| | 3 | Versión Mobile del Navbar | Adaptar el menú para mobile e incluir menú hamburguesa. | 2 | Developer Team | Done |
+| | 4 | Accesibilidad y Pruebas UX | Asegurar correcto tabbing, contraste y testear navegación. | 1 | Developer Team | Done |
+| **US07: Ver un diseño atractivo de la landing page** | | | | | | | |
+| | 1 | Definición de Tema Global | Configurar variables globales (colores, tipografías, tamaños) para la UI. | 2 | Developer Team | Done |
+| | 2 | Estilos de Componentes Base | Aplicar el tema a componentes principales (botones, títulos, secciones). | 2 | Developer Team | Done |
+| | 3 | Ajustes de UX/UI y Microinteracciones | Refinar espaciados, contraste y animaciones sutiles según el diseño. | 2 | Developer Team | Done |
+| **US08: Redirigir a la descarga de la aplicación móvil** | | | | | | | |
+| | 1 | Diseño e Implementación de Botones de Descarga | Crear e integrar los botones App Store y Google Play siguiendo sus guías oficiales. | 1.5 | Developer Team | Done |
+| | 2 | Configuración de Enlaces a Tiendas | Añadir las URLs oficiales de descarga a cada botón. | 0.5 | Developer Team | Done |
+| | 3 | Validación y Comprobación de Redirecciones | Probar que ambos botones redirigen correctamente en dispositivos web y móviles. | 0.5 | Developer Team | Done |
+| **US09: Acceder a las redes sociales de Livria** | | | | | | | |
+| | 1 | UI de Íconos Sociales | Diseñar y maquetar el conjunto de íconos de redes sociales acorde a la identidad visual. | 0.5 | Developer Team | Done |
+| | 2 | Implementación del Componente Social Links | Crear el componente e insertar los íconos en el footer u ubicación definida. | 0.5 | Developer Team | Done |
+| | 3 | Integración de Enlaces a Redes | Configurar los enlaces a las redes sociales oficiales de Livria. | 0.5 | Developer Team | Done |
+| **US10: Navegar en el footer de la Landing Page** | | | | | | | |
+| | 1 | Maquetación del Footer | Estructurar el layout del pie de página con secciones definidas (links, info legal, contacto). | 1 | Developer Team | Done |
+| | 2 | Mapa de Sitio Secundario | Añadir y organizar los enlaces de navegación dentro del footer. | 0.5 | Developer Team | Done |
+| | 3 | Ajustes de Estilos y Responsive Footer | Aplicar estilos y asegurar correcta visualización en dispositivos móviles. | 0.5 | Developer Team | Done |
+| **US11: Enviar un mensaje al equipo de Livria** | | | | | | | |
+| | 1 | Endpoint de Contacto (Backend) | Crear un endpoint para recibir datos del formulario y procesar el mensaje (ej. enviar email). | 3 | Developer Team | Done |
+| | 2 | Lógica de Procesamiento del Mensaje | Implementar validaciones y el envío del correo o almacenamiento temporal. | 1 | Developer Team | Done |
+| | 3 | Integración Frontend-Backend | Conectar el formulario de la Landing Page con el endpoint, manejando estados de carga y error. | 1.5 | Developer Team | Done |
+| | 4 | Mensajes de Confirmación/Feedback | Mostrar al usuario notificaciones de éxito o error después del envío. | 0.5 | Developer Team | Done |
+| **TS15: Registrar una cuenta con control y seguridad (Admin)**| | | | | | | |
+| | 1 | Modelo de Usuario Admin | Definir el esquema de base de datos para usuarios con rol administrador y campos de seguridad. | 1.5 | Developer Team | Done |
+| | 2 | Reglas de Seguridad del Modelo | Añadir validaciones, hashing de contraseña y restricciones de acceso. | 0.5 | Developer Team | Done |
+| | 3 | Endpoint de Login Admin | Implementar la API de autenticación segura para administradores. | 2.5 | Developer Team | Done |
+| | 4 | Gestión de Sesiones / JWT | Configurar expiración, refresh tokens o sesión segura según el método elegido. | 1.5 | Developer Team | Done |
+| | 5 | Interfaz de Login Admin | Desarrollar la pantalla de inicio de sesión exclusiva para el área administrativa. | 2.5 | Developer Team | Done |
+| | 6 | Validaciones y Feedback UI | Agregar manejo de errores, mensajes de credenciales inválidas y estados de carga. | 0.5 | Developer Team | Done |
+| **TS01: Acceder rápido a las secciones del sistema (Dashboard)**| | | | | | | |
+| | 1 | Layout Principal Admin | Crear la estructura base del dashboard (Sidebar + área de contenido principal). | 3 | Developer Team | Done |
+| | 2 | Estilos y Responsividad del Layout | Ajustar el diseño para que el layout funcione correctamente en distintas resoluciones. | 2 | Developer Team | Done |
+| | 3 | Routing de Administración | Configurar las rutas privadas que requieren autenticación de administrador. | 1.5 | Developer Team | Done |
+| | 4 | Protección de Rutas con Guardia | Validar sesión/rol antes de permitir acceso a rutas administrativas. | 0.5 | Developer Team | Done |
+| **TS12: Gestionar la configuración del perfil (Admin)** | | | | | | | |
+| | 1 | Vista de Perfil Admin | Crear la pantalla para visualizar los datos del administrador actual. | 2 | Developer Team | Done |
+| | 2 | Formulario de Edición de Perfil | Implementar formulario para modificar datos básicos (nombre, email, etc.). | 1.5 | Developer Team | Done |
+| | 3 | Endpoint de Actualización Perfil | API para permitir al administrador cambiar sus datos básicos. | 1.5 | Developer Team | Done |
+| **TS13: Gestionar la configuración de la aplicación (Admin)** | | | | | | | |
+| | 1 | Vista de Settings Globales | Crear la interfaz con toggles/inputs para las configuraciones globales (ej. notificaciones). | 3 | Developer Team | Done |
+| | 2 | Lógica de Settings en Frontend | Conectar los toggles/inputs con el estado y validaciones de la app. | 1 | Developer Team | Done |
+| | 3 | Persistencia de Configuración | Implementar el guardado de estas preferencias en base de datos o local storage según corresponda. | 3 | Developer Team | Done |
+| **TS10: Añadir un libro al inventario (Admin)** | | | | | | | |
+| | 1 | Modelo de Datos Libro | Definir el esquema completo de la base de datos para los libros (título, autor, precio, stock, etc.). | 3 | Developer Team | Done |
+| | 2 | Formulario de Creación de Libro (UI) | Desarrollar la interfaz para ingresar los datos de un nuevo libro. | 3 | Developer Team | Done |
+| | 3 | Validaciones del Formulario | Agregar validaciones de campos obligatorios y formatos (ej: precio numérico). | 2 | Developer Team | Done |
+| | 4 | Endpoint de Creación (API) | Implementar la lógica de backend para validar y guardar un nuevo libro en la BD. | 4 | Developer Team | Done |
+| **TS09: Visualizar libros en el inventario (Admin)** | | | | | | | |
+| | 1 | Tabla de Inventario UI | Crear el componente de tabla para listar los libros con sus datos principales. | 2.5 | Developer Team | Done |
+| | 2 | Endpoint de Listado (API) | API para obtener la lista paginada de libros desde la base de datos. | 3 | Developer Team | Done |
+| **TS04: Visualizar detalles completos de un libro (Admin)** | | | | | | | |
+| | 1 | Vista de Detalle de Libro | Crear la pantalla que muestra toda la información extendida de un libro seleccionado. | 2 | Developer Team | Done |
+| | 2 | Sección de Información Adicional | Incluir en la vista datos complementarios (descripción, categoría, reseñas, etc.). | 1 | Developer Team | Done |
+| | 3 | Navegación a Detalle | Configurar la tabla de inventario para navegar a esta vista al seleccionar un libro. | 1 | Developer Team | Done |
+| **TS08: Buscar y filtrar libros en el Inventario (Admin)** | | | | | | | |
+| | 1 | Componentes de Filtro UI | Implementar barras de búsqueda y dropdowns de filtro en la vista de inventario. | 2 | Developer Team | Done |
+| | 2 | Integración de Filtros Frontend | Conectar los componentes UI con el listado aplicando filtros y búsqueda en tiempo real. | 1.5 | Developer Team | Done |
+| | 3 | Lógica de Filtrado (Backend) | Actualizar el endpoint de listado para aceptar parámetros de búsqueda y filtrado. | 2 | Developer Team | Done |
+| **TS07: Visualizar una tabla con detalles de las órdenes (Admin)**| | | | | | | |
+| | 1 | Modelo de Datos Orden | Definir el esquema básico para las órdenes de compra en la base de datos. | 1.5 | Developer Team | Done |
+| | 2 | Endpoint de Listado de Órdenes | Implementar la API para obtener el listado de órdenes desde la BD. | 1.5 | Developer Team | Done |
+| | 3 | Tabla de Órdenes UI | Crear la vista para listar las órdenes recibidas con sus datos principales. | 2 | Developer Team | Done |
+| **TS06: Buscar y filtrar de órdenes (Admin)** | | | | | | | |
+| | 1 | Filtros de Órdenes UI | Añadir campos de búsqueda y filtros de estado en la vista de órdenes. | 1.5 | Developer Team | Done |
+| | 2 | Lógica de Filtrado UI | Implementar la lógica para aplicar filtros y actualizar la tabla desde el frontend. | 1.5 | Developer Team | Done |
+| | 3 | API de Órdenes con Filtros | Implementar endpoint para obtener y filtrar órdenes por criterios (ID, cliente, estado). | 2 | Developer Team | Done |
+| **TS02: Visualizar estadísticas de libros (Admin)** | | | | | | | |
+| | 1 | Endpoint de Stats Libros | Crear consultas a BD para obtener conteos totales, stock total, etc. | 2 | Developer Team | Done |
+| | 2 | Lógica de Cálculo de Stats | Procesar los datos obtenidos para devolver métricas listas para mostrar. | 1 | Developer Team | Done |
+| | 3 | Widgets de Estadísticas UI | Crear componentes visuales (tarjetas numéricas) para mostrar estos datos en el Dashboard. | 2 | Developer Team | Done |
+| **TS05: Visualizar estadísticas y análisis de órdenes (Admin)** | | | | | | | |
+| | 1 | Endpoint de Stats Órdenes | Crear consultas a BD para obtener total de ventas, ingresos, órdenes pendientes. | 2 | Developer Team | Done |
+| | 2 | Lógica de Cálculo de Stats Órdenes | Procesar los datos para obtener métricas listas para presentar. | 1 | Developer Team | Done |
+| | 3 | Integración en Dashboard | Añadir estos widgets de estadísticas a la vista principal del Dashboard. | 1 | Developer Team | Done |
+| **TS11: Visualizar estadísticas de negocio (Admin)** | | | | | | | |
+| | 1 | Endpoint de Análisis Negocio | Consultas para obtener "Top vendidos", ganancias por género, etc. | 2.5 | Developer Team | Done |
+| | 2 | Lógica de Análisis de Datos | Procesar y estructurar los datos analíticos para visualización. | 1.5 | Developer Team | Done |
+| | 3 | Gráficos UI | Implementar librería de gráficos para visualizar estos datos. | 1 | Developer Team | Done |
 
-| Sprint # | Sprint 1 | | | | | | |
-|----------|----------|-|-|-|-|-|-|
-| **User Story** | | **Work-Item / Task** | | | | | |
-| Id | Title | Id | Title | Description | Estimation (Hours) | Assigned To | Status |
-| US01 | | T01 | | | | | To-do |
+#### 5.2.1.1 Sprint  2
 
-#### 5.2.1.4. Development Evidence for Sprint Review
+##### Sprint Planning 2
 
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
-|------------|--------|-----------|----------------|---------------------|---------------------|
-| | | | | | |
+| Sprint \# | Sprint 2 |
+| :---- | :---- |
+| **Sprint Planning Background** |  |
+| Date | 30/10/2025 |
+| Time | 1:30 PM |
+| Location | Virtual |
+| Prepared by | Gabriel Sebastián Borja Molina, Marcelo Alejandro Binda Arbañil, Cassius Estefano Martel Andrade |
+| Attendees (to planning meeting) | Ainhoa Lucía Castillo Garay / Marcelo Alejandro Binda Arbañil / Cassius Estefano Martel Andrade / Alex Tomio Nakamurakare Teruya / Gabriel Sebastián Borja Molina |
+| **Sprint Goal & User Stories** |  |
+| Sprint 2 Goal | Our primary objective for Sprint 2 is to deliver the core user lifecycle and social interaction features of the Livria application. This involves implementing secure authentication flows (register/login/logout), enabling content discovery through personalized recommendations, advanced search, and filtering, and launching the foundational 'Communities' features. The success of this Sprint will be validated when a user can successfully create an account, log in, find books matching their interests, join literary communities, and create posts within them. This establishes the functional base for user retention and engagement. |
+| Sprint 2 Velocity | 30 |
+| Sum of Story Points | 28 |
 
-#### 5.2.1.5. Testing Suite Evidence for Sprint Review
+##### Sprint Backlog 2
 
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
-|------------|--------|-----------|----------------|---------------------|---------------------|
-| | | | | | |
+| Sprint n | Sprint 2 | | | | | | |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **User Story** | **Work-Item / Task** | | | | | | |
+| **User Story ID** | **Id** | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** | |
+| **US15: Registrar un usuario e iniciar sesión** | | | | | | | |
+| | 1 | Diseño UI Pantallas Auth | Crear las vistas de Registro e Inicio de Sesión siguiendo las guías de diseño. | 1.5 | Developer Team | Done |
+| | 2 | Validaciones UI de Formularios | Implementar validación de campos en cliente (email, contraseñas, errores). | 1.5 | Developer Team | Done |
+| | 3 | Endpoint de Registro de Usuario | Implementar la API para crear nuevas cuentas de lector con validación de datos. | 2 | Developer Team | Done |
+| | 4 | Endpoint de Autenticación (Login) | Implementar la API que valida credenciales y devuelve tokens de sesión seguros (JWT). | 2 | Developer Team | Done |
+| | 5 | Integración Auth en Frontend | Conectar los formularios con los endpoints y gestionar estado de sesión. | 2 | Developer Team | Done |
+| **US17: Cerrar sesión** | | | | | | | |
+| | 1 | Lógica de Logout (Frontend) | Implementar la función que elimina el token de sesión y redirige al usuario al inicio. | 0.5 | Developer Team | Done |
+| | 2 | Limpieza de Estado Local | Asegurar que se limpien datos del usuario almacenados (storage, cache, context). | 0.5 | Developer Team | Done |
+| | 3 | Endpoint de Invalidación de Sesión | (Opcional según arquitectura) API para invalidar el token actual en el servidor. | 1 | Developer Team | Done |
+| **US16: Visualizar recomendaciones en la plataforma** | | | | | | | |
+| | 1 | Diseño UI Sección Recomendaciones | Crear el componente visual (carrusel/grilla) para mostrar los libros recomendados en el Home. | 2 | Developer Team | Done |
+| | 2 | Adaptación Responsive del Componente | Ajustar el componente de recomendaciones para móviles, tablet y desktop. | 1 | Developer Team | Done |
+| | 3 | Endpoint de Recomendaciones Iniciales | Implementar API que devuelve un conjunto de libros populares o aleatorios para usuarios nuevos. | 2 | Developer Team | Done |
+| | 4 | Vista de Detalle de Libro | Crear la pantalla pública con la info del libro, precio y botón de compra. | 2 | Developer Team | Done |
+| | 5 | Integración de Recomendaciones con Detalle | Conectar la sección de recomendaciones con la vista de detalle del libro seleccionado. | 1 | Developer Team | Done |
+| **US12: Interactuar con recomendaciones** | | | | | | | |
+| | 1 | Componentes de Interacción UI | Añadir botones de "Me interesa" / "No me interesa" en las tarjetas de libros. | 1 | Developer Team | Done |
+| | 2 | Feedback Visual de Interacción | Mostrar cambio visual inmediato al usuario cuando marca un libro como "Me interesa" o "No me interesa". | 1 | Developer Team | Done |
+| | 3 | Endpoint de Registro de Preferencias | API para recibir y guardar la interacción del usuario con un libro específico. | 1 | Developer Team | Done |
+| | 4 | Lógica Básica de Recomendación | Actualizar el endpoint de recomendaciones para filtrar libros marcados como "No me interesa". | 2 | Developer Team | Done |
+| | 5 | Integración Frontend-Backend | Conectar los botones de interacción con el endpoint para que la acción tenga efecto real. | 2 | Developer Team | Done |
+| **US19: Gestionar comunidades** | | | | | | | |
+| | 1 | Diseño UI Lista de Comunidades | Crear la vista principal donde el usuario puede explorar y buscar comunidades existentes. | 2 | Developer Team | Done |
+| | 2 | Endpoint de Listado de Comunidades | API para obtener las comunidades disponibles, con soporte básico de paginación. | 1 | Developer Team | Done |
+| | 3 | Botón "Unirse a Comunidad" | Crear el componente visual para unirse a una comunidad desde la lista. | 3 | Developer Team | Done |
+| | 4 | Endpoint de Unión a Comunidad | Implementar API que registre la membresía del usuario en la comunidad seleccionada. | 5 | Developer Team | Done |
+| | 5 | Lógica de Actualización UI | Refrescar la lista y estado del usuario tras unirse a una comunidad. | 3 | Developer Team | Done |
+| | 6 | Formulario de Creación de Comunidad | UI y lógica para que los usuarios puedan proponer/crear nuevas comunidades temáticas. | 2 | Developer Team | Done |
+| **US18: Crear publicaciones en comunidades** | | | | | | | |
+| | 1 | Diseño UI Muro de Comunidad | Crear la vista del feed de publicaciones dentro de una comunidad específica. | 1 | Developer Team | Done |
+| | 2 | Componente de Creación de Post | UI para escribir texto y, opcionalmente, adjuntar una imagen. | 1 | Developer Team | Done |
+| | 3 | Validaciones Frontend | Asegurar que el texto y la imagen cumplan con los límites y formatos permitidos antes de enviar. | 1 | Developer Team | Done |
+| | 4 | Endpoint de Publicaciones | API para guardar nuevas publicaciones (texto + manejo de archivo de imagen) en la base de datos. | 1 | Developer Team | Done |
+| | 5 | Integración Frontend-Backend | Conectar el formulario de creación de post con el endpoint y refrescar el feed tras publicación. | 1 | Developer Team | Done |
+| **US29: Filtrar por atributos del libro** | | | | | | | |
+| | 1 | UI de Filtros y Ordenamiento | Implementar componentes visuales (dropdowns, chips) para seleccionar género, precio, idioma, etc. | 1 | Developer Team | Done |
+| | 2 | Validación de Selección de Filtros | Asegurar que las opciones seleccionadas sean válidas antes de enviar la consulta al backend. | 0.5 | Developer Team | Done |
+| | 3 | Optimización de Endpoint de Catálogo | Actualizar la API de listado de libros para aceptar múltiples parámetros de filtrado y orden. | 0.5 | Developer Team | Done |
+| **US22: Buscar libros y contenido en la aplicación** | | | | | | | |
+| | 1 | Componente de Barra de Búsqueda | Implementar el input de búsqueda global en el encabezado de la aplicación. | 1 | Developer Team | Done |
+| | 2 | Validaciones y Sugerencias | Añadir validación de entradas y mostrar sugerencias/autocompletado según términos parciales. | 1 | Developer Team | Done |
+| | 3 | Endpoint de Búsqueda Global | Crear API que acepte un término y busque coincidencias en Títulos de Libros y Nombres de Autores. | 3 | Developer Team | Done |
+| | 4 | Paginación y Ordenamiento | Mejorar el endpoint para soportar paginación y orden de resultados. | 1 | Developer Team | Done |
+| | 5 | Página de Resultados de Búsqueda | Crear la vista para mostrar los libros que coinciden con la búsqueda del usuario. | 2 | Developer Team | Done |
 
-#### 5.2.1.6. Execution Evidence for Sprint Review
+#### 5.2.1.1 Sprint  3
 
-#### 5.2.1.7. Services Documentation Evidence for Sprint Review
+##### Sprint Planning 3
 
-#### 5.2.1.8. Software Deployment Evidence for Sprint Review
+| Sprint \# | Sprint 3 |
+| :---- | :---- |
+| **Sprint Planning Background** |  |
+| Date | 05/11/2025 |
+| Time | 3:30 PM |
+| Location | Virtual |
+| Prepared by | Gabriel Sebastián Borja Molina, Marcelo Alejandro Binda Arbañil, Cassius Estefano Martel Andrade |
+| Attendees (to planning meeting) | Ainhoa Lucía Castillo Garay / Marcelo Alejandro Binda Arbañil / Cassius Estefano Martel Andrade / Alex Tomio Nakamurakare Teruya / Gabriel Sebastián Borja Molina |
+| **Sprint Goal & User Stories** |  |
+| Sprint 3 Goal | Our primary objective for Sprint 3 is to implement the monetization and user engagement layers of the Livria application. This involves integrating a secure payment gateway for book purchases and subscription management, enabling deeper social interaction through comments and reviews, and establishing a proactive communication channel via instant notifications. The success of this Sprint will be validated when a user can successfully purchase a book, subscribe to a premium plan, comment on community posts, review books, and receive real-time alerts on their device. |
+| Sprint 3 Velocity | 30 |
+| Sum of Story Points | 27 |
 
-#### 5.2.1.9. Team Collaboration Insights during Sprint
+##### Sprint Backlog 3
+
+| Sprint n | Sprint 3 | | | | | | |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **User Story** | **Work-Item / Task** | | | | | | |
+| **User Story ID** | **Id** | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** | |
+| **US21: Comprar libros digitales y físicos** | | | | | | | |
+| | 1 | Lógica de Procesamiento de Orden | Conectar la confirmación de pago con la creación definitiva de la orden y reducción de stock. | 2 | Developer Team | Done |
+| | 2 | Validaciones y Estado de Orden | Implementar validaciones de datos de la orden y actualización de estado en backend. | 1 | Developer Team | Done |
+| **US25: Gestionar plan de suscripción** | | | | | | | |
+| | 1 | UI Selección de Planes | Crear la vista para comparar y seleccionar planes de suscripción (Gratuito vs Premium). | 1.5 | Developer Team | Done |
+| | 2 | Validaciones de Selección de Plan | Asegurar que el usuario solo pueda elegir un plan activo a la vez y mostrar mensajes de error si corresponde. | 0.5 | Developer Team | Done |
+| | 3 | Backend de Suscripciones | Implementar la lógica de facturación recurrente (vía pasarela de pago) y actualización de rol de usuario. | 3 | Developer Team | Done |
+| | 4 | Control de Acceso Premium | Actualizar los "guards" de navegación para restringir/permitir acceso a Comunidades según el plan. | 1 | Developer Team | Done |
+| | 5 | Notificaciones de Cambio de Plan | Enviar correo o notificación al usuario cuando se actualice su suscripción. | 1 | Developer Team | Done |
+| **US24: Valorar y dejar reseña de libros** | | | | | | | |
+| | 1 | UI Selector de Estrellas | Implementar el componente visual para seleccionar 1-5 estrellas en la ficha del libro. | 2 | Developer Team | Done |
+| | 2 | UI Campo de Texto para Reseña | Añadir el campo de texto para que el usuario escriba su reseña del libro. | 1 | Developer Team | Done |
+| | 3 | Endpoint de Guardado de Valoración | Crear el endpoint para registrar la valoración del usuario y asociarla al libro. | 2 | Developer Team | Done |
+| | 4 | Endpoint de Guardado de Reseña | Crear el endpoint para registrar la reseña escrita por el usuario. | 1 | Developer Team | Done |
+| | 5 | Cálculo de Rating Promedio | Implementar la lógica backend para actualizar el rating promedio del libro tras cada nueva valoración. | 2 | Developer Team | Done |
+| | 6 | Integración Frontend-Backend | Conectar el UI con los endpoints de valoración y reseña, mostrando feedback inmediato al usuario. | 1 | Developer Team | Done |
+| **US14: Recibir notificaciones instantáneas** | | | | | | | |
+| | 1 | Configuración Servicio Push | Instalar y configurar el servicio de notificaciones push (ej. Firebase FCM) en backend. | 4 | Developer Team | Done |
+| | 2 | Integración Cliente Push | Integrar el servicio de notificaciones en la app web/móvil para recibir eventos. | 4 | Developer Team | Done |
+| | 3 | Triggers de Eventos Stock | Implementar backend para notificar cambios de stock de libros favoritos del usuario. | 2.5 | Developer Team | Done |
+| | 4 | Triggers de Eventos Comunidad | Implementar backend para notificar actividad en comunidades que el usuario sigue. | 2.5 | Developer Team | Done |
+| | 5 | Vista de Historial de Notificaciones | Crear UI para que el usuario vea todas las notificaciones recibidas. | 3 | Developer Team | Done |
+| | 6 | Integración Frontend-Backend | Conectar la UI con el backend para mostrar notificaciones en tiempo real. | 2 | Developer Team | Done |
+| **US13: Configurar notificaciones** | | | | | | | |
+| | 1 | Diseño UI Preferencias | Crear la interfaz con toggles para activar/desactivar tipos de notificaciones. | 1.5 | Developer Team | Done |
+| | 2 | Implementación Frontend | Programar la lógica de toggles y la interacción con la API. | 1.5 | Developer Team | Done |
+| | 3 | Endpoint de Preferencias | Crear API para guardar la configuración de notificaciones del usuario. | 1 | Developer Team | Done |
+| | 4 | Validación de Configuración | Asegurar que los cambios del usuario se respeten al enviar notificaciones. | 1 | Developer Team | Done |
+
+### 5.2.2. Implemented Landing Page Evidence
+
+
+
+### 5.2.3. Implemented Native-Mobile Application Evidence
+
+
+
+### 5.2.4. Implemented RESTful API and/or Serverless Backend Evidence
+
+
+
+### 5.2.5. RESTful API documentation
+
+| Endpoint | Acción | Verbo HTTP | Sintaxis de llamada | Parámetros | Ejemplo de request | Respuesta |
+| :---- | :---- | :---- | :---- | :---- | :---- | :---- |
+| /api/v1/authentication/register | Crear un registro de un usuario. | POST | /api/v1/authentication/register | Ninguno | {"username": "happy\_vlan", "password": "nativagestion", "confirmPassword": "nativagestion", "display": "Happy Villain", "email": "happy.villain@example.com", "icon": "https://example.com/icon.png", "phrase": "¡VLAN Feliz\!"} | {"message": "Registration successful."} |
+| /api/v1/authentication/sign-in/admin | Iniciar sesión como administrador. | POST | /api/v1/authentication/sign-in/admin | Ninguno | {"username": "admin\_default", "password": "0000", "securityPin": "0000"} | {"identityId": 1, "userId": 1, "username": "admin\_default", "success": true, "message": "Login successful.", "token": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTIzNTkzOTksImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL3NpZCI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW5fZGVmYXVsdCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiaWF0IjoxNzUxNzU0NTk5LCJuYmYiOjE3NTE3NTQ1OTl9.mGcSdBaMrrP7-DEZTf8gjy5I82pm7Ts9bSfHYKVgypo"} |
+| /api/v1/authentication/sign-in/client | Iniciar sesion como cliente. | POST | /api/v1/authentication/sign-in/client | Ninguno | {"username": "rodrigo", "password": "contrasea"} | {"identityId": 7, "userId": 7, "username": "rodrigo", "success": true, "message": "Login successful.", "token": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTIzNTk0ODQsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL3NpZCI6IjciLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoicm9kcmlnbyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXJDbGllbnQiLCJpYXQiOjE3NTE3NTQ2ODQsIm5iZiI6MTc1MTc1NDY4NH0.0VhD4A-bCEMh-X0ItAKe1utt5HKBO-j5jbnQn2MVk4E"} |
+| /api/v1/books | Obtener los datos de todos los libros. | GET | /api/v1/books | Ninguno | \- | {"id": 1,"title": "string","description": "string","author": "string","salePrice": 4,"stock": 49,"cover": "https://i.kinja-img.com/image/upload/c\_fit,q\_60,w\_645/3403984c00db62389e225eac46008f21.jpg","genre": "noficcion","language": "english","reviews": \[\]} |
+| /api/v1/books | Crear un nuevo libro. | POST | /api/v1/books | Ninguno | {"title": "Millonario","description": "Jugador","author": "Persona","salePrice": 4,"stock": 20,"cover": "https://i.kinja-img.com/image/upload/c\_fit,q\_60,w\_645/3403984c00db62389e225eac46008f21.jpg","genre": "noficcion","language": "english"} | {"id": 3,"title": "XD","description": "string","author": "string","salePrice": 4,"stock": 20,"cover": "https://i.kinja-img.com/image/upload/c\_fit,q\_60,w\_645/3403984c00db62389e225eac46008f21.jpg","genre": "noficcion","language": "english","reviews": \[\]}  |
+| /api/v1/books/{id} | Obtener los datos de un libro en específico. | GET | /api/v1/books/{id} | id: Integer | /api/v1/books/1 | {"id": 1,"title": "string","description": "string","author": "string","salePrice": 4,"stock": 50,"cover": "https://i.kinja-img.com/image/upload/c\_fit,q\_60,w\_645/3403984c00db62389e225eac46008f21.jpg","genre": "noficcion","language": "english","reviews": \[\]} |
+| /api/vi/books/{bookId}/stock | Actualizar el stock de un libro. | PUT | /api/vi/books/{bookId}/stock | bookId: Integer, stock: Integer | {"newStock": 50} | {"id": 1,"title": "string","description": "string","author": "string","salePrice": 4,"stock": 50,"cover": "https://i.kinja-img.com/image/upload/c\_fit,q\_60,w\_645/3403984c00db62389e225eac46008f21.jpg","genre": "noficcion","language": "english","reviews": \[\]} |
+| /api/v1/orders | Crear una nueva orden. | POST | /api/v1/orders | Ninguno | {"userClientId": 2,"userEmail": "string@gmail.com","userPhone": "123123123","userFullName": "string","recipientName": "string","status": "pending","isDelivery": true,"shippingDetails": {"address": "string","city": "string","district": "string","reference": "string"},"cartItemIds": \[2\]} | {"id": 1,"code": "292W4X","userClientId": 2,"userEmail": "string@gmail.com","userPhone": "123123123","userFullName": "string","recipientName": "string","status": "pending","isDelivery": true,"shipping": {"address": "string","city": "string","district": "string","reference": "string"},"total": 4,"date": "2025-06-21T05:39:05.2790128Z","items": \[{"id": 1,"bookId": 1,"bookTitle": "string","bookAuthor": "string","bookPrice": 4,"bookCover": "https://i.kinja-img.com/image/upload/c\_fit,q\_60,w\_645/3403984c00db62389e225eac46008f21.jpg","quantity": 1,"itemTotal": 4}\]} |
+| /api/v1/orders/{id} | Obtener los datos de un orden en específico. | GET | /api/v1/orders/{id} | id: Integer | /api/v1/orders/1 | {"id": 1,"code": "292W4X","userClientId": 2,"userEmail": "string@gmail.com","userPhone": "123123123","userFullName": "string","recipientName": "string","status": "pending","isDelivery": true,"shipping": {"address": "string","city": "string","district": "string","reference": "string"},"total": 4,"date": "2025-06-21T05:39:05.279012","items": \[{"id": 1,"bookId": 1,"bookTitle": "string","bookAuthor": "string","bookPrice": 4,"bookCover": "https://i.kinja-img.com/image/upload/c\_fit,q\_60,w\_645/3403984c00db62389e225eac46008f21.jpg","quantity": 1,"itemTotal": 4}\]} |
+| /api/v1/orders/code/{code} | Obtener los datos de una orden en específico por medio de su código. | GET | /api/v1/orders/code/{code} | code: String | /api/v1/orders/code/292W4X | {"id": 1,"code": "292W4X","userClientId": 2,"userEmail": "string@gmail.com","userPhone": "123123123","userFullName": "string","recipientName": "string","status": "pending","isDelivery": true,"shipping": {"address": "string","city": "string","district": "string","reference": "string"},"total": 4,"date": "2025-06-21T05:39:05.279012","items": \[{"id": 1,"bookId": 1,"bookTitle": "string","bookAuthor": "string","bookPrice": 4,"bookCover": "https://i.kinja-img.com/image/upload/c\_fit,q\_60,w\_645/3403984c00db62389e225eac46008f21.jpg","quantity": 1,"itemTotal": 4}\]} |
+| /api/v1/orders/users/{userClientId} | Obtener los datos de las órdenes de un usuario cliente en específico. | GET | /api/v1/orders/users/{userClientId} | userClientId: Integer | /api/v1/orders/users/2 | \[{"id": 1,"code": "292W4X","userClientId": 2,"userEmail": "string@gmail.com","userPhone": "123123123","userFullName": "string","recipientName": "string","status": "delivered","isDelivery": true,"shipping": {"address": "string","city": "string","district": "string","reference": "string"},"total": 4,"date": "2025-06-21T05:39:05.279012","items": \[{"id": 1,"bookId": 1,"bookTitle": "string","bookAuthor": "string","bookPrice": 4,"bookCover": "https://i.kinja-img.com/image/upload/c\_fit,q\_60,w\_645/3403984c00db62389e225eac46008f21.jpg","quantity": 1,"itemTotal": 4}\]}\] |
+| /api/v1/orders/{orderId}/status | Actualizar el estado de una orden. | PUT | /api/v1/orders/{orderId}/status | status: string | {"status": "in progress"} | {"id": 1,"code": "292W4X","userClientId": 2,"userEmail": "string@gmail.com","userPhone": "123123123","userFullName": "string","recipientName": "string","status": "in progress","isDelivery": true,"shipping": {"address": "string","city": "string","district": "string","reference": "string"},"total": 4,"date": "2025-06-21T05:39:05.279012","items": \[{"id": 1,"bookId": 1,"bookTitle": "string","bookAuthor": "string","bookPrice": 4,"bookCover": "https://i.kinja-img.com/image/upload/c\_fit,q\_60,w\_645/3403984c00db62389e225eac46008f21.jpg","quantity": 1,"itemTotal": 4}\]} |
+| /api/v1/communities | Crea una nueva comunidad en el sistema. | POST | /api/v1/communities | Ninguno (cuerpo JSON) | {"name": "Club de Lectura Fantasía Épica", "description": "Un espacio para debatir sobre Tolkien, Brandon Sanderson y las mejores sagas de fantasía.", "type": 1, "image": "https://livria-assets.com/icons/fantasia-epic-icon.png", "banner": "https://livria-assets.com/banners/epic-banner.jpg"} | **Code 201 (Created)** <br> {"id": 12, "name": "Club de Lectura Fantasía Épica", "description": "Un espacio para debatir sobre Tolkien, Brandon Sanderson y las mejores sagas de fantasía.", "type": 1, "image": "https://livria-assets.com/icons/fantasia-epic-icon.png", "banner": "https://livria-assets.com/banners/epic-banner.jpg"} |
+| /api/v1/communities | Obtener los datos de todas las comunidades. | GET | /api/v1/communities | Ninguno | curl -X 'GET' 'https://livriagod.azurewebsites.net/api/v1/communities' | **Code 200 (OK)** <br> [ { "id": 0, "name": "Evil HQ", "description": "We're all evil in here :)", "type": 0, "image": "https://...", "banner": "https://..." }, { "id": 2, "name": "Wonderland", "description": "A very strange and mad place for all travelers, a truly wonderland...", "type": 0, "image": "https://d23.com/app/uploads/2015/07/alice-in-wonderland.jpg", "banner": "https://www.thomaskinkade.com/cdn/shop/collections/alice_10ec166fb-007c-4236-95f2-62dadd22ac8c.jpg?v=1689619943&width=800" } ] |
+| /api/v1/communities/{id} | Obtener los datos de una comunidad en específico. | GET | /api/v1/communities/1 | id: Integer (path) | curl -X 'GET' 'https://livriagod.azurewebsites.net/api/v1/communities/1' | **Code 200 (OK)** <br> { "id": 0, "name": "Evil HQ", "description": "We're all evil in here :)", "type": 1, "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQifg0iQO..." } |
+| /api/v1/communities/join | El userclient puede unirse a una comunidad existente. | POST | /api/v1/communities/join | Ninguno (cuerpo JSON) | {"userClientId": 37, "communityId": 12} | **Code 201 (Created)** <br> {"userClientId": 37, "communityId": 12, "joinedDate": "2025-11-14T03:48:34.370354Z"} |
+| /api/v1/communities/{communityId}/members/{userId} | Permite a un usuario salir de una comunidad específica. | DELETE | /api/v1/communities/1/members/37 | communityId: Integer (path), userId: Integer (path) | curl -X 'DELETE' 'https://livriagod.azurewebsites.net/api/v1/communities/1/members/37' | **Code 204 (No Content)** <br> (No hay cuerpo de respuesta) |
+| /api/v1/authentication/register | Registrar un nuevo usuario en el sistema. | POST | /api/v1/authentication/register | Ninguno (cuerpo JSON) | {"username": "cassius_dev", "password": "P@ssword123!", "confirmPassword": "P@ssword123!", "display": "Cassius", "email": "cassius.dev@livria.com", "icon": "https://livria-assets.com/avatars/default.png", "phrase": "Amante de la ciencia ficción."} | **Code 201 (Created)** <br> {"message": "Registration successful."} |
+| /api/v1/authentication/sign-in/client | Inicia sesión para un usuario cliente. | POST | /api/v1/authentication/sign-in/client | Ninguno (cuerpo JSON) | {"username": "cassius_dev", "password": "P@ssword123!"} | **Code 200 (OK)** <br> {"identityId": 10, "userId": 95, "username": "cassius_dev", "success": true, "message": "Login successful.", "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"} |
+| /api/v1/posts/communities/{communityId} | Crear una nueva publicación en una comunidad existente. | POST | /api/v1/posts/communities/1 | communityId: Integer (path) | {"username": "cassius_dev", "content": "¡Acabo de terminar 'Dune' y es increíble! ¿Alguien más es fan de la saga?", "img": "https://livria-assets.com/posts/dune-cover.png"} | **Code 201 (Created)** <br> {"id": 1, "communityId": 1, "userId": 37, "username": "cassius_dev", "content": "¡Acabo de terminar 'Dune' y es increíble! ¿Alguien más es fan de la saga?", "img": "https://livria-assets.com/posts/dune-cover.png", "createdAt": "2025-11-14T03:45:43.0797309Z"} |
+| /api/v1/posts/{id} | Obtener los datos de una publicación en específico. | GET | /api/v1/posts/1 | id: Integer (path) | curl -X 'GET' 'https://livriagod.azurewebsites.net/api/v1/posts/1' | **Code 200 (OK)** <br> {"id": 1, "communityId": 1, "userId": 35, "username": "happyvillain", "content": "primer post malvado de la comnidad :)", "img": "", "createdAt": "2025-11-08T21:33:30.52679S"} |
+| /api/v1/posts/community/{communityId} | Obtener todas las publicaciones para una comunidad específica. | GET | /api/v1/posts/community/1 | communityId: Integer (path) | curl -X 'GET' 'https://livriagod.azurewebsites.net/api/v1/posts/community/1' | **Code 200 (OK)** <br> [ { "id": 1, "communityId": 1, "userId": 35, "username": "happyvillain", "content": "primer post malvado de la comnidad :)", "img": "", "createdAt": "2025-11-08T21:33:30.52679S" }, { "id": 2, "communityId": 1, "userId": 35, "username": "happyvillain", "content": "segundo post malvado de la comnidad :)", "img": "", "createdAt": "2025-11-08T22:11:58.24796S" } ] |
+| /api/v1/recommendations/users/{userClientId} | Obtener los datos de las recomendaciones que le pertenecen a un usuario en específico. | GET | /api/v1/recommendations/users/35 | userClientId: Integer (path) | curl -X 'GET' 'https://livriagod.azurewebsites.net/api/v1/recommendations/users/35' | **Code 200 (OK)** <br> {"userClientId": 35, "recommendedBooks": []} |
+| /api/v1/reviews | Crear una nueva review en el sistema. | POST | /api/v1/reviews | Ninguno (cuerpo JSON) | {"bookId": 1, "userClientId": 37, "content": "¡Este libro es increíble, me cambió la vida!", "stars": 5} | **Code 201 (Created)** <br> {"id": 8, "bookId": 1, "username": "cassius_dev", "content": "¡Este libro es increíble, me cambió la vida!", "stars": 5} |}
+| /api/v1/reviews/{id} | Obtener los datos de una reseña en específico. | GET | /api/v1/reviews/1 | id: Integer (path) | curl -X 'GET' 'https://livriagod.azurewebsites.net/api/v1/reviews/1' | **Code 200 (OK)** <br> {"id": 1, "bookId": 1, "username": "jabberwocky", "content": "c'est sublime comme tous les univers", "stars": 5} |
+| /api/v1/reviews/book/{bookId} | Obtener todas las reseñas para un libro específico. | GET | /api/v1/reviews/book/1 | bookId: Integer (path) | curl -X 'GET' 'https://livriagod.azurewebsites.net/api/v1/reviews/book/1' | **Code 200 (OK)** <br> [ { "id": 1, "bookId": 1, "username": "jabberwocky", "content": "c'est sublime comme tous les univers", "stars": 5 }, { "id": 5, "bookId": 1, "username": "happyvillain", "content": "increible", "stars": 4 }, { "id": 6, "bookId": 1, "username": "tiktok_user", "content": "Gran manga.", "stars": 5 } ] |
+| /api/v1/communities/{communityId}/members/{userId}/is-member | Verificar la membresía de un usuario en una comunidad. | GET | /api/v1/communities/1/members/3/is-member | communityId: Integer (path), userId: Integer (path) | curl -X 'GET' 'https://lililivria.azurewebsites.net/api/v1/communities/1/members/3/is-member' | **Code 200 (OK)** <br> { "isMember": false } |
+| /api/v1/userclients/{userClientId}/exclusions/{bookId} | Agregar un libro existente a la lista de exclusión. | POST | /api/v1/userclients/3/exclusions/1 | userClientId: Integer (path), bookId: Integer (path) | curl -X 'POST' 'https://lililivria.azurewebsites.net/api/v1/userclients/3/exclusions/1' | **Code 200 (OK)** <br> { "icon": "data:image/jpeg;base64,/9j/4QBqRXhpZgAATU0AKg...", "id": 3, "display": "ksedudu_gamepluplu", "username": "ksedudu", "email": "ksedudu@gmail.com", "phrase": "soy ksedo xdxdxxd", "subscription": "communityplan" } |
+| /api/v1/userclients/{userClientId}/exclusions | Obtener los datos de los libros excluidos de un usuario. | GET | /api/v1/userclients/3/exclusions | userClientId: Integer (path) | curl -X 'GET' 'https://lililivria.azurewebsites.net/api/v1/userclients/3/exclusions' | **Code 200 (OK)** <br> [ { "id": 1, "title": "Cien años de soledad", "author": "Gabriel García Márquez", "salePrice": 49.55, "stock": 11, "cover": "https://i.imgur.com/4Bv3Eq5.jpeg", "genre": "literature" } ] |
+| /api/v1/userclients/{userClientId}/exclusions/{bookId} | Eliminar un libro de la lista de exclusión de un UserClient. | DELETE | /api/v1/userclients/3/exclusions/1 | userClientId: Integer (path), bookId: Integer (path) | curl -X 'DELETE' 'https://lililivria.azurewebsites.net/api/v1/userclients/3/exclusions/1' | **Code 200 (OK)** <br> { "icon": "data:image/jpeg;base64/...", "id": 3, "display": "ksedudu_gamepluplu", "username": "ksedudu", "email": "ksedudu@gmail.com", "phrase": "soy ksedo xdxdxxd", "subscription": "communityplan" } |
+
+**/api/v1/authentication/register:**
+<p align="center">
+  <img src="https://i.imgur.com/36KKSwv.png" alt="12171">
+</p>
+
+Esta solicitud POST inicia una nueva sesión como usuario administrador, con acceso a la vista de gestión de librería. Para lograr esto, utiliza las credenciales de administrador cargadas por defecto al sistema y devuelve un JSON Web Token (JWT).
+
+**/api/v1/authentication/sign-in/client:**
+
+<p align="center">
+  <img src="https://i.imgur.com/sBkG9fM.png" alt="12171">
+</p>
+
+Esta solicitud POST auténtica al cliente con las credenciales de usuario de tipo cliente proporcionadas. Valida la sesión y devuelve un JSON Web Token (JWT) para la autenticación.
+
+**/api/v1/books:**
+
+<p align="center">
+  <img src="https://i.imgur.com/zElCiAA.png" alt="12171">
+</p>
+
+Esta solicitud POST crea un nuevo libro en el sistema. Permite registrar un libro con su título, descripción, autor, precio, stock, imagen de portada, género e idioma.
+
+<p align="center">
+  <img src="https://i.imgur.com/x5oByk6.png" alt="12171">
+</p>
+
+Esta solicitud GET obtiene los datos de todos los libros disponibles. Muestra una lista completa de los libros registrados en el sistema.
+
+**/api/v1/books/{id}:**
+
+<p align="center">
+  <img src="https://i.imgur.com/Y9B0aDg.png" alt="12171">
+</p>
+
+Esta solicitud GET obtiene los datos de un libro en específico, utilizando su ID. Muestra los detalles del libro solicitado.
+
+**/api/vi/books/{bookId}/stock:**
+
+<p align="center">
+  <img src="https://i.imgur.com/CCV93QN.png" alt="12171">
+</p>
+
+Esta solicitud PUT actualiza el stock disponible de un libro específico, usando su ID. Permite modificar la cantidad de libros en existencia.
+
+**/api/v1/orders:**
+
+<p align="center">
+  <img src="https://i.imgur.com/dc8v46S.png" alt="12171">
+</p>
+
+Esta solicitud POST crea una nueva orden en el sistema. Permite registrar una compra con detalles del cliente, envío y los ítems comprados.
+
+**/api/v1/orders/{id}:**
+
+<p align="center">
+  <img src="https://i.imgur.com/dc8v46S.png" alt="12171">
+</p>
+
+Esta solicitud GET obtiene los datos de una orden en específico, usando su ID. Muestra los detalles de la orden buscada.
+
+**/api/v1/orders/code/{code}:**
+
+<p align="center">
+  <img src="https://i.imgur.com/WRcdUZX.png" alt="12171">
+</p>
+
+Esta solicitud GET obtiene los datos de una orden específica por medio de su código. Muestra los detalles de la orden que coincida con el código.
+
+**/api/v1/orders/users/{userClientId}:**  
+
+<p align="center">
+  <img src="https://i.imgur.com/h5dYSqv.png" alt="12171">
+</p>
+
+Esta solicitud GET obtiene todas las órdenes de un usuario cliente específico, usando su ID. Muestra una lista de todas las compras realizadas por ese usuario.
+
+**/api/v1/orders/{orderId}/status:**
+
+<p align="center">
+  <img src="https://i.imgur.com/stgPl8L.png" alt="12171">
+</p>
+
+Esta solicitud PUT actualiza el estado de una orden, usando su ID. Permite cambiar el estado de una orden entre 'pending', 'in progress' o 'delivered'.
+
+**POST /api/v1/communities**
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/77a544af-6a0c-4a0a-a888-207111c8dedc" alt="12171">
+</p>
+
+Crea una nueva comunidad en el sistema. Recibe en el cuerpo de la petición el nombre, descripción, tipo, imagen y banner. Devuelve la comunidad recién creada con su ID.
+
+**GET /api/v1/communities**
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d9603e8f-a1fa-4395-b755-5c5a1088b5b8" alt="12171">
+</p>
+
+Obtiene una lista de todas las comunidades registradas en el sistema. Devuelve un arreglo de objetos de comunidad.
+
+**GET /api/v1/communities/{id}**
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/045a1695-ef2e-4a9c-ae51-70e2cf4909d8" alt="12171">
+</p>
+
+Obtiene los datos de una comunidad específica usando su ID como parámetro en la URL. Devuelve el objeto de la comunidad solicitada.
+
+**POST /api/v1/communities/join**
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/54389499-bc58-483c-9380-cd83455bdb70" alt="12171">
+</p>
+
+Permite que un userClientId se una a una communityId. Recibe ambos IDs en el cuerpo de la petición y devuelve un objeto confirmando la unión y la fecha.
+
+**DELETE /api/v1/communities/{communityId}/members/{userId}**
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1e21822f-f796-49cd-8ef5-6c4b687aadb6" alt="12171">
+</p>
+
+Permite a un usuario salir de una comunidad. Utiliza tanto el communityId como el userId en la URL para identificar y eliminar la membresía.
+
+**POST /api/v1/authentication/register**
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/82048fa0-1693-45cc-91e7-154b2edf7e15" alt="12171">
+</p>
+
+Registra un nuevo usuario cliente en el sistema. Recibe todos los datos del formulario (username, password, email, display, etc.) en el cuerpo de la petición.
+
+**POST /api/v1/authentication/sign-in/client**
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d112c7cf-5d77-4c87-b669-9aa720a5a207" alt="12171">
+</p>
+
+Inicia sesión para un usuario cliente. Recibe username y password, y si tiene éxito, devuelve un objeto con el userId, username y el token (JWT) de sesión.
+
+**POST /api/v1/posts/communities/{communityId}**
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/49096c07-0922-4f23-a357-7358152856cc" alt="12171">
+</p>
+
+Crea una nueva publicación (post) dentro de una comunidad específica. El communityId se pasa en la URL, y el contenido (username, content, img) se envía en el cuerpo.
+
+**GET /api/v1/posts/{id}**
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0797064c-0420-40eb-8c61-8fdecfbfbe91" alt="12171">
+</p>
+
+Obtiene los datos de una publicación (post) específica usando su ID en la URL.
+
+**GET /api/v1/posts/community/{communityId}**
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7b1e58d6-5960-4796-8858-b1ec5dbfb84e" alt="12171">
+</p>
+
+Obtiene una lista de todas las publicaciones asociadas a un communityId específico, pasado en la URL.
+
+**GET /api/v1/recommendations/users/{userClientId}**
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d82454e0-a0d0-430a-9fc9-e5b323d58a9c" alt="12171">
+</p>
+
+Obtiene las recomendaciones de libros personalizadas para un usuario específico, identificado por su userClientId en la URL.
+
+**POST /api/v1/reviews**
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a3d94f32-3a76-4ec6-a7f7-dd850c029e73" alt="12171">
+</p>
+
+Crea una nueva reseña (review) en el sistema. Recibe el bookId, userClientId, el content (texto) y las stars (estrellas) en el cuerpo de la petición.
+
+**GET /api/v1/reviews/{id}**
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/76cd139a-854c-4014-810c-aa44b15967b7" alt="12171">
+</p>
+
+Obtiene los datos de una reseña específica usando su ID en la URL.
+
+**GET /api/v1/reviews/book/{bookId}**
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/13e81ac8-1d17-4f05-b1bc-9e7f18e019bd" alt="12171">
+</p>
+
+Obtiene una lista de todas las reseñas asociadas a un libro específico, identificado por su bookId en la URL.
+
+**POST /api/v1/communities/{communityId}/members/{userId}/is-member**
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/5b9821f0-e248-438b-b433-833d798dc8b3" alt="12171">
+</p>
+
+Comprueba si un usuario específico es miembro activo de una comunidad determinada.
+
+**POST /api/v1/userclients/{userClientId}/exclusions/{bookId}**
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e4c2bc70-5922-4ee8-8839-1d3f8ca0843c" alt="12171">
+</p>
+
+Añade un libro a la lista de exclusión del usuario para que no aparezca en sus recomendaciones.
+
+**GET /api/v1/userclients/{userClientId}/exclusions**
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/99c2d228-974e-414b-89f5-02ef67471577" alt="12171">
+</p>
+
+Recupera el listado completo de todos los libros que el usuario ha decidido excluir.
+
+**DELETE /api/v1/userclients/{userClientId}/exclusions/{bookId}**
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/26c15ae7-7ff8-401b-8b1e-1123b8d5dfc6" alt="12171">
+</p>
+
+
+Remueve un libro específico de la lista de exclusión del usuario, permitiendo que vuelva a ser recomendado.
+
+
+### 5.2.6. Team Collaboration Insights
+
 
 ## 5.3. Video About-the-Product
 
