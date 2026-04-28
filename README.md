@@ -1633,7 +1633,74 @@ Objetivo SMART: Conseguir que el 30% de los usuarios activos participen en al me
 
 ## 4.1. Style Guidelines
 
+Livria busca transformar la manera en que los lectores encuentran nuevas lecturas y en que los aficionados desarrollan el hábito lector. Para ello, funciona como una tienda virtual con recursos interactivos que brindan una experiencia atractiva y accesible para todas las personas. Además de facilitar la compra de libros físicos y digitales, Livria promueve una comunidad literaria activa, motivando a lectores de todas las edades a reconectarse con la lectura de manera significativa.
+
+Esta sección presenta una Guía de Estilo integral y estructurada, diseñada para unificar todos los elementos visuales y de diseño que componen la plataforma Livria. El propósito es establecer una identidad de marca coherente que refleje su misión: transformar el acceso a los libros e incentivar el hábito lector en la era digital. Al organizar meticulosamente recursos gráficos clave como tipografías, paletas de colores y otros componentes visuales, la plataforma garantiza una consistencia en el diseño. Esto no solo simplifica la navegación y potencia una experiencia de usuario clara y funcional, sino que también refuerza los valores de Livria como un espacio moderno, accesible y atractivo para la comunidad literaria.
+
 ### 4.1.1. General Style Guidelines
+
+El diseño de Livria se sustenta en una Guía de Estilo integral y estructurada, cuya finalidad es proyectar una identidad de marca coherente que refleje nuestros valores de fomento de la lectura y accesibilidad digital. Esta sección define los pilares visuales y comunicacionales de la plataforma, abordando desde el Branding, con su estética cálida, moderna y cercana, hasta la selección de Tipografía y Paleta de Colores, y las directrices de Spacing. 
+
+Todas estas decisiones de diseño se basan en el principio de claridad funcional y cohesión, garantizando que cada interacción sea intuitiva y esté alineada con el espíritu inclusivo y transformador de Livria. Gracias a ello, son modulables para diferentes plataformas (web y móviles), formando parte de las Web Style Guidelines y Mobile Style Guidelines.
+
+**Branding y Logotipo**
+
+El Branding de Livria busca reflejar sus valores fundamentales: el fomento de la lectura, la accesibilidad y la construcción de comunidad, proyectando una estética cálida, moderna y cercana. El Logotipo se compone de un ícono gráfico y el nombre "LIVRIA". El ícono representa tres libros apilados en colores vibrantes de la paleta principal (Anaranjado, Ámbar y Azul), simbolizando la diversidad del catálogo y el espíritu dinámico de la plataforma. La sencillez y claridad del logo aseguran su versatilidad y reconocimiento en cualquier contexto digital, reforzando la imagen de Livria como un portal moderno y acogedor para los lectores.
+
+<p align="center">
+  <img src="https://i.imgur.com/KmTiPgz.png" alt="12171">
+</p>
+
+
+**Paleta de Colores (Colors)**
+
+La paleta de colores de Livria se ha seleccionado estratégicamente para inspirar confianza, energía y serenidad. Se divide en colores principales, utilizados para acciones clave y elementos estructurales, y colores secundarios, para fondos neutros y acentos sutiles:
+
+* Paleta Principal:  
+  * Anaranjado (`#FF5C00`, RGB 255, 92, 0): Color primario de acción, usado para Call-to-Action (CTA) y elementos que requieren máxima atención, representando energía y entusiasmo.  
+  * Ámbar (`#FEB913`, RGB 254, 185, 19): Acento secundario que aporta calidez y optimismo, ideal para destacar beneficios o información relevante.  
+  * Azul (`#2364A0`, RGB 35, 100, 160): Color estructural que transmite confianza y estabilidad, utilizado para barras de navegación y fondos que requieren solidez.  
+* Paleta Secundaria:  
+  * Amarillo Claro (`#FFD150`, RGB 255, 209, 80).  
+  * Azul Marino (`#063A5D`, RGB 6, 58, 93): Usado para el texto principal y asegurar una alta legibilidad.  
+  * Gris Claro (`#F4F5F7`, RGB 244, 245, 247): Utilizado para fondos neutros y un diseño limpio.  
+  * Cian Suave (`#A8DBDE`, RGB 168, 219, 222).
+
+<p align="center">
+  <img src="https://i.imgur.com/7MnGt7n.png" alt="12171">
+</p>
+
+**Tipografía (Typography)**
+
+La selección tipográfica prioriza la legibilidad y la claridad jerárquica en todos los dispositivos.
+
+* Para Logo y Títulos: Se utiliza la fuente Asap Condensed. Su estilo proporciona una estructura visual fuerte e impactante, ideal para encabezados y títulos de alto nivel, alineándose con el dinamismo del branding.  
+* Para Texto Regular (Cuerpo): Se emplea la familia tipográfica Alexandria en sus cuatro pesos (Light, Regular, Medium y Bold). Esta elección garantiza una excelente legibilidad en bloques de texto largos y permite una jerarquía de información sutil pero efectiva mediante variaciones de peso.
+
+<p align="center">
+  <img src="https://i.imgur.com/3lb5HZb.png" alt="12171">
+</p>
+
+**Iconografía (Iconography)**
+
+La iconografía de Livria está diseñada para ser simple, clara y escalable, facilitando la comprensión de las funcionalidades de forma rápida y visual.
+
+* Estilo: Los iconos son de línea delgada (outline), lo que mantiene el diseño moderno y limpio.  
+* Tamaño Sugerido: Se establece un tamaño original de 24 píxeles para asegurar la nitidez y el correcto espaciado en la interfaz.  
+* Propósito: El set incluye íconos comunes de e-commerce (carrito, ubicación, pago), gestión (configuración, editar, eliminar) y comunidad (corazón/like, comentario, compartir), garantizando una cobertura completa de las interacciones del usuario en Livria.
+
+**Espaciado (Spacing)**
+
+Aunque no se proporciona una escala de espaciado explícita, los principios de diseño de Livria se rigen por la modularidad y la consistencia para asegurar una interfaz organizada y funcional:
+
+* Principio de Base: Se sugiere el uso de una escala de 8 puntos (8px, 16px, 24px, 32px, etc.) para definir márgenes, paddings y separación entre componentes. Esto garantiza que todos los elementos de la interfaz se alineen de manera armónica, independientemente del dispositivo.  
+* Legibilidad y Agrupación: El espaciado se utiliza para agrupar visualmente elementos relacionados (como los campos de un formulario o los detalles de una reseña) y para asegurar un espacio adecuado en torno al texto y a los elementos interactivos, mejorando la experiencia táctil y de lectura.
+
+**Tono de Comunicación y Lenguaje Aplicado**
+
+El Tono de Comunicación de Livria es fundamental para establecer una conexión emocional y duradera con los usuarios. Se define como Cálido, Motivador y Accesible, buscando ser un acompañante empático y cercano para el lector, independientemente de su experiencia. Se utiliza un estilo Entusiasta y Alentador para inyectar emoción en la exploración de historias, mientras que la Cercanía se mantiene para generar confianza. La plataforma siempre promueve un ambiente Inspirador, motivando a los usuarios a sentirse parte de una comunidad literaria viva y activa.
+
+En cuanto al Lenguaje Aplicado, se prioriza la Claridad y la Comprensión Directa, evitando tecnicismos o estructuras gramaticales complejas, lo que garantiza que el contenido sea accesible para usuarios de todas las edades y niveles de lectura. El estilo se mantiene Amigable (Casual), y se recurre a una narrativa accesible o ejemplos concretos cuando es apropiado, facilitando la identificación del usuario con los mensajes. Este enfoque comunicativo está diseñado para crear una experiencia acogedora, inspiradora y auténtica, alineada con los valores de Livria: fomentar el hábito lector y construir una comunidad conectada a través de los libros.
 
 ### 4.1.2. Web Style Guidelines
 
@@ -1645,33 +1712,843 @@ Objetivo SMART: Conseguir que el 30% de los usuarios activos participen en al me
 
 ## 4.2. Information Architecture
 
+La arquitectura de información es fundamental para plantear la manera en que se organizarán los diferentes componentes de Livria, de modo que el usuario pueda interactuar y adaptarse a ellos de manera intuitiva. La buena organización de la información se debe priorizar para retener la atención del usuario e incentivar el uso constante de la aplicación.
+
 ### 4.2.1. Organization Systems
+
+Los diagramas presentados a continuación están organizados de manera jerárquica y en categorías para ilustrar las relaciones entre los componentes de manera visual. Estos sistemas de organización de información contribuyen a una navegación más intuitiva para los usuarios, lo que mejorará su experiencia de uso.
+
+**Landing Page**
+
+<p align="center">
+  <img src="https://i.imgur.com/8HVgxyz.jpeg" alt="12171">
+</p>
+
+**Web Application**
+
+<p align="center">
+  <img src="https://i.imgur.com/tpPYnTq.png" alt="12171">
+</p>
+
+**Admin Mobile Application**
+
+<p align="center">
+  <img src="https://i.imgur.com/OLJoj7k.jpeg" alt="12171">
+</p>
+
+**Client Mobile Application**
+
+<p align="center">
+  <img src="https://i.imgur.com/OLJoj7k.jpeg" alt="12171">
+</p>
+
+
+**Screen Organization**
+
+<p align="center">
+  <img src="https://i.imgur.com/odIUF9H.jpeg" alt="12171">
+</p>
 
 ### 4.2.2. Labeling Systems
 
+La interfaz de Livria ha sido diseñada de manera eficiente y organizada, ofreciéndole al cliente una experiencia de uso dinámica que le permitirá encontrar una ruta rápida hacia la información que quiere consultar o las herramientas que quiere utilizar sin complicaciones. Para lograr esto, nuestro equipo ha propuesto un diseño que emplea etiquetas concisas y efectivas, favoreciendo una experiencia intuitiva. A continuación, se dará una descripción detallada de aquellas que se encuentran en nuestro proyecto.
+
+**Landing Page**
+
+<p align="center">
+  <img src="https://i.imgur.com/oliE50k.png" alt="12171">
+</p>
+
+Al ingresar a la plataforma, el usuario se encontrará primero con el encabezado, en esta sección de la pantalla, encontrará las etiquetas “HOME”, “SERVICES”, “ABOUT US”, “CONTACT US”, “ES/EN”:
+
+* HOME: Esta etiqueta provee un acceso rápido a la página principal de la Landing Page, el usuario puede acceder a esta fácilmente desde cualquier sección del sitio web.  
+* SERVICES: Esta etiqueta sirve como acceso directo a la página de “Servicios”, que contiene descripciones de los diferentes servicios que ofrece la plataforma.  
+* ABOUT US: Esta etiqueta sirve para brindar una ruta al usuario a la página de “Nosotros”, donde se encontrarán dos párrafos introductorios de la startup (Bookify) y el proyecto (Livria).  
+* CONTACT US: Esta etiqueta tiene la función de acceso directo a la página de “Contacto”, en la que se encontrará un formulario de contacto que el usuario puede utilizar para enviar comentarios o  
+* ES/EN: Esta etiqueta servirá para alternar la vista del sitio web, dando la opción al usuario de visualizarla en español (ES) o inglés (EN), dependiendo de sus necesidades.
+
+**Admin Mobile Application**
+
+Para la aplicación de Administrador se tiene dos barras de menú con sus labels respectivos que permiten al usuario navegar fácilmente entre las secciones.
+
+<p align="center">
+  <img src="https://i.imgur.com/36Gumf1.png" alt="12171">
+</p>
+
+El encabezado es la primera barra de menú de la aplicación de administración, la cual funciona como un Panel de Control de Estado y Navegación Rápida. Visualmente, utiliza el color Azul Marino para transmitir profesionalismo y seguridad. Se compone de tres elementos críticos para la gestión:
+
+* LOGO: Ubicado a la izquierda, representa la identidad de Livria Management y sirve como punto de acceso rápido a la pantalla de Home.  
+* MÉTRICA FINANCIERA: En el centro se muestra la métrica Capital (o un indicador financiero principal). Este valor se presenta resaltado en color Ámbar (\#FEB913), garantizando que el administrador tenga visibilidad inmediata sobre la salud económica del negocio en cualquier momento.  
+* CONFIGURACIÓN: El ícono de engranaje (Settings) a la derecha proporciona un acceso directo a las opciones de configuración del sistema y del perfil del administrador.
+
+<p align="center">
+  <img src="https://i.imgur.com/yHJDrGL.png" alt="12171">
+</p>
+
+Este menú inferior sirve como el principal Sistema de Etiquetado y Navegación Global para la aplicación de administración, permitiendo al usuario acceder directamente a las áreas críticas de gestión sin importar en qué parte del sistema se encuentre.
+
+El sistema de etiquetado utiliza una combinación de iconos visuales de línea delgada y texto claro para representar las funciones operativas:
+
+* HOME: Representado por el ícono de una casa, etiqueta la pantalla de inicio o dashboard de gestión, que sirve como punto central de información.  
+* BOOKS: Etiqueta el módulo de Gestión de Catálogo, permitiendo al administrador ver y modificar los títulos disponibles.  
+* ORDERS: Representado por el ícono de carrito de compras, etiqueta la sección de Gestión de Pedidos, crucial para rastrear y actualizar el estado de las transacciones de los clientes.  
+* INVENTORY: Representado por el ícono de un portapapeles, etiqueta el módulo de Gestión de Stock/Inventario, permitiendo el control de las existencias físicas y el reabastecimiento.  
+* STATS: Etiqueta el módulo de Estadísticas/Analíticas, proporcionando métricas de rendimiento y datos de ventas.
+
+**Client Mobile Application**
+
+Al igual que en la aplicación de administrador, en las pantallas de cliente se pueden observar dos barras de menú que sirven como sistemas de etiquetado y de navegación. 
+
+<p align="center">
+  <img src="https://i.imgur.com/M4R83Kb.png" alt="12171">
+</p>
+
+La barra de menú superior de la aplicación para el Usuario Cliente funciona como un centro de navegación crítica y herramientas de descubrimiento. Utiliza el color Azul Marino en su fondo y Anaranjado (\#FF5C00) para la marca Livria, lo que proporciona un contraste vibrante y distintivo. Se compone de elementos clave de izquierda a derecha:
+
+* LOGO: El logo de Livria se ubica a la izquierda, funcionando como un ancla visual y un acceso rápido a la pantalla de Home o inicio.  
+* BÚSQUEDA (Lupa): El ícono de lupa permite al usuario acceder rápidamente a la función de búsqueda directa en el catálogo.  
+* RECOMENDACIONES (Foco): El ícono de marcador de libro proporciona acceso instantáneo a la sección de las recomendaciones personalizadas para el usuario.  
+* TIENDA (Location Pin): El ícono de pin de ubicación dirige al usuario a la pantalla de Store, donde puede encontrar la dirección física de la librería.  
+* CARRITO (Shopping Cart): El ícono de carrito de compras es el call-to-action más importante de la barra, ya que permite al usuario ver y gestionar inmediatamente los artículos seleccionados y proceder a la compra.
+
+<p align="center">
+  <img src="https://i.imgur.com/OfRj9i2.png" alt="12171">
+</p>
+
+La barra de menú inferior es el Sistema de Navegación Global principal de la aplicación, diseñada para el acceso rápido y constante a las secciones clave. Se presenta en un tono oscuro de Azul Marino para estabilidad y contraste. Este menú utiliza iconografía de línea delgada con texto claro debajo, garantizando la usabilidad táctil:
+
+* HOME: El ícono de casa funciona como el punto central de navegación.  
+* CATEGORIES: El ícono de tres líneas horizontales (hamburguesa) dirige a la lista de categorías y géneros.  
+* COMMUNITIES: El ícono de personas enfoca al usuario en el aspecto social y de interacción de la plataforma.  
+* NOTIFICATIONS: El ícono de campana alerta al usuario de mensajes y novedades.  
+* PROFILE: El ícono de persona da acceso al centro de gestión de la cuenta, settings y la información personal del usuario.
+
+Este diseño asegura que todas las áreas fundamentales de la experiencia (descubrimiento, socialización y gestión personal) estén siempre visibles y sean accesibles con un solo toque, optimizando el flujo de navegación.
+
 ### 4.2.3. SEO Tags and Meta Tags
+
+**Landing Page**
+
+*Title*
+
+<p align="center">
+  <img src="https://i.imgur.com/ew2WMaj.png" alt="12171">
+</p>
+
+En este meta tag, se define el título que tendrá el sitio web del proyecto. El equipo decidió usar el nombre de la startup seguido del nombre del producto para resaltar nuestra autoría sobre la idea, optando por una mayor simplicidad que facilite la lectura por parte del usuario.
+
+*Meta tags*
+
+<p align="center">
+  <img src="https://i.imgur.com/ccw5CEp.png" alt="12171">
+</p>
+
+El equipo no realizó cambios sobre los meta tags incluídos por defecto dentro del archivo HTML, debido a que no fueron necesarios para el correcto funcionamiento de la página.
+
+*Description*
+
+<p align="center">
+  <img src="https://i.imgur.com/NNoNOAS.png" alt="12171">
+</p>
+
+El meta tag designado para la descripción del sitio web contiene un breve párrafo introductorio que resume los principales servicios que ofrece la aplicación, con el objetivo de informar rápidamente a los usuarios que no son familiares con su funcionamiento.
+
+*Keywords*
+
+<p align="center">
+  <img src="https://i.imgur.com/8i09h1y.png" alt="12171">
+</p>
+
+Los meta tags de “Keywords” tienen el propósito de optimizar la búsqueda del sitio web en navegadores al ampliar el número de términos que un usuario puede ingresar en la barra de búsqueda para localizarlo. En el caso de nuestro proyecto, se utilizaron términos relacionados al apartado de compra de libros y la función de comunidad.
+
+*Author*
+
+<p align="center">
+  <img src="https://i.imgur.com/nn35LiF.png" alt="12171">
+</p>
+
+El meta tag de autor está presente para identificar a los autores del contenido de la Landing Page.
+
+**Admin Mobile App**
+
+*ASO (App Store Optimizaton) elements:*
+
+<p align="center">
+  <img src="https://i.imgur.com/J9W9v8o.png" alt="12171">
+</p>
+
+La optimización para tiendas de aplicaciones (ASO) de tu aplicación, basándose únicamente en el AndroidManifest.xml que proporcionaste, se centra en los siguientes elementos visibles:
+
+*Título de la Aplicación (App Title/Name)*
+
+Este está definido por el atributo android:label tanto en la etiqueta <application> como en la <activity> principal. En ambos casos, el valor es "Adminlivria". Este es el nombre que los usuarios verán bajo el icono de la aplicación en la pantalla de inicio y en la tienda de aplicaciones. Un título efectivo debe ser memorable y reflejar la función de la aplicación, y "Adminlivria" sugiere un enfoque en administración o gestión.
+
+*Ícono de la aplicación (App Icon)*
+
+El atributo android:icon especifica el recurso **@mipmap/ic_launcher** y android:roundIcon especifica **@mipmap/ic_launcher_round**. Aunque no se muestra el diseño real, este es un elemento crucial de ASO ya que es la primera impresión visual de la aplicación.
 
 ### 4.2.4. Searching Systems
 
+En Livria, los Searching Systems fueron diseñados para simplificar la experiencia de búsqueda y mejorar la experiencia del usuario, ayudándolo a localizar los productos que quiere consultar rápidamente y de manera eficiente. Esto nos ayudará a evitar que los clientes se sientan abrumados o tengan problemas para encontrar libros de su interés.
+
+**Admin Mobile Application**
+
+<p align="center">
+  <img src="https://i.imgur.com/jEQcGM9.png" alt="12171">
+</p>
+
+La tarjeta de Book Collection no solo contiene el título de la sección, sino posee, también, una barra de búsqueda que permite encontrar un libro por su nombre. Además, al hacer clic en el ícono de Filtros, se pueden aplicar ciertos criterios para realizar una búsqueda más acertada.  
+Esta tarjeta se encuentra en las pantallas de Book Management y de Inventory para facilitar al administrador la búsqueda de libros en el catálogo de Livria.
+
+<p align="center">
+  <img src="https://i.imgur.com/nCX3CG8.png" alt="12171">
+</p>
+
+La tarjeta de Orders es casi idéntica a la de Book Collection, pues poseen su respectivo título, la barra de búsqueda y el método de filtrado. La principal diferencia es que la actual tarjeta encuentra órdenes a través de su ID o por el nombre del comprador.
+
+**Client Mobile Application**
+
+<p align="center">
+  <img src="https://i.imgur.com/VqADQtC.png" alt="12171">
+</p>
+
+La pantalla de búsqueda de Livria está diseñada para ofrecer una experiencia de descubrimiento de catálogo rápida y directa al usuario. Su diseño conciso se enfoca en la eficiencia y la relevancia de los resultados. Posee los siguientes elementos clave:
+
+* Activación de la Búsqueda: El sistema se inicia con un campo de texto claro y prominente etiquetado como "Search by Title or Author" (Buscar por Título o Autor), lo que dirige al usuario a introducir su consulta de forma explícita.  
+* Mecanismo de Resultados: Al ingresar un término, el sistema procesa y presenta los RESULTS (Resultados) en formato de tarjeta visual. Cada tarjeta contiene la carátula, el título, el autor y el precio del libro, permitiendo una rápida identificación visual del contenido.  
+* Refinamiento de Criterios (Filtros): El sistema incluye un ícono de filtros (representado por barras verticales de diferentes alturas) en la esquina superior derecha de la sección de resultados. Esta funcionalidad es crucial, ya que permite al usuario refinar los resultados obtenidos por la consulta inicial (título o autor) aplicando criterios adicionales, como se ve en el flujo de búsqueda.  
+* Integración con Descubrimiento: La selección de cualquiera de los resultados conduce a la Vista Individual del Libro, integrando el sistema de búsqueda directamente con el proceso de evaluación y compra.
+
+En esencia, este sistema es una herramienta de búsqueda de alta fidelidad que soporta tanto la entrada directa de consulta como el refinamiento posterior de los resultados.
+
+<p align="center">
+  <img src="https://i.imgur.com/wGss9Py.png" alt="12171">
+</p>
+
+La Pantalla de Categorías funciona como un sistema de búsqueda estructurada y de exploración del catálogo, dirigido a los usuarios que desean descubrir contenido por género o tema en lugar de buscar un título específico.
+
+* Exploración Estructurada: El sistema presenta una lista jerárquica de categorías principales (LITERATURE, NON-FICTION, MANGA & COMICS, etc.). El etiquetado claro de las categorías permite al usuario refinar su búsqueda por áreas de interés con un solo toque.  
+* Activación de la Búsqueda: La interacción principal es la selección de una categoría, pues el usuario es redirigido a la Vista de Categoría Seleccionada.  
+* Resultados y Refinamiento por Categoría: Esta vista muestra todos los libros pertenecientes a la categoría seleccionada. Es crucial notar que esta pantalla incluye el ícono de filtros (barras verticales). Esto permite al usuario refinar los resultados dentro de la categoría por criterios adicionales, completando así el proceso de búsqueda por exploración.
+
 ### 4.2.5. Navigation Systems
+
+El diseño de la navegación de Livria se basa en una arquitectura de información clara, utilizando patrones móviles probados para garantizar que tanto los lectores como el personal administrativo puedan acceder a sus flujos de trabajo clave de manera eficiente. Este enfoque dual es crucial para dar soporte a los diferentes *Bounded Contexts* definidos en el sistema.
+
+* Navegación Persistente: La Barra de Pestañas Inferior (Bottom Tabs)
+
+<p align="center">
+  <img src="https://i.imgur.com/WiU41Qg.png" alt="12171">
+</p>
+
+Este sistema constituye el eje de navegación global de la aplicación para el usuario lector. La Barra de Pestañas Inferior implementa un patrón de Navegación Persistente que asegura el acceso rápido y constante a los módulos de negocio fundamentales, sin que el usuario pierda su contexto actual. Esta barra es esencial para las funcionalidades principales de la aplicación, permitiendo a los usuarios cambiar entre estas secciones de alto nivel de forma instantánea. Su naturaleza constante en la base de la pantalla mejora la eficiencia y la descubribilidad de los módulos centrales de Livria, alineándose directamente con las metas de interacción social y exploración de contenido.
+
+* Navegación Contextual: La Barra Superior (Top Bar)
+
+<p align="center">
+  <img src="https://i.imgur.com/KhhqoBO.png" alt="12171">
+</p>
+
+La barra superior actúa como un complemento funcional y contextual de la navegación principal, enfocándose en acciones secundarias pero esenciales y en el acceso a la sesión. La Barra Superior complementa la navegación inferior, sirviendo como un portal para funcionalidades contextuales o universales. Ofrece acceso directo a Recomendaciones, al Carrito, etc. Su implementación minimiza el desorden en la barra inferior, reservándola solo para los módulos de más alta prioridad, mientras centraliza las acciones de usuario y compra.
+
+* Navegación Jerárquica y Gestual: El Retorno al Contexto
+
+<p align="center">
+  <img src="https://i.imgur.com/W81M9n7.png" alt="12171">
+</p>
+
+Este sistema garantiza la fluidez del usuario al moverse de una vista general a una específica y viceversa, utilizando tanto la jerarquía visual como la interacción gestual moderna. Se complementa con la Navegación Gestual de Retorno, permitiendo al usuario deslizar lateralmente de izquierda a derecha para deshacer la última acción de navegación y regresar inmediatamente a la pantalla anterior dentro de la pila. Por ejemplo, al salir de una publicación en Comunidades, el deslizamiento regresa al feed comunitario. Este mecanismo no solo es intuitivo y rápido, sino que también aligera la dependencia del botón físico o de la flecha de retroceso del sistema operativo, mejorando la experiencia de usuario y la percepción de fluidez.
+
+* Navegación Específica: La Funcionalidad de Búsqueda
+
+<p align="center">
+  <img src="https://i.imgur.com/UTBcxqJ.png" alt="12171">
+</p>
+
+La búsqueda es la ruta más directa para que el usuario acceda a la información deseada, actuando como un atajo crucial a través de los diversos Bounded Contexts. La Navegación por Búsqueda es un sistema crucial y transversal que permite a los usuarios saltar directamente a contenido específico de su interés, evitando la navegación secuencial. Al proveer resultados en tiempo real y categorizados, la búsqueda se convierte en la herramienta de navegación más eficiente para la exploración intencionada, optimizando el tiempo del usuario y reduciendo la fricción para la adquisición de libros.
 
 ## 4.3. Landing Page UI Design
 
+La propuesta de diseño para la interfaz de usuario (UI) de la Landing Page de Livria es la culminación visual de la arquitectura de información y el diseño centrado en el usuario. Desde el primer impacto, esta interfaz está diseñada para proyectar una identidad accesible, amigable y culturalmente cercana, alineada con el valor fundamental de promover la lectura y la comunidad. La estructura se organiza en secciones clave —Home, Services, About Us y Contact Us— que garantizan una navegación fluida e intuitiva. Estéticamente, el diseño emplea una jerarquía visual limpia, ilustraciones cálidas, tipografías legibles y un uso estratégico de la paleta de colores para despertar el interés, generar confianza e impulsar al visitante a interactuar con los llamados a la acción, asegurando que la primera impresión sea tanto funcional como emocionalmente atractiva.
+
 ### 4.3.1. Landing Page Wireframe
+
+En primer lugar, se observa la pantalla de inicio de la Landing Page de Livria. Esta tiene una descripción sobre qué trata la aplicación web que se ofrece y un carrusel de imágenes relacionadas. Asimismo, tiene el header con los accesos a cada sección de la landing page.
+
+<p align="center">
+  <img src="https://i.imgur.com/2WHRUgm.png" alt="12171">
+</p>
+
+En la sección siguiente aparece la información sobre los servicios de Livria: Variedad de libros, Comunidad de libros, y Recomendaciones. Asimismo, cada tarjeta de información tiene su imagen correspondiente.
+
+<p align="center">
+  <img src="https://i.imgur.com/M32uH0X.png" alt="12171">
+</p>
+
+La sección que continúa es la de “Sobre Nosotros”, la cual muestra información sobre la startup, Bookify, y la aplicación web, Livria. Se visualiza texto importante sobre quiénes somos, así como el logo representativo de cada uno.
+
+<p align="center">
+  <img src="https://i.imgur.com/QBeEGEs.png" alt="12171">
+</p>
+
+Luego, se llega a la última sección de la landing page, que es “Contáctanos”. En caso que el visitante desee comunicarse con el equipo de Bookify \- Livria, puede dejar su información y motivo de contacto. Además, si desea formar parte de este equipo, puede dejar su CV y aplicar para un puesto disponible.
+
+<p align="center">
+  <img src="https://i.imgur.com/gH7FYhn.png" alt="12171">
+</p>
+
+A medida que el visitante hizo scroll en la página, se mostraron todas las secciones de la landing page, llegando hasta el pie de página. Este muestra los accesos a las secciones visualizadas anteriormente, así como enlaces a partes legales y de soporte de la plataforma.
+
+<p align="center">
+  <img src="https://i.imgur.com/VERprTk.png" alt="12171">
+</p>
 
 ### 4.3.2. Landing Page Mock-up
 
+Los mockups de la landing page de Livria muestran una mayor fidelización de la interfaz final del sitio, integrando los elementos visuales definidos en la guía de estilo. Esta representación busca validar la propuesta estética y funcional de los wireframes en una experiencia clara y atractiva para el usuario.
+
+La pantalla de inicio del mockup de la landing page presenta el encabezado con las secciones principales del sitio y el bloque introductorio de la propuesta de Livria, ambos con los colores de la paleta. Incluye un carrusel visual con imágenes sobre lectura digital, comunidad lectora y la tienda física de Livria.
+
+<p align="center">
+  <img src="https://i.imgur.com/rqNL6wN.png" alt="12171">
+</p>
+
+La sección de “Servicios” presenta cada tarjeta de información con un color diferente, así como con una imagen respectiva sobre lo que describe la funcionalidad.
+
+<p align="center">
+  <img src="https://i.imgur.com/zl55fT7.png" alt="12171">
+</p>
+
+A esta sección, “Sobre Nosotros”, se le agrega color a los bloques que contienen los nombres de la startup y la aplicación, Defontes y Livria, respectivamente.
+
+<p align="center">
+  <img src="https://i.imgur.com/97eORXD.png" alt="12171">
+</p>
+
+El mockup de la última sección de la landing page, la cual presenta el formulario de contacto, se visualiza con un color principal de la paleta.
+
+<p align="center">
+  <img src="https://i.imgur.com/k4kMo0x.png" alt="12171">
+</p>
+
+El mockup del pie de página muestra los accesos de Navegación, Legal y Soporte con el color azul, así como los logos de las redes sociales de Livria.
+
+<p align="center">
+  <img src="https://i.imgur.com/ScJXwUf.png" alt="12171">
+</p>
+
 ## 4.4. Mobile Applications UX/UI Design
+
+El diseño UX/UI de las aplicaciones móviles de Livria (tanto para el Usuario Cliente como para el Administrador) se ha abordado bajo la premisa de accesibilidad, rendimiento y optimización táctil. El objetivo principal es trasladar la experiencia de lectura y comunidad a un entorno móvil de forma fluida y nativa, respetando los patrones de diseño de cada sistema operativo. Se ha priorizado la simplicidad en la navegación y la claridad de la información, utilizando grandes zonas de toque, una tipografía legible y un contraste adecuado. Esto asegura que el usuario pueda interactuar con el catálogo, la comunidad y las funcionalidades administrativas de manera eficiente, haciendo de las aplicaciones móviles una extensión natural y poderosa de la plataforma web de Livria.
 
 ### 4.4.1. Mobile Applications Wireframes
 
+Los wireframes de las aplicaciones móviles de Livria (tanto para la versión de cliente como la de administrador) representan la columna vertebral estructural del diseño, priorizando la usabilidad táctil y la eficiencia de navegación en pantallas pequeñas. Esta etapa se enfoca en definir la organización jerárquica del contenido y la disposición óptima de los elementos clave dentro de los patrones de diseño móvil. Al concentrarse únicamente en la estructura y el flujo de tareas sin la distracción de elementos visuales, los wireframes permiten optimizar la experiencia de usuario en movimiento y asegurar que las funcionalidades críticas del sistema sean accesibles y fluidas para el lector y el administrador.
+
+##### **Pantallas de Loggeo** 
+
+La pantalla de Log In es el punto de entrada inicial a la plataforma Livria y está diseñada para gestionar el acceso de todos los tipos de usuarios. Presenta un formulario centralizado para la autenticación estándar con campos para Username y Password, culminando con el botón 'LOG IN'. Debajo de la sección de acceso principal, la pantalla ofrece opciones secundarias vitales: un botón 'REGISTER' que redirige a los nuevos usuarios a la creación de cuenta, y un botón 'ADMIN' que permite a los administradores iniciar sesión con sus credenciales por defecto. Esta disposición asegura que tanto los usuarios regulares como el personal de gestión puedan acceder a sus respectivos flows desde una única interfaz, manteniendo la usabilidad y la seguridad como prioridad.
+
+<p align="center">
+  <img src="https://i.imgur.com/5ll4vZV.png" alt="12171">
+</p>
+
+La primera pantalla de Register está diseñada para facilitar la incorporación de nuevos usuarios a la plataforma Livria. La interfaz se centra en un formulario claro y conciso que solicita la información esencial para la creación de una cuenta: Email, Password y Confirm Password. El proceso de registro incorpora un paso de cumplimiento legal mediante un checkbox que exige al usuario confirmar que ha leído y acepta la Privacy Policy y los Terms and Conditions de Livria. La acción se consolida con el botón 'CONTINUE'. Adicionalmente, la pantalla mantiene la usabilidad al ofrecer opciones de navegación alternativas, permitiendo a los usuarios ya registrados volver a la pantalla de 'SIGN IN' o a los administradores iniciar sesión mediante el botón 'ADMIN'.
+
+<p align="center">
+  <img src="https://i.imgur.com/ZOAwpNh.png" alt="12171">
+</p>
+
+La segunda pantalla de Register está dedicada a la personalización del perfil del nuevo usuario, siguiendo el registro inicial de credenciales. El formulario solicita al usuario definir su identidad dentro de la plataforma con campos como Nickname, Username (nombre de usuario único) y la Phrase (una frase o bio de perfil). Adicionalmente, el usuario tiene la opción de personalizar su perfil subiendo una Profile Picture mediante opciones para tomar una foto o seleccionar una de la galería. El proceso de creación de la cuenta se completa con el botón 'REGISTER'. Al igual que en el paso anterior, la pantalla mantiene la usabilidad ofreciendo rutas de escape para usuarios que ya tienen una cuenta ('SIGN IN') o para la autenticación de administradores ('ADMIN').
+
+<p align="center">
+  <img src="https://i.imgur.com/28SgVMC.png" alt="12171">
+</p>
+
+Por último, la pantalla de Admin Sign In es la interfaz dedicada a la autenticación del personal de gestión de Livria, priorizando la seguridad mediante un proceso de acceso de triple factor. El formulario requiere que el administrador ingrese un Username y Password estándar, pero añade un campo adicional de Security Pin para una verificación de identidad más robusta. El acceso al dashboard se otorga al pulsar el botón 'SIGN IN'. La interfaz también mantiene opciones de navegación para la usabilidad, ofreciendo el botón 'GO BACK' para regresar a la pantalla de inicio de sesión de cliente si se ha accedido por error, y el botón 'ADMIN' que funge como un doble check para confirmar la intención de iniciar sesión como administrador.
+
+<p align="center">
+  <img src="https://i.imgur.com/pKOwG9S.png" alt="12171">
+</p>
+
+##### **Pantallas de Administrador** 
+
+En primer lugar, la pantalla de Home del Administrador está diseñada como un dashboard de gestión centralizado que prioriza la eficiencia y el acceso rápido a las tareas críticas. Se presenta una interfaz limpia y jerárquica que inmediatamente proporciona una bienvenida personalizada al administrador. En la parte superior se muestra información esencial de negocio, como el Capital actual, que es una métrica clave. El cuerpo de la pantalla está dominado por la sección Quick Actions, que agrupa las funcionalidades principales de manera accesible: Manage Books, Manage Orders, Inventory y Statistics. Finalmente, la sección System Information ofrece datos de soporte, como la versión del sistema y el último inicio de sesión.
+
+<p align="center">
+  <img src="https://i.imgur.com/Ps0Yryq.png" alt="12171">
+</p>
+
+La pantalla de Books del Administrador combina visualización de métricas y gestión del catálogo. En la parte superior, bajo el título Statistics, se presenta un resumen ejecutivo con tarjetas que muestran datos clave como Total Books, Total Genres, Average Price, Books in Stock y Most Reviewed, proporcionando al administrador una visión rápida del rendimiento del catálogo. La sección inferior, Book Collection, es el corazón de la gestión. Aquí, el administrador puede buscar títulos específicos mediante una barra de búsqueda y ver el listado completo de libros organizado en un formato de tarjeta (card) conciso. Cada tarjeta muestra la portada, el título y el precio, e incluye un botón 'VIEW' que permite acceder a la información detallada del libro, facilitando la navegación rápida y la gestión eficiente del inventario.
+
+<p align="center">
+  <img src="https://i.imgur.com/lyz2nul.png" alt="12171">
+</p>
+
+Consecutivamente, la pantalla de Detalle del Libro del Administrador, ofrece una vista exhaustiva de la información individual de cada título, accesible mediante el botón "VIEW" desde la pantalla anterior. En la parte superior, se muestra el título completo del libro, junto con etiquetas descriptivas como "JUVENILE" y "EN INGLÉS", que categorizan el contenido. La portada del libro ocupa un lugar central, seguida de los datos financieros clave: el Purchase Price (precio de compra) y el Sale Price (precio de venta), métricas esenciales para la gestión de inventario y la estrategia de precios. Finalmente, la sección Synopsis proporciona un resumen detallado del contenido del libro, lo que permite al administrador obtener una comprensión profunda del producto sin necesidad de fuentes externas. Esta pantalla consolida toda la información relevante para la gestión de cada título.
+
+<p align="center">
+  <img src="https://i.imgur.com/6OEO7L5.png" alt="12171">
+</p>
+
+La primera pantalla de Orders del Administrador es el centro de control para la gestión y el análisis de las transacciones de Livria. Al igual que otras secciones, comienza con un panel de métricas clave que incluye Total Orders, Total Revenue, Average Order Value, Pending Orders y Completed Orders, proporcionando una visión inmediata del rendimiento financiero y operativo. La sección principal, ORDERS, permite al administrador buscar pedidos mediante un Order ID o el Customer Name. Debajo de la búsqueda, la información se presenta en un formato de tabla concisa, que resume el ORDER CODE, el CUSTOMER, la DATE, el TOTAL de la compra y el STATUS actual (entre "Pending", “In Progress” y “Delivered”). Esta estructura está optimizada para la trazabilidad y el monitoreo eficiente del ciclo de vida de cada pedido.
+
+<p align="center">
+  <img src="https://i.imgur.com/bWH9UvG.png" alt="12171">
+</p>
+
+La segunda pantalla de Orders, accesible al seleccionar un pedido de la tabla, ofrece una vista detallada de la transacción, organizada en secciones claras para una gestión eficiente. La sección ORDER DETAILS proporciona un resumen del pedido con el Order Code, la Order Date y el Order Status ("Pending" en el ejemplo), junto con el Order Value. A continuación, la sección CUSTOMER INFORMATION presenta datos esenciales del cliente, incluyendo Customer Name, Customer Email, y la información del destinatario (Recipient Name y Recipient Phone). Finalmente, la sección ORDER ITEMS desglosa los productos adquiridos en un formato de tarjeta visual, mostrando cada libro con su título, un breve resumen y precio, e incluye una opción 'VIEW' para verificar la información del ítem. Esta estructura facilita el proceso de verificación y el servicio al cliente, complementado por una sección para UPDATE STATUS que permite avanzar el pedido en su ciclo de vida.
+
+<p align="center">
+  <img src="https://i.imgur.com/UAmHp1d.png" alt="12171">
+</p>
+
+La primera vista de la sección Inventory del Administrador se centra en la función de agregar nuevos títulos al catálogo de Livria, bajo el título Add to Inventory. Esta pantalla está organizada en un formulario que captura la información esencial de cada libro de manera estructurada. El administrador debe completar campos como Title, Author, Description, y seleccionar el Genre y el Language a través de dropdowns. Adicionalmente, la interfaz permite subir la Cover Image y definir el Stock inicial mediante un selector de cantidad. La navegación se facilita con pestañas superiores que permiten alternar entre esta función (ADD A BOOK) y la visualización del inventario existente (VIEW INVENTORY), garantizando un flujo de trabajo claro para la gestión de existencias.
+
+<p align="center">
+  <img src="https://i.imgur.com/XGE8gFq.png" alt="12171">
+</p>
+
+La segunda vista de la sección Inventory, accesible mediante la pestaña VIEW INVENTORY, transforma la interfaz en una herramienta de gestión de existencias. La pantalla presenta la Book Collection en un formato de lista de tarjetas, similar a la vista de "Books", pero con un enfoque en la disponibilidad. El administrador puede buscar títulos específicos y, lo más importante, observar el Stock actual (mostrado como 'Stock: 0' en el ejemplo) debajo de cada título. Esta funcionalidad está diseñada para permitir al administrador reaccionar rápidamente a la escasez de existencias, ya que cada tarjeta incluye un prominente botón 'ADD STOCK'. Este botón dirige a una tercera pantalla de libro individual al que se quiere aumentar el stock.
+
+<p align="center">
+  <img src="https://i.imgur.com/Bvw1byy.png" alt="12171">
+</p>
+
+La tercera y última pantalla de Inventory se enfoca exclusivamente en el proceso de reabastecimiento de existencias para un título específico, siendo accesible al seleccionar 'ADD STOCK' en la vista de inventario. En la parte superior, se muestra la información de identificación del libro, incluyendo el título, las etiquetas de clasificación, los precios (Purchase Price y Sale Price) y el CURRENT STOCK disponible. La función principal reside en la sección de acción, donde el administrador selecciona la QUANTITY a añadir mediante un dropdown y visualiza el TOTAL TO PAY asociado a esa compra de inventario. El proceso se finaliza con el botón 'CONTINUE', lo que indica la transición al flujo de compra o registro de existencias. Esta pantalla consolida la verificación del estado actual del stock con la acción de reabastecimiento, optimizando la gestión de inventario.
+
+<p align="center">
+  <img src="https://i.imgur.com/n8IrULn.png" alt="12171">
+</p>
+
+La pantalla de Statistics del Administrador es un dashboard analítico que ofrece una visualización de las métricas clave para la toma de decisiones, pues consolida la información de ventas y finanzas, transformando datos en insights visuales para que el administrador pueda monitorear la salud operativa y estratégica de Livria.. Se estructura en tres secciones:
+
+* TOP THREE BEST SELLING BOOKS: Destaca visualmente los tres títulos con mejor rendimiento de ventas mediante tarjetas que muestran la portada y el número de unidades vendidas, permitiendo identificar rápidamente los productos más exitosos.  
+* REVENUE ACCORDING THE GENRES: Presenta un gráfico de pastel que desglosa los ingresos totales de Livria según el género literario. Este gráfico es crucial para analizar qué segmentos del catálogo están generando mayor rentabilidad.  
+* CAPITAL FLOW AND OPERATIONS: Muestra la dinámica financiera de la plataforma a través de un gráfico de líneas que compara variables clave como las Ganancias por Órdenes y el Costo de Venta (Libros) a lo largo del tiempo.
+
+<p align="center">
+  <img src="https://i.imgur.com/MXRwiD4.png" alt="12171">
+</p>
+
+La primera vista de la pantalla de Settings del Administrador se enfoca en la gestión del perfil y las preferencias del sistema. La interfaz se presenta de manera clara, con una bienvenida personalizada al administrador. La funcionalidad principal se divide mediante pestañas: PROFILE y APPLICATION. La sección PROFILE INFORMATION muestra un formulario para la modificación de datos sensibles, incluyendo Name, Username, Email y Security Pin. Los campos están diseñados para una edición rápida. En la parte inferior, se encuentran botones clave para la seguridad y la persistencia de los cambios: un botón 'LOG OUT' para cerrar la sesión y un botón 'SAVE CHANGES' para actualizar los datos del perfil, garantizando que el administrador mantenga el control sobre su información y credenciales.
+
+<p align="center">
+  <img src="https://i.imgur.com/dBRUNCl.png" alt="12171">
+</p>
+
+La segunda vista de la sección Settings del Administrador, accesible mediante la pestaña APPLICATION, se dedica a la gestión de las preferencias del sistema y la comunicación. Esta pantalla permite al administrador configurar el flujo de notificaciones y alertas que recibe. Se presentan toggles binarios de 'YES' / 'NO' para tres opciones clave: Notifications (recibir notificaciones dentro de la aplicación), Email Alerts (recibir alertas a través del correo electrónico), y una configuración para Email (probablemente referida a la automaticidad o guardado de cambios en la configuración de email). Esta interfaz asegura que el administrador pueda personalizar su experiencia y su nivel de exposición a las comunicaciones del sistema. Al igual que en la vista de perfil, incluye los botones 'LOG OUT' y 'SAVE CHANGES' para aplicar las modificaciones o cerrar la sesión.
+
+<p align="center">
+  <img src="https://i.imgur.com/pp8KqT0.png" alt="12171">
+</p>
+
+##### **Pantallas de Cliente** 
+
+En primer lugar se tiene a la pantalla de inicio de Livria, la cual muestra elementos principales de la aplicación. Se tiene el header, que posee los accesos a las secciones de Búsqueda, Recomendaciones, Tienda, y al Carrito de Compras. Asimismo, hay un carrusel que muestra diferentes banners con información, siendo el principal el de “obtener el Plan Comunidad”. A partir de ello, aparecen las primeras sugerencias de las categorías parte del catálogo de Livria. Finalmente, se encuentra el menú de navegación entre las principales secciones de Livria. 
+
+<p align="center">
+  <img src="https://i.imgur.com/0oxdHi4.png" alt="12171">
+</p>
+
+La pantalla de Recommendations es el feed personalizado del Usuario Cliente, diseñado para fomentar el descubrimiento de nuevos títulos. La interfaz saluda al usuario con un mensaje amigable y explica que las sugerencias se basan en sus preferencias. El contenido principal presenta los libros recomendados en un formato de tarjetas visuales concisas que muestran la portada, el título, el autor y el precio. El diseño prioriza la acción y la interacción inmediata, permitiendo al usuario marcar su interés con íconos de marcador o eliminar la sugerencia con íconos negativos, lo que refina el algoritmo. Finalmente, la pantalla incluye un botón 'REFRESH' para generar una nueva tanda de recomendaciones, asegurando una experiencia de navegación dinámica y continuamente adaptada a los gustos del lector.
+
+<p align="center">
+  <img src="https://i.imgur.com/xeS5EPO.png" alt="12171">
+</p>
+
+La pantalla de Categories es una herramienta de navegación esencial diseñada para facilitar la exploración y el descubrimiento del catálogo de libros por parte del Usuario Cliente. Presenta una interfaz limpia y estructurada, organizada como una lista jerárquica bajo el título SEARCH BY CATEGORY. La pantalla enumera las principales clasificaciones de contenido, incluyendo géneros tradicionales como LITERATURE, NON-FICTION y FICTION, junto con segmentos específicos como MANGAS & COMICS, JUVENILE y CHILDREN. Adicionalmente, se destaca una categoría para formatos digitales, E-BOOKS AND AUDIOBOOKS. El diseño prioriza la claridad y la sencillez, permitiendo al usuario navegar rápidamente a través de grandes colecciones de libros y refinar su búsqueda con un solo toque, optimizando el flujo de descubrimiento.
+
+<p align="center">
+  <img src="https://i.imgur.com/v4b4j3C.png" alt="12171">
+</p>
+
+La pantalla de Category View se presenta al Usuario Cliente después de seleccionar un género o categoría específica desde la pantalla de categorías. Su función principal es mostrar el subconjunto del catálogo que pertenece a esa clasificación. La interfaz organiza los libros en un formato de tarjeta visual de fácil escaneo, donde cada card muestra la portada, el título, el autor y el precio. Además, la pantalla incluye un ícono de filtros/ordenamiento en la esquina superior derecha, lo que permite al usuario refinar aún más los resultados dentro de la categoría seleccionada. Este diseño asegura una transición fluida desde la exploración general a una vista detallada y manejable de los libros relevantes.
+
+<p align="center">
+  <img src="https://i.imgur.com/84y4AVX.png" alt="12171">
+</p>
+
+La pantalla de Search es la herramienta de exploración directa del Usuario Cliente. Presenta un campo de búsqueda prominente titulado SEARCH BY TITLE OR AUTHOR, que permite al usuario ingresar términos específicos para localizar libros. Debajo de la barra de entrada, los RESULTS se muestran en un formato de tarjeta concisa y visualmente atractivo. Cada tarjeta ofrece una vista previa con la portada, el título, una breve descripción y el precio del libro. La interfaz está optimizada para el refinamiento de la búsqueda, ya que incluye un ícono de filtros/ordenamiento en la sección de resultados. Esto garantiza que el usuario no solo pueda encontrar libros rápidamente, sino también manipular los resultados para optimizar su descubrimiento y su experiencia de compra.
+
+<p align="center">
+  <img src="https://i.imgur.com/W7JemgL.png" alt="12171">
+</p>
+
+La pantalla de Single Book View es el punto focal para la interacción del Usuario Cliente con un título específico, consolidando la información de compra y reseña. En la parte superior, se muestra de manera prominente el título del libro y etiquetas descriptivas como "JUVENILE" y "EN INGLÉS". El diseño se centra en la portada del libro y en las acciones de interacción clave: el usuario puede marcar el libro con iconos de negativo (no interesado) y marcador (interesado). La zona de compra incluye el precio, un selector de cantidad y el botón 'ADD TO CART'. Debajo de la acción de compra, la sección Synopsis proporciona un resumen detallado del contenido. Finalmente, continúa con el apartado de REVIEWS.
+
+<p align="center">
+  <img src="https://i.imgur.com/ks12piQ.png" alt="12171">
+</p>
+
+La pantalla de Communities es el punto central para la interacción social del Usuario Cliente, diseñada para fomentar la participación y la creación de grupos de lectura. La interfaz principal muestra un listado de comunidades existentes en un formato de tarjeta visual, donde cada card presenta el nombre de la comunidad y un espacio para su ícono o imagen representativa. La pantalla incluye una barra de búsqueda en la parte superior, permitiendo al usuario buscar comunidades por título. De manera destacada, la acción clave de la sección, 'CREATE +', se encuentra en la esquina superior derecha, facilitando a los usuarios crear y expandir la red de comunidades, reforzando el pilar de construcción de comunidad de Livria.
+
+<p align="center">
+  <img src="https://i.imgur.com/bV0CpDQ.png" alt="12171">
+</p>
+
+La pantalla de Community View es la interfaz dedicada a la interacción dentro de una comunidad específica, sirviendo como un feed social. En la parte superior, se muestra el par de imágenes representativas (banner y profile picture) de la comunidad con su nombre y una breve descripción, junto con un botón 'JOIN +' que permite al Usuario Cliente unirse al grupo. El foco de la pantalla es la creación y visualización de contenido social. Los usuarios pueden ingresar sus pensamientos en un campo de texto, agregar imágenes y publicar su contenido con el botón 'POST'. Debajo de la zona de publicación, se despliega un feed de las publicaciones existentes, donde cada tarjeta muestra el username del autor y el contenido publicado. Este diseño fomenta activamente la discusión, la compartición de contenido y la construcción de lazos entre los miembros de la comunidad.
+
+<p align="center">
+  <img src="https://i.imgur.com/GfGRek9.png" alt="12171">
+</p>
+
+La pantalla de Cart es la interfaz dedicada a la gestión de las compras del Usuario Cliente. Presenta un diseño simple y enfocado en la conversión, con un botón 'EMPTY CART' en la parte superior para vaciar rápidamente la cesta. El contenido principal muestra los artículos agregados en un formato de tarjeta conciso, donde cada libro se visualiza junto a un selector de cantidad y un ícono de eliminar para la gestión individual. En la parte inferior de la pantalla, se presenta un resumen financiero con el Subtotal de la compra. Finalmente, el botón 'COMPLETE MY PURCHASE' actúa como el llamado a la acción principal, dirigiendo al usuario al flujo de pago y finalización de la transacción.
+
+<p align="center">
+  <img src="https://i.imgur.com/kfNTt0W.png" alt="12171">
+</p>
+
+La pantalla de Notifications es la central de mensajes y alertas para el Usuario Cliente. Su diseño es directo y funcional, con el objetivo de gestionar las comunicaciones del sistema. La interfaz incluye un botón 'EMPTY LIST' en la parte superior, que permite al usuario limpiar rápidamente su historial de notificaciones. El contenido se presenta como un listado de tarjetas de mensaje (como "Welcome to Livria!"), donde cada una contiene la alerta o información relevante. Cada notificación incluye la opción de eliminar el mensaje de forma individual, permitiendo al usuario gestionar su bandeja de entrada de manera eficiente y mantener solo las alertas pendientes o relevantes.
+
+<p align="center">
+  <img src="https://i.imgur.com/3yO3Sl7.png" alt="12171">
+</p>
+
+La pantalla de Store está diseñada para proporcionar al Usuario Cliente información sobre la ubicación física de Livria. Bajo el título OUR STORE y una invitación a visitar la tienda, la interfaz se centra en la geolocalización. La sección principal está dominada por una visualización de mapa que muestra la ubicación exacta de la tienda. Debajo del mapa, el ADDRESS se presenta de forma clara y detallada. Esta pantalla cumple la función de conectar la experiencia de compra en línea con la posibilidad de una visita física, ofreciendo una herramienta de localización directa para el cliente.
+
+<p align="center">
+  <img src="https://i.imgur.com/vttBUSF.png" alt="12171">
+</p>
+
+La pantalla Submit Order marca el inicio del flujo de pago para el Usuario Cliente, siendo el primer paso tras hacer clic en 'COMPLETE MY PURCHASE' desde el carrito. El título SUBMIT ORDER establece claramente el objetivo de la pantalla. La interfaz está organizada en una barra de progreso visual que guía al usuario a través de los pasos de la compra: Carrito, Información del Cliente, Dirección de Envío y Pago. La vista actual se centra en el PURCHASE SUMMARY, mostrando un resumen financiero conciso que incluye la cantidad de ítems y el Total a pagar. Para mantener el foco y permitir la revisión, un botón 'VIEW ITEMS' permite al usuario verificar los productos. La transición al siguiente paso del proceso se realiza mediante el botón 'CONTINUE'.
+
+<p align="center">
+  <img src="https://i.imgur.com/WCI21Mw.png" alt="12171">
+</p>
+
+El segundo paso del flujo Submit Order se enfoca en la recolección de los datos del destinatario para la entrega, indicando un progreso claro en la barra superior. La sección principal, RECIPIENT INFORMATION, solicita al Usuario Cliente información esencial para el envío, incluyendo Name, Last Name, Phone Number y Email. Estos campos de formulario son críticos para asegurar que el pedido sea entregado a la persona correcta y que se pueda establecer una comunicación efectiva durante el proceso de delivery. La interfaz mantiene la opción 'VIEW ITEMS' para una revisión rápida de los productos y permite al usuario avanzar al siguiente paso del proceso de compra mediante el botón 'CONTINUE'.
+
+<p align="center">
+  <img src="https://i.imgur.com/pwLYYgI.png" alt="12171">
+</p>
+
+El tercer y penúltimo paso del flujo Submit Order se enfoca en la selección del método de entrega para el Usuario Cliente. La interfaz guía al usuario mediante dos opciones claras: 'PICK UP IN STORE' (recoger en tienda) y 'HOME DELIVERY' (entrega a domicilio). Al seleccionar 'PICK UP IN STORE', se informa al usuario que la recogida estará disponible a partir de tres días hábiles después de la confirmación del pedido y se proporciona un enlace (click here) para obtener más detalles sobre la ubicación física de la tienda. Esta pantalla asegura que el cliente elija el método de entrega más conveniente antes de avanzar a la fase final del pago, manteniendo la opción 'VIEW ITEMS' para la revisión del carrito y utilizando el botón 'CONTINUE' para proceder.
+
+<p align="center">
+  <img src="https://i.imgur.com/sL7JRwG.png" alt="12171">
+</p>
+
+La última pantalla del flujo Submit Order se enfoca en los detalles de pago y la confirmación de términos legales antes de completar la compra. La sección PAYMENT DETAILS informa al Usuario Cliente que todos los pagos se procesan a través de Izipay y que la aceptación de los términos redirigirá al usuario a la página de Izipay para realizar el pago. Este paso incluye dos checkboxes obligatorios para el cumplimiento legal: el primero requiere la autorización para el procesamiento de datos personales de acuerdo con la Privacy Policy y Terms and Conditions, y el segundo es opcional para autorizar el procesamiento de datos con fines de promoción comercial. El botón 'CONTINUE' finaliza el flujo en la plataforma, llevando al usuario al sistema de pago externo para completar la transacción.
+
+<p align="center">
+  <img src="https://i.imgur.com/Q3I0MFR.png" alt="12171">
+</p>
+
+La pantalla de Profile es el centro de gestión de la identidad y las preferencias para el Usuario Cliente. La parte superior muestra la información de la cuenta del usuario, incluyendo el nombre de perfil, username, email, y una breve biografía o frase. Se presenta información clave sobre el estatus de la cuenta mediante pestañas para SUBSCRIPTION y Community Plan. La funcionalidad de gestión principal se organiza en tres pestañas: SETTINGS, MY ORDERS y EDIT BIO. El apartado de SETTINGS permite al usuario configurar sus preferencias de notificación y privacidad mediante toggles; MY ORDERS permite ver las anteriores compras del usuario; y EDIT BIO permite cambiar la información del usuario. Finalmente, la pantalla incluye acciones críticas para el control total de la cuenta: 'DELETE ACCOUNT' y 'LOG OUT', asegurando que el cliente pueda gestionar su privacidad y acceso de forma segura.
+
+<p align="center">
+  <img src="https://i.imgur.com/eC3Mkv3.png" alt="12171">
+</p>
+
 ### 4.4.2. Mobile Applications Wireflow Diagrams
+
+**User Goal para Segmento 1: Lectores en Desarrollo**
+
+Como usuario, quiero visualizar recomendaciones personalizadas según mis preferencias de lectura y quiero determinar si una es de mi agrado o no.
+
+Task Flow:
+
+<p align="center">
+  <img src="https://i.imgur.com/At7uFMF.png" alt="12171">
+</p>
+
+Wireflow:
+
+<p align="center">
+  <img src="https://i.imgur.com/hSyeHP0.jpeg" alt="12171">
+</p>
+
+Para poder interactuar con las recomendaciones que brinda Livria a cada usuario, se accede, en primer lugar, a esta sección a través del header de la aplicación móvil. Al presionar el ícono del foco, que vendría a ser “Recomendaciones”, se le redirige al usuario al apartado en el que aparecen sus 6 recomendaciones. Al seleccionar una de ellas, aparece el detalle del libro recomendado. A este, se le puede marcar como interés o desinterés al seleccionar el ícono del bookmark o del negative, respectivamente.
+
+Asimismo, para mejorar las recomendaciones que ofrece Livria, se pueden marcar otros libros. Para ello, desde el inicio de la aplicación —o desde cualquier otra sección— se puede acceder a un libro en específico y marcarle, así como a un libro recomendado, como interés o desinterés al seleccionar el ícono del bookmark o del negative, respectivamente.
+
+**User Goal para Segmento 2: Lectores casuales y aficionados a la lectura**
+
+Como usuario, quiero conectar con otras personas que compartan mis gustos literarios y ver sus opiniones sobre esos temas en específico.
+
+Task Flow:
+
+<p align="center">
+  <img src="https://i.imgur.com/xyMBDgg.png" alt="12171">
+</p>
+
+Wireflow:
+
+<p align="center">
+  <img src="https://i.imgur.com/hPl9I9L.jpeg" alt="12171">
+</p>
+
+Para interactuar con otros usuarios sobre temas específicos, se debe seguir una secuencia de pasos. En primer lugar, desde el inicio de Livria —o desde cualquier otra sección— se debe acceder al apartado de Comunidades al presionar su link en el menú inferior. Acto seguido, se mostrarán las variadas comunidades creadas en la aplicación. A partir de ello, el usuario puede elegir entre crear una nueva o unirse a una existente. De elegir la primera opción, deberá completar los campos de información requeridos y, cuando haya creado la comunidad, aparecerá con la información proporcionada. En función a eso, se le permitirá empezar a publicar sobre el tema elegido, así como a los demás usuarios que se unan. En el caso contrario, que se unan a una comunidad existente, se podrá tanto crear una nueva publicación como comentar en una preexistente.
 
 ### 4.4.3. Mobile Applications Mock-ups
 
+La etapa de Mockups representa la traducción fiel de la estructura definida en los wireframes a una propuesta visual de alta fidelidad. Utilizando los Style Guidelines de Livria —que incluye la paleta de colores, tipografías y branding—, esta sección ilustra el look and feel final de la plataforma. El objetivo es mostrar al detalle cómo se aplicarán los elementos visuales para generar una interfaz coherente, atractiva y funcional. Los mockups no solo respetan la jerarquía y el flujo de navegación establecidos, sino que también garantizan que la experiencia de usuario (UX) sea intuitiva y esté completamente alineada con el tono cálido y motivador de la marca.
+
+##### **Pantallas de Loggeo**
+
+La pantalla de Log In utiliza una paleta de colores cálida para crear una bienvenida acogedora. El formulario de acceso principal se destaca en un recuadro de color Ámbar (#FEB913), que transmite optimismo, y el botón principal 'LOG IN' utiliza una variación de este color para incentivar la acción. El logo de Livria se exhibe prominentemente en la parte superior. La zona inferior, que contiene las opciones 'REGISTER' y 'ADMIN' (para el acceso de gestión), utiliza el color Cian Suave para diferenciar claramente las rutas secundarias del login principal del cliente. El uso de la tipografía Asap Condensed para el título refuerza la claridad y el dinamismo del branding.
+
+<p align="center">
+  <img src="https://i.imgur.com/zxcJUZp.png" alt="12171">
+</p>
+
+El primer paso de Registro mantiene la estética cálida y cercana con el fondo Ámbar, utilizando el color Anaranjado (#FF5C00) para el título 'REGISTER' y el botón 'CONTINUE', lo que canaliza la energía hacia la finalización del proceso. La interfaz se enfoca en la recolección de Email y la definición de Password con campos de texto limpios. Visualmente, se destaca la casilla de aceptación de la Privacy Policy y Terms and Conditions, asegurando que el cumplimiento legal sea un paso claro e ineludible. Las opciones secundarias de 'SIGN IN' y 'ADMIN' mantienen el contraste con el Cian Suave en la parte inferior.
+
+<p align="center">
+  <img src="https://i.imgur.com/Kbmshqs.png" alt="12171">
+</p>
+
+El segundo mockup de Registro se centra en la personalización del perfil, continuando con la paleta ámbar y anaranjada para el foco de acción. Los campos solicitan información personal de la cuenta (Nickname, Username y Phrase) y proporcionan íconos claros para la carga de la Profile Picture (cámara/galería), utilizando la iconografía de línea delgada. El botón 'REGISTER' finaliza el proceso con el color de acción anaranjado. Este diseño, a través de la calidez del color y la tipografía Asap Condensed, refuerza el tono acogedor y motivador de Livria, animando al nuevo usuario a completar su identidad en la comunidad.
+
+<p align="center">
+  <img src="https://i.imgur.com/B65Xijt.png" alt="12171">
+</p>
+
+La pantalla de Admin Sign In utiliza la misma estructura, pero puede diferenciarse sutilmente en el color del recuadro principal (un amarillo ligeramente más pálido en este mockup, aunque aún cercano al Ámbar). El énfasis visual se pone en la seguridad, requiriendo tres campos de autenticación: Username, Password y el Security Pin. El botón 'SIGN IN' es prominente y utiliza el color de acción. Las opciones secundarias 'GO BACK' y 'ADMIN' reafirman que esta es una ruta de acceso especializada. La aplicación del branding es limpia y directa, priorizando la funcionalidad y la seguridad de acceso a los desarrolladores encargados de la supervisión y administración de la aplicación.
+
+<p align="center">
+  <img src="https://i.imgur.com/hpE6HzU.png" alt="12171">
+</p>
+
+##### **Pantallas de Administrador**
+
+En primer lugar, la pantalla de Home del Administrador traduce la estructura del wireframe a un dashboard visualmente limpio y profesional, utilizando la paleta de colores de Livria para la jerarquía y el branding. El fondo principal utiliza el color Azul Marino para la barra superior e inferior, transmitiendo estabilidad, mientras que el contenido se presenta en un contenedor de color claro. El título de bienvenida ("Welcome to the Library Management System") utiliza el color Anaranjado (#FF5C00) para ser más llamativo. La sección Quick Actions utiliza iconos de línea clara y botones con el fondo blanco para contrastar con el color de acción, permitiendo un acceso rápido a las funcionalidades clave como Manage Books, Manage Orders e Statistics. Finalmente, la sección System Information utiliza un fondo Ámbar (#FEB913) para diferenciar la información de soporte, manteniendo un diseño enfocado en la eficiencia operativa.
+
+<p align="center">
+  <img src="https://i.imgur.com/syXwaub.png" alt="12171">
+</p>
+
+La pantalla de Books utiliza una combinación de colores contrastantes para destacar la información crucial. La barra superior y la navegación inferior emplean el Azul Marino, transmitiendo profesionalismo. El título principal, "Livria Management", está en color Anaranjado (#FF5C00), guiando la vista del administrador. Las métricas clave (Total Books, Total Genres) se presentan en tarjetas blancas y limpias, facilitando la lectura rápida. La Book Collection utiliza un fondo blanco, con el título "BOOK COLLECTION" en Ámbar (#FEB913) para diferenciar la sección de catálogo. Cada tarjeta de libro ahora muestra la portada real y el botón 'VIEW' es de color Azul (#2364A0), enfatizando la acción de visualización.
+
+<p align="center">
+  <img src="https://i.imgur.com/5J8rXNO.png" alt="12171">
+</p>
+
+El mockup de Detalle del Libro se enfoca en presentar la información del título de forma clara. El título del libro (PERCY JACKSON AND THE BATTLE OF THE LABYRINTH) se muestra en color Anaranjado. Los metadatos (JUVENILE, en INGLÉS) y el nombre del autor (RICK RIORDAN) utilizan el color Azul Marino para mantener la legibilidad contra el fondo. Los datos financieros se jerarquizan por color: el PURCHASE PRICE (Precio de Compra) se etiqueta en Anaranjado y el SALE PRICE (Precio de Venta) en Amarillo Claro (#FFD150), destacando la diferencia de valor. La sinopsis se presenta en un recuadro limpio con texto Alexandria Regular, manteniendo la atención en el contenido.
+
+<p align="center">
+  <img src="https://i.imgur.com/5XQORm3.png" alt="12171">
+</p>
+
+En la pantalla de Orders, el color Anaranjado se usa para el título principal ("Order Management") y para el encabezado de la sección "ORDERS". Las métricas clave son inmediatamente visibles, con los números de Capital en un Ámbar brillante en la barra superior. En la tabla de pedidos, los datos importantes como el ORDER CODE se resaltan en un tono más claro de Azul Marino para facilitar el escaneo. El contraste entre el texto en Azul Marino y el fondo blanco garantiza la alta legibilidad de los datos en tiempo real de los pedidos (código, cliente, estado).
+
+<p align="center">
+  <img src="https://i.imgur.com/GdN4fuA.png" alt="12171">
+</p>
+
+El mockup de Order Details utiliza el color para guiar la lectura a través de las secciones de información. El Ámbar destaca los títulos de sección ("ORDER DETAILS", "CUSTOMER INFORMATION", "ORDER ITEMS"). Dentro de las secciones, la información clave utiliza un degradado de colores: las etiquetas críticas (como ORDER CODE y CUSTOMER NAME) se presentan en Anaranjado, mientras que los campos menos críticos (como ORDER STATUS y CUSTOMER EMAIL) usan un Cian Suave. Esto ayuda al administrador a priorizar visualmente la información. Los artículos pedidos se muestran con sus portadas reales para una identificación rápida.
+
+<p align="center">
+  <img src="https://i.imgur.com/IWxiSdN.png" alt="12171">
+</p>
+
+La función ADD A BOOK en la gestión de inventario utiliza el Ámbar para el fondo del formulario, proporcionando un ambiente visual acogedor para el proceso de ingreso de datos. El título "ADD TO INVENTORY" y el título principal "Livria Management" utilizan el Anaranjado. Los input fields utilizan un Cian Suave muy pálido para el fondo, diferenciándose del blanco, y el botón de acción 'ADD BOOK' emplea el color Ámbar. Las pestañas superiores diferencian la acción principal (ADD A BOOK) en Azul oscuro, del estado pasivo de VIEW INVENTORY.
+
+<p align="center">
+  <img src="https://i.imgur.com/1kAEuEd.png" alt="12171">
+</p>
+
+La pestaña VIEW INVENTORY muestra la colección de libros con un enfoque en el Stock actual, resaltando la acción de reabastecimiento. El título "BOOK COLLECTION" está en Ámbar. La interfaz presenta portadas de libros reales y un indicador de stock en color Azul Marino. El botón de acción clave, 'ADD STOCK', utiliza el Azul (\#2364A0) para impulsar la acción de reabastecimiento en cada tarjeta, contrastando con el fondo blanco de la colección.
+
+<p align="center">
+  <img src="https://i.imgur.com/uUhIwdi.png" alt="12171">
+</p>
+
+La pantalla de Add Stock Details utiliza el Anaranjado para el título del libro y el Azul Marino para los metadatos y la información de stock. Los campos clave de la gestión financiera (PURCHASE PRICE y SALE PRICE) se resaltan en Anaranjado y Amarillo Claro, respectivamente. La sección de acción (QUANTITY y TOTAL TO PAY) utiliza un fondo Ámbar para atraer la atención, y el botón 'CONTINUE' usa un Cian Suave, cerrando el ciclo de la gestión de existencias de manera clara y visualmente distinta.
+
+<p align="center">
+  <img src="https://i.imgur.com/sRC4Q5q.png" alt="12171">
+</p>
+
+La pantalla de Statistics es un dashboard analítico y visual. El color Anaranjado se utiliza para títulos de alto nivel ("Management and Statistics") y el Ámbar para subtítulos de sección ("TOP THREE BEST SELLING BOOKS", "REVENUE ACCORDING THE GENRES"). Esto jerarquiza los datos. Los libros más vendidos se presentan con portadas reales en tarjetas con un sombreado suave para destacarse. Los gráficos utilizan la paleta de colores de Livria (literatura en Rojo/Anaranjado, mangas/comics en Azul y juvenil en Amarillo Claro) para una interpretación intuitiva de los datos de rendimiento.
+
+<p align="center">
+  <img src="https://i.imgur.com/G4pS9OD.png" alt="12171">
+</p>
+
+En la pestaña PROFILE, el diseño es limpio y utiliza el contraste de color para la acción. El Anaranjado destaca el título principal ("Settings"). Los campos del formulario (Name, Username, Email, Security Pin) utilizan un relleno de color Cian Suave para que sean fácilmente editables y visibles. El botón 'LOG OUT' usa el color de acción Anaranjado para asegurar que la acción sea prominente y el botón 'SAVE CHANGES' utiliza el color Cian Suave como acción secundaria de confirmación.
+
+<p align="center">
+  <img src="https://i.imgur.com/aL9rnQ1.png" alt="12171">
+</p>
+
+La pestaña APPLICATION utiliza el mismo patrón de color para la seguridad y la acción. El título de la sección "APP SETTINGS" se resalta en Anaranjado. Los toggles de configuración (Notifications, Email Alerts) utilizan el Ámbar (\#FEB913) y el color Gris Claro para las opciones 'YES' y 'NO', proporcionando una retroalimentación visual inmediata sobre el estado de la configuración. Los botones 'LOG OUT' (en Anaranjado) y 'SAVE CHANGES' (en Cian Suave) mantienen la coherencia visual con la sección de perfil.
+
+<p align="center">
+  <img src="https://i.imgur.com/nlnektH.png" alt="12171">
+</p>
+
+##### **Pantallas de Cliente** 
+
+La pantalla de Home es el punto de entrada visualmente más rico, diseñada para ser acogedora. La cabecera superior utiliza los colores de la marca. Una sección destacada de carrusel (COMMUNITY PLAN) utiliza una imagen de fondo cálida (librería) y un call-to-action ('GET IT HERE') en Ámbar (\#FEB913) para fomentar la participación social. La lista de libros se organiza por categorías (LITERATURE, NON-FICTION, FICTION, MANGAS & COMICS), donde los títulos de las secciones utilizan los colores vibrantes de la paleta (Anaranjado, Amarillo Claro, Azul) para una jerarquía visual clara y atractiva. Las portadas de los libros reales y los precios visibles completan la experiencia de navegación.
+
+<p align="center">
+  <img src="https://i.imgur.com/10SBKTm.png" alt="12171">
+</p>
+
+La pantalla de Recommendations for You utiliza el color Anaranjado (\#FF5C00) para el título principal, capturando la atención sobre el contenido personalizado. El texto introductorio utiliza la tipografía Alexandria para una lectura amigable. La lista de libros recomendados se muestra en un diseño de tarjeta, con portadas reales de títulos como 1984 y Harry Potter, lo que refuerza la conexión emocional. El botón 'REFRESH' al final de la lista utiliza un color Cian Suave (\#A8DBDE) como un call-to-action secundario que sugiere la recarga de contenido.
+
+<p align="center">
+  <img src="https://i.imgur.com/1lXlFdu.png" alt="12171">
+</p>
+
+La pantalla de Categories facilita la navegación del catálogo con una lista limpia y organizada. El título de la sección superior, 'SEARCH BY CATEGORY', utiliza un Cian Suave para orientar al usuario. Cada categoría principal (LITERATURE, NON-FICTION, MANGAS & COMICS) se distingue con un color vibrante de la paleta principal (Anaranjado, Amarillo Claro, Azul) para una rápida identificación visual y un diseño dinámico. El uso de íconos de flecha hacia la derecha (' \> ') en el color principal de la categoría indica claramente la navegabilidad.
+
+<p align="center">
+  <img src="https://i.imgur.com/jzpNQXs.png" alt="12171">
+</p>
+
+La vista de una categoría específica, como LITERATURE, mantiene el título de la sección en su color distintivo (Anaranjado). El listado de libros utiliza un diseño de rejilla de tarjetas con información mínima (portada, título, autor y precio) para una navegación eficiente. El ícono de Filtro en la esquina superior derecha utiliza una combinación de colores de la marca para mantener la coherencia y llamar la atención sobre la funcionalidad de refinamiento de búsqueda.
+
+<p align="center">
+  <img src="https://i.imgur.com/GDgf0Tq.png" alt="12171">
+</p>
+
+La pantalla de Search está diseñada para ser la herramienta de precisión del usuario. La barra de búsqueda, central y destacada, está enmarcada por el color Ámbar (\#FEB913), que dirige la atención inmediatamente a la acción de entrada. El título 'SEARCH BY TITLE OR AUTHOR' en Cian Suave (\#A8DBDE) proporciona una guía clara sobre los términos de búsqueda esperados. Los resultados (RESULTS) se presentan de manera limpia, con portadas de libros reales y el color Anaranjado (\#FF5C00) destacando los nombres de la sección. El ícono de Filtro en la esquina superior derecha utiliza una combinación de colores de la marca, asegurando que el usuario pueda refinar los resultados obtenidos (función clave para optimizar la compra) con una acción visualmente accesible.
+
+<p align="center">
+  <img src="https://i.imgur.com/SbfSNFP.png" alt="12171">
+</p>
+
+Esta vista transforma el libro seleccionado en un producto digital altamente atractivo, utilizando el color Anaranjado (\#FF5C00) para el título principal, lo que le otorga la máxima prominencia visual. Los metadatos críticos como el autor y las etiquetas de género (JUVENILE, en INGLÉS) utilizan el contraste del Azul Marino para mantener la legibilidad. El precio (S/ 49.00) se enfatiza en Anaranjado, ubicándose junto al botón de acción clave 'ADD TO CART', que emplea el color Cian Suave (\#A8DBDE) para ser distintivo e incentivar la conversión. La Sinopsis está en un recuadro limpio con tipografía Alexandria Regular, facilitando una inmersión textual antes de la compra.
+
+<p align="center">
+  <img src="https://i.imgur.com/4l994W4.png" alt="12171">
+</p>
+
+A continuación, la sección REVIEWS está diseñada para fomentar la participación comunitaria. El título se destaca en Anaranjado. El sistema de calificación utiliza estrellas que se iluminan con el color Ámbar (\#FEB913), el color de la marca asociado a la calidad, incentivando al usuario a calificar positivamente. El botón de confirmación 'POST REVIEW' se presenta en Cian Suave (\#A8DBDE) para ser una acción secundaria, manteniendo la jerarquía visual de la página. Las reseñas existentes muestran avatares de usuario y resaltan las calificaciones con el color Ámbar, creando prueba social para otros lectores.
+
+<p align="center">
+  <img src="https://i.imgur.com/GwNsdHs.png" alt="12171">
+</p>
+
+La pantalla de Communities es el centro neurálgico para el segmento de Lectores Comunitarios. El título principal en Anaranjado (\#FF5C00) atrae la vista. El call-to-action más importante, 'CREATE \+', se distingue en Cian Suave (\#A8DBDE), proporcionando un contraste sutil que anima a la creación de nuevos grupos de lectura. La presentación visual en mosaico con imágenes de portadas reales y nombres de comunidades temáticas (como horror o Wonderland) refuerza la diversidad de intereses literarios y motiva la exploración activa del usuario.
+
+<p align="center">
+  <img src="https://i.imgur.com/DwP3I2Y.png" alt="12171">
+</p>
+
+Esta interfaz de una Comunidad en singular prioriza la interacción social dinámica. El botón 'JOIN \+' utiliza el Cian Suave (\#A8DBDE), contrastando con el fondo para facilitar la incorporación a la comunidad. El encabezado de la comunidad usa el Azul Marino. El área de publicación de contenido es funcional y visible, con íconos de Línea de 24 píxeles para las opciones de cámara/galería, y el botón 'POST' en Cian Suave. El feed utiliza un diseño limpio para mostrar las publicaciones del usuario (imágenes de cómics de Batman) y sus interacciones, promoviendo el compromiso continuo dentro del grupo.
+
+<p align="center">
+  <img src="https://i.imgur.com/wL2S9Sy.png" alt="12171">
+</p>
+
+La pantalla de Cart está diseñada para ser la etapa final de conversión, transmitiendo confianza y claridad financiera. Utiliza un fondo oscuro de Azul Marino en la parte inferior para la estabilidad. El título 'CART' en Anaranjado (\#FF5C00) atrae la atención. La lista de artículos utiliza tarjetas blancas y limpias, con el precio del libro en Anaranjado para enfocar la vista en el costo. El botón 'COMPLETE MY PURCHASE' en la barra inferior es el call-to-action más prominente, utilizando el color Cian Suave (\#A8DBDE) para ser ineludible y guiar al usuario a la finalización segura de la transacción.
+
+<p align="center">
+  <img src="https://i.imgur.com/m3v2kF2.png" alt="12171">
+</p>
+
+La pantalla de Notifications mantiene una estética simple para asegurar que las alertas sean el foco principal. El título utiliza el color Anaranjado (\#FF5C00) para captar la atención. El botón 'EMPTY LIST' se ubica en la parte superior derecha, utilizando un color Cian Suave (\#A8DBDE) para ser funcional pero no intrusivo. Cada notificación se presenta en una tarjeta blanca y limpia, con el mensaje en color Azul Marino para maximizar la legibilidad. La opción de eliminar cada notificación individualmente se representa con un ícono de línea delgada en la parte derecha de la tarjeta, optimizando la gestión de la bandeja de entrada.
+
+<p align="center">
+  <img src="https://i.imgur.com/pjS4JtJ.png" alt="12171">
+</p>
+
+La pantalla de Store está diseñada para ofrecer una conexión clara entre la plataforma digital y la ubicación física. El título principal ("OUR STORE") y la frase de bienvenida utilizan el color Anaranjado. La interfaz presenta un fragmento de mapa visualmente realista con el pin de ubicación en la paleta de la marca. La dirección se muestra de forma clara con tipografía legible, y la sección de información se destaca con un color Ámbar (\#FEB913) en el encabezado, lo que asegura que los datos de contacto y localización sean inmediatamente visibles y confiables para el cliente.
+
+<p align="center">
+  <img src="https://i.imgur.com/YbzPB65.png" alt="12171">
+</p>
+
+El inicio del flujo de pago se presenta con una clara barra de progreso visual que utiliza el color Cian Suave (#A8DBDE) para indicar el paso actual ('CART') y los pasos pendientes. El título "SUBMIT ORDER" está en Anaranjado. La sección PURCHASE SUMMARY utiliza el color Ámbar para resaltar el Total de la compra, atrayendo la mirada del usuario al costo final. El botón 'CONTINUE', clave para avanzar en la transacción, se presenta en Cian Suave, manteniendo el foco en la usabilidad.
+
+<p align="center">
+  <img src="https://i.imgur.com/phOusi7.png" alt="12171">
+</p>
+
+El segundo paso, RECIPIENT INFORMATION, mantiene la barra de progreso y resalta el paso actual. Los campos de formulario (Name, Last Name, Phone Number, Email) utilizan el color Azul Marino para el texto, garantizando la legibilidad de los datos que el usuario ingresa. El diseño de los campos es limpio y minimalista para evitar fricciones. La acción de 'CONTINUE' utiliza el Cian Suave, asegurando una transición fluida hacia la siguiente fase de la compra.
+
+<p align="center">
+  <img src="https://i.imgur.com/tpMKJDl.png" alt="12171">
+</p>
+
+En el tercer paso, la selección del método de entrega se simplifica mediante tarjetas claras y visuales. Las opciones 'PICK UP IN STORE' y 'HOME DELIVERY' utilizan el Cian Suave para sus íconos y texto, lo que las hace fácilmente seleccionables. La información adicional sobre la recogida en tienda (días hábiles) usa un texto Ámbar para notificar al cliente sobre los detalles clave de la logística. El botón 'CONTINUE' en Cian Suave reafirma la progresión del proceso de checkout.
+
+<p align="center">
+  <img src="https://i.imgur.com/Va1nmuA.png" alt="12171">
+</p>
+
+El paso final, PAYMENT DETAILS, mantiene un diseño enfocado en la seguridad y el consentimiento legal. La información sobre la pasarela de pago Izipay utiliza el color Azul Marino para transmitir confianza. Las casillas de verificación para la Privacy Policy y Terms and Conditions son obligatorias y visualmente claras, utilizando el color Anaranjado para las etiquetas. El botón 'CONTINUE', que inicia la redirección al sistema de pago, utiliza el color Cian Suave para una finalización de compra que es a la vez intuitiva y legalmente informada.
+
+<p align="center">
+  <img src="https://i.imgur.com/S5EtAzq.png" alt="12171">
+</p>
+
+La pantalla de Profile es el centro de control personal, diseñada para ofrecer la máxima flexibilidad al cliente. La información de la cuenta (nickname, username, email) utiliza el color Anaranjado para los títulos de las secciones. La funcionalidad se organiza en pestañas (SETTINGS, MY ORDERS, EDIT BIO), utilizando un degradado de color para indicar la pestaña activa. La sección de configuración (SETTINGS) utiliza toggles en Ámbar (#FEB913) para la personalización de notificaciones. Los botones de acción de alto impacto ('DELETE ACCOUNT' y 'LOG OUT') usan el Anaranjado y Cian Suave respectivamente, diferenciando las acciones de seguridad permanente de las acciones de cierre de sesión.
+
+<p align="center">
+  <img src="https://i.imgur.com/r8r4lYv.png" alt="12171">
+</p>
+
 ### 4.4.4. Mobile Applications User Flow Diagrams
 
+**Segmento 1: Lectores en Desarrollo**
+
+<p align="left"><i>Búsqueda Personalizada</i></p>
+* Como usuario, quiero poder realizar la búsqueda de libros en base a diferentes criterios y obtener resultados relacionados.
+<br>
+<p align="center">
+  <img src="https://i.imgur.com/BD9GXo6.jpeg" alt="12171">
+</p>
+
+El flujo de Búsqueda Personalizada comienza en la Pantalla de Inicio, donde el usuario pulsa el ícono de búsqueda (lupa) en la esquina superior. Esto lo lleva a la Pantalla de Búsqueda inicial, que solicita ingresar un título o autor en el campo de texto. Una vez que el usuario ingresa un término de búsqueda, la aplicación muestra una Pantalla de Búsqueda con una lista de Resultados relacionados. Desde esta pantalla, el usuario tiene la opción de Filtrar los resultados (mediante el ícono de filtro) o puede seleccionar un libro de la lista para ver más detalles. Al seleccionarlo, el flujo concluye con la Visualización del resultado seleccionado en la Pantalla de Libro, donde se muestra información completa como la portada, el autor, precio, un resumen, y reseñas, permitiendo al usuario decidir si desea añadirlo al carrito.
+<br>
+
+<p align="left"><i>Búsqueda por Categorías</i></p>
+* Como usuario, quiero poder realizar una búsqueda amplia de libros entre los diferentes géneros literarios.
+<br>
+<p align="center">
+  <img src="https://i.imgur.com/weS07Si.jpeg" alt="12171">
+</p>
+
+El flujo de Búsqueda por Categorías en la aplicación LIVRIA permite a los usuarios realizar una exploración amplia de géneros literarios. El proceso inicia en la Pantalla de Inicio, donde el usuario puede ver un resumen de las categorías disponibles. Para acceder a la lista completa, el usuario selecciona el ícono de Categorías, lo que lo lleva a la Visualización de la pantalla de Categorías. En esta Pantalla de Categorías, se presenta un listado organizado de todos los géneros, tales como Literatura, No Ficción, Ficción, Mangas & Cómics, Juvenil, Infantil, y E-books & Audiolibros. El usuario debe Seleccionar una categoría a buscar. Tras la selección, el flujo culmina con la Visualización de la categoría seleccionada en la Pantalla de una Categoría, donde se presenta un listado completo de los libros que pertenecen a ese género específico, permitiendo una exploración amplia dentro del tema elegido.
+<br>
+
+<p align="left"><i>Recomendaciones Personalizadas</i></p>
+* Como usuario, quiero poder marcar interés en diferentes libros y visualizar recomendaciones basadas en mis gustos literarios.
+<br>
+<p align="center">
+  <img src="https://i.imgur.com/VFKV41o.jpeg" alt="12171">
+</p>
+
+El flujo comienza en la Pantalla de Inicio, desde la cuál accede a la Pantalla de Búsqueda para encontrar un título en específico. Al interactuar con cada libro, el usuario proporciona feedback directo al sistema: el Feedback Positivo (usando el 'Marcador') le indica al algoritmo que debe priorizar ese tipo de contenido. Por otro lado, el Feedback Negativo ('No Me Gusta/Negativo') instruye al Algoritmo de Recomendación para reducir la frecuencia de ese contenido, asegurando que las futuras sugerencias se alineen más estrechamente con los intereses del usuario. Esta interacción funciona con cualquier libro, sea uno buscado específicamente por el usuario o no. Desde la Pantalla de Recomendaciones, el usuario recibe un listado inicial de sugerencias y tiene la opción de repetir el ciclo tocando el botón 'REFRESH' para solicitar un nuevo conjunto de libros.
+
+<br><br>
+
+**Segmento 2: Lectores Comunitarios**
+
+<p align="left"><i>Comunidades Temáticas</i></p>
+* Como usuario, quiero poder unirme a comunidades temáticas, crear publicaciones y conectar con otros lectores con intereses literarios similares.
+<br>
+<p align="center">
+  <img src="https://i.imgur.com/fyGaQSF.jpeg" alt="12171">
+</p>
+
+El flujo permite al usuario, desde la Pantalla de Comunidades, elegir entre Crear una nueva comunidad o Ingresar a una existente. Tras ingresar los datos requeridos, estos se mostraran en su pantalla personalizada, ante la cual se podrá empezar con la publicación de pensamientos y/o imágenes. Contrariamente, si ingresa a una comunidad existente (la Vista de Comunidad Única), debe seleccionar 'JOIN +' para unirse al grupo. Una vez dentro de la vista comunitaria, el usuario puede cumplir su objetivo central de socialización al Crear una Publicación (añadiendo texto y/o imágenes). Finalmente, al publicar su contenido, el flujo culmina en la Visualización de la publicación hecha, confirmando que el usuario ha compartido activamente sus opiniones e iniciado la interacción con otros lectores en el grupo temático.
+<br>
+
+<p align="left"><i>Personalización del Perfil</i></p>
+* Como usuario, quiero poder personalizar ciertos aspectos de mi perfil.
+<br>
+<p align="center">
+  <img src="https://i.imgur.com/iM458EJ.jpeg" alt="12171">
+</p>
+
+El flujo de personalización se inicia en el Registro. Esto lleva al usuario a las pantallas con formularios, donde puede personalizar su Profile Picture, Nickname, Username y la Phrase de perfil. Una vez que el usuario ingresa su personalidad literaria deseada, confirma los cambios con el botón 'REGISTER'. El flujo lo lleva a la pantalla de Inicio, desde la cual puede acceder a la pantalla de Perfil mediante el menú inferior. La información ingresada previamente ahora se muestra en el perfil y a la comunidad de lectores, cumpliendo el objetivo de proyectar su identidad literaria.
+
 ## 4.5. Mobile Applications Prototyping
+
+Con el objetivo de evaluar y perfeccionar la accesibilidad y la experiencia de usuario (UX) antes del desarrollo final, se elaboró un prototipo interactivo a partir de los mockups de alta fidelidad, centrado exclusivamente en la navegación móvil.  
+Este modelo funcional simula de forma integral el recorrido del usuario dentro de la aplicación, permitiendo explorar directamente sus secciones, elementos y flujos de interacción tal como se verá en un dispositivo móvil. 
+
+El prototipo fue diseñado siguiendo principios de arquitectura de la información clara, jerarquía visual lógica y diseño inclusivo. Se priorizó la facilidad de uso, asegurando que cada componente respete los estándares de usabilidad táctil y coherencia visual para una navegación fluida e intuitiva en la pantalla del smartphone. Esta versión navegable actúa como una fiel representación de la futura interfaz de la aplicación, siendo clave para validar decisiones de diseño y garantizar una experiencia consistente y accesible.
+
+Video explicativo: [https://drive.google.com/file/d/1zC7zEfy8xk2KNJ6Z2aCdW8eQRqIzGSus/view?usp=sharing](https://drive.google.com/file/d/1zC7zEfy8xk2KNJ6Z2aCdW8eQRqIzGSus/view?usp=sharing)
+
+Link al prototipo interactivo: [https://www.figma.com/proto/eKCqZoU0IF7n3wNTA8kuZc/livria?page-id=923%3A589\&node-id=923-591\&p=f\&viewport=263%2C65%2C0.18\&t=ykEtTTogjnebX157-1\&scaling=scale-down\&content-scaling=fixed](https://www.figma.com/proto/eKCqZoU0IF7n3wNTA8kuZc/livria?page-id=923%3A589&node-id=923-591&p=f&viewport=263%2C65%2C0.18&t=ykEtTTogjnebX157-1&scaling=scale-down&content-scaling=fixed)
 
 ### 4.5.1. Android Mobile Applications Prototyping
 
@@ -1717,9 +2594,405 @@ Objetivo SMART: Conseguir que el 30% de los usuarios activos participen en al me
 
 ### 5.1.2. Source Code Management
 
+La gestión del código fuente es fundamental para el desarrollo colaborativo de cualquier proyecto de software. En esta sección, el equipo establece el esquema de organización y control de versiones que aplicará para el seguimiento de modificaciones, utilizando GitHub como plataforma y sistema. Para ello, se empleará el modelo GitFlow y se definirán convenciones claras para nombres de ramas y mensajes de commits, además de usar Semantic Versioning para las versiones del proyecto. Esto garantizará una estructura organizada y accesible del código.
+
+1. **Repositorios en Github:**
+
+Para optimizar la organización del código y las pruebas, se implementarán repositorios específicos en GitHub. Cada uno cumplirá una función definida dentro del desarrollo y control de calidad del proyecto, garantizando una gestión estructurada y eficiente del ciclo de trabajo.
+
+**LivriaLanding:**
+
+Este repositorio estará dedicado exclusivamente al desarrollo de la Landing Page de Livria. Incluirá todo el código y los recursos asociados a la interfaz inicial del proyecto, como archivos HTML, CSS, JavaScript, imágenes y demás elementos Front-End, orientados a ofrecer una presentación atractiva, funcional y coherente con la propuesta de valor de la aplicación para los visitantes.
+
+<p align="center">
+  <img src="https://i.imgur.com/iIrxsuJ.png" alt="12171">
+</p>
+
+**README-de-Livria:**
+
+Este repositorio estará destinado al almacenamiento y control de versiones del informe completo del proyecto Livria. Contendrá los documentos en formato .md vinculados al proceso de documentación, planificación y análisis del proyecto, permitiendo mantener un seguimiento estructurado y actualizado de los avances en la elaboración del informe.
+
+<p align="center">
+  <img src="https://i.imgur.com/TvfH5aY.png" alt="12171">
+</p>
+
+**LivriaAdmin:**
+
+Este repositorio albergará el código del Front-End de la aplicación móvil Livria. Contará con una estructura organizada por componentes, rutas, controladores y servicios, desarrollados íntegramente en Kotlin dentro de Android Studio. Representará el núcleo técnico del desarrollo funcional de la aplicación.
+
+<p align="center">
+  <img src="https://i.imgur.com/zpO9UXV.png" alt="12171">
+</p>
+
+**Enlaces:** 
+
+**Repositorio de la Landing Page:**
+
+[**https://github.com/LivriaOrg/LivriaLanding**](https://github.com/LivriaOrg/LivriaLanding)
+
+**Repositorio del informe:**
+
+[**https://github.com/LivriaOrg/README-de-Livria**](https://github.com/LivriaOrg/README-de-Livria)
+
+**Repositorio de la aplicación móvil:**
+
+[**https://github.com/LivriaOrg/LivriaAdmin**](https://github.com/LivriaOrg/LivriaAdmin)
+
+2. **Workflow de control de versiones:**
+
+Para asegurar un flujo de trabajo eficiente y una integración organizada de los cambios, se adoptará el modelo GitFlow. Este enfoque define una estructura de ramas clara y jerarquizada, que facilita el desarrollo paralelo, el control de versiones y la colaboración ordenada entre los miembros del equipo.
+
+**Estructura de ramas en GitFlow:**
+
+| Nombre de la rama | Descripción |
+| ----- | ----- |
+| Main Branch (*main*) | Es la rama principal que contiene el código estable y listo para producción. Solo se integrarán en ella los cambios completamente probados, verificados y aprobados, garantizando que el entorno de producción mantenga la máxima estabilidad y calidad del software. |
+| Develop Branch (*develop*) | En esta rama se integran todas las funcionalidades en desarrollo, sirviendo como la base principal de trabajo antes de que los cambios sean fusionados con la rama main. Actúa como un entorno de integración continua donde se validan y consolidan las nuevas implementaciones. |
+| Feature Branches (*feature/\**) | Para cada nueva funcionalidad o cambio significativo, se debe crear una rama de tipo feature derivada de la rama develop. Este enfoque permite que el desarrollo se realice de forma aislada y controlada, evitando interferencias con el código principal y facilitando la integración posterior. **Ejemplo de nomenclatura:** feature/nueva-funcionalidad |
+
+**Convenciones para nombres de ramas**
+
+* **Feature Branches:** *feature/nombre-descriptivo*
+
+  Nombres que describan claramente la funcionalidad o la tarea en desarrollo.
+
+**Convenciones de commits (Conventional Commits)**
+
+Para mantener la claridad y consistencia en los mensajes de commit, se adoptará el estándar Conventional Commits.
+
+Este sistema permite identificar fácilmente el tipo de cambio realizado en cada commit, facilitando la revisión del historial, la automatización de versiones y la integración continua.
+
+Cada mensaje de commit deberá estructurarse con un tipo de cambio seguido de una breve descripción del ajuste realizado.
+
+**Tipos de cambios y ejemplos:**
+
+* **feat:** *agregar footer*
+
+  Indica la implementación de una nueva característica o componente en el proyecto.
+
 ### 5.1.3. Source Code Style Guide & Conventions
 
+Este capítulo establece las pautas y convenciones que el equipo de desarrollo adoptará para garantizar la coherencia, legibilidad y calidad del código en la aplicación Livria. Las convenciones abordarán los lenguajes utilizados en el proyecto: HTML, CSS, JavaScript y Kotlin. Asimismo, se emplea una nomenclatura en inglés para todos los elementos del código, tomando como referencia las mejores prácticas y guías de estilo reconocidas:
+
+* **HTML Style Guide and Coding Conventions**  
+* **Google HTML/CSS Style Guide**  
+* **Google JavaScript Style Guide**  
+* **MDN JavaScript Guidelines**  
+* **W3C JavaScript Style Guide**  
+* **Kotlin Coding Conventions (JetBrains)**  
+* **Android Developers Kotlin Style Guide**
+
+Para el desarrollo de la Landing Page de *Livria* se emplearon las tecnologías HTML, CSS y JavaScript, responsables de definir la estructura, el diseño y la funcionalidad del sitio. La correcta organización y estandarización del código garantizan un desarrollo consistente, mantenible y comprensible para cualquier miembro del equipo.
+
+**HTML:**  
+Define la estructura y el contenido de la página, asegurando una semántica adecuada y una jerarquía clara de elementos que favorece la accesibilidad y el posicionamiento SEO.
+
+**CSS:**  
+Controla el estilo visual de la interfaz, garantizando un diseño responsive y coherente mediante el uso de clases y sectores bien definidos. Se evita el uso de estilos en línea, priorizando un enfoque modular y reutilizable.
+
+**JavaScript:**  
+Aporta la interactividad y funcionalidad dinámica necesarias para optimizar la experiencia del usuario, empleando funciones y variables descriptivas junto con una estructura lógica y escalable que facilite el mantenimiento.
+
+La adopción de estas convenciones permite mantener una base de código limpia, legible y preparada para la evolución continua del proyecto.
+
+Principios Generales
+
+* Todo el código debe estar documentado y utilizar nomenclatura en inglés.  
+* La indentación debe ser consistente en todos los archivos.  
+* El código debe ser fácil de leer, comprender y mantener.  
+* Se debe aplicar el principio DRY (Don’t Repeat Yourself) para evitar redundancias y mejorar la eficiencia.
+
+**HTML:**
+
+**Convenciones de Formato**
+
+* Utilizar 2 espacios para indentación.
+
+\<div class\="book"\>
+
+    \<h3\>Title\</h3\>
+
+    \<p\>Genre\</p\>
+
+\</div\> 
+
+* Utilizar minúsculas para los nombres de elementos y atributos.  
+* Emplear comillas dobles (") para los valores de los atributos.  
+* Cerrar siempre todos los elementos HTML, incluso aquellos que son vacíos.  
+* Usar etiquetas semánticas siempre que sea posible, para mejorar la estructura y accesibilidad del documento.  
+   Ejemplos: \<header\>, \<footer\>, \<main\>, \<section\>, \<article\>, \<nav\>, entre otras.  
+* Los atributos deben escribirse en minúsculas y, en caso de nombres compuestos, utilizar guiones (-) en lugar de mayúsculas o guiones bajos.  
+   Ejemplo correcto:  
+   \<div class="book-list"\>\</div\>  
+*  Ejemplo incorrecto:  
+   \<div class="BookList"\>\</div\>
+
+**Estructura del Documento:**
+
+Incluir siempre el DOCTYPE de HTML5 al inicio del documento:
+
+ \<\!DOCTYPE html\>
+
+Definir los atributos lang en el elemento \<html\> y charset dentro del \<head\>, para garantizar la correcta interpretación del idioma y codificación del contenido.
+
+ \<html lang="es"\>
+
+\<head\>
+
+    \<meta charset="UTF-8"\>
+
+\</head\>
+
+Cargar las hojas de estilo (CSS) dentro del elemento \<head\> y los scripts de JavaScript justo antes del cierre de \</body\>, salvo en casos debidamente justificados donde sea necesario modificar este orden (por ejemplo, scripts críticos para el renderizado).
+
+**CSS:**
+
+Convenciones de Formato
+
+* Utilizar 2 espacios para la indentación.  
+* Incluir un espacio antes de la llave de apertura {.  
+* Colocar la llave de cierre } en una nueva línea.  
+* Incluir un espacio después de los dos puntos (:) en cada declaración.  
+* Finalizar todas las declaraciones con punto y coma (;).  
+* Utilizar comillas dobles (") para los valores de tipo *string*.  
+* Mantener un orden lógico y consistente de las propiedades CSS. Se recomienda el siguiente orden:
+
+   **1\. Layout:**  
+   display, position, top, left, bottom, right, z-index  
+   **2\. Box Model:**  
+   width, height, padding, margin, border  
+   **3\. Tipografía:**  
+   font-family, font-size, line-height, text-align  
+   **4\. Color:**  
+   color, background-color  
+   **5\. Visuales:**  
+   box-shadow, border-radius, opacity
+
+**Ejemplo general:**
+
+book-card {
+
+    display: flex;
+
+    margin-bottom: 20px;
+
+    border-radius: 4px;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+**Convenciones de nomenclatura:**
+
+* Block: Representa un componente independiente.  
+   Ejemplo:   .book-card  
+* Element: Representa una parte interna del bloque que cumple una función específica.  
+   Ejemplo:   .book-card\_\_title  
+* Modifier: Indica una variación o estado diferente del bloque o elemento.  
+   Ejemplo:   .book-card--featured
+
+**Buenas prácticas adicionales:**
+
+* Evitar el uso excesivo de selectores anidados. Se recomienda no superar los tres niveles de profundidad.  
+   Ejemplo:  .book-card\_\_title span { ... }
+
+**JAVASCRIPT**
+
+**Convenciones de formato**
+
+* Utilizar 2 espacios para la indentación.  
+* Incluir punto y coma (;) al final de cada declaración.  
+* Utilizar comillas simples (') para los valores de tipo string.  
+* Nombrar los archivos en kebab-case, es decir, con minúsculas y guiones medios para separar palabras.
+
+**Ejemplo general:**
+
+const getBookDetails \= function(bookId) {
+
+    return fetch(\`/api/books/${bookId}\`)
+
+      .then(response \=\> response.json())
+
+      .catch(error \=\> {
+
+        console.error('Error fetching book details:', error);
+
+        return null;
+
+      });
+
+};
+
+##### 
+
+**Convenciones de Nomenclatura**
+
+* **Variables y funciones:** Usar camelCase.  
+   Ejemplo: `bookTitle`, `getUserPreferences`  
+* **Clases:** Usar PascalCase.  
+   Ejemplo: `BookRepository`, `UserAuthentication`  
+* **Constantes globales:** Usar UPPER\_SNAKE\_CASE.  
+   Ejemplo: `MAX_RESULTS_PER_PAGE`  
+* **Componentes (en entornos de UI o frameworks):** Usar PascalCase.  
+   Ejemplo: `BookCard`, `SearchBar`  
+* **Propiedades o métodos privados:** Usar guion bajo (`_`) como prefijo.  
+   Ejemplo: `_privateMethod`, `_privateVariable`
+
+**Buenas Prácticas**
+
+* Preferir `const` sobre `let`; usar `let` solo cuando el valor debe reasignarse.  
+* Evitar el uso de `var` en cualquier contexto.  
+* Utilizar funciones flecha (`=>`) para funciones anónimas o *callbacks*.  
+* Emplear las características modernas de ES6+, como *destructuring*, *spread operator* y *template literals*.  
+* Preferir los métodos funcionales de arrays (`map`, `filter`, `reduce`) en lugar de bucles tradicionales.
+
+*// Good*
+
+const filteredBooks \= books.filter(book \=\> book.inStock);
+
+*// Avoid*
+
+const filteredBooks \= \[\];
+
+for (let i \= 0; i \< books.length; i\++) {
+
+  if (books\[i\].inStock) {
+
+    filteredBooks.push(books\[i\]);
+
+  }
+
+}
+
+##### 
+
+**KOTLIN**
+
+**Convenciones de formato:**
+
+* Utilizar 4 espacios para la indentación (estándar oficial de Kotlin).  
+* Dejar un espacio antes y después de los operadores (=, \+, \-, \==, etc.).  
+* Colocar una sola instrucción por línea.  
+* Incluir una línea en blanco entre las declaraciones de funciones, clases o bloques lógicos.  
+* Usar llaves {} incluso en sentencias de una sola línea (por ejemplo, en if o when), para mejorar la claridad.
+
+package com.livria.app.ui
+
+class BookCard(
+
+    val title: String,
+
+    val author: String,
+
+    val isFeatured: Boolean \= false
+
+) {
+
+    fun displayInfo() {
+
+        if (isFeatured) {
+
+            println("🌟 Featured Book: $title by $author")
+
+        } else {
+
+            println("Book: $title by $author")
+
+        }
+
+    }
+
+    fun calculateDiscount(price: Double): Double {
+
+        val discountRate \= if (isFeatured) 0.15 else 0.05
+
+        return price \- (price \* discountRate)
+
+    }
+
+}
+
+##### 
+
+* **Clases y Objetos:** Usar PascalCase.
+
+* **Funciones y Variables:** Usar camelCase, comenzando con minúscula.
+
+* **Constantes y Valores Inmutables (companion objects o globales):** Usar UPPER\_SNAKE\_CASE.
+
+**Buenas Prácticas**
+
+* Usar val en lugar de var siempre que sea posible, para favorecer la inmutabilidad y evitar efectos secundarios.  
+* Evitar valores nulos; aprovechar el sistema de seguridad de nulabilidad de Kotlin usando tipos no nulos y el operador seguro ?. cuando sea necesario.  
+* Preferir funciones de extensión para agregar comportamiento a clases existentes sin modificarlas.  
+* Usar expresiones concisas y aprovechar las funciones lambda para simplificar el código.  
+* Evitar el uso innecesario de \!\! (operador de aserción nula), ya que puede provocar excepciones en el tiempo de ejecución.  
+  Organizar el código por paquetes según su responsabilidad (por ejemplo: ui, data, domain, utils).
+
 ### 5.1.4. Software Deployment Configuration
+
+La estrategia de despliegue de Livria implementa una arquitectura basada en la nube que maximiza la eficiencia operativa, la escalabilidad y la distribución multicanal de sus productos digitales. Esta configuración es híbrida, utilizando Microsoft Azure para los Web Services críticos y plataformas especializadas (GitHub Pages y Firebase) para la distribución de *front-end* y aplicaciones móviles, como se ilustra en el Deployment Diagram adjunto.
+
+<p align="center">
+  <img src="https://i.imgur.com/y2xbTsR.jpeg" alt="12171">
+</p>
+
+Despliegue de la Aplicación Móvil (Android)
+
+El proceso de despliegue de la aplicación Android se divide en dos fases distintas, utilizando Firebase App Distribution para la gestión de pruebas internas antes de la publicación final.
+
+<p align="center">
+  <img src="https://i.imgur.com/ywQ4TDr.png" alt="12171">
+</p>
+
+| Componente | Plataformas | Beneficios Clave |
+| :---- | :---- | :---- |
+| Mobile App | Firebase App Distribution (Pruebas) y Google Play Store (Producción). | Agilidad de Pruebas: Distribución rápida a QA y testers. Alcance: Acceso al mercado global de Android. |
+
+Pasos del Proceso de Despliegue
+
+1. Integración Continua (CI): El código fuente de la aplicación (Kotlin/Compose) se versiona y prueba automáticamente en la pipeline de CI.  
+2. Generación de Artefacto: Tras el éxito de las pruebas, se genera el archivo Android App Bundle (.aab).  
+3. Distribución Continua (CD): El .aab es cargado automáticamente a Firebase App Distribution, lo que notifica a los testers para que descarguen la versión de prueba de forma instantánea.  
+4. Conexión a Backend: El Dispositivo Android accede a los servicios de negocio mediante HTTPS (protocolo seguro) a la API alojada en Azure App Service.  
+5. Publicación Final: Una vez que la versión es estable, el .aab se sube manualmente a Google Play Console para su revisión y lanzamiento al público general.
+
+Despliegue de Web Services (Backend / API REST)
+
+El backend aloja toda la lógica de negocio central, siendo el componente más crítico del sistema. Su despliegue se gestiona completamente en el ecosistema Microsoft Azure.
+
+<p align="center">
+  <img src="https://i.imgur.com/dPOznbM.png" alt="12171">
+</p>
+
+| Componente | Servicios Azure | Beneficios Clave |
+| :---- | :---- | :---- |
+| Web Services | Azure App Service y Azure SQL Database. | Escalabilidad: Azure App Service gestiona picos de tráfico. Seguridad: Aislamiento de la DB. |
+
+Pasos del Proceso de Despliegue
+
+1. Integración Continua (CI): Se ejecutan pruebas unitarias y de integración sobre el código del backend (API REST).  
+2. Generación de Artefacto: Los archivos compilados del backend se empaquetan en un artefacto de despliegue.  
+3. Despliegue Continuo (CD): La pipeline automatizada realiza el despliegue al Azure App Service. Este servicio actúa como el punto de exposición de la API, encargándose del balanceo de carga y la disponibilidad.  
+4. Configuración de Persistencia: El App Service se configura para conectarse a Azure SQL Database utilizando un Protocolo SQL seguro. Esta base de datos es el único nodo que almacena los datos transaccionales, y no tiene exposición directa a Internet por motivos de seguridad.
+
+Despliegue de la Aplicación Web (Landing Page)
+
+El *Landing Page* es una aplicación estática y de *marketing*. Su despliegue debe ser ágil y de bajo costo.
+
+<p align="center">
+  <img src="https://i.imgur.com/ohiYqxj.png" alt="12171">
+</p>
+
+| Componente | Plataforma | Beneficios Clave |
+| :---- | :---- | :---- |
+| Web Browser (Landing Page) | GitHub Pages. | Bajo Costo y Mantenimiento: Despliegue gratuito sin necesidad de gestión de servidores. Rapidez: Publicación directa desde el repositorio. |
+
+Pasos del Proceso de Despliegue
+
+1. Alojamiento en Repositorio: El código fuente (HTML, CSS, JS) se almacena en el repositorio GitHub.  
+2. Publicación Automática: Se configura una branch o una GitHub Action específica.  
+3. Acceso Público: Cada push a la rama de publicación desencadena la actualización del sitio web, alojado en GitHub Pages. El usuario accede a este contenido directamente desde su Navegador Web vía HTTPS (protocolo seguro).
 
 ## 5.2. Product Implementation & Deployment
 
