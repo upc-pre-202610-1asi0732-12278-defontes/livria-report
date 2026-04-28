@@ -4457,18 +4457,65 @@ Remueve un libro específico de la lista de exclusión del usuario, permitiendo 
 
 # Conclusiones
 
-## Conclusiones y recomendaciones
+1. El proceso Lean UX constituye una herramienta clave para orientar estratégicamente el negocio, ya que permite validar tempranamente hipótesis y explorar diferentes enfoques antes de comprometer recursos de desarrollo. Gracias a este proceso, fue posible identificar con claridad los segmentos de usuarios más relevantes y las oportunidades de valor que guiarán el diseño del producto.
 
----
+2. La etapa de needfinding resulta fundamental en la construcción de un producto centrado en el usuario, dado que proporciona información directa sobre sus necesidades, expectativas y motivaciones. Este proceso asegura que las decisiones de diseño y desarrollo respondan a problemas reales, incrementando la probabilidad de adopción y satisfacción del usuario final.
+
+3. La aplicación de Domain-Driven Design (DDD) favorece la definición temprana de bounded contexts y clases esenciales del dominio, lo cual aporta claridad conceptual y una arquitectura más limpia. Este enfoque permite separar responsabilidades de manera ordenada, reducir la complejidad técnica y facilitar la escalabilidad del sistema en el largo plazo.
+
+4. El desarrollo completo de los wireframes, wireflows y mockups tanto para la Landing Page como para las pantallas móviles asegura que la implementación del Frontend se realizará con una guía visual clara y centrada en el usuario. Este proceso minimiza las ambigüedades en la fase de desarrollo y garantiza la consistencia visual y funcional.
+
+5. La aplicación de una metodología ágil y la realización estructurada del Sprint 1 (incluyendo el Sprint Backlog detallado, la evidencia de desarrollo y las pruebas) demuestran un progreso tangible y medible en la construcción del producto. Esto asegura la transparencia del proceso y el alineamiento del equipo.
+
+6. El desglose detallado de las User Stories en tareas específicas dentro del Sprint Backlog ha permitido cuantificar la carga de trabajo del equipo con alta precisión. Esta granularidad es clave para realizar una planificación realista de la capacidad del Sprint, asegurar la distribución equitativa de responsabilidades y minimizar la incertidumbre durante la fase de desarrollo.
+
+7. La implementación del proyecto móvil en Flutter demostró que la aplicación del Domain-Driven Design (DDD) a nivel táctico facilitó la separación de las responsabilidades del sistema. La clara segregación de capas (Dominio, Infraestructura, Presentación) permitió que la lógica de negocio fuera completamente independiente de los detalles tecnológicos (APIs, Base de Datos, UI), resultando en un código más mantenible, testeable y desacoplado.
+
+
+8. El equipo logró la integración funcional de los componentes críticos para el ciclo de vida del usuario (Login, Registro y Logout). Esto implicó la conexión de la lógica del frontend (Flutter) con el backend desplegado en Azure, asegurando la persistencia del estado de la sesión (JWT/SharedPreferences) y validando la arquitectura de la solución.
+
+9. La implementación de validaciones en tiempo real (como el control de stock en el carrito y la lógica de suscripciones) y el manejo eficiente de la conversión de imágenes (Base64) reforzaron la integridad de los datos entre el cliente y el servidor. Estas prácticas no solo previenen errores en el backend, sino que mejoran la experiencia del usuario al proporcionar retroalimentación inmediata y evitar estados inconsistentes en la aplicación.
+
+# Recomendaciones
+
+1. Es aconsejable adoptar Material Design como marco de referencia para el diseño de la interfaz, dado que proporciona consistencia visual, buenas prácticas de usabilidad y un sistema estandarizado de componentes. Esto contribuirá a que la experiencia del usuario sea más intuitiva, atractiva y alineada con tendencias actuales en aplicaciones modernas.
+
+2. Es crucial establecer un proceso obligatorio de revisión de código (utilizando herramientas como GitHub Pull Requests). Esto debe realizarse por al menos un miembro del equipo diferente al autor antes de la fusión con la rama principal. Esta práctica no solo mejora la calidad del código y reduce los errores, sino que también facilita la transferencia de conocimiento y asegura la adherencia a las convenciones de estilo.
+
+3. Se aconseja utilizar las herramientas de Project Management para mantener un gráfico de trabajo pendiente visible y actualizado diariamente. Esta métrica visual ayuda al equipo a monitorear su ritmo de progreso, detectar a tiempo si el Sprint está en riesgo de no completarse y facilita la toma de decisiones basadas en datos durante la Sprint Review.
+
+4. La anticipación en la definición de Style Guidelines es un acierto estratégico que facilitará la unidad de marca y la velocidad de desarrollo en sprints futuros, al proporcionar un sistema de diseño reutilizable.
+
+5. Es aconsejable implementar patrones de Optimistic UI en la gestión de estados, especialmente para interacciones frecuentes como "Agregar al carrito" o "Unirse a una comunidad". Al actualizar visualmente el estado de la interfaz de manera inmediata, se mejora la percepción de velocidad y fluidez de la aplicación, siempre manteniendo un mecanismo de reversión (rollback) en caso de que la petición falle.
 
 # Bibliografía
 
----
+Alaminkarno. (2024, enero 8). *DDD (Domain-Driven Design) in Flutter – Too much or just right?* DEV Community. [https://dev.to/alaminkarno/ddd-domain-driven-design-in-flutter-too-much-or-just-right-d1g](https://dev.to/alaminkarno/ddd-domain-driven-design-in-flutter-too-much-or-just-right-d1g)
+
+Allen, C. (2024). *The impact of book clubs on millennials: Best way to instill a love of reading*. Recuperado de [https://catherineallenblog.com/the-impact-of-book-clubs-on-millennials-best-way-to-instill-a-love-of-reading](https://catherineallenblog.com/the-impact-of-book-clubs-on-millennials-best-way-to-instill-a-love-of-reading)
+
+Alvarez, A. (2020, 5 de agosto). 5W2H: Qué significa, para qué sirve, cómo aplicarla y algunos ejemplos. LeanConstructionMexico. [https://www.leanconstructionmexico.com.mx/post/5w2h-qué-significa-para-qué-sirve-cómo-aplicarla-y-algunos-ejemplos](https://www.leanconstructionmexico.com.mx/post/5w2h-qu%C3%A9-significa-para-qu%C3%A9-sirve-c%C3%B3mo-aplicarla-y-algunos-ejemplos)
+
+Dart Packages. (s. f.). *pub.dev*. [https://pub.dev](https://pub.dev)
+
+Fabiana, E., & Vega, J. (2022). La motivación en el aprendizaje de la lectura en los estudiantes. Revista EDUCARE \- UPEL-IPB \- Segunda Nueva Etapa 2.0, 26(Extraordinario), 476–493. [https://doi.org/10.46498/reduipb.v26iExtraordinario.1641](https://doi.org/10.46498/reduipb.v26iExtraordinario.1641) 
+
+Flutter Dev. (s. f.). *Flutter documentation*. [https://docs.flutter.dev](https://docs.flutter.dev)
+
+Google Fonts. (s. f.). *Alexandria*. [https://fonts.google.com/specimen/Alexandria](https://fonts.google.com/specimen/Alexandria)
+
+Google Fonts. (s. f.). *Asap Condensed*. [https://fonts.google.com/specimen/Asap+Condensed](https://fonts.google.com/specimen/Asap+Condensed)
+
+Google Maps. (s. f.). *Google Maps Platform*. [https://developers.google.com/maps](https://developers.google.com/maps)
+
+Mamani, B., Chata, L., & Choque, D. (2024). Efecto del uso de Tik Tok en el rendimiento académico de estudiantes de 5to grado . Revista Tribunal, 4(9), 161-175. [https://doi.org/10.59659/revistatribunal.v4i9.71](https://doi.org/10.59659/revistatribunal.v4i9.71)
+
+Ministerio de Cultura del Perú & Instituto Nacional de Estadística e Informática. (2023). *Encuesta Nacional de Lectura 2022: Informe de lectores y no lectores*. Recuperado de [https://perulee.pe/sites/default/files/ENL%202022%20-%20Informe%20de%20lectores%20y%20no%20lectores.pdf](https://perulee.pe/sites/default/files/ENL%202022%20-%20Informe%20de%20lectores%20y%20no%20lectores.pdf?utm_source=chatgpt.com)
+
+Statista. (2024). *Hablemos de los clubes de lectura y por qué esta tendencia va en aumento*. Recuperado de [https://globaltag.mx/uncategorized/leer-esta-de-moda-hablemos-de-los-clubes-de-lectura-y-por-que-esta-tendencia-va-en-aumento/](https://globaltag.mx/uncategorized/leer-esta-de-moda-hablemos-de-los-clubes-de-lectura-y-por-que-esta-tendencia-va-en-aumento/?utm_source=chatgpt.com)
+
+Stripe. (s. f.). *Stripe*. [https://stripe.com](https://stripe.com)
+
+Torres-Vega, E. (2025). Comprensión lectora en estudiantes de secundaria en Perú. Horizontes. Revista De Investigación En Ciencias De La Educación, 9(36), 177–187. [https://doi.org/10.33996/revistahorizontes.v9i36.909](https://doi.org/10.33996/revistahorizontes.v9i36.909)
 
 # Anexos
-
-## Anexo A: Videos de Exposiciones
-
-| Entrega | Título | Enlace |
-|---------|--------|--------|
-| TB1 | [Título del video TB1] | [URL Microsoft Stream] |
