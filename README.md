@@ -1549,7 +1549,57 @@ Dado que el sistema debe manejar un alto volumen de interacciones, **Cuando** el
 
 | # Orden | User Story ID | Título | Descripción | Story Points (1/2/3/5/8) |
 |---------|---------------|--------|-------------|--------------------------|
-| 1 | US01 | | Como... deseo... para... | |
+| 1 | SS02 | Investigación de Estructura de Comunidades | Como equipo de desarrollo, quiero investigar las tecnologías y arquitectura de comunidades, para asegurar un sistema escalable y seguro. | 3 |
+| 2 | SS01 | Prototipado de Algoritmo de Recomendación | Como equipo de desarrollo, quiero prototipar un algoritmo de recomendación, para validar su viabilidad técnica. | 5 |
+| 6 | US18 | Comprar libros digitales y físicos | Como lector, quiero comprar libros digitales y físicos, para acceder a contenido inmediato o recibir libros en casa. | 8 |
+| 7 | US14 | Visualizar recomendaciones en la plataforma | Como lector, quiero ver recomendaciones organizadas, para elegir mi próxima lectura. | 2 |
+| 8 | US12 | Interactuar con recomendaciones | Como lector, quiero recibir recomendaciones personalizadas, para descubrir nuevos libros. | 3 |
+| 9 | US19 | Buscar libros y contenido | Como lector, quiero buscar libros y autores fácilmente, para acceder rápido al contenido. | 2 |
+| 10 | US01 | Presentación de servicios de Livria | Como visitante, quiero ver información de los servicios, para conocer la plataforma. | 1 |
+| 11 | US17 | Gestión de comunidades | Como lector, quiero crear y unirme a comunidades, para interactuar con otros lectores. | 5 |
+| 12 | US20 | Gestionar pago de libros | Como lector, quiero pagar mediante transferencia, para asegurar una compra confiable. | 3 |
+| 14 | US16 | Crear publicaciones en comunidades | Como lector, quiero compartir publicaciones, para expresar ideas y contenido. | 2 |
+| 15 | US13 | Registro e inicio de sesión | Como lector, quiero registrarme e iniciar sesión, para acceder a la plataforma. | 3 |
+| 17 | US22 | Gestionar plan de suscripción | Como lector, quiero gestionar mi suscripción, para controlar mi experiencia. | 3 |
+| 19 | US07 | Diseño atractivo de Landing Page | Como visitante, quiero una página atractiva, para sentir interés en usar Livria. | 1 |
+| 20 | US21 | Valoración y reseñas de libros | Como lector, quiero valorar libros, para compartir opiniones. | 3 |
+| 21 | US15 | Cierre de sesión | Como lector, quiero cerrar sesión, para proteger mi información. | 1 |
+| 22 | US26 | Filtro por atributos del libro | Como lector, quiero filtrar libros, para encontrar contenido relevante. | 2 |
+| 23 | US06 | Navegación simple en Landing Page | Como visitante, quiero navegar fácilmente, para explorar la página. | 1 |
+| 24 | TS10 | Añadir libro al inventario | Como developer, quiero añadir libros, para ampliar el catálogo. | 3 |
+| 25 | TS03 | Búsqueda de libros (admin) | Como developer, quiero buscar libros, para gestionarlos fácilmente. | 1 |
+| 26 | TS09 | Visualizar inventario | Como developer, quiero ver el inventario, para gestionar libros. | 1 |
+| 27 | TS04 | Ver detalles de libros | Como developer, quiero ver información completa, para tomar decisiones. | 1 |
+| 28 | TS01 | Acceso rápido a secciones | Como developer, quiero acceder rápido a módulos, para gestionar el sistema. | 1 |
+| 29 | TS02 | Estadísticas de libros | Como developer, quiero ver estadísticas, para tomar decisiones informadas. | 2 |
+| 30 | TS05 | Estadísticas de órdenes | Como developer, quiero analizar órdenes, para evaluar ventas. | 3 |
+| 31 | TS08 | Filtrado de libros en inventario | Como developer, quiero filtrar libros, para encontrarlos fácilmente. | 2 |
+| 32 | TS06 | Buscar y filtrar de órdenes | Como developer, quiero buscar órdenes, para gestionarlas. | 2 |
+| 33 | TS07 | Visualizar una tabla con detalles de las órdenes | Como developer, quiero ver órdenes en tabla, para analizarlas. | 1 |
+| 34 | TS11 | Visualizar estadísticas de negocio | Como developer, quiero ver métricas, para mejorar decisiones. | 2 |
+| 35 | US25 | Uso en múltiples dispositivos | Como lector, quiero usar la app en distintos dispositivos, para acceder desde cualquier lugar. | 5 |
+| 36 | TS12 | Configuración de perfil | Como developer, quiero gestionar mi perfil, para actualizar datos. | 2 |
+| 37 | TS13 | Configuración de aplicación | Como developer, quiero configurar la app, para personalizar su funcionamiento. | 2 |
+| 38 | US23 | Acceso en cualquier momento | Como lector, quiero acceder 24/7, para usar la plataforma sin restricciones. | 2 |
+| 39 | US24 | Navegación intuitiva | Como lector, quiero una interfaz fácil, para usar la app sin complicaciones. | 3 |
+| 40 | US08 | Descargar app móvil | Como visitante, quiero descargar la app, para comenzar a usarla. | 1 |
+| 41 | US03 | Cambio de idioma | Como visitante, quiero cambiar idioma, para entender mejor el contenido. | 2 |
+| 42 | US05 | Sección Contáctanos | Como visitante, quiero contactar al equipo, para resolver dudas. | 1 |
+| 43 | US02 | Sección Sobre Nosotros | Como visitante, quiero conocer la empresa, para entender su propósito. | 1 |
+| 44 | US04 | Sección Home | Como visitante, quiero ver resumen inicial, para entender la plataforma. | 1 |
+| 45 | US09 | Redes sociales | Como visitante, quiero acceder a redes, para ver contenido adicional. | 1 |
+| 46 | US11 | Formulario de contacto | Como visitante, quiero enviar mensajes, para comunicarme con el equipo. | 2 |
+| 47 | US10 | Footer de Landing Page | Como visitante, quiero usar el footer, para navegar rápidamente. | 1 |
+| 48 | TS14 | Registro seguro administrador | Como developer, quiero acceder al panel admin, para gestionar el sistema. | 3 |
+
+Evidencias de la implementación del Product Backlog en Jira:
+
+<p align="center">
+  <img src="https://imgur.com/XY8Yqyw.jpg" alt="12231">
+</p>
+<p align="center">
+  <img src="https://imgur.com/rzug1N7.jpg" alt="12231">
+</p>
 
 ## 3.4. Impact Mapping
 
