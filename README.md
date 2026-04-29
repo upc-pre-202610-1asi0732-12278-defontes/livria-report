@@ -4222,6 +4222,24 @@ Link de la Landing Page ya desplegada: https://upc-pre-202610-1asi0732-12278-def
 
 ### 5.2.3. Implemented Native-Mobile Application Evidence
 
+#### Livria Admin
+<p align="center">
+  <img src="https://imgur.com/I4GM6eR.png" alt="Livria Admin Evidence">
+</p>
+
+#### Livria User
+<p align="center">
+  <img src="https://imgur.com/mvtQ3Vh.png" alt="Livria User Evidence">
+</p>
+
+Se ha completado el desarrollo y despliegue de las soluciones móviles del ecosistema Livria, comprendiendo tanto la aplicación Livria Admin como la aplicación Livria User. La aplicación Livria Admin fue desarrollada de forma nativa utilizando Kotlin y Jetpack Compose, enfocándose en la eficiencia para la gestión de inventarios y estadísticas. Por otro lado, la aplicación Livria User fue implementada utilizando el framework Flutter, permitiendo una interfaz altamente personalizada y fluida para el cliente final. Ambas herramientas han sido empaquetadas en archivos ejecutables (APK) para facilitar su distribución y revisión, los cuales pueden ser descargados desde los siguientes enlaces:
+
+### Enlaces de Descarga - Aplicaciones Móviles
+
+* **[Descargar Livria Admin (Kotlin APK)](https://drive.google.com/file/d/1U-PhF3su-qsdf_lWhQRRLVaaV5vnSMoq/view?usp=sharing)** – *Versión estable para administración y gestión de inventarios.*
+* **[Descargar Livria User (Flutter APK)](https://drive.google.com/file/d/1c_B1kJUK3QZlSkRcw_nCnb-oVhIzbl3D/view?usp=sharing)** – *Versión estable para clientes y catálogo de libros.*
+
+> **Nota:** Para instalar estas aplicaciones, es necesario permitir la instalación de aplicaciones de orígenes desconocidos en los ajustes de seguridad de su dispositivo Android.
 
 
 ### 5.2.4. Implemented RESTful API and/or Serverless Backend Evidence
