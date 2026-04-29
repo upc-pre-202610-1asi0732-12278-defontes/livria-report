@@ -4702,3 +4702,13 @@ Stripe. (s. f.). *Stripe*. [https://stripe.com](https://stripe.com)
 Torres-Vega, E. (2025). Comprensión lectora en estudiantes de secundaria en Perú. Horizontes. Revista De Investigación En Ciencias De La Educación, 9(36), 177–187. [https://doi.org/10.33996/revistahorizontes.v9i36.909](https://doi.org/10.33996/revistahorizontes.v9i36.909)
 
 # Anexos
+
+Anexo A. Entrevistas Needfinding. <https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201f855_upc_edu_pe/EWZiS1n_89FKgISqOVCjVmUB9Kn699X3OkaJF1K_yNxkpQ?e=6ctcJp>
+
+Anexo B. Wireframes y Mockups. <https://www.figma.com/design/eKCqZoU0IF7n3wNTA8kuZc/livria?node-id=923-589&t=llsYI4TxYraymJaX-1>
+
+Anexo C. Prototipo. <https://www.figma.com/proto/eKCqZoU0IF7n3wNTA8kuZc/livria?node-id=923-591&p=f&t=aaOc209xUIWnbuOx-1&scaling=scale-down&content-scaling=fixed&page-id=923%3A589>
+
+Anexo D. Landing Page. <https://livriaorg.github.io/LivriaLanding/>
+
+Anexo E. Api de Livria. <https://lililivria.azurewebsites.net/swagger/index.html>
