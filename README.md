@@ -85,6 +85,7 @@ Commits
       - [1.2.2.2. Lean UX Assumptions](#1222-lean-ux-assumptions)
       - [1.2.2.3. Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
       - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
+    - [1.2.3. Alcance](#123-alcance)
   - [1.3. Segmentos objetivo](#13-segmentos-objetivo)
 - [Capítulo II: Requirements Elicitation & Analysis](#capítulo-ii-requirements-elicitation--analysis)
   - [2.1. Competidores](#21-competidores)
@@ -386,6 +387,21 @@ Creemos que, al implementar la publicación de reseñas y calificación con estr
 </p>
 
 Link del Lean UX Canvas: https://docs.google.com/document/d/1J1PJ1gn62fnoB0Saa-rrgXwppnVQFzs8/edit?usp=sharing&ouid=112054289490328588638&rtpof=true&sd=true
+
+### 1.2.3. Alcance
+
+El presente proyecto se delimita al desarrollo de un Producto Mínimo Viable (MVP) enfocado en la interacción comunitaria y comercialización literaria. A continuación, se detallan las inclusiones y exclusiones específicas que definen los límites del sistema:
+
+- El sistema se limita a facilitar la visualización de métodos de pago directos (Código de Cuenta Interbancaria - CCI) para transferencias manuales. Se excluye explícitamente la integración técnica con pasarelas de pago automatizadas (como Stripe, Niubiz o similares).
+- Dado que la plataforma no almacena ni procesa datos sensibles de tarjetas de crédito o débito, el proyecto queda fuera del cumplimiento de la normativa PCI DSS, delegando la responsabilidad de la transacción a la entidad bancaria del usuario.
+- El alcance no contempla la emisión de comprobantes de pago electrónicos (boletas/facturas) vinculados a la SUNAT. El sistema únicamente generará un comprobante interno de "Confirmación de Recepción".
+- El servicio y la gestión de entrega están restringidos exclusivamente al área de Lima Metropolitana.
+- El sistema no incluye rastreo logístico en tiempo real (GPS). La actualización del estado de los pedidos será gestionada de forma manual por el administrador desde el panel de control.
+- Los costos de los productos y servicios dentro de la plataforma son estáticos; no se contempla la actualización automática basada en APIs externas o índices de mercado.
+- La plataforma no dispone de módulos de verificación o filtrado automático de archivos multimedia subidos por los usuarios o administradores.
+- Toda la carga de información bibliográfica (títulos, autores, ISBN) se realizará manualmente. Se excluye la sincronización automatizada con bases de datos bibliográficas externas.
+- No se incluye el desarrollo de algoritmos de moderación automática para las interacciones en foros o reseñas; la integridad del contenido queda bajo responsabilidad directa de los usuarios.
+- El alcance no integra un sistema de Live Chat o Help Desk interno.
 
 ## 1.3. Segmentos objetivo
 
