@@ -69,6 +69,8 @@ Commits
   <img src="https://imgur.com/ZCZbARy.jpg" alt="Commits Report">
 </p>
 
+---
+
 ## Contenido
 
 - [Student Outcome](#student-outcome)
