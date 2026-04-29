@@ -50,6 +50,7 @@
 
 ---
 
+
 ## Project Report Collaboration Insights
 
 El desarrollo del proyecto se llevó a cabo mediante una estrategia de colaboración multi-repositorio, permitiendo una gestión especializada tanto para el informe técnico como para los diversos componentes del software (Landing Page, Aplicación Móvil y API). Los miembros del equipo mantuvieron una participación activa y equitativa en todos los entornos, utilizando GitHub como eje central para la integración de versiones, el seguimiento de commits y la documentación detallada de cada avance, asegurando así la trazabilidad y coherencia entre el desarrollo técnico y el reporte académico.
