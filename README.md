@@ -1763,7 +1763,7 @@ La barra de menú inferior es el Sistema de Navegación Global principal de la a
 * HOME: El ícono de casa funciona como el punto central de navegación.  
 * CATEGORIES: El ícono de tres líneas horizontales (hamburguesa) dirige a la lista de categorías y géneros.  
 * COMMUNITIES: El ícono de personas enfoca al usuario en el aspecto social y de interacción de la plataforma.  
-* NOTIFICATIONS: El ícono de campana alerta al usuario de mensajes y novedades.  
+* NOTIFICATIONS: El ícono de campana lleva al usuario a la pantalla de mensajes y novedades.  
 * PROFILE: El ícono de persona da acceso al centro de gestión de la cuenta, settings y la información personal del usuario.
 
 Este diseño asegura que todas las áreas fundamentales de la experiencia (descubrimiento, socialización y gestión personal) estén siempre visibles y sean accesibles con un solo toque, optimizando el flujo de navegación.
