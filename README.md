@@ -3421,50 +3421,69 @@ La gestión del código fuente es fundamental para el desarrollo colaborativo de
 
 Para optimizar la organización del código y las pruebas, se implementarán repositorios específicos en GitHub. Cada uno cumplirá una función definida dentro del desarrollo y control de calidad del proyecto, garantizando una gestión estructurada y eficiente del ciclo de trabajo.
 
-**landing**
+**Landing Page**
 
 Este repositorio estará dedicado exclusivamente al desarrollo de la Landing Page de Livria. Incluirá todo el código y los recursos asociados a la interfaz inicial del proyecto, como archivos HTML, CSS, JavaScript, imágenes y demás elementos Front-End, orientados a ofrecer una presentación atractiva, funcional y coherente con la propuesta de valor de la aplicación para los visitantes.
 
 <p align="center">
-  <img src="https://i.imgur.com/iIrxsuJ.png" alt="12171">
+  <img src="https://imgur.com/7EMIS6x.png" alt="Landing Page Repository">
 </p>
 
-**readme**
+**Report**
 
 Este repositorio estará destinado al almacenamiento y control de versiones del informe completo del proyecto Livria. Contendrá los documentos en formato .md vinculados al proceso de documentación, planificación y análisis del proyecto, permitiendo mantener un seguimiento estructurado y actualizado de los avances en la elaboración del informe.
 
 <p align="center">
-  <img src="https://i.imgur.com/TvfH5aY.png" alt="12171">
+  <img src="https://imgur.com/wWLcukh.png" alt="Report Repository">
 </p>
 
-**admin**
+**Livria Admin**
 
-Este repositorio albergará el código del Front-End de la aplicación móvil Livria. Contará con una estructura organizada por componentes, rutas, controladores y servicios, desarrollados íntegramente en Kotlin dentro de Android Studio. Representará el núcleo técnico del desarrollo funcional de la aplicación.
+Este repositorio contiene el código fuente y la arquitectura de la aplicación móvil nativa desarrollada en Kotlin para la gestión administrativa. Está diseñado específicamente para que los dueños de librerías y administradores puedan supervisar el inventario, analizar las estadísticas de ventas en tiempo real y gestionar el estado de las órdenes de manera eficiente, ofreciendo una interfaz robusta y optimizada para dispositivos Android.
 
 <p align="center">
-  <img src="https://i.imgur.com/zpO9UXV.png" alt="12171">
+  <img src="https://imgur.com/GkGfge7.png" alt="Admin Repository">
 </p>
 
-**user**
+**Livria User**
 
+Este repositorio está dedicado al desarrollo de la aplicación móvil orientada al cliente final. A través de esta interfaz nativa, los usuarios pueden explorar el catálogo de libros, gestionar sus perfiles personales y realizar compras. El enfoque principal es proporcionar una experiencia de usuario fluida y atractiva que facilite el acceso a la lectura y la interacción con los servicios de Livria.
 
 <p align="center">
-  <img src="https://i.imgur.com/zpO9UXV.png" alt="12171">
+  <img src="https://imgur.com/wS7S8Su.png" alt="User Repository">
+</p>
+
+**Livria Web Services**
+
+Este repositorio centraliza el desarrollo del backend del ecosistema Livria, implementado mediante una RESTful API construida con .NET Core. Incluye la lógica de negocio, la gestión de la base de datos y los servicios necesarios para garantizar la persistencia de datos y la comunicación fluida entre todas las aplicaciones del proyecto (Admin y User), siguiendo principios de arquitectura limpia y escalabilidad.
+
+<p align="center">
+  <img src="https://imgur.com/zS5beSY.png" alt="Web Services Repository">
 </p>
 
 **Enlaces:** 
 
 **Repositorio de la Landing Page:**
 
-[**https://github.com/LivriaOrg/LivriaLanding**](https://github.com/LivriaOrg/LivriaLanding)
+[**https://github.com/upc-pre-202610-1asi0732-12278-defontes/livria-landing-page**](https://github.com/upc-pre-202610-1asi0732-12278-defontes/livria-landing-page)
 
 **Repositorio del informe:**
 
-[**https://github.com/LivriaOrg/README-de-Livria**](https://github.com/LivriaOrg/README-de-Livria)
+[**https://github.com/upc-pre-202610-1asi0732-12278-defontes/livria-report**](https://github.com/upc-pre-202610-1asi0732-12278-defontes/livria-report)
 
-**Repositorio de la aplicación móvil:**
+**Repositorio de la aplicación móvil para Administradores:**
 
-[**https://github.com/LivriaOrg/LivriaAdmin**](https://github.com/LivriaOrg/LivriaAdmin)
+[**https://github.com/upc-pre-202610-1asi0732-12278-defontes/livria-admin**](https://github.com/upc-pre-202610-1asi0732-12278-defontes/livria-admin)
+
+**Repositorio de la aplicación móvil para Usuarios:**
+
+[**https://github.com/upc-pre-202610-1asi0732-12278-defontes/livria-user**](https://github.com/upc-pre-202610-1asi0732-12278-defontes/livria-user)
+
+
+**Repositorio de los Web Services:**
+
+[**https://github.com/upc-pre-202610-1asi0732-12278-defontes/livria-web-services**](https://github.com/upc-pre-202610-1asi0732-12278-defontes/livria-web-services)
+
 
 2. **Workflow de control de versiones:**
 
