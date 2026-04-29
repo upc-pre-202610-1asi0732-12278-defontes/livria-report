@@ -50,6 +50,7 @@
 
 ---
 
+
 ## Project Report Collaboration Insights
 
 URL del repositorio del Project Report en GitHub:
