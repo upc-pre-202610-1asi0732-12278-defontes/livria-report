@@ -53,14 +53,21 @@
 
 ## Project Report Collaboration Insights
 
-El desarrollo del proyecto se llevó a cabo mediante una estrategia de colaboración multi-repositorio, permitiendo una gestión especializada tanto para el informe técnico como para los diversos componentes del software (Landing Page, Aplicación Móvil y API). Los miembros del equipo mantuvieron una participación activa y equitativa en todos los entornos, utilizando GitHub como eje central para la integración de versiones, el seguimiento de commits y la documentación detallada de cada avance, asegurando así la trazabilidad y coherencia entre el desarrollo técnico y el reporte académico.
+Para la elaboración del presente informe, el equipo trabajó de manera colaborativa y centralizada en el repositorio livria-report, alojado en la organización de GitHub del equipo. Durante este proceso, cada integrante contribuyó activamente en la redacción, estructuración y revisión de los capítulos correspondientes, asegurando que el documento refleje con precisión el progreso técnico y estratégico del proyecto. La gestión mediante este repositorio permitió mantener un control de versiones riguroso y una integración fluida de los aportes de todos los miembros, cuyas evidencias de participación se detallan en las métricas y analíticos de colaboración presentados a continuación.
 
-URL del repositorio del Project Report en GitHub:
-[https://github.com/upc-pre-202610-1asi0732-12278-defontes/livria-report](https://github.com/upc-pre-202610-1asi0732-12278-defontes/livria-report)
+URL del repositorio del Project Report en GitHub: https://github.com/upc-pre-202610-1asi0732-12278-defontes/livria-report
 
-[Descripción de cómo se han desarrollado las actividades de elaboración del informe. Incluir capturas de analíticos de colaboración y commits en GitHub realizados por los miembros del equipo.]
+Insights:
 
----
+<p align="center">
+  <img src="https://imgur.com/VmVOI6K.jpg" alt="Insights Report">
+</p>
+
+Commits
+
+<p align="center">
+  <img src="https://imgur.com/ZCZbARy.jpg" alt="Commits Report">
+</p>
 
 ## Contenido
 
