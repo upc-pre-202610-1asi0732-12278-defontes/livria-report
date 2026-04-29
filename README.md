@@ -4244,7 +4244,13 @@ Se ha completado el desarrollo y despliegue de las soluciones móviles del ecosi
 
 ### 5.2.4. Implemented RESTful API and/or Serverless Backend Evidence
 
+<p align="center">
+  <img src="https://imgur.com/WYsDM5y.png" alt="Livria User Evidence">
+</p>
 
+La arquitectura de servicios de Livria ha sido implementada y desplegada satisfactoriamente utilizando la plataforma de nube Microsoft Azure. El backend, desarrollado íntegramente en C# bajo el framework .NET Core, centraliza la lógica de negocio y la persistencia de datos mediante una arquitectura RESTful escalable. Para facilitar la validación de los endpoints y la integración con las aplicaciones frontend, se ha habilitado una interfaz de documentación interactiva mediante Swagger, la cual permite realizar pruebas de los servicios en tiempo real y verificar los contratos de datos establecidos. El acceso a la documentación y a los servicios desplegados se encuentra disponible en el siguiente enlace:
+
+Link de Swagger UI: https://lililivria.azurewebsites.net/swagger/index.html
 
 ### 5.2.5. RESTful API documentation
 
