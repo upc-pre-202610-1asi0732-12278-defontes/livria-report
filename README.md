@@ -52,6 +52,8 @@
 
 ## Project Report Collaboration Insights
 
+El desarrollo del proyecto se llevó a cabo mediante una estrategia de colaboración multi-repositorio, permitiendo una gestión especializada tanto para el informe técnico como para los diversos componentes del software (Landing Page, Aplicación Móvil y API). Los miembros del equipo mantuvieron una participación activa y equitativa en todos los entornos, utilizando GitHub como eje central para la integración de versiones, el seguimiento de commits y la documentación detallada de cada avance, asegurando así la trazabilidad y coherencia entre el desarrollo técnico y el reporte académico.
+
 URL del repositorio del Project Report en GitHub:
 [https://github.com/upc-pre-202610-1asi0732-12278-defontes/livria-report](https://github.com/upc-pre-202610-1asi0732-12278-defontes/livria-report)
 
@@ -4190,7 +4192,13 @@ Pasos del Proceso de Despliegue
 
 ### 5.2.2. Implemented Landing Page Evidence
 
+<p align="center">
+  <img src="https://imgur.com/mCjimWS.png" alt="Landing Page Evidence">
+</p>
 
+Se ha llevado a cabo la implementación integral de la Landing Page, diseñada como el punto de contacto principal para los usuarios interesados en el ecosistema de Livria. El sitio cuenta con una estructura semántica y navegable que incluye las secciones de Home (vista principal), Servicios (propuesta de valor), About Us (misión y equipo) y Contacto. La página ha sido optimizada para ofrecer una experiencia responsiva y coherente con las guías de estilo del proyecto, facilitando la conversión de visitantes en usuarios de la plataforma. Se puede acceder a la versión desplegada del sitio a través del siguiente enlace:
+
+Link de la Landing Page ya desplegada: https://upc-pre-202610-1asi0732-12278-defontes.github.io/livria-landing-page/
 
 ### 5.2.3. Implemented Native-Mobile Application Evidence
 
@@ -4450,6 +4458,104 @@ Remueve un libro específico de la lista de exclusión del usuario, permitiendo 
 
 ### 5.2.6. Team Collaboration Insights
 
+#### Sprint 1
+
+Durante este Sprint, el equipo se centró en la implementación y despliegue de las principales funcionalidades del proyecto Livria, abordando tanto el frontend web, como el backend y la aplicación móvil. Se desarrolló la Landing Page utilizando HTML, CSS y JavaScript, asegurando una interfaz visual atractiva y responsiva acorde con el diseño definido. Esta fue desplegada en GitHub Pages, garantizando su disponibilidad pública y un flujo de navegación fluido.
+
+En paralelo, se implementó el backend en C#, diseñando e integrando endpoints para la gestión de libros, inventario, pedidos y usuarios. Este servicio fue desplegado en Microsoft Azure, permitiendo la conexión estable con los distintos módulos del sistema y asegurando la persistencia de los datos.
+
+Finalmente, se desarrolló la aplicación móvil en Android Studio utilizando Kotlin, enfocada en la vista del administrador de Livria. Esta aplicación permite la gestión directa de los recursos del sistema, ofreciendo pantallas funcionales y una experiencia de uso coherente con la plataforma web.
+Actividades de implementación:
+
+* La Landing Page fue construida conforme a los diseños de Figma, aplicando estilos y flujos de navegación definidos previamente.
+* El backend en C# integró controladores y servicios RESTful conectados a la base de datos, optimizados para las operaciones del sistema.
+* La aplicación móvil implementó pantallas clave para la administración de libros, inventario y órdenes, garantizando una comunicación efectiva con el backend desplegado en Azure.
+
+Visualización de commits:
+
+<p align="center">
+  <img src="https://i.imgur.com/1erqp0c.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://i.imgur.com/skz9UVG.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://i.imgur.com/rchRhxY.png" alt="12171">
+</p>
+
+#### Sprint 2
+
+Durante este Sprint, el equipo concentró todos sus esfuerzos en la implementación y despliegue de la aplicación móvil dirigida al usuario final (lector), utilizando el framework Flutter dentro del entorno Android Studio. El enfoque principal fue la construcción de una interfaz de usuario fiel a los diseños y la arquitectura del cliente, asegurando una navegación fluida y una experiencia nativa consistente.
+
+Dado que la infraestructura del servidor ya se encontraba operativa, el trabajo técnico se focalizó en la integración desde el cliente, desarrollando la capa de datos y repositorios en la aplicación móvil para consumir los servicios RESTful existentes. Esto permitió validar los flujos de autenticación y obtención de datos sin necesidad de realizar modificaciones en el código fuente del backend.
+
+Actividades de implementación:
+
+* La aplicación móvil de usuario fue desarrollada en Flutter, implementando la lógica de negocio en el cliente y las pantallas de Autenticación (Login/Registro), Inicio, Búsqueda y Comunidades conforme a los prototipos de Figma.
+* Se desarrolló la capa de infraestructura en la aplicación móvil para gestionar la comunicación HTTP, el manejo de errores y el almacenamiento seguro de tokens (JWT) recibidos del backend.
+* Se validó la integración de los servicios mediante pruebas de conexión desde el aplicativo Android, garantizando que la visualización de libros, comunidades y perfiles de usuario respondiera correctamente a la data existente.
+
+Visualización de commits:
+
+<p align="center">
+  <img src="https://i.imgur.com/JzpufE4.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://i.imgur.com/plbWVA5.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://i.imgur.com/LjeyLl1.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://i.imgur.com/0Y4Qt3w.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://i.imgur.com/ajnLREa.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://i.imgur.com/kQOxqPW.png" alt="12171">
+</p>
+
+#### Sprint 3
+
+Durante este Sprint, el equipo orientó sus esfuerzos a la consolidación de la aplicación móvil (Flutter/Android Studio) como una plataforma transaccional completa y personalizada. El enfoque principal fue la implementación de los flujos de comercio electrónico (Carrito de Compras, Órdenes) y la gestión integral del perfil de usuario, asegurando que la arquitectura soportara operaciones complejas de estado y persistencia de datos de manera fluida.
+
+En el ámbito técnico, el trabajo se focalizó en la integración de lógica de negocio avanzada en el cliente y la conexión con servicios externos y actualizados del backend. Se desarrolló la gestión de estados globales para el manejo de stock y compras, además de incorporar herramientas de geolocalización y aseguramiento de calidad (Testing) para validar la robustez del sistema antes de la entrega final.
+
+Actividades de implementación:
+
+* La aplicación móvil integró los módulos de E-commerce y Suscripciones, implementando las pantallas de Carrito de Compras, Pasarela de Pagos, Historial de Órdenes y Edición de Perfil, completando el ciclo de vida comercial del usuario.
+* Se desarrollaron funcionalidades de infraestructura avanzada, incluyendo la integración con Google Maps para la gestión de direcciones, un sistema de notificaciones y la optimización del algoritmo de recomendaciones con lógica de exclusión y favoritos (bookmarks).
+* Se incorporó una fase rigurosa de calidad mediante la implementación de pruebas unitarias y de integración, garantizando que tanto la lógica de negocio (cálculos de carrito, stock) como la navegación entre módulos funcionaran correctamente bajo distintos escenarios de uso.
+
+Visualización de commits:
+
+<p align="center">
+  <img src="https://imgur.com/7S4tqD6.png" alt="12171031">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/hxTkrCu.png" alt="12171031">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/aDaJCVz.png" alt="12171031">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/JssVcP1.png" alt="12171031">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/AwtJY2V.png" alt="12171031">
+</p>
 
 ## 5.3. Video About-the-Product
 
