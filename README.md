@@ -402,6 +402,8 @@ El presente proyecto se delimita al desarrollo de un Producto Mínimo Viable (MV
 - Toda la carga de información bibliográfica (títulos, autores, ISBN) se realizará manualmente. Se excluye la sincronización automatizada con bases de datos bibliográficas externas.
 - No se incluye el desarrollo de algoritmos de moderación automática para las interacciones en foros o reseñas; la integridad del contenido queda bajo responsabilidad directa de los usuarios.
 - El alcance no integra un sistema de Live Chat o Help Desk interno.
+- El sistema no contempla el envío de notificaciones push a dispositivos móviles. Toda comunicación de alertas o estados se limitará a la visualización interna dentro de la interfaz de la aplicación.
+- El alcance excluye el desarrollo de un flujo de recuperación de contraseñas. En esta fase, la administración de accesos es responsabilidad del usuario; en caso de pérdida, el soporte se limitará a la creación de una nueva cuenta o gestión manual por base de datos si el administrador lo requiere.
 
 ## 1.3. Segmentos objetivo
 
