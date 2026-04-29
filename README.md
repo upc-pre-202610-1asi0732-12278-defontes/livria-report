@@ -4236,8 +4236,8 @@ Se ha completado el desarrollo y despliegue de las soluciones móviles del ecosi
 
 ### Enlaces de Descarga - Aplicaciones Móviles
 
-* **[Descargar Livria Admin (Kotlin APK)](https://drive.google.com/file/d/1U-PhF3su-qsdf_lWhQRRLVaaV5vnSMoq/view?usp=sharing)** – *Versión estable para administración y gestión de inventarios.*
-* **[Descargar Livria User (Flutter APK)](https://drive.google.com/file/d/1c_B1kJUK3QZlSkRcw_nCnb-oVhIzbl3D/view?usp=sharing)** – *Versión estable para clientes y catálogo de libros.*
+* Descargar Livria Admin (Kotlin APK): **https://drive.google.com/file/d/1U-PhF3su-qsdf_lWhQRRLVaaV5vnSMoq/view?usp=sharing** – *Versión estable para administración y gestión de inventarios.*
+* Descargar Livria User (Flutter APK) **https://drive.google.com/file/d/1c_B1kJUK3QZlSkRcw_nCnb-oVhIzbl3D/view?usp=sharing** – *Versión estable para clientes y catálogo de libros.*
 
 > **Nota:** Para instalar estas aplicaciones, es necesario permitir la instalación de aplicaciones de orígenes desconocidos en los ajustes de seguridad de su dispositivo Android.
 
@@ -4597,7 +4597,13 @@ Visualización de commits:
 
 ## 5.3. Video About-the-Product
 
----
+El propósito principal del video about the product es persuadir a los usuarios objetivo para que adopten la plataforma, convirtiéndola en su herramienta principal para acceder a libros y fomentar un hábito de lectura constante y social. Se trata de informar sobre la existencia de Livria como una solución moderna y accesible, al hacernos percibir como plataforma integral que combate activamente la crisis de baja lectura al ofrecer acceso, personalización y una comunidad activa.
+
+<p align="center">
+  <img src="https://i.imgur.com/dFJoOl7.png" alt="12171">
+</p>
+
+ Enlace de visualización: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312287_upc_edu_pe/IQChm34JlNBBQoi42BHW9D4SAdt1ydeEIEGOrGip7l670Ok?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=VeWxCf
 
 # Conclusiones
 
