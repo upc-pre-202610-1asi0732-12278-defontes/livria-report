@@ -4638,6 +4638,140 @@ El propósito principal del video about the product es persuadir a los usuarios 
 
  Enlace de visualización: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312287_upc_edu_pe/IQChm34JlNBBQoi42BHW9D4SAdt1ydeEIEGOrGip7l670Ok?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=VeWxCf
 
+# Capítulo VI: Product Verification & Validation
+## 6.1. Testing Suites & Validation
+### 6.1.1. Core Entities Unit Tests.
+### 6.1.2. Core Integration Tests.
+### 6.1.3. Core Behavior-Driven Development
+### 6.1.4. Core System Tests.
+
+# Capítulo VII:: DevOps Practices
+## 7.1. Continuous Integration
+### 7.1.1. Tools and Practices
+En el proyecto Livria utilizamos GitHub como repositorio central y GitHub Actions como plataforma de Continuous Integration (CI). Dado que nuestra arquitectura se divide en tres frentes distintos (Backend, App Móvil de Usuario y App Móvil de Administrador), las pruebas automatizadas y la validación de código se organizan según su ecosistema:
+* **Backend (.NET 9):** Utilizamos xUnit/NUnit junto con la librería Moq para las pruebas unitarias e integrales de los distintos contextos (commerce, communities, IAM, etc.), y FluentAssertions para garantizar aserciones claras y legibles.
+* **Mobile User (Flutter):** Se emplea el framework nativo flutter test para validar la lógica de estado (Providers y casos de uso) y pruebas de widgets para la interfaz.
+* **Mobile Admin (Kotlin/Android):** Se utiliza JUnit y MockK para las pruebas unitarias de los ViewModels y la capa de dominio, junto con Espresso para pruebas de interfaz de usuario.
+* **Prácticas aplicadas:** Ejecutar las suites de validación y compilación en cada push y pull_request sobre las ramas feature/*, develop y testing.
+* **Aislamiento:** Mantener los tests separados por componentes (Backend, Flutter, Android) en distintos jobs dentro del pipeline para paralelizar la ejecución y reducir tiempos de espera.
+* **Quality Gates:** Bloquear integraciones (merges) que no compilen en los tres frentes o que fallen en sus respectivas pruebas automatizadas.
+### 7.1.2. Build & Test Suite Pipeline Components
+**Objetivo:** Compilar y validar automáticamente que los cambios en cualquier componente del sistema pasen las pruebas antes de permitir un merge.
+* **Activadores (on):** Eventos de push y pull_request en ramas clave.
+* **Pasos del pipeline para Backend:** Instalar SDK de .NET 9, restaurar paquetes (dotnet restore), compilar en Release y ejecutar pruebas subiendo los resultados en formato .trx.
+* **Pasos del pipeline para Flutter:** Instalar SDK de Flutter, ejecutar flutter pub get, validar el formato y ejecutar flutter test.
+* **Pasos del pipeline para Kotlin:** Configurar JDK 17, ejecutar Gradle build y lanzar pruebas unitarias (./gradlew test).
+
+YAML ejemplo para el Backend (archivo: `.github/workflows/backend-ci.yml`):
+
+```YAML
+
+name: Livria Backend CI
+
+on:
+  push:
+    branches: [ develop, testing, 'feature/**' ]
+  pull_request:
+    branches: [ develop, testing ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup .NET 9
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '9.0.x'
+
+    - name: Restore dependencies
+      run: dotnet restore backend/LivriaBackend/LivriaBackend.sln
+
+    - name: Build
+      run: dotnet build backend/LivriaBackend/LivriaBackend.sln -c Release --no-restore
+
+    - name: Run Tests
+      run: dotnet test backend/LivriaBackend/LivriaBackend.sln -c Release --no-build --logger "trx;LogFileName=backend-results.trx"
+
+    - name: Upload Test Results
+      uses: actions/upload-artifact@v4
+      with:
+        name: backend-test-results
+        path: '**/*.trx'
+  ```
+        
+## 7.2. Continuous Delivery
+### 7.2.1. Tools and Practices
+El pipeline de entrega (CD) orquesta la preparación de los artefactos listos para entornos de validación (Staging/Testing) antes de llegar a los usuarios finales o ser instalados en los dispositivos físicos.
+* Faseada: Solo los artefactos que pasaron el pipeline de CI son empaquetados y promovidos.
+* Backend: Se utiliza dotnet publish para generar los binarios y se despliega en Microsoft Azure (Azure App Service) mediante credenciales de publicación inyectadas desde GitHub Secrets.
+* Mobile Apps (User & Admin): Se compilan los artefactos en formato instalable (archivos .apk). En lugar de usar tiendas de aplicaciones oficiales, el pipeline exporta estos APKs como GitHub Artifacts. Esto permite que el equipo de QA descargue el archivo directamente desde el panel de GitHub Actions a sus teléfonos para realizar pruebas manuales ("sideloading").
+* Seguridad: Las credenciales de Azure (AZURE_WEBAPP_PUBLISH_PROFILE) y las claves (keystores) para firmar los APKs se mantienen estrictamente protegidas en GitHub Secrets.
+### 7.2.2. Stages Deployment Pipeline Components
+* Build & Test: Validación inicial completada en CI.
+* Package Backend: Generación del artefacto de publicación y despliegue a la ranura (slot) de Staging en Azure.
+* Package Mobile: Ejecución de flutter build apk --release (User App) y ./gradlew assembleRelease (Admin App).
+* Upload Artifacts: Subida automática de los APKs generados utilizando la acción actions/upload-artifact@v4.
+* Approval Gate: Pruebas manuales en los dispositivos físicos descargando el APK generado, y validación del backend en el entorno de pruebas.
+## 7.3. Continuous Deployment
+### 7.3.1. Tools and Practices
+El despliegue continuo a producción está altamente automatizado, pero protegido por aprobaciones manuales para asegurar la estabilidad del entorno final.
+* **Backend:** Al realizar un merge a la rama main, se construye el artefacto final y se despliega directamente en el entorno de producción en Azure. Alternativamente, se hace un "swap" entre los slots de Staging y Producción en Azure App Service.
+* **Mobile (User & Admin):** Para las aplicaciones móviles, el despliegue a producción consiste en empaquetar la versión final del APK y publicarla automáticamente en la sección de GitHub Releases del repositorio (etiquetando la versión, ej. v1.0.0). Esto genera un enlace de descarga directo y permanente para que los usuarios bajen e instalen la aplicación en sus celulares sin depender de la Google Play Store.
+* **Rollback:** En el backend, Azure permite realizar un rollback instantáneo revirtiendo el despliegue al estado anterior. En los móviles, los usuarios pueden descargar el APK del "Release" anterior desde GitHub si encuentran un fallo crítico.
+### 7.3.2. Production Deployment Pipeline Components
+* **Activador:** Merge a main o creación de un tag de versión (ej. v1.x).
+*	**Ejecución Backend:** Publicación del artefacto .NET y despliegue al entorno final en Azure.
+*	**Ejecución Mobile:** Compilación final del APK firmado y creación automática del Release en GitHub usando acciones como softprops/action-gh-release.
+Snippet de deploy a producción (Backend a Azure y Mobile Release):
+
+```YAML
+name: Production Deployment
+
+on:
+  push:
+    tags:
+      - 'v*' # Se activa al crear un tag como v1.0.0
+
+jobs:
+  deploy-backend-azure:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '9.0.x'
+        
+    - name: Publish Backend
+      run: dotnet publish backend/LivriaBackend/LivriaBackend.csproj -c Release -o ./publish
+      
+    - name: Deploy to Azure Web App
+      uses: azure/webapps-deploy@v2
+      with:
+        app-name: 'livria-backend-prod'
+        publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+        package: ./publish
+
+  release-mobile-apks:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    
+    # (Pasos de setup de Flutter y compilación de APK omitidos por brevedad)
+    - name: Build Flutter User App APK
+      run: flutter build apk --release
+      
+    - name: Create GitHub Release and Upload APK
+      uses: softprops/action-gh-release@v1
+      with:
+        files: build/app/outputs/flutter-apk/app-release.apk
+        name: Release ${{ github.ref_name }}
+        body: "🚀 Nueva versión de Livria disponible. Descarga directa del APK para instalación manual."
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+
 # Conclusiones
 
 1. El proceso Lean UX constituye una herramienta clave para orientar estratégicamente el negocio, ya que permite validar tempranamente hipótesis y explorar diferentes enfoques antes de comprometer recursos de desarrollo. Gracias a este proceso, fue posible identificar con claridad los segmentos de usuarios más relevantes y las oportunidades de valor que guiarán el diseño del producto.
