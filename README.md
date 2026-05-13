@@ -277,7 +277,7 @@ Además, cuando el cliente desea compartir sus opiniones, descubrir nuevas lectu
 
 ##### ¿Dónde está el cliente cuando usa el producto?
 
-Livria está diseñada como una aplicación accesible tanto en versión IOS como Android, lo que permite a los usuarios disfrutar de sus funcionalidades desde cualquier lugar con conexión a internet. De este modo, pueden acceder a la plataforma ya sea desde sus computadoras o dispositivos móviles, facilitando la lectura y el acceso a libros en cualquier momento y contexto.
+Livria está diseñada como una aplicación accesible tanto en versión como Android, lo que permite a los usuarios disfrutar de sus funcionalidades desde cualquier lugar con conexión a internet. De este modo, pueden acceder a la plataforma ya sea desde sus computadoras o dispositivos móviles, facilitando la lectura y el acceso a libros en cualquier momento y contexto.
 
 ##### ¿Dónde surge el problema?
 
@@ -321,7 +321,7 @@ Los compradores conocen Livria mediante diversas vías de marketing, tales como 
 
 ##### ¿Cómo prefieren los lectores acceder a nuestro contenido?
 
-Los lectores prefieren acceder al contenido de Livria de manera rápida, sencilla y personalizada en cualquier dispositivo móvil de Android o IOS. Esta flexibilidad les permite realizar búsquedas y compras de libros desde cualquier lugar en el que se encuentren. Asimismo, valoran la propuesta de Livria por ofrecer un acceso dinámico y adaptado a sus hábitos digitales, donde la lectura se vive como una experiencia placentera y motivadora, más que como una obligación.
+Los lectores prefieren acceder al contenido de Livria de manera rápida, sencilla y personalizada en cualquier dispositivo móvil de Android. Esta flexibilidad les permite realizar búsquedas y compras de libros desde cualquier lugar en el que se encuentren. Asimismo, valoran la propuesta de Livria por ofrecer un acceso dinámico y adaptado a sus hábitos digitales, donde la lectura se vive como una experiencia placentera y motivadora, más que como una obligación.
 
 ##### ¿Qué llevó a la persona a llegar a esta situación?
 
@@ -1104,7 +1104,7 @@ Dado que el visitante se encuentra navegando la Landing Page, **Cuando** el sist
 | **Title** | Redirigir a la descarga de la aplicación móvil |
 | **Description** | Como visitante, quiero tener un acceso directo a la tienda para descargar Livria, para empezar a utilizar la aplicación. |
 | **Acceptance Criteria – Escenario 1: Inicio de la descarga de la aplicación móvil** 
-Dado que el visitante accede al sistema con intención de descargar la aplicación, **Cuando** el sistema recibe la solicitud de descarga, **Entonces** el sistema debe identificar la plataforma del visitante (iOS o Android), **Y** debe iniciar la redirección hacia la tienda de aplicaciones correspondiente para la descarga de Livria. |
+Dado que el visitante accede al sistema con intención de descargar la aplicación, **Cuando** el sistema recibe la solicitud de descarga, **Entonces** el sistema debe identificar la plataforma del visitante (Android), **Y** debe iniciar la redirección hacia la tienda de aplicaciones correspondiente para la descarga de Livria. |
 
 | Campo | Valor |
 |---|---|
@@ -1294,7 +1294,7 @@ Dado que el lector tiene un plan de pago activo, **Cuando** el sistema recibe la
 | **Story ID** | US23 |
 | **User** | Usuario de Livria |
 | **Priority** | 1 – Must Have |
-| **Epic** | EP07: Accesibilidad y experiencia de uso multiplataforma |
+| **Epic** | EP07: Accesibilidad y experiencia de uso |
 | **Title** | Acceder a la plataforma en cualquier momento |
 | **Description** | Como lector, quiero que la plataforma esté disponible en cualquier momento del día, para acceder a mis libros, comunidades y funcionalidades sin importar el lugar o la hora. |
 | **Acceptance Criteria – Escenario 1: Disponibilidad y acceso ininterrumpido** 
@@ -1305,7 +1305,7 @@ Dado que el lector intenta acceder al sistema, **Cuando** la solicitud de acceso
 | **Story ID** | US24 |
 | **User** | Usuario de Livria |
 | **Priority** | 1 – Must Have |
-| **Epic** | EP07: Accesibilidad y experiencia de uso multiplataforma |
+| **Epic** | EP07: Accesibilidad y experiencia de uso |
 | **Title** | Navegar la aplicación de forma fácil e intuitiva |
 | **Description** | Como lector, quiero una interfaz intuitiva y fácil de usar, para navegar entre libros, comunidades y configuraciones sin complicaciones ni curvas de aprendizaje. |
 | **Acceptance Criteria – Escenario 1: Acceso directo a secciones principales** 
@@ -1320,11 +1320,11 @@ Dado que el lector interactúa con la plataforma, **Cuando** el sistema presenta
 | **Story ID** | US25 |
 | **User** | Usuario de Livria |
 | **Priority** | 2 – Should Have |
-| **Epic** | EP07: Accesibilidad y experiencia de uso multiplataforma |
+| **Epic** | EP07: Accesibilidad y experiencia de uso |
 | **Title** | Usar la aplicación en diferentes dispositivos |
 | **Description** | Como lector, quiero ingresar a Livria desde distintos dispositivos, para acceder a mis libros y comunidades desde cualquier lugar y sin perder mi progreso. |
 | **Acceptance Criteria – Escenario 1: Portabilidad y consistencia entre plataformas** 
-Dado que el lector accede a la plataforma desde diferentes sistemas operativos (Android, iOS), **Cuando** el sistema presenta el contenido y las funcionalidades, **Entonces** la plataforma debe ser completamente funcional y adaptable a la resolución de cualquier dispositivo compatible, **Y** todos los datos del lector (biblioteca, progreso, suscripción) deben estar sincronizados y accesibles de forma consistente. |
+Dado que el lector accede a la plataforma desde diferentes sistemas operativos (Android), **Cuando** el sistema presenta el contenido y las funcionalidades, **Entonces** la plataforma debe ser completamente funcional y adaptable a la resolución de cualquier dispositivo compatible, **Y** todos los datos del lector (biblioteca, progreso, suscripción) deben estar sincronizados y accesibles de forma consistente. |
 
 | Campo | Valor |
 |---|---|
