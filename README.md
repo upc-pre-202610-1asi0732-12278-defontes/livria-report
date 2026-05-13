@@ -5019,7 +5019,7 @@ Las pruebas basadas en Behavior-Driven Development (BDD) fueron utilizadas en Li
 </p>
 
 <p align="center">
-  <img src="https://imgur.com/WcnOREE.png" alt="12171">
+  <img src="https://github.com/user-attachments/assets/92949a6d-67e9-4b78-9050-01913ec7edd2" alt="12171">
 </p>
 
 <p align="center">
