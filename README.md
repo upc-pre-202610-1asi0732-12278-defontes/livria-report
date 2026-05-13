@@ -5070,6 +5070,141 @@ Las pruebas basadas en Behavior-Driven Development (BDD) fueron utilizadas en Li
 
 ### 6.1.4. Core System Tests.
 
+Para las pruebas de sistema, se decidió implementar pruebas manuales para verificar el correcto funcionamiento en los diversos sistemas
+
+TS10 – Agregar un libro nuevo al inventario de Livria
+Resultado esperado: Un administrador puede acceder a la sección de gestión de inventario y dar de alta un libro con datos válidos (título, género, idioma, stock inicial, precios) y se graba correctamente en la base de datos, apareciendo en la interfaz de libros del usuario final.
+<p align="center">
+  <img src="https://res.cloudinary.com/db6vj9fuw/image/upload/v1778714213/6a55969d-9196-4962-b9a6-92f515480fdc_ocm2ty.jpg" alt="Core system test step ">
+</p>
+	
+<p align="center">
+  <img src="https://res.cloudinary.com/db6vj9fuw/image/upload/v1778714207/a9c4fe4b-ae54-407d-b97a-a0dbff46529e_rdcrkk.jpg" alt="Core system test step ">
+</p>
+
+<p align="center">
+  <img src="https://res.cloudinary.com/db6vj9fuw/image/upload/v1778714217/20090529-7b47-4394-bfe5-556ecc53607e_wglssm.jpg" alt="Core system test step ">
+</p>
+
+<p align="center">
+  <img src="https://res.cloudinary.com/db6vj9fuw/image/upload/v1778714348/bfd8efaf-369f-47bf-83ac-e09a76cbc47b_ri6dyl.jpg" alt="Core system test step ">
+</p>	
+Resultado obtenido: Un administrador puede acceder a la sección de gestión de inventario y dar de alta un libro con datos válidos (título, género, idioma, stock inicial, precios) y se graba correctamente en la base de datos, apareciendo en la interfaz de libros del usuario final.
+
+US12 – Recibir recomendaciones personalizadas
+Resultado esperado: Se generan recomendaciones basadas en favoritos y exclusiones, mostrando libros similares a los favoritos y no mostrando las exclusiones.
+<p align="center">
+  <img src="https://res.cloudinary.com/db6vj9fuw/image/upload/v1778714418/20e3db25-3dd5-4efa-9f78-9862ab0fe021_p2ctyk.jpg" alt="Core system test step ">
+</p>
+
+<p align="center">
+  <img src="https://res.cloudinary.com/db6vj9fuw/image/upload/v1778714427/aad0759a-511e-464d-a1ab-504ac9167c1f_z66g29.jpg" alt="Core system test step ">
+</p>
+
+<p align="center">
+  <img src="https://res.cloudinary.com/db6vj9fuw/image/upload/v1778714420/01a0b886-22cf-40be-a120-5b7d712540ff_nzvws1.jpg" alt="Core system test step ">
+</p>
+
+<p align="center">
+  <img src="https://res.cloudinary.com/db6vj9fuw/image/upload/v1778714426/6e85bec7-e71f-4575-8b1b-7106f1bb4f95_qv2o8s.jpg" alt="Core system test step ">
+</p>
+
+<p align="center">
+  <img src="https://res.cloudinary.com/db6vj9fuw/image/upload/v1778714422/1552ec73-7b6c-4d26-8ed2-1edcf3037368_hc3sfa.jpg" alt="Core system test step ">
+</p>
+
+<p align="center">
+  <img src="https://res.cloudinary.com/db6vj9fuw/image/upload/v1778714424/b93487d1-eecb-49be-a7ec-e42c79ac032e_gj2owb.jpg" alt="Core system test step ">
+</p>
+
+Resultado obtenido:  Se generan recomendaciones basadas en favoritos y exclusiones, mostrando libros similares a los favoritos y no mostrando las exclusioens.
+
+US13 – Registro de nueva cuenta
+Resultado esperado: Se crea la cuenta correctamente si se ingresan todos los datos de manera correcta, incluyendo validación de correo, contraseña y captcha. 
+
+<p align="center">
+  <img src="https://res.cloudinary.com/db6vj9fuw/image/upload/v1778714617/f4b8c6cb-cb8f-4c8a-8792-5d7ae5cdd463_kqzbse.jpg" alt="Core system test step ">
+</p>
+
+<p align="center">
+  <img src="https://res.cloudinary.com/db6vj9fuw/image/upload/v1778714619/f69ec5f0-749d-4aa0-9058-dd5b749483fd_mknwh9.jpg” alt="Core system test step ">
+</p>
+
+<p align="center">
+  <img src="https://res.cloudinary.com/db6vj9fuw/image/upload/v1778714623/9d55507c-a589-4ace-8c77-f13033053a6b_p7sa1q.jpg" alt="Core system test step ">
+</p>
+
+<p align="center">
+  <img src="https://res.cloudinary.com/db6vj9fuw/image/upload/v1778714627/8647b9e2-8e65-4ac9-8ed3-5b58825edff7_losx9g.jpg" alt="Core system test step ">
+</p>
+Resultado obtenido: Se crea la cuenta correctamente si se ingresan todos los datos de manera correcta, incluyendo validación de correo, contraseña y captcha. 
+
+US16 – Creación de publicaciones en comunidades
+Resultado esperado: Un usuario miembro de una comunidad crea una publicación con o sin imagen, y visualiza su publicación en la comunidad.
+<p align="center">
+  <img src="https://res.cloudinary.com/db6vj9fuw/image/upload/v1778714732/54723dda-3808-4754-bab5-2c2d2f50fb38_jgg1gh.jpg” alt="Core system test step ">
+</p>
+
+<p align="center">
+  <img src="https://res.cloudinary.com/db6vj9fuw/image/upload/v1778714741/80782741-3d60-4d05-9732-ff42553116e5_njp16v.jpg" alt="Core system test step ">
+</p>
+
+<p align="center">
+  <img src="https://res.cloudinary.com/db6vj9fuw/image/upload/v1778714744/71d2b81b-b618-4409-bbde-de55fcda6762_cticfp.jpg" alt="Core system test step ">
+</p>
+
+Resultado obtenido: Un usuario miembro de una comunidad crea una publicación con o sin imagen, y visualiza su publicación en la comunidad.
+
+US18 – Compra de libros
+Resultado esperado: El usuario arma un carrito con uno o más ítems, elige entrega según zona disponible (con y sin costo de envío si el flujo lo permite) y confirma el pedido hasta el estado previo a pago completado.
+<p align="center">
+  <img src="https://res.cloudinary.com/db6vj9fuw/image/upload/v1778714864/6837dd9f-8e40-4904-918f-55a00a2b0ac8_g7uqiu.jpg" alt="Core system test step ">
+</p>
+
+<p align="center">
+  <img src="https://res.cloudinary.com/db6vj9fuw/image/upload/v1778714867/c514dfb0-30b1-432a-ba13-e1afc2c30858_aqddhd.jpg" alt="Core system test step ">
+</p>
+
+<p align="center">
+  <img src="https://res.cloudinary.com/db6vj9fuw/image/upload/v1778714869/3cc0f449-24d4-4622-a971-7eb41d63c97c_onhnay.jpg" alt="Core system test step ">
+</p>
+
+<p align="center">
+  <img src="https://res.cloudinary.com/db6vj9fuw/image/upload/v1778714871/b0921770-1c81-427f-abae-14f1e4f2d0ec_qn5oon.jpg" alt="Core system test step ">
+</p>
+
+Resultado obtenido: El usuario arma un carrito con uno o más ítems, elige entrega según zona disponible (con y sin costo de envío si el flujo lo permite) y confirma el pedido hasta el estado previo a pago completado.
+
+US19 – Búsqueda de libros
+Resultado esperado: A medida que el usuario escribe en el campo de búsqueda, el sistema muestra dinámicamente una lista de libros cuyos títulos o autores coincidan parcialmente con el texto ingresado, sin necesidad de confirmar la búsqueda. Si ningún libro coincide con los caracteres ingresados, el sistema muestra un mensaje indicando que no se encontraron resultados. Al borrar el texto del campo, la lista de resultados desaparece o vuelve al estado inicial.
+
+<p align="center">
+  <img src="https://res.cloudinary.com/db6vj9fuw/image/upload/v1778714941/fd40001b-2f31-4b52-bcad-b8c8aab9f1f3_zbbypi.jpg" alt="Core system test step ">
+</p>
+
+<p align="center">
+  <img src="https://res.cloudinary.com/db6vj9fuw/image/upload/v1778714951/387940c1-c567-4e19-a281-e1602ac5ca3a_bwkvpm.jpg" alt="Core system test step ">
+</p>
+
+Resultado obtenido: A medida que el usuario escribe en el campo de búsqueda, el sistema muestra dinámicamente una lista de libros cuyos títulos o autores coincidan parcialmente con el texto ingresado, sin necesidad de confirmar la búsqueda. Si ningún libro coincide con los caracteres ingresados, el sistema muestra un mensaje indicando que no se encontraron resultados. Al borrar el texto del campo, la lista de resultados desaparece o vuelve al estado inicial.
+
+US20 – Transferencia bancaria
+Resultado esperado: El usuario llega al paso de pago con CCI visible, adjunta el comprobante de transferencia y envía la solicitud de compra.
+
+<p align="center">
+  <img src="https://res.cloudinary.com/db6vj9fuw/image/upload/v1778714995/0f37d038-35af-4d9b-a1c1-fd5656c78381_n6d9ze.jpg" alt="Core system test step ">
+</p>
+
+<p align="center">
+  <img src="https://res.cloudinary.com/db6vj9fuw/image/upload/v1778714997/dba545dc-ae1e-490e-bbd7-f626010cc637_maejiu.jpg" alt="Core system test step ">
+</p>
+
+<p align="center">
+  <img src="https://res.cloudinary.com/db6vj9fuw/image/upload/v1778714999/afb1ec2c-7db3-4bb4-83c1-319df34af015_diawpa.jpg" alt="Core system test step ">
+</p>
+
+Resultado obtenido: El usuario llega al paso de pago con CCI visible, adjunta el comprobante de transferencia y envía la solicitud de compra.
+
 # Capítulo VII:: DevOps Practices
 ## 7.1. Continuous Integration
 ### 7.1.1. Tools and Practices
