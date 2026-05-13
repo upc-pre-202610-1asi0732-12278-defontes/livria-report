@@ -4642,7 +4642,9 @@ El propósito principal del video about the product es persuadir a los usuarios 
 ## 6.1. Testing Suites & Validation
 ### 6.1.1. Core Entities Unit Tests.
 
-US-10:
+Las pruebas unitarias de Livria fueron diseñadas para validar el correcto funcionamiento de las entidades principales y la lógica de negocio del sistema de manera aislada. Estas pruebas permiten asegurar la integridad de módulos críticos relacionados con libros, usuarios, carrito de compras, comunidades y gestión de inventario, verificando que cada componente responda correctamente ante distintos escenarios funcionales. Las validaciones fueron implementadas utilizando herramientas como xUnit/NUnit, JUnit y flutter test según la tecnología empleada en cada componente del ecosistema Livria.
+
+**US-10:** Se validó la entidad Book comprobando la creación correcta de libros, validaciones de género e idioma, gestión de stock y activación/desactivación del inventario dentro del sistema.
 
 <p align="center">
   <img src="https://imgur.com/o9U31zo.png" alt="12171">
@@ -4652,7 +4654,7 @@ US-10:
   <img src="https://imgur.com/5ljnAhw.png" alt="12171">
 </p>
 
-US-12:
+**US-12:** Se validó el correcto funcionamiento de las preferencias de usuario, comprobando que los libros puedan agregarse a favoritos o exclusiones sin duplicados y manteniendo coherencia entre ambas listas.
 
 <p align="center">
   <img src="https://res.cloudinary.com/dhadtnc3b/image/upload/12-1_x3jkl7" alt="12171">
@@ -4674,7 +4676,7 @@ US-12:
   <img src="https://imgur.com/qg5KL06.png" alt="12171">
 </p>
 
-US-13:
+**US-13:** Se validó la lógica de autenticación y seguridad del agregado Identity, comprobando el almacenamiento cifrado de contraseñas, validación de credenciales y actualización segura de passwords dentro del sistema.
 
 <p align="center">
   <img src="https://imgur.com/zjHHc6v.png" alt="12171">
@@ -4704,7 +4706,7 @@ US-13:
   <img src="https://imgur.com/AZx4m48.png" alt="12171">
 </p>
 
-US-16:
+**US-16:** Se validó la lógica de creación y actualización de publicaciones en Communities, comprobando el registro correcto de contenido, imágenes, usuario asociado y fecha de creación de los posts.
 
 <p align="center">
   <img src="https://imgur.com/ePVmZbP.png" alt="12171">
@@ -4730,7 +4732,7 @@ US-16:
   <img src="https://imgur.com/Y9Y4A9T.png" alt="12171">
 </p>
 
-US-18:
+**US-18:** Se validó la lógica de órdenes de compra y envíos, comprobando el cálculo correcto de totales, validación de estados, restricciones de datos y costos de delivery según la zona.
 
 <p align="center">
   <img src="https://imgur.com/zQAI35n.png" alt="12171">
@@ -4740,7 +4742,7 @@ US-18:
   <img src="https://imgur.com/iS6AgQu.png" alt="12171">
 </p>
 
-US-19:
+**US-19:** Se validó la funcionalidad de búsqueda de libros, comprobando filtros por título y autor, coincidencias parciales, búsquedas sin distinción entre mayúsculas y validación de datos obligatorios.
 
 <p align="center">
   <img src="https://imgur.com/7sfR3gF.png" alt="12171">
@@ -4750,7 +4752,7 @@ US-19:
   <img src="https://imgur.com/62PJ0jP.png" alt="12171">
 </p>
 
-US-20:
+**US-20:** Se validó la gestión de estados de pago y órdenes, comprobando la generación de códigos únicos, actualización de estados de compra y cálculo correcto del total incluyendo costos de envío.
 
 <p align="center">
   <img src="https://imgur.com/FcTM1uQ.png" alt="12171">
@@ -4762,7 +4764,9 @@ US-20:
 
 ### 6.1.2. Core Integration Tests.
 
-US-10:
+Las pruebas de integración en Livria tuvieron como objetivo validar la comunicación entre los distintos módulos del sistema y asegurar la correcta interoperabilidad entre frontend, backend y base de datos. Estas pruebas permitieron comprobar el flujo completo de funcionalidades críticas como autenticación, compras, recomendaciones, comunidades y sincronización de inventario mediante los servicios RESTful implementados en .NET Core y desplegados en Microsoft Azure.
+
+**US-10:** Se validó la integración entre el formulario de registro de libros, la lógica de validación y el servicio de inventario, comprobando el almacenamiento correcto de datos, validaciones de campos y comunicación exitosa con el contexto de stock.
 
 <p align="center">
   <img src="https://imgur.com/2aR0jac.png" alt="12171">
@@ -4772,7 +4776,7 @@ US-10:
   <img src="https://imgur.com/a0b9fV0.png" alt="12171">
 </p>
 
-US-12:
+**US-12:** Se validó la integración del sistema de recomendaciones con autenticación, exclusiones y catálogo de libros, comprobando la generación de sugerencias personalizadas y el filtrado correcto de libros excluidos por el usuario.
 
 <p align="center">
   <img src="https://imgur.com/NvHP6fz.png" alt="12171">
@@ -4794,7 +4798,7 @@ US-12:
   <img src="https://imgur.com/0IpWLrr.png" alt="12171">
 </p>
 
-US-13:
+**US-13:** Se validó la integración entre autenticación remota y almacenamiento local de credenciales, comprobando el registro, login automático, persistencia segura del token y recuperación correcta del perfil del usuario.
 
 <p align="center">
   <img src="https://imgur.com/YkiRZim.png" alt="12171">
@@ -4820,7 +4824,7 @@ US-13:
   <img src="https://imgur.com/wzIJDbB.png" alt="12171">
 </p>
 
-US-16:
+**US-16:** Se validó la integración del servicio de publicaciones con el repositorio de Communities, comprobando la creación correcta de posts con y sin imagen, así como el envío adecuado de contenido y datos del usuario.
 
 <p align="center">
   <img src="https://imgur.com/sPkZdqu.png" alt="12171">
@@ -4858,7 +4862,7 @@ US-16:
   <img src="https://imgur.com/B27bvmD.png" alt="12171">
 </p>
 
-US-18:
+**US-18:** Se validó la integración del módulo de órdenes con el repositorio de compras, comprobando la creación correcta de pedidos con y sin delivery, así como el cálculo del total incluyendo costos de envío.
 
 <p align="center">
   <img src="https://imgur.com/TITfScD.png" alt="12171">
@@ -4868,7 +4872,7 @@ US-18:
   <img src="https://imgur.com/2mpwAS3.png" alt="12171">
 </p>
 
-US-19:
+**US-19:** Se validó la integración del servicio de búsqueda de libros, comprobando filtros por título, autor y géneros, así como la obtención correcta de resultados y listas ordenadas desde el catálogo.
 
 <p align="center">
   <img src="https://imgur.com/FGdKabg.png" alt="12171">
@@ -4878,7 +4882,7 @@ US-19:
   <img src="https://imgur.com/tTmtf7h.png" alt="12171">
 </p>
 
-US-20:
+**US-20:** Se validó la integración del provider de órdenes con el repositorio de compras, comprobando el cálculo de delivery por zonas, validación de datos bancarios y registro correcto de órdenes en estado pendiente.
 
 <p align="center">
   <img src="https://imgur.com/1FHTFXK.png" alt="12171">
@@ -4890,7 +4894,9 @@ US-20:
 
 ### 6.1.3. Core Behavior-Driven Development
 
-US-10:
+Las pruebas basadas en Behavior-Driven Development (BDD) fueron utilizadas en Livria para validar el comportamiento esperado del sistema desde la perspectiva del usuario final. Estas pruebas se redactaron siguiendo el enfoque Given-When-Then, permitiendo describir escenarios funcionales claros y alineados con los criterios de aceptación definidos en las User Stories del proyecto.
+
+**US-10:** Se validó mediante escenarios BDD el proceso de registro de libros en inventario, comprobando campos obligatorios, creación exitosa y validaciones de género, idioma y stock según los criterios de aceptación definidos.
 
 <p align="center">
   <img src="https://imgur.com/AoWR2uS.png" alt="12171">
@@ -4904,7 +4910,7 @@ US-10:
   <img src="https://imgur.com/WVnXifS.png" alt="12171">
 </p>
 
-US-12:
+**US-12:** Se validó mediante escenarios BDD la interacción del usuario con el sistema de recomendaciones, comprobando el registro correcto de preferencias positivas y negativas, así como la gestión de favoritos y exclusiones según el comportamiento del lector. 
 
 <p align="center">
   <img src="https://imgur.com/y0G9yYm.png" alt="12171">
@@ -4934,7 +4940,7 @@ US-12:
   <img src="https://imgur.com/RjJTh8o.png" alt="12171">
 </p>
 
-US-13:
+**US-13:** Se validó mediante escenarios BDD el proceso de registro y autenticación de usuarios, comprobando la creación segura de credenciales, validaciones de registro y verificación correcta de inicio de sesión.
 
 <p align="center">
   <img src="https://imgur.com/VSDzzwf.png" alt="12171">
@@ -4964,7 +4970,7 @@ US-13:
   <img src="https://imgur.com/KqEWOs8.png" alt="12171">
 </p>
 
-US-16:
+**US-16:** Se validó mediante escenarios BDD la creación de publicaciones en comunidades, comprobando el registro correcto de posts con imagen y contenido textual, así como su disponibilidad para interacción dentro de la comunidad.
 
 <p align="center">
   <img src="https://imgur.com/CixGMab.png" alt="12171">
@@ -4978,7 +4984,7 @@ US-16:
   <img src="https://imgur.com/S7Et3Bh.png" alt="12171">
 </p>
 
-US-18:
+**US-18:** Se validó mediante escenarios BDD el proceso de compra de libros digitales y físicos, comprobando órdenes con y sin delivery, cálculo de totales, generación de códigos únicos y validaciones de carrito y datos de envío.
 
 <p align="center">
   <img src="https://imgur.com/EJWDYAJ.png" alt="12171">
@@ -4992,7 +4998,7 @@ US-18:
   <img src="https://imgur.com/jem5ZM3.png" alt="12171">
 </p>
 
-US-19:
+**US-19:** Se validó mediante escenarios BDD la búsqueda de libros y contenido en la aplicación, comprobando consultas por título y autor, coincidencias parciales y retorno correcto de resultados desde el catálogo.
 
 <p align="center">
   <img src="https://imgur.com/BGaz8FW.png" alt="12171">
@@ -5006,7 +5012,7 @@ US-19:
   <img src="https://imgur.com/Honk6J1.png" alt="12171">
 </p>
 
-US-20:
+**US-20:** Se validó mediante pruebas BDD la gestión de pagos de libros, verificando la visualización del CCI para transferencias, el cálculo correcto de montos con envío, la creación de órdenes en estado pendiente y la validación de estados inválidos durante el proceso de pago.
 
 <p align="center">
   <img src="https://imgur.com/Zuviqcc.png" alt="12171">
