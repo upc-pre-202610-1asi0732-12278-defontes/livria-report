@@ -4686,7 +4686,7 @@ El propósito principal del video about the product es persuadir a los usuarios 
 
 Las pruebas unitarias de Livria fueron diseñadas para validar el correcto funcionamiento de las entidades principales y la lógica de negocio del sistema de manera aislada. Estas pruebas permiten asegurar la integridad de módulos críticos relacionados con libros, usuarios, carrito de compras, comunidades y gestión de inventario, verificando que cada componente responda correctamente ante distintos escenarios funcionales. Las validaciones fueron implementadas utilizando herramientas como xUnit/NUnit, JUnit y flutter test según la tecnología empleada en cada componente del ecosistema Livria.
 
-**US-10:** Se validó la entidad Book comprobando la creación correcta de libros, validaciones de género e idioma, gestión de stock y activación/desactivación del inventario dentro del sistema.
+**TS-10:** Se validó la entidad Book comprobando la creación correcta de libros, validaciones de género e idioma, gestión de stock y activación/desactivación del inventario dentro del sistema.
 
 <p align="center">
   <img src="https://imgur.com/o9U31zo.png" alt="12171">
@@ -4808,7 +4808,7 @@ Las pruebas unitarias de Livria fueron diseñadas para validar el correcto funci
 
 Las pruebas de integración en Livria tuvieron como objetivo validar la comunicación entre los distintos módulos del sistema y asegurar la correcta interoperabilidad entre frontend, backend y base de datos. Estas pruebas permitieron comprobar el flujo completo de funcionalidades críticas como autenticación, compras, recomendaciones, comunidades y sincronización de inventario mediante los servicios RESTful implementados en .NET Core y desplegados en Microsoft Azure.
 
-**US-10:** Se validó la integración entre el formulario de registro de libros, la lógica de validación y el servicio de inventario, comprobando el almacenamiento correcto de datos, validaciones de campos y comunicación exitosa con el contexto de stock.
+**TS-10:** Se validó la integración entre el formulario de registro de libros, la lógica de validación y el servicio de inventario, comprobando el almacenamiento correcto de datos, validaciones de campos y comunicación exitosa con el contexto de stock.
 
 <p align="center">
   <img src="https://imgur.com/2aR0jac.png" alt="12171">
@@ -4938,7 +4938,7 @@ Las pruebas de integración en Livria tuvieron como objetivo validar la comunica
 
 Las pruebas basadas en Behavior-Driven Development (BDD) fueron utilizadas en Livria para validar el comportamiento esperado del sistema desde la perspectiva del usuario final. Estas pruebas se redactaron siguiendo el enfoque Given-When-Then, permitiendo describir escenarios funcionales claros y alineados con los criterios de aceptación definidos en las User Stories del proyecto.
 
-**US-10:** Se validó mediante escenarios BDD el proceso de registro de libros en inventario, comprobando campos obligatorios, creación exitosa y validaciones de género, idioma y stock según los criterios de aceptación definidos.
+**TS-10:** Se validó mediante escenarios BDD el proceso de registro de libros en inventario, comprobando campos obligatorios, creación exitosa y validaciones de género, idioma y stock según los criterios de aceptación definidos.
 
 <p align="center">
   <img src="https://imgur.com/AoWR2uS.png" alt="12171">
