@@ -143,11 +143,28 @@ Commits
   - [5.2. Product Implementation & Deployment](#52-product-implementation--deployment)
     - [5.2.1. Sprint Backlogs](#521-sprint-backlogs)
     - [5.2.2. Implemented Landing Page Evidence](#522-implemented-landing-page-evidence)
-    - [5.2.3. Implemented Native-Mobile Application Evidence](#523-implemented-native-mobile-application-evidence)
-    - [5.2.4. Implemented RESTful API and/or Serverless Backend Evidence](#524-implemented-restful-api-andor-serverless-backend-evidence)
-    - [5.2.5. RESTful API documentation](#525-restful-api-documentation)
-    - [5.2.6. Team Collaboration Insights](#526-team-collaboration-insights)
+    - [5.2.3. Acuerdo de Servicio - SaaS](#523-acuerdo-de-servicio---saas)  
+    - [5.2.4. Implemented Native-Mobile Application Evidence](#524-implemented-native-mobile-application-evidence)
+    - [5.2.5. Implemented RESTful API and/or Serverless Backend Evidence](#525-implemented-restful-api-andor-serverless-backend-evidence)
+    - [5.2.6. RESTful API documentation](#526-restful-api-documentation)
+    - [5.2.7. Team Collaboration Insights](#527-team-collaboration-insights)
   - [5.3. Video About-the-Product](#53-video-about-the-product)
+- [Capítulo VI: Product Verification & Validation](#capítulo-vi-product-verification--validation)
+  - [6.1. Testing Suites & Validation](#61-testing-suites--validation)
+    - [6.1.1. Core Entities Unit Tests](#611-core-entities-unit-tests)
+    - [6.1.2. Core Integration Tests](#612-core-integration-tests)
+    - [6.1.3. Core Behavior-Driven Development](#613-core-behavior-driven-development)
+    - [6.1.4. Core System Tests](#614-core-system-tests)
+- [Capítulo VII: DevOps Practices](#capítulo-vii-devops-practices)
+  - [7.1. Continuous Integration](#71-continuous-integration)
+    - [7.1.1. Tools and Practices](#711-tools-and-practices)
+    - [7.1.2. Build & Test Suite Pipeline Components](#712-build--test-suite-pipeline-components)
+  - [7.2. Continuous Delivery](#72-continuous-delivery)
+    - [7.2.1. Tools and Practices](#721-tools-and-practices)
+    - [7.2.2. Stages Deployment Pipeline Components](#722-stages-deployment-pipeline-components)
+  - [7.3. Continuous Deployment](#73-continuous-deployment)
+    - [7.3.1. Tools and Practices](#731-tools-and-practices)
+    - [7.3.2. Production Deployment Pipeline Components](#732-production-deployment-pipeline-components)
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
@@ -4247,7 +4264,10 @@ Se ha llevado a cabo la implementación integral de la Landing Page, diseñada c
 
 Link de la Landing Page ya desplegada: https://upc-pre-202610-1asi0732-12278-defontes.github.io/livria-landing-page/
 
-### 5.2.3. Implemented Native-Mobile Application Evidence
+### 5.2.3. Acuerdo de Servicio - SaaS
+
+
+### 5.2.4. Implemented Native-Mobile Application Evidence
 
 #### Livria Admin
 <p align="center">
@@ -4269,7 +4289,7 @@ Se ha completado el desarrollo y despliegue de las soluciones móviles del ecosi
 > **Nota:** Para instalar estas aplicaciones, es necesario permitir la instalación de aplicaciones de orígenes desconocidos en los ajustes de seguridad de su dispositivo Android.
 
 
-### 5.2.4. Implemented RESTful API and/or Serverless Backend Evidence
+### 5.2.5. Implemented RESTful API and/or Serverless Backend Evidence
 
 <p align="center">
   <img src="https://imgur.com/WYsDM5y.png" alt="Livria User Evidence">
@@ -4279,7 +4299,7 @@ La arquitectura de servicios de Livria ha sido implementada y desplegada satisfa
 
 Link de Swagger UI: https://lililivria.azurewebsites.net/swagger/index.html
 
-### 5.2.5. RESTful API documentation
+### 5.2.6. RESTful API documentation
 
 | Endpoint | Acción | Verbo HTTP | Sintaxis de llamada | Parámetros | Ejemplo de request | Respuesta |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
@@ -4527,7 +4547,7 @@ Recupera el listado completo de todos los libros que el usuario ha decidido excl
 Remueve un libro específico de la lista de exclusión del usuario, permitiendo que vuelva a ser recomendado.
 
 
-### 5.2.6. Team Collaboration Insights
+### 5.2.7. Team Collaboration Insights
 
 #### Sprint 1
 
