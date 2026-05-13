@@ -4266,6 +4266,10 @@ Link de la Landing Page ya desplegada: https://upc-pre-202610-1asi0732-12278-def
 
 ### 5.2.3. Acuerdo de Servicio - SaaS
 
+El acuerdo SaaS de Livria se encuentra publicado de forma pública dentro de la sección “Terms and Conditions” del landing page oficial de la plataforma. En este documento se establecen los derechos, obligaciones, responsabilidades y restricciones aplicables a los usuarios del servicio, garantizando transparencia en el uso de la solución SaaS. Asimismo, el acuerdo define aspectos relacionados con el acceso a la plataforma, gestión de cuentas, propiedad intelectual, limitaciones de responsabilidad, privacidad de la información y condiciones de uso del servicio, cumpliendo con criterios de claridad, accesibilidad y cumplimiento normativo establecidos para plataformas digitales.
+
+**Enlace del acuerdo SaaS:**  
+<https://upc-pre-202610-1asi0732-12278-defontes.github.io/livria-landing-page/acuerdo-saas.html>
 
 ### 5.2.4. Implemented Native-Mobile Application Evidence
 
