@@ -2795,7 +2795,7 @@ Cabe señalar que algunos de estos bounded contexts no presentan comunicación d
 El Diagrama de Contexto es el primer nivel de abstracción del Modelo C4. Su propósito es definir el sistema a construir, en este caso Livria, y su interacción con los usuarios y otros sistemas externos. Este diagrama nos ofrece una vista de alto nivel que ayuda a entender el rol de Livria en su entorno sin profundizar en su estructura interna, lo que lo hace ideal para comunicárselo a las partes interesadas, tanto técnicas como no técnicas.
 
 <p align="center">
-  <img src="https://imgur.com/eZyBU79.jpg" alt="12231">
+  <img src="https://imgur.com/QmhZY8F.jpg" alt="12231">
 </p>
 
 El diagrama de contexto de Livria ilustra los principales actores y sistemas externos con los que interactúa la aplicación. Se identifican dos tipos de usuarios: el Administrador de Livria, responsable de la supervisión y gestión de la plataforma, y el Usuario Cliente, que utiliza la aplicación para explorar, comprar libros y participar en la comunidad.
