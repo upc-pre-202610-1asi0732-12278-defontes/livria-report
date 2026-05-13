@@ -47,6 +47,7 @@
 | Versión | Fecha | Autor | Descripción de modificación |
 |---------|-------|-------|-----------------------------|
 | 1.0 | 24-04-2026 | Todos | Creación del informe. Inclusión de Capítulos I, II, III, IV y V (Sprint 1). |
+| 1.1 | 13-05-2026 | Todos | Avance TP1. Inclusión de Capítulos VI y VII. Correcciones y mejoras sobre artefactos previos. |
 
 ---
 
@@ -56,6 +57,8 @@
 Para la elaboración del presente informe, el equipo trabajó de manera colaborativa y centralizada en el repositorio livria-report, alojado en la organización de GitHub del equipo. Durante este proceso, cada integrante contribuyó activamente en la redacción, estructuración y revisión de los capítulos correspondientes, asegurando que el documento refleje con precisión el progreso técnico y estratégico del proyecto. La gestión mediante este repositorio permitió mantener un control de versiones riguroso y una integración fluida de los aportes de todos los miembros, cuyas evidencias de participación se detallan en las métricas y analíticos de colaboración presentados a continuación.
 
 URL del repositorio del Project Report en GitHub: https://github.com/upc-pre-202610-1asi0732-12278-defontes/livria-report
+
+**TB1**
 
 Insights:
 
@@ -67,6 +70,21 @@ Commits
 
 <p align="center">
   <img src="https://imgur.com/ZCZbARy.jpg" alt="Commits Report">
+</p>
+
+**TP1**
+
+Insights:
+
+<p align="center">
+  <img src="https://i.imgur.com/1BLAPQJ.png" alt="Commits Report">
+</p>
+
+
+Commits
+
+<p align="center">
+  <img src="https://i.imgur.com/hWR2Neu.png" alt="Commits Report">
 </p>
 
 ---
@@ -182,8 +200,8 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 | Criterio Específico | Acciones Realizadas | Conclusiones |
 |---|---|---|
-| 4.c.1 **Reconoce la responsabilidad ética y profesinal en situaciones de ingeniería de software** | **Luis Andres Alva Abanto** <br> **TB1** <br><br> **Marcelo Alejandro Binda Arbañil** <br> **TB1** <br><br> **Ainhoa Lucía Castillo Garay** <br> **TB1** <br><br> **Cassius Estefano Martel Andrade** <br> **TB1** <br><br> **Alex Tomio Nakamurakare Teruya** <br> **TB1** <br><br> **Angie Christina Yalán Zhang** <br> **TB1** | **TB1** <br> |
-| 4.c.2 **Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales** | **Luis Andres Alva Abanto** <br> **TB1** <br><br> **Marcelo Alejandro Binda Arbañil** <br> **TB1** <br><br> **Ainhoa Lucía Castillo Garay** <br> **TB1** <br><br> **Cassius Estefano Martel Andrade** <br> **TB1** <br><br> **Alex Tomio Nakamurakare Teruya** <br> **TB1** <br><br> **Angie Christina Yalán Zhang** <br> **TB1** | **TB1** <br> |
+| 4.c.1 **Reconoce la responsabilidad ética y profesional en situaciones de ingeniería de software** | **Luis Andres Alva Abanto** <br> **TB1** <br> Redactó los términos y condiciones de uso de Livria, asegurando que el contenido reflejara principios éticos de transparencia y protección al usuario, incluyendo políticas de privacidad de datos y derechos del consumidor digital. <br><br> **TP1** <br> Participó en la implementación del módulo de autenticación, asegurando el almacenamiento seguro de contraseñas mediante hashing y el uso de JWT, reconociendo la responsabilidad profesional de proteger los datos de los usuarios de la plataforma. <br><br> **Marcelo Alejandro Binda Arbañil** <br> **TB1** <br> Elaboró el análisis competitivo del mercado identificando prácticas de negocio responsables en plataformas similares, y propuso estrategias que priorizan el acceso equitativo a la lectura como valor social. <br><br> **TP1** <br> Implementó el pipeline de CI/CD con GitHub Actions, documentando las decisiones técnicas tomadas y asegurando que el proceso de despliegue automatizado cumpliera con estándares de calidad y no introdujera regresiones en producción. <br><br> **Ainhoa Lucía Castillo Garay** <br> **TB1** <br> Diseñó los wireframes y mockups de la aplicación aplicando principios de diseño inclusivo (contraste WCAG AA, tamaños de toque adecuados), reconociendo que el software debe ser accesible para usuarios con distintas capacidades. <br><br> **TP1** <br> Desarrolló las pruebas unitarias del módulo de comunidades, documentando los casos de prueba para garantizar que las funcionalidades sociales de la plataforma operaran de forma íntegra y sin exponer datos privados de los usuarios. <br><br> **Cassius Estefano Martel Andrade** <br> **TB1** <br> Lideró la definición del alcance del proyecto, estableciendo explícitamente las restricciones éticas del sistema, como la no recolección de datos bancarios directos y la delegación del procesamiento de pagos a Izipay para proteger la información financiera de los usuarios. <br><br> **TP1** <br> Coordinó la integración del backend con las aplicaciones móviles, verificando que los endpoints expuestos no filtraran información sensible de los usuarios en las respuestas de la API, aplicando buenas prácticas de seguridad profesional. <br><br> **Alex Tomio Nakamurakare Teruya** <br> **TB1** <br> Realizó las entrevistas de needfinding siguiendo principios éticos de investigación: obtuvo consentimiento informado de los participantes, protegió su identidad en el informe y utilizó la información únicamente para los fines declarados del proyecto. <br><br> **TP1** <br> Implementó las pruebas de integración del sistema de autenticación, reconociendo la responsabilidad profesional de garantizar que el acceso a la plataforma sea seguro y que las credenciales de los usuarios estén correctamente protegidas en todo momento. <br><br> **Angie Christina Yalán Zhang** <br> **TB1** <br> Elaboró los User Personas y Empathy Maps basándose en datos reales recolectados en entrevistas, evitando generalizaciones que pudieran sesgar el diseño del producto y comprometer la representación justa de los segmentos objetivo. <br><br> **TP1** <br> Colaboró en la documentación de los endpoints RESTful con Swagger, asegurando que la interfaz pública de la API fuera clara, completa y no expusiera operaciones no autorizadas, cumpliendo con su responsabilidad profesional en el diseño de servicios seguros. | **TB1** <br> El equipo demostró reconocer su responsabilidad ética al incorporar desde las etapas tempranas del proyecto consideraciones sobre privacidad de datos, accesibilidad e inclusión digital. La redacción de términos y condiciones, el diseño inclusivo de la interfaz y el manejo responsable de la información recolectada en entrevistas evidencian que el grupo comprende que el ejercicio de la ingeniería de software conlleva obligaciones hacia los usuarios y la sociedad. <br><br> **TP1** <br> Durante esta entrega el equipo consolidó su responsabilidad ética y profesional a través de la implementación de mecanismos de seguridad concretos: cifrado de contraseñas, uso de JWT, validación de entradas y pipelines de calidad automatizados. Estas decisiones técnicas reflejan la comprensión de que proteger a los usuarios no es opcional, sino una obligación inherente al rol del ingeniero de software. |
+| 4.c.2 **Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales** | **Luis Andres Alva Abanto** <br> **TB1** <br> Fundamentó la problemática del proyecto con estadísticas de la Encuesta Nacional de Lectura 2022, emitiendo un juicio informado sobre el impacto social de la baja tasa lectora en el Perú y cómo una solución digital puede contribuir a revertirla. <br><br> **TP1** <br> Evaluó el impacto económico del modelo de suscripción de Livria en el acceso a la lectura, argumentando que el plan gratuito base permite democratizar el acceso al catálogo sin excluir a usuarios de menores recursos. <br><br> **Marcelo Alejandro Binda Arbañil** <br> **TB1** <br> Realizó el análisis FODA comparativo con competidores como Crisol e Ibero, emitiendo juicios sobre las brechas del mercado peruano de libros digitales y el impacto económico que una plataforma móvil accesible puede tener en la industria editorial local. <br><br> **TP1** <br> Analizó las implicancias del despliegue en Azure frente a alternativas locales, considerando factores como costo operativo, disponibilidad del servicio y la huella ambiental asociada al uso de infraestructura en la nube. <br><br> **Ainhoa Lucía Castillo Garay** <br> **TB1** <br> Justificó las decisiones de diseño de la interfaz considerando el contexto socioeconómico de los usuarios objetivo, optando por una interfaz ligera y compatible con dispositivos de gama media para no excluir a usuarios con hardware limitado. <br><br> **TP1** <br> Argumentó la importancia de las pruebas de comportamiento (BDD) en el contexto de una plataforma de comercio electrónico, señalando que fallos en los flujos de compra generan impacto económico directo en los usuarios y pérdida de confianza en el servicio. <br><br> **Cassius Estefano Martel Andrade** <br> **TB1** <br> Definió los Business Goals del Impact Mapping con criterios SMART, emitiendo juicios sobre metas de crecimiento realistas para el contexto latinoamericano y considerando las barreras de adopción tecnológica presentes en la región. <br><br> **TP1** <br> Evaluó el impacto de implementar entregas a domicilio únicamente en Lima Metropolitana, reconociendo las limitaciones logísticas actuales y su efecto en la equidad de acceso al servicio para usuarios de provincias. <br><br> **Alex Tomio Nakamurakare Teruya** <br> **TB1** <br> Analizó estudios sobre el impacto del uso de TikTok en el rendimiento académico de estudiantes peruanos para fundamentar la relevancia social del proyecto, emitiendo un juicio informado sobre la relación entre el consumo de contenido digital breve y el declive del hábito lector. <br><br> **TP1** <br> Consideró el impacto ambiental del almacenamiento de imágenes en formato Base64 dentro de la base de datos versus el uso de servicios de almacenamiento en la nube, argumentando sobre la eficiencia de recursos y la sostenibilidad técnica de la solución a largo plazo. <br><br> **Angie Christina Yalán Zhang** <br> **TB1** <br> Sustentó la segmentación del mercado con datos estadísticos de la Encuesta Nacional de Lectura y reportes de Statista sobre comunidades lectoras digitales, emitiendo juicios informados sobre el potencial de impacto social de Livria en distintos grupos etarios y socioeconómicos. <br><br> **TP1** <br> Evaluó las implicancias del uso de Flutter como framework multiplataforma, argumentando que la elección reduce la brecha de acceso tecnológico al permitir que una sola base de código llegue tanto a dispositivos Android de gama baja como a los de gama alta, maximizando el alcance social de la solución. | **TB1** <br> A lo largo de esta entrega el equipo emitió juicios informados sustentados en datos estadísticos reales sobre la problemática lectora en el Perú, las condiciones del mercado digital latinoamericano y las características socioeconómicas de los segmentos objetivo. Estas decisiones evidencian que el grupo comprende que el software que desarrollan tiene un impacto concreto en el acceso a la cultura y la educación, y que las decisiones de diseño y negocio deben tomarse con responsabilidad y sustento empírico. <br><br> **TP1** <br> En esta entrega el equipo demostró madurez en la emisión de juicios informados al evaluar las consecuencias de sus decisiones técnicas y de negocio desde múltiples perspectivas: el impacto económico del modelo de suscripción en la accesibilidad, las implicancias ambientales de las decisiones de infraestructura, y el efecto social de las restricciones de cobertura geográfica. Estos juicios, respaldados por argumentos técnicos y contextuales, reflejan una visión de ingeniería responsable y orientada al bienestar colectivo. |
 
 ---
 
@@ -5181,6 +5199,8 @@ jobs:
 
 # Conclusiones
 
+## Conclusiones y recomendaciones
+
 1. El proceso Lean UX constituye una herramienta clave para orientar estratégicamente el negocio, ya que permite validar tempranamente hipótesis y explorar diferentes enfoques antes de comprometer recursos de desarrollo. Gracias a este proceso, fue posible identificar con claridad los segmentos de usuarios más relevantes y las oportunidades de valor que guiarán el diseño del producto.
 
 2. La etapa de needfinding resulta fundamental en la construcción de un producto centrado en el usuario, dado que proporciona información directa sobre sus necesidades, expectativas y motivaciones. Este proceso asegura que las decisiones de diseño y desarrollo respondan a problemas reales, incrementando la probabilidad de adopción y satisfacción del usuario final.
@@ -5195,12 +5215,15 @@ jobs:
 
 7. La implementación del proyecto móvil en Flutter demostró que la aplicación del Domain-Driven Design (DDD) a nivel táctico facilitó la separación de las responsabilidades del sistema. La clara segregación de capas (Dominio, Infraestructura, Presentación) permitió que la lógica de negocio fuera completamente independiente de los detalles tecnológicos (APIs, Base de Datos, UI), resultando en un código más mantenible, testeable y desacoplado.
 
-
 8. El equipo logró la integración funcional de los componentes críticos para el ciclo de vida del usuario (Login, Registro y Logout). Esto implicó la conexión de la lógica del frontend (Flutter) con el backend desplegado en Azure, asegurando la persistencia del estado de la sesión (JWT/SharedPreferences) y validando la arquitectura de la solución.
 
 9. La implementación de validaciones en tiempo real (como el control de stock en el carrito y la lógica de suscripciones) y el manejo eficiente de la conversión de imágenes (Base64) reforzaron la integridad de los datos entre el cliente y el servidor. Estas prácticas no solo previenen errores en el backend, sino que mejoran la experiencia del usuario al proporcionar retroalimentación inmediata y evitar estados inconsistentes en la aplicación.
 
-# Recomendaciones
+10. La implementación de los pipelines de CI/CD mediante GitHub Actions establece una base sólida para la entrega continua de valor. La automatización de la compilación, pruebas y despliegue en los tres frentes tecnológicos (Backend .NET, Flutter y Kotlin) reduce el riesgo de errores humanos en los procesos de integración y garantiza que únicamente el código validado llegue a los entornos de producción.
+
+11. El diseño y ejecución de suites de pruebas estructuradas (unitarias, de integración y BDD) sobre las entidades y flujos críticos del sistema —autenticación, compras, comunidades y recomendaciones— evidencia el compromiso del equipo con la calidad del software. Esta cobertura de pruebas reduce la deuda técnica acumulada y facilita la detección temprana de regresiones en futuras iteraciones.
+
+## Recomendaciones
 
 1. Es aconsejable adoptar Material Design como marco de referencia para el diseño de la interfaz, dado que proporciona consistencia visual, buenas prácticas de usabilidad y un sistema estandarizado de componentes. Esto contribuirá a que la experiencia del usuario sea más intuitiva, atractiva y alineada con tendencias actuales en aplicaciones modernas.
 
@@ -5211,6 +5234,8 @@ jobs:
 4. La anticipación en la definición de Style Guidelines es un acierto estratégico que facilitará la unidad de marca y la velocidad de desarrollo en sprints futuros, al proporcionar un sistema de diseño reutilizable.
 
 5. Es aconsejable implementar patrones de Optimistic UI en la gestión de estados, especialmente para interacciones frecuentes como "Agregar al carrito" o "Unirse a una comunidad". Al actualizar visualmente el estado de la interfaz de manera inmediata, se mejora la percepción de velocidad y fluidez de la aplicación, siempre manteniendo un mecanismo de reversión (rollback) en caso de que la petición falle.
+
+6. Se recomienda expandir la cobertura de pruebas para incluir escenarios de error y casos límite en los flujos de pago y gestión de stock, dado que son las áreas de mayor riesgo para el negocio. Incorporar pruebas de carga básicas sobre los endpoints más críticos permitirá anticipar cuellos de botella antes del lanzamiento oficial de la plataforma.
 
 # Bibliografía
 
