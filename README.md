@@ -4642,6 +4642,16 @@ El propósito principal del video about the product es persuadir a los usuarios 
 ## 6.1. Testing Suites & Validation
 ### 6.1.1. Core Entities Unit Tests.
 
+US-10:
+
+<p align="center">
+  <img src="https://imgur.com/o9U31zo.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/5ljnAhw.png" alt="12171">
+</p>
+
 US-12:
 
 <p align="center">
@@ -4740,7 +4750,27 @@ US-19:
   <img src="https://imgur.com/62PJ0jP.png" alt="12171">
 </p>
 
+US-20:
+
+<p align="center">
+  <img src="https://imgur.com/FcTM1uQ.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/XjmQ93b.png" alt="12171">
+</p>
+
 ### 6.1.2. Core Integration Tests.
+
+US-10:
+
+<p align="center">
+  <img src="https://imgur.com/2aR0jac.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/a0b9fV0.png" alt="12171">
+</p>
 
 US-12:
 
@@ -4848,7 +4878,31 @@ US-19:
   <img src="https://imgur.com/tTmtf7h.png" alt="12171">
 </p>
 
+US-20:
+
+<p align="center">
+  <img src="https://imgur.com/1FHTFXK.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/bpesPFN.png" alt="12171">
+</p>
+
 ### 6.1.3. Core Behavior-Driven Development
+
+US-10:
+
+<p align="center">
+  <img src="https://imgur.com/AoWR2uS.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/J9SMHhg.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/WVnXifS.png" alt="12171">
+</p>
 
 US-12:
 
@@ -4950,6 +5004,20 @@ US-19:
 
 <p align="center">
   <img src="https://imgur.com/Honk6J1.png" alt="12171">
+</p>
+
+US-20:
+
+<p align="center">
+  <img src="https://imgur.com/Zuviqcc.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/6HLBndX.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/5V4e73t.png" alt="12171">
 </p>
 
 ### 6.1.4. Core System Tests.
