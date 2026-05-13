@@ -1,4 +1,4 @@
-<p align="center">
+<img width="825" height="630" alt="image" src="https://github.com/user-attachments/assets/7dd57369-8736-4734-b8be-4f2a771ae523" /><p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="Logo UPC" width="200"/>
 </p>
 
@@ -4641,8 +4641,317 @@ El propósito principal del video about the product es persuadir a los usuarios 
 # Capítulo VI: Product Verification & Validation
 ## 6.1. Testing Suites & Validation
 ### 6.1.1. Core Entities Unit Tests.
+
+US-12:
+
+<p align="center">
+  <img src="https://res.cloudinary.com/dhadtnc3b/image/upload/12-1_x3jkl7" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/Qgxg38I.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/3MAyn4A.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/GQxK4zr.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/qg5KL06.png" alt="12171">
+</p>
+
+US-13:
+
+<p align="center">
+  <img src="https://imgur.com/zjHHc6v.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/d0fgML2.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/NUUWMWX.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/UJsapsn.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/OW61zBi.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/9zv72Qv.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/AZx4m48.png" alt="12171">
+</p>
+
+US-16:
+
+<p align="center">
+  <img src="https://imgur.com/ePVmZbP.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/0mKRBDB.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/qISZ05f.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/OrVuQFi.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/sRWsvAh.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/Y9Y4A9T.png" alt="12171">
+</p>
+
+US-18:
+
+<p align="center">
+  <img src="https://imgur.com/zQAI35n.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/iS6AgQu.png" alt="12171">
+</p>
+
+US-19:
+
+<p align="center">
+  <img src="https://imgur.com/7sfR3gF.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/62PJ0jP.png" alt="12171">
+</p>
+
 ### 6.1.2. Core Integration Tests.
+
+US-12:
+
+<p align="center">
+  <img src="https://imgur.com/NvHP6fz.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/LsYk9AQ.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/4DCRnaE.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/zbFj305.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/0IpWLrr.png" alt="12171">
+</p>
+
+US-13:
+
+<p align="center">
+  <img src="https://imgur.com/YkiRZim.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/5qV3Cu8.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/0yfYSdZ.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/wfMcqUn.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/lFDWFov.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/wzIJDbB.png" alt="12171">
+</p>
+
+US-16:
+
+<p align="center">
+  <img src="https://imgur.com/sPkZdqu.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/J2KS09S.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/H8wT9gq.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/1kiYkTu.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/TE6xluk.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/42RfnUq.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/6x3FiP0.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/w3Lbehz.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/B27bvmD.png" alt="12171">
+</p>
+
+US-18:
+
+<p align="center">
+  <img src="https://imgur.com/TITfScD.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/2mpwAS3.png" alt="12171">
+</p>
+
+US-19:
+
+<p align="center">
+  <img src="https://imgur.com/FGdKabg.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/tTmtf7h.png" alt="12171">
+</p>
+
 ### 6.1.3. Core Behavior-Driven Development
+
+US-12:
+
+<p align="center">
+  <img src="https://imgur.com/y0G9yYm.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/n4Gymb1.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/jdGHnuB.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/OBBLh8q.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/bEYqC8s.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/UFNWX6e.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/RjJTh8o.png" alt="12171">
+</p>
+
+US-13:
+
+<p align="center">
+  <img src="https://imgur.com/VSDzzwf.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/I5hR1bq.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/SHwugmn.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/XfFzEsz.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/RpyE0sC.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/AgIxDyE.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/KqEWOs8.png" alt="12171">
+</p>
+
+US-16:
+
+<p align="center">
+  <img src="https://imgur.com/CixGMab.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/WcnOREE.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/S7Et3Bh.png" alt="12171">
+</p>
+
+US-18:
+
+<p align="center">
+  <img src="https://imgur.com/EJWDYAJ.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/cysX5X1.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/jem5ZM3.png" alt="12171">
+</p>
+
+US-19:
+
+<p align="center">
+  <img src="https://imgur.com/BGaz8FW.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/vMkhNvQ.png" alt="12171">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/Honk6J1.png" alt="12171">
+</p>
+
 ### 6.1.4. Core System Tests.
 
 # Capítulo VII:: DevOps Practices
