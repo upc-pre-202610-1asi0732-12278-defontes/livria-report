@@ -17,7 +17,7 @@
 
 ---
 
-# Informe de Trabajo Final
+# Informe de Trabajo Parcial
 
 **Nombre del Startup:** Defontes
 
