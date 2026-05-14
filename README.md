@@ -9,23 +9,22 @@
 
 ---
 
-**Código y Nombre del Curso:** 1ASI0732 – Diseño de Experimentos de Ingeniería de Software
-
-**NRC:** 12278
-
-**Nombre del Profesor:** Julio Manuel Noriega Melendez
+<p align="center"><strong>Código y Nombre del Curso:</strong> 1ASI0732 – Diseño de Experimentos de Ingeniería de Software</p>
+<p align="center"><strong>NRC:</strong> 12278</p>
+<p align="center"><strong>Nombre del Profesor:</strong> Julio Manuel Noriega Melendez</p>
 
 ---
 
-# Informe de Trabajo Parcial
+<h1 align="center">Informe de Trabajo Parcial</h1>
 
-**Nombre del Startup:** Defontes
-
-**Nombre del Producto:** Livria
+<p align="center"><strong>Nombre del Startup:</strong> Defontes</p>
+<p align="center"><strong>Nombre del Producto:</strong> Livria</p>
 
 ---
 
-## Relación de Integrantes
+<h2 align="center">Relación de Integrantes</h2>
+
+<div align="center">
 
 | Código | Apellidos y Nombres |
 |--------|---------------------|
@@ -36,11 +35,11 @@
 | u20201F855 | Nakamurakare Teruya, Alex Tomio |
 | u202312504 | Yalán Zhang, Angie Christina |
 
----
-
-**Mes y Año:** Abril 2026
+</div>
 
 ---
+
+<p align="center"><strong>Mes y Año:</strong> Abril 2026</p>
 
 ## Registro de Versiones del Informe
 
