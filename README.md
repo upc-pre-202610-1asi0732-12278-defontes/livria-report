@@ -5204,6 +5204,169 @@ Resultado esperado: El usuario llega al paso de pago con CCI visible, adjunta el
 
 Resultado obtenido: El usuario llega al paso de pago con CCI visible, adjunta el comprobante de transferencia y envía la solicitud de compra.
 
+## 6.3. Validation Interviews
+
+Esta sección registra las actividades de entrevistas de validación cualitativa realizadas con usuarios reales pertenecientes a nuestros segmentos objetivo definidos en el diseño del modelo de negocio de Livria.
+
+### 6.3.1. Diseño de Entrevistas
+Las sesiones se estructuraron de manera metodológica para evaluar la usabilidad, la arquitectura de información y el *engagement* inicial frente a los flujos (*User Flows*) específicos de la plataforma.
+
+#### Preguntas Generales (Demografía Básica)
+* ¿Cuál es tu nombre?
+* ¿Cuántos años tienes?
+* ¿Cuál es tu distrito de residencia?
+* ¿A qué te dedicas?
+* ¿Qué sistema operativo móvil utilizas con mayor frecuencia (Android / iOS)?
+
+#### Segmento Objetivo #1: Lectores en Desarrollo
+* **Enfoque de Validación:** Landing Page (Propuesta de valor) y Livria User App (Flutter).
+* **User Flows Evaluados:** 1. *Búsqueda y Exploración:* Como usuario, quiero poder realizar la búsqueda de libros en base a diferentes criterios y obtener resultados relacionados.
+  2. *Recomendaciones:* Como usuario, quiero poder obtener recomendaciones personalizadas basadas en mis intereses.
+* **Cuestionario Guía:**
+  * *Tras Landing Page:* ¿Qué entendiste que ofrece Livria? ¿Crees que esta aplicación sería adecuada para alguien como tú, que disfruta leer libros por placer? ¿Qué mejorarías en la página para que te resulte más atractiva y útil como lector casual?
+  * *Tras Demostración Móvil:* ¿Qué impresión general te dio la plataforma Livria? ¿Fue fácil navegar y encontrar libros que te interesaran en la aplicación? ¿Cómo calificarías la experiencia de recibir recomendaciones personalizadas según tus gustos literarios? ¿Te gustaría que la aplicación incluya más funciones sociales, como comentarios o foros de discusión sobre libros?
+  * *Cierre:* ¿Qué es lo que más te gustó de la plataforma? ¿Volverías a usar Livria para encontrar nuevos libros? ¿Por qué?
+
+#### Segmento Objetivo #2: Lectores Comunitarios
+* **Enfoque de Validación:** Landing Page (Espacio Social) y Livria User App / Foros (Flutter).
+* **User Flows Evaluados:**
+  1. *Comunidades:* Como usuario, quiero poder unirme a comunidades temáticas y crear publicaciones para compartir activamente mis opiniones, iniciar debates y conectar con otros lectores con intereses literarios similares.
+  2. *Perfil:* Como usuario, quiero poder personalizar ciertos aspectos de mi perfil para mostrar a los demás lectores mi personalidad literaria.
+* **Cuestionario Guía:**
+  * *Tras Landing Page:* ¿Qué entendiste que ofrece Livria? ¿Crees que esta plataforma está pensada para alguien como tú, que busca comunidades de lectura y espacios para debatir? ¿Qué mejorarías en la página para hacerla más atractiva o útil para un lector comunitario?
+  * *Tras Demostración Móvil:* ¿Qué tan fácil te resulta buscar y unirte a comunidades por género/autor/tema? ¿Lograste crear una publicación sin fricción? ¿Te gustaría contar con borradores, programar publicaciones o guardar hilos para leer después? ¿Qué métricas o señales te ayudan a decidir dónde participar? En tu perfil, ¿pudiste personalizar lo que otros ven? (bio, foto de perfil, apodo).
+  * *Cierre:* ¿Qué fue lo que más te gustó de la experiencia comunitaria y de la personalización del perfil? ¿Cuán probable es que vuelvas y publiques/comentes en Livria? ¿Por qué?
+
+---
+
+### 6.3.2. Registro de Entrevistas
+* **Repositorio Central de Evidencias en Video (Microsoft Stream):** [Enlace a Grabaciones de Validación](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201f855_upc_edu_pe/EQlLtO8aYaxFvZxl_mX-m1oBO06-X2oQiswQ41e7tmg3qQ?e=tAFA1n)
+
+#### Segmento Objetivo #1: Lectores en Desarrollo
+
+##### Entrevistado #1: Mateo Castillo
+* **Edad:** 16 años | **Distrito:** Lince
+* **Resumen descriptivo de apreciaciones:** El entrevistado indicó que lee por recreación y destacó la dificultad previa para encontrar herramientas digitales que centralicen el descubrimiento de libros y la conexión social. Percibió a Livria como una solución innovadora y accesible para todo público. Calificó el Landing Page como conciso y preciso en su mensaje. Respecto a la aplicación móvil, valoró positivamente el realismo y fidelidad de la interfaz del proceso de pago, la facilidad para añadir productos al carrito y la integración de comentarios dentro de cada ficha técnica. Concluyó que utilizaría activamente la plataforma debido a la excelente accesibilidad de la información.
+
+<p align="center">
+  <img src="https://imgur.com/CnFjP84.jpg" alt="inter1">
+</p>
+
+##### Entrevistado #2: Daniel Ortega
+* **Edad:** 20 años | **Distrito:** Jesús María
+* **Resumen descriptivo de apreciaciones:** Usuario con preferencia por el género de ciencia ficción. Expresó que el diseño del Landing Page es cómodo, atractivo y altamente efectivo para motivar la adquisición de libros. Durante la interacción con la aplicación móvil, destacó el dinamismo de la navegación y validó con entusiasmo el concepto de recibir recomendaciones automatizadas personalizadas, catalogándola como su característica favorita. Sugirió que se vigile la complejidad en la moderación de interacciones comunitarias masivas para mantener el enfoque limpio de la app.
+
+<p align="center">
+  <img src="https://imgur.com/D51ZRpD.jpg" alt="inter1">
+</p>
+
+##### Entrevistado #3: Arantza Castillo
+* **Edad:** 18 años | **Distrito:** Lince
+* **Resumen descriptivo de apreciaciones:** Lectora habitual del género fantástico que manifestaba frustración al no contar con herramientas eficaces para el descubrimiento de nuevos títulos. Tras evaluar el Landing Page, mostró un alto interés de conversión por los servicios descritos. Al interactuar con la interfaz móvil, resaltó el uso de la iconografía nativa, concluyendo que el sistema es altamente didáctico, amigable y fluido para la navegación entre secciones independientes.
+
+<p align="center">
+  <img src="https://imgur.com/x2h1etm.jpg" alt="inter1">
+</p>
+
+#### Segmento Objetivo #2: Lectores Comunitarios
+
+##### Entrevistado #4: Stefano Rivera
+* **Edad:** 19 años | **Distrito:** Lince
+* **Resumen descriptivo de apreciaciones:** Usuario habituado a clubes de lectura presenciales. Destacó el valor agregado de Livria al unificar con éxito un ecosistema de comunidad y catálogo comercial en un mismo espacio digital. Validó la estructura organizativa del Landing Page pero planteó como oportunidad de mejora mitigar el fondo blanco plano, sugiriendo la incorporación de preferencias de personalización visual. En la aplicación, aplaudió la simplicidad intuitiva para crear grupos y generar publicaciones sin fricciones operativas.
+
+<p align="center">
+  <img src="https://imgur.com/3J7YQfS.jpg" alt="inter1">
+</p>
+
+##### Entrevistado #5: Lorenzo Balico
+* **Edad:** 19 años | **Distrito:** Jesús María
+* **Resumen descriptivo de apreciaciones:** El entrevistado validó como práctica y coherente la propuesta de expresar opiniones literarias y adquirir obras bajo la misma infraestructura tecnológica. Encontró el Landing Page claro, estructurado y de comunicación rápida. Coincidió con el hallazgo de incorporar una paleta de colores alternativa o modo oscuro para sesiones de lectura prolongadas. Destacó la inmediatez del flujo para la edición del perfil de usuario (biografía, avatar y preferencias), indicando que es clave para conectar de forma fidedigna con lectores afines.
+
+<p align="center">
+  <img src="https://imgur.com/bu23K6h.jpg" alt="inter1">
+</p>
+
+##### Entrevistado #6: Fabrizzio Gionti
+* **Edad:** 21 años | **Distrito:** Callao
+* **Resumen descriptivo de apreciaciones:** Lector casual que validó positivamente la estética general y la paleta cromática de la aplicación móvil, considerándola muy organizada para la segmentación por géneros literarios. Para el Landing Page, sugirió inyectar dinámicamente recomendaciones basadas en intereses directamente en el *home view* para elevar el gancho inicial. Calificó el algoritmo de recomendaciones como muy acertado y visualizó un gran potencial de escalabilidad en el componente social de foros de discusión.
+
+<p align="center">
+  <img src="https://imgur.com/dNY1itz.jpg" alt="inter1">
+</p>
+
+### 6.3.3. Evaluaciones según Heurísticas
+
+#### Metadatos de la Auditoría UX
+* **Curso:** Diseño de Experimentos de Ingeniería de Software (Sección: 12278)
+* **Profesor(es):** Julio Manuel Noriega Melendez
+* **Auditor / Evaluador:** Equipo de Aseguramiento de la Calidad LIVRIA
+* **Clientes de Control:** Lorenzo Balico, Stefano Rivera, Arantza Castillo, Daniel Ortega, Mateo Castillo y Fabrizzio Gionti.
+* **Tareas Auditadas:** Búsqueda de libros, uso de filtros en catálogo, procesos de pago, gestión de cuentas, navegación por categorías, personalización de perfil, carrito, recomendaciones personalizadas, foros y comunidades, notificaciones, y vistas de detalle.
+* **Exclusiones del Alcance:** Persistencia de favoritos locales, algoritmos predictivos complejos basados en el historial no relacional, y el refinamiento de gráficos avanzados del dashboard de administración.
+
+#### Escala de Severidad Utilizada
+1. **Problema superficial:** Puede ser fácilmente superado por el usuario u ocurre con muy poca frecuencia. Prioridad de atención baja.
+2. **Problema menor:** Ocurre con frecuencia moderada o presenta dificultad menor. Se asigna prioridad baja/media para los siguientes releases.
+3. **Problema mayor:** Afecta flujos de manera frecuente; los usuarios requieren asistencia o rodeos técnicos. Prioridad alta de corrección.
+4. **Problema muy grave:** Error de gran impacto que impide al usuario continuar con el uso de la herramienta. Bloqueante crítico antes de despliegue.
+
+#### Tabla Resumen de Hallazgos Heurísticos
+
+| # | Problema Detectado | Severidad | Heurística / Principio Violado |
+| :---: | :--- | :---: | :--- |
+| 1 | Sinopsis de libros demasiado breves; dificultan decidir si leer/comprar. | 2 | Información y feedback adecuados / Apoyo a la toma de decisiones |
+| 2 | Vista de detalle de libro con desbalance visual (espacios vacíos). | 1 | Diseño visual, minimalismo y jerarquía |
+| 3 | Cierre de sesión poco descubrible (oculto en cuenta/perfil). | 1 | Control y libertad del usuario / Visibilidad |
+| 4 | Barra de búsqueda con bajo contraste; difícil de ver. | 1 | Accesibilidad / Contraste y legibilidad |
+| 5 | Falta de personalización visual (tema oscuro / color de fondo). | 2 | Preferencias del usuario / Inclusión y accesibilidad |
+
+#### Diagnóstico Técnico Detallado y Plan de Mitigación
+
+##### Problema #1: Sinopsis de catálogo insuficientes
+* **Severidad:** 2
+* **Descripción:** Las sinopsis mapeadas en la base de datos son demasiado breves y no proveen el contexto suficiente para lectores que no conocen previamente la obra, afectando directamente la conversión de compra y la interacción.
+* **Recomendación de Ingeniería:** Ampliar la estructura de metadatos de los libros en la capa de servicios para soportar descripciones de entre 100 y 180 palabras. Añadir un campo de "etiquetas de tono" e implementar una funcionalidad nativa de vista previa (*preview*) de las primeras páginas del archivo digital.
+
+<p align="center">
+  <img src="https://imgur.com/YpOkgY4.jpg" alt="inter1">
+</p>
+
+##### Problema #2: Desbalance visual en la ficha detallada del libro
+* **Severidad:** 1
+* **Descripción:** La vista de detalle presenta una distribución de layouts asimétrica, dejando espacios vacíos pronunciados en el margen derecho bajo ciertas resoluciones de pantalla, dando una falsa percepción de escasez de información.
+* **Recomendación de Ingeniería:** Refactorizar el árbol de widgets en Flutter y Jetpack Compose adoptando una cuadrícula rígida basada en espaciados múltiplos de 8dp/4pt. Reubicar la portada a la izquierda y alinear de forma compacta el precio, el CTA de compra y los metadatos (idioma, número de páginas, formato) a la derecha en estructura de tarjetas jerárquicas.
+
+<p align="center">
+  <img src="https://imgur.com/exX7uD6.jpg" alt="inter1">
+</p>
+
+##### Problema #3: Ocultamiento del flujo de cierre de sesión (*Logout*)
+* **Severidad:** 1
+* **Descripción:** La acción de desautenticación requiere una navegación excesivamente profunda dentro del perfil del usuario, violando el principio de salida clara y control de sesión.
+* **Recomendación de Ingeniería:** Exponer el botón de "Cerrar sesión" en un acceso directo de nivel superior dentro del menú lateral o del *overflow menu* principal. Implementar un componente de confirmación rápido (*Snackbar* o *Dialog Modal*) para mitigar toques accidentales.
+
+<p align="center">
+  <img src="https://imgur.com/C1EeOF2.jpg" alt="inter1">
+</p>
+
+##### Problema #4: Bajo contraste cromático en caja de búsqueda principal
+* **Severidad:** 1
+* **Descripción:** El campo de búsqueda presenta un contraste de color insuficiente entre el texto de marcador de posición (*placeholder*) y el fondo del contenedor, dificultando su legibilidad en pantallas con brillo reducido o para usuarios con debilidades visuales de contraste.
+* **Recomendación de Ingeniería:** Modificar los valores de color hexadecimales para cumplir estrictamente con el estándar **WCAG 2.1 (Ratio mínimo de contraste de 4.5:1 para AA)**. Asegurar un área de toque mínima de **48x48 dp** y habilitar el estado visual de foco activo (*focus state*) al desplegar el teclado numérico/alfabético.
+
+<p align="center">
+  <img src="https://imgur.com/DJbc3VN.jpg" alt="inter1">
+</p>
+
+##### Problema #5: Ausencia de modos de visualización nocturnos / temas oscuros
+* **Severidad:** 2
+* **Descripción:** Los usuarios de ambos segmentos objetivo (lectores casuales y comunitarios) reportan fatiga visual debido a la alta emisión de luz blanca de la interfaz durante sesiones de interacción nocturnas u prolongadas, solicitando la capacidad de cambiar el aspecto visual de la aplicación.
+* **Recomendación de Ingeniería:** Implementar el soporte nativo de **Dark Theme** mediante la extensión de las clases de `ThemeData` en Flutter y el sistema de `MaterialTheme` en Kotlin. Guardar de forma local las preferencias estéticas del usuario mediante persistencia ligera (`SharedPreferences` / `Hive`) y agregar un interruptor global de tipo *Toggle* en el encabezado de navegación de la plataforma.
+
+<p align="center">
+  <img src="https://imgur.com/TkgZWGX.jpg" alt="inter1">
+</p>
+
 # Capítulo VII:: DevOps Practices
 ## 7.1. Continuous Integration
 ### 7.1.1. Tools and Practices
