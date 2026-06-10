@@ -174,8 +174,8 @@ Commits
     - [6.1.4. Core System Tests](#614-core-system-tests)
   - [6.2. Static Testing & Verification](#62-static-testing-&-verification)
     - [6.2.1. Static Code Analysis](#621-static-code-analysis)
-      - [6.2.1.1. Coding Standard & Code Conventions](#6211-coding-standard-&-code-conventions)
-      - [6.2.1.1. Code Quality & Code Security](#6211-coding-quality-&-code-security)
+      - [6.2.1.1. Coding Standard & Code Conventions](#6211-coding-standard--code-conventions)
+      - [6.2.1.2. Code Quality & Code Security](#6212-coding-quality--code-security)
     - [6.2.2. Reviews](#622-reviews)
   - [6.3. Validation Interviews](#63-validation-interviews)
     - [6.3.1. Diseño de Entrevistas](#631-diseno-de-entrevistas)
@@ -5085,7 +5085,7 @@ Resultado esperado: Un administrador puede acceder a la sección de gestión de 
 <p align="center">
   <img src="https://res.cloudinary.com/db6vj9fuw/image/upload/v1778714213/6a55969d-9196-4962-b9a6-92f515480fdc_ocm2ty.jpg" alt="Core system test step ">
 </p>
-	
+  
 <p align="center">
   <img src="https://res.cloudinary.com/db6vj9fuw/image/upload/v1778714207/a9c4fe4b-ae54-407d-b97a-a0dbff46529e_rdcrkk.jpg" alt="Core system test step ">
 </p>
@@ -5217,8 +5217,116 @@ Resultado obtenido: El usuario llega al paso de pago con CCI visible, adjunta el
 ### 6.2.1. Static Code Analysis
 En esta sección se examinan las metodologías de análisis estático, herramientas esenciales para garantizar la integridad, seguridad y calidad del software mediante la inspección exhaustiva del código fuente sin necesidad de ejecución. A diferencia de las pruebas dinámicas, el análisis estático permite realizar un escaneo profundo en busca de vulnerabilidades, deudas técnicas y errores de sintaxis desde el momento mismo de la escritura del código. Adoptar este enfoque permite una detección proactiva de defectos; al interceptar fallas en las fases iniciales del desarrollo, se reduce drásticamente la complejidad y el costo de mantenimiento, asegurando que cada línea de código cumpla con los estándares de calidad antes de su puesta en producción.
 
-#### 6.2.1.1. Coding Standards & Code Conventions
+#### 6.2.1.1. Coding Standard & Code Conventions
+Para garantizar la mantenibilidad, legibilidad y consistencia del ecosistema de software de Livria, el equipo de desarrollo de Defontes implementó un proceso de verificación estática automatizado y manual. Este proceso asegura el estricto cumplimiento de las guías de estilo, principios de código limpio y convenciones de codificación definidas para cada componente tecnológico del proyecto.
+A continuación, se detallan los estándares aplicados, principios de diseño y los mecanismos de verificación según el entorno de desarrollo:
 
+**1. Principios de Código Limpio (Clean Code)**
+El equipo adopta los pilares fundamentales de *Clean Code* para asegurar que cualquier desarrollador del equipo pueda leer, entender y extender la base de código sin fricciones:
+* **Nombres Significativos y Descriptivos:** Se prohíbe el uso de abreviaturas confusas o nombres de variables de una sola letra (ej. usar `deliveryAddressInLima` en lugar de `dir`). Las funciones reflejan acciones claras con verbos (ej. `calculateShippingPrice`).
+* **Funciones de Responsabilidad Única (SRP):** Cada método o función realiza una sola tarea y es lo más pequeña posible. Si una función excede las 20 líneas, es candidata a ser refactorizada en subfunciones.
+* **Manejo de Errores Limpio:** Se evita el uso excesivo de bloques try-catch vacíos o genéricos. Se implementan excepciones personalizadas y legibles para el flujo del negocio.
+* **Comentarios Justificados:** El código debe ser autodocumentado. Los comentarios solo se permiten para explicar "por qué" se tomó una decisión de diseño técnica compleja, no para explicar "qué" hace el código.
+
+**2. Convenciones de Diseño Guiado por el Dominio (Domain-Driven Design - DDD)**
+Dado que el backend de Livria maneja reglas de negocio complejas (gestión de comunidades de lectura, delimitación de zonas de envío en Lima y pasarelas de pago), se adoptó un enfoque táctico de **DDD** reflejado directamente en las convenciones del código fuente:
+* **Estructura Basada en Capas de Dominio:** El código del backend se organiza estrictamente respetando los límites de las capas de DDD:
+    * *Domain:* Contiene el corazón del negocio (Entidades, Objetos de Valor o *Value Objects*, e Interfaces de Repositorios). Está libre de dependencias de frameworks externos.
+    * *Application:* Contiene los casos de uso (Handlers, Queries, Commands) como el flujo para listar comunidades en el perfil del usuario.
+    * *Infrastructure:* Contiene las implementaciones tecnológicas (bases de datos, clientes HTTP, EmailJS o Stripe).
+    * *Presentation / API:* Expone los controladores y endpoints de los servicios.
+* **Ubiquitous Language (Lenguaje Ubicuo) en el Código:** Todos los nombres de las clases, variables y métodos en el código coinciden exactamente con la jerga del negocio literario y las reglas conversadas (ej. `Community`, `Book`, `UserProfile`).
+* **Inmutabilidad en Objetos de Valor:** Los elementos que no poseen una identidad única pero definen atributos (como el precio de envío o las coordenadas de Lima) se codifican como *Value Objects* inmutables para evitar efectos secundarios en el estado de la aplicación.
+
+**3. Frontend Multiplataforma (Flutter / Dart)**
+Para la aplicación móvil de Livria, el equipo adoptó las pautas oficiales de estilo de Dart (*Effective Dart*). La verificación automatizada se configuró de la siguiente manera:
+* **Herramienta de Verificación:** Se utilizó el linter nativo de Dart mediante el archivo de configuración `analysis_options.yaml`.
+* **Reglas Críticas Verificadas:**
+    * Uso mandatorio de `const` en constructores de Widgets para la optimización del rendimiento de renderizado en el árbol de componentes.
+    * Formateo automatizado aplicando el límite estricto de 80 caracteres por línea mediante el comando `flutter format`.
+    * Uso de *camelCase* para variables/funciones (ej. `updateShippingAddress`) y *PascalCase* para clases (ej. `CommunityListProfileScreen`).
+    * Inclusión obligatoria de comas finales (*trailing commas*) en argumentos y constructores anidados para facilitar el formateo automático y evitar problemas de indentación.
+
+**4. Backend API Service (C# / .NET Core)**
+Para el diseño del backend desarrollado en Rider, se siguieron las convenciones de codificación oficiales de Microsoft para .NET. La validación estática se estructuró bajo los siguientes criterios:
+* **Herramienta de Verificación:** Se emplearon las herramientas de inspección estática integradas de JetBrains Rider junto con las reglas de estilo de código de `.editorconfig`.
+* **Reglas Críticas Verificadas:**
+    * Uso estricto del estilo *Allman* (llaves de apertura `{` en una línea nueva) para todos los bloques de control, capas arquitectónicas y métodos.
+    * Uso de *PascalCase* para nombres de clases, interfaces (anteponiendo la letra 'I' como `ICommunityRepository`) y nombres de métodos públicos.
+    * Estructuración limpia y organizada del código fuente mediante la separación explícita de directivas `using`, propiedades, constructores y métodos con líneas en blanco intermedias.
+
+**5. Proceso de Verificación en el Flujo de Trabajo (CI/CD)**
+El cumplimiento de estos estándares no queda relegado únicamente al criterio individual del desarrollador; está integrado de forma activa en el flujo de trabajo colaborativo del equipo:
+* **Ganchos Locales (Pre-commit Hooks):** Antes de confirmar cualquier cambio (commit) de forma local, herramientas de formateo automatizado preparan el archivo según las reglas de espaciado e indentación vigentes.
+* **Integración Continua con GitHub Actions:** Al realizar un *Pull Request* hacia las ramas principales (`develop` o `main`), el pipeline de CI ejecuta de manera automatizada comandos de análisis estático (`flutter analyze` para el frontend y `dotnet format --verify-no-changes` para el backend). Si se detecta alguna violación a las convenciones de nomenclatura, formato, o desviaciones de la estructura DDD/Clean Code, el pipeline se interrumpe, impidiendo la fusión de código defectuoso y asegurando la integridad estilística en el repositorio centralizado.
+
+#### 6.2.1.2. Code Quality & Code Security
+
+Para mitigar riesgos técnicos, deuda técnica y vulnerabilidades críticas antes del despliegue en producción, el equipo de Defontes implementó una estrategia integral de aseguramiento de la calidad (*Code Quality*) y seguridad del código (*Code Security*). Esta estrategia combina inspecciones automatizadas en tiempo real en los entornos de desarrollo locales con pipelines automatizados de pruebas de seguridad estática (SAST) en la nube.
+
+A continuación, se detallan los criterios, métricas y herramientas seleccionadas para el ecosistema de software de Livria:
+
+**1. Herramientas de Evaluación Seleccionadas**
+* **SonarQube (IDE Extension):**  El plugin en Rider anteriormente se llamab SonarLint. Se configuró como la herramienta principal de análisis estático en tiempo real integrada en JetBrains Rider (para el backend .NET Core) y VS Code (para el desarrollo de la aplicación móvil en Flutter). Esto permite identificar vulnerabilidades ("Security Vulnerabilities"), fallos de seguridad potencialmente peligrosos ("Security Hotspots") y malas prácticas ("Code Smells") directamente en la estación de trabajo del desarrollador.
+* **GitHub CodeQL:** Se integró en el pipeline de Integración Continua (CI) mediante GitHub Actions para realizar escaneos semánticos automatizados de la base de código en cada *Pull Request*, buscando patrones de ataque conocidos de forma centralizada.
+<p align="center">
+  <img src="https://i.imgur.com/av7VWoB.jpg" alt="SonarQube">
+</p>
+
+<p align="center">
+  <img src="https://i.imgur.com/ZguEvIa.jpg" alt="SonarQube in Livria">
+</p>
+
+<p align="center">
+  <img src="https://i.imgur.com/4NQovA6.jpg" alt="Github CodeQL">
+</p>
+
+**2. Evaluación de Calidad de Código (Code Quality)**
+El equipo evalúa y restringe de forma estricta las métricas de calidad para evitar la degradación de la mantenibilidad del sistema:
+* **Complejidad Ciclomática y Cognitiva:** SonarQube alerta inmediatamente al desarrollador cuando un método posee demasiadas bifurcaciones o flujos condicionales anidados (estructuras `if-else` o `switch`). En Livria, esto es crítico para los componentes lógicos que delimitan los precios de envío exclusivos para Lima Metropolitana, asegurando que las reglas de negocio se mantengan legibles y fáciles de probar mediante pruebas unitarias.
+* **Duplicación de Código (Bloques Copiados):** Se configuró un umbral estricto donde cualquier fragmento de lógica idéntico de más de 10 líneas es marcado como un error de mantenimiento (*Code Smell*). Esto incentiva la modularidad y el empaquetado de utilitarios compartidos en el dominio.
+* **Mantenibilidad y Deuda Técnica:** SonarQube calcula el tiempo estimado de remediación necesario para limpiar el código. El equipo mantiene una política de "Deuda Técnica Cero" para el código que deba fusionarse en la rama principal (`main`).
+
+**3. Evaluación de Seguridad del Código (Code Security)**
+Para garantizar la robustez de Livria, especialmente al gestionar datos privados de los perfiles de los lectores, membresías a comunidades literarias y flujos de pago, se mitigan los riesgos del *OWASP Top 10* mediante las siguientes reglas automatizadas:
+* **Prevención de Inyecciones (SQL / NoSQL):** Las herramientas verifican el uso exclusivo de Entity Framework Core mediante consultas parametrizadas o expresiones Lambda de LINQ. Cualquier intento de concatenación directa de cadenas de texto para construir sentencias SQL (que pudiera provocar una inyección y comprometer la base de datos de usuarios) bloquea automáticamente el análisis.
+* **Manejo Seguro de Datos Sensibles:** SonarQube escanea activamente el código en busca de claves de API expuestas (como los tokens de EmailJS, llaves de desarrollo de Stripe o credenciales de bases de datos). Si se detecta un *hardcoding* de datos confidenciales, la herramienta arroja una alerta de alta prioridad (*Critical Hotspot*), exigiendo el uso de variables de entorno seguras (`Environment Variables`).
+* **Cross-Site Scripting (XSS) y Sanitización de Entradas:** En la capa del frontend multiplataforma y la landing page, se analizan los flujos de renderizado de texto para asegurar que las entradas provistas por los usuarios (como los nombres o descripciones de nuevos clubes de lectura creados por la comunidad) sean debidamente sanitizadas y codificadas antes de ser renderizadas en la interfaz móvil, impidiendo la ejecución forzada de scripts maliciosos.
+
+**4. Flujo de Ejecución y Puertas de Calidad (Quality Gates)**
+* **Fase Local:** Al escribir código, SonarQube resalta las líneas con advertencias de color amarillo (para calidad) y rojo (para seguridad), proveyendo una descripción detallada del problema y ejemplos de refactorización segura directamente en el IDE.
+* **Fase de Integración:** Durante los *Pull Requests*, GitHub Actions ejecuta el escaneo de CodeQL. Si el análisis detecta vulnerabilidades críticas o vulnerabilidades de seguridad sin resolver, el *Quality Gate* del pipeline falla de inmediato, restringiendo la opción de fusionar el código a la rama de desarrollo e impidiendo que los fallos de seguridad escalen a entornos de prueba o producción.
+
+#### 6.2.2. Reviews
+
+Las revisiones de código (*Code Reviews*) constituyen un pilar fundamental en el flujo de trabajo ágil de Defontes. Este proceso asegura de forma colaborativa que todo incremento de software en la plataforma Livria no solo sea funcional, sino que mantenga una alta legibilidad, cumpla con la arquitectura táctica DDD (Domain-Driven Design), respete los estándares de código limpio (*Clean Code*) y no introduzca vulnerabilidades de seguridad en el ecosistema.
+
+A continuación, se detalla la estructura, las directrices y los criterios de aceptación del proceso de revisión implementado por el equipo:
+
+**1. Tipos de Revisiones Adoptadas**
+* **Revisión de Código por Pares (Peer Review):** Todo desarrollador de Defontes que finalice una tarea o *User Story* debe someter su código a la inspección de otro miembro del equipo. Se evalúa la claridad de la lógica y la facilidad de mantenimiento de la solución propuesta.
+* **Revisión Automática Integrada:** Antes de la intervención humana, el código se somete a un filtrado automatizado local y centralizado. Se utiliza **SonarQube** en los entornos locales (Rider y VS Code) para detectar *Code Smells* y la suite de **GitHub CodeQL / GitHub Actions** en la nube para asegurar que no se suban credenciales expuestas (como tokens de EmailJS o llaves de Stripe).
+* **Revisiones de Arquitectura y Negocio (Sprints/Hitos):** Al cierre de iteraciones críticas, el equipo realiza breves sesiones síncronas de revisión grupal para evaluar la correcta separación de capas (Domain, Application, Infrastructure) en features complejos, como el módulo de restricción y cálculo de envíos exclusivo para Lima.
+
+**2. Proceso de Revisión en el Flujo de Trabajo (GitFlow)**
+El equipo sigue una secuencia rigurosa a través de la plataforma GitHub para garantizar que ningún código defectuoso llegue a las ramas estables (`develop` o `main`):
+* **Creación de Pull Requests (PR):** El desarrollador abre un PR con una plantilla estructurada que exige: descripción clara del cambio introducido, id de la historia de usuario asociada, capturas de pantalla o videos del comportamiento en el frontend (Flutter o Web) y el listado de pruebas manuales/unitarias ejecutadas.
+* **Uso del Checklist de Revisión:** Los revisores designados no evalúan el código de forma subjetiva; se apoyan en una lista de verificación estricta:
+    * *¿El código sigue las convenciones de nomenclatura establecidas (PascalCase para clases de C# e interfaces, camelCase para Dart)?*
+    * *¿Se ha implementado el control de errores adecuado sin dejar bloques catch vacíos?*
+    * *¿Las nuevas interfaces o flujos (como el listado de comunidades en el perfil del lector) son lo suficientemente abstractos y limpios?*
+    * *¿Se evita el hardcoding de datos confidenciales o endpoints?*
+* **Feedback Constructivo y Remediación:** Las observaciones en el PR se realizan directamente sobre las líneas de código afectadas en GitHub. El tono de la comunicación es empático y técnico. El autor del código debe resolver de manera mandatoria cada uno de los comentarios y alertas linter antes de volver a solicitar la aprobación.
+* **Políticas de Aprobación (Branch Protection):** Las ramas principales están protegidas por reglas del repositorio. Un Pull Request requiere obligatoriamente **el voto aprobatorio de al menos un revisor calificado** (par de desarrollo) y el paso exitoso (en verde) de todos los *checks* automatizados de integración continua (CI) para permitir el *Merge*.
+
+**3. Criterios de Aceptación para la Fusión de Código**
+Para que un incremento de software sea aceptado formalmente e integrado al repositorio común de Livria, debe cumplir con los siguientes umbrales:
+* **Calidad y Seguridad Absoluta:** Cero advertencias críticas o de alta prioridad activas en SonarQube. Ninguna alerta de seguridad de tipo inyección SQL o scripts maliciosos (XSS) detectada por CodeQL en las entradas proporcionadas por los usuarios.
+* **Compilación Exitosa:** El código propuesto no debe romper bajo ninguna circunstancia la compilación del proyecto multiplataforma en Flutter ni de la API backend en .NET Core.
+* **Cobertura y Pruebas:** Se verifica que el desarrollador haya adjuntado las pruebas correspondientes para la nueva lógica de negocio introducida, salvaguardando la estabilidad ante futuras refactorizaciones.
+
+**4. Frecuencia de las Revisiones**
+Las revisiones se realizan de manera continua y asíncrona en el día a día del desarrollo; cada vez que una subtarea es completada, se genera un PR inmediato para evitar la acumulación masiva de líneas de código por revisar al final del ciclo. Asimismo, al término de cada entrega o hito, se realiza una revisión de cierre retrospectiva para ajustar las reglas del linter y optimizar la velocidad del flujo de trabajo del equipo.
 
 
 ## 6.3. Validation Interviews
