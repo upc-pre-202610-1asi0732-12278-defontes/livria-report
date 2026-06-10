@@ -172,9 +172,9 @@ Commits
     - [6.1.2. Core Integration Tests](#612-core-integration-tests)
     - [6.1.3. Core Behavior-Driven Development](#613-core-behavior-driven-development)
     - [6.1.4. Core System Tests](#614-core-system-tests)
-  - [6.2. Static testing & Verification](#62-static-testing-&-verification)
+  - [6.2. Static Testing & Verification](#62-static-testing-&-verification)
     - [6.2.1. Static Code Analysis](#621-static-code-analysis)
-      - [6.2.1.1. Coding standard & Code conventions](#6211-coding-standard-&-code-conventions)
+      - [6.2.1.1. Coding Standard & Code Conventions](#6211-coding-standard-&-code-conventions)
       - [6.2.1.1. Code Quality & Code Security](#6211-coding-quality-&-code-security)
     - [6.2.2. Reviews](#622-reviews)
   - [6.3. Validation Interviews](#63-validation-interviews)
@@ -5212,6 +5212,14 @@ Resultado esperado: El usuario llega al paso de pago con CCI visible, adjunta el
 </p>
 
 Resultado obtenido: El usuario llega al paso de pago con CCI visible, adjunta el comprobante de transferencia y envía la solicitud de compra.
+
+## 6.2. Static Testing & Verification
+### 6.2.1. Static Code Analysis
+En esta sección se examinan las metodologías de análisis estático, herramientas esenciales para garantizar la integridad, seguridad y calidad del software mediante la inspección exhaustiva del código fuente sin necesidad de ejecución. A diferencia de las pruebas dinámicas, el análisis estático permite realizar un escaneo profundo en busca de vulnerabilidades, deudas técnicas y errores de sintaxis desde el momento mismo de la escritura del código. Adoptar este enfoque permite una detección proactiva de defectos; al interceptar fallas en las fases iniciales del desarrollo, se reduce drásticamente la complejidad y el costo de mantenimiento, asegurando que cada línea de código cumpla con los estándares de calidad antes de su puesta en producción.
+
+#### 6.2.1.1. Coding Standards & Code Conventions
+
+
 
 ## 6.3. Validation Interviews
 
