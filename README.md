@@ -5297,7 +5297,7 @@ Para garantizar la robustez de Livria, especialmente al gestionar datos privados
 * **Fase Local:** Al escribir código, SonarQube resalta las líneas con advertencias de color amarillo (para calidad) y rojo (para seguridad), proveyendo una descripción detallada del problema y ejemplos de refactorización segura directamente en el IDE.
 * **Fase de Integración:** Durante los *Pull Requests*, GitHub Actions ejecuta el escaneo de CodeQL. Si el análisis detecta vulnerabilidades críticas o vulnerabilidades de seguridad sin resolver, el *Quality Gate* del pipeline falla de inmediato, restringiendo la opción de fusionar el código a la rama de desarrollo e impidiendo que los fallos de seguridad escalen a entornos de prueba o producción.
 
-#### 6.2.2. Reviews
+### 6.2.2. Reviews
 
 Las revisiones de código (*Code Reviews*) constituyen un pilar fundamental en el flujo de trabajo ágil de Defontes. Este proceso asegura de forma colaborativa que todo incremento de software en la plataforma Livria no solo sea funcional, sino que mantenga una alta legibilidad, cumpla con la arquitectura táctica DDD (Domain-Driven Design), respete los estándares de código limpio (*Clean Code*) y no introduzca vulnerabilidades de seguridad en el ecosistema.
 
