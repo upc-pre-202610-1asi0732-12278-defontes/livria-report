@@ -172,6 +172,15 @@ Commits
     - [6.1.2. Core Integration Tests](#612-core-integration-tests)
     - [6.1.3. Core Behavior-Driven Development](#613-core-behavior-driven-development)
     - [6.1.4. Core System Tests](#614-core-system-tests)
+  - [6.2. Static testing & Verification](#62-static-testing-&-verification)
+    - [6.2.1. Static Code Analysis](#621-static-code-analysis)
+      - [6.2.1.1. Coding standard & Code conventions](#6211-coding-standard-&-code-conventions)
+      - [6.2.1.1. Code Quality & Code Security](#6211-coding-quality-&-code-security)
+    - [6.2.2. Reviews](#622-reviews)
+  - [6.3. Validation Interviews](#63-validation-interviews)
+    - [6.3.1. Diseño de Entrevistas](#631-diseno-de-entrevistas)
+    - [6.3.2. Registro de Entrevistas](#632-registro-de-entrevistas)
+    - [6.3.3. Evaluaciones según Heurísticas](#633-evaluaciones-segun-heuristicas)
 - [Capítulo VII: DevOps Practices](#capítulo-vii-devops-practices)
   - [7.1. Continuous Integration](#71-continuous-integration)
     - [7.1.1. Tools and Practices](#711-tools-and-practices)
@@ -5367,7 +5376,7 @@ Las sesiones se estructuraron de manera metodológica para evaluar la usabilidad
   <img src="https://imgur.com/TkgZWGX.jpg" alt="inter1">
 </p>
 
-# Capítulo VII:: DevOps Practices
+# Capítulo VII: DevOps Practices
 ## 7.1. Continuous Integration
 ### 7.1.1. Tools and Practices
 En el proyecto Livria utilizamos GitHub como repositorio central y GitHub Actions como plataforma de Continuous Integration (CI). Dado que nuestra arquitectura se divide en tres frentes distintos (Backend, App Móvil de Usuario y App Móvil de Administrador), las pruebas automatizadas y la validación de código se organizan según su ecosistema:
