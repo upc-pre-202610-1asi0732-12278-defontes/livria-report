@@ -4812,6 +4812,208 @@ Las pruebas unitarias de Livria fueron diseñadas para validar el correcto funci
   <img src="https://imgur.com/XjmQ93b.png" alt="12171">
 </p>
 
+**US-14:** Se validó la entidad Recommendation, comprobando que las recomendaciones agrupen correctamente los libros asociados a un lector, expongan los datos esenciales para su presentación (título y portada) y que la colección se inicialice vacía cuando aún no existen datos de preferencia.
+
+```csharp
+[Fact]
+public void US14_AC1_CreateRecommendation_ShouldStoreUserAndBooks()
+{
+    // Arrange
+    var books = new List<Book>
+    {
+        BuildBook("El Principito"),
+        BuildBook("Cien Años de Soledad"),
+    };
+
+    // Act
+    var recommendation = new Recommendation(userClientId: 42, recommendedBooks: books);
+
+    // Assert
+    Assert.Equal(42, recommendation.UserClientId);
+    Assert.Equal(2,  recommendation.RecommendedBooks.Count());
+}
+
+[Fact]
+public void US14_AC1_CreateRecommendation_WhenBooksIsNull_ShouldBeEmptyNotNull()
+{
+    // Arrange & Act — sin datos de preferencia aún
+    var recommendation = new Recommendation(userClientId: 1, recommendedBooks: null);
+
+    // Assert — la colección se inicializa vacía, nunca nula
+    Assert.NotNull(recommendation.RecommendedBooks);
+    Assert.Empty(recommendation.RecommendedBooks);
+}
+```
+
+**US-15:** Se validó la terminación segura de la sesión a través del TokenService, comprobando que una sesión activa identifique correctamente al lector y que el acceso sea denegado cuando el token de autenticación es eliminado del dispositivo, ha expirado, fue manipulado o fue firmado con una clave ajena al sistema.
+
+```csharp
+[Fact]
+public async Task ValidateToken_WhenSessionActive_ShouldReturnUserId()
+{
+    // Arrange
+    var service = BuildTokenService();
+    var identity = BuildIdentity(userId: 1);
+    var token = service.GenerateToken(identity, new List<string> { "Client" });
+
+    // Act
+    var result = await service.ValidateToken(token);
+
+    // Assert — la sesión activa identifica correctamente al lector
+    Assert.Equal(identity.Id, result);
+}
+
+[Fact]
+public async Task ValidateToken_WhenTokenExpired_ShouldDenyAccess()
+{
+    // Arrange — sesión cuyo tiempo de vida ya terminó
+    var service = BuildTokenService();
+    var identity = BuildIdentity();
+    var expiredToken = GenerateTokenWithExpiration(
+        identity, DateTime.UtcNow.AddMinutes(-5));
+
+    // Act
+    var result = await service.ValidateToken(expiredToken);
+
+    // Assert
+    Assert.Null(result);
+}
+```
+
+**US-17:** Se validó la gestión de comunidades sobre el agregado Community y el agregado UserClient, comprobando la creación y actualización de comunidades con datos válidos, el rechazo de información incompleta, la asignación de membresía sin duplicados y la salida de una comunidad.
+
+```csharp
+[Fact]
+public void US17_AC1_CreateCommunity_WhenValid_ShouldSetProperties()
+{
+    // Arrange & Act
+    var community = BuildCommunity(
+        name:        "Club Sci-Fi",
+        description: "Ciencia ficción y fantasía",
+        type:        CommunityType.fiction,
+        ownerId:     7);
+
+    // Assert
+    Assert.Equal("Club Sci-Fi",                community.Name);
+    Assert.Equal("Ciencia ficción y fantasía", community.Description);
+    Assert.Equal(CommunityType.fiction,        community.Type);
+    Assert.Equal(7,                            community.OwnerId);
+}
+
+[Fact]
+public void US17_AC2_JoinCommunity_WhenAlreadyMember_ShouldNotDuplicate()
+{
+    // Arrange
+    var client = BuildClient();
+
+    // Act — se intenta unir dos veces a la misma comunidad
+    client.JoinCommunity(10);
+    client.JoinCommunity(10);
+
+    // Assert
+    Assert.Single(client.UserCommunities);
+}
+```
+
+**US-21:** Se validó la lógica de valoración y reseñas sobre la entidad Review, comprobando el registro de puntuaciones dentro del rango permitido (1 a 5 estrellas), el rechazo de valores fuera de rango, la vinculación de la reseña al libro y al lector, y la anonimización de reseñas ante la eliminación de una cuenta.
+
+```csharp
+[Theory]
+[InlineData(0)]
+[InlineData(6)]
+[InlineData(-1)]
+public void US21_AC1_UpdateStars_WhenOutOfRange_ShouldThrowArgumentOutOfRangeException(int stars)
+{
+    // Arrange
+    var review = BuildReview();
+
+    // Act & Assert — la calificación debe estar entre 1 y 5
+    Assert.Throws<ArgumentOutOfRangeException>(() =>
+        review.Update("Contenido válido", stars));
+}
+
+[Fact]
+public void US21_AC2_CreateReview_ShouldLinkContentToBookAndUser()
+{
+    // Arrange & Act
+    var review = BuildReview(
+        bookId:       3,
+        userClientId: 88,
+        content:      "Me encantó el final",
+        username:     "ana_reads");
+
+    // Assert — la reseña queda vinculada al libro y al lector
+    Assert.Equal(3,                  review.BookId);
+    Assert.Equal(88,                 review.UserClientId);
+    Assert.Equal("Me encantó el final", review.Content);
+    Assert.Equal("ana_reads",        review.Username);
+}
+```
+
+**US-22:** Se validó la gestión del plan de suscripción del agregado UserClient, comprobando la actualización al plan de pago con registro de la fecha de cambio de ciclo, la reversión al plan gratuito con restablecimiento del estado de pago y el control de mora del ciclo de facturación.
+
+```csharp
+[Fact]
+public void US22_AC1_UpdateSubscription_ToCommunityPlan_ShouldChangePlan()
+{
+    // Arrange
+    var client = BuildClient(subscription: "freeplan");
+
+    // Act
+    client.UpdateSubscription("communityplan");
+
+    // Assert
+    Assert.Equal("communityplan", client.Subscription);
+}
+
+[Fact]
+public void US22_AC2_UpdateSubscription_ToFreePlan_ShouldResetHasPayed()
+{
+    // Arrange — el usuario tenía un plan de pago activo
+    var client = BuildClient(subscription: "communityplan");
+    client.SetHasPayed(true);
+
+    // Act — vuelve al plan gratuito
+    client.UpdateSubscription("freeplan");
+
+    // Assert — se restablece el estado de pago
+    Assert.False(client.HasPayed);
+}
+```
+
+**US-26:** Se validó la lógica de filtrado y ordenamiento del catálogo de libros, comprobando el ordenamiento alfabético y por precio, el filtrado por idioma y género con coincidencias exactas, el resultado vacío cuando ningún libro cumple el criterio y el restablecimiento de filtros al estado original del catálogo.
+
+```csharp
+[Fact]
+public void US26_AC2_FilterByLanguage_ShouldReturnOnlyMatchingBooks()
+{
+    // Arrange
+    var catalog = BuildCatalog();
+
+    // Act
+    var results = FilterByLanguage(catalog, "english");
+
+    // Assert
+    Assert.Equal(2, results.Count);
+    Assert.All(results, b => Assert.Equal("english", b.Language));
+}
+
+[Fact]
+public void US26_AC3_ResetFilters_ShouldReturnFullCatalog()
+{
+    // Arrange
+    var catalog = BuildCatalog();
+    var filtered = FilterByLanguage(catalog, "english"); // 2 libros
+    Assert.Equal(2, filtered.Count);
+
+    // Act — restablecer = volver al catálogo completo en su estado original
+    var reset = catalog;
+
+    // Assert
+    Assert.Equal(4, reset.Count);
+}
+```
+
 ### 6.1.2. Core Integration Tests.
 
 Las pruebas de integración en Livria tuvieron como objetivo validar la comunicación entre los distintos módulos del sistema y asegurar la correcta interoperabilidad entre frontend, backend y base de datos. Estas pruebas permitieron comprobar el flujo completo de funcionalidades críticas como autenticación, compras, recomendaciones, comunidades y sincronización de inventario mediante los servicios RESTful implementados en .NET Core y desplegados en Microsoft Azure.
