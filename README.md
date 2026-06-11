@@ -4731,6 +4731,56 @@ public void TS10_AC2_Book_WhenGenreIsInvalid_ShouldThrowArgumentException()
 }
 ```
 
+**TS-14:** Se validó la lógica de autenticación del administrador (`TS14_AdminLoginTests.cs`, 7 pruebas xUnit + Moq sobre `LoginAdminCommandHandler`), comprobando el acceso exitoso con credenciales y pin de seguridad válidos, la generación del token con rol Admin, y el rechazo por usuario inexistente, contraseña incorrecta, cuenta sin rol de administrador o pin inválido, sin emitir ningún token cuando se deniega el acceso.
+
+```csharp
+[Fact]
+public async Task Handle_WhenCredentialsAndPinValid_ShouldGrantAccess()
+{
+    // Arrange
+    var identity = BuildIdentity();
+    _identityRepository.Setup(r => r.GetByUsernameAsync(ValidUsername))
+        .ReturnsAsync(identity);
+    _userAdminRepository.Setup(r => r.GetByIdAsync(identity.UserId))
+        .ReturnsAsync(BuildUserAdmin());
+    _tokenService.Setup(t => t.GenerateToken(identity, It.IsAny<IList<string>>()))
+        .Returns("valid-jwt-token");
+
+    var handler = BuildHandler();
+
+    // Act
+    var result = await handler.Handle(
+        new LoginAdminCommand(ValidUsername, ValidPassword, ValidPin),
+        CancellationToken.None);
+
+    // Assert — acceso otorgado con token de sesión
+    Assert.True(result.Success);
+    Assert.Equal("valid-jwt-token", result.Token);
+}
+
+[Fact]
+public async Task Handle_WhenSecurityPinIsWrong_ShouldDenyAccess()
+{
+    // Arrange
+    var identity = BuildIdentity();
+    _identityRepository.Setup(r => r.GetByUsernameAsync(ValidUsername))
+        .ReturnsAsync(identity);
+    _userAdminRepository.Setup(r => r.GetByIdAsync(identity.UserId))
+        .ReturnsAsync(BuildUserAdmin(pin: ValidPin));
+
+    var handler = BuildHandler();
+
+    // Act
+    var result = await handler.Handle(
+        new LoginAdminCommand(ValidUsername, ValidPassword, "0000"),
+        CancellationToken.None);
+
+    // Assert — el pin de seguridad incorrecto bloquea el acceso
+    Assert.False(result.Success);
+    Assert.Equal("Invalid security pin.", result.Message);
+}
+```
+
 **US-12:** Se validó el correcto funcionamiento de las preferencias de usuario, comprobando que los libros puedan agregarse a favoritos o exclusiones sin duplicados y manteniendo coherencia entre ambas listas.
 
 <p align="center">
@@ -5116,6 +5166,294 @@ fun ts10_ac2_onStockChange_whenNegativeString_shouldNotUpdate() {
 
     // Assert
     assertEquals("", sut.uiState.stock)
+}
+```
+
+**TS-02:** Se validó la integración de las estadísticas de libros (`TS02_TS03_BookManagementTest.kt`, JUnit sobre `BooksManagementViewModel` con dobles de prueba del DAO y servicio remoto), comprobando el cálculo del total de libros registrados, el número de géneros distintos, el precio promedio de venta del catálogo y las unidades totales en stock.
+
+```kotlin
+@Test
+fun ts02_ac1_stats_shouldCountTotalBooksAndGenres() = runBlocking {
+    // Act — métricas de catálogo
+    val stats = withTimeout(5_000) { sut.stats.first { it.totalBooks > 0 } }
+
+    // Assert — total de libros y géneros distintos registrados
+    assertEquals(4, stats.totalBooks)
+    assertEquals(3, stats.totalGenres)
+}
+
+@Test
+fun ts02_ac2_stats_shouldComputeAveragePrice() = runBlocking {
+    // Act — métricas financieras
+    val stats = withTimeout(5_000) { sut.stats.first { it.totalBooks > 0 } }
+
+    // Assert — precio promedio de venta: (30+40+20+35)/4 = 31.25
+    assertEquals(31.25, stats.averagePrice, 0.001)
+}
+```
+
+**TS-03:** Se validó la búsqueda de libros del administrador (`TS02_TS03_BookManagementTest.kt`), comprobando la búsqueda por título o autor, la aplicación combinada de filtros por género e idioma, el ordenamiento alfabético del catálogo y el restablecimiento de filtros al listado completo.
+
+```kotlin
+@Test
+fun ts03_ac2_filter_byGenreAndLanguage_shouldLimitResults() {
+    // Act — filtro combinado por género e idioma
+    sut.applyFilters(BookFilters(genre = "non_fiction", language = "english"))
+    val results = awaitBooks { it.isNotEmpty() && it.all { b -> b.genre == "non_fiction" } }
+
+    // Assert
+    assertEquals(2, results.size)
+    assertTrue(results.all { it.language == "english" })
+}
+
+@Test
+fun ts03_ac3_sort_byTitleAscending_shouldReorderCatalog() {
+    // Act — ordenamiento por criterio seleccionado
+    sut.applyFilters(BookFilters(sort = SortOption.TITLE_ASC))
+    val results = awaitBooks { it.size == 4 && it.first().title == "Atomic Habits" }
+
+    // Assert
+    assertEquals(listOf("Atomic Habits", "Clean Code", "Don Quijote", "El Principito"),
+        results.map { it.title })
+}
+```
+
+**TS-04:** Se validó la vista de detalles completos de un libro (`TS04_BookDetailTest.kt`, JUnit sobre `BookDetailViewModel` y `BooksRepository`), comprobando la información esencial en el listado, la carga de la vista de detalles con sinopsis y costos financieros (precio de compra y de venta), y la desactivación/reactivación del producto desde la gestión.
+
+```kotlin
+@Test
+fun ts04_ac2_bookDetail_shouldExposeSynopsisAndFinancialCosts() = runBlocking {
+    // Arrange
+    val sut = BookDetailViewModel(repository, bookId = 7)
+
+    // Act — la vista de detalles carga la información completa
+    val book = withTimeout(5_000) { sut.book.first { it != null } }!!
+
+    // Assert — sinopsis y costos financieros (compra y venta)
+    assertEquals("A handbook of agile software craftsmanship", book.description)
+    assertEquals(20.0, book.purchasePrice, 0.001)
+    assertEquals(33.0, book.price,         0.001)
+}
+```
+
+**TS-05:** Se validó la integración de las estadísticas y análisis de órdenes (`TS05_TS06_TS07_OrdersTests.kt`, JUnit sobre `OrderRepository` con un doble de prueba del servicio de órdenes), comprobando el total de órdenes registradas y las ganancias generadas, el conteo de órdenes pendientes y completadas, y el valor promedio por orden, con las mismas fórmulas que presenta la vista de gestión de órdenes.
+
+```kotlin
+@Test
+fun ts05_ac2_orderStats_shouldCountPendingAndCompleted() = runBlocking {
+    // Act
+    val orders = (repository.getAllOrders() as Resource.Success).data!!
+
+    // Assert — resumen del flujo de trabajo por estado
+    val pending   = orders.count { it.status.equals("pending",   ignoreCase = true) }
+    val completed = orders.count { it.status.equals("delivered", ignoreCase = true) }
+    assertEquals(2, pending)
+    assertEquals(2, completed)
+}
+
+@Test
+fun ts05_ac3_orderStats_shouldComputeAverageOrderValue() = runBlocking {
+    // Act
+    val orders = (repository.getAllOrders() as Resource.Success).data!!
+
+    // Assert — valor promedio de las órdenes
+    val average = orders.sumOf { it.total } / orders.size
+    assertEquals(165.0, average, 0.001)
+}
+```
+
+**TS-06:** Se validó la búsqueda y el filtrado de órdenes (`TS05_TS06_TS07_OrdersTests.kt`), comprobando la búsqueda por código de pedido, la búsqueda por nombre de cliente con todas sus órdenes asociadas, y la presentación del mensaje de estado vacío cuando ningún registro coincide con los criterios ingresados.
+
+```kotlin
+@Test
+fun ts06_ac1_searchOrders_byClientName_shouldReturnAllClientOrders() = runBlocking {
+    // Act
+    val result = repository.searchOrders("Ana Torres")
+
+    // Assert — todas las órdenes asociadas al cliente
+    val orders = (result as Resource.Success).data!!
+    assertEquals(2, orders.size)
+    assertTrue(orders.all { it.userFullName == "Ana Torres" })
+}
+
+@Test
+fun ts06_ac2_searchOrders_whenNoMatch_shouldReturnEmptyStateMessage() = runBlocking {
+    // Act — búsqueda sin coincidencias
+    val result = repository.searchOrders("inexistente")
+
+    // Assert — mensaje claro de que no se encontraron órdenes
+    assertTrue(result is Resource.Error)
+    assertTrue(result.message!!.contains("No se encontraron órdenes"))
+}
+```
+
+**TS-07:** Se validó la presentación estructurada de la tabla de órdenes (`TS05_TS06_TS07_OrdersTests.kt`), comprobando que cada orden expone sus atributos esenciales para la gestión (ID, código, fecha, cliente asociado, valor total y estado) y que el mapeo es seguro ante órdenes sin datos de envío (recojo en tienda).
+
+```kotlin
+@Test
+fun ts07_ac1_orderList_shouldExposeEssentialAttributes() = runBlocking {
+    // Act
+    val orders = (repository.getAllOrders() as Resource.Success).data!!
+    val first = orders.first()
+
+    // Assert — ID, código, fecha, cliente, total y estado presentes
+    assertEquals(1,            first.id)
+    assertEquals("ORD-001",    first.code)
+    assertEquals("Ana Torres", first.userFullName)
+    assertEquals("pending",    first.status)
+    assertEquals(100.0,        first.total, 0.001)
+    assertNotNull(first.date)
+}
+```
+
+**TS-08:** Se validó la búsqueda y el filtrado de libros dentro del inventario (`TS08_InventorySearchTest.kt`, JUnit sobre `BooksRepository.streamBooks`), comprobando que sin término de búsqueda se presenta el inventario completo, que la búsqueda por título o autor limita los resultados, el caso sin coincidencias, y la aplicación de filtros por género e idioma.
+
+```kotlin
+@Test
+fun ts08_ac1_streamBooks_whenQueryMatchesTitle_shouldReturnOnlyMatches() = runBlocking {
+    // Act
+    val books = repository.streamBooks(flowOf("quijote")).first()
+
+    // Assert — solo los libros que coinciden con el término
+    assertEquals(1, books.size)
+    assertEquals("Don Quijote", books.first().title)
+}
+
+@Test
+fun ts08_ac2_filterByLanguage_shouldShowOnlyMatchingBooks() = runBlocking {
+    // Act
+    val books = repository.getBooks().first()
+        .filter { it.language.equals("español", ignoreCase = true) }
+
+    // Assert
+    assertEquals(2, books.size)
+    assertTrue(books.all { it.language == "español" })
+}
+```
+
+**TS-09:** Se validó la visualización del inventario y el aumento de stock (`TS09_StockManagementTest.kt`, JUnit sobre `StockViewModel` y `BooksRepository`), comprobando la presentación estructurada de los detalles de cada libro (título, autor, género, idioma, stock y precio de compra), la validación de la cantidad como entero positivo, el cálculo del costo total de adquisición (precio de compra × cantidad) y la actualización del inventario local tras la confirmación del backend.
+
+```kotlin
+@Test
+fun ts09_ac2_totalToPay_shouldBePurchasePriceTimesQuantity() = runBlocking {
+    // Arrange
+    val sut = StockViewModel(repository, bookId = 1)
+
+    // Act — costo total de la adquisición (precio de compra * cantidad)
+    sut.setQty(5)
+    val total = withTimeout(5_000) { sut.totalToPay.first { it > 0.0 } }
+
+    // Assert — 20.0 * 5 = 100.0
+    assertEquals(100.0, total, 0.001)
+}
+
+@Test
+fun ts09_ac2_addStock_shouldUpdateLocalInventory() = runBlocking {
+    // Act — el backend confirma y el inventario local se actualiza
+    val updated = repository.addStock(id = 1, qty = 5)
+
+    // Assert
+    assertEquals(15, updated.stock)
+    assertEquals(5, fakeService.lastRequest?.quantityToAdd)
+}
+```
+
+**TS-12:** Se validó la gestión de la configuración del perfil del administrador (`TS12_TS13_SettingsViewModelTest.kt`, JUnit sobre `SettingsViewModel` con un doble de prueba de `UserAdminService`), comprobando la presentación de la información de la cuenta (nombre, usuario, correo y pin), la detección de sesión expirada, la actualización de los datos del perfil, la validación de campos obligatorios antes de guardar y el cierre de sesión con limpieza de credenciales.
+
+```kotlin
+@Test
+fun ts12_ac1_loadAdminData_shouldPresentProfileInformation() = runBlocking {
+    // Arrange
+    val sut = buildSut()
+
+    // Act
+    sut.loadAdminData()
+
+    // Assert — nombre, usuario y correo del administrador
+    assertEquals("Admin Livria",     sut.uiState.value.display)
+    assertEquals("admin01",          sut.uiState.value.username)
+    assertEquals("admin@livria.com", sut.uiState.value.email)
+}
+
+@Test
+fun ts12_ac2_saveChanges_whenFieldsBlank_shouldSetValidationError() {
+    // Arrange — perfil sin completar
+    val sut = buildSut()
+
+    // Act
+    sut.saveChanges()
+
+    // Assert — el sistema valida antes de guardar
+    assertEquals(
+        "Por favor completa todos tus datos antes de guardar.",
+        sut.uiState.value.saveError
+    )
+}
+```
+
+**TS-13:** Se validó la gestión de la configuración de la aplicación (`TS12_TS13_SettingsViewModelTest.kt`), comprobando la activación y desactivación de las notificaciones internas, de las alertas por correo electrónico y de la función de autoguardado, así como que un ajuste desconocido no altera la configuración existente.
+
+```kotlin
+@Test
+fun ts13_ac1_updateApplicationSetting_shouldToggleNotifications() {
+    // Arrange — las notificaciones inician habilitadas
+    val sut = buildSut()
+    assertTrue(sut.uiState.value.receiveNotifications)
+
+    // Act
+    sut.updateApplicationSetting("notifications", false)
+
+    // Assert
+    assertFalse(sut.uiState.value.receiveNotifications)
+}
+
+@Test
+fun ts13_ac3_updateApplicationSetting_shouldToggleAutoSave() {
+    // Arrange — el autoguardado inicia desactivado
+    val sut = buildSut()
+    assertFalse(sut.uiState.value.autoSaveEnabled)
+
+    // Act
+    sut.updateApplicationSetting("autoSave", true)
+
+    // Assert
+    assertTrue(sut.uiState.value.autoSaveEnabled)
+}
+```
+
+**TS-14:** Se validó la integración del inicio de sesión del administrador (`TS14_LoginViewModelTest.kt`, JUnit sobre `LoginViewModel` con un doble de prueba de `AuthService` y el `TokenManager` real), comprobando la autenticación exitosa con persistencia del token y el id del administrador, el envío correcto de las credenciales y el pin, el rechazo con campos vacíos sin llamar al servicio, el manejo de credenciales incorrectas (401) y del rechazo reportado por el backend, y la limpieza del error al corregir el formulario.
+
+```kotlin
+@Test
+fun ts14_ac1_signInAdmin_whenSuccessful_shouldPersistAuthData() = runBlocking {
+    // Arrange
+    val (sut, _) = buildSut(FakeAuthService.Mode.SUCCESS)
+    sut.fillValidCredentials()
+
+    // Act
+    sut.signInAdmin()
+
+    // Assert — el token y el id del admin quedan persistidos
+    assertEquals("valid-jwt-token", tokenManager.getToken())
+    assertEquals(7, tokenManager.getAdminId())
+}
+
+@Test
+fun ts14_ac2_signInAdmin_whenCredentialsInvalid_shouldDenyAccess() = runBlocking {
+    // Arrange — el backend rechaza con 401
+    val (sut, _) = buildSut(FakeAuthService.Mode.INVALID_CREDENTIALS)
+    sut.fillValidCredentials()
+
+    // Act
+    val result = sut.signInAdmin()
+
+    // Assert — se notifica que las credenciales son incorrectas
+    assertFalse(result)
+    assertEquals(
+        "Tus credenciales son incorrectas. Verifica tu información.",
+        sut.uiState.error
+    )
+    assertNull(tokenManager.getToken())
 }
 ```
 
