@@ -5453,6 +5453,140 @@ Resultado esperado: El usuario llega al paso de pago con CCI visible, adjunta el
 
 Resultado obtenido: El usuario llega al paso de pago con CCI visible, adjunta el comprobante de transferencia y envía la solicitud de compra.
 
+Adicionalmente, para la Landing Page se implementaron pruebas de sistema automatizadas End-to-End con Selenium IDE, exportadas a Java/JUnit (ubicadas en `livria-landing-page/livria-testing/`). Estas pruebas se ejecutan con ChromeDriver contra el despliegue público de la landing en GitHub Pages, validando los flujos de navegación e interacción de las user stories US01 a US10 desde la perspectiva del visitante.
+
+US01 – Presentar Servicios de Livria (`US01FUNCIONALIDADESTest.java`)
+Resultado esperado: El visitante puede llegar a la sección de servicios desde el encabezado y desde el pie de página, y la sección con las funcionalidades de Livria se presenta correctamente.
+
+```java
+@Test
+public void uS01FUNCIONALIDADES() {
+  driver.get("https://upc-pre-202610-1asi0732-12278-defontes.github.io/livria-landing-page/");
+  driver.manage().window().setSize(new Dimension(1552, 832));
+  driver.findElement(By.linkText("Servicios")).click();
+  driver.findElement(By.linkText("Sobre nosotros")).click();
+  driver.findElement(By.linkText("Contáctanos")).click();
+  driver.findElement(By.linkText("Inicio")).click();
+  driver.findElement(By.cssSelector(".footer__column:nth-child(2) li:nth-child(2) > .footer__link")).click();
+}
+```
+
+Resultado obtenido: La sección de servicios es accesible desde el encabezado y el footer en todas las secciones de la página.
+
+US02 – Acceder a la sección "Sobre Nosotros" (`US02SOBRENOSOTROSTest.java`)
+Resultado esperado: El visitante accede a la sección "Sobre Nosotros" desde la navegación principal y desde el pie de página.
+
+```java
+driver.findElement(By.linkText("Sobre nosotros")).click();
+driver.findElement(By.cssSelector(".footer__column:nth-child(2) li:nth-child(3) > .footer__link")).click();
+```
+
+Resultado obtenido: La sección "Sobre Nosotros" se presenta correctamente desde ambos puntos de acceso.
+
+US03 – Cambiar de idioma en la Landing Page (`US03CAMBIOIDIOMATest.java`)
+Resultado esperado: Al accionar el selector de idioma, el contenido se presenta en español (ES) y al accionarlo nuevamente se presenta en inglés (EN).
+
+```java
+driver.findElement(By.cssSelector(".header__language-selector > .language-btn:nth-child(1)")).click();
+driver.findElement(By.cssSelector(".header__language-selector > .language-btn:nth-child(2)")).click();
+```
+
+Resultado obtenido: El selector de idioma alterna correctamente el contenido localizado entre español e inglés.
+
+US04 – Visualizar la sección "Home" (`US04HOMETest.java`)
+Resultado esperado: El visitante retorna al inicio desde la navegación (incluyendo el menú hamburguesa en resolución reducida) y desde el logotipo de Livria.
+
+```java
+driver.manage().window().setSize(new Dimension(786, 816)); // resolución móvil
+driver.findElement(By.id("burgerMenu")).click();
+driver.findElement(By.linkText("Inicio")).click();
+driver.findElement(By.cssSelector("a > img")).click(); // logo
+```
+
+Resultado obtenido: La sección de inicio se presenta de forma inmediata desde el menú y desde el logotipo.
+
+US05 – Acceder a la sección "Contáctanos" (`US05CONTCTANOSTest.java`)
+Resultado esperado: El visitante accede a la sección "Contáctanos" desde el menú de navegación, incluyendo el menú hamburguesa en pantallas reducidas.
+
+```java
+driver.findElement(By.cssSelector("#burgerMenu > span:nth-child(2)")).click();
+driver.findElement(By.linkText("Contáctanos")).click();
+```
+
+Resultado obtenido: La sección "Contáctanos" se presenta para su interacción inmediata.
+
+US06 – Navegar de manera simple entre secciones (`US06NAVEGACINTest.java`)
+Resultado esperado: El componente de navegación principal permite recorrer todas las secciones (Servicios, Sobre nosotros, Contáctanos) sin interrupciones, tanto en escritorio como mediante el menú hamburguesa.
+
+```java
+driver.findElement(By.linkText("VER MÁS +")).click();
+driver.findElement(By.id("burgerMenu")).click();
+driver.findElement(By.linkText("Servicios")).click();
+driver.findElement(By.id("burgerMenu")).click();
+driver.findElement(By.linkText("Sobre nosotros")).click();
+driver.findElement(By.id("burgerMenu")).click();
+driver.findElement(By.linkText("Contáctanos")).click();
+```
+
+Resultado obtenido: La navegación entre todas las secciones funciona correctamente y el componente de navegación permanece disponible en todo momento.
+
+US07 – Ver un diseño atractivo de la landing page (`US07DISEOTest.java`)
+Resultado esperado: Los elementos visuales de las distintas secciones (navegación, tarjetas de servicios) se cargan y presentan de forma consistente al recorrer la página.
+
+```java
+driver.manage().window().setSize(new Dimension(970, 816));
+driver.findElement(By.id("burgerMenu")).click();
+driver.findElement(By.linkText("Inicio")).click();
+driver.findElement(By.linkText("Servicios")).click();
+driver.findElement(By.linkText("Sobre nosotros")).click();
+driver.findElement(By.cssSelector(".service-card:nth-child(5) > .service-card__title")).click();
+```
+
+Resultado obtenido: Los componentes visuales se presentan de forma consistente en las distintas secciones recorridas.
+
+US08 – Redirigir a la descarga de la aplicación móvil (`US08DESCARGATest.java`)
+Resultado esperado: Al accionar el botón de descarga, el sistema abre la redirección hacia la tienda de aplicaciones en una nueva ventana.
+
+```java
+vars.put("window_handles", driver.getWindowHandles());
+driver.findElement(By.linkText("¡Descarga ahora!")).click();
+vars.put("win4065", waitForWindow(2000)); // se valida la apertura de la nueva ventana
+```
+
+Resultado obtenido: El botón de descarga abre una nueva ventana con la redirección hacia la tienda correspondiente.
+
+US09 – Acceder a las redes sociales de Livria (`US09REDESTest.java`)
+Resultado esperado: Cada enlace de red social del pie de página abre el perfil oficial de Livria en una ventana externa, y el visitante puede retornar a la landing.
+
+```java
+vars.put("window_handles", driver.getWindowHandles());
+driver.findElement(By.cssSelector(".footer__social-link:nth-child(1)")).click();
+vars.put("win4848", waitForWindow(2000));
+vars.put("root", driver.getWindowHandle());
+driver.switchTo().window(vars.get("win4848").toString()); // red social en ventana externa
+driver.switchTo().window(vars.get("root").toString());    // retorno a la landing
+```
+
+Resultado obtenido: Los cuatro enlaces de redes sociales abren sus perfiles en ventanas externas y la landing permanece disponible.
+
+US10 – Navegar en el footer de la Landing Page (`US10FOOTERTest.java`)
+Resultado esperado: Desde el pie de página el visitante puede navegar a todas las secciones de la landing y a las páginas legales (Términos y Condiciones, Política de Privacidad, Política de Cookies, Libro de Reclamaciones, Acuerdo SaaS, Ayuda y Preguntas Frecuentes), con retorno al inicio desde cada una.
+
+```java
+driver.findElement(By.linkText("Términos y Condiciones")).click();
+driver.findElement(By.id("backHome")).click();
+driver.findElement(By.linkText("Política de Privacidad")).click();
+driver.findElement(By.id("backHome")).click();
+driver.findElement(By.linkText("Política de Cookies")).click();
+driver.findElement(By.id("backHome")).click();
+driver.findElement(By.linkText("Libro de Reclamaciones")).click();
+driver.findElement(By.id("backHome")).click();
+driver.findElement(By.linkText("Acuerdo SaaS")).click();
+driver.findElement(By.linkText("← Volver al inicio")).click();
+```
+
+Resultado obtenido: Todos los enlaces del pie de página presentan la sección o página solicitada y permiten el retorno al punto de entrada principal.
+
 ## 6.2. Static Testing & Verification
 ### 6.2.1. Static Code Analysis
 En esta sección se examinan las metodologías de análisis estático, herramientas esenciales para garantizar la integridad, seguridad y calidad del software mediante la inspección exhaustiva del código fuente sin necesidad de ejecución. A diferencia de las pruebas dinámicas, el análisis estático permite realizar un escaneo profundo en busca de vulnerabilidades, deudas técnicas y errores de sintaxis desde el momento mismo de la escritura del código. Adoptar este enfoque permite una detección proactiva de defectos; al interceptar fallas en las fases iniciales del desarrollo, se reduce drásticamente la complejidad y el costo de mantenimiento, asegurando que cada línea de código cumpla con los estándares de calidad antes de su puesta en producción.
