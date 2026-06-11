@@ -4981,6 +4981,44 @@ public void US22_AC2_UpdateSubscription_ToFreePlan_ShouldResetHasPayed()
 }
 ```
 
+**TS-11:** Se validó la lógica de estadísticas de negocio en el repositorio de libros de la aplicación de administración (Kotlin), comprobando la distribución cuantitativa del inventario por género literario, el valor monetario agregado por género y la identificación de los libros con mayor volumen de stock con límite de resultados, utilizando JUnit con dobles de prueba (fakes) del DAO y del servicio remoto.
+
+```kotlin
+@Test
+fun getGenreInventoryCount_debe_mapear_el_conteo_de_generos_correctamente() = testScope.runTest {
+    fakeDao.genreCounts = listOf(
+        GenreCount(genre = "Ficción", count = 50),
+        GenreCount(genre = "Historia", count = 30),
+        GenreCount(genre = "Ciencia", count = 20)
+    )
+
+    val result = repository.getGenreInventoryCount()
+
+    val expected = mapOf(
+        "Ficción" to 50,
+        "Historia" to 30,
+        "Ciencia" to 20
+    )
+
+    assertEquals(expected, result)
+}
+
+@Test
+fun getTopBooksByStock_debe_devolver_libros_de_dominio_y_limitar_el_resultado() = testScope.runTest {
+    fakeDao.topBooks = listOf(
+        BookEntity(1, "Title A", "Desc", "Author A", "Ficción", "ES", 10.0, 5.0, 100, "cover1"),
+        BookEntity(2, "Title B", "Desc", "Author B", "Ciencia", "EN", 20.0, 8.0, 50, "cover2"),
+        BookEntity(3, "Title C", "Desc", "Author C", "Misterio", "ES", 15.0, 6.0, 20, "cover3")
+    )
+
+    val result = repository.getTopBooksByStock(limit = 2)
+
+    assertEquals(2, result.size)
+    assertEquals(1, result.first().id)
+    assertEquals(50, result[1].stock)
+}
+```
+
 **US-26:** Se validó la lógica de filtrado y ordenamiento del catálogo de libros, comprobando el ordenamiento alfabético y por precio, el filtrado por idioma y género con coincidencias exactas, el resultado vacío cuando ningún libro cumple el criterio y el restablecimiento de filtros al estado original del catálogo.
 
 ```csharp
