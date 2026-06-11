@@ -4694,15 +4694,42 @@ El propósito principal del video about the product es persuadir a los usuarios 
 
 Las pruebas unitarias de Livria fueron diseñadas para validar el correcto funcionamiento de las entidades principales y la lógica de negocio del sistema de manera aislada. Estas pruebas permiten asegurar la integridad de módulos críticos relacionados con libros, usuarios, carrito de compras, comunidades y gestión de inventario, verificando que cada componente responda correctamente ante distintos escenarios funcionales. Las validaciones fueron implementadas utilizando herramientas como xUnit/NUnit, JUnit y flutter test según la tecnología empleada en cada componente del ecosistema Livria.
 
-**TS-10:** Se validó la entidad Book comprobando la creación correcta de libros, validaciones de género e idioma, gestión de stock y activación/desactivación del inventario dentro del sistema.
+**TS-10:** Se validó la entidad Book (`TS10_AddBookTests.cs`, 21 pruebas xUnit) comprobando la creación correcta de libros con todos los campos requeridos, la generación automática del precio de compra por género y del precio de venta (165% del precio de compra), las validaciones de género, idioma y stock, la gestión de stock y la activación/desactivación del inventario dentro del sistema.
 
-<p align="center">
-  <img src="https://imgur.com/o9U31zo.png" alt="12171">
-</p>
+```csharp
+[Fact]
+public void TS10_AC1_Book_WhenCreated_ShouldBeActiveByDefault()
+{
+    // Arrange & Act
+    var book = BuildBook();
 
-<p align="center">
-  <img src="https://imgur.com/5ljnAhw.png" alt="12171">
-</p>
+    // Assert — el libro recién registrado está activo en el inventario
+    Assert.True(book.IsActive,
+        "AC1: un libro recién registrado debe aparecer en el listado del inventario");
+}
+
+[Fact]
+public void TS10_AC1_Book_WhenCreated_SalePriceShouldBe165PercentOfPurchasePrice()
+{
+    // Arrange & Act
+    var book = BuildBook();
+
+    // Assert — SalePrice = PurchasePrice * 1.65
+    var expectedSalePrice = book.PurchasePrice * 1.65m;
+    Assert.Equal(expectedSalePrice, book.SalePrice);
+}
+
+[Fact]
+public void TS10_AC2_Book_WhenGenreIsInvalid_ShouldThrowArgumentException()
+{
+    // Arrange & Act & Assert
+    var ex = Assert.Throws<ArgumentException>(() =>
+        BuildBook(genre: "drama"));
+
+    Assert.Contains("género", ex.Message,
+        StringComparison.OrdinalIgnoreCase);
+}
+```
 
 **US-12:** Se validó el correcto funcionamiento de las preferencias de usuario, comprobando que los libros puedan agregarse a favoritos o exclusiones sin duplicados y manteniendo coherencia entre ambas listas.
 
@@ -5056,15 +5083,41 @@ public void US26_AC3_ResetFilters_ShouldReturnFullCatalog()
 
 Las pruebas de integración en Livria tuvieron como objetivo validar la comunicación entre los distintos módulos del sistema y asegurar la correcta interoperabilidad entre frontend, backend y base de datos. Estas pruebas permitieron comprobar el flujo completo de funcionalidades críticas como autenticación, compras, recomendaciones, comunidades y sincronización de inventario mediante los servicios RESTful implementados en .NET Core y desplegados en Microsoft Azure.
 
-**TS-10:** Se validó la integración entre el formulario de registro de libros, la lógica de validación y el servicio de inventario, comprobando el almacenamiento correcto de datos, validaciones de campos y comunicación exitosa con el contexto de stock.
+**TS-10:** Se validó la integración entre el formulario de registro de libros, la lógica de validación y el servicio de inventario (`TS10_AddBookViewModelTest.kt`, 15 pruebas instrumentadas con JUnit sobre `AddBookViewModel` y un doble de prueba de `InventoryService`), comprobando el estado inicial del formulario, las opciones válidas de género e idioma, las restricciones de entrada (stock solo numérico, límite de caracteres), el rechazo del envío con campos incompletos y la comunicación con el contexto de stock.
 
-<p align="center">
-  <img src="https://imgur.com/2aR0jac.png" alt="12171">
-</p>
+```kotlin
+@Test
+fun ts10_ac2_validateForm_whenAllFieldsEmpty_shouldSetErrorMessage() {
+    // Act
+    sut.submitBook()
 
-<p align="center">
-  <img src="https://imgur.com/a0b9fV0.png" alt="12171">
-</p>
+    // Assert — AC2: el sistema rechaza el envío con campos vacíos
+    assertNotNull(sut.uiState.errorMessage)
+    assertEquals(
+        "Todos los campos son obligatorios.",
+        sut.uiState.errorMessage
+    )
+}
+
+@Test
+fun ts10_ac2_onGenreSelected_whenInvalidGenre_shouldNotUpdate() {
+    // Arrange & Act
+    sut.onGenreSelected("drama") // no está en GENRE_OPTIONS
+
+    // Assert
+    assertEquals("", sut.uiState.genre)
+}
+
+@Test
+fun ts10_ac2_onStockChange_whenNegativeString_shouldNotUpdate() {
+    // El campo solo acepta dígitos — el signo '-' no es dígito
+    // Arrange & Act
+    sut.onStockChange("-5")
+
+    // Assert
+    assertEquals("", sut.uiState.stock)
+}
+```
 
 **US-12:** Se validó la integración del sistema de recomendaciones con autenticación, exclusiones y catálogo de libros, comprobando la generación de sugerencias personalizadas y el filtrado correcto de libros excluidos por el usuario.
 
@@ -5186,19 +5239,26 @@ Las pruebas de integración en Livria tuvieron como objetivo validar la comunica
 
 Las pruebas basadas en Behavior-Driven Development (BDD) fueron utilizadas en Livria para validar el comportamiento esperado del sistema desde la perspectiva del usuario final. Estas pruebas se redactaron siguiendo el enfoque Given-When-Then, permitiendo describir escenarios funcionales claros y alineados con los criterios de aceptación definidos en las User Stories del proyecto.
 
-**TS-10:** Se validó mediante escenarios BDD el proceso de registro de libros en inventario, comprobando campos obligatorios, creación exitosa y validaciones de género, idioma y stock según los criterios de aceptación definidos.
+**TS-10:** Se validó mediante escenarios BDD (`TS10_AnadirLibroInventario.feature` + `TS10_AnadirLibroInventarioSteps.cs`, SpecFlow + xUnit, 5 escenarios) el proceso de registro de libros en inventario, comprobando campos obligatorios, creación exitosa y validaciones de género, idioma y stock según los criterios de aceptación definidos.
 
-<p align="center">
-  <img src="https://imgur.com/AoWR2uS.png" alt="12171">
-</p>
+```gherkin
+Feature: TS10 – Añadir un libro al inventario
+  Como developer
+  Quiero agregar un libro nuevo al inventario de Livria
+  Para ampliar el catálogo y aumentar las ventas
 
-<p align="center">
-  <img src="https://imgur.com/G2SrAZK.png" alt="12171">
-</p>
+  Scenario: TS10_AC2a – Registro exitoso de un nuevo libro
+    Given TS10 el desarrollador proporciona un libro con título "Clean Code" autor "Robert C. Martin" género "non_fiction" idioma "english" y stock 10
+    When TS10 el sistema procesa el alta del nuevo libro
+    Then TS10 el libro debe ser creado con estado activo
+    And TS10 el libro debe tener precio de venta igual al 165% del precio de compra
+    And TS10 el libro debe aparecer en el listado del inventario
 
-<p align="center">
-  <img src="https://imgur.com/WVnXifS.png" alt="12171">
-</p>
+  Scenario: TS10_AC2b – Registro rechazado por género inválido
+    Given TS10 el desarrollador proporciona un libro con título "Drama Book" autor "Autor Test" género "drama" idioma "english" y stock 5
+    When TS10 el sistema procesa el alta del nuevo libro
+    Then TS10 el sistema debe rechazar el libro con un error de género inválido
+```
 
 **US-12:** Se validó mediante escenarios BDD la interacción del usuario con el sistema de recomendaciones, comprobando el registro correcto de preferencias positivas y negativas, así como la gestión de favoritos y exclusiones según el comportamiento del lector. 
 
