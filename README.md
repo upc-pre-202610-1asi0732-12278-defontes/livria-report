@@ -39,7 +39,7 @@
 
 ---
 
-<p align="center"><strong>Mes y Año:</strong> Abril 2026</p>
+<p align="center"><strong>Mes y Año:</strong> Junio 2026</p>
 
 ## Registro de Versiones del Informe
 
@@ -47,6 +47,7 @@
 |---------|-------|-------|-----------------------------|
 | 1.0 | 24-04-2026 | Todos | Creación del informe. Inclusión de Capítulos I, II, III, IV y V (Sprint 1). |
 | 1.1 | 13-05-2026 | Todos | Avance TP1. Inclusión de Capítulos VI y VII. Correcciones y mejoras sobre artefactos previos. |
+| 1.2 | 12-06-2026 | Todos | Avance TB2. Inclusión de Capítulos VII y VIII. Correcciones y mejoras sobre artefactos previos. |
 
 ---
 
@@ -6071,34 +6072,102 @@ Para garantizar la robustez de Livria, especialmente al gestionar datos privados
 
 ### 6.2.2. Reviews
 
-Las revisiones de código (*Code Reviews*) constituyen un pilar fundamental en el flujo de trabajo ágil de Defontes. Este proceso asegura de forma colaborativa que todo incremento de software en la plataforma Livria no solo sea funcional, sino que mantenga una alta legibilidad, cumpla con la arquitectura táctica DDD (Domain-Driven Design), respete los estándares de código limpio (*Clean Code*) y no introduzca vulnerabilidades de seguridad en el ecosistema.
+En esta sección se detallan las plataformas utilizadas para la captura de muestras experimentales y la recolección de métricas sobre el comportamiento de los usuarios en la aplicación móvil de Livria. Asimismo, se presentan de forma gráfica y secuencial los 10 experimentos diseñados por el equipo de Defontes para evaluar la usabilidad, conversión y engagement de la plataforma.
 
-A continuación, se detalla la estructura, las directrices y los criterios de aceptación del proceso de revisión implementado por el equipo:
+**1. Plataforma de Toma de Muestras Experimento móvil**
+Para la recolección y análisis de datos en tiempo real de la aplicación móvil (desarrollada en Flutter), el equipo seleccionó **Google Analytics (a través del SDK de Firebase Cloud)**. Esta plataforma permite capturar eventos automáticos y personalizados (*Custom Events*), definir propiedades de usuario (como tipo de cuenta *Free* o *Premium*) y estructurar embudos de comportamiento con alta precisión estadística.
 
-**1. Tipos de Revisiones Adoptadas**
-* **Revisión de Código por Pares (Peer Review):** Todo desarrollador de Defontes que finalice una tarea o *User Story* debe someter su código a la inspección de otro miembro del equipo. Se evalúa la claridad de la lógica y la facilidad de mantenimiento de la solución propuesta.
-* **Revisión Automática Integrada:** Antes de la intervención humana, el código se somete a un filtrado automatizado local y centralizado. Se utiliza **SonarQube** en los entornos locales (Rider y VS Code) para detectar *Code Smells* y la suite de **GitHub CodeQL / GitHub Actions** en la nube para asegurar que no se suban credenciales expuestas (como tokens de EmailJS o llaves de Stripe).
-* **Revisiones de Arquitectura y Negocio (Sprints/Hitos):** Al cierre de iteraciones críticas, el equipo realiza breves sesiones síncronas de revisión grupal para evaluar la correcta separación de capas (Domain, Application, Infrastructure) en features complejos, como el módulo de restricción y cálculo de envíos exclusivo para Lima.
+<p align="center">
+  <img src="https://i.imgur.com/Vm9EgSH.jpg" alt="Google Analytics">
+</p>
 
-**2. Proceso de Revisión en el Flujo de Trabajo (GitFlow)**
-El equipo sigue una secuencia rigurosa a través de la plataforma GitHub para garantizar que ningún código defectuoso llegue a las ramas estables (`develop` o `main`):
-* **Creación de Pull Requests (PR):** El desarrollador abre un PR con una plantilla estructurada que exige: descripción clara del cambio introducido, id de la historia de usuario asociada, capturas de pantalla o videos del comportamiento en el frontend (Flutter o Web) y el listado de pruebas manuales/unitarias ejecutadas.
-* **Uso del Checklist de Revisión:** Los revisores designados no evalúan el código de forma subjetiva; se apoyan en una lista de verificación estricta:
-    * *¿El código sigue las convenciones de nomenclatura establecidas (PascalCase para clases de C# e interfaces, camelCase para Dart)?*
-    * *¿Se ha implementado el control de errores adecuado sin dejar bloques catch vacíos?*
-    * *¿Las nuevas interfaces o flujos (como el listado de comunidades en el perfil del lector) son lo suficientemente abstractos y limpios?*
-    * *¿Se evita el hardcoding de datos confidenciales o endpoints?*
-* **Feedback Constructivo y Remediación:** Las observaciones en el PR se realizan directamente sobre las líneas de código afectadas en GitHub. El tono de la comunicación es empático y técnico. El autor del código debe resolver de manera mandatoria cada uno de los comentarios y alertas linter antes de volver a solicitar la aprobación.
-* **Políticas de Aprobación (Branch Protection):** Las ramas principales están protegidas por reglas del repositorio. Un Pull Request requiere obligatoriamente **el voto aprobatorio de al menos un revisor calificado** (par de desarrollo) y el paso exitoso (en verde) de todos los *checks* automatizados de integración continua (CI) para permitir el *Merge*.
 
-**3. Criterios de Aceptación para la Fusión de Código**
-Para que un incremento de software sea aceptado formalmente e integrado al repositorio común de Livria, debe cumplir con los siguientes umbrales:
-* **Calidad y Seguridad Absoluta:** Cero advertencias críticas o de alta prioridad activas en SonarQube. Ninguna alerta de seguridad de tipo inyección SQL o scripts maliciosos (XSS) detectada por CodeQL en las entradas proporcionadas por los usuarios.
-* **Compilación Exitosa:** El código propuesto no debe romper bajo ninguna circunstancia la compilación del proyecto multiplataforma en Flutter ni de la API backend en .NET Core.
-* **Cobertura y Pruebas:** Se verifica que el desarrollador haya adjuntado las pruebas correspondientes para la nueva lógica de negocio introducida, salvaguardando la estabilidad ante futuras refactorizaciones.
+**2. Estructura Gráfica de los Experimentos por Flujos**
 
-**4. Frecuencia de las Revisiones**
-Las revisiones se realizan de manera continua y asíncrona en el día a día del desarrollo; cada vez que una subtarea es completada, se genera un PR inmediato para evitar la acumulación masiva de líneas de código por revisar al final del ciclo. Asimismo, al término de cada entrega o hito, se realiza una revisión de cierre retrospectiva para ajustar las reglas del linter y optimizar la velocidad del flujo de trabajo del equipo.
+#### Flujo 1: Compra de Libros (Conversión y Fricción)
+
+##### Experimento 1: El Embudo de Compra (Checkout Drop-off)
+* **Objetivo:** Identificar en cuál paso del proceso de pago se experimenta la mayor pérdida de usuarios.
+* **Métrica Clave:** Tasa de conversión del checkout y porcentaje de abandono por pantalla.
+* **Secuencia de Eventos en Google Analytics:**
+
+
+
+##### Experimento 2: Fricción en la Validación del Pago (Flujo de Captura)
+
+* **Objetivo:** Medir el porcentaje de abandono cuando la aplicación solicita al usuario realizar una transferencia manual externa (copiar CCI) y subir el comprobante.
+* **Métrica Clave:** Tasa de abandono del CCI ($\frac{\text{Eventos upload\_payment\_receipt}}{\text{Eventos view\_payment\_instructions}}$).
+* **Secuencia de Eventos en Google Analytics:**
+
+
+
+##### Experimento 3: Intención vs. Compra Real (Carrito Abandonado)
+
+* **Objetivo:** Medir la brecha entre el interés inicial de adquisición de un libro y el cierre real de la transacción.
+* **Métrica Clave:** Ratio de Carritos Abandonados ($\frac{\text{Eventos purchase}}{\text{Eventos add\_to\_cart}}$).
+* **Secuencia de Eventos en Google Analytics:**
+
+
+
+#### Flujo 2: Creación y Participación en Comunidades (Engagement Social)
+
+##### Experimento 4: Efectividad del Paywall de Comunidades
+
+* **Objetivo:** Evaluar el interés de la audiencia en los clubes de lectura miendo cuántos usuarios intentan interactuar siendo *Free* y reaccionan ante el bloqueo comercial.
+* **Métrica Clave:** Tasa de conversión del Paywall ($\frac{\text{click\_subscribe\_plan}}{\text{view\_paywall\_screen}}$).
+* **Secuencia de Eventos en Google Analytics:**
+
+
+
+##### Experimento 5: Tasa de Conversión de Miembro Activo (Solo para Plan Community)
+
+* **Objetivo:** Medir el enganche y la conversión real dentro de las comunidades una vez que el usuario ya cuenta con el acceso permitido del Plan Community.
+* **Métrica Clave:** Ratio de Conversión de Miembros calificados.
+* **Secuencia de Eventos en Google Analytics:**
+
+
+##### Experimento 6: Nivel de Interacción (Creadores vs. Espectadores)
+
+* **Objetivo:** Clasificar el comportamiento de la audiencia dentro de las comunidades para evaluar la adopción de las funciones sociales.
+* **Métrica Clave:** Eventos de interacción por usuario al mes con el parámetro `community_id`.
+* **Secuencia de Eventos en Google Analytics:**
+
+
+
+#### Flujo 3: Recomendaciones (Personalización y Descubrimiento)
+
+##### Experimento 7: Efectividad del Motor de Recomendaciones (CTR)
+
+* **Objetivo:** Determinar la relevancia y el atractivo del algoritmo de recomendaciones para el público lector.
+* **Métrica Clave:** Click-Through Rate (CTR) de la sección de recomendados ($\frac{\text{clics en recomendados}}{\text{impresiones de la sección}}$).
+* **Secuencia de Eventos en Google Analytics:**
+
+
+
+##### Experimento 8: Impacto de las Recomendaciones en la Compra
+
+* **Objetivo:** Validar cuantitativamente si las sugerencias personalizadas actúan como un motor directo de ventas en la plataforma.
+* **Métrica Clave:** Porcentaje de compras totales con el parámetro `via_recommendation = true`.
+* **Secuencia de Eventos en Google Analytics:**
+
+
+
+#### Flujo 4: Usabilidad General, Audiencia y Salud de la App
+
+##### Experimento 9: Retención de Usuarios
+
+* **Objetivo:** Analizar la fidelidad recurrente de la audiencia literaria y la frecuencia de retorno orgánico a la aplicación.
+* **Métrica Clave:** Ratio DAU / MAU (Usuarios Activos Diarios / Usuarios Activos Mensuales).
+* **Secuencia de Eventos en Google Analytics:**
+
+
+
+##### Experimento 10: Fricción por Errores de Interfaz (Crash & UI Usability)
+
+* **Objetivo:** Monitorear de forma cuantitativa los eventos de frustración técnica o de diseño que degradan la experiencia de usuario.
+* **Métrica Clave:** Tasa de sesiones libres de errores / Errores por usuario activo.
+* **Secuencia de Eventos en Google Analytics:**
+
 
 
 ## 6.3. Validation Interviews
