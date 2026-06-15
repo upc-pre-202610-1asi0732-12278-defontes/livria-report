@@ -6087,44 +6087,43 @@ Para la recolección y análisis de datos en tiempo real de la aplicación móvi
 #### Flujo 1: Compra de Libros (Conversión y Fricción)
 
 ##### Experimento 1: El Embudo de Compra (Checkout Drop-off)
-* **Objetivo:** Identificar en cuál paso del proceso de pago se experimenta la mayor pérdida de usuarios.
-* **Métrica Clave:** Tasa de conversión del checkout y porcentaje de abandono por pantalla.
-* **Secuencia de Eventos en Google Analytics:**
+* *Objetivo:* Identificar en cuál paso del proceso de pago se experimenta la mayor pérdida de usuarios.
+* *Métrica Clave:* Tasa de conversión del checkout y porcentaje de abandono por pantalla.
+* *Secuencia de Eventos en Google Analytics:*
 ```text
 [ begin_checkout ] ──► [ add_shipping_info ] ──► [ add_payment_info ] ──► [ purchase ]
  (Clic en Comprar)       (Dirección de Envío)      (Método de Pago)        (Compra Exitosa)
 ```
 
 
-##### Experimento 2: Fricción en la Validación del Pago (Flujo de Captura)
+#### Experimento 2: Fricción en la Validación del Pago (Flujo de Captura)
 
-* **Objetivo:** Medir el porcentaje de abandono cuando la aplicación solicita al usuario realizar una transferencia manual externa (copiar CCI) y subir el comprobante.
-* **Métrica Clave:** Tasa de abandono del CCI ($\frac{\text{Eventos upload\_payment\_receipt}}{\text{Eventos view\_payment\_instructions}}$).
-* **Secuencia de Eventos en Google Analytics:**
+* *Objetivo:* Medir el porcentaje de abandono cuando la aplicación solicita al usuario realizar una transferencia manual externa (copiar CCI) y subir el comprobante.
+* *Métrica Clave:* Tasa de abandono del CCI = (`upload_payment_receipt` / `view_payment_instructions`) * 100%
+* *Secuencia de Eventos en Google Analytics:*
 ```text
 [ view_payment_instructions ] ─────────────────────────► [ upload_payment_receipt ]
  (Visualización de datos de cuenta/CCI)                    (Carga exitosa del comprobante)
 ```
 
+#### Experimento 3: Intención vs. Compra Real (Carrito Abandonado)
 
-##### Experimento 3: Intención vs. Compra Real (Carrito Abandonado)
-
-* **Objetivo:** Medir la brecha entre el interés inicial de adquisición de un libro y el cierre real de la transacción.
-* **Métrica Clave:** Ratio de Carritos Abandonados ($\frac{\text{Eventos purchase}}{\text{Eventos add\_to\_cart}}$).
-* **Secuencia de Eventos en Google Analytics:**
+* *Objetivo:* Medir la brecha entre el interés inicial de adquisición de un libro y el cierre real de la transacción.
+* *Métrica Clave:* Ratio de Carritos Abandonados = (`purchase` / `add_to_cart`) * 100%
+* *Secuencia de Eventos en Google Analytics:*
 ```text
 [ add_to_cart ] ────────────────────────────────────────► [ purchase ]
  (Libro añadido al carrito)                               (Transacción completada)
 ```
 
 
-#### Flujo 2: Creación y Participación en Comunidades (Engagement Social)
+### Flujo 2: Creación y Participación en Comunidades (Engagement Social)
 
-##### Experimento 4: Efectividad del Paywall de Comunidades
+#### Experimento 4: Efectividad del Paywall de Comunidades
 
-* **Objetivo:** Evaluar el interés de la audiencia en los clubes de lectura miendo cuántos usuarios intentan interactuar siendo *Free* y reaccionan ante el bloqueo comercial.
-* **Métrica Clave:** Tasa de conversión del Paywall ($\frac{\text{click\_subscribe\_plan}}{\text{view\_paywall\_screen}}$).
-* **Secuencia de Eventos en Google Analytics:**
+* *Objetivo:* Evaluar el interés de la audiencia en los clubes de lectura miendo cuántos usuarios intentan interactuar siendo *Free* y reaccionan ante el bloqueo comercial.
+* *Métrica Clave:* Tasa de conversión del Paywall = (`click_subscribe_plan` / `view_paywall_screen`) * 100%
+* *Secuencia de Eventos en Google Analytics:*
 ```text
 [ click_community_section ] ──► [ view_paywall_screen ] ──► [ click_subscribe_plan ]
  (Intento de acceso Free)        (Despliegue de oferta)       (Clic en botón de pago)
@@ -6133,9 +6132,9 @@ Para la recolección y análisis de datos en tiempo real de la aplicación móvi
 
 ##### Experimento 5: Tasa de Conversión de Miembro Activo (Solo para Plan Community)
 
-* **Objetivo:** Medir el enganche y la conversión real dentro de las comunidades una vez que el usuario ya cuenta con el acceso permitido del Plan Community.
-* **Métrica Clave:** Ratio de Conversión de Miembros calificados.
-* **Secuencia de Eventos en Google Analytics:**
+* *Objetivo:* Medir el enganche y la conversión real dentro de las comunidades una vez que el usuario ya cuenta con el acceso permitido del Plan Community.
+* *Métrica Clave:* Ratio de Conversión de Miembros calificados.
+* *Secuencia de Eventos en Google Analytics:*
 ```text
 [ view_community_detail ] ─────────────────────────────► [ join_community ]
  (Usuario Premium ve un club)                             (Se une formalmente al club)
@@ -6144,9 +6143,9 @@ Para la recolección y análisis de datos en tiempo real de la aplicación móvi
 
 ##### Experimento 6: Nivel de Interacción (Creadores vs. Espectadores)
 
-* **Objetivo:** Clasificar el comportamiento de la audiencia dentro de las comunidades para evaluar la adopción de las funciones sociales.
-* **Métrica Clave:** Eventos de interacción por usuario al mes con el parámetro `community_id`.
-* **Secuencia de Eventos en Google Analytics:**
+* *Objetivo:* Clasificar el comportamiento de la audiencia dentro de las comunidades para evaluar la adopción de las funciones sociales.
+* *Métrica Clave:* Eventos de interacción por usuario al mes con el parámetro `community_id`.
+* *Secuencia de Eventos en Google Analytics:*
 ```text
                            ┌──► [ post_in_community ] (Rol: Creador)
 [ view_community_detail ] ─┤
@@ -6158,9 +6157,9 @@ Para la recolección y análisis de datos en tiempo real de la aplicación móvi
 
 ##### Experimento 7: Efectividad del Motor de Recomendaciones (CTR)
 
-* **Objetivo:** Determinar la relevancia y el atractivo del algoritmo de recomendaciones para el público lector.
-* **Métrica Clave:** Click-Through Rate (CTR) de la sección de recomendados ($\frac{\text{clics en recomendados}}{\text{impresiones de la sección}}$).
-* **Secuencia de Eventos en Google Analytics:**
+* *Objetivo:* Determinar la relevancia y el atractivo del algoritmo de recomendaciones para el público lector.
+* *Métrica Clave:* Click-Through Rate (CTR) de la sección de recomendados ($\frac{\text{clics en recomendados}}{\text{impresiones de la sección}}$).
+* *Secuencia de Eventos en Google Analytics:*
 ```text
 [ view_item_list ] ────────────────────────────────────► [ click_recommended_book ]
  (Impresión del bloque "Para ti")                         (Clic con parámetro de tipo)
@@ -6169,9 +6168,9 @@ Para la recolección y análisis de datos en tiempo real de la aplicación móvi
 
 ##### Experimento 8: Impacto de las Recomendaciones en la Compra
 
-* **Objetivo:** Validar cuantitativamente si las sugerencias personalizadas actúan como un motor directo de ventas en la plataforma.
-* **Métrica Clave:** Porcentaje de compras totales con el parámetro `via_recommendation = true`.
-* **Secuencia de Eventos en Google Analytics:**
+* *Objetivo:* Validar cuantitativamente si las sugerencias personalizadas actúan como un motor directo de ventas en la plataforma.
+* *Métrica Clave:* Porcentaje de compras totales con el parámetro `via_recommendation = true`.
+* *Secuencia de Eventos en Google Analytics:*
 ```text
 [ click_recommended_book ] ──► [ add_to_cart ] ──► [ purchase ] (via_recommendation = true)
 ```
@@ -6181,9 +6180,9 @@ Para la recolección y análisis de datos en tiempo real de la aplicación móvi
 
 ##### Experimento 9: Retención de Usuarios
 
-* **Objetivo:** Analizar la fidelidad recurrente de la audiencia literaria y la frecuencia de retorno orgánico a la aplicación.
-* **Métrica Clave:** Ratio DAU / MAU (Usuarios Activos Diarios / Usuarios Activos Mensuales).
-* **Secuencia de Eventos en Google Analytics:**
+* *Objetivo:* Analizar la fidelidad recurrente de la audiencia literaria y la frecuencia de retorno orgánico a la aplicación.
+* *Métrica Clave:* Ratio DAU / MAU (Usuarios Activos Diarios / Usuarios Activos Mensuales).
+* *Secuencia de Eventos en Google Analytics:*
 ```text
 [ session_start ] ─────────────────────────────────────► [ user_engagement ]
  (Apertura de la aplicación)                              (Interacción activa > 10 seg)
@@ -6192,9 +6191,9 @@ Para la recolección y análisis de datos en tiempo real de la aplicación móvi
 
 ##### Experimento 10: Fricción por Errores de Interfaz (Crash & UI Usability)
 
-* **Objetivo:** Monitorear de forma cuantitativa los eventos de frustración técnica o de diseño que degradan la experiencia de usuario.
-* **Métrica Clave:** Tasa de sesiones libres de errores / Errores por usuario activo.
-* **Secuencia de Eventos en Google Analytics:**
+* *Objetivo:* Monitorear de forma cuantitativa los eventos de frustración técnica o de diseño que degradan la experiencia de usuario.
+* *Métrica Clave:* Tasa de sesiones libres de errores / Errores por usuario activo.
+* *Secuencia de Eventos en Google Analytics:*
 ```text
                            ┌──► [ app_exception ] (Error crítico / Crash técnico)
 [ active_user_session ] ───┤
