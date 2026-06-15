@@ -192,6 +192,12 @@ Commits
   - [7.3. Continuous Deployment](#73-continuous-deployment)
     - [7.3.1. Tools and Practices](#731-tools-and-practices)
     - [7.3.2. Production Deployment Pipeline Components](#732-production-deployment-pipeline-components)
+  - [7.4. Continuous Monitoring](#74-continuous-monitoring)
+    - [7.4.1. Tools and Practices](#741-tools-and-practices)
+    - [7.4.2. Monitoring Pipeline Components](#742-monitoring-pipeline-components)
+    - [7.4.3. Alerting Pipeline Components](#743-alerting-pipeline-components)
+    - [7.4.4. Notification Pipeline Components](#744-notification-pipeline-components)
+
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
@@ -6479,6 +6485,8 @@ El pipeline de entrega (CD) orquesta la preparación de los artefactos listos pa
 * Package Mobile: Ejecución de flutter build apk --release (User App) y ./gradlew assembleRelease (Admin App).
 * Upload Artifacts: Subida automática de los APKs generados utilizando la acción actions/upload-artifact@v4.
 * Approval Gate: Pruebas manuales en los dispositivos físicos descargando el APK generado, y validación del backend en el entorno de pruebas.
+
+
 ## 7.3. Continuous Deployment
 ### 7.3.1. Tools and Practices
 El despliegue continuo a producción está altamente automatizado, pero protegido por aprobaciones manuales para asegurar la estabilidad del entorno final.
@@ -6537,8 +6545,100 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
-# Capítulo VIII: Experiment-Driven Development
+## 7.4. Continuous Monitoring
+### 7.4.1. Tools and Practices
+Para asegurar la alta disponibilidad, rendimiento óptimo y estabilidad de todo el ecosistema de Livria posterior a su despliegue, el equipo de Defontes implementó una estrategia de monitoreo proactivo dividida según la naturaleza de cada componente tecnológico:
 
+* *Azure Application Insights:* Es la herramienta central de monitoreo de rendimiento (*APM*) utilizada para el backend desarrollado en .NET 9 y desplegado en Azure App Service. Permite recolectar métricas detalladas de telemetría del servidor, tiempos de respuesta HTTP, tasas de fallo en los endpoints y rendimiento de las consultas hacia la base de datos.
+
+* *Firebase Analytics (Eventos Personalizados):* Integrado mediante el SDK de Firebase en la aplicación móvil Flutter, se utiliza para capturar tanto eventos de comportamiento de negocio como eventos de error en tiempo de ejecución. Para el monitoreo de salud técnica, se instrumentaron dos categorías de eventos personalizados a lo largo de todos los flujos críticos de la app:
+  * `app_exception`: registra errores no recuperables capturados en bloques `catch` de operaciones críticas (creación de orden, publicación de posts, adición al carrito) y errores globales del framework capturados via `FlutterError.onError` y `PlatformDispatcher.instance.onError` en el punto de entrada de la aplicación.
+  * `ui_error_validation`: registra cada vez que el usuario es bloqueado por una validación de interfaz fallida (campos vacíos, teléfono inválido, email con formato incorrecto, campos de envío incompletos), permitiendo medir la fricción real de diseño por pantalla.
+
+* *Google Analytics:* Utilizado conjuntamente con Firebase Analytics para medir eventos de comportamiento del negocio e interacción (como los flujos de carritos abandonados, conversiones del paywall y participación en comunidades), permitiendo cruzar la salud técnica de la app con el impacto en el producto.
+<p align="center">
+  <img src="https://i.imgur.com/Vm9EgSH.jpg" alt="Google Analytics">
+</p>
+
+### 7.4.2. Monitoring Pipeline Components
+El pipeline de monitoreo opera de forma continua y asíncrona a nivel de infraestructura y de cliente, recopilando tres categorías críticas de información:
+
+* **Lógica de Telemetría e Ingesta de Datos (Backend):**
+  * *Métricas de Infraestructura:* Monitoreo del porcentaje de uso de CPU, consumo de memoria RAM y solicitudes por segundo en el plan de Azure App Service de Livria.
+  * *Métricas de Rendimiento de Endpoints:* Seguimiento automatizado del tiempo de respuesta (latencia) en milisegundos en rutas clave como el cálculo dinámico del *shipping price* limitado a Lima Metropolitana o la carga del listado de comunidades en el perfil del lector.
+
+* **Monitoreo de Excepciones y Errores (Frontend Móvil):**
+  * *Captura de Fallos:* Registro en tiempo real de excepciones mediante el evento personalizado `app_exception` de Firebase Analytics, estructurado bajo el siguiente patrón de recolección:
+
+```json
+{
+  "event_name": "app_exception",
+  "parameters": {
+    "screen": "payment_page",
+    "error": "Exception: Error al subir la captura de pantalla",
+    "fatal": false
+  }
+}
+```
+
+Los errores globales del framework (crashes que tumban la app) se registran con `"fatal": true` desde `FlutterError.onError`, mientras que los errores capturados en flujos de negocio se registran con `"fatal": false` desde cada bloque `catch` correspondiente.
+
+* *Captura de Fricción de UI:* Registro de bloqueos por validación mediante el evento `ui_error_validation`, que incluye el parámetro `screen` (pantalla donde ocurrió) y `reason` (motivo específico del bloqueo), permitiendo identificar qué campos o reglas generan mayor abandono:
+
+```json
+{
+  "event_name": "ui_error_validation",
+  "parameters": {
+    "screen": "recipient_info",
+    "reason": "invalid_phone"
+  }
+}
+```
+
+
+### 7.4.3. Alerting Pipeline Components
+El componente de alertas evalúa las métricas ingeridas en tiempo real contra umbrales estrictamente definidos (*KPIs* de salud) en los paneles de Azure Monitor y Firebase Analytics. Si un umbral se supera, se genera un trigger automático de alerta crítica.
+
+Las reglas de alerta establecidas para Livria son:
+* *Alerta de Disponibilidad del Backend:* Se dispara inmediatamente si el porcentaje de disponibilidad (*Uptime*) de la API de producción de Livria cae por debajo del **99.5%** en un intervalo de 5 minutos, configurada como una regla de *Action Group* en Azure Monitor con webhook saliente.
+* *Alerta de Tasa de Errores HTTP 5xx:* Activada si más del **5%** de las peticiones totales a la API backend devuelven un código de estado `500 Internal Server Error` (por ejemplo, fallos críticos en la integración de pasarelas de pago o la base de datos), monitoreada via Azure Application Insights.
+* *Alerta de Estabilidad de la App Móvil:* Se genera un trigger de revisión manual si el porcentaje de sesiones libres de errores en la aplicación Flutter cae por debajo del **98%** diario, evaluado sobre el volumen de eventos `app_exception` con parámetro `"fatal": true` registrados en el panel de Firebase Analytics, en relación al total de sesiones activas (`session_start`) del mismo período.
+
+
+### 7.4.4. Notification Pipeline Components
+Una vez que el motor de alertas genera un trigger, el pipeline de notificaciones distribuye la incidencia de forma inmediata a los desarrolladores del equipo de Defontes a través de un canal de comunicación dedicado, reduciendo el tiempo medio de reparación (*MTTR*).
+
+* *Integración con Discord via Google Apps Script Relay:* Dado que Discord no es un destino nativo de Azure Monitor ni de Firebase, se implementa un relay gratuito mediante **Google Apps Script** desplegado como Web App pública, que actúa como intermediario entre los sistemas de alerta y el webhook del canal `#livria-alerts` de Discord. El flujo de notificación opera de la siguiente manera:
+
+<p align="center">
+  <img src="https://i.imgur.com/Ufzifjt.jpg" alt="inter1">
+</p>
+
+La función relay en Google Apps Script transforma el payload de Azure Monitor al formato requerido por Discord (`username`, `embeds`) y lo reenvía al webhook configurado en el canal del equipo. Para las alertas derivadas de Firebase Analytics (monitoreo de `app_exception`), el equipo revisa periódicamente el panel de Firebase Console y dispara manualmente la notificación al canal cuando se detecta una anomalía en los umbrales definidos.
+
+* Ejemplo de Payload de Notificación Automática (JSON despachado al canal de soporte de Discord):
+
+```json
+{
+  "username": "Livria Monitor",
+  "embeds": [
+    {
+      "title": "🚨 Livria API - High Error Rate Detected",
+      "color": 15158332,
+      "fields": [
+        { "name": "Severity",     "value": "Sev1 - Critical",              "inline": true },
+        { "name": "Component",    "value": "livria-backend-prod",           "inline": true },
+        { "name": "Metric",       "value": "7.8% HTTP 500 Responses",      "inline": false },
+        { "name": "Timestamp",    "value": "2026-06-14T20:50:00Z",         "inline": true },
+        { "name": "Action",       "value": "Verificar logs en Azure Application Insights y estado de base de datos.", "inline": false }
+      ]
+    }
+  ]
+}
+```
+---
+
+# Capítulo VIII: Experiment-Driven Development
 ## 8.1. Experiment Planning
 
 Esta sección documenta la toma de material bruto (ideas, suposiciones o afirmaciones) para descubrir las premisas subyacentes del ecosistema Livria, estableciendo la motivación para validar nuestra propuesta y organizando las interrogantes prioritarias que serán resueltas a través de la experimentación continua con usuarios.
