@@ -6096,7 +6096,7 @@ Para la recolección y análisis de datos en tiempo real de la aplicación móvi
 ```
 
 
-#### Experimento 2: Fricción en la Validación del Pago (Flujo de Captura)
+##### Experimento 2: Fricción en la Validación del Pago (Flujo de Captura)
 
 * *Objetivo:* Medir el porcentaje de abandono cuando la aplicación solicita al usuario realizar una transferencia manual externa (copiar CCI) y subir el comprobante.
 * *Métrica Clave:* Tasa de abandono del CCI = (`upload_payment_receipt` / `view_payment_instructions`) * 100%
@@ -6106,7 +6106,7 @@ Para la recolección y análisis de datos en tiempo real de la aplicación móvi
  (Visualización de datos de cuenta/CCI)                    (Carga exitosa del comprobante)
 ```
 
-#### Experimento 3: Intención vs. Compra Real (Carrito Abandonado)
+##### Experimento 3: Intención vs. Compra Real (Carrito Abandonado)
 
 * *Objetivo:* Medir la brecha entre el interés inicial de adquisición de un libro y el cierre real de la transacción.
 * *Métrica Clave:* Ratio de Carritos Abandonados = (`purchase` / `add_to_cart`) * 100%
@@ -6117,9 +6117,9 @@ Para la recolección y análisis de datos en tiempo real de la aplicación móvi
 ```
 
 
-### Flujo 2: Creación y Participación en Comunidades (Engagement Social)
+#### Flujo 2: Creación y Participación en Comunidades (Engagement Social)
 
-#### Experimento 4: Efectividad del Paywall de Comunidades
+##### Experimento 4: Efectividad del Paywall de Comunidades
 
 * *Objetivo:* Evaluar el interés de la audiencia en los clubes de lectura miendo cuántos usuarios intentan interactuar siendo *Free* y reaccionan ante el bloqueo comercial.
 * *Métrica Clave:* Tasa de conversión del Paywall = (`click_subscribe_plan` / `view_paywall_screen`) * 100%
