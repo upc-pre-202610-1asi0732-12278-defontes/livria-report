@@ -246,7 +246,7 @@ Visión: Convertirse en la plataforma líder en América Latina para la compra y
 | Castillo Garay, Ainhoa Lucía <p align="center"> <img src="https://imgur.com/2UE04dl.jpg" alt="luis"> </p> | U202311701 | Ingeniería de Software | Mi nombre es Ainhoa Castillo y estoy cursando mi séptimo ciclo en la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC). Me considero una persona activa y responsable. Me gusta trabajar en un ambiente tranquilo y divertido, pero siempre eficaz. Me gusta programar y resolver problemas mediante soluciones creativas. |
 | Martel Andrade, Cassius Estefano <p align="center"> <img src="https://imgur.com/DNdObuQ.jpg" alt="luis"> </p> | U202312287 | Ingeniería de Software | Mi nombre es Cassius Martel y soy estudiante de séptimo de la carrera de Ingeniería de Software. Me caracterizo por ser líder nato que siempre busca sacar lo mejor de cada uno de sus compañeros de equipo, así como por ser sumamente responsable y atento con los requerimientos de cada proyecto en el que me involucro. Tengo conocimientos técnicos en lenguajes y diversos frameworks de desarrollo Frontend, bases de datos y metodologías ágiles. |
 | Nakamurakare Teruya, Alex Tomio <p align="center"> <img src="https://imgur.com/Z8IWHJL.jpg" alt="luis"> </p> | U20201f855 | Ingeniería de Software | Mi nombre es Tomio Nakamurakare, estudiante de séptimo ciclo de la carrera de Ingeniería de Software. Me defino como un profesional en formación con una fuerte inclinación hacia el aprendizaje continuo y la aplicación práctica de nuevas tecnologías. Poseo una mentalidad orientada a la resolución de problemas complejos, viendo en los retos técnicos una oportunidad para fortalecer mi pensamiento crítico. Mi enfoque de trabajo se caracteriza por la persistencia y la resiliencia, cualidades que me permiten afrontar y superar las dificultades inherentes al desarrollo de software. |
-| Yalán Zhang, Angie Christina <p align="center"> <img src="https://imgur.com/37xqvzq.png" alt="angie"> </p> | U202311157 | Ingeniería de Software | Mi nombre es Angie Yalán. Soy estudiante de la carrera Ingeniería de Software y tengo 20 años. Me considero una persona proactiva que le gustan nuevas experiencias y aprender cosas diferentes. Sigo en el proceso de mejora en cuanto a la programación y cuento con toda la iniciativa para ser cada día mejor en ello.|
+| Yalán Zhang, Angie Christina <p align="center"> <img src="https://imgur.com/37xqvzq.png" alt="angie"> </p> | U202312504 | Ingeniería de Software | Mi nombre es Angie Yalán. Soy estudiante de la carrera Ingeniería de Software y tengo 20 años. Me considero una persona proactiva que le gustan nuevas experiencias y aprender cosas diferentes. Sigo en el proceso de mejora en cuanto a la programación y cuento con toda la iniciativa para ser cada día mejor en ello.|
 
 ## 1.2. Solution Profile
 
@@ -6693,6 +6693,170 @@ Para abordar los problemas identificados y maximizar el valor entregado por Livr
 * **Incremento de Conversión por Comunidad:** Se sostiene que la creación de espacios de debate (comunidades temáticas) resultará en una mayor motivación para leer y, consecuentemente, en un aumento directo en las ventas de libros del catálogo.
 * **Reducción de Fricción Cognitiva:** Se postula que una estructura lógica y jerárquica en el proceso de simulación de pago (Checkout) minimizará la frustración del usuario, brindando una sensación de seguridad comercial.
 * **Fidelización mediante Recomendaciones:** Se afirma que un motor de recomendaciones altamente personalizado es el factor diferenciador que motivará a los usuarios a elegir Livria por encima de librerías virtuales tradicionales.
+
+### 8.1.3. Experiment-Ready Questions
+
+En esta sección se presentan las preguntas impulsadas por creencias o Belief-led Question, y las preguntas exploratorias. En el contexto de Livria, se orientan a validar si las funcionalidades propuestas realmente aportan valor a los usuarios, reducen fricciones de uso y fortalecen la propuesta de valor de la plataforma.
+
+**Belief-led Questions**
+
+| ID | Pregunta para experimento | Creencia asociada | Elemento de Livria relacionado |
+|--|-----|-----|-----|
+|BLQ01|¿La implementación de un modo oscuro mejora la comodidad visual percibida y la intención de permanecer más tiempo en Livria?|Se cree que los lectores pasan más tiempo observando pantallas y valoran opciones de personalización visual.|Accesibilidad, experiencia visual y retención|
+|BLQ02|¿Una ficha de libro con sinopsis más completa, mejor jerarquía visual y metadatos claros aumenta la intención de agregar un libro al carrito?|Se cree que una mayor cantidad de información útil reduce la duda del usuario antes de comprar.|Vista de detalle del libro y conversión|
+|BLQ03|¿Las recomendaciones personalizadas según intereses literarios reducen el tiempo que tarda el usuario en encontrar un libro de su agrado?|Se cree que un sistema de recomendaciones asertivo disminuye la búsqueda manual y mejora el descubrimiento de libros.|Recomendaciones personalizadas|
+|BLQ04|	¿La integración visible entre la ficha del libro y las comunidades lectoras aumenta la intención de comentar, unirse a una comunidad o revisar opiniones?	|Se cree que la relación entre comunidad y catálogo fortalece la motivación de lectura y la confianza en el libro.	|Comunidades literarias y social-commerce|
+|BLQ05|	¿Un checkout con pasos más claros, instrucciones visibles de transferencia y confirmación de pago mejora la percepción de confianza del usuario?|	Se cree que una estructura lógica y guiada reduce la fricción cognitiva en el flujo de compra.|	Carrito, pago y órdenes|
+|BLQ06|	¿La personalización del perfil del lector aumenta la intención de participar en comunidades temáticas?|	Se cree que los usuarios desean proyectar su identidad literaria para conectar mejor con otros lectores.|	Perfil de usuario y comunidades|
+|BLQ07 | ¿Una aplicación administrativa móvil permite gestionar stock y ventas con mayor rapidez que un flujo pensado para escritorio?| Se cree que los administradores necesitan revisar métricas e inventario desde dispositivos móviles para actuar con agilidad.| Livria Admin|
+
+**Preguntas Exploratorias**
+
+|ID|	Pregunta exploratoria|	Técnica 5W/1H aplicada|	Propósito|
+|--|------|-----|----|
+|EQ01|	¿Qué tipo de usuario valora más el modo oscuro: lectores frecuentes, lectores casuales o usuarios que leen en horarios nocturnos?|	Who	|Identificar el segmento que obtiene mayor beneficio de la personalización visual.|
+|EQ02|	¿Qué información mínima necesita un usuario en la ficha de un libro para sentirse seguro antes de agregarlo al carrito?|	What|	Determinar qué datos deben priorizarse: sinopsis, autor, género, idioma, precio, formato o reseñas.|
+|EQ03|	¿En qué parte del flujo los usuarios se confunden al alternar entre catálogo, recomendaciones y comunidades? |	Where|	Detectar puntos de fricción en la navegación entre la experiencia comercial y social.|
+|EQ04|	¿En qué momento del recorrido del usuario resultan más útiles las recomendaciones: al inicio, después de navegar categorías o después de ver un libro?|	When|	Definir el momento adecuado para mostrar recomendaciones personalizadas.|
+|EQ05|	¿Por qué un usuario decidiría comentar o publicar dentro de una comunidad literaria?|	Why|	Entender los detonantes reales de participación social.|
+|EQ06|	¿Cómo esperan los usuarios completar un pago por transferencia dentro de una app de compra de libros?|	How	|Identificar expectativas sobre claridad, seguridad y confirmación en el checkout.|
+|EQ07|	¿Qué elementos visuales generan más confianza en una plataforma nueva de compra de libros?|	What|	Explorar factores de credibilidad visual y comercial.|
+
+### 8.1.4. Question Backlog
+
+En esta sección se organiza las preguntas de investigación de Livria en función de su valor experimental.
+
+#### Broad Question Backlog
+
+| Prioridad | ID | Pregunta | Tipo | Por qué se investiga | Confianza | Riesgo | Impacto | Interés | Total |
+|---:|---|---|---|---|---:|---:|---:|---:|---:|
+| 1 | BLQ02 | ¿Una ficha de libro con sinopsis más completa, mejor jerarquía visual y metadatos claros aumenta la intención de agregar un libro al carrito? | Belief-led | La ficha del libro influye directamente en la decisión de compra y actualmente se percibe como limitada. | 5 | 5 | 5 | 5 | 20 |
+| 2 | BLQ03 | ¿Las recomendaciones personalizadas según intereses literarios reducen el tiempo que tarda el usuario en encontrar un libro de su agrado? | Belief-led | Las recomendaciones son una de las principales promesas diferenciales de Livria frente a librerías digitales tradicionales. | 4 | 5 | 5 | 5 | 19 |
+| 3 | BLQ04 | ¿La integración visible entre la ficha del libro y las comunidades lectoras aumenta la intención de comentar, unirse a una comunidad o revisar opiniones? | Belief-led | La propuesta de valor de Livria depende de unir compra y comunidad en una sola experiencia. | 4 | 4 | 5 | 5 | 18 |
+| 4 | BLQ05 | ¿Un checkout con pasos más claros, instrucciones visibles de transferencia y confirmación de pago mejora la percepción de confianza del usuario? | Belief-led | El proceso de pago por transferencia puede generar dudas si no se comunica con claridad. | 4 | 5 | 4 | 4 | 17 |
+| 5 | EQ03 | ¿En qué parte del flujo los usuarios se confunden al alternar entre catálogo, recomendaciones y comunidades? | Exploratoria | Existe incertidumbre sobre si los usuarios comprenden la relación entre la experiencia comercial y la social. | 5 | 4 | 4 | 4 | 17 |
+| 6 | EQ02 | ¿Qué información mínima necesita un usuario en la ficha de un libro para sentirse seguro antes de agregarlo al carrito? | Exploratoria | Permite definir qué contenido debe priorizarse en la ficha del libro. | 4 | 4 | 4 | 4 | 16 |
+| 7 | BLQ01 | ¿La implementación de un modo oscuro mejora la comodidad visual percibida y la intención de permanecer más tiempo en Livria? | Belief-led | La personalización visual puede mejorar accesibilidad y satisfacción, pero su impacto en el MVP aún es incierto. | 3 | 3 | 4 | 4 | 14 |
+| 8 | EQ05 | ¿Por qué un usuario decidiría comentar o publicar dentro de una comunidad literaria? | Exploratoria | Ayuda a descubrir motivadores reales de participación comunitaria. | 4 | 3 | 4 | 3 | 14 |
+| 9 | BLQ06 | ¿La personalización del perfil del lector aumenta la intención de participar en comunidades temáticas? | Belief-led | La identidad literaria puede influir en la interacción social, pero no es una prioridad inmediata frente a compra y recomendaciones. | 4 | 3 | 3 | 3 | 13 |
+| 10 | BLQ07 | ¿Una aplicación administrativa móvil permite gestionar stock y ventas con mayor rapidez que un flujo pensado para escritorio? | Belief-led | Es relevante para Livria Admin, pero tiene menor impacto directo sobre la experiencia del lector final. | 4 | 3 | 3 | 2 | 12 |
+
+#### Deep Question Backlog
+
+A partir del *Broad Question Backlog*, se seleccionan las preguntas con mayor prioridad para profundizarlas en subpreguntas más específicas. Estas preguntas permitirán diseñar experimentos más precisos y accionables.
+
+| Pregunta principal | Subpreguntas profundas |
+|---|---|
+| BLQ02: ¿Una ficha de libro enriquecida aumenta la intención de agregar un libro al carrito? | ¿La sinopsis de 100 a 180 palabras genera mayor confianza que una sinopsis breve? ¿Los metadatos como género, idioma, formato y autor ayudan a decidir más rápido? ¿La ubicación del botón “Agregar al carrito” es visible y comprensible? ¿Las reseñas o calificaciones deben mostrarse antes o después de la sinopsis? |
+| BLQ03: ¿Las recomendaciones personalizadas reducen el tiempo de búsqueda? | ¿Qué criterios generan recomendaciones más útiles: género, autor, historial de interés o calificaciones? ¿Los usuarios entienden por qué se les recomienda un libro? ¿El botón de interés/desinterés mejora la percepción de control sobre las sugerencias? ¿Cuántas recomendaciones deben mostrarse para evitar saturación? |
+| BLQ04: ¿La integración entre ficha del libro y comunidades aumenta la participación? | ¿El usuario reconoce que puede pasar de un libro a una comunidad relacionada? ¿La presencia de debates o reseñas comunitarias mejora la confianza en el libro? ¿El usuario prefiere comentar sobre libros específicos o participar en comunidades por género? ¿Qué acción social resulta más natural: unirse, comentar, publicar o leer opiniones? |
+| BLQ05: ¿Un checkout más claro mejora la confianza del usuario? | ¿El usuario comprende que el pago se realiza por transferencia? ¿Las instrucciones de CCI son suficientes para completar el proceso? ¿El estado “Pago en verificación” reduce la incertidumbre después de subir el comprobante? ¿La barra de progreso ayuda a entender el avance de la compra? |
+
+De acuerdo con la priorización realizada, los primeros experimentos se enfocarán en la ficha del libro, el sistema de recomendaciones, la integración comunidad-catálogo y el checkout. Estas áreas concentran el mayor riesgo e impacto sobre los objetivos de Livria: facilitar el descubrimiento de libros, incentivar la compra y fortalecer la participación lectora.
+
+### 8.1.5. Experiment Cards
+
+Las *Experiment Cards* permiten estructurar cada experimento antes de su ejecución. Su propósito es capturar la pregunta principal, la razón de investigación, la hipótesis de trabajo, la cosa más simple y útil a construir o probar, así como las medidas, condiciones y escala del experimento.
+
+#### Experiment Card 1: Ficha del Libro Enriquecida
+
+**Lado frontal**
+
+| Campo | Descripción |
+|---|---|
+| Pregunta | ¿Una ficha de libro con sinopsis más completa, mejor jerarquía visual y metadatos claros aumenta la intención de agregar un libro al carrito? |
+| Por qué | La vista actual de detalle del libro puede resultar insuficiente para que el usuario tome una decisión informada. Si el usuario no entiende bien el contenido, formato o valor del libro, podría abandonar la compra. |
+| Hipótesis | Si se presenta una ficha de libro enriquecida con sinopsis de 100 a 180 palabras, metadatos claros, reseñas visibles y un botón de acción mejor ubicado, entonces aumentará la intención de agregar el libro al carrito y la confianza percibida del usuario. |
+| Qué: Simplest Useful Thing | Crear un prototipo comparativo de dos versiones de la ficha del libro: una versión actual y una versión enriquecida con mejor jerarquía visual, sinopsis ampliada y metadatos completos. |
+
+**Lado posterior**
+
+| Campo | Descripción |
+|---|---|
+| Medidas | Tasa de intención de agregar al carrito, tiempo promedio de decisión, nivel de confianza en la información del libro, claridad percibida de la ficha, comentarios cualitativos del usuario. |
+| Condiciones | Los participantes deberán revisar dos fichas de libros en prototipo móvil. Se mantendrán los mismos títulos para todos los usuarios y se alternará el orden de presentación para evitar sesgos. |
+| Escala | 10 a 15 participantes de los segmentos “Lectores en Desarrollo” y “Lectores Comunitarios”. Duración aproximada: 15 minutos por sesión. |
+| Criterio de éxito | La versión enriquecida será considerada favorable si aumenta al menos en 20% la intención de agregar al carrito o si obtiene una calificación promedio mínima de 4/5 en confianza y claridad percibida. |
+
+#### Experiment Card 2: Recomendaciones Personalizadas
+
+**Lado frontal**
+
+| Campo | Descripción |
+|---|---|
+| Pregunta | ¿Las recomendaciones personalizadas según intereses literarios reducen el tiempo que tarda el usuario en encontrar un libro de su agrado? |
+| Por qué | Livria busca diferenciarse por facilitar el descubrimiento de libros. Si las recomendaciones no son percibidas como útiles, la propuesta de personalización perdería valor frente a una búsqueda tradicional. |
+| Hipótesis | Si el usuario recibe recomendaciones basadas en sus géneros, autores o intereses literarios, entonces encontrará un libro de su agrado en menos tiempo y percibirá mayor relevancia en el contenido mostrado. |
+| Qué: Simplest Useful Thing | Crear un flujo simple donde el usuario seleccione tres preferencias literarias y luego reciba una pantalla con seis recomendaciones personalizadas. Esta versión será comparada con una lista genérica de libros populares. |
+
+**Lado posterior**
+
+| Campo | Descripción |
+|---|---|
+| Medidas | Tiempo hasta seleccionar un libro, cantidad de libros marcados como interesantes, calificación de relevancia de las recomendaciones, satisfacción con la experiencia de búsqueda. |
+| Condiciones | Los usuarios realizarán una tarea de descubrimiento: “Encuentra un libro que leerías o comprarías”. Algunos usuarios verán recomendaciones genéricas y otros recomendaciones basadas en preferencias declaradas. |
+| Escala | 10 a 15 participantes. Se aplicará una encuesta posterior con escala de Likert de 1 a 5. |
+| Criterio de éxito | El experimento será considerado favorable si al menos el 70% de los usuarios selecciona un libro recomendado como interesante y si el tiempo promedio de búsqueda se reduce al menos en 25% frente a la lista genérica. |
+
+#### Experiment Card 3: Integración entre Ficha del Libro y Comunidad
+
+**Lado frontal**
+
+| Campo | Descripción |
+|---|---|
+| Pregunta | ¿La integración visible entre la ficha del libro y las comunidades lectoras aumenta la intención de comentar, unirse a una comunidad o revisar opiniones? |
+| Por qué | Una de las principales apuestas de Livria es unir comercio y comunidad. Sin embargo, aún no se sabe si los usuarios perciben esta conexión como natural o si separan la compra de libros de la participación social. |
+| Hipótesis | Si la ficha del libro muestra accesos visibles a reseñas, debates o comunidades relacionadas con el título o género, entonces aumentará la intención de interacción social y la confianza en la elección del libro. |
+| Qué: Simplest Useful Thing | Diseñar una versión de la ficha del libro con un bloque llamado “Comunidad relacionada”, donde el usuario pueda ver comentarios, unirse a una comunidad o leer debates vinculados al libro. |
+
+**Lado posterior**
+
+| Campo | Descripción |
+|---|---|
+| Medidas | Porcentaje de usuarios que hacen clic en comunidad relacionada, intención de unirse, intención de comentar, percepción de utilidad de las opiniones, impacto en la confianza de compra. |
+| Condiciones | Se comparará una ficha de libro sin acceso comunitario visible frente a una ficha con comunidad relacionada. Los participantes deberán explorar un libro y decidir si lo comprarían o si buscarían opiniones antes de hacerlo. |
+| Escala | 8 a 12 participantes, priorizando usuarios del segmento “Lectores Comunitarios”. |
+| Criterio de éxito | Se considerará favorable si al menos el 60% de los usuarios interactúa con el bloque comunitario o indica que las opiniones de otros lectores aumentan su confianza para elegir el libro. |
+
+#### Experiment Card 4: Checkout Guiado por Transferencia
+
+**Lado frontal**
+
+| Campo | Descripción |
+|---|---|
+| Pregunta | ¿Un checkout con pasos más claros, instrucciones visibles de transferencia y confirmación de pago mejora la percepción de confianza del usuario? |
+| Por qué | Livria no integra pasarelas de pago automatizadas en el MVP, por lo que el usuario debe comprender claramente el flujo de transferencia, carga de comprobante y validación manual. Una mala comunicación podría generar abandono o desconfianza. |
+| Hipótesis | Si el checkout presenta una barra de progreso, instrucciones claras para la transferencia, CCI visible y confirmación del estado “Pago en verificación”, entonces aumentará la confianza del usuario y disminuirán los errores durante el flujo de compra. |
+| Qué: Simplest Useful Thing | Crear un prototipo funcional del checkout dividido en pasos: resumen de compra, datos del destinatario, método de entrega, información de pago y confirmación de comprobante. |
+
+**Lado posterior**
+
+| Campo | Descripción |
+|---|---|
+| Medidas | Tasa de finalización del flujo, cantidad de errores o dudas reportadas, tiempo de finalización, percepción de seguridad, claridad de instrucciones. |
+| Condiciones | Los usuarios deberán simular la compra de un libro físico y completar el flujo hasta la pantalla de confirmación del pago. No se realizará ningún pago real. |
+| Escala | 10 a 12 participantes. Sesiones moderadas de 15 a 20 minutos. |
+| Criterio de éxito | El flujo será considerado favorable si al menos el 80% de los participantes completa la simulación sin ayuda y si la percepción de seguridad obtiene una calificación promedio mínima de 4/5. |
+
+## Experiment Design
+
+El diseño del experimento define cómo se responderán las preguntas priorizadas en el Question Backlog. Esta fase es fundamental porque permite establecer un proceso ordenado para obtener evidencia útil, comparable y confiable sobre las principales suposiciones de Livria.
+
+### 8.2.1. Hypotheses
+
+Las hipótesis permiten convertir las creencias del equipo en declaraciones comprobables mediante experimentos. En Livria, estas hipótesis no serán tratadas como verdades absolutas, sino como afirmaciones que deben ser puestas a prueba. 
+
+| ID | Pregunta asociada | Hipótesis de trabajo | Hipótesis nula | Medidas esperadas |
+|---|---|---|---|---|
+| H01 | BLQ02 | Si se presenta una ficha de libro enriquecida con sinopsis de 100 a 180 palabras, metadatos claros, reseñas visibles y mejor jerarquía visual, entonces aumentará la intención de agregar el libro al carrito y la confianza percibida del usuario. | La ficha enriquecida no generará diferencias relevantes en la intención de agregar al carrito ni en la confianza percibida frente a la ficha actual. | Incremento mínimo de 20% en intención de agregar al carrito o calificación promedio mínima de 4/5 en claridad y confianza. |
+| H02 | BLQ03 | Si el usuario recibe recomendaciones personalizadas según sus intereses literarios, entonces reducirá el tiempo necesario para encontrar un libro de su agrado y calificará las sugerencias como más relevantes. | Las recomendaciones personalizadas no reducirán el tiempo de búsqueda ni aumentarán la relevancia percibida frente a una lista genérica. | Reducción mínima de 25% en tiempo de búsqueda y calificación promedio de relevancia igual o superior a 4/5. |
+| H03 | BLQ04 | Si la ficha del libro incluye un acceso visible a comunidades, reseñas o debates relacionados, entonces aumentará la intención del usuario de interactuar socialmente y mejorará su confianza en la elección del libro. | La integración de comunidades en la ficha del libro no aumentará la intención de participación ni la confianza del usuario frente a una ficha sin bloque comunitario. | Al menos 60% de usuarios interactúa con el bloque comunitario o declara que las opiniones de otros lectores influyen positivamente en su decisión. |
+| H04 | BLQ05 | Si el checkout se organiza en pasos claros con barra de progreso, instrucciones de transferencia, CCI visible y confirmación de pago en verificación, entonces aumentará la percepción de seguridad y disminuirán los errores en el flujo de compra. | El checkout guiado no mejorará la percepción de seguridad ni reducirá errores frente al flujo actual. | Al menos 80% de usuarios completa el flujo sin ayuda y la percepción de seguridad alcanza un promedio mínimo de 4/5. |
+| H05 | BLQ01 | Si Livria implementa un modo oscuro con contraste adecuado, entonces mejorará la comodidad visual percibida y aumentará la intención de uso en sesiones prolongadas o nocturnas. | El modo oscuro no generará una mejora relevante en comodidad visual ni en intención de permanencia frente al modo claro actual. | Incremento mínimo de 1 punto en comodidad visual en escala Likert de 1 a 5 o aumento mínimo de 15% en intención declarada de permanencia. |
+| H06 | BLQ06 | Si el usuario puede personalizar su perfil con avatar, biografía y frase literaria, entonces aumentará su intención de participar en comunidades temáticas. | La personalización del perfil no aumentará la intención de participar en comunidades frente a un perfil básico. | Incremento mínimo de 20% en intención de unirse, comentar o publicar dentro de una comunidad. |
+
+Estas hipótesis guiarán la ejecución de los experimentos iniciales de Livria. Los resultados obtenidos permitirán decidir qué funcionalidades deben priorizarse en el backlog de producto, cuáles requieren rediseño y cuáles no generan suficiente valor para ser implementadas en el MVP.
+
 
 # Conclusiones
 
