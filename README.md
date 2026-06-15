@@ -6205,35 +6205,65 @@ Para la recolección y análisis de datos en tiempo real de la aplicación móvi
 
 Esta sección registra las actividades de entrevistas de validación cualitativa realizadas con usuarios reales pertenecientes a nuestros segmentos objetivo definidos en el diseño del modelo de negocio de Livria.
 
-### 6.3.1. Diseño de Entrevistas
-Las sesiones se estructuraron de manera metodológica para evaluar la usabilidad, la arquitectura de información y el *engagement* inicial frente a los flujos (*User Flows*) específicos de la plataforma.
+### 6.3.1. Diseño de Entrevistas (User App)
 
-#### Preguntas Generales (Demografía Básica)
-* ¿Cuál es tu nombre?
-* ¿Cuántos años tienes?
-* ¿Cuál es tu distrito de residencia?
-* ¿A qué te dedicas?
-* ¿Qué sistema operativo móvil utilizas con mayor frecuencia (Android / iOS)?
+El diseño de las entrevistas de validación para la aplicación móvil de usuarios (**Livria User App**) se ha reestructurado bajo un enfoque cuantitativo. El objetivo es recopilar métricas estandarizadas de usabilidad, eficiencia y satisfacción, minimizando el sesgo subjetivo.
 
-#### Segmento Objetivo #1: Lectores en Desarrollo
-* **Enfoque de Validación:** Landing Page (Propuesta de valor) y Livria User App (Flutter).
-* **User Flows Evaluados:** 1. *Búsqueda y Exploración:* Como usuario, quiero poder realizar la búsqueda de libros en base a diferentes criterios y obtener resultados relacionados.
-  2. *Recomendaciones:* Como usuario, quiero poder obtener recomendaciones personalizadas basadas en mis intereses.
-* **Cuestionario Guía:**
-  * *Tras Landing Page:* ¿Qué entendiste que ofrece Livria? ¿Crees que esta aplicación sería adecuada para alguien como tú, que disfruta leer libros por placer? ¿Qué mejorarías en la página para que te resulte más atractiva y útil como lector casual?
-  * *Tras Demostración Móvil:* ¿Qué impresión general te dio la plataforma Livria? ¿Fue fácil navegar y encontrar libros que te interesaran en la aplicación? ¿Cómo calificarías la experiencia de recibir recomendaciones personalizadas según tus gustos literarios? ¿Te gustaría que la aplicación incluya más funciones sociales, como comentarios o foros de discusión sobre libros?
-  * *Cierre:* ¿Qué es lo que más te gustó de la plataforma? ¿Volverías a usar Livria para encontrar nuevos libros? ¿Por qué?
+Para garantizar una evaluación exhaustiva, el instrumento de validación (encuesta estructurada) se ha diseñado en función de los *User Flows* críticos definidos para los dos segmentos objetivo de la plataforma.
 
-#### Segmento Objetivo #2: Lectores Comunitarios
-* **Enfoque de Validación:** Landing Page (Espacio Social) y Livria User App / Foros (Flutter).
-* **User Flows Evaluados:**
-  1. *Comunidades:* Como usuario, quiero poder unirme a comunidades temáticas y crear publicaciones para compartir activamente mis opiniones, iniciar debates y conectar con otros lectores con intereses literarios similares.
-  2. *Perfil:* Como usuario, quiero poder personalizar ciertos aspectos de mi perfil para mostrar a los demás lectores mi personalidad literaria.
-* **Cuestionario Guía:**
-  * *Tras Landing Page:* ¿Qué entendiste que ofrece Livria? ¿Crees que esta plataforma está pensada para alguien como tú, que busca comunidades de lectura y espacios para debatir? ¿Qué mejorarías en la página para hacerla más atractiva o útil para un lector comunitario?
-  * *Tras Demostración Móvil:* ¿Qué tan fácil te resulta buscar y unirte a comunidades por género/autor/tema? ¿Lograste crear una publicación sin fricción? ¿Te gustaría contar con borradores, programar publicaciones o guardar hilos para leer después? ¿Qué métricas o señales te ayudan a decidir dónde participar? En tu perfil, ¿pudiste personalizar lo que otros ven? (bio, foto de perfil, apodo).
-  * *Cierre:* ¿Qué fue lo que más te gustó de la experiencia comunitaria y de la personalización del perfil? ¿Cuán probable es que vuelvas y publiques/comentes en Livria? ¿Por qué?
+#### A. User Flows Evaluados por Segmento
 
+**Segmento 1: Lectores en Desarrollo**
+Este segmento evalúa la capacidad de la plataforma para facilitar el descubrimiento y la adquisición de nuevos títulos.
+
+* **User Flow 1.1: Búsqueda Personalizada.** Como usuario, quiero poder realizar la búsqueda de libros en base a diferentes criterios y obtener resultados relacionados. *(Inicia en la Pantalla de Inicio -> Pantalla de Búsqueda -> Filtros -> Pantalla de Libro).*
+* **User Flow 1.2: Búsqueda por Categorías.** Como usuario, quiero poder realizar una búsqueda amplia de libros entre los diferentes géneros literarios. *(Navegación desde Inicio -> Pantalla de Categorías -> Listado de género específico).*
+* **User Flow 1.3: Recomendaciones Personalizadas.** Como usuario, quiero poder marcar interés en diferentes libros y visualizar recomendaciones basadas en mis gustos literarios. *(Interacción con Feedback Positivo/Negativo -> Pantalla de Recomendaciones).*
+
+**Segmento 2: Lectores Comunitarios**
+Este segmento evalúa las capacidades sociales y de proyección de identidad literaria dentro del ecosistema.
+
+* **User Flow 2.1: Comunidades Temáticas.** Como usuario, quiero poder unirme a comunidades temáticas, crear publicaciones y conectar con otros lectores con intereses literarios similares. *(Pantalla de Comunidades -> Ingreso a grupo -> Join -> Creación de Publicación).*
+* **User Flow 2.2: Personalización del Perfil.** Como usuario, quiero poder personalizar ciertos aspectos de mi perfil. *(Registro/Edición de Profile Picture, Nickname y Phrase -> Visualización en Pantalla de Perfil público).*
+
+#### B. Instrumento de Medición (Cuestionario Estructurado)
+
+El siguiente cuestionario se implementó mediante formularios digitales, solicitando al usuario ejecutar previamente los *User Flows* descritos. Se utiliza una escala tipo Likert del 1 al 5 (donde 1 = Muy en desacuerdo / Muy difícil; 5 = Muy de acuerdo / Muy fácil).
+
+**Sección 1: Datos Demográficos Básicos**
+1. Rango de edad: [15-18] / [19-25] / [26-35] / [Más de 35]
+2. ¿Con qué frecuencia lees libros (digitales o físicos)?: [Diariamente] / [Semanalmente] / [Mensualmente] / [Rara vez]
+
+**Sección 2: Validación del Catálogo, Búsqueda y Recomendaciones (User Flows 1.1, 1.2, 1.3)**
+3. Fue fácil localizar la barra de búsqueda y utilizar los filtros de categorías. (Escala 1-5)
+4. La información presentada en la ficha técnica del libro (precio, sinopsis, portada) es clara y suficiente. (Escala 1-5)
+5. Las sugerencias de libros presentadas en el apartado de recomendaciones coinciden de manera acertada con mis intereses y preferencias literarias reales. (Escala 1-5)
+6. ¿Lograste encontrar un libro de tu interés rápidamente gracias a las funciones de búsqueda y las recomendaciones de la app? [Sí / No]
+
+**Sección 3: Validación de Compra Simulada**
+7. El proceso para agregar un producto al carrito de compras fue rápido e intuitivo. (Escala 1-5)
+8. Los pasos requeridos en la pantalla de pago (Checkout) están ordenados de manera lógica. (Escala 1-5)
+9. ¿Experimentaste algún error técnico o bloqueo en la interfaz durante el proceso de simulación de pago? [Sí / No]
+
+**Sección 4: Validación de Comunidades y Perfil (User Flows 2.1, 2.2)**
+10. Comprendí rápidamente el propósito y la funcionalidad de la sección de comunidades. (Escala 1-5)
+11. La interfaz de usuario para visualizar publicaciones y comentarios facilita la lectura. (Escala 1-5)
+12. ¿Pudiste localizar el botón o la acción principal para crear una nueva publicación sin dificultad? [Sí / No]
+13. La posibilidad de interactuar en comunidades y foros literarios dentro de la app me motiva a leer más libros. (Escala 1-5)
+
+**Sección 5: Métricas Globales de Usabilidad e Interés**
+14. Las diversas funciones de la aplicación (catálogo, carrito, comunidades) están bien integradas entre sí. (Escala 1-5)
+15. Indica qué tan inconsistente o confuso te resultó navegar por los siguientes apartados (Matriz Escala 1-5, donde 1 = Nada confuso y 5 = Muy confuso):
+    * Comunidades, posts y comentarios.
+    * Proceso de compras.
+    * Catálogo de libros.
+    * Apartado de recomendaciones.
+    * Búsqueda de libros.
+    * Apartado de perfil.
+16. Fui capaz de completar todas las tareas asignadas sin necesidad de consultar ayuda técnica o instrucciones adicionales. (Escala 1-5)
+17. De las siguientes opciones, ¿qué funcionalidad de Livria te generó **MAYOR** interés? (Opción única: Búsqueda, Recomendaciones, Comunidades, Compra, Perfil).
+18. De las siguientes opciones, ¿qué funcionalidad de Livria te generó **MENOR** interés? (Opción única).
+19. Del 1 al 10, ¿qué tan probable es que recomiendes la descarga de Livria a otro lector? (Net Promoter Score).
 ---
 
 ### 6.3.2. Registro de Entrevistas
@@ -6490,6 +6520,60 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
+
+# Capítulo VIII: Experiment-Driven Development
+
+## 8.1. Experiment Planning
+
+Esta sección documenta la toma de material bruto (ideas, suposiciones o afirmaciones) para descubrir las premisas subyacentes del ecosistema Livria, estableciendo la motivación para validar nuestra propuesta y organizando las interrogantes prioritarias que serán resueltas a través de la experimentación continua con usuarios.
+
+### 8.1.1. As-Is Summary
+
+La aplicación se centra en ofrecer una plataforma unificada para lectores, proporcionando funcionalidades core como la exploración de un catálogo de libros, simulaciones de procesos de compra (e-commerce), un sistema de recomendaciones basadas en intereses y un apartado social para la creación y participación en comunidades literarias. 
+
+Sin embargo, tras las evaluaciones heurísticas preliminares y pruebas internas, se ha detectado que la experiencia del usuario (UX) presenta fricciones. Existen limitaciones en la personalización visual (ausencia de un modo oscuro que mitigue la fatiga visual), la información detallada de los libros suele ser percibida como insuficiente, y algunos elementos de la interfaz carecen de jerarquía o contraste adecuado, lo que podría impactar negativamente en la retención de usuarios y en la tasa de conversión de la tienda.
+
+#### Problemas identificados:
+* **Usabilidad y Accesibilidad:** La falta de un "Modo Oscuro" (Dark Theme) o paletas de colores personalizables limita drásticamente la comodidad de los usuarios que interactúan con la aplicación durante sesiones de lectura prolongadas o en entornos con baja luminosidad. Asimismo, elementos como la barra de búsqueda presentan un contraste deficiente.
+* **Conversión y Toma de Decisiones:** Las sinopsis y los metadatos de los libros en la vista de detalles son actualmente muy breves. Esto genera dudas en el usuario al momento de decidir si agregar un título al carrito, afectando el flujo de compras.
+* **Experiencia del Usuario (UX) y Diseño Visual:** Se han identificado desbalances visuales en la distribución de la pantalla de detalles del libro (espacios vacíos innecesarios) y problemas de descubribilidad en funciones clave, como el cierre de sesión oculto en submenús.
+* **Adopción Social:** Aunque existe el módulo de comunidades, existe la incertidumbre sobre si la navegación actual fomenta una participación fluida o si resulta confuso para el usuario alternar entre su faceta de "comprador" y su faceta de "comentarista".
+
+#### Objetivos de mejora:
+Para abordar los problemas identificados y maximizar el valor entregado por Livria, se establecen los siguientes objetivos:
+* **Mejora de la Experiencia Visual e Inclusión:** Implementar soporte nativo para Tema Oscuro y garantizar estándares de contraste (WCAG AA/AAA) en los campos de entrada para mejorar la usabilidad en diversas condiciones.
+* **Optimización para la Toma de Decisiones:** Enriquecer la base de datos con sinopsis más completas (100-180 palabras), categorizaciones precisas y optimizar la jerarquía visual de la "Ficha del Libro" para incentivar la compra.
+* **Fomento de la Interacción Comunitaria:** Reducir la fricción en la creación de publicaciones y en la unión a foros, garantizando que el paso del catálogo de libros a la comunidad sea intuitivo y fluido.
+* **Refinamiento del Algoritmo de Recomendaciones:** Validar y ajustar el sistema de sugerencias para asegurar que los libros mostrados coincidan de manera altamente precisa con el perfil e intereses del usuario.
+
+---
+
+### 8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims
+
+#### Assumptions (Suposiciones)
+* **Personalización Visual (Modo Oscuro):** Se asume que los usuarios del nicho literario pasan más tiempo observando pantallas que el usuario promedio, por lo que valoran altamente la personalización visual. Un modo oscuro mejoraría significativamente su experiencia y tiempo de sesión en la app.
+* **Fusión Social-Commerce:** Se asume que los usuarios están más dispuestos a comprar un libro si pueden interactuar, debatir o leer reseñas sobre el mismo dentro de la misma plataforma, en lugar de consultar redes sociales de terceros (como Goodreads o TikTok).
+* **Recomendaciones automatizadas:** Se asume que un algoritmo de recomendación asertivo reduce el tiempo de búsqueda manual y aumenta la probabilidad de que un "lector casual" descubra su próximo libro favorito rápidamente.
+* **Proyección de Identidad Literaria:** Se asume que los usuarios desean personalizar profundamente sus perfiles (biografía, frase, avatar) para proyectar su identidad y conectar de forma más genuina con las comunidades temáticas.
+* **Gestión Administrativa Móvil:** En el caso de Livria Admin, se asume que los dueños de librerías prefieren gestionar el stock y ver estadísticas de ventas desde sus dispositivos móviles para mayor agilidad, frente al uso tradicional de computadoras de escritorio.
+
+#### Knowledge Gaps (Brechas de Conocimiento)
+* **Precisión de Recomendaciones:** Falta información cuantitativa sobre qué tan acertadas perciben los usuarios actuales las recomendaciones de libros que les arroja la plataforma.
+* **Detonantes de Participación Social:** Necesitamos datos específicos sobre qué funcionalidades motivan realmente a un lector a publicar un comentario en una comunidad (¿es por la temática, por recomendación de la app o por influencia de otros usuarios?).
+* **Obstáculos en el Checkout:** No hay suficiente información sobre si la distribución actual de la pantalla de carrito y proceso de pago (Checkout) genera dudas o posibles tasas de abandono.
+* **Navegación Intuitiva:** Se carece de un análisis exhaustivo que confirme si los usuarios logran diferenciar y utilizar fluidamente las áreas separadas de la app (el Catálogo vs. el Foro Social) sin sentirse confundidos.
+
+#### Ideas
+* **Implementar Encuestas Cuantitativas:** Desplegar formularios estructurados (basados en escalas de Likert) a usuarios reales tras probar la aplicación, para recoger datos estadísticos sobre la usabilidad y la satisfacción (flujo de compra y comunidades).
+* **Rediseño de la Ficha de Producto:** ¿Mejora la tasa de conversión si se enriquece la información disponible (sinopsis más completas, metadatos precisos) y se redistribuye visualmente la pantalla de detalle del libro (reubicación de portada, jerarquía de botones de acción)?
+* **A/B Testing en flujos de Onboarding:** Desarrollar experimentos futuros donde se compare el nivel de retención de los usuarios que seleccionan sus géneros favoritos al registrarse versus los que no lo hacen.
+* **Análisis Competitivo:** Examinar cómo otras aplicaciones que integran e-commerce y foros de nicho han solucionado la navegación para evitar la saturación de información en la interfaz.
+
+#### Claims (Afirmaciones)
+* **Aumento de Tiempo de Sesión:** Se afirma que la implementación de un modo oscuro y opciones de accesibilidad incrementará el tiempo de permanencia activa de los lectores dentro de la aplicación.
+* **Incremento de Conversión por Comunidad:** Se sostiene que la creación de espacios de debate (comunidades temáticas) resultará en una mayor motivación para leer y, consecuentemente, en un aumento directo en las ventas de libros del catálogo.
+* **Reducción de Fricción Cognitiva:** Se postula que una estructura lógica y jerárquica en el proceso de simulación de pago (Checkout) minimizará la frustración del usuario, brindando una sensación de seguridad comercial.
+* **Fidelización mediante Recomendaciones:** Se afirma que un motor de recomendaciones altamente personalizado es el factor diferenciador que motivará a los usuarios a elegir Livria por encima de librerías virtuales tradicionales.
 
 # Conclusiones
 
