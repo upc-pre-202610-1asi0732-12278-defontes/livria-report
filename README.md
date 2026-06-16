@@ -201,6 +201,14 @@ Commits
   - [8.1. Experiment Planning](#81-experiment-planning)
     - [8.1.1. As-Is Summary](#811-as-is-summary)
     - [8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims](#812-raw-material-assumptions-knowledge-gaps-ideas-claims)
+    - [8.1.3. Experiment-Ready Questions](#813-experiment-ready-questions)
+    - [8.1.4. Question Backlog](#814-question-backlog)
+    - [8.1.5. Experiment Cards](#815-experiment-cards)
+  - [8.2. Experiment Design](#82-experiment-design)
+    - [8.2.1. Hypotheses](#821-hypotheses)
+  - [8.3. Experimentation](#83-experimentation)
+    - [8.3.1. To-Be User Stories](#831-to-be-user-stories)
+    - [8.3.2. To-Be Product Backlog](#832-to-be-product-backlog)
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
@@ -6887,87 +6895,107 @@ En esta sección se organiza las preguntas de investigación de Livria en funci�
 
 Las *Experiment Cards* permiten estructurar cada experimento antes de su ejecución. Su propósito es capturar la pregunta principal, la razón de investigación, la hipótesis de trabajo, la cosa más simple y útil a construir o probar, así como las medidas, condiciones y escala del experimento.
 
-#### Experiment Card 1: Ficha del Libro Enriquecida
+#### Experiment Card 1: Localización Total al Español
 
 **Lado frontal**
 
 | Campo | Descripción |
 |---|---|
-| Pregunta | ¿Una ficha de libro con sinopsis más completa, mejor jerarquía visual y metadatos claros aumenta la intención de agregar un libro al carrito? |
-| Por qué | La vista actual de detalle del libro puede resultar insuficiente para que el usuario tome una decisión informada. Si el usuario no entiende bien el contenido, formato o valor del libro, podría abandonar la compra. |
-| Hipótesis | Si se presenta una ficha de libro enriquecida con sinopsis de 100 a 180 palabras, metadatos claros, reseñas visibles y un botón de acción mejor ubicado, entonces aumentará la intención de agregar el libro al carrito y la confianza percibida del usuario. |
-| Qué: Simplest Useful Thing | Crear un prototipo comparativo de dos versiones de la ficha del libro: una versión actual y una versión enriquecida con mejor jerarquía visual, sinopsis ampliada y metadatos completos. |
+| Pregunta | ¿Una interfaz completamente en español reduce el abandono durante el proceso de compra y aumenta la exploración de funcionalidades avanzadas entre usuarios hispanohablantes? (BLQ01, BLQ24) |
+| Por qué | La totalidad de la interfaz está implementada en inglés. Para el segmento de lectores peruanos hispanohablantes, esto impone una capa de carga cognitiva en cada interacción, especialmente crítica en pantallas de alta acción como el checkout, donde la confusión puede traducirse en abandono. |
+| Hipótesis | Si se migra la interfaz completa al español (es_419), priorizando checkout, catálogo y comunidades, entonces disminuirá la tasa de abandono en el proceso de compra y aumentará la exploración de funcionalidades avanzadas. |
+| Qué: Simplest Useful Thing | Crear un prototipo comparativo A/B de los flujos de checkout y comunidades en dos versiones: la versión actual en inglés y una versión completamente localizada al español. |
 
 **Lado posterior**
 
 | Campo | Descripción |
 |---|---|
-| Medidas | Tasa de intención de agregar al carrito, tiempo promedio de decisión, nivel de confianza en la información del libro, claridad percibida de la ficha, comentarios cualitativos del usuario. |
-| Condiciones | Los participantes deberán revisar dos fichas de libros en prototipo móvil. Se mantendrán los mismos títulos para todos los usuarios y se alternará el orden de presentación para evitar sesgos. |
-| Escala | 10 a 15 participantes de los segmentos “Lectores en Desarrollo” y “Lectores Comunitarios”. Duración aproximada: 15 minutos por sesión. |
-| Criterio de éxito | La versión enriquecida será considerada favorable si aumenta al menos en 20% la intención de agregar al carrito o si obtiene una calificación promedio mínima de 4/5 en confianza y claridad percibida. |
+| Medidas | Tasa de abandono en el checkout, tiempo de completado de formularios, número de funcionalidades avanzadas exploradas por sesión, comprensión percibida de etiquetas y errores de validación. |
+| Condiciones | Los participantes completan una tarea de compra y una de exploración de comunidades. El grupo de control usa la versión en inglés y el grupo experimental la versión en español. Se mantienen los mismos títulos y tareas para todos. |
+| Escala | 10 a 15 participantes del segmento “Lectores en Desarrollo”. Duración aproximada: 15 minutos por sesión. |
+| Criterio de éxito | La versión en español será considerada favorable si reduce al menos en 20% el abandono en el checkout o si mejora en al menos 1 punto (escala Likert 1 a 5) la comprensión percibida de la interfaz. |
 
-#### Experiment Card 2: Recomendaciones Personalizadas
+#### Experiment Card 2: Tinder Literario (Swipe de Recomendaciones)
 
 **Lado frontal**
 
 | Campo | Descripción |
 |---|---|
-| Pregunta | ¿Las recomendaciones personalizadas según intereses literarios reducen el tiempo que tarda el usuario en encontrar un libro de su agrado? |
-| Por qué | Livria busca diferenciarse por facilitar el descubrimiento de libros. Si las recomendaciones no son percibidas como útiles, la propuesta de personalización perdería valor frente a una búsqueda tradicional. |
-| Hipótesis | Si el usuario recibe recomendaciones basadas en sus géneros, autores o intereses literarios, entonces encontrará un libro de su agrado en menos tiempo y percibirá mayor relevancia en el contenido mostrado. |
-| Qué: Simplest Useful Thing | Crear un flujo simple donde el usuario seleccione tres preferencias literarias y luego reciba una pantalla con seis recomendaciones personalizadas. Esta versión será comparada con una lista genérica de libros populares. |
+| Pregunta | ¿Un sistema de recomendaciones basado en tarjetas deslizables (swipe) genera más señales de preferencia por sesión que la cuadrícula estática actual? (BLQ05) |
+| Por qué | El sistema actual exige entrar a cada ficha técnica, leer la sinopsis y marcar el libro como favorito o excluido mediante íconos. Este flujo requiere múltiples taps por decisión, desincentivando la alimentación continua del algoritmo. |
+| Hipótesis | Si se reemplaza la cuadrícula estática por tarjetas apiladas donde el usuario deslice a la derecha (“me interesa”) o a la izquierda (“no me interesa”), entonces aumentará el número de señales de preferencia capturadas por sesión y se reducirá el tiempo de decisión por libro. |
+| Qué: Simplest Useful Thing | Crear un prototipo funcional de una pila de tarjetas de libros con gestos de swipe, comparado con la cuadrícula estática actual de recomendaciones. |
 
 **Lado posterior**
 
 | Campo | Descripción |
 |---|---|
-| Medidas | Tiempo hasta seleccionar un libro, cantidad de libros marcados como interesantes, calificación de relevancia de las recomendaciones, satisfacción con la experiencia de búsqueda. |
-| Condiciones | Los usuarios realizarán una tarea de descubrimiento: “Encuentra un libro que leerías o comprarías”. Algunos usuarios verán recomendaciones genéricas y otros recomendaciones basadas en preferencias declaradas. |
-| Escala | 10 a 15 participantes. Se aplicará una encuesta posterior con escala de Likert de 1 a 5. |
-| Criterio de éxito | El experimento será considerado favorable si al menos el 70% de los usuarios selecciona un libro recomendado como interesante y si el tiempo promedio de búsqueda se reduce al menos en 25% frente a la lista genérica. |
+| Medidas | Número de señales de preferencia por sesión (swipes), tiempo de decisión por libro, satisfacción percibida del motor de recomendaciones, libros agregados al carrito tras la sesión. |
+| Condiciones | Los usuarios realizan una tarea de descubrimiento: “Encuentra libros que leerías o comprarías”. El grupo de control usa la cuadrícula actual y el grupo experimental la mecánica de swipe. Mismo set de libros para ambos. |
+| Escala | 10 a 15 participantes de los segmentos “Lectores en Desarrollo” y “Lectores Comunitarios”. Encuesta posterior con escala de Likert de 1 a 5. |
+| Criterio de éxito | La mecánica de swipe será considerada favorable si genera al menos el doble de señales de preferencia por sesión y reduce en al menos 25% el tiempo de decisión por libro frente a la cuadrícula actual. |
 
-#### Experiment Card 3: Integración entre Ficha del Libro y Comunidad
+#### Experiment Card 3: Billetera Livria
 
 **Lado frontal**
 
 | Campo | Descripción |
 |---|---|
-| Pregunta | ¿La integración visible entre la ficha del libro y las comunidades lectoras aumenta la intención de comentar, unirse a una comunidad o revisar opiniones? |
-| Por qué | Una de las principales apuestas de Livria es unir comercio y comunidad. Sin embargo, aún no se sabe si los usuarios perciben esta conexión como natural o si separan la compra de libros de la participación social. |
-| Hipótesis | Si la ficha del libro muestra accesos visibles a reseñas, debates o comunidades relacionadas con el título o género, entonces aumentará la intención de interacción social y la confianza en la elección del libro. |
-| Qué: Simplest Useful Thing | Diseñar una versión de la ficha del libro con un bloque llamado “Comunidad relacionada”, donde el usuario pueda ver comentarios, unirse a una comunidad o leer debates vinculados al libro. |
+| Pregunta | ¿Una billetera virtual interna que permita pre-cargar fondos mediante una única transferencia incrementa la frecuencia de compra al eliminar la transferencia manual por cada pedido? (BLQ03, BLQ04) |
+| Por qué | El modelo de pago actual exige salir de la app, transferir al CCI, capturar el comprobante y subirlo nuevamente en cada compra individual (3 a 8 minutos por transacción). La evidencia del embudo señala este paso como el principal cuello de botella de conversión. |
+| Hipótesis | Si el usuario puede recargar fondos una sola vez y realizar compras posteriores con un solo toque, entonces aumentará la frecuencia de compra y el número de compras por sesión frente al flujo de transferencia por CCI repetitivo. |
+| Qué: Simplest Useful Thing | Crear un prototipo del flujo de recarga de la billetera y compra con saldo disponible (un toque), comparado con el flujo actual de transferencia bancaria y subida de comprobante. |
 
 **Lado posterior**
 
 | Campo | Descripción |
 |---|---|
-| Medidas | Porcentaje de usuarios que hacen clic en comunidad relacionada, intención de unirse, intención de comentar, percepción de utilidad de las opiniones, impacto en la confianza de compra. |
-| Condiciones | Se comparará una ficha de libro sin acceso comunitario visible frente a una ficha con comunidad relacionada. Los participantes deberán explorar un libro y decidir si lo comprarían o si buscarían opiniones antes de hacerlo. |
-| Escala | 8 a 12 participantes, priorizando usuarios del segmento “Lectores Comunitarios”. |
-| Criterio de éxito | Se considerará favorable si al menos el 60% de los usuarios interactúa con el bloque comunitario o indica que las opiniones de otros lectores aumentan su confianza para elegir el libro. |
+| Medidas | Número de compras por sesión, tiempo de completado de la compra, tasa de finalización del pago, intención declarada de recargar fondos, monto de recarga inicial considerado razonable. |
+| Condiciones | Los participantes simulan dos compras consecutivas. El grupo de control usa el flujo de CCI actual y el grupo experimental la billetera con saldo precargado. No se realizan pagos reales. |
+| Escala | 10 a 12 participantes con historial de compra previo simulado. Sesiones moderadas de 15 a 20 minutos. |
+| Criterio de éxito | La billetera será considerada favorable si incrementa en al menos 40% las compras por sesión o si al menos el 70% de los participantes declara que recargaría fondos para futuras compras. |
 
-#### Experiment Card 4: Checkout Guiado por Transferencia
+#### Experiment Card 4: Vitrina Literaria en el Perfil
 
 **Lado frontal**
 
 | Campo | Descripción |
 |---|---|
-| Pregunta | ¿Un checkout con pasos más claros, instrucciones visibles de transferencia y confirmación de pago mejora la percepción de confianza del usuario? |
-| Por qué | Livria no integra pasarelas de pago automatizadas en el MVP, por lo que el usuario debe comprender claramente el flujo de transferencia, carga de comprobante y validación manual. Una mala comunicación podría generar abandono o desconfianza. |
-| Hipótesis | Si el checkout presenta una barra de progreso, instrucciones claras para la transferencia, CCI visible y confirmación del estado “Pago en verificación”, entonces aumentará la confianza del usuario y disminuirán los errores durante el flujo de compra. |
-| Qué: Simplest Useful Thing | Crear un prototipo funcional del checkout dividido en pasos: resumen de compra, datos del destinatario, método de entrega, información de pago y confirmación de comprobante. |
+| Pregunta | ¿Una sección pública de “Libros Leídos” y reseñas en el perfil incrementa las visitas entre perfiles y el sentido de identidad literaria del usuario? (BLQ22) |
+| Por qué | Los perfiles actuales solo exponen datos básicos de cuenta e historial de órdenes. No reflejan el recorrido literario del usuario, eliminando el componente de identidad social que en plataformas similares actúa como motor de retención a largo plazo. |
+| Hipótesis | Si el perfil expone públicamente el historial de libros leídos, las reseñas publicadas y los géneros predominantes, entonces aumentarán las visitas entre perfiles dentro de una comunidad y el usuario percibirá mayor identidad y pertenencia. |
+| Qué: Simplest Useful Thing | Diseñar un prototipo de perfil con una sección “Vitrina Literaria” (libros leídos, reseñas y géneros predominantes), comparado con el perfil básico actual. |
 
 **Lado posterior**
 
 | Campo | Descripción |
 |---|---|
-| Medidas | Tasa de finalización del flujo, cantidad de errores o dudas reportadas, tiempo de finalización, percepción de seguridad, claridad de instrucciones. |
-| Condiciones | Los usuarios deberán simular la compra de un libro físico y completar el flujo hasta la pantalla de confirmación del pago. No se realizará ningún pago real. |
-| Escala | 10 a 12 participantes. Sesiones moderadas de 15 a 20 minutos. |
-| Criterio de éxito | El flujo será considerado favorable si al menos el 80% de los participantes completa la simulación sin ayuda y si la percepción de seguridad obtiene una calificación promedio mínima de 4/5. |
+| Medidas | Visitas entre perfiles por sesión, acciones realizadas tras visitar un perfil (unirse a una comunidad, explorar el catálogo), identidad y pertenencia percibidas, intención de completar el propio historial. |
+| Condiciones | Los participantes exploran el perfil de otro lector. El grupo de control ve el perfil básico actual y el grupo experimental el perfil con vitrina literaria. |
+| Escala | 8 a 12 participantes, priorizando usuarios del segmento “Lectores Comunitarios”. Sesiones de 15 minutos. |
+| Criterio de éxito | Se considerará favorable si al menos el 60% de los usuarios realiza una acción tras visitar un perfil enriquecido o califica con un mínimo de 4/5 el aporte de la vitrina a su identidad lectora. |
 
-## Experiment Design
+#### Experiment Card 5: Comentarios y Publicaciones con Imágenes
+
+**Lado frontal**
+
+| Campo | Descripción |
+|---|---|
+| Pregunta | ¿Habilitar imágenes (y GIFs) en publicaciones y comentarios de comunidades incrementa la frecuencia de interacción y la proporción de espectadores que pasan a creadores de contenido? (BLQ18, BLQ19) |
+| Por qué | Los hilos de conversación de las comunidades carecen de soporte expresivo para contenido visual dinámico. Esta limitación hace que los debates literarios se perciban rígidos y menos atractivos que otras plataformas sociales de referencia para el segmento. |
+| Hipótesis | Si se habilita el soporte de imágenes y GIFs en posts y comentarios, entonces aumentará la frecuencia de publicaciones por usuario activo y la proporción de espectadores que publican por primera vez. |
+| Qué: Simplest Useful Thing | Crear un prototipo de hilo de comunidad con un composer que permita adjuntar imágenes y GIFs en posts y comentarios, comparado con el composer de solo texto e imagen estática actual. |
+
+**Lado posterior**
+
+| Campo | Descripción |
+|---|---|
+| Medidas | Publicaciones y comentarios por usuario activo, proporción de transición espectador→creador, comentarios por publicación con imagen frente a texto plano, expresividad percibida del hilo. |
+| Condiciones | Los participantes realizan una tarea de participación en un hilo de comunidad. El grupo de control usa el composer de solo texto y el grupo experimental el composer con imágenes y GIFs. |
+| Escala | 10 a 15 participantes del segmento “Lectores Comunitarios”. Sesiones de 15 minutos. |
+| Criterio de éxito | El composer con imágenes será considerado favorable si incrementa en al menos 30% la frecuencia de publicación o si al menos el 50% de los espectadores publica al menos una vez durante la sesión. |
+
+## 8.2. Experiment Design
 
 El diseño del experimento define cómo se responderán las preguntas priorizadas en el Question Backlog. Esta fase es fundamental porque permite establecer un proceso ordenado para obtener evidencia útil, comparable y confiable sobre las principales suposiciones de Livria.
 
@@ -6977,14 +7005,247 @@ Las hipótesis permiten convertir las creencias del equipo en declaraciones comp
 
 | ID | Pregunta asociada | Hipótesis de trabajo | Hipótesis nula | Medidas esperadas |
 |---|---|---|---|---|
-| H01 | BLQ02 | Si se presenta una ficha de libro enriquecida con sinopsis de 100 a 180 palabras, metadatos claros, reseñas visibles y mejor jerarquía visual, entonces aumentará la intención de agregar el libro al carrito y la confianza percibida del usuario. | La ficha enriquecida no generará diferencias relevantes en la intención de agregar al carrito ni en la confianza percibida frente a la ficha actual. | Incremento mínimo de 20% en intención de agregar al carrito o calificación promedio mínima de 4/5 en claridad y confianza. |
-| H02 | BLQ03 | Si el usuario recibe recomendaciones personalizadas según sus intereses literarios, entonces reducirá el tiempo necesario para encontrar un libro de su agrado y calificará las sugerencias como más relevantes. | Las recomendaciones personalizadas no reducirán el tiempo de búsqueda ni aumentarán la relevancia percibida frente a una lista genérica. | Reducción mínima de 25% en tiempo de búsqueda y calificación promedio de relevancia igual o superior a 4/5. |
-| H03 | BLQ04 | Si la ficha del libro incluye un acceso visible a comunidades, reseñas o debates relacionados, entonces aumentará la intención del usuario de interactuar socialmente y mejorará su confianza en la elección del libro. | La integración de comunidades en la ficha del libro no aumentará la intención de participación ni la confianza del usuario frente a una ficha sin bloque comunitario. | Al menos 60% de usuarios interactúa con el bloque comunitario o declara que las opiniones de otros lectores influyen positivamente en su decisión. |
-| H04 | BLQ05 | Si el checkout se organiza en pasos claros con barra de progreso, instrucciones de transferencia, CCI visible y confirmación de pago en verificación, entonces aumentará la percepción de seguridad y disminuirán los errores en el flujo de compra. | El checkout guiado no mejorará la percepción de seguridad ni reducirá errores frente al flujo actual. | Al menos 80% de usuarios completa el flujo sin ayuda y la percepción de seguridad alcanza un promedio mínimo de 4/5. |
-| H05 | BLQ01 | Si Livria implementa un modo oscuro con contraste adecuado, entonces mejorará la comodidad visual percibida y aumentará la intención de uso en sesiones prolongadas o nocturnas. | El modo oscuro no generará una mejora relevante en comodidad visual ni en intención de permanencia frente al modo claro actual. | Incremento mínimo de 1 punto en comodidad visual en escala Likert de 1 a 5 o aumento mínimo de 15% en intención declarada de permanencia. |
-| H06 | BLQ06 | Si el usuario puede personalizar su perfil con avatar, biografía y frase literaria, entonces aumentará su intención de participar en comunidades temáticas. | La personalización del perfil no aumentará la intención de participar en comunidades frente a un perfil básico. | Incremento mínimo de 20% en intención de unirse, comentar o publicar dentro de una comunidad. |
+| H01 | BLQ01, BLQ24 | Si se migra la interfaz completa al español (es_419), priorizando checkout, catálogo y comunidades, entonces disminuirá la tasa de abandono en el proceso de compra y aumentará la exploración de funcionalidades avanzadas entre usuarios hispanohablantes. | La localización al español no generará diferencias relevantes en el abandono del checkout ni en la exploración de funcionalidades frente a la interfaz actual en inglés. | Reducción mínima de 20% en el abandono del checkout o incremento de al menos 1 punto (Likert 1 a 5) en la comprensión percibida de la interfaz. |
+| H02 | BLQ05 | Si se reemplaza la cuadrícula estática de recomendaciones por una mecánica de tarjetas deslizables (swipe), entonces aumentará el número de señales de preferencia capturadas por sesión y se reducirá el tiempo de decisión por libro. | La mecánica de swipe no incrementará las señales de preferencia por sesión ni reducirá el tiempo de decisión frente a la cuadrícula estática actual. | Al menos el doble de señales de preferencia por sesión y una reducción mínima de 25% en el tiempo de decisión por libro. |
+| H03 | BLQ03, BLQ04 | Si el usuario puede pre-cargar fondos en una billetera virtual mediante una única transferencia y comprar con un solo toque, entonces aumentará la frecuencia de compra y el número de compras por sesión frente al flujo de transferencia por CCI repetitivo. | La billetera virtual no incrementará la frecuencia de compra ni el número de compras por sesión frente al flujo de pago manual actual. | Incremento mínimo de 40% en las compras por sesión o al menos 70% de participantes que declara que recargaría fondos para futuras compras. |
+| H04 | BLQ22 | Si el perfil expone públicamente el historial de libros leídos, las reseñas publicadas y los géneros predominantes, entonces aumentarán las visitas entre perfiles dentro de una comunidad y el usuario percibirá mayor identidad y pertenencia. | La vitrina literaria en el perfil no aumentará las visitas entre perfiles ni la identidad percibida frente al perfil básico actual. | Al menos 60% de usuarios realiza una acción tras visitar un perfil enriquecido o califica con un mínimo de 4/5 el aporte de la vitrina a su identidad lectora. |
+| H05 | BLQ18, BLQ19 | Si se habilita el soporte de imágenes y GIFs en publicaciones y comentarios de comunidades, entonces aumentará la frecuencia de publicaciones por usuario activo y la proporción de espectadores que publican por primera vez. | El soporte de imágenes y GIFs no incrementará la frecuencia de publicación ni la transición de espectadores a creadores frente al composer de solo texto actual. | Incremento mínimo de 30% en la frecuencia de publicación o al menos 50% de los espectadores que publica al menos una vez durante la sesión. |
 
 Estas hipótesis guiarán la ejecución de los experimentos iniciales de Livria. Los resultados obtenidos permitirán decidir qué funcionalidades deben priorizarse en el backlog de producto, cuáles requieren rediseño y cuáles no generan suficiente valor para ser implementadas en el MVP.
+
+
+## 8.3. Experimentation
+
+La sección de Experimentation traduce el aprendizaje del proceso de planificación y diseño de experimentos en artefactos accionables para el producto. A partir de las cinco apuestas To-Be priorizadas —localización total al español, Tinder literario, Billetera Livria, vitrina literaria en el perfil y comentarios con imágenes en comunidades— se derivan las nuevas User Stories y el Product Backlog evolucionado que guiarán los siguientes Sprints de Livria. Cada historia traza su origen a las Experiment Cards (8.1.5) y a las hipótesis de trabajo (8.2.1) que la sustentan.
+
+### 8.3.1. To-Be User Stories
+
+Las To-Be User Stories representan las funcionalidades que materializan las mejoras derivadas de la experimentación. Se organizan en cinco nuevos epics (EP09 a EP13), uno por cada apuesta To-Be, y conservan el formato de la sección [3.2. User Stories](#32-user-stories), incluyendo criterios de aceptación redactados bajo el enfoque Given-When-Then (Dado-Cuando-Entonces). La numeración continúa a partir de las historias existentes (US27 en adelante).
+
+#### EP09: Localización al Español
+
+| Campo | Valor |
+|---|---|
+| **Story ID** | US27 |
+| **User** | Lector |
+| **Priority** | 1 – Must Have |
+| **Epic** | EP09: Localización al Español |
+| **Title** | Cambiar el idioma de la aplicación móvil a español |
+| **Description** | Como lector hispanohablante, quiero usar toda la aplicación en español, para comprender la interfaz sin esfuerzo y reducir la carga cognitiva en cada interacción. |
+| **Acceptance Criteria – Escenario 1: Activación del idioma español** 
+Dado que la aplicación está presentando el contenido en inglés, **Cuando** el usuario selecciona el español (es_419) como idioma, **Entonces** el sistema debe cargar y mostrar todas las etiquetas, botones, menús y estados de la interfaz localizados en español. |
+| **Acceptance Criteria – Escenario 2: Persistencia del idioma seleccionado** 
+Dado que el usuario ha establecido el español como idioma de la aplicación, **Cuando** cierra y vuelve a abrir la aplicación, **Entonces** el sistema debe conservar el español como idioma activo sin requerir una nueva selección. |
+
+| Campo | Valor |
+|---|---|
+| **Story ID** | US28 |
+| **User** | Lector |
+| **Priority** | 1 – Must Have |
+| **Epic** | EP09: Localización al Español |
+| **Title** | Localización del flujo de checkout al español |
+| **Description** | Como lector que va a realizar una compra, quiero que el flujo de checkout esté completamente en español, para entender cada paso del pago y evitar abandonar la compra por confusión. |
+| **Acceptance Criteria – Escenario 1: Checkout localizado** 
+Dado que el usuario inicia el proceso de compra con el idioma español activo, **Cuando** avanza por los pasos de resumen, datos del destinatario, método de entrega y pago, **Entonces** el sistema debe mostrar todos los títulos, campos, botones e instrucciones en español. |
+| **Acceptance Criteria – Escenario 2: Confirmación de pago en español** 
+Dado que el usuario completa el envío del comprobante de pago, **Cuando** el sistema confirma la operación, **Entonces** el estado y los mensajes de confirmación deben presentarse en español. |
+
+| Campo | Valor |
+|---|---|
+| **Story ID** | US29 |
+| **User** | Lector |
+| **Priority** | 2 – Should Have |
+| **Epic** | EP09: Localización al Español |
+| **Title** | Localización de mensajes de error y validaciones |
+| **Description** | Como lector, quiero que los mensajes de error, validaciones de formulario y estados vacíos aparezcan en español, para comprender qué corregir sin recurrir a una traducción mental. |
+| **Acceptance Criteria – Escenario 1: Validación de formulario en español** 
+Dado que el usuario ingresa datos inválidos en un formulario, **Cuando** el sistema detecta el error, **Entonces** debe mostrar el mensaje de validación correspondiente redactado en español. |
+| **Acceptance Criteria – Escenario 2: Estados vacíos en español** 
+Dado que una sección no tiene contenido para mostrar, **Cuando** el usuario accede a ella, **Entonces** el sistema debe presentar el mensaje de estado vacío en español. |
+
+#### EP10: Tinder Literario (Descubrimiento por Swipe)
+
+| Campo | Valor |
+|---|---|
+| **Story ID** | US30 |
+| **User** | Lector |
+| **Priority** | 1 – Must Have |
+| **Epic** | EP10: Tinder Literario |
+| **Title** | Descubrir libros mediante tarjetas deslizables |
+| **Description** | Como lector, quiero descubrir recomendaciones deslizando tarjetas de libros, para explorar nuevas lecturas de forma rápida e instintiva en lugar de revisar una cuadrícula estática. |
+| **Acceptance Criteria – Escenario 1: Presentación de la pila de tarjetas** 
+Dado que el usuario accede a la sección de recomendaciones, **Cuando** el sistema carga las sugerencias, **Entonces** debe presentarlas como una pila de tarjetas con portada, título, autor y una sinopsis breve. |
+| **Acceptance Criteria – Escenario 2: Avance entre tarjetas** 
+Dado que el usuario interactúa con una tarjeta, **Cuando** la desliza, **Entonces** el sistema debe descartar la tarjeta actual y presentar la siguiente de la pila sin recargar la pantalla. |
+
+| Campo | Valor |
+|---|---|
+| **Story ID** | US31 |
+| **User** | Lector |
+| **Priority** | 1 – Must Have |
+| **Epic** | EP10: Tinder Literario |
+| **Title** | Registrar preferencias mediante gestos de swipe |
+| **Description** | Como lector, quiero indicar mi interés deslizando a la derecha o desinterés deslizando a la izquierda, para alimentar el algoritmo de recomendaciones con un mínimo esfuerzo por decisión. |
+| **Acceptance Criteria – Escenario 1: Señal de interés** 
+Dado que el usuario ve una tarjeta de libro, **Cuando** la desliza hacia la derecha, **Entonces** el sistema debe registrar el libro como de interés y considerarlo como señal positiva para futuras recomendaciones. |
+| **Acceptance Criteria – Escenario 2: Señal de desinterés** 
+Dado que el usuario ve una tarjeta de libro, **Cuando** la desliza hacia la izquierda, **Entonces** el sistema debe registrar el libro como descartado y reducir la aparición de títulos similares. |
+
+| Campo | Valor |
+|---|---|
+| **Story ID** | US32 |
+| **User** | Lector |
+| **Priority** | 3 – Could Have |
+| **Epic** | EP10: Tinder Literario |
+| **Title** | Actualizar la pila de recomendaciones |
+| **Description** | Como lector, quiero solicitar una nueva pila de recomendaciones cuando termine la actual, para seguir descubriendo libros sin salir de la mecánica de swipe. |
+| **Acceptance Criteria – Escenario 1: Recarga de la pila** 
+Dado que el usuario ha deslizado todas las tarjetas disponibles, **Cuando** la pila queda vacía, **Entonces** el sistema debe ofrecer la opción de cargar una nueva pila basada en las señales de preferencia más recientes. |
+
+#### EP11: Billetera Livria
+
+| Campo | Valor |
+|---|---|
+| **Story ID** | US33 |
+| **User** | Lector |
+| **Priority** | 1 – Must Have |
+| **Epic** | EP11: Billetera Livria |
+| **Title** | Recargar saldo en la billetera virtual |
+| **Description** | Como lector, quiero recargar fondos en mi billetera Livria mediante una única transferencia, para no tener que repetir el proceso de transferencia bancaria en cada compra. |
+| **Acceptance Criteria – Escenario 1: Recarga exitosa** 
+Dado que el usuario realiza una transferencia y sube el comprobante de recarga, **Cuando** el sistema valida la operación, **Entonces** debe acreditar el monto en el saldo de la billetera y reflejarlo de forma visible. |
+| **Acceptance Criteria – Escenario 2: Recarga en verificación** 
+Dado que el usuario envía el comprobante de recarga, **Cuando** la validación aún está en proceso, **Entonces** el sistema debe mostrar el estado "Recarga en verificación" hasta que se confirme el abono. |
+
+| Campo | Valor |
+|---|---|
+| **Story ID** | US34 |
+| **User** | Lector |
+| **Priority** | 1 – Must Have |
+| **Epic** | EP11: Billetera Livria |
+| **Title** | Comprar libros con saldo de la billetera |
+| **Description** | Como lector con saldo disponible, quiero pagar mis compras con un solo toque usando mi billetera, para completar la transacción sin salir de la aplicación ni subir comprobantes. |
+| **Acceptance Criteria – Escenario 1: Pago con saldo suficiente** 
+Dado que el usuario tiene saldo suficiente en la billetera, **Cuando** confirma la compra de un libro, **Entonces** el sistema debe descontar el monto del saldo y registrar la compra como pagada de inmediato. |
+| **Acceptance Criteria – Escenario 2: Saldo insuficiente** 
+Dado que el usuario no tiene saldo suficiente, **Cuando** intenta pagar con la billetera, **Entonces** el sistema debe impedir la compra y ofrecer la opción de recargar la billetera. |
+
+| Campo | Valor |
+|---|---|
+| **Story ID** | US35 |
+| **User** | Lector |
+| **Priority** | 2 – Should Have |
+| **Epic** | EP11: Billetera Livria |
+| **Title** | Consultar saldo y movimientos de la billetera |
+| **Description** | Como lector, quiero ver mi saldo disponible y el historial de movimientos de la billetera, para tener control sobre mis fondos y mis compras. |
+| **Acceptance Criteria – Escenario 1: Visualización de saldo** 
+Dado que el usuario accede a su billetera, **Cuando** el sistema carga la información, **Entonces** debe mostrar el saldo disponible de forma destacada. |
+| **Acceptance Criteria – Escenario 2: Historial de movimientos** 
+Dado que el usuario consulta su billetera, **Cuando** revisa el historial, **Entonces** el sistema debe listar las recargas y compras con fecha, descripción y monto. |
+
+#### EP12: Vitrina Literaria en el Perfil
+
+| Campo | Valor |
+|---|---|
+| **Story ID** | US36 |
+| **User** | Lector |
+| **Priority** | 2 – Should Have |
+| **Epic** | EP12: Vitrina Literaria |
+| **Title** | Marcar libros como leídos |
+| **Description** | Como lector, quiero marcar libros como leídos, para construir mi historial literario y reflejar mi recorrido como lector. |
+| **Acceptance Criteria – Escenario 1: Marcar un libro como leído** 
+Dado que el usuario visualiza la ficha de un libro, **Cuando** lo marca como leído, **Entonces** el sistema debe agregar el libro a su historial de "Libros Leídos". |
+| **Acceptance Criteria – Escenario 2: Quitar la marca de leído** 
+Dado que un libro figura como leído en el historial del usuario, **Cuando** retira la marca, **Entonces** el sistema debe eliminar el libro de la sección "Libros Leídos". |
+
+| Campo | Valor |
+|---|---|
+| **Story ID** | US37 |
+| **User** | Lector |
+| **Priority** | 1 – Must Have |
+| **Epic** | EP12: Vitrina Literaria |
+| **Title** | Visualizar la vitrina literaria pública en el perfil |
+| **Description** | Como lector, quiero que mi perfil muestre públicamente mis libros leídos, para exhibir mi identidad literaria y conectar con otros lectores. |
+| **Acceptance Criteria – Escenario 1: Vitrina visible en el perfil** 
+Dado que un usuario visita el perfil de otro lector, **Cuando** el sistema carga el perfil, **Entonces** debe mostrar la sección "Vitrina Literaria" con los libros leídos del usuario. |
+| **Acceptance Criteria – Escenario 2: Navegación desde la vitrina** 
+Dado que un usuario visualiza la vitrina literaria de otro lector, **Cuando** selecciona uno de los libros, **Entonces** el sistema debe llevarlo a la ficha del libro en el catálogo. |
+
+| Campo | Valor |
+|---|---|
+| **Story ID** | US38 |
+| **User** | Lector |
+| **Priority** | 2 – Should Have |
+| **Epic** | EP12: Vitrina Literaria |
+| **Title** | Mostrar reseñas publicadas y géneros predominantes en el perfil |
+| **Description** | Como lector, quiero que mi perfil exhiba las reseñas que he publicado y mis géneros predominantes, para enriquecer mi identidad literaria con mi actividad y mis preferencias. |
+| **Acceptance Criteria – Escenario 1: Reseñas publicadas visibles** 
+Dado que un usuario visita un perfil, **Cuando** el sistema carga la vitrina literaria, **Entonces** debe mostrar las reseñas publicadas por ese lector. |
+| **Acceptance Criteria – Escenario 2: Géneros predominantes** 
+Dado que el lector tiene un historial de libros leídos, **Cuando** se carga su perfil, **Entonces** el sistema debe calcular y mostrar los géneros predominantes de su actividad. |
+
+#### EP13: Comentarios y Publicaciones con Imágenes
+
+| Campo | Valor |
+|---|---|
+| **Story ID** | US39 |
+| **User** | Lector |
+| **Priority** | 1 – Must Have |
+| **Epic** | EP13: Comentarios y Publicaciones con Imágenes |
+| **Title** | Adjuntar imágenes en publicaciones de comunidad |
+| **Description** | Como lector miembro de una comunidad, quiero adjuntar imágenes en mis publicaciones, para enriquecer los debates literarios con contenido visual. |
+| **Acceptance Criteria – Escenario 1: Publicación con imagen** 
+Dado que el usuario redacta una publicación en una comunidad, **Cuando** adjunta una imagen y publica, **Entonces** el sistema debe mostrar la publicación con la imagen incrustada en el hilo. |
+| **Acceptance Criteria – Escenario 2: Formato no soportado** 
+Dado que el usuario intenta adjuntar un archivo, **Cuando** el formato no es una imagen válida, **Entonces** el sistema debe rechazar el archivo e informar los formatos permitidos. |
+
+| Campo | Valor |
+|---|---|
+| **Story ID** | US40 |
+| **User** | Lector |
+| **Priority** | 2 – Should Have |
+| **Epic** | EP13: Comentarios y Publicaciones con Imágenes |
+| **Title** | Adjuntar imágenes y GIFs en comentarios |
+| **Description** | Como lector, quiero responder con imágenes y GIFs en los comentarios, para expresar reacciones de forma más rica que el texto plano. |
+| **Acceptance Criteria – Escenario 1: Comentario con imagen o GIF** 
+Dado que el usuario redacta un comentario en una publicación, **Cuando** adjunta una imagen o un GIF y envía, **Entonces** el sistema debe mostrar el comentario con el contenido visual incrustado. |
+| **Acceptance Criteria – Escenario 2: GIF animado en el hilo** 
+Dado que un comentario incluye un GIF, **Cuando** se visualiza en el hilo, **Entonces** el sistema debe reproducir la animación del GIF. |
+
+| Campo | Valor |
+|---|---|
+| **Story ID** | US41 |
+| **User** | Lector |
+| **Priority** | 3 – Could Have |
+| **Epic** | EP13: Comentarios y Publicaciones con Imágenes |
+| **Title** | Previsualizar y eliminar la imagen antes de publicar |
+| **Description** | Como lector, quiero previsualizar y poder quitar la imagen o GIF adjunto antes de publicar, para asegurarme de compartir el contenido correcto. |
+| **Acceptance Criteria – Escenario 1: Previsualización del adjunto** 
+Dado que el usuario adjunta una imagen o GIF a una publicación o comentario, **Cuando** aún no ha enviado el contenido, **Entonces** el sistema debe mostrar una previsualización del adjunto. |
+| **Acceptance Criteria – Escenario 2: Eliminación del adjunto** 
+Dado que el usuario visualiza la previsualización de un adjunto, **Cuando** decide quitarlo, **Entonces** el sistema debe eliminar el adjunto antes de publicar. |
+
+### 8.3.2. To-Be Product Backlog
+
+El To-Be Product Backlog consolida y prioriza las nuevas User Stories derivadas de la experimentación, manteniendo la estructura de la sección [3.3. Product Backlog](#33-product-backlog). El orden de prioridad refleja los criterios de Confianza, Riesgo, Impacto e Interés aplicados en el [Question Backlog](#814-question-backlog), situando primero las apuestas con mayor impacto sobre la conversión (Billetera Livria y localización) y, a continuación, las orientadas al engagement y la retención (Tinder literario, vitrina literaria y comentarios con imágenes).
+
+| # Orden | User Story ID | Título | Descripción | Story Points (1/2/3/5/8) |
+|---------|---------------|--------|-------------|--------------------------|
+| 1 | US33 | Recargar saldo en la billetera virtual | Como lector, quiero recargar fondos en mi billetera Livria mediante una única transferencia, para no repetir el proceso bancario en cada compra. | 5 |
+| 2 | US34 | Comprar libros con saldo de la billetera | Como lector con saldo, quiero pagar con un solo toque usando mi billetera, para completar la compra sin subir comprobantes. | 5 |
+| 3 | US28 | Localización del flujo de checkout al español | Como lector, quiero el checkout completamente en español, para entender cada paso del pago y no abandonar la compra. | 5 |
+| 4 | US27 | Cambiar el idioma de la aplicación a español | Como lector hispanohablante, quiero usar toda la app en español, para reducir la carga cognitiva en cada interacción. | 3 |
+| 5 | US30 | Descubrir libros mediante tarjetas deslizables | Como lector, quiero descubrir recomendaciones deslizando tarjetas, para explorar lecturas de forma rápida e instintiva. | 5 |
+| 6 | US31 | Registrar preferencias mediante gestos de swipe | Como lector, quiero indicar interés o desinterés deslizando, para alimentar el algoritmo con mínimo esfuerzo. | 3 |
+| 7 | US37 | Visualizar la vitrina literaria pública en el perfil | Como lector, quiero que mi perfil muestre mis libros leídos, para exhibir mi identidad literaria y conectar con otros. | 3 |
+| 8 | US39 | Adjuntar imágenes en publicaciones de comunidad | Como lector, quiero adjuntar imágenes en mis publicaciones, para enriquecer los debates con contenido visual. | 3 |
+| 9 | US35 | Consultar saldo y movimientos de la billetera | Como lector, quiero ver mi saldo e historial de movimientos, para tener control sobre mis fondos y compras. | 2 |
+| 10 | US29 | Localización de mensajes de error y validaciones | Como lector, quiero los mensajes de error y validaciones en español, para comprender qué corregir sin traducir mentalmente. | 3 |
+| 11 | US36 | Marcar libros como leídos | Como lector, quiero marcar libros como leídos, para construir mi historial literario. | 2 |
+| 12 | US38 | Mostrar reseñas y géneros predominantes en el perfil | Como lector, quiero exhibir mis reseñas y géneros predominantes, para enriquecer mi identidad literaria. | 3 |
+| 13 | US40 | Adjuntar imágenes y GIFs en comentarios | Como lector, quiero responder con imágenes y GIFs, para expresar reacciones de forma más rica que el texto. | 3 |
+| 14 | US32 | Actualizar la pila de recomendaciones | Como lector, quiero cargar una nueva pila cuando termine la actual, para seguir descubriendo libros sin salir del swipe. | 2 |
+| 15 | US41 | Previsualizar y eliminar la imagen antes de publicar | Como lector, quiero previsualizar y poder quitar el adjunto antes de publicar, para compartir el contenido correcto. | 2 |
 
 
 # Conclusiones
