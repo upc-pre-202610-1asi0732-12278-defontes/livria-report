@@ -6669,9 +6669,9 @@ Sin embargo, tras los experimentos de analítica instrumentados en los flujos pr
 * **Enriquecimiento Expresivo de Comunidades:** Habilitar el soporte de GIFs en posts y comentarios para elevar la calidad expresiva de los debates dentro de los clubes de lectura.
 
 
-## 8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims
+### 8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims
 
-### Assumptions
+#### Assumptions
 
 1. **Preferencia por Micro-transacciones Ágiles:** Se asume que los usuarios prefieren la inmediatez al adquirir libros y estarían dispuestos a pre-cargar fondos en la plataforma para evitar el tedio de las transferencias manuales repetitivas, confiando en que sus fondos estarán disponibles para compras futuras.
 2. **Impacto Negativo del Inglés en la Retención Temprana:** Se asume que el segmento de "Lectores en Desarrollo" — usuarios jóvenes con nivel de inglés intermedio o básico — abandona funcionalidades avanzadas como las comunidades o el sistema de recomendaciones por confusión lingüística, no por falta de interés real en ellas.
@@ -6684,7 +6684,7 @@ Sin embargo, tras los experimentos de analítica instrumentados en los flujos pr
 9. **Perfil Público Incentiva la Exploración del Catálogo por Terceros:** Se asume que cuando un usuario visita el perfil de otro lector y ve su historial de libros leídos, esto actúa como una recomendación social implícita que lo lleva a explorar títulos que de otro modo no habría descubierto en el catálogo.
 
 
-### Knowledge Gaps
+#### Knowledge Gaps
 
 1. **Nivel Real de Confianza en Fondos Cautivos:** Desconocemos si el usuario promedio confía lo suficiente en una plataforma literaria de reciente lanzamiento como para inmovilizar dinero en una billetera digital interna, o si prefiere el control de pagar únicamente cuando confirma cada compra.
 2. **Magnitud Cuantitativa de la Pérdida por Barrera Idiomática:** Falta información precisa sobre cuánto tiempo de sesión y cuántas conversiones se están perdiendo específicamente por la interfaz en inglés versus otros factores (precio, disponibilidad de títulos, proceso de pago).
@@ -6697,7 +6697,7 @@ Sin embargo, tras los experimentos de analítica instrumentados en los flujos pr
 9. **Impacto del Swipe de Rechazo en la Percepción de Marca:** Desconocemos si la mecánica de descartar libros que han sido recomendados puede generar una asociación negativa con la plataforma, especialmente si el usuario descarta libros de autores que luego ve destacados en otras secciones de la app.
 10. **Preferencias de Perfil:** No sabemos qué datos específicos (géneros, autores, frases) prefieren exhibir los usuarios.
 
-### Ideas
+#### Ideas
 
 1. **Internacionalización completa al español:** Traducir íntegramente todos los textos, etiquetas, mensajes de error, estados vacíos y flujos de la app al español peruano, evaluando si la eliminación de la barrera idiomática incrementa el tiempo de sesión y reduce el abandono en el checkout.
 2. **Tinder Literario:** Reemplazar la cuadrícula estática de recomendaciones por un sistema de tarjetas apiladas donde el usuario deslice a la derecha ("me interesa") o a la izquierda ("no me interesa") para alimentar el algoritmo de personalización de forma rápida e instintiva, maximizando las señales de preferencia por sesión.
@@ -6710,7 +6710,7 @@ Sin embargo, tras los experimentos de analítica instrumentados en los flujos pr
 9. **Recomendaciones por "Mood":** Filtrar libros según el estado de ánimo (triste, feliz, motivador).
 10. **Buscador predictivo:** Mejorar la búsqueda de libros con IA para reducir pasos hacia la compra.
 
-### Claims
+#### Claims
 
 1. **Reducción de Fricción Cognitiva con Localización:** Una interfaz completamente en español reducirá la tasa de abandono en el checkout, especialmente en la pantalla de información del destinatario donde actualmente los campos "Last Name", "Phone Number" y los mensajes de validación se presentan en inglés.
 2. **Aumento de Frecuencia de Compra con Billetera Livria:** La eliminación del proceso de transferencia manual por CCI en cada compra individual incrementará significativamente la conversión de usuarios que abandonan el proceso de compra, convirtiendo compras que actualmente toman minutos en transacciones de un solo toque.
@@ -6730,8 +6730,7 @@ Las preguntas listas para el experimento se organizan en dos tipos según su nat
 
 Adicionalmente, se aplica la técnica de las **Cinco Ws y una H** (*Who, What, Where, When, Why, How*) sobre dos comportamientos observados en la plataforma actual, como herramienta generadora de preguntas que revelan premisas ocultas no evidentes desde la observación directa.
 
-
-### Belief-led Questions
+#### Belief-led Questions
 
 | ID | Pregunta para experimento | Creencia asociada | Elemento de Livria relacionado |
 |---|---|---|---|
@@ -6767,7 +6766,7 @@ Adicionalmente, se aplica la técnica de las **Cinco Ws y una H** (*Who, What, W
 
 ---
 
-### Exploratory Questions
+#### Exploratory Questions
 
 | ID | Pregunta exploratoria | Área de desconocimiento | Elemento de Livria relacionado |
 |---|---|---|---|
@@ -6785,11 +6784,11 @@ Adicionalmente, se aplica la técnica de las **Cinco Ws y una H** (*Who, What, W
 | EXQ12 | ¿Qué porcentaje de los usuarios que acceden al catálogo de libros utilizan la búsqueda por texto para encontrar un título específico, comparado con los que navegan de forma exploratoria por la cuadrícula del catálogo sin un libro concreto en mente? | Se desconoce si el comportamiento predominante de los usuarios en el catálogo es la búsqueda dirigida (ya saben qué quieren) o el descubrimiento exploratorio (buscan inspirarse), lo cual determinaría si la prioridad de mejora debe ser el buscador o la navegación por filtros y categorías. | Catálogo y comportamiento de búsqueda |
 
 
-## Aplicación de la Técnica 5W+H
+#### Aplicación de la Técnica 5W+H
 
 La técnica de las **Cinco Ws y una H** se aplica como herramienta de descomposición sobre dos comportamientos observados en la plataforma actual. Cada dimensión genera una pregunta que revela una premisa oculta y abre una nueva línea de exploración que no habría surgido desde la observación directa del comportamiento.
 
-### Aplicación 1 — Abandono en el Proceso de Pago por Transferencia Manual
+##### Aplicación 1 — Abandono en el Proceso de Pago por Transferencia Manual
 
 **Comportamiento observado:** Una proporción de usuarios inicia el proceso de pago visualizando las instrucciones de transferencia bancaria, pero no completa la subida del comprobante de pago en la misma sesión.
 
@@ -6803,7 +6802,7 @@ La técnica de las **Cinco Ws y una H** se aplica como herramienta de descomposi
 | **How** | ¿Cómo realizan el proceso los usuarios que sí completan la compra — alternan manualmente entre la app de Livria y la app bancaria, o utilizan la función de pantalla dividida del dispositivo? | Si la mayoría completa el proceso alternando entre apps, un botón de enlace profundo que abra directamente la app bancaria del usuario desde la pantalla de pago podría reducir el tiempo de transferencia y la pérdida de contexto entre aplicaciones. |
 
 
-### Aplicación 2 — Brecha entre Usuarios con Acceso a Comunidades y Usuarios Activos en Ellas
+##### Aplicación 2 — Brecha entre Usuarios con Acceso a Comunidades y Usuarios Activos en Ellas
 
 **Comportamiento observado:** Una proporción de usuarios con suscripción activa al plan de comunidades visita los clubes de lectura pero no publica posts ni comentarios, comportándose como espectadores dentro de un espacio que requirió un pago de acceso.
 
