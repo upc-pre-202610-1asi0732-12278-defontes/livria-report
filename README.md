@@ -206,6 +206,13 @@ Commits
     - [8.1.5. Experiment Cards](#815-experiment-cards)
   - [8.2. Experiment Design](#82-experiment-design)
     - [8.2.1. Hypotheses](#821-hypotheses)
+    - [8.2.2. Domain Business Metrics](#822-domain-business-metrics)
+    - [8.2.3. Measures](#823-measures)
+    - [8.2.4. Conditions](#824-conditions)
+    - [8.2.5. Scale Calculations and Decisions](#825-scale-calculations-and-decisions)
+    - [8.2.6. Methods Selection](#826-methods-selection)
+    - [8.2.7. Data Analytics: Goals, KPIs and Metrics Selection](#827-data-analytics-goals-kpis-and-metrics-selection)
+    - [8.2.8. Web and Mobile Tracking Plan](#828-web-and-mobile-tracking-plan)
   - [8.3. Experimentation](#83-experimentation)
     - [8.3.1. To-Be User Stories](#831-to-be-user-stories)
     - [8.3.2. To-Be Product Backlog](#832-to-be-product-backlog)
@@ -6708,7 +6715,7 @@ Sin embargo, tras los experimentos de analítica instrumentados en los flujos pr
 #### Ideas
 
 1. **Internacionalización completa al español:** Traducir íntegramente todos los textos, etiquetas, mensajes de error, estados vacíos y flujos de la app al español peruano, evaluando si la eliminación de la barrera idiomática incrementa el tiempo de sesión y reduce el abandono en el checkout.
-2. **Tinder Literario:** Reemplazar la cuadrícula estática de recomendaciones por un sistema de tarjetas apiladas donde el usuario deslice a la derecha ("me interesa") o a la izquierda ("no me interesa") para alimentar el algoritmo de personalización de forma rápida e instintiva, maximizando las señales de preferencia por sesión.
+2. **Swipe Literario:** Reemplazar la cuadrícula estática de recomendaciones por un sistema de tarjetas apiladas donde el usuario deslice a la derecha ("me interesa") o a la izquierda ("no me interesa") para alimentar el algoritmo de personalización de forma rápida e instintiva, maximizando las señales de preferencia por sesión.
 3. **Billetera Livria:** Incorporar un monedero virtual dentro de la app que permita al usuario recargar fondos mediante una única transferencia bancaria y realizar compras posteriores con un solo toque, eliminando la necesidad de repetir el proceso de CCI y subida de comprobante en cada transacción.
 4. **Vitrina Literaria Pública en el Perfil:** Añadir una sección visible en el perfil de cada usuario que exponga su historial de "Libros Leídos", las reseñas que ha publicado y los géneros predominantes en su actividad, actuando como un portafolio literario social que incremente el sentido de identidad y pertenencia a la plataforma.
 5. **Comentarios y Posts con GIFs e Imágenes en Comunidades:** Habilitar el soporte de GIFs animados —además de las imágenes estáticas— en publicaciones y comentarios de los clubes de lectura, midiendo si este formato eleva la frecuencia de interacción y la riqueza expresiva de los debates literarios.
@@ -7013,6 +7020,21 @@ Las hipótesis permiten convertir las creencias del equipo en declaraciones comp
 
 Estas hipótesis guiarán la ejecución de los experimentos iniciales de Livria. Los resultados obtenidos permitirán decidir qué funcionalidades deben priorizarse en el backlog de producto, cuáles requieren rediseño y cuáles no generan suficiente valor para ser implementadas en el MVP.
 
+### 8.2.2. Domain Business Metrics
+
+Esta sección establece el catálogo oficial de métricas de negocio para el ecosistema de Livria. Su propósito es asegurar que todas las hipótesis de experimentación se vinculen directamente con los objetivos de rentabilidad, retención y usabilidad de la plataforma.
+
+Para mitigar el riesgo de basar decisiones en métricas de vanidad, Livria utiliza un enfoque mixto: métricas de comportamiento automatizado (extraídas de Google Analytics y Firebase Analytics) y métricas de percepción de usabilidad (extraídas del instrumento de validación con usuarios). Las *Experiment Cards* diseñadas por el equipo únicamente podrán hacer referencia a las métricas definidas en esta tabla; no se permitirán métricas ad-hoc.
+
+| Métrica de Negocio | Fórmula de Cálculo / Origen | Técnica de Recolección | Meta Deseada |
+|---|---|---|---|
+| Densidad de Compras por Sesión | Total de eventos `purchase` / Total de sesiones con saldo a favor. | Firebase Analytics: recuento de eventos agrupados por usuarios con billetera activa. | Alcanzar más de 0.8 compras promedio por sesión en usuarios con recarga activa. |
+| Volumen de Señales de Preferencia | Total de interacciones (`swipe_right` + `swipe_left`) / Total de usuarios activos en la sesión. | Firebase Analytics: conteo del evento personalizado `swipe_recommendation`. | Generar más de 7 señales de preferencia por sesión por usuario. |
+| Ratio de Transición a Creador | (Usuarios únicos con su primer `post_in_community` / Usuarios únicos que solo tienen `view_community_detail`) × 100. | Embudos de Google Analytics: análisis de cohortes en el módulo social. | Superar el 10% de transición de espectador pasivo a creador activo. |
+| Índice de Fricción en Checkout | Promedio de calificación obtenida en la Pregunta 14 del instrumento de evaluación para el apartado "[Proceso de compras]". | Formulario de validación post-sesión (escala de 1 a 5, donde 1 representa "Nada confuso"). | Obtener un promedio menor a 2.5 (tendencia hacia "Nada confuso") en la variante localizada al español. |
+| Tasa de Desinterés en Perfil | (Usuarios que seleccionan "Personalización del perfil" en la Pregunta 17 / Total de encuestados) × 100. | Formulario de validación post-sesión (Pregunta 17 de opción múltiple). | Reducir la selección de esta opción a menos del 30% de la muestra total. |
+
+Las métricas definidas constituyen la referencia oficial para evaluar el desempeño del producto y la efectividad de los experimentos planteados. Su utilización permite mantener consistencia entre los objetivos estratégicos de Livria y las decisiones de diseño y priorización del backlog. Asimismo, estas métricas proporcionan evidencia cuantitativa y cualitativa suficiente para determinar si una funcionalidad debe escalarse, rediseñarse o descartarse durante la construcción del MVP.
 
 ## 8.3. Experimentation
 
