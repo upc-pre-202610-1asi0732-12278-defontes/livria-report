@@ -7068,11 +7068,19 @@ A continuación, se detallan las condiciones correspondientes a cada experimento
 
 **Condición Experimental:** El usuario es expuesto a una variante en la que la totalidad de los textos de la interfaz, mensajes de validación y placeholders han sido traducidos y adaptados idiomáticamente al español latinoamericano (es_419).
 
+<p align="center">
+  <img src="https://i.imgur.com/8DUCjNl.jpg" alt="exp1">
+</p>
+
 #### Experimento 2: Tinder Literario / Swipe (H2)
 
 **Condición de Control:** El motor de recomendaciones presenta una cuadrícula estática de portadas de libros. Para expresar una preferencia, el usuario debe seleccionar una portada, acceder a la ficha técnica correspondiente y utilizar el ícono de favorito o descarte.
 
 **Condición Experimental:** El motor de recomendaciones se representa mediante una pila de tarjetas interactivas. El usuario puede deslizar una tarjeta hacia la derecha para indicar interés o hacia la izquierda para descartarla, registrando la decisión sin necesidad de cambiar de pantalla.
+
+<p align="center">
+  <img src="https://i.imgur.com/zYTmD4u.jpg" alt="exp2">
+</p>
 
 #### Experimento 3: Billetera Livria (H3)
 
@@ -7080,17 +7088,29 @@ A continuación, se detallan las condiciones correspondientes a cada experimento
 
 **Condición Experimental:** El usuario dispone de un saldo precargado visible durante el checkout. La pantalla de pago elimina el paso de transferencia manual y presenta un único botón de acción ("Pagar con Saldo Livria"), descontando automáticamente el importe correspondiente de la billetera virtual.
 
+<p align="center">
+  <img src="https://i.imgur.com/XTnc0Ql.jpg" alt="exp2">
+</p>
+
 #### Experimento 4: Vitrina Literaria en el Perfil (H4)
 
 **Condición de Control:** Al acceder al perfil propio o al de otro usuario, el sistema presenta una vista básica compuesta por la fotografía de perfil, nombre de usuario, nombre para mostrar y el estado actual de la suscripción.
 
 **Condición Experimental:** El perfil incorpora una estructura basada en pestañas públicas. La vista principal incluye una sección denominada "Vitrina Literaria", donde se muestran insignias, un carrusel con libros leídos recientemente y un contador de reseñas publicadas dentro de las comunidades.
 
+<p align="center">
+  <img src="https://i.imgur.com/L19oFTl.jpg" alt="exp2">
+</p>
+
 #### Experimento 5: Comentarios y Publicaciones con Imágenes/GIFs (H5)
 
 **Condición de Control:** El módulo de creación de publicaciones restringe el contenido a texto plano y permite, como máximo, adjuntar una única imagen estática almacenada localmente en el dispositivo.
 
 **Condición Experimental:** El editor de publicaciones incorpora un botón dedicado a contenido multimedia enriquecido, permitiendo buscar, previsualizar e insertar GIFs animados directamente en el flujo de conversación mediante una integración con servicios especializados, sin necesidad de abandonar la aplicación.
+
+<p align="center">
+  <img src="https://i.imgur.com/dI4koXC.jpg" alt="exp2">
+</p>
 
 ### 8.2.5. Scale Calculations and Decisions
 
