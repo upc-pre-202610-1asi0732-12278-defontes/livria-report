@@ -7115,6 +7115,32 @@ Para determinar la cantidad de evidencia necesaria (a cuántos usuarios debemos 
 * **Experimentos Cuantitativos (Métricas de Firebase/GA):** Para las pruebas automáticas en producción (como la *Billetera Livria* o el *Swipe Literario*), el experimento se ejecutará ininterrumpidamente por un período de **7 días calendario (un ciclo semanal completo)**. Este *timebox* es el mínimo metodológicamente aceptable, ya que garantiza capturar las variaciones de tráfico entre días laborables y el fin de semana, ajustándose a la ventana de tiempo del proyecto.
 * **Experimentos Cualitativos (Métricas de Formulario):** Para las pruebas evaluadas mediante el instrumento post-sesión (como el Índice de Fricción en el Checkout y la Tasa de Desinterés en Perfil), se establece una escala fija de **10 a 15 participantes** por variante (Grupo A y Grupo B). Según los estándares de usabilidad (Nielsen, 2000), esta muestra es estadísticamente suficiente para revelar los patrones dominantes de validación y fricción en la interfaz sin saturar los recursos operativos del equipo.
 
+### 8.2.6. Methods Selection
+
+Esta sección detalla cómo se llevará a cabo empíricamente la investigación en Livria. Es fundamental distinguir entre el objeto de investigación (las preguntas y las hipótesis de negocio planteadas en secciones anteriores) y el método seleccionado para validarlas (las técnicas operativas y herramientas descritas a continuación).
+
+Bajo el principio del Simplest Useful Thing (la cosa más simple y útil), el equipo de Defontes ha evitado desarrollar arquitecturas de experimentación complejas desde cero. En su lugar, se optó por aprovechar las herramientas analíticas ya integradas en el MVP para alcanzar las condiciones y tamaños de muestra requeridos con el menor esfuerzo de ingeniería posible.
+
+#### 1. Selección de Técnicas Operativas
+La ejecución de la investigación se divide en dos métodos, elegidos específicamente por ser la vía más rápida y útil según la naturaleza de la métrica:
+
+* **Pruebas A/B en Producción (Método Cuantitativo):** Para las hipótesis conductuales y transaccionales (H2: Swipe Literario, H3: Billetera Livria y H5: Multimedia en Comunidades), el método técnico seleccionado es Firebase Remote Config. Esta herramienta permite alterar la interfaz y la experiencia de la aplicación móvil asignando aleatoriamente a los usuarios al Grupo de Control o Experimental directamente desde la nube, sin necesidad de que descarguen una nueva actualización de las tiendas de aplicaciones.
+* **Pruebas de Usabilidad Moderadas (Método Cualitativo):** Para las hipótesis relacionadas con carga cognitiva y percepción (H1: Localización al Español y H4: Vitrina Literaria), el método técnico es la sesión de navegación guiada complementada con el formulario de validación post-sesión. Esta es la técnica más simple y útil para capturar el "por qué" detrás del Índice de Fricción con la muestra cualitativa estipulada de 10 a 15 usuarios.
+
+#### 2. Aislamiento de Experimentos (Regla de No Superposición)
+Para mantener la integridad de la evidencia y evitar decisiones erróneas, Livria establece la norma inquebrantable de no ejecutar simultáneamente dos o más experimentos que alteren el mismo flujo cognitivo y expongan a un solo usuario a ambos. 
+
+Si un usuario es asignado al Grupo Experimental del Experimento 3 (Billetera Livria), quedará automáticamente excluido del Experimento 1 (Localización del Checkout). Exponer a un mismo sujeto a múltiples alteraciones en la misma etapa del embudo de ventas generaría un efecto de confusión, haciendo imposible determinar estadísticamente cuál de las dos variables causó la mejora o el abandono. Las audiencias en Firebase Analytics se configurarán de forma mutuamente excluyente.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6a6bdee7-8b8d-4da0-924b-308754e3b15a" alt="Diagrama de Flujo">
+</p>
+
+#### 3. Consideraciones Éticas (Do No Harm)
+Toda investigación llevada a cabo en Livria se rige bajo el principio ético universal de la experimentación: no causar daño. Esto se traduce en directrices estrictas de protección al lector:
+* **Transparencia Financiera:** No se experimentará jamás con los precios reales de los libros. Modificar precios de forma oculta entre el Grupo de Control y el Grupo Experimental constituye discriminación de precios y quiebra la confianza del usuario. Asimismo, las pruebas relacionadas con la Billetera Livria (H3) operarán en modo simulación durante las pruebas de usabilidad, garantizando que no se debiten fondos reales por error.
+* **Integridad y Seguridad:** Para el experimento de integración multimedia (H5), se activarán los filtros de contenido estricto en la API proveedora de GIFs. Esto prevé y evita éticamente que el Grupo Experimental sea expuesto a contenido inapropiado o perturbador durante las discusiones literarias.
+
 ## 8.3. Experimentation
 
 La sección de Experimentation traduce el aprendizaje del proceso de planificación y diseño de experimentos en artefactos accionables para el producto. A partir de las cinco apuestas To-Be priorizadas —localización total al español, Tinder literario, Billetera Livria, vitrina literaria en el perfil y comentarios con imágenes en comunidades— se derivan las nuevas User Stories y el Product Backlog evolucionado que guiarán los siguientes Sprints de Livria. Cada historia traza su origen a las Experiment Cards (8.1.5) y a las hipótesis de trabajo (8.2.1) que la sustentan.
