@@ -7092,6 +7092,29 @@ A continuación, se detallan las condiciones correspondientes a cada experimento
 
 **Condición Experimental:** El editor de publicaciones incorpora un botón dedicado a contenido multimedia enriquecido, permitiendo buscar, previsualizar e insertar GIFs animados directamente en el flujo de conversación mediante una integración con servicios especializados, sin necesidad de abandonar la aplicación.
 
+### 8.2.5. Scale Calculations and Decisions
+
+Esta sección describe la determinación matemática de la cantidad de evidencia (tamaño de muestra) necesaria para que las investigaciones de Livria arrojen resultados concluyentes y confiables. La escala de cada experimento no se define de forma arbitraria, sino que se calcula en función de dos dimensiones fundamentales: la Certeza y la Precisión.
+
+#### 1. Certeza (Probabilidad de error aceptable)
+La certeza define la tolerancia al riesgo del equipo de Livria al tomar una decisión de producto basada en los datos experimentales. Se compone de dos parámetros estadísticos fijos para todos los experimentos del MVP, alineados a los estándares de experimentación en la industria del software (Kohavi et al., 2020):
+
+* **Nivel de Significación ($\alpha$):** Se establece de manera estándar en **5%**. Este valor previene los errores de Tipo I (Falso Positivo), garantizando que existe un **95%** de confianza en que cualquier diferencia observada entre la Condición de Control y la Condición Experimental se deba genuinamente a la nueva funcionalidad y no a variaciones aleatorias del azar.
+* **Poder Estadístico ($1 - \beta$):** Se define en **80%**. Este parámetro ayuda a evitar los errores de Tipo II (Falso Negativo), asegurando que si la nueva funcionalidad (como el *Swipe Literario* o la *Billetera Livria*) realmente genera un impacto positivo en el comportamiento de los usuarios, el experimento tiene un **80%** de probabilidad de detectarlo exitosamente.
+
+#### 2. Precisión (Granularidad del cambio a detectar)
+La precisión se representa mediante el **Efecto Mínimo Detectable (MDE)**, el cual indica el tamaño de la diferencia que el negocio considera valiosa. 
+
+Dado que Livria se encuentra en una etapa de escalabilidad temprana, el equipo ha decidido establecer un MDE relativo del **10%** para variaciones en las tasas de conversión (como el checkout o la transición a creador). Cualquier incremento inferior al **10%** no justifica el costo de ingeniería necesario para integrar, mantener y escalar la nueva funcionalidad a largo plazo, por lo que el experimento favorecerá la hipótesis nula por defecto (mantener la versión de la aplicación tal como está).
+
+#### 3. Determinación de la Escala (Tamaño de Muestra)
+Para determinar la cantidad de evidencia necesaria (a cuántos usuarios debemos exponer al experimento) sin incurrir en cálculos estadísticos manuales complejos, el equipo utilizará calculadoras estándar de pruebas A/B de la industria, introduciendo los parámetros de certeza y precisión previamente definidos (Significación 5%, Poder 80%, MDE 10%).
+
+**Decisión Operativa de Livria:** Dado el contexto del proyecto, los *timeboxes* ágiles del MVP y el cronograma de entregas, la escala de recolección de evidencia se dividirá según la naturaleza de la métrica:
+
+* **Experimentos Cuantitativos (Métricas de Firebase/GA):** Para las pruebas automáticas en producción (como la *Billetera Livria* o el *Swipe Literario*), el experimento se ejecutará ininterrumpidamente por un período de **7 días calendario (un ciclo semanal completo)**. Este *timebox* es el mínimo metodológicamente aceptable, ya que garantiza capturar las variaciones de tráfico entre días laborables y el fin de semana, ajustándose a la ventana de tiempo del proyecto.
+* **Experimentos Cualitativos (Métricas de Formulario):** Para las pruebas evaluadas mediante el instrumento post-sesión (como el Índice de Fricción en el Checkout y la Tasa de Desinterés en Perfil), se establece una escala fija de **10 a 15 participantes** por variante (Grupo A y Grupo B). Según los estándares de usabilidad (Nielsen, 2000), esta muestra es estadísticamente suficiente para revelar los patrones dominantes de validación y fricción en la interfaz sin saturar los recursos operativos del equipo.
+
 ## 8.3. Experimentation
 
 La sección de Experimentation traduce el aprendizaje del proceso de planificación y diseño de experimentos en artefactos accionables para el producto. A partir de las cinco apuestas To-Be priorizadas —localización total al español, Tinder literario, Billetera Livria, vitrina literaria en el perfil y comentarios con imágenes en comunidades— se derivan las nuevas User Stories y el Product Backlog evolucionado que guiarán los siguientes Sprints de Livria. Cada historia traza su origen a las Experiment Cards (8.1.5) y a las hipótesis de trabajo (8.2.1) que la sustentan.
@@ -7368,33 +7391,37 @@ El To-Be Product Backlog consolida y prioriza las nuevas User Stories derivadas 
 
 # Bibliografía
 
-Alaminkarno. (2024, enero 8). *DDD (Domain-Driven Design) in Flutter – Too much or just right?* DEV Community. [https://dev.to/alaminkarno/ddd-domain-driven-design-in-flutter-too-much-or-just-right-d1g](https://dev.to/alaminkarno/ddd-domain-driven-design-in-flutter-too-much-or-just-right-d1g)
+Alaminkarno. (2024, 8 de enero). *DDD (Domain-Driven Design) in Flutter – Too much or just right?* DEV Community. Recuperado de https://dev.to/alaminkarno/ddd-domain-driven-design-in-flutter-too-much-or-just-right-d1g
 
-Allen, C. (2024). *The impact of book clubs on millennials: Best way to instill a love of reading*. Recuperado de [https://catherineallenblog.com/the-impact-of-book-clubs-on-millennials-best-way-to-instill-a-love-of-reading](https://catherineallenblog.com/the-impact-of-book-clubs-on-millennials-best-way-to-instill-a-love-of-reading)
+Allen, C. (2024). *The impact of book clubs on millennials: Best way to instill a love of reading*. Recuperado de https://catherineallenblog.com/the-impact-of-book-clubs-on-millennials-best-way-to-instill-a-love-of-reading
 
-Alvarez, A. (2020, 5 de agosto). 5W2H: Qué significa, para qué sirve, cómo aplicarla y algunos ejemplos. LeanConstructionMexico. [https://www.leanconstructionmexico.com.mx/post/5w2h-qué-significa-para-qué-sirve-cómo-aplicarla-y-algunos-ejemplos](https://www.leanconstructionmexico.com.mx/post/5w2h-qu%C3%A9-significa-para-qu%C3%A9-sirve-c%C3%B3mo-aplicarla-y-algunos-ejemplos)
+Alvarez, A. (2020, 5 de agosto). *5W2H: Qué significa, para qué sirve, cómo aplicarla y algunos ejemplos*. Lean Construction México. Recuperado de https://www.leanconstructionmexico.com.mx/post/5w2h-qué-significa-para-qué-sirve-cómo-aplicarla-y-algunos-ejemplos
 
-Dart Packages. (s. f.). *pub.dev*. [https://pub.dev](https://pub.dev)
+Dart Packages. (s. f.). *pub.dev*. Recuperado de https://pub.dev
 
-Fabiana, E., & Vega, J. (2022). La motivación en el aprendizaje de la lectura en los estudiantes. Revista EDUCARE \- UPEL-IPB \- Segunda Nueva Etapa 2.0, 26(Extraordinario), 476–493. [https://doi.org/10.46498/reduipb.v26iExtraordinario.1641](https://doi.org/10.46498/reduipb.v26iExtraordinario.1641) 
+Fabiana, E., & Vega, J. (2022). La motivación en el aprendizaje de la lectura en los estudiantes. *Revista EDUCARE - UPEL-IPB - Segunda Nueva Etapa 2.0, 26*(Extraordinario), 476–493. https://doi.org/10.46498/reduipb.v26iExtraordinario.1641
 
-Flutter Dev. (s. f.). *Flutter documentation*. [https://docs.flutter.dev](https://docs.flutter.dev)
+Flutter Dev. (s. f.). *Flutter documentation*. Recuperado de https://docs.flutter.dev
 
-Google Fonts. (s. f.). *Alexandria*. [https://fonts.google.com/specimen/Alexandria](https://fonts.google.com/specimen/Alexandria)
+Google Fonts. (s. f.). *Alexandria*. Recuperado de https://fonts.google.com/specimen/Alexandria
 
-Google Fonts. (s. f.). *Asap Condensed*. [https://fonts.google.com/specimen/Asap+Condensed](https://fonts.google.com/specimen/Asap+Condensed)
+Google Fonts. (s. f.). *Asap Condensed*. Recuperado de https://fonts.google.com/specimen/Asap+Condensed
 
-Google Maps. (s. f.). *Google Maps Platform*. [https://developers.google.com/maps](https://developers.google.com/maps)
+Google Maps. (s. f.). *Google Maps Platform*. Recuperado de https://developers.google.com/maps
 
-Mamani, B., Chata, L., & Choque, D. (2024). Efecto del uso de Tik Tok en el rendimiento académico de estudiantes de 5to grado . Revista Tribunal, 4(9), 161-175. [https://doi.org/10.59659/revistatribunal.v4i9.71](https://doi.org/10.59659/revistatribunal.v4i9.71)
+Kohavi, R., Tang, D., & Xu, Y. (2020). *Trustworthy online controlled experiments: A practical guide to A/B testing*. Cambridge University Press. https://doi.org/10.1017/9781108753982
 
-Ministerio de Cultura del Perú & Instituto Nacional de Estadística e Informática. (2023). *Encuesta Nacional de Lectura 2022: Informe de lectores y no lectores*. Recuperado de [https://perulee.pe/sites/default/files/ENL%202022%20-%20Informe%20de%20lectores%20y%20no%20lectores.pdf](https://perulee.pe/sites/default/files/ENL%202022%20-%20Informe%20de%20lectores%20y%20no%20lectores.pdf?utm_source=chatgpt.com)
+Mamani, B., Chata, L., & Choque, D. (2024). Efecto del uso de Tik Tok en el rendimiento académico de estudiantes de 5to grado. *Revista Tribunal, 4*(9), 161–175. https://doi.org/10.59659/revistatribunal.v4i9.71
 
-Statista. (2024). *Hablemos de los clubes de lectura y por qué esta tendencia va en aumento*. Recuperado de [https://globaltag.mx/uncategorized/leer-esta-de-moda-hablemos-de-los-clubes-de-lectura-y-por-que-esta-tendencia-va-en-aumento/](https://globaltag.mx/uncategorized/leer-esta-de-moda-hablemos-de-los-clubes-de-lectura-y-por-que-esta-tendencia-va-en-aumento/?utm_source=chatgpt.com)
+Ministerio de Cultura del Perú, & Instituto Nacional de Estadística e Informática. (2023). *Encuesta Nacional de Lectura 2022: Informe de lectores y no lectores*. Recuperado de https://perulee.pe/sites/default/files/ENL%202022%20-%20Informe%20de%20lectores%20y%20no%20lectores.pdf
 
-Stripe. (s. f.). *Stripe*. [https://stripe.com](https://stripe.com)
+Nielsen, J. (2000, 18 de marzo). *Why you only need to test with 5 users*. Nielsen Norman Group. Recuperado de https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/
 
-Torres-Vega, E. (2025). Comprensión lectora en estudiantes de secundaria en Perú. Horizontes. Revista De Investigación En Ciencias De La Educación, 9(36), 177–187. [https://doi.org/10.33996/revistahorizontes.v9i36.909](https://doi.org/10.33996/revistahorizontes.v9i36.909)
+Statista. (2024). *Hablemos de los clubes de lectura y por qué esta tendencia va en aumento*. Recuperado de https://globaltag.mx/uncategorized/leer-esta-de-moda-hablemos-de-los-clubes-de-lectura-y-por-que-esta-tendencia-va-en-aumento/
+
+Stripe. (s. f.). *Stripe*. Recuperado de https://stripe.com
+
+Torres-Vega, E. (2025). Comprensión lectora en estudiantes de secundaria en Perú. *Horizontes. Revista de Investigación en Ciencias de la Educación, 9*(36), 177–187. https://doi.org/10.33996/revistahorizontes.v9i36.909
 
 # Anexos
 
