@@ -7052,6 +7052,46 @@ Siguiendo el principio de eficiencia metodológica, Livria adopta el enfoque **O
 
 La combinación de medidas principales y métricas de protección permite a Livria evaluar cada hipótesis desde una perspectiva integral. De esta manera, no solo es posible identificar mejoras directas en los indicadores de negocio, sino también detectar tempranamente efectos adversos que podrían comprometer la experiencia general del usuario o la sostenibilidad del producto en futuras iteraciones.
 
+### 8.2.4. Conditions
+
+Esta sección describe los factores aislados y los estados que se presentarán a los usuarios con el fin de identificar la causalidad detrás de su comportamiento. Debido a que los cinco experimentos prioritarios de Livria se fundamentan en hipótesis basadas en creencias (*Belief-led*), se establecen dos condiciones mutuamente excluyentes para la ejecución de las pruebas A/B.
+
+**Condición de Control (Grupo A):** representa la experiencia actual de la plataforma y se sustenta en la hipótesis nula, asumiendo que la modificación propuesta no genera un impacto significativo.
+
+**Condición Experimental (Grupo B):** corresponde a la variante modificada diseñada para recopilar evidencia a favor de la hipótesis alternativa y validar el beneficio esperado de la solución.
+
+A continuación, se detallan las condiciones correspondientes a cada experimento.
+
+#### Experimento 1: Localización Total al Español (H1)
+
+**Condición de Control:** El usuario experimenta el flujo de checkout y el catálogo de comunidades manteniendo la interfaz base actual. Todos los llamados a la acción (CTAs), etiquetas de formulario (por ejemplo, *First Name* y *Phone Number*) y botones (por ejemplo, *Add to Cart* y *Submit Order*) se presentan en inglés.
+
+**Condición Experimental:** El usuario es expuesto a una variante en la que la totalidad de los textos de la interfaz, mensajes de validación y placeholders han sido traducidos y adaptados idiomáticamente al español latinoamericano (es_419).
+
+#### Experimento 2: Tinder Literario / Swipe (H2)
+
+**Condición de Control:** El motor de recomendaciones presenta una cuadrícula estática de portadas de libros. Para expresar una preferencia, el usuario debe seleccionar una portada, acceder a la ficha técnica correspondiente y utilizar el ícono de favorito o descarte.
+
+**Condición Experimental:** El motor de recomendaciones se representa mediante una pila de tarjetas interactivas. El usuario puede deslizar una tarjeta hacia la derecha para indicar interés o hacia la izquierda para descartarla, registrando la decisión sin necesidad de cambiar de pantalla.
+
+#### Experimento 3: Billetera Livria (H3)
+
+**Condición de Control:** Durante el proceso de compra, el usuario visualiza únicamente las instrucciones bancarias, debiendo copiar el Código de Cuenta Interbancario (CCI), realizar la transferencia desde una aplicación externa y subir posteriormente el comprobante de pago.
+
+**Condición Experimental:** El usuario dispone de un saldo precargado visible durante el checkout. La pantalla de pago elimina el paso de transferencia manual y presenta un único botón de acción ("Pagar con Saldo Livria"), descontando automáticamente el importe correspondiente de la billetera virtual.
+
+#### Experimento 4: Vitrina Literaria en el Perfil (H4)
+
+**Condición de Control:** Al acceder al perfil propio o al de otro usuario, el sistema presenta una vista básica compuesta por la fotografía de perfil, nombre de usuario, nombre para mostrar y el estado actual de la suscripción.
+
+**Condición Experimental:** El perfil incorpora una estructura basada en pestañas públicas. La vista principal incluye una sección denominada "Vitrina Literaria", donde se muestran insignias, un carrusel con libros leídos recientemente y un contador de reseñas publicadas dentro de las comunidades.
+
+#### Experimento 5: Comentarios y Publicaciones con Imágenes/GIFs (H5)
+
+**Condición de Control:** El módulo de creación de publicaciones restringe el contenido a texto plano y permite, como máximo, adjuntar una única imagen estática almacenada localmente en el dispositivo.
+
+**Condición Experimental:** El editor de publicaciones incorpora un botón dedicado a contenido multimedia enriquecido, permitiendo buscar, previsualizar e insertar GIFs animados directamente en el flujo de conversación mediante una integración con servicios especializados, sin necesidad de abandonar la aplicación.
+
 ## 8.3. Experimentation
 
 La sección de Experimentation traduce el aprendizaje del proceso de planificación y diseño de experimentos en artefactos accionables para el producto. A partir de las cinco apuestas To-Be priorizadas —localización total al español, Tinder literario, Billetera Livria, vitrina literaria en el perfil y comentarios con imágenes en comunidades— se derivan las nuevas User Stories y el Product Backlog evolucionado que guiarán los siguientes Sprints de Livria. Cada historia traza su origen a las Experiment Cards (8.1.5) y a las hipótesis de trabajo (8.2.1) que la sustentan.
