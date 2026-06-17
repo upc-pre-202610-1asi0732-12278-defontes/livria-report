@@ -7133,7 +7133,7 @@ Para mantener la integridad de la evidencia y evitar decisiones erróneas, Livri
 Si un usuario es asignado al Grupo Experimental del Experimento 3 (Billetera Livria), quedará automáticamente excluido del Experimento 1 (Localización del Checkout). Exponer a un mismo sujeto a múltiples alteraciones en la misma etapa del embudo de ventas generaría un efecto de confusión, haciendo imposible determinar estadísticamente cuál de las dos variables causó la mejora o el abandono. Las audiencias en Firebase Analytics se configurarán de forma mutuamente excluyente.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/6a6bdee7-8b8d-4da0-924b-308754e3b15a" alt="Diagrama de Flujo">
+  <img src="https://github.com/user-attachments/assets/33740315-d261-4091-a279-51d8317ea980" alt="Diagrama de Flujo">
 </p>
 
 #### 3. Consideraciones Éticas (Do No Harm)
