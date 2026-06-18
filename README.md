@@ -15,7 +15,7 @@
 
 ---
 
-<h1 align="center">Informe de Trabajo Parcial</h1>
+<h1 align="center">Informe del Avance 2 del proyecto</h1>
 
 <p align="center"><strong>Nombre del Startup:</strong> Defontes</p>
 <p align="center"><strong>Nombre del Producto:</strong> Livria</p>
