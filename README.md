@@ -7588,10 +7588,12 @@ El To-Be Product Backlog consolida y prioriza las nuevas User Stories derivadas 
 | 14 | US32 | Actualizar la pila de recomendaciones | Como lector, quiero cargar una nueva pila cuando termine la actual, para seguir descubriendo libros sin salir del swipe. | 2 |
 | 15 | US41 | Previsualizar y eliminar la imagen antes de publicar | Como lector, quiero previsualizar y poder quitar el adjunto antes de publicar, para compartir el contenido correcto. | 2 |
 
+---
+Entendido, las separo en dos bloques claros. Aquí están listas para reemplazar la sección completa desde `# Conclusiones` hasta antes de `# Bibliografía`:
+
+---
 
 # Conclusiones
-
-## Conclusiones y recomendaciones
 
 1. El proceso Lean UX constituye una herramienta clave para orientar estratégicamente el negocio, ya que permite validar tempranamente hipótesis y explorar diferentes enfoques antes de comprometer recursos de desarrollo. Gracias a este proceso, fue posible identificar con claridad los segmentos de usuarios más relevantes y las oportunidades de valor que guiarán el diseño del producto.
 
@@ -7615,7 +7617,17 @@ El To-Be Product Backlog consolida y prioriza las nuevas User Stories derivadas 
 
 11. El diseño y ejecución de suites de pruebas estructuradas (unitarias, de integración y BDD) sobre las entidades y flujos críticos del sistema —autenticación, compras, comunidades y recomendaciones— evidencia el compromiso del equipo con la calidad del software. Esta cobertura de pruebas reduce la deuda técnica acumulada y facilita la detección temprana de regresiones en futuras iteraciones.
 
-## Recomendaciones
+12. El enfoque de Experiment-Driven Development adoptado en el Capítulo VIII permitió transformar suposiciones del equipo en un Question Backlog priorizado y, posteriormente, en Experiment Cards e hipótesis comprobables. Esto evidenció que la mayoría de los problemas críticos de Livria no eran evidentes desde la observación directa, sino que requerían técnicas estructuradas —la matriz Belief-led/Exploratory y la técnica 5W+H— para revelar premisas ocultas en el comportamiento del usuario.
+
+13. La validación cuantitativa con 28 participantes confirmó, con evidencia real y no solo intuitiva, dos de las cinco apuestas priorizadas en el backlog: el motor de recomendaciones es simultáneamente el apartado peor calificado en precisión (media 2.89/5) y el más confuso de navegar (índice 3.11/5), y la personalización del perfil es la funcionalidad de menor interés declarado (42.9%, por encima de la meta de <30% definida en la métrica "Tasa de Desinterés en Perfil"). Esto demuestra el valor de cerrar el ciclo Build-Measure-Learn antes de comprometer recursos de desarrollo en las cinco apuestas To-Be.
+
+14. El instrumento de validación también reveló una desconexión relevante entre interés declarado y experiencia de uso: las comunidades fueron la funcionalidad de mayor interés para los participantes (35.7%), pero a la vez obtuvieron baja comprensión de propósito (media 3.43/5) y la calificación más baja de todo el cuestionario en su capacidad de motivar la lectura (media 2.93/5). Esto indica que el valor social del producto es percibido por el usuario, pero todavía no está bien comunicado ni materializado en la interfaz actual.
+
+15. El NPS obtenido en la validación (-17.9, con 13 detractores frente a 8 promotores) constituye una línea base cuantitativa útil y esperada en una etapa de prototipo, no un indicador de fracaso del producto. Su valor real está en servir como punto de comparación para medir, en la siguiente ronda de validación, si las cinco apuestas del Capítulo VIII (Localización, Tinder Literario, Billetera Livria, Vitrina Literaria y Multimedia en Comunidades) logran revertir la percepción negativa actual.
+
+16. La definición de un sistema de priorización basado en Confianza, Riesgo, Impacto e Interés para el Question Backlog, junto con el principio de Economía de Rastreo de Datos en la selección de métricas, permitió que el equipo evitara instrumentar eventos redundantes y enfocara el esfuerzo de analítica únicamente en las señales con mayor sensibilidad para detectar el efecto de cada experimento.
+
+# Recomendaciones
 
 1. Es aconsejable adoptar Material Design como marco de referencia para el diseño de la interfaz, dado que proporciona consistencia visual, buenas prácticas de usabilidad y un sistema estandarizado de componentes. Esto contribuirá a que la experiencia del usuario sea más intuitiva, atractiva y alineada con tendencias actuales en aplicaciones modernas.
 
@@ -7628,6 +7640,18 @@ El To-Be Product Backlog consolida y prioriza las nuevas User Stories derivadas 
 5. Es aconsejable implementar patrones de Optimistic UI en la gestión de estados, especialmente para interacciones frecuentes como "Agregar al carrito" o "Unirse a una comunidad". Al actualizar visualmente el estado de la interfaz de manera inmediata, se mejora la percepción de velocidad y fluidez de la aplicación, siempre manteniendo un mecanismo de reversión (rollback) en caso de que la petición falle.
 
 6. Se recomienda expandir la cobertura de pruebas para incluir escenarios de error y casos límite en los flujos de pago y gestión de stock, dado que son las áreas de mayor riesgo para el negocio. Incorporar pruebas de carga básicas sobre los endpoints más críticos permitirá anticipar cuellos de botella antes del lanzamiento oficial de la plataforma.
+
+7. Se recomienda priorizar la implementación del Experimento 2 (Tinder Literario) sobre las demás apuestas To-Be, dado que la validación cuantitativa identificó el motor de recomendaciones como el punto de mayor fricción combinada de toda la aplicación (baja precisión percibida y alta confusión de navegación). Antes de escalar la mecánica de swipe, se sugiere además investigar si el problema de fondo es la interacción (grid vs. swipe) o la calidad del algoritmo de personalización en sí, ya que ambas causas requieren soluciones distintas.
+
+8. Se recomienda rediseñar la propuesta de valor del módulo de comunidades antes de invertir en las funcionalidades de Vitrina Literaria y Multimedia (EP12 y EP13), dado que los hallazgos muestran alto interés declarado pero baja comprensión de propósito y baja percepción de motivación a la lectura. Se sugiere reforzar el onboarding de comunidades con contenido editorial que explique su valor desde la primera visita, antes de enriquecer visualmente perfiles y publicaciones.
+
+9. Dado que el 39.3% de los participantes no logró localizar el botón para crear una publicación, se recomienda una revisión de usabilidad específica sobre la jerarquía visual de esa acción —idealmente mediante pruebas de card sorting o first-click testing— antes de la siguiente ronda de experimentación, ya que esta fricción puntual puede estar inflando artificialmente la brecha entre espectadores y creadores de contenido documentada en el Capítulo VIII.
+
+10. Se recomienda ejecutar los cinco experimentos del MVP respetando estrictamente la Regla de No Superposición (Sección 8.2.6) y los *timeboxes* definidos (7 días para pruebas cuantitativas, 10 a 15 participantes para pruebas cualitativas), evitando tomar decisiones de producto con muestras parciales o con usuarios expuestos a más de una condición experimental simultáneamente.
+
+11. Se recomienda repetir el instrumento de validación de usuario (Sección 6.3) después de implementar las cinco apuestas To-Be del Capítulo VIII, utilizando el NPS de -17.9 y las medias actuales por pregunta como línea base de comparación. Esto permitirá cuantificar de forma objetiva si las mejoras propuestas revirtieron las fricciones identificadas o si se requiere una nueva iteración del Question Backlog.
+
+---
 
 # Bibliografía
 
