@@ -7114,7 +7114,7 @@ A continuación, se detallan las condiciones correspondientes a cada experimento
 
 ### 8.2.5. Scale Calculations and Decisions
 
-Esta sección describe la determinación matemática de la cantidad de evidencia (tamaño de muestra) necesaria para que las investigaciones de Livria arrojen resultados concluyentes y confiables. La escala de cada experimento no se define de forma arbitraria, sino que se calcula en función de dos dimensiones fundamentales: la Certeza y la Precisión.
+Esta sección describe la determinación matemática de la cantidad de evidencia (tamaño de muestra) necesaria para que las investigaciones de Livria arrojen resultados concluyentes y confiables. La escala de cada experimento no se define de forma arbitraria, sino que se calcula en función de dos dimensiones fundamentales: la Certeza y la Precisión.  
 
 #### 1. Certeza (Probabilidad de error aceptable)
 La certeza define la tolerancia al riesgo del equipo de Livria al tomar una decisión de producto basada en los datos experimentales. Se compone de dos parámetros estadísticos fijos para todos los experimentos del MVP, alineados a los estándares de experimentación en la industria del software (Kohavi et al., 2020):
