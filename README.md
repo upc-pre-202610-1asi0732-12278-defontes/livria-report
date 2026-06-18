@@ -6304,62 +6304,179 @@ El siguiente cuestionario se implementó mediante formularios digitales, solicit
 * **18. De las siguientes opciones, ¿qué funcionalidad de Livria te generó MENOR interés?**
   * *Opciones (Elegir una):* Búsqueda de libros | Recomendaciones | Comunidades y foros | Proceso de compra | Perfil
 * **19. Del 1 al 10, ¿qué tan probable es que recomiendes la descarga de Livria a otro lector?** *(Escala 1 al 10 - Net Promoter Score)*
+
 ---
 
 ### 6.3.2. Registro de Entrevistas
-* **Repositorio Central de Evidencias en Video (Microsoft Stream):** [Enlace a Grabaciones de Validación](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201f855_upc_edu_pe/EQlLtO8aYaxFvZxl_mX-m1oBO06-X2oQiswQ41e7tmg3qQ?e=tAFA1n)
 
-#### Segmento Objetivo #1: Lectores en Desarrollo
+Para la validación cuantitativa del prototipo, se reemplazó el levantamiento de entrevistas individuales por un instrumento estructurado de Google Forms, aplicado a una muestra de **28 participantes** que completaron las tareas descritas en la Sección 6.3.1 y respondieron el cuestionario de 18 preguntas. A continuación, se presenta la interpretación de los resultados obtenidos, organizados según el orden del instrumento de medición.
 
-##### Entrevistado #1: Mateo Castillo
-* **Edad:** 16 años | **Distrito:** Lince
-* **Resumen descriptivo de apreciaciones:** El entrevistado indicó que lee por recreación y destacó la dificultad previa para encontrar herramientas digitales que centralicen el descubrimiento de libros y la conexión social. Percibió a Livria como una solución innovadora y accesible para todo público. Calificó el Landing Page como conciso y preciso en su mensaje. Respecto a la aplicación móvil, valoró positivamente el realismo y fidelidad de la interfaz del proceso de pago, la facilidad para añadir productos al carrito y la integración de comentarios dentro de cada ficha técnica. Concluyó que utilizaría activamente la plataforma debido a la excelente accesibilidad de la información.
+**Enlace a las respuestas completas:** Validación de Usuario – Livria App (Google Forms)
 
-<p align="center">
-  <img src="https://imgur.com/CnFjP84.jpg" alt="inter1">
-</p>
+---
 
-##### Entrevistado #2: Daniel Ortega
-* **Edad:** 20 años | **Distrito:** Jesús María
-* **Resumen descriptivo de apreciaciones:** Usuario con preferencia por el género de ciencia ficción. Expresó que el diseño del Landing Page es cómodo, atractivo y altamente efectivo para motivar la adquisición de libros. Durante la interacción con la aplicación móvil, destacó el dinamismo de la navegación y validó con entusiasmo el concepto de recibir recomendaciones automatizadas personalizadas, catalogándola como su característica favorita. Sugirió que se vigile la complejidad en la moderación de interacciones comunitarias masivas para mantener el enfoque limpio de la app.
+#### Perfil de los participantes
+
+**Pregunta 1 — Rango de edad:** La muestra está dominada por el segmento de 19 a 25 años (17 de 28 participantes, 60.7%), seguido por adolescentes de 15 a 18 años (5) y, en menor proporción, adultos de 26 años o más (6 en conjunto). Esta distribución es coherente con el segmento objetivo principal de Livria, "Lectores en Desarrollo" y "Lectores Comunitarios", concentrado en jóvenes adultos.
 
 <p align="center">
-  <img src="https://imgur.com/D51ZRpD.jpg" alt="inter1">
+  <img src="https://i.imgur.com/8a7Hkh5.jpg" alt="q1_edad">
 </p>
 
-##### Entrevistado #3: Arantza Castillo
-* **Edad:** 18 años | **Distrito:** Lince
-* **Resumen descriptivo de apreciaciones:** Lectora habitual del género fantástico que manifestaba frustración al no contar con herramientas eficaces para el descubrimiento de nuevos títulos. Tras evaluar el Landing Page, mostró un alto interés de conversión por los servicios descritos. Al interactuar con la interfaz móvil, resaltó el uso de la iconografía nativa, concluyendo que el sistema es altamente didáctico, amigable y fluido para la navegación entre secciones independientes.
+**Pregunta 2 — Frecuencia de lectura:** El 71.4% de los participantes lee con frecuencia semanal (11) o mensual (9), es decir, son lectores activos pero no necesariamente diarios. Solo 2 personas leen a diario y 6 declaran leer "rara vez", lo que sugiere que la muestra recolectada es representativa de un lector habitual de tipo medio, sin sesgo hacia usuarios power-reader.
 
 <p align="center">
-  <img src="https://imgur.com/x2h1etm.jpg" alt="inter1">
+  <img src="https://i.imgur.com/GONzhrG.jpg" alt="q2_frecuencia">
 </p>
 
-#### Segmento Objetivo #2: Lectores Comunitarios
+---
 
-##### Entrevistado #4: Stefano Rivera
-* **Edad:** 19 años | **Distrito:** Lince
-* **Resumen descriptivo de apreciaciones:** Usuario habituado a clubes de lectura presenciales. Destacó el valor agregado de Livria al unificar con éxito un ecosistema de comunidad y catálogo comercial en un mismo espacio digital. Validó la estructura organizativa del Landing Page pero planteó como oportunidad de mejora mitigar el fondo blanco plano, sugiriendo la incorporación de preferencias de personalización visual. En la aplicación, aplaudió la simplicidad intuitiva para crear grupos y generar publicaciones sin fricciones operativas.
+#### Catálogo, ficha técnica y recomendaciones
+
+**Pregunta 3 — Facilidad de búsqueda y filtros:** La media obtenida es **3.61/5**. El 60.7% de los participantes calificó la tarea con 4 o 5, lo que indica una usabilidad aceptable, aunque un grupo no menor (7 de 28, 25%) calificó con 1 o 2, señalando una oportunidad de mejora puntual en el descubrimiento de la barra de búsqueda o en la aplicación de filtros.
 
 <p align="center">
-  <img src="https://imgur.com/3J7YQfS.jpg" alt="inter1">
+  <img src="https://i.imgur.com/hIe1IwO.jpg" alt="q3">
 </p>
 
-##### Entrevistado #5: Lorenzo Balico
-* **Edad:** 19 años | **Distrito:** Jesús María
-* **Resumen descriptivo de apreciaciones:** El entrevistado validó como práctica y coherente la propuesta de expresar opiniones literarias y adquirir obras bajo la misma infraestructura tecnológica. Encontró el Landing Page claro, estructurado y de comunicación rápida. Coincidió con el hallazgo de incorporar una paleta de colores alternativa o modo oscuro para sesiones de lectura prolongadas. Destacó la inmediatez del flujo para la edición del perfil de usuario (biografía, avatar y preferencias), indicando que es clave para conectar de forma fidedigna con lectores afines.
+**Pregunta 4 — Claridad de la ficha técnica del libro:** Esta fue una de las preguntas con mejor desempeño, con media **4.11/5** y 23 de 28 participantes (82%) calificando con 4 o 5. Esto valida que la información de precio, sinopsis y portada se percibe como clara y suficiente en su estado actual.
 
 <p align="center">
-  <img src="https://imgur.com/bu23K6h.jpg" alt="inter1">
+  <img src="https://i.imgur.com/WwQHbce.jpg" alt="q4">
 </p>
 
-##### Entrevistado #6: Fabrizzio Gionti
-* **Edad:** 21 años | **Distrito:** Callao
-* **Resumen descriptivo de apreciaciones:** Lector casual que validó positivamente la estética general y la paleta cromática de la aplicación móvil, considerándola muy organizada para la segmentación por géneros literarios. Para el Landing Page, sugirió inyectar dinámicamente recomendaciones basadas en intereses directamente en el *home view* para elevar el gancho inicial. Calificó el algoritmo de recomendaciones como muy acertado y visualizó un gran potencial de escalabilidad en el componente social de foros de discusión.
+**Pregunta 5 — Precisión percibida del motor de recomendaciones:** Esta es la pregunta Likert con **peor desempeño de todo el instrumento**, con media **2.89/5**. El 42.9% de los participantes calificó con 1 o 2, indicando que las sugerencias actuales no coinciden de forma consistente con los intereses literarios reales del usuario. Este hallazgo respalda directamente la motivación detrás del Experimento 2 (Tinder Literario): el problema de fondo puede no ser solo la mecánica de interacción (grid vs. swipe), sino la calidad de la señal de entrada que alimenta al algoritmo, dado que el sistema actual ofrece pocas oportunidades de retroalimentación por sesión.
 
 <p align="center">
-  <img src="https://imgur.com/dNY1itz.jpg" alt="inter1">
+  <img src="https://i.imgur.com/JrvJSDf.jpg" alt="q5">
 </p>
+
+---
+
+#### Carrito y proceso de pago (Checkout)
+
+**Pregunta 6 — Rapidez e intuición al agregar al carrito:** Media de **3.82/5**, con 64.3% de respuestas en 4 o 5. El flujo de carrito no se percibe como un punto crítico de fricción en sí mismo.
+
+<p align="center">
+  <img src="https://i.imgur.com/eKXmtIP.jpg" alt="q6">
+</p>
+
+**Pregunta 7 — Orden lógico de los pasos del Checkout:** Media de **4.00/5**, la segunda más alta del instrumento. El 78.6% calificó con 4 o 5. Esto sugiere que la secuencia de pasos del checkout está bien diseñada en términos de arquitectura de información; el problema de fricción identificado en el Capítulo VIII (8.1.1) no está en el *orden* de los pasos, sino en la *naturaleza* del método de pago (transferencia manual), tal como se profundiza en la Pregunta 14.
+
+<p align="center">
+  <img src="https://i.imgur.com/IfvCjUZ.jpg" alt="q7">
+</p>
+
+**Pregunta 8 — Errores técnicos durante la simulación de pago:** El 78.6% (22 de 28) no experimentó ningún error técnico o bloqueo, mientras que el 21.4% (6 participantes) sí reportó alguno. Si bien la mayoría no tuvo problemas, este porcentaje de error técnico no es despreciable y debería revisarse junto al equipo de QA antes de escalar el flujo de pago a producción.
+
+<p align="center">
+  <img src="https://i.imgur.com/8xB77U9.jpg" alt="q8">
+</p>
+
+---
+
+#### Comunidades y participación social
+
+**Pregunta 9 — Comprensión rápida del propósito de Comunidades:** Media de **3.43/5**. Aunque 12 de 28 participantes (42.9%) calificaron con 4 o 5, un grupo considerable (8 personas, 28.6%) se ubicó en el punto neutro (3) y otro grupo (7 personas, 25%) calificó con 2. Esto indica que el propósito del módulo social no es evidente para una parte importante de los usuarios nuevos, reforzando el Knowledge Gap ya documentado en 8.1.2 sobre la "Brecha entre Usuarios con Acceso a Comunidades y Usuarios Activos en Ellas".
+
+<p align="center">
+  <img src="https://i.imgur.com/xBttjN2.jpg" alt="q9">
+</p>
+
+**Pregunta 10 — Legibilidad de publicaciones y comentarios:** Media de **3.43/5**, con resultados dispersos: 9 personas calificaron con 4, pero 6 participantes (21.4%) calificaron con 1 o 2. La lectura de los hilos de conversación tiene margen de mejora en jerarquía visual.
+
+<p align="center">
+  <img src="https://i.imgur.com/R8ngj2d.jpg" alt="q10">
+</p>
+
+**Pregunta 11 — Localización del botón de crear publicación:** El 60.7% (17 de 28) pudo localizar la acción sin dificultad, pero el 39.3% (11 participantes) **no** logró hacerlo. Esta es una de las señales más fuertes de fricción de usabilidad detectadas en todo el instrumento: si cuatro de cada diez usuarios no encuentran el botón principal para crear contenido, esto explica en parte por qué la proporción de "espectadores" supera a la de "creadores" dentro de las comunidades (Knowledge Gap, Claim 7 y Experiment Card 5).
+
+<p align="center">
+  <img src="https://i.imgur.com/iTIO0U3.jpg" alt="q11">
+</p>
+
+**Pregunta 12 — Comunidades como motivador de lectura:** Esta pregunta obtuvo la **media más baja de todo el cuestionario: 2.93/5**. La distribución está fuertemente polarizada: 6 personas calificaron con 1 (mínimo posible) y solo 4 con 5 (máximo). Esto sugiere que la promesa de valor "interactuar en comunidades te motiva a leer más" no convence de manera uniforme a los participantes, y debe tratarse como una creencia (Assumption 8 del documento) todavía no validada con evidencia sólida, más que como un hecho asumido en el diseño del producto.
+
+<p align="center">
+  <img src="https://i.imgur.com/w4AaCpB.jpg" alt="q12">
+</p>
+
+**Pregunta 13 — Integración entre catálogo, carrito y comunidades:** Media de **3.68/5**, con 64.3% de respuestas en 4 o 5. Los participantes perciben que los módulos de la app, aunque distintos en propósito, funcionan como un ecosistema razonablemente cohesionado.
+
+<p align="center">
+  <img src="https://i.imgur.com/JS9TQMr.jpg" alt="q13">
+</p>
+
+---
+
+#### Pregunta 14 — Índice de confusión por apartado (vista comparativa)
+
+Esta pregunta matricial pidió calificar, apartado por apartado, qué tan confusa resultó la navegación (1 = Nada confuso, 5 = Muy confuso). El gráfico comparativo permite identificar dónde se concentra la fricción real de la interfaz:
+
+<p align="center">
+  <img src="https://i.imgur.com/mEaiqna.jpg" alt="q14_confusion">
+</p>
+
+| Apartado | Índice de confusión promedio | Lectura |
+|---|---|---|
+| Apartado de recomendaciones | **3.11** | El apartado más confuso de toda la app. Confirma, junto con la Pregunta 5, que el motor de recomendaciones es la zona de mayor fricción percibida combinada (baja precisión + alta confusión de uso). |
+| Comunidades, posts y comentarios | 2.68 | Segundo apartado más confuso; consistente con los hallazgos de las Preguntas 9 y 11. |
+| Proceso de compras | 2.54 | Confusión moderada. Aunque el orden de los pasos se percibe lógico (Pregunta 7), el proceso en sí genera algo de desorientación, coherente con la fricción del método de pago documentada en el As-Is Summary. |
+| Catálogo de libros | 2.46 | Confusión baja-moderada. |
+| Búsqueda de libros | 2.25 | Uno de los apartados menos confusos. |
+| Apartado de perfil | 2.25 | El menos confuso en promedio, aunque con una distribución bimodal (15 personas marcaron "Nada confuso" pero 6 marcaron "Muy confuso"), sugiriendo dos experiencias de usuario distintas según el caso de uso del perfil. |
+
+**Hallazgo clave:** El "Apartado de recomendaciones" es el único módulo cuyo índice de confusión promedio supera el punto medio de la escala (2.5). Esto valida con evidencia cuantitativa la priorización del Experiment Card 2 (Tinder Literario) dentro del backlog de experimentos del Capítulo VIII.
+
+---
+
+#### Usabilidad general y preferencias de funcionalidades
+
+**Pregunta 15 — Autonomía en la finalización de tareas (sin ayuda):** Media de **3.36/5**. Ningún participante calificó con 2, pero 4 personas (14.3%) calificaron con 1, indicando que necesitaron ayuda o instrucciones adicionales para completar las tareas asignadas. La mayoría (11 de 28) se ubicó en el punto neutro (3), lo que sugiere una usabilidad "suficiente pero no fluida".
+
+<p align="center">
+  <img src="https://i.imgur.com/iDSZ7Y9.jpg" alt="q15">
+</p>
+
+**Pregunta 16 — Funcionalidad de MAYOR interés:** "Comunidades y foros de discusión" lidera con 10 de 28 menciones (35.7%), seguida de "Recomendaciones personalizadas" (7, 25%). Es notable que el módulo de comunidades genere el mayor interés declarado a pesar de ser, simultáneamente, uno de los apartados con mayor confusión percibida (Pregunta 14) — esto sugiere alto potencial de valor sin explotar si se resuelve la fricción de usabilidad. "Personalización del perfil" prácticamente no genera interés (1 mención).
+
+<p align="center">
+  <img src="https://i.imgur.com/OUITyRd.jpg" alt="q16_mayor_interes">
+</p>
+
+**Pregunta 17 — Funcionalidad de MENOR interés:** "Personalización del perfil" es, por amplio margen, la funcionalidad de menor interés (12 de 28 menciones, 42.9%). Este resultado es directamente relevante para la **Métrica de Negocio "Tasa de Desinterés en Perfil"** definida en la Sección 8.2.2: el 42.9% obtenido **supera la meta deseada de mantenerse por debajo del 30%**, confirmando empíricamente que el perfil actual no logra captar el interés del usuario y reforzando la necesidad del Experiment Card 4 (Vitrina Literaria en el Perfil).
+
+<p align="center">
+  <img src="https://i.imgur.com/kpe5kVU.jpg" alt="q17_menor_interes">
+</p>
+
+**Pregunta 18 — Net Promoter Score (NPS):** La probabilidad promedio de recomendar Livria es **6.82/10**. Aplicando la metodología estándar de NPS (Promotores [9-10] menos Detractores [0-6]), se obtiene:
+
+- **Promotores (9-10):** 8 participantes (28.6%)
+- **Pasivos (7-8):** 7 participantes (25%)
+- **Detractores (0-6):** 13 participantes (46.4%)
+- **NPS = -17.9**
+
+<p align="center">
+  <img src="https://i.imgur.com/H1I2iCc.jpg" alt="q18_nps">
+</p>
+
+Un NPS negativo indica que, en su estado actual de prototipo, Livria tiene más detractores que promotores. Esto es un resultado esperable y útil en una etapa de validación temprana (no es una métrica de lanzamiento), pero confirma que las fricciones identificadas en las Preguntas 5, 9, 11, 12 y 14 (recomendaciones poco precisas, comunidades confusas, dificultad para publicar) tienen un impacto agregado real sobre la disposición del usuario a recomendar el producto, y deben resolverse antes de la siguiente ronda de validación.
+
+---
+
+#### Síntesis de hallazgos
+
+| Hallazgo | Evidencia | Relación con el Capítulo VIII |
+|---|---|---|
+| El motor de recomendaciones es la mayor fuente combinada de fricción e insatisfacción. | P5 (media 2.89, la más baja en precisión) + P14 (3.11, el apartado más confuso). | Valida la priorización del Experiment Card 2 (Tinder Literario) y la Hipótesis H2. |
+| El perfil genera el menor interés declarado de la app. | P17: 42.9% lo elige como funcionalidad de menor interés, superando la meta de <30% de la métrica "Tasa de Desinterés en Perfil". | Valida el Experiment Card 4 (Vitrina Literaria) y la Hipótesis H4. |
+| Casi 4 de cada 10 usuarios no encuentran el botón para crear una publicación. | P11: 39.3% respondió "No". | Relacionado con el Experiment Card 5 y el Knowledge Gap sobre la brecha espectador-creador. |
+| Las comunidades generan alto interés pero baja comprensión y baja motivación a leer más. | P16 (35.7% mayor interés) vs. P9 (media 3.43) y P12 (media más baja del cuestionario: 2.93). | Sugiere que el valor social del producto es percibido pero no está bien comunicado ni materializado todavía; relevante para EXQ07 y EXQ11 del Question Backlog. |
+| El checkout está bien estructurado en orden lógico, pero el método de pago en sí genera confusión moderada. | P7 (media 4.00, alta) vs. P14 [Proceso de compras] (2.54, moderada). | Confirma que el problema no es el diseño de pasos sino el mecanismo de pago, respaldando el Experiment Card 3 (Billetera Livria). |
+| El producto, en su estado de prototipo, tiene un NPS negativo. | NPS = -17.9 (13 detractores vs. 8 promotores). | Punto de partida cuantitativo para medir el impacto de los cinco experimentos sobre la percepción general del producto en la siguiente ronda de validación. |
+
+---
 
 ### 6.3.3. Evaluaciones según Heurísticas
 
@@ -6367,7 +6484,6 @@ El siguiente cuestionario se implementó mediante formularios digitales, solicit
 * **Curso:** Diseño de Experimentos de Ingeniería de Software (Sección: 12278)
 * **Profesor(es):** Julio Manuel Noriega Melendez
 * **Auditor / Evaluador:** Equipo de Aseguramiento de la Calidad LIVRIA
-* **Clientes de Control:** Lorenzo Balico, Stefano Rivera, Arantza Castillo, Daniel Ortega, Mateo Castillo y Fabrizzio Gionti.
 * **Tareas Auditadas:** Búsqueda de libros, uso de filtros en catálogo, procesos de pago, gestión de cuentas, navegación por categorías, personalización de perfil, carrito, recomendaciones personalizadas, foros y comunidades, notificaciones, y vistas de detalle.
 * **Exclusiones del Alcance:** Persistencia de favoritos locales, algoritmos predictivos complejos basados en el historial no relacional, y el refinamiento de gráficos avanzados del dashboard de administración.
 
@@ -6431,7 +6547,7 @@ El siguiente cuestionario se implementó mediante formularios digitales, solicit
 * **Recomendación de Ingeniería:** Implementar el soporte nativo de **Dark Theme** mediante la extensión de las clases de `ThemeData` en Flutter y el sistema de `MaterialTheme` en Kotlin. Guardar de forma local las preferencias estéticas del usuario mediante persistencia ligera (`SharedPreferences` / `Hive`) y agregar un interruptor global de tipo *Toggle* en el encabezado de navegación de la plataforma.
 
 <p align="center">
-  <img src="https://imgur.com/TkgZWGX.jpg" alt="inter1">
+  <img src="https://imgur.com/k4gukrC.jpg" alt="inter1">
 </p>
 
 # Capítulo VII: DevOps Practices
@@ -7160,6 +7276,84 @@ Si un usuario es asignado al Grupo Experimental del Experimento 3 (Billetera Liv
 Toda investigación llevada a cabo en Livria se rige bajo el principio ético universal de la experimentación: no causar daño. Esto se traduce en directrices estrictas de protección al lector:
 * **Transparencia Financiera:** No se experimentará jamás con los precios reales de los libros. Modificar precios de forma oculta entre el Grupo de Control y el Grupo Experimental constituye discriminación de precios y quiebra la confianza del usuario. Asimismo, las pruebas relacionadas con la Billetera Livria (H3) operarán en modo simulación durante las pruebas de usabilidad, garantizando que no se debiten fondos reales por error.
 * **Integridad y Seguridad:** Para el experimento de integración multimedia (H5), se activarán los filtros de contenido estricto en la API proveedora de GIFs. Esto prevé y evita éticamente que el Grupo Experimental sea expuesto a contenido inapropiado o perturbador durante las discusiones literarias.
+
+---
+
+### 8.2.7. Data Analytics: Goals, KPIs and Metrics Selections
+
+Esta sección traduce los objetivos estratégicos de Livria, identificados en el *As-Is Summary* (8.1.1), en una jerarquía analítica de tres niveles: **Metas de negocio** (el resultado que el equipo busca alcanzar), **KPIs** (los indicadores estratégicos que demuestran progreso hacia esa meta) y **Métricas seleccionadas** (las mediciones operativas concretas que se instrumentarán en producción). Esta jerarquía sigue el principio de economía de rastreo de datos: el equipo no instrumenta cualquier evento disponible en el SDK, sino únicamente aquellos eventos cuya variación es lo suficientemente sensible y específica para detectar el efecto de cada experimento sin generar ruido innecesario en los paneles de Firebase Analytics y Google Analytics.
+
+#### Criterio de Selección de Métricas
+
+Para que una métrica sea aceptada en el catálogo oficial de Livria, debe cumplir dos condiciones simultáneas:
+
+1. **Economía de rastreo:** la métrica debe poder obtenerse de un evento ya instrumentado o de mínimo esfuerzo de instrumentación adicional (Firebase Analytics, Google Analytics o el instrumento de validación post-sesión), evitando la proliferación de eventos personalizados que incrementen el costo de mantenimiento del SDK.
+2. **Sensibilidad al cambio:** la métrica debe poder detectar con precisión la diferencia introducida por la condición experimental frente a la condición de control (Sección 8.2.4), descartando indicadores que se mantendrían estables independientemente del resultado del experimento (métricas de vanidad).
+
+#### Goals, KPIs and Metrics Selection
+
+| Meta de Negocio | KPI Estratégico | Métrica Seleccionada | Justificación de Economía y Sensibilidad |
+|---|---|---|---|
+| **Eliminar la barrera idiomática que genera abandono en pantallas de alta acción.** | Reducción de la tasa de abandono en el embudo de checkout. | **Índice de Fricción en Checkout** (Pregunta 14 del instrumento de validación, escala 1–5) y **Tasa de Conversión de Checkout** (Google Analytics, embudo `begin_checkout` → `purchase`). | El abandono por confusión idiomática no se detecta en el evento `purchase` por sí solo (es insensible al "por qué"), por lo que se complementa con una métrica de percepción de bajo costo de recolección (un único ítem del formulario ya planificado), evitando instrumentar tracking de *hover* o tiempo de lectura por campo. |
+| **Maximizar el volumen de señales de preferencia disponibles para el algoritmo de recomendaciones.** | Incremento en la cantidad de interacciones de retroalimentación por sesión. | **Volumen de Señales de Preferencia** (evento `swipe_recommendation`, agregando `swipe_right` + `swipe_left`). | Un solo evento personalizado reemplaza la necesidad de instrumentar por separado cada ícono de favorito/descarte de la cuadrícula actual, y es directamente comparable entre la condición de control y experimental sin normalización adicional. |
+| **Reducir el cuello de botella del embudo de pagos causado por la transferencia manual repetitiva.** | Incremento en la frecuencia y densidad de compras por sesión. | **Densidad de Compras por Sesión** (`purchase` / sesiones con saldo a favor) y **Ratio de Carritos Abandonados** (como guardrail). | El evento `purchase` ya existe en el SDK de e-commerce de Firebase; solo se requiere segmentar por la propiedad de usuario "billetera activa", evitando construir un pipeline de tracking financiero nuevo. La sensibilidad es alta porque el efecto esperado (compras de un toque) se refleja directamente en la frecuencia del evento. |
+| **Construir un componente de identidad social que incentive el retorno a la plataforma fuera del momento de compra.** | Reducción del desinterés hacia la personalización del perfil y aumento del tráfico social orgánico. | **Tasa de Desinterés en Perfil** (Pregunta 17 del formulario) y **Tráfico Social Orgánico** (evento `view_user_profile`, como guardrail). | El desinterés hacia el perfil es una percepción que ningún evento de comportamiento captura de forma económica por sí solo (un usuario inactivo en el perfil puede estar inactivo por desinterés o por desconocimiento); la pregunta de opción múltiple ya planificada resuelve la ambigüedad sin necesidad de encuestas adicionales. |
+| **Elevar la riqueza expresiva de las comunidades para convertir espectadores en creadores de contenido.** | Incremento en la proporción de usuarios que realizan su primera publicación. | **Ratio de Transición a Creador** (usuarios únicos con primer `post_in_community` / usuarios únicos con solo `view_community_detail`, vía embudos de cohortes de Google Analytics). | Ambos eventos (`post_in_community`, `view_community_detail`) ya están instrumentados para el módulo de comunidades; el cociente entre ambos es la forma más económica de aislar el efecto del soporte multimedia sobre la conversión espectador→creador, sin necesitar un evento nuevo de "primera publicación". |
+
+#### Relación con las Métricas de Negocio y Medidas OMTM
+
+Las métricas seleccionadas en esta tabla son las mismas que conforman el catálogo oficial de Domain Business Metrics (Sección 8.2.2) y las Medidas OMTM / Guardrail (Sección 8.2.3). Esta sección no introduce indicadores nuevos: su propósito es hacer explícita la cadena de razonamiento que conecta cada meta de negocio del *As-Is Summary* con el KPI estratégico correspondiente, y de allí con la métrica concreta que será instrumentada. Esta trazabilidad evita que el equipo de Defontes mida por medir, asegurando que cada dato recolectado tiene un propósito de decisión claro: escalar, rediseñar o descartar la funcionalidad evaluada en el respectivo *Experiment Card*.
+
+---
+
+### 8.2.8. Web and Mobile Tracking Plan
+
+Para Livria, el objetivo del *Tracking Plan* es estandarizar la captura de eventos en la aplicación móvil (Flutter) con el fin de monitorear de forma exhaustiva el impacto de las cinco funcionalidades experimentales descritas en este capítulo (Localización al Español, Tinder Literario, Billetera Livria, Vitrina Literaria y Multimedia en Comunidades), evitando que la instrumentación quede dispersa o sea redundante con los eventos ya definidos en la Sección 6.2.2.
+
+El monitoreo se llevará a cabo en dos etapas clave, alineadas con la escala de recolección de evidencia definida en la Sección 8.2.5:
+
+#### 1. Implementación Inicial
+
+Durante esta fase, el equipo se enfocará en instrumentar los nuevos eventos personalizados (*Custom Events*) requeridos por los cinco experimentos del MVP, y en recolectar una línea base de comportamiento contra la cual comparar los resultados de la condición experimental.
+
+**Recopilación de Datos:**
+
+*Métricas de Uso:* Se recopilarán datos sobre usuarios activos por variante (Grupo A / Grupo B), duración de sesión, y tasas de conversión en el embudo de checkout (`begin_checkout` → `add_shipping_info` → `add_payment_info` → `purchase`), ya instrumentado en el Experimento 1 de la Sección 6.2.2.
+
+*Interacciones de los Usuarios:* Se registrarán los nuevos eventos personalizados necesarios para los experimentos del Capítulo VIII, detallados en la tabla siguiente.
+
+*Feedback de Usuarios:* A través del instrumento de validación post-sesión (Sección 6.3.1) se recogerán las medidas de percepción —Índice de Fricción en Checkout y Tasa de Desinterés en Perfil— que no pueden capturarse mediante eventos de comportamiento.
+
+| Evento (Firebase/GA) | Experimento Relacionado | Parámetros Clave | Disparador |
+|---|---|---|---|
+| `language_variant_assigned` | Exp. 1: Localización al Español (H1) | `variant` (es_419 / en), `user_id` | Al asignar al usuario su condición de control o experimental al iniciar sesión. |
+| `checkout_field_error` | Exp. 1: Localización al Español (H1) | `screen_name`, `field_name`, `variant` | Al producirse un error de validación en un campo del checkout (guardrail de comprensión). |
+| `swipe_recommendation` | Exp. 2: Tinder Literario (H2) | `direction` (`right` / `left`), `book_id`, `session_id` | Al deslizar una tarjeta de libro en la mecánica de swipe. |
+| `view_recommendation_grid` | Exp. 2: Tinder Literario (H2) | `book_id`, `position` | Al renderizarse una ficha en la cuadrícula estática (condición de control). |
+| `wallet_topup_initiated` | Exp. 3: Billetera Livria (H3) | `amount`, `user_id` | Al iniciar el flujo de recarga de saldo. |
+| `wallet_purchase` | Exp. 3: Billetera Livria (H3) | `amount`, `session_id`, `purchase_count_in_session` | Al completarse una compra utilizando saldo de la billetera (sustituye a `add_payment_info` en la condición experimental). |
+| `view_user_profile` | Exp. 4: Vitrina Literaria (H4) | `profile_owner_id`, `viewer_id`, `variant` | Al visitar el perfil propio o de otro usuario. |
+| `profile_action_after_visit` | Exp. 4: Vitrina Literaria (H4) | `action_type` (`join_community` / `explore_catalog` / `none`) | Inmediatamente después de un evento `view_user_profile`. |
+| `post_in_community` | Exp. 5: Multimedia en Comunidades (H5) / Exp. 6 (6.2.2) | `community_id`, `content_type` (`text` / `image` / `gif`), `is_first_post` | Al publicar un post o comentario en una comunidad. |
+| `gif_picker_opened` | Exp. 5: Multimedia en Comunidades (H5) | `community_id`, `user_id` | Al abrir el selector de GIFs en el composer (solo condición experimental). |
+
+#### 2. Seguimiento Continuo
+
+Después de la implementación inicial, se establecerá un proceso continuo de seguimiento para evaluar el rendimiento de cada experimento durante su *timebox* de ejecución (7 días calendario para pruebas cuantitativas, según la Sección 8.2.5), y para detectar regresiones en las métricas de protección (*guardrail metrics*).
+
+**Recopilación de Datos:**
+
+* **Métricas en Tiempo Real:** Se utilizará el panel de Google Analytics (vía SDK de Firebase Cloud), ya configurado en la Sección 6.2.2, para monitorear en tiempo real el comportamiento de los usuarios asignados a cada variante mediante Firebase Remote Config, permitiendo identificar tendencias diarias antes de que finalice el *timebox* del experimento.
+* **Segmentación de Usuarios:** Los eventos se segmentarán por la propiedad de usuario `wallet_active` (con/sin billetera activada), `subscription_type` (*Free* / *Community*) y `variant` (Control / Experimental), replicando el enfoque de segmentación ya utilizado en el Experimento 5 de la Sección 6.2.2 (Tasa de Conversión de Miembro Activo).
+* **Tasa de Retención:** Se medirá el ratio DAU/MAU (`session_start` → `user_engagement`), ya instrumentado en el Experimento 9 (Sección 6.2.2), para evaluar si las funcionalidades experimentales generan un efecto de retención sostenido más allá del periodo de prueba inicial.
+
+**Evaluación y Ajustes:**
+
+*Informes Periódicos:* Azure Application Insights (backend) y Firebase Analytics (móvil) generarán reportes semanales que resuman el comportamiento del OMTM y la Guardrail Metric de cada experimento (Sección 8.2.3), incluyendo recomendaciones sobre si la funcionalidad debe escalarse al 100% de los usuarios, rediseñarse, o descartarse.
+
+*Iteración Basada en Datos:* Siguiendo la Regla de No Superposición (Sección 8.2.6), los ajustes a la plataforma solo se implementarán una vez que el experimento correspondiente haya alcanzado su nivel de confianza estadística (95% de significación, 80% de poder), evitando decisiones prematuras basadas en muestras incompletas.
+
+---
 
 ## 8.3. Experimentation
 
