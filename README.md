@@ -48,7 +48,7 @@
 | 1.0 | 24-04-2026 | Todos | Creación del informe. Inclusión de Capítulos I, II, III, IV y V (Sprint 1). |
 | 1.1 | 13-05-2026 | Todos | Avance TP1. Inclusión de Capítulos VI y VII. Correcciones y mejoras sobre artefactos previos. |
 | 1.2 | 18-06-2026 | Todos | Avance TB2. Inclusión de Capítulos VII y VIII. Correcciones y mejoras sobre artefactos previos. |
-| 1.3 | 03-07-2026 | Todos | Entrega final (TF). Inclusión de la sección 6.4.1 Auditoría realizada: información del grupo auditado (CaféLab), cronograma y contenido de la auditoría con 19 hallazgos. Inclusión de la sección 8.3.3 (ciclo de vida To-Be sobre repositorios experimentales) y 8.3.3.1 To-Be Sprint Backlogs: Sprint 4 con 12 User Stories implementadas (EP09, EP11, EP12, EP13).|
+| 1.3 | 03-07-2026 | Todos | Entrega final (TF). Inclusión de la sección 6.4 Auditoría de Experiencias de Usuario (auditoría realizada a CaféLab con 19 hallazgos) y de las secciones 8.3.3.1 a 8.3.3.4 del ciclo de vida To-Be: Sprint Backlog 4 experimental y evidencias de implementación de landing, frontend-web y native-mobile con pipeline de release automatizado.|
 
 ---
 
@@ -244,6 +244,9 @@ Commits
     - [8.3.2. To-Be Product Backlog](#832-to-be-product-backlog)
     - [8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle](#833-pipeline-supported-experiment-driven-to-be-software-platform-lifecycle)
       - [8.3.3.1. To-Be Sprint Backlogs](#8331-to-be-sprint-backlogs)
+      - [8.3.3.2. Implemented To-Be Landing Page Evidence](#8332-implemented-to-be-landing-page-evidence)
+      - [8.3.3.3. Implemented To-Be Frontend-Web Application Evidence](#8333-implemented-to-be-frontend-web-application-evidence)
+      - [8.3.3.4. Implemented To-Be Native-Mobile Application Evidence](#8334-implemented-to-be-native-mobile-application-evidence)
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
@@ -7769,7 +7772,7 @@ El To-Be Product Backlog consolida y prioriza las nuevas User Stories derivadas 
 
 En esta sección se documenta la ejecución del ciclo de vida To-Be de la plataforma, guiado por los experimentos diseñados en las secciones [8.1](#81-experiment-planning) y [8.2](#82-experiment-design). El trabajo se organizó en un sprint experimental (Sprint 4) sobre dos repositorios dedicados a la versión experimental del producto: `livria-experimental` (aplicación móvil/web en Flutter) y `livria-backend-experimental` (API RESTful en .NET desplegada en Azure App Service). Mantener la versión experimental en repositorios separados permitió ejecutar los experimentos sin comprometer la estabilidad de la versión As-Is del producto, siguiendo la regla de aislamiento de experimentos definida en la sección [8.2.6](#826-methods-selection).
 
-De los cinco experimentos diseñados, en el Sprint 4 se implementaron los cuatro priorizados en el To-Be Product Backlog con mayor relación impacto/esfuerzo: **Localización Total al Español** (EP09/H1), **Billetera Livria** (EP11/H3), **Vitrina Literaria en el Perfil** (EP12/H4) y **Comentarios y Publicaciones con Imágenes** (EP13/H5). El experimento **Tinder Literario** (EP10/H2) no se ejecutó en este sprint: al depender de un algoritmo de recomendaciones nuevo y de una mecánica de interacción completa (pila de tarjetas, gestos, señales de preferencia), su costo de implementación superaba la capacidad restante del sprint, por lo que se difirió y se registra como experimento no ejecutado en el análisis de la sección [8.4](#84-experiment-aftermath--analysis).
+De los cinco experimentos diseñados, en el Sprint 4 se implementaron los cuatro priorizados en el To-Be Product Backlog con mayor relación impacto/esfuerzo: **Localización Total al Español** (EP09/H1), **Billetera Livria** (EP11/H3), **Vitrina Literaria en el Perfil** (EP12/H4) y **Comentarios y Publicaciones con Imágenes** (EP13/H5). El experimento **Tinder Literario** (EP10/H2) se planificó como el último del ciclo y se encuentra en desarrollo al cierre de este sprint: al depender de un algoritmo de recomendaciones nuevo y de una mecánica de interacción completa (pila de tarjetas, gestos y señales de preferencia), es el experimento de mayor costo de implementación, por lo que se secuenció al final para no poner en riesgo la entrega de los otros cuatro.
 
 #### 8.3.3.1. To-Be Sprint Backlogs
 
@@ -7831,7 +7834,83 @@ El detalle de tareas por User Story es trazable a los commits de los repositorio
 | **US41: Previsualizar y eliminar la imagen antes de publicar (EP13)** | | | | | | | |
 | | 1 | Widget común de modales con previsualización | Crear un widget reutilizable de modal con previsualización del adjunto y opción de quitarlo antes de publicar. | 2 | Developer Team | Done |
 
-Las User Stories US30, US31 y US32 (EP10: Tinder Literario) no fueron incluidas en el Sprint Backlog 4 por la decisión de alcance descrita en la sección [8.3.3](#833-pipeline-supported-experiment-driven-to-be-software-platform-lifecycle); permanecen en el To-Be Product Backlog para un ciclo posterior.
+Las User Stories US30, US31 y US32 (EP10: Tinder Literario) se encuentran en desarrollo al cierre de este backlog, según la secuenciación descrita en la sección [8.3.3](#833-pipeline-supported-experiment-driven-to-be-software-platform-lifecycle).
+
+#### 8.3.3.2. Implemented To-Be Landing Page Evidence
+
+Los cinco experimentos diseñados en la sección [8.2](#82-experiment-design) tienen como objeto de estudio la aplicación (flujo de checkout, descubrimiento de libros, billetera, perfil y comunidades), por lo que ninguna de las To-Be User Stories del Sprint 4 introduce cambios sobre la Landing Page. En consecuencia, la Landing Page de la versión To-Be es la misma versión estable documentada en la sección [5.2.2](#522-implemented-landing-page-evidence), que se mantiene desplegada y operativa como punto de entrada del ecosistema Livria:
+
+Link de la Landing Page desplegada: https://upc-pre-202610-1asi0732-12278-defontes.github.io/livria-landing-page/
+
+Mantener la Landing Page fuera del alcance experimental es consistente con la regla de aislamiento de experimentos definida en la sección [8.2.6](#826-methods-selection): los tratamientos se aplican únicamente sobre la versión experimental de la aplicación, de modo que las métricas de los experimentos no se contaminen con cambios en el canal de adquisición.
+
+#### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
+
+La versión To-Be del cliente Livria se desarrolló en el repositorio experimental `livria-experimental`, construido con Flutter con soporte multiplataforma (web y móvil). Esto permitió implementar cada experimento una sola vez y exponerlo tanto en la aplicación web como en la nativa móvil, manteniendo la paridad de tratamientos entre plataformas exigida por el diseño experimental.
+
+URL del repositorio en GitHub: https://github.com/upc-pre-202610-1asi0732-12278-defontes/livria-experimental
+
+Sobre este cliente se implementaron los cuatro experimentos del Sprint 4, con la siguiente trazabilidad hacia los commits del repositorio:
+
+**Experimento 1 — Localización Total al Español (EP09/H1):** se configuró la internacionalización es/en de toda la aplicación (`l10n.yaml` + archivos ARB), se tradujeron las vistas principales (Home, Profile, Communities), el flujo completo de compra y los mensajes de error y validaciones de Login y Register, y se incorporó el selector de idioma en el perfil junto con un nuevo sistema de navegación localizado.
+
+| Commit | Descripción |
+| :--- | :--- |
+| `45e1832` | Base de la internacionalización (estructura de traducciones) |
+| `e9c5c54`, `7a64df7`, `57369af` | Traducción de vistas principales (Home, Profile) |
+| `817a769`, `b49e28d` | Traducción de Communities y botón selector de idioma en el perfil |
+| `3b13c38` | Nuevo sistema de navegación localizado |
+| `376db4b` | Feature #1 Complete: Translation of UI |
+| `8f1990a`, `f3029c6` | Traducción de mensajes de error y validaciones en Login y Register; barrido final de cadenas |
+
+<!-- SCREENSHOT: vista de la app en español (checkout y selector de idioma) -->
+
+**Experimento 5 — Comentarios y Publicaciones con Imágenes (EP13/H5):** se añadió la selección, previsualización y carga de imágenes y GIFs en publicaciones y comentarios de comunidades, con un widget común de modales que permite previsualizar y retirar el adjunto antes de publicar.
+
+| Commit | Descripción |
+| :--- | :--- |
+| `5a3e25b` | Imágenes y GIFs en posts y comentarios |
+| `d1cf4e5` | Actualización de la vista de detalle de comunidad |
+| `3bbe400` | Feature #2 Complete: Introduction of Images and GIFs to Communities |
+| `67c9076` | Widget común de modales con previsualización de adjuntos |
+
+<!-- SCREENSHOT: publicación con imagen/GIF en una comunidad -->
+
+**Experimento 3 — Billetera Livria (EP11/H3):** se extendió la entidad de usuario con el saldo de billetera, se creó la capa de datos (repository + datasource) para las operaciones de billetera, la pestaña Wallet en el perfil con saldo y recargas, y la billetera como método de pago de un toque en el flujo de órdenes.
+
+| Commit | Descripción |
+| :--- | :--- |
+| `e2770c8` | Nuevo atributo de billetera en la entidad User |
+| `ba0640a` | Repository y datasource de Wallet |
+| `de4b3ba`, `99c38bf` | Profile Provider con métodos de Wallet y pestaña Wallet en el perfil |
+| `d655c4f` | Feature #3 Complete: Livria Wallet |
+| `9e461b7` | Método de pago Wallet en el flujo de órdenes |
+
+<!-- SCREENSHOT: pestaña Wallet en el perfil y pago con billetera en el checkout -->
+
+**Experimento 4 — Vitrina Literaria en el Perfil (EP12/H4):** se implementó la sección "My Books" con el marcado de libros leídos y la vista de perfil público que expone la vitrina literaria del usuario ante otros lectores.
+
+| Commit | Descripción |
+| :--- | :--- |
+| `0a72b7c` | Sección My Books en el perfil |
+| `c37684b` | Vista de perfil público |
+| `709d6ee` | Feature #4 Complete: My Books and Public Profile |
+
+<!-- SCREENSHOT: sección My Books y perfil público con la vitrina literaria -->
+
+#### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence
+
+La aplicación nativa móvil To-Be corresponde al mismo cliente Flutter del repositorio `livria-experimental`, empaquetado como APK de Android con los cuatro experimentos del Sprint 4 integrados (localización total al español, billetera Livria, vitrina literaria en el perfil y comentarios/publicaciones con imágenes y GIFs).
+
+A diferencia del empaquetado manual empleado en la versión As-Is (sección [5.2.4](#524-implemented-native-mobile-application-evidence)), la versión experimental incorpora un **pipeline de release automatizado con GitHub Actions** (`.github/workflows/release-apk.yml`): al publicar un tag de versión (`v*`), el workflow compila el APK en modo release inyectando la URL del backend experimental mediante `--dart-define=API_BASE` (gestionada como secret del repositorio), nombra el artefacto con el tag y lo publica en GitHub Releases. De este modo, cada iteración del experimento genera una build distribuible y trazable a su versión, alineado con el enfoque *pipeline-supported* de esta sección.
+
+<!-- SCREENSHOT: ejecución del workflow Release APK en GitHub Actions y/o página de Releases con el APK publicado -->
+
+El APK experimental se distribuye a los participantes de las entrevistas de validación To-Be (sección [8.3.4](#834-to-be-validation-interviews)) desde la página de Releases del repositorio:
+
+Link de Releases del repositorio experimental: https://github.com/upc-pre-202610-1asi0732-12278-defontes/livria-experimental/releases
+
+> **Nota:** Para instalar la aplicación, es necesario permitir la instalación de aplicaciones de orígenes desconocidos en los ajustes de seguridad del dispositivo Android.
 
 ---
 
