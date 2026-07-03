@@ -48,7 +48,7 @@
 | 1.0 | 24-04-2026 | Todos | Creación del informe. Inclusión de Capítulos I, II, III, IV y V (Sprint 1). |
 | 1.1 | 13-05-2026 | Todos | Avance TP1. Inclusión de Capítulos VI y VII. Correcciones y mejoras sobre artefactos previos. |
 | 1.2 | 18-06-2026 | Todos | Avance TB2. Inclusión de Capítulos VII y VIII. Correcciones y mejoras sobre artefactos previos. |
-| 1.3 | 03-07-2026 | Todos | Entrega final (TF). Inclusión de la sección 6.4.1 Auditoría realizada: información del grupo auditado (CaféLab), cronograma y contenido de la auditoría con 19 hallazgos. |
+| 1.3 | 03-07-2026 | Todos | Entrega final (TF). Inclusión de la sección 6.4.1 Auditoría realizada: información del grupo auditado (CaféLab), cronograma y contenido de la auditoría con 19 hallazgos. Inclusión de la sección 8.3.3 (ciclo de vida To-Be sobre repositorios experimentales) y 8.3.3.1 To-Be Sprint Backlogs: Sprint 4 con 12 User Stories implementadas (EP09, EP11, EP12, EP13).|
 
 ---
 
@@ -242,6 +242,8 @@ Commits
   - [8.3. Experimentation](#83-experimentation)
     - [8.3.1. To-Be User Stories](#831-to-be-user-stories)
     - [8.3.2. To-Be Product Backlog](#832-to-be-product-backlog)
+    - [8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle](#833-pipeline-supported-experiment-driven-to-be-software-platform-lifecycle)
+      - [8.3.3.1. To-Be Sprint Backlogs](#8331-to-be-sprint-backlogs)
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
@@ -7763,8 +7765,73 @@ El To-Be Product Backlog consolida y prioriza las nuevas User Stories derivadas 
 | 14 | US32 | Actualizar la pila de recomendaciones | Como lector, quiero cargar una nueva pila cuando termine la actual, para seguir descubriendo libros sin salir del swipe. | 2 |
 | 15 | US41 | Previsualizar y eliminar la imagen antes de publicar | Como lector, quiero previsualizar y poder quitar el adjunto antes de publicar, para compartir el contenido correcto. | 2 |
 
----
-Entendido, las separo en dos bloques claros. Aquí están listas para reemplazar la sección completa desde `# Conclusiones` hasta antes de `# Bibliografía`:
+### 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle
+
+En esta sección se documenta la ejecución del ciclo de vida To-Be de la plataforma, guiado por los experimentos diseñados en las secciones [8.1](#81-experiment-planning) y [8.2](#82-experiment-design). El trabajo se organizó en un sprint experimental (Sprint 4) sobre dos repositorios dedicados a la versión experimental del producto: `livria-experimental` (aplicación móvil/web en Flutter) y `livria-backend-experimental` (API RESTful en .NET desplegada en Azure App Service). Mantener la versión experimental en repositorios separados permitió ejecutar los experimentos sin comprometer la estabilidad de la versión As-Is del producto, siguiendo la regla de aislamiento de experimentos definida en la sección [8.2.6](#826-methods-selection).
+
+De los cinco experimentos diseñados, en el Sprint 4 se implementaron los cuatro priorizados en el To-Be Product Backlog con mayor relación impacto/esfuerzo: **Localización Total al Español** (EP09/H1), **Billetera Livria** (EP11/H3), **Vitrina Literaria en el Perfil** (EP12/H4) y **Comentarios y Publicaciones con Imágenes** (EP13/H5). El experimento **Tinder Literario** (EP10/H2) no se ejecutó en este sprint: al depender de un algoritmo de recomendaciones nuevo y de una mecánica de interacción completa (pila de tarjetas, gestos, señales de preferencia), su costo de implementación superaba la capacidad restante del sprint, por lo que se difirió y se registra como experimento no ejecutado en el análisis de la sección [8.4](#84-experiment-aftermath--analysis).
+
+#### 8.3.3.1. To-Be Sprint Backlogs
+
+##### Sprint Planning 4 (To-Be)
+
+| Sprint \# | Sprint 4 (To-Be) |
+| :---- | :---- |
+| **Sprint Planning Background** |  |
+| Date | 28/06/2026 |
+| Time | 3:30 PM |
+| Location | Virtual |
+| Prepared by | Cassius Estefano Martel Andrade, Luis Andrés Alva Abanto |
+| Attendees (to planning meeting) | Ainhoa Lucía Castillo Garay / Marcelo Alejandro Binda Arbañil / Cassius Estefano Martel Andrade / Alex Tomio Nakamurakare Teruya / Luis Andrés Alva Abanto / Angie Christina Yalán Zhang |
+| **Sprint Goal & User Stories** |  |
+| Sprint 4 Goal | Our focus is on executing the To-Be experiments designed in Chapter VIII over a dedicated experimental version of the Livria platform. We believe that delivering the full Spanish localization (EP09), the Livria Wallet payment method (EP11), the public literary showcase in the user profile (EP12) and image/GIF support in community posts and comments (EP13) will reduce checkout abandonment and increase community engagement for Spanish-speaking readers. This will be confirmed when the experimental build exposes the four features end-to-end (Flutter client + .NET API on Azure) and the To-Be validation interviews can be run against it. |
+| Sprint 4 Velocity | 40 |
+| Sum of Story Points | 39 |
+
+##### Sprint Backlog 4 (To-Be)
+
+El detalle de tareas por User Story es trazable a los commits de los repositorios experimentales (`livria-experimental` y `livria-backend-experimental`), referenciados en las evidencias de las secciones [8.3.3.3](#8333-implemented-to-be-frontend-web-application-evidence) a [8.3.3.5](#8335-implemented-to-be-restful-api-andor-serverless-backend-evidence).
+
+| Sprint n | Sprint 4 (To-Be) | | | | | | |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **User Story** | **Work-Item / Task** | | | | | | |
+| **User Story ID** | **Id** | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** | |
+| **US27: Cambiar el idioma de la aplicación a español (EP09)** | | | | | | | |
+| | 1 | Configuración de l10n en Flutter | Configurar `l10n.yaml` y la estructura de archivos ARB para internacionalización es/en en toda la aplicación. | 2 | Developer Team | Done |
+| | 2 | Traducción de vistas principales | Traducir Home, Profile y Communities aplicando las claves de localización en los widgets existentes. | 4 | Developer Team | Done |
+| | 3 | Selector de idioma en el perfil | Implementar el botón de cambio de idioma en el perfil y persistir la preferencia del usuario. | 2 | Developer Team | Done |
+| **US28: Localización del flujo de checkout al español (EP09)** | | | | | | | |
+| | 1 | Traducción del flujo de compra | Localizar carrito, checkout y confirmación de orden, incluyendo formatos de moneda y descripciones de métodos de pago. | 3 | Developer Team | Done |
+| | 2 | Nuevo sistema de navegación localizado | Ajustar el sistema de navegación (browsing) para que las categorías y etiquetas respondan al idioma activo. | 3 | Developer Team | Done |
+| **US29: Localización de mensajes de error y validaciones (EP09)** | | | | | | | |
+| | 1 | Traducción de mensajes de error en Login y Register | Localizar validaciones y mensajes de error de los flujos de autenticación. | 2 | Developer Team | Done |
+| | 2 | Revisión final de cadenas sin traducir | Barrido completo de la interfaz para detectar y traducir cadenas residuales en flujos secundarios. | 2 | Developer Team | Done |
+| **US33: Recargar saldo en la billetera virtual (EP11)** | | | | | | | |
+| | 1 | Atributo de saldo en la entidad User | Extender la entidad de usuario (cliente y API) con el atributo de saldo de billetera y su migración EF Core. | 2 | Developer Team | Done |
+| | 2 | Endpoint de recarga de billetera | Implementar en la API el endpoint de recarga de saldo con validación de montos. | 3 | Developer Team | Done |
+| | 3 | Repositorio y datasource de Wallet en Flutter | Crear la capa de datos (repository + datasource) para las operaciones de billetera en el cliente. | 2 | Developer Team | Done |
+| **US34: Comprar libros con saldo de la billetera (EP11)** | | | | | | | |
+| | 1 | Método de pago Wallet en Orders (API) | Incorporar la billetera como método de pago en el bounded context de órdenes, descontando saldo y registrando la orden en estado "en progreso". | 3 | Developer Team | Done |
+| | 2 | Método de pago Wallet en checkout (Flutter) | Integrar la opción de pago con billetera en el flujo de compra, con confirmación en un toque. | 3 | Developer Team | Done |
+| **US35: Consultar saldo y movimientos de la billetera (EP11)** | | | | | | | |
+| | 1 | Pestaña Wallet en el perfil | Crear la vista de billetera en el perfil con saldo actual y acciones de recarga, conectada al Profile Provider. | 3 | Developer Team | Done |
+| **US36: Marcar libros como leídos (EP12)** | | | | | | | |
+| | 1 | Feature "read books" en la API | Implementar el registro de libros leídos por usuario en el backend con su migración correspondiente. | 2 | Developer Team | Done |
+| | 2 | Marcado de leídos en el cliente | Permitir marcar/desmarcar libros como leídos desde la aplicación. | 2 | Developer Team | Done |
+| **US37: Visualizar la vitrina literaria pública en el perfil (EP12)** | | | | | | | |
+| | 1 | Sección "My Books" en el perfil | Construir la sección de libros leídos dentro del perfil del usuario. | 3 | Developer Team | Done |
+| | 2 | Perfil público | Crear la vista de perfil público accesible por otros usuarios, exponiendo la vitrina literaria. | 3 | Developer Team | Done |
+| **US38: Mostrar reseñas y géneros predominantes en el perfil (EP12)** | | | | | | | |
+| | 1 | Enriquecimiento del perfil público | Incorporar reseñas y géneros predominantes derivados del historial de lectura a la vista de perfil. | 2 | Developer Team | Done |
+| **US39: Adjuntar imágenes en publicaciones de comunidad (EP13)** | | | | | | | |
+| | 1 | Atributo de imagen en posts y comentarios (API) | Extender el modelo de publicaciones y comentarios con soporte de imagen adjunta. | 2 | Developer Team | Done |
+| | 2 | Adjuntar imágenes y GIFs en posts (Flutter) | Implementar la selección y carga de imágenes/GIFs en publicaciones de comunidades. | 3 | Developer Team | Done |
+| **US40: Adjuntar imágenes y GIFs en comentarios (EP13)** | | | | | | | |
+| | 1 | Adjuntos en comentarios | Extender el soporte de imágenes/GIFs a los comentarios, actualizando la vista de detalle de comunidad. | 2 | Developer Team | Done |
+| **US41: Previsualizar y eliminar la imagen antes de publicar (EP13)** | | | | | | | |
+| | 1 | Widget común de modales con previsualización | Crear un widget reutilizable de modal con previsualización del adjunto y opción de quitarlo antes de publicar. | 2 | Developer Team | Done |
+
+Las User Stories US30, US31 y US32 (EP10: Tinder Literario) no fueron incluidas en el Sprint Backlog 4 por la decisión de alcance descrita en la sección [8.3.3](#833-pipeline-supported-experiment-driven-to-be-software-platform-lifecycle); permanecen en el To-Be Product Backlog para un ciclo posterior.
 
 ---
 
