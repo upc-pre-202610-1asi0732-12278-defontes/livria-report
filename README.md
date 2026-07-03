@@ -48,7 +48,7 @@
 | 1.0 | 24-04-2026 | Todos | Creación del informe. Inclusión de Capítulos I, II, III, IV y V (Sprint 1). |
 | 1.1 | 13-05-2026 | Todos | Avance TP1. Inclusión de Capítulos VI y VII. Correcciones y mejoras sobre artefactos previos. |
 | 1.2 | 18-06-2026 | Todos | Avance TB2. Inclusión de Capítulos VII y VIII. Correcciones y mejoras sobre artefactos previos. |
-| 1.3 | 03-07-2026 | Todos | Entrega final (TF). Inclusión de la sección 6.4 Auditoría de Experiencias de Usuario (auditoría realizada a CaféLab con 19 hallazgos) y de las secciones 8.3.3.1 a 8.3.3.4 del ciclo de vida To-Be: Sprint Backlog 4 experimental y evidencias de implementación de landing, frontend-web y native-mobile con pipeline de release automatizado.|
+| 1.3 | 03-07-2026 | Todos | Entrega final (TF). Inclusión de la sección 6.4 Auditoría de Experiencias de Usuario (auditoría realizada a CaféLab con 19 hallazgos) y de las secciones 8.3.3.1 a 8.3.3.4 del ciclo de vida To-Be: Sprint Backlog 4 experimental y evidencias de implementación de landing, frontend-web, native-mobile con pipeline de release automatizado y RESTful API experimental desplegada en Azure.|
 
 ---
 
@@ -247,6 +247,7 @@ Commits
       - [8.3.3.2. Implemented To-Be Landing Page Evidence](#8332-implemented-to-be-landing-page-evidence)
       - [8.3.3.3. Implemented To-Be Frontend-Web Application Evidence](#8333-implemented-to-be-frontend-web-application-evidence)
       - [8.3.3.4. Implemented To-Be Native-Mobile Application Evidence](#8334-implemented-to-be-native-mobile-application-evidence)
+      - [8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence](#8335-implemented-to-be-restful-api-andor-serverless-backend-evidence)
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
@@ -7911,6 +7912,51 @@ El APK experimental se distribuye a los participantes de las entrevistas de vali
 Link de Releases del repositorio experimental: https://github.com/upc-pre-202610-1asi0732-12278-defontes/livria-experimental/releases
 
 > **Nota:** Para instalar la aplicación, es necesario permitir la instalación de aplicaciones de orígenes desconocidos en los ajustes de seguridad del dispositivo Android.
+
+#### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence
+
+El backend To-Be se desarrolló en el repositorio experimental `livria-backend-experimental`: una API RESTful en C#/.NET 8 (LTS) que conserva la arquitectura por bounded contexts de la versión As-Is (commerce, communities, IAM, users, notifications, shared) e incorpora un nuevo bounded context **wallet** con las capas Domain, Application, Infrastructure e Interfaces, siguiendo el mismo enfoque DDD del resto del sistema. La API se encuentra desplegada en **Azure App Service (Linux)**, con su documentación interactiva Swagger disponible públicamente:
+
+URL del repositorio en GitHub: https://github.com/upc-pre-202610-1asi0732-12278-defontes/livria-backend-experimental
+
+Link de Swagger UI (backend experimental): https://livriabackend-g5afdubmcxfacjbe.chilecentral-01.azurewebsites.net/swagger/index.html
+
+<!-- SCREENSHOT: Swagger UI del backend experimental desplegado en Azure -->
+
+Sobre esta base se implementaron los servicios que dan soporte a los experimentos del Sprint 4. La localización total al español (EP09) no requirió endpoints nuevos, pues se resuelve en el cliente; los otros tres experimentos sí extendieron la API:
+
+**Billetera Livria (EP11/H3) — nuevo bounded context `wallet`:** gestiona el saldo del usuario, las solicitudes de recarga por transferencia (con comprobante) y su aprobación por un administrador, además del historial de transacciones. Adicionalmente, el bounded context commerce se extendió para aceptar `wallet` como método de pago: las órdenes pagadas con billetera descuentan el saldo y se registran directamente en estado "in progress", eliminando el paso de subir comprobante en cada compra.
+
+| Endpoint | Método | Descripción |
+| :--- | :---: | :--- |
+| `/api/v1/wallet/{userClientId}` | GET | Consultar el saldo de la billetera del usuario. |
+| `/api/v1/wallet/{userClientId}/can-pay` | GET | Verificar si el saldo cubre un monto de compra. |
+| `/api/v1/wallet/{userClientId}/transactions` | GET | Historial de movimientos de la billetera. |
+| `/api/v1/wallet/recharge-requests` | POST | Registrar una solicitud de recarga con comprobante de transferencia. |
+| `/api/v1/wallet/recharge-requests` | GET | Listar solicitudes de recarga pendientes (rol administrador). |
+| `/api/v1/wallet/recharge-requests/{id}` | GET | Consultar una solicitud de recarga específica. |
+| `/api/v1/wallet/recharge-requests/{id}/approve` | PATCH | Aprobar una recarga y acreditar el saldo (rol administrador). |
+
+**Vitrina Literaria en el Perfil (EP12/H4) — extensión del bounded context commerce:** registro de libros leídos por usuario, base de la sección "My Books" y del perfil público del cliente.
+
+| Endpoint | Método | Descripción |
+| :--- | :---: | :--- |
+| `/api/v1/books/read/{userClientId}` | GET | Obtener los libros leídos de un usuario (vitrina literaria). |
+| `/api/v1/books/{bookId}/read/toggle` | PATCH | Marcar o desmarcar un libro como leído (toggle). |
+
+**Comentarios y Publicaciones con Imágenes (EP13/H5) — extensión del bounded context communities:** los recursos de publicaciones y comentarios (`PostResource`, `CommentResource` y sus variantes de creación/actualización) se extendieron con el atributo `Img`, permitiendo adjuntar una imagen o GIF en los endpoints existentes de posts y comentarios.
+
+La trazabilidad de estos servicios hacia los commits del repositorio es la siguiente:
+
+| Commit | Descripción |
+| :--- | :--- |
+| `1f74423` | Atributo de imagen en posts y comentarios (EP13), con migración `AddCommentImg` |
+| `9c3c553` | Bounded context wallet y método de pago wallet en órdenes (EP11), con migraciones `AddWallet` y `AddWalletProofUrl` |
+| `391805d` | Feature de libros leídos (EP12), con migración `AddUserReadBooks` |
+| `e8e8bc7` | Las órdenes pagadas con wallet inician en estado "in progress" (EP11) |
+| `59e085e`–`a5cd061` | Consolidación de migraciones EF Core para el despliegue |
+
+Cada extensión del modelo de datos se acompañó de su **migración de Entity Framework Core** (`AddCommentImg`, `AddWallet`, `AddWalletProofUrl`, `AddUserReadBooks`), de modo que el esquema de la base de datos del entorno experimental evoluciona de forma versionada y reproducible junto con el código, en línea con el enfoque *pipeline-supported* del ciclo de vida To-Be.
 
 ---
 
