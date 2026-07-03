@@ -48,7 +48,7 @@
 | 1.0 | 24-04-2026 | Todos | Creación del informe. Inclusión de Capítulos I, II, III, IV y V (Sprint 1). |
 | 1.1 | 13-05-2026 | Todos | Avance TP1. Inclusión de Capítulos VI y VII. Correcciones y mejoras sobre artefactos previos. |
 | 1.2 | 18-06-2026 | Todos | Avance TB2. Inclusión de Capítulos VII y VIII. Correcciones y mejoras sobre artefactos previos. |
-| 1.3 | 03-07-2026 | Todos | Entrega final (TF). Inclusión de la sección 6.4 Auditoría de Experiencias de Usuario (auditoría realizada a CaféLab con 19 hallazgos) y de las secciones 8.3.3.1 a 8.3.3.4 del ciclo de vida To-Be: Sprint Backlog 4 experimental y evidencias de implementación de landing, frontend-web, native-mobile con pipeline de release automatizado y RESTful API experimental desplegada en Azure; Team Collaboration Insights del sprint experimental y diseño de las entrevistas de validación To-Be.|
+| 1.3 | 03-07-2026 | Todos | Entrega final (TF). Inclusión de la sección 6.4 Auditoría de Experiencias de Usuario (auditoría realizada a CaféLab con 19 hallazgos) y de las secciones 8.3.3.1 a 8.3.3.4 del ciclo de vida To-Be: Sprint Backlog 4 experimental y evidencias de implementación de landing, frontend-web, native-mobile con pipeline de release automatizado y RESTful API experimental desplegada en Azure; Team Collaboration Insights del sprint experimental, diseño de las entrevistas de validación To-Be, sección 8.6 Pre-launch con el video About-the-Product, actualización de conclusiones y recomendaciones al cierre del ciclo To-Be, y secciones Video App Validation y Video About-the-Team.|
 
 ---
 
@@ -251,7 +251,12 @@ Commits
       - [8.3.3.6. Team Collaboration Insights](#8336-team-collaboration-insights)
     - [8.3.4. To-Be Validation Interviews](#834-to-be-validation-interviews)
       - [8.3.4.1. Diseño de Entrevistas](#8341-diseño-de-entrevistas)
+  - [8.6. To-Be Software Platform Pre-launch](#86-to-be-software-platform-pre-launch)
+    - [8.6.1. About-the-Product Intro Video](#861-about-the-product-intro-video)
 - [Conclusiones](#conclusiones)
+  - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
+  - [Video App Validation](#video-app-validation)
+  - [Video About-the-Team](#video-about-the-team)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
 
@@ -8056,9 +8061,28 @@ Escala tipo Likert del 1 al 5 (1 = Muy en desacuerdo / Muy difícil; 5 = Muy de 
 
 La pregunta 21 replica exactamente la pregunta NPS de la ronda As-Is (NPS base: -17.9), y las preguntas de las secciones 2 a 5 operacionalizan las measures de la sección [8.2.3](#823-measures), permitiendo contrastar cada hipótesis en el análisis de resultados de la sección [8.4.1](#841-analysis-and-interpretation-of-results).
 
+## 8.6. To-Be Software Platform Pre-launch
+
+Como cierre del ciclo experimental, el equipo preparó el pre-lanzamiento de la versión To-Be de la plataforma Livria: la aplicación experimental con la localización total al español, la Billetera Livria, la vitrina literaria en el perfil y el soporte de imágenes y GIFs en comunidades, distribuida mediante el pipeline de release descrito en la sección [8.3.3.4](#8334-implemented-to-be-native-mobile-application-evidence) y respaldada por la API experimental desplegada en Azure.
+
+### 8.6.1. About-the-Product Intro Video
+
+El video introductorio del producto To-Be presenta la nueva versión de Livria a su público objetivo: lectores hispanohablantes que desean descubrir, comprar y comentar libros en una plataforma completamente en su idioma. El video recorre las cuatro mejoras del ciclo experimental desde la perspectiva del usuario —la experiencia íntegra en español, la compra en un toque con la Billetera Livria, la vitrina literaria "My Books" como proyección de la identidad lectora y las conversaciones enriquecidas con imágenes y GIFs en las comunidades— manteniendo el tono cercano y motivador adoptado por la marca, e incluye el testimonio de un usuario participante de las entrevistas de validación.
+
+<!-- SCREENSHOT: cuadro representativo del video About-the-Product (To-Be) -->
+
+* **Duración del video:** <!-- hh:mm:ss -->
+* **Enlace de visualización (OneDrive):** <!-- URL OneDrive -->
+* **Enlace de visualización (YouTube):** <!-- URL YouTube -->
+
+
 ---
 
 # Conclusiones
+
+## Conclusiones y recomendaciones
+
+### Conclusiones
 
 1. El proceso Lean UX constituye una herramienta clave para orientar estratégicamente el negocio, ya que permite validar tempranamente hipótesis y explorar diferentes enfoques antes de comprometer recursos de desarrollo. Gracias a este proceso, fue posible identificar con claridad los segmentos de usuarios más relevantes y las oportunidades de valor que guiarán el diseño del producto.
 
@@ -8092,7 +8116,15 @@ La pregunta 21 replica exactamente la pregunta NPS de la ronda As-Is (NPS base: 
 
 16. La definición de un sistema de priorización basado en Confianza, Riesgo, Impacto e Interés para el Question Backlog, junto con el principio de Economía de Rastreo de Datos en la selección de métricas, permitió que el equipo evitara instrumentar eventos redundantes y enfocara el esfuerzo de analítica únicamente en las señales con mayor sensibilidad para detectar el efecto de cada experimento.
 
-# Recomendaciones
+17. La ejecución del ciclo de vida To-Be sobre repositorios experimentales dedicados (`livria-experimental` y `livria-backend-experimental`) validó en la práctica la regla de aislamiento de experimentos definida en el diseño experimental: el equipo implementó cuatro de las cinco apuestas del To-Be Product Backlog (localización total al español, Billetera Livria, vitrina literaria y multimedia en comunidades) sin comprometer la estabilidad de la versión As-Is del producto, y con cada cambio de esquema de datos versionado mediante migraciones de Entity Framework Core.
+
+18. La incorporación de un pipeline de release automatizado con GitHub Actions en la versión experimental —que compila, versiona y publica el APK ante cada tag— materializó el enfoque *pipeline-supported* del ciclo experimental: cada iteración del experimento produce una build distribuible y trazable a su versión, lo que reduce el costo de poner tratamientos en manos de usuarios reales para las rondas de validación To-Be.
+
+19. La auditoría cruzada de experiencias de usuario demostró ser una herramienta de mejora continua en ambas direcciones: como equipo auditor, el proceso de verificar evidencia contra criterios (informe, repositorios y despliegues de CaféLab) afinó el propio estándar interno del equipo sobre qué significa que una práctica declarada sea verificable; los hallazgos de mayor peso detectados en el par auditado (evidencia de pipeline no verificable, despliegues caídos, secciones declaradas sin contenido) se convirtieron en una lista de chequeo preventiva para la propia entrega de Livria.
+
+20. Los Problem Statements y Hypotheses del proceso Lean UX inicial encuentran en el cierre del ciclo un contraste tangible: las fricciones de pago y de idioma identificadas en la validación As-Is fueron atacadas con tratamientos ya implementados (billetera y localización), mientras que la hipótesis de mayor incertidumbre (el descubrimiento por swipe del Tinder Literario) permanece en desarrollo como la apuesta de mayor costo del backlog, decisión coherente con la priorización por Confianza, Riesgo, Impacto e Interés que guio todo el Capítulo VIII.
+
+### Recomendaciones
 
 1. Es aconsejable adoptar Material Design como marco de referencia para el diseño de la interfaz, dado que proporciona consistencia visual, buenas prácticas de usabilidad y un sistema estandarizado de componentes. Esto contribuirá a que la experiencia del usuario sea más intuitiva, atractiva y alineada con tendencias actuales en aplicaciones modernas.
 
@@ -8106,15 +8138,46 @@ La pregunta 21 replica exactamente la pregunta NPS de la ronda As-Is (NPS base: 
 
 6. Se recomienda expandir la cobertura de pruebas para incluir escenarios de error y casos límite en los flujos de pago y gestión de stock, dado que son las áreas de mayor riesgo para el negocio. Incorporar pruebas de carga básicas sobre los endpoints más críticos permitirá anticipar cuellos de botella antes del lanzamiento oficial de la plataforma.
 
-7. Se recomienda priorizar la implementación del Experimento 2 (Tinder Literario) sobre las demás apuestas To-Be, dado que la validación cuantitativa identificó el motor de recomendaciones como el punto de mayor fricción combinada de toda la aplicación (baja precisión percibida y alta confusión de navegación). Antes de escalar la mecánica de swipe, se sugiere además investigar si el problema de fondo es la interacción (grid vs. swipe) o la calidad del algoritmo de personalización en sí, ya que ambas causas requieren soluciones distintas.
+7. Se recomienda completar la implementación del Experimento 2 (Tinder Literario), actualmente en desarrollo, como prioridad del siguiente ciclo, dado que la validación cuantitativa identificó el motor de recomendaciones como el punto de mayor fricción combinada de toda la aplicación (baja precisión percibida y alta confusión de navegación). Antes de escalar la mecánica de swipe, se sugiere además investigar si el problema de fondo es la interacción (grid vs. swipe) o la calidad del algoritmo de personalización en sí, ya que ambas causas requieren soluciones distintas.
 
-8. Se recomienda rediseñar la propuesta de valor del módulo de comunidades antes de invertir en las funcionalidades de Vitrina Literaria y Multimedia (EP12 y EP13), dado que los hallazgos muestran alto interés declarado pero baja comprensión de propósito y baja percepción de motivación a la lectura. Se sugiere reforzar el onboarding de comunidades con contenido editorial que explique su valor desde la primera visita, antes de enriquecer visualmente perfiles y publicaciones.
+8. Dado que la Vitrina Literaria y el soporte multimedia en comunidades (EP12 y EP13) ya fueron implementados en la versión experimental, se recomienda acompañarlos de un refuerzo del onboarding de comunidades con contenido editorial que explique su valor desde la primera visita, pues los hallazgos As-Is mostraron alto interés declarado pero baja comprensión de propósito. Las entrevistas de validación To-Be permitirán verificar si el enriquecimiento visual por sí solo cierra esa brecha o si el rediseño de la propuesta de valor sigue pendiente.
 
 9. Dado que el 39.3% de los participantes no logró localizar el botón para crear una publicación, se recomienda una revisión de usabilidad específica sobre la jerarquía visual de esa acción —idealmente mediante pruebas de card sorting o first-click testing— antes de la siguiente ronda de experimentación, ya que esta fricción puntual puede estar inflando artificialmente la brecha entre espectadores y creadores de contenido documentada en el Capítulo VIII.
 
 10. Se recomienda ejecutar los cinco experimentos del MVP respetando estrictamente la Regla de No Superposición (Sección 8.2.6) y los *timeboxes* definidos (7 días para pruebas cuantitativas, 10 a 15 participantes para pruebas cualitativas), evitando tomar decisiones de producto con muestras parciales o con usuarios expuestos a más de una condición experimental simultáneamente.
 
-11. Se recomienda repetir el instrumento de validación de usuario (Sección 6.3) después de implementar las cinco apuestas To-Be del Capítulo VIII, utilizando el NPS de -17.9 y las medias actuales por pregunta como línea base de comparación. Esto permitirá cuantificar de forma objetiva si las mejoras propuestas revirtieron las fricciones identificadas o si se requiere una nueva iteración del Question Backlog.
+11. Se recomienda ejecutar el instrumento de validación To-Be diseñado en la sección 8.3.4.1 —que replica las escalas y el NPS de la ronda As-Is— sobre una muestra comparable de participantes, utilizando el NPS de -17.9 y las medias actuales por pregunta como línea base de comparación. Esto permitirá cuantificar de forma objetiva si las mejoras implementadas revirtieron las fricciones identificadas o si se requiere una nueva iteración del Question Backlog.
+
+12. Se recomienda institucionalizar la lista de verificación empleada en la auditoría cruzada (sección 6.4.1) como checklist interno previo a cada entrega: verificar que los despliegues públicos respondan, que las prácticas declaradas en el informe tengan evidencia en los repositorios y que ninguna sección figure en el índice sin contenido, evitando así los hallazgos más frecuentes detectados durante el proceso de auditoría.
+
+## Video App Validation
+
+En esta sección se documenta la evaluación de la versión experimental (To-Be) de la aplicación a través de pruebas con usuarios reales. La aplicación fue distribuida a los participantes en sus propios dispositivos Android mediante el APK publicado por el pipeline de release del repositorio experimental, y las sesiones de validación —en las que los participantes ejecutan los user flows definidos en la sección [8.3.4.1](#8341-diseño-de-entrevistas)— fueron registradas en video como evidencia del proceso.
+
+<!-- SCREENSHOT: cuadro representativo del video App Validation -->
+
+* **Duración del video:** <!-- hh:mm:ss -->
+* **Enlace de visualización (OneDrive/Stream):** <!-- URL -->
+
+## Video About-the-Team
+
+El video About-the-Team resume el proceso de trabajo realizado por el equipo Defontes a lo largo del proyecto Livria: la conformación del equipo y la distribución de roles, las sesiones de trabajo colaborativo sobre los repositorios del ecosistema, el ciclo experimental del Capítulo VIII y los aprendizajes del proceso de auditoría cruzada. Incluye escenas de sesiones de trabajo reales del equipo con narración en off, así como el testimonio ante cámara de cada integrante describiendo las actividades realizadas, el logro de outcomes y las competencias desarrolladas durante el curso.
+
+**Pauta de secuencias de contenido:**
+
+| Inicio (hh:mm:ss) | Sección |
+| :---: | :--- |
+| <!-- 00:00:00 --> | Presentación del equipo y roles |
+| <!-- --> | Proceso de trabajo y sesiones colaborativas |
+| <!-- --> | Ciclo experimental To-Be y resultados |
+| <!-- --> | Testimonios individuales de los integrantes |
+| <!-- --> | Cierre y aprendizajes |
+
+<!-- SCREENSHOT: cuadro representativo del video About-the-Team -->
+
+* **Duración del video:** <!-- hh:mm:ss -->
+* **Enlace de visualización (Microsoft Stream):** <!-- URL Stream -->
+* **Enlace de visualización (YouTube):** <!-- URL YouTube -->
 
 ---
 
