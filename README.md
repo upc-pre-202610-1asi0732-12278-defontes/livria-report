@@ -48,6 +48,7 @@
 | 1.0 | 24-04-2026 | Todos | Creación del informe. Inclusión de Capítulos I, II, III, IV y V (Sprint 1). |
 | 1.1 | 13-05-2026 | Todos | Avance TP1. Inclusión de Capítulos VI y VII. Correcciones y mejoras sobre artefactos previos. |
 | 1.2 | 18-06-2026 | Todos | Avance TB2. Inclusión de Capítulos VII y VIII. Correcciones y mejoras sobre artefactos previos. |
+| 1.3 | 03-07-2026 | Todos | Entrega final (TF). Inclusión de la sección 6.4.1 Auditoría realizada: información del grupo auditado (CaféLab), cronograma y contenido de la auditoría con 19 hallazgos. |
 
 ---
 
@@ -197,6 +198,16 @@ Commits
     - [6.3.1. Diseño de Entrevistas](#631-diseno-de-entrevistas)
     - [6.3.2. Registro de Entrevistas](#632-registro-de-entrevistas)
     - [6.3.3. Evaluaciones según Heurísticas](#633-evaluaciones-segun-heuristicas)
+  - [6.4. Auditoría de Experiencias de Usuario](#64-auditoría-de-experiencias-de-usuario)
+    - [6.4.1. Auditoría realizada](#641-auditoría-realizada)
+      - [6.4.1.1. Información del grupo auditado](#6411-información-del-grupo-auditado)
+      - [6.4.1.2. Cronograma de auditoría realizada](#6412-cronograma-de-auditoría-realizada)
+      - [6.4.1.3. Contenido de auditoría realizada](#6413-contenido-de-auditoría-realizada)
+    - [6.4.2. Auditoría recibida](#642-auditoría-recibida)
+      - [6.4.2.1. Información del grupo auditor](#6421-información-del-grupo-auditor)
+      - [6.4.2.2. Cronograma de auditoría recibida](#6422-cronograma-de-auditoría-recibida)
+      - [6.4.2.3. Contenido de auditoría recibida](#6423-contenido-de-auditoría-recibida)
+      - [6.4.2.4. Resumen de modificaciones para subsanar hallazgos](#6424-resumen-de-modificaciones-para-subsanar-hallazgos)
 - [Capítulo VII: DevOps Practices](#capítulo-vii-devops-practices)
   - [7.1. Continuous Integration](#71-continuous-integration)
     - [7.1.1. Tools and Practices](#711-tools-and-practices)
@@ -6564,6 +6575,155 @@ Un NPS negativo indica que, en su estado actual de prototipo, Livria tiene más 
 <p align="center">
   <img src="https://imgur.com/k4gukrC.jpg" alt="inter1">
 </p>
+
+## 6.4. Auditoría de Experiencias de Usuario
+
+Como parte del proceso de aseguramiento de la calidad del curso, se realizó una auditoría cruzada de experiencias de usuario entre equipos. El equipo Livria (startup Defontes) actuó como **equipo auditor** de la startup Café Metrix (producto CaféLab), y a su vez recibió una auditoría por parte de otro equipo del curso. En esta sección se documenta el plan, la ejecución y los resultados de ambos procesos.
+
+### 6.4.1. Auditoría realizada
+
+La auditoría realizada por Livria a CaféLab se planificó bajo el código interno **LIV-AUD-001** (Rev. 00, emitido el 01/07/2026) y se ejecutó el **sábado 04/07/2026** en modalidad virtual (videollamada y revisión documental remota), como auditoría interna cruzada entre equipos del curso.
+
+* **Objetivo:** Verificar que los artefactos de diseño de experiencia de usuario y el producto de software CaféLab (informe TB2, repositorios y aplicaciones desplegadas) cumplen los requisitos del Trabajo Final del curso 1ASI0732 (v3) y las buenas prácticas de usabilidad, identificando no conformidades, observaciones, oportunidades de mejora y fortalezas.
+* **Alcance:** Informe TB2 de CaféLab (Capítulos I al VIII), repositorios `cafelab-backend` y `cafelab-frontend`, y productos desplegados: Landing Page (Firebase), Aplicación Web (Vercel) y API RESTful (Railway).
+* **Criterios de auditoría:** Enunciado del Trabajo Final 1ASI0732 v3 (estructura y contenidos exigidos por hito), heurísticas de usabilidad de Nielsen, guías de estilo y convenciones declaradas por el propio equipo auditado en su informe, y buenas prácticas de ingeniería de software.
+
+**Equipo auditor (Livria — Defontes):**
+
+| Integrante | Código | Rol en la auditoría |
+| :--- | :---: | :--- |
+| Martel Andrade, Cassius Estefano | u202312287 | Auditor Líder |
+| Alva Abanto, Luis Andrés | u202310877 | Auditor Interno 1 |
+| Yalán Zhang, Angie Christina | u202312504 | Auditor Interno 2 |
+| Binda Arbañil, Marcelo Alejandro | u202311157 | Observador |
+| Castillo Garay, Ainhoa Lucía | u202311701 | Observador |
+| Nakamurakare Teruya, Alex Tomio | u20201F855 | Observador |
+
+Los observadores acompañaron todas las sesiones registrando evidencia, sin emitir juicios de auditoría. El plan de auditoría completo, la lista de verificación y el registro de hallazgos se encuentran en el archivo `Plan de Auditoria - CafeLab (Livria).xlsx`, incluido en los anexos de la entrega.
+
+#### 6.4.1.1. Información del grupo auditado
+
+| Campo | Detalle |
+| :--- | :--- |
+| **Startup** | Café Metrix |
+| **Producto** | CaféLab — plataforma SaaS para baristas profesionales y cafeterías de especialidad: trazabilidad de lotes de café, perfiles de tueste, catas, recetas, calibraciones, inventario y costos. |
+| **Curso / NRC** | 1ASI0732 — Diseño de Experimentos de Ingeniería de Software / NRC 12278 — Ciclo 2026-10 |
+| **Docente** | Noriega Melendez, Julio Manuel |
+| **Informe auditado** | Informe del Avance 2 (TB2), versión 1.36 del 18/06/2026 — 262 páginas |
+| **Landing Page** | https://cafemetrix-cafelab-landingpage.web.app/ |
+| **Aplicación Web** | https://cafelab-frontend.vercel.app/ |
+| **API / Swagger** | https://cafelab-backend-production-809b.up.railway.app/swagger-ui/index.html |
+| **Repositorio Backend** | `cafelab-backend` (Java 24, Spring Boot 3.5, arquitectura DDD por bounded contexts) |
+| **Repositorio Frontend** | `cafelab-frontend` (Angular + TypeScript strict, Angular Material, i18n es/en) |
+
+**Integrantes del equipo auditado:**
+
+| Código | Apellidos y Nombres | Principales secciones a su cargo (según registro de versiones del informe) |
+| :---: | :--- | :--- |
+| U20191e414 | Antayhua Castillo, Oscar Josue | Despliegues frontend/backend, 6.3.3 evaluación heurística, 7.3.2, 8.2.1–8.2.5 |
+| U20231c111 | Inga Orihuela, Christian Fabrizio | Android style guidelines, wireflows móviles, 6.1.1 unit tests, 7.2.2, 8.2.6–8.2.8 |
+| U202310187 | Donayre Alvarez, Adrian Ricardo | Sprint backlogs, US/TS y product backlog, RESTful API y su documentación, impact mappings |
+| U202320083 | Fernandez Camayo, Carlos Fredy | Estructura del informe, 5.2, términos y condiciones, 7.1 CI, 8.1.1–8.1.5 |
+| U202110385 | Loli Ramirez, Camila Cristina | iOS style guidelines, 6.1.2 integration tests, 7.1.2 build & test pipeline |
+| U20221e734 | Quispe Roldan, Michael Fred | User flow diagrams móviles, 6.1.3 BDD (Cucumber), 6.1.4 system tests |
+
+#### 6.4.1.2. Cronograma de auditoría realizada
+
+La auditoría se ejecutó el sábado 04/07/2026 en una única jornada virtual, con el siguiente cronograma:
+
+| Horario | Área / Proceso auditado | Equipo auditor | Responsable (CaféLab) | Requisito / Criterio |
+| :---: | :--- | :--- | :--- | :--- |
+| 08:30 – 09:00 | **Reunión de apertura** | Equipo auditor completo | Equipo CaféLab completo | Presentación del plan, alcance y criterios |
+| 09:00 – 09:45 | Capítulos I–III: Startup, Requirements Elicitation & Specification | C. Martel (líder) / L. Alva | Fernandez Camayo, Carlos Fredy | TF: secciones 1.1–3.4 (Lean UX, entrevistas, needfinding, US, backlog, impact mapping) |
+| 09:45 – 11:00 | Capítulo IV: Product Design (style guidelines, information architecture, wireframes, mock-ups, prototipos, arquitectura, clases, BD) | L. Alva / A. Yalán | Loli Ramirez, Camila / Inga Orihuela, Christian / Quispe Roldan, Michael | TF: secciones 4.1–4.10; consistencia con guías de estilo declaradas |
+| 11:00 – 12:00 | Productos desplegados: Landing Page, Web App y API (evaluación heurística en vivo) | A. Yalán / L. Alva | Antayhua Castillo, Oscar Josué | Heurísticas de Nielsen; secciones 4.2.3, 5.2.2–5.2.7 del informe |
+| 12:00 – 12:30 | **Reunión de enlace** (consolidación parcial de hallazgos) | Equipo auditor completo | — | — |
+| 14:00 – 15:00 | Capítulo V: Product Implementation (configuration management, convenciones, despliegue, sprint backlogs) y revisión de repositorios | C. Martel / A. Yalán | Fernandez Camayo, Carlos Fredy / Antayhua Castillo, Oscar Josué | TF: secciones 5.1–5.3; Gitflow y Conventional Commits declarados en 5.1.2 |
+| 15:00 – 16:00 | Capítulo VI: Verification & Validation (unit, integration, BDD, system tests, análisis estático, entrevistas, heurísticas) | L. Alva / C. Martel | Loli Ramirez, Camila / Quispe Roldan, Michael / Inga Orihuela, Christian | TF: secciones 6.1–6.4; evidencia verificable en repositorio |
+| 16:00 – 16:45 | Capítulos VII–VIII: DevOps Practices y Experiment-Driven Development | A. Yalán / L. Alva | Fernandez Camayo, Carlos Fredy / Inga Orihuela, Christian / Antayhua Castillo, Oscar Josué | TF: secciones 7.1–7.4 y 8.1–8.6; evidencia de pipelines y experimentos |
+| 16:45 – 17:15 | **Reunión de enlace** (clasificación final de hallazgos) | Equipo auditor completo | — | — |
+| 17:15 – 17:45 | **Reunión de cierre** | Auditor Líder | Equipo CaféLab completo | Presentación de hallazgos y acuerdos de subsanación |
+
+#### 6.4.1.3. Contenido de auditoría realizada
+
+La auditoría se ejecutó sobre una **lista de verificación de 46 ítems** que cubre el informe completo (Capítulos I–VIII), los repositorios entregados y los tres productos desplegados. La verificación documental y técnica de los despliegues se realizó el 01/07/2026 como trabajo de preparación, y los resultados se contrastaron con el equipo auditado durante la sesión del 04/07/2026.
+
+**Resumen de resultados de la lista de verificación:**
+
+| Área / Proceso | Ítems | Cumple | Parcial | No cumple |
+| :--- | :---: | :---: | :---: | :---: |
+| Informe general | 4 | 2 | 1 | 1 |
+| Cap. I–III: Requisitos | 4 | 4 | 0 | 0 |
+| Cap. IV: Product Design | 10 | 6 | 3 | 1 |
+| Producto desplegado (evaluación heurística en vivo) | 7 | 2 | 1 | 4 |
+| Cap. V: Implementación | 6 | 3 | 2 | 1 |
+| Cap. VI: Verification & Validation | 8 | 5 | 1 | 2 |
+| Cap. VII: DevOps Practices | 3 | 0 | 2 | 1 |
+| Cap. VIII: Experiment-Driven Development | 4 | 3 | 0 | 1 |
+| **Total** | **46** | **25** | **10** | **11** |
+
+Como resultado de la evaluación de la evidencia frente a los criterios de auditoría, se registraron **19 hallazgos**: 5 no conformidades (NC), 6 observaciones (OBS), 4 oportunidades de mejora (OM) y 4 fortalezas (F). Cada hallazgo se redactó siguiendo la estructura evidencia + requisito + enunciado.
+
+**No conformidades (incumplimiento de un requisito):**
+
+| # | Hallazgo | Requisito incumplido | Recomendación |
+| :---: | :--- | :--- | :--- |
+| NC-01 | La landing page desplegada no implementa los SEO tags y meta tags declarados en la sección 4.2.3 del informe: el HTML servido contiene `<title>AngularLanding</title>` y `lang="en"`, sin las etiquetas description, keywords, author ni copyright que el informe presenta como implementadas. | Informe CaféLab 4.2.3; TF sección 4.2 (Information Architecture) | Configurar el `index.html` de la landing con el título y meta tags ya redactados en 4.2.3, corregir `lang="es"` y volver a desplegar; verificar con Lighthouse (herramienta que el equipo ya declara usar en 7.4). |
+| NC-02 | El backend desplegado en Railway no está disponible: la raíz, `/swagger-ui/index.html`, `/v3/api-docs` y `/actuator/health` respondieron HTTP 404, incumpliendo la exigencia de evidencia de API desplegada y su documentación. | TF secciones 5.2.6 y 5.2.7; informe CaféLab 5.1.4 | Restablecer el servicio en Railway (o migrar de plan/proveedor si expiró), añadir monitoreo de uptime real (UptimeRobot, ya contemplado en 7.4.3) y verificar el enlace de Swagger antes de cada entrega. |
+| NC-03 | Las secciones 8.3.3 a 8.6 del informe (To-Be Sprint Backlogs, evidencias de implementación To-Be, To-Be Validation Interviews, Experiment Aftermath & Analysis, Continuous Learning y Pre-launch) figuran en el índice pero no tienen contenido en el cuerpo del documento; el informe pasa de 8.3.2 directamente a Conclusiones. | TF v3, hito 4 (AV2/TB2): secciones 8.3.3–8.6 | Ejecutar los experimentos ya diseñados (TUS01–TUS05 están listos con hipótesis y métricas) y documentar resultados, análisis y shareback session antes del cierre del TF. |
+| NC-04 | El informe declara integración continua con GitHub Actions que compila, ejecuta pruebas y bloquea PRs fallidos (sección 7.1), pero ninguno de los dos repositorios entregados contiene la carpeta `.github/workflows`, por lo que la práctica declarada no es verificable. | TF secciones 7.1.1–7.1.2; informe CaféLab 7.1 | Crear los workflows de build+test (`mvn verify` / `ng test`) en ambos repositorios, o reformular 7.1 para describir la automatización realmente existente (auto-deploy de Railway/Vercel). |
+| NC-05 | Las pruebas de integración declaradas en 6.1.2 no existen en la copia entregada del backend: el informe indica que se encuentran en `src/test/java/com/cafemetrix/cafelab/core/integration/tests`, pero esa ruta no existe; `src/test` solo contiene la suite BDD y `CafeLabApplicationTests`. | TF sección 6.1.2; informe CaféLab 6.1.2 | Integrar las clases de pruebas unitarias y de integración a la rama principal del repositorio para que la evidencia del informe sea reproducible. |
+
+**Observaciones (desviación que no constituye incumplimiento de requisito):**
+
+| # | Hallazgo | Criterio | Recomendación |
+| :---: | :--- | :--- | :--- |
+| OBS-01 | Las conclusiones y recomendaciones del informe TB2 permanecen redactadas para el hito TP1/TB1: refieren "lo requerido para el informe de medio término". | TF: avance de conclusiones por hito | Actualizar conclusiones y recomendaciones reflejando los resultados de los capítulos VI–VIII. |
+| OBS-02 | Inconsistencia de branding entre la guía de estilo y los mock-ups: 4.1.1 define como color primario el Verde Oliva #618985, mientras 4.3.2 describe el mock-up de la landing con "tonos tierra y marrones cálidos como color primario". | Informe CaféLab 4.1.1 (guía de estilo) | Alinear la descripción del mock-up (o el mock-up mismo) con la paleta oficial. |
+| OBS-03 | El atributo `lang` de los documentos HTML desplegados no corresponde al idioma del contenido: landing y web app declaran `lang="en"` con interfaz en español. | WCAG 3.1.1; heurística de consistencia | Establecer `lang="es"` por defecto y actualizarlo dinámicamente con el selector de idioma i18n ya existente. |
+| OBS-04 | Higiene de configuración de los repositorios entregados: el backend incluye `target/`, `.idea` y `.DS_Store`; el frontend incluye `node_modules`, `.angular` y un archivo duplicado `package-lock 2.json`. | Informe CaféLab 5.1.2; buenas prácticas SCM | Añadir/aplicar `.gitignore`, eliminar artefactos de build y el package-lock duplicado, que además puede causar instalaciones inconsistentes. |
+| OBS-05 | El diccionario de clases está incompleto respecto al dominio implementado: 4.9.2 documenta solo 4–5 entidades frente a los ~10 bounded contexts del backend (calibrations, coffees, cupping sessions, defects, iam, inventory, preparation, production, profiles). | TF sección 4.9.2 | Completar el diccionario cubriendo los aggregates y value objects de todos los bounded contexts. |
+| OBS-06 | El informe está desactualizado respecto al repositorio en la sección BDD: 6.1.3 muestra solo 2 features (US03, US10) y referencia la rama `feature/bdd-system-tests`, cuando el repositorio entregado ya contiene 14 archivos `.feature` con sus step definitions. | TF sección 6.1.3 | Actualizar 6.1.3 con el inventario completo de features y consolidar las pruebas en la rama principal. |
+
+**Oportunidades de mejora:**
+
+| # | Hallazgo | Recomendación |
+| :---: | :--- | :--- |
+| OM-01 | La organización podría ejecutar a corto plazo las mejoras de usabilidad que su propia evaluación heurística priorizó con severidad 3 (campos obligatorios sin señalizar, íconos editar/clonar confundibles, íconos de baja visibilidad), dado que ya están traducidas a To-Be User Stories (TUS01–TUS05) con pseudocódigo y métricas definidas. | Priorizar TUS02 (i18n) y los fixes de formularios en el siguiente sprint; su costo es bajo y elevan directamente la experiencia auditada. |
+| OM-02 | La organización podría acompañar los diagramas de arquitectura C4 (4.8.1, 4.8.2) con descripciones textuales de decisiones y relaciones entre contenedores, lo que facilitaría la evaluación y el onboarding de nuevos integrantes. | Añadir una descripción breve por diagrama: propósito, tecnologías y flujos principales. |
+| OM-03 | La organización podría formalizar una guía de estilo de código propia (5.1.3 hoy se limita a "código en inglés"), consolidando las convenciones que ya aplica y describe dispersas en 6.2.1.1 (Prettier, guía Angular, convenciones Java). | Unificar en 5.1.3 las convenciones con ejemplos y referencia a los archivos de configuración del repositorio. |
+| OM-04 | La organización podría incorporar verificación automática de despliegues (smoke test del Swagger y de las URLs públicas) para detectar caídas como la del backend antes de que las detecte un tercero. | Activar UptimeRobot (ya identificado por el equipo en 7.4) sobre las 3 URLs públicas con alertas al canal del equipo. |
+
+**Fortalezas:**
+
+| # | Hallazgo |
+| :---: | :--- |
+| F-01 | El Capítulo IV de diseño de producto es completo y consistente: guías de estilo para web, iOS (Human Interface Guidelines) y Android (Material Design), arquitectura de información detallada, 10 wireflows y 11 user flows móviles trazados a user stories, y prototipos con enlaces. |
+| F-02 | Autoevaluación heurística de alta calidad (6.3.3): 8 problemas clasificados por severidad con heurística violada, descripción y recomendación accionable, y con trazabilidad directa al backlog experimental (TUS01–TUS05). Demuestra honestidad y ciclo de mejora continua. |
+| F-03 | El backend presenta una arquitectura DDD disciplinada por bounded contexts (domain/application/infrastructure/interfaces) y una suite BDD Cucumber con 14 features y step definitions, superior a lo mostrado en el propio informe. |
+| F-04 | Landing page y aplicación web desplegadas y accesibles públicamente (Firebase y Vercel), con soporte i18n es/en, suite de pruebas Jasmine/Karma por componente en el frontend y seguridad implementada en el backend (JWT, BCrypt, validación de entradas). |
+
+En la reunión de cierre, el auditor líder presentó los hallazgos al equipo CaféLab y se establecieron los acuerdos de subsanación, priorizando las no conformidades NC-02 (backend caído) y NC-03 (secciones 8.3.3–8.6 sin contenido) por su impacto directo en la entrega final del curso.
+
+### 6.4.2. Auditoría recibida
+
+*Esta sección documenta la auditoría que Livria recibió por parte del equipo auditor asignado. Se completará al recibir el informe de auditoría correspondiente.*
+
+#### 6.4.2.1. Información del grupo auditor
+
+*Pendiente de recepción del plan de auditoría del equipo auditor.*
+
+#### 6.4.2.2. Cronograma de auditoría recibida
+
+*Pendiente de recepción del plan de auditoría del equipo auditor.*
+
+#### 6.4.2.3. Contenido de auditoría recibida
+
+*Pendiente de recepción del informe de hallazgos del equipo auditor.*
+
+#### 6.4.2.4. Resumen de modificaciones para subsanar hallazgos
+
+*Pendiente: se documentarán las modificaciones realizadas para subsanar los hallazgos reportados por el equipo auditor.*
 
 # Capítulo VII: DevOps Practices
 ## 7.1. Continuous Integration
