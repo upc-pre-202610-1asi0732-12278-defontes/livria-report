@@ -48,7 +48,7 @@
 | 1.0 | 24-04-2026 | Todos | Creación del informe. Inclusión de Capítulos I, II, III, IV y V (Sprint 1). |
 | 1.1 | 13-05-2026 | Todos | Avance TP1. Inclusión de Capítulos VI y VII. Correcciones y mejoras sobre artefactos previos. |
 | 1.2 | 18-06-2026 | Todos | Avance TB2. Inclusión de Capítulos VII y VIII. Correcciones y mejoras sobre artefactos previos. |
-| 1.3 | 03-07-2026 | Todos | Entrega final (TF). Inclusión de la sección 6.4 Auditoría de Experiencias de Usuario (auditoría realizada a CaféLab con 19 hallazgos) y de las secciones 8.3.3.1 a 8.3.3.4 del ciclo de vida To-Be: Sprint Backlog 4 experimental y evidencias de implementación de landing, frontend-web, native-mobile con pipeline de release automatizado y RESTful API experimental desplegada en Azure.|
+| 1.3 | 03-07-2026 | Todos | Entrega final (TF). Inclusión de la sección 6.4 Auditoría de Experiencias de Usuario (auditoría realizada a CaféLab con 19 hallazgos) y de las secciones 8.3.3.1 a 8.3.3.4 del ciclo de vida To-Be: Sprint Backlog 4 experimental y evidencias de implementación de landing, frontend-web, native-mobile con pipeline de release automatizado y RESTful API experimental desplegada en Azure; Team Collaboration Insights del sprint experimental y diseño de las entrevistas de validación To-Be.|
 
 ---
 
@@ -248,6 +248,9 @@ Commits
       - [8.3.3.3. Implemented To-Be Frontend-Web Application Evidence](#8333-implemented-to-be-frontend-web-application-evidence)
       - [8.3.3.4. Implemented To-Be Native-Mobile Application Evidence](#8334-implemented-to-be-native-mobile-application-evidence)
       - [8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence](#8335-implemented-to-be-restful-api-andor-serverless-backend-evidence)
+      - [8.3.3.6. Team Collaboration Insights](#8336-team-collaboration-insights)
+    - [8.3.4. To-Be Validation Interviews](#834-to-be-validation-interviews)
+      - [8.3.4.1. Diseño de Entrevistas](#8341-diseño-de-entrevistas)
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
@@ -7957,6 +7960,101 @@ La trazabilidad de estos servicios hacia los commits del repositorio es la sigui
 | `59e085e`–`a5cd061` | Consolidación de migraciones EF Core para el despliegue |
 
 Cada extensión del modelo de datos se acompañó de su **migración de Entity Framework Core** (`AddCommentImg`, `AddWallet`, `AddWalletProofUrl`, `AddUserReadBooks`), de modo que el esquema de la base de datos del entorno experimental evoluciona de forma versionada y reproducible junto con el código, en línea con el enfoque *pipeline-supported* del ciclo de vida To-Be.
+
+#### 8.3.3.6. Team Collaboration Insights
+
+Durante el Sprint 4 el equipo trabajó de forma colaborativa sobre los dos repositorios experimentales alojados en la organización de GitHub del equipo, manteniendo la misma disciplina de control de versiones de los sprints anteriores: ramas por feature integradas a la rama de trabajo, commits descriptivos por tarea del Sprint Backlog y revisión cruzada antes de integrar. Las métricas de colaboración de GitHub (contributors, commits y network) de ambos repositorios evidencian la participación del equipo durante el ciclo experimental:
+
+URL del repositorio experimental (cliente Flutter): https://github.com/upc-pre-202610-1asi0732-12278-defontes/livria-experimental
+
+<!-- SCREENSHOT: gráfico de contributors/commits (Insights) del repositorio livria-experimental -->
+
+URL del repositorio experimental (backend .NET): https://github.com/upc-pre-202610-1asi0732-12278-defontes/livria-backend-experimental
+
+<!-- SCREENSHOT: gráfico de contributors/commits (Insights) del repositorio livria-backend-experimental -->
+
+### 8.3.4. To-Be Validation Interviews
+
+Concluida la implementación del Sprint 4, se ejecutó una nueva ronda de entrevistas de validación sobre la **versión experimental (To-Be)** de la aplicación, con el propósito de medir el efecto de los tratamientos aplicados y contrastar los resultados contra la línea base cuantitativa obtenida en la validación As-Is (sección [6.3](#63-validation-interviews)). Los resultados alimentan directamente el análisis de la sección [8.4](#84-experiment-aftermath--analysis).
+
+#### 8.3.4.1. Diseño de Entrevistas
+
+El diseño mantiene el enfoque cuantitativo estructurado de la sección [6.3.1](#631-diseno-de-entrevistas-user-app) —cuestionario digital con escala Likert de 1 a 5 tras la ejecución guiada de user flows— para que las métricas To-Be sean directamente comparables con la línea base As-Is (mismas escalas, mismos constructos, mismo NPS). La diferencia central es que los flujos evaluados corresponden a los cuatro experimentos implementados, y cada sección del instrumento se mapea a la hipótesis y a las measures definidas en las secciones [8.2.1](#821-hypotheses) y [8.2.3](#823-measures).
+
+Los participantes ejecutan las tareas sobre el APK experimental distribuido desde GitHub Releases (sección [8.3.3.4](#8334-implemented-to-be-native-mobile-application-evidence)), conectado al backend experimental en Azure, con la aplicación configurada en español.
+
+#### A. User Flows Evaluados por Experimento
+
+**Experimento 1 — Localización Total al Español (H1)**
+* **User Flow E1.1: Navegación integral en español.** El usuario recorre Inicio -> Catálogo -> Ficha de libro -> Perfil con la aplicación en español, verificando la comprensión de etiquetas, categorías y mensajes.
+  * *Flujo:* Selector de idioma en Perfil -> Navegación libre por las vistas principales.
+* **User Flow E1.2: Checkout en español.** El usuario completa una compra simulada con todo el flujo de pago localizado, incluyendo mensajes de validación y error.
+  * *Flujo:* Carrito -> Checkout -> Confirmación de orden.
+
+**Experimento 3 — Billetera Livria (H3)**
+* **User Flow E3.1: Recarga de saldo.** El usuario registra una solicitud de recarga con comprobante de transferencia y visualiza el saldo acreditado.
+  * *Flujo:* Perfil -> Pestaña Wallet -> Recargar saldo -> Confirmación.
+* **User Flow E3.2: Compra con billetera.** El usuario paga una orden usando el saldo de la billetera, sin subir comprobante.
+  * *Flujo:* Carrito -> Checkout -> Método de pago Wallet -> Confirmación en un toque.
+
+**Experimento 4 — Vitrina Literaria en el Perfil (H4)**
+* **User Flow E4.1: Construcción de la vitrina.** El usuario marca libros como leídos y visualiza su sección "My Books".
+  * *Flujo:* Ficha de libro -> Marcar como leído -> Perfil -> My Books.
+* **User Flow E4.2: Perfil público.** El usuario visita el perfil público de otro lector y explora su vitrina literaria, reseñas y géneros predominantes.
+  * *Flujo:* Comunidad -> Perfil de otro usuario -> Vitrina pública.
+
+**Experimento 5 — Comentarios y Publicaciones con Imágenes (H5)**
+* **User Flow E5.1: Publicación con imagen.** El usuario crea una publicación en una comunidad adjuntando una imagen o GIF, previsualizándola antes de publicar.
+  * *Flujo:* Comunidad -> Nueva publicación -> Adjuntar imagen/GIF -> Previsualizar -> Publicar.
+* **User Flow E5.2: Comentario con imagen.** El usuario responde a una publicación con un comentario que incluye una imagen o GIF.
+  * *Flujo:* Publicación -> Comentar -> Adjuntar -> Publicar.
+
+El experimento 2 (Tinder Literario, H2) no forma parte de esta ronda de validación por encontrarse en desarrollo al cierre del Sprint 4; será evaluado con el mismo instrumento en la siguiente iteración.
+
+#### B. Instrumento de Medición (Cuestionario Estructurado)
+
+Escala tipo Likert del 1 al 5 (1 = Muy en desacuerdo / Muy difícil; 5 = Muy de acuerdo / Muy fácil), aplicada tras la ejecución de los user flows descritos.
+
+**Sección 1: Datos Demográficos Básicos**
+* **1. Rango de edad:**
+  * [ ] 15 - 18 años | [ ] 19 - 25 años | [ ] 26 - 35 años | [ ] Más de 35 años
+* **2. ¿Con qué frecuencia lees libros (digitales o físicos)?:**
+  * [ ] Diariamente | [ ] Semanalmente | [ ] Mensualmente | [ ] Rara vez
+* **3. ¿Participaste en la ronda de validación anterior de Livria?**
+  * [ ] Sí | [ ] No
+
+**Sección 2: Localización al Español (H1 — User Flows E1.1, E1.2)**
+* **4. Los textos de la aplicación (menús, categorías, botones) se entienden con claridad en español.** *(Escala 1 al 5)*
+* **5. Durante el proceso de pago comprendí cada paso sin necesidad de traducir mentalmente ningún término.** *(Escala 1 al 5)*
+* **6. Los mensajes de error y validación me indicaron con claridad qué debía corregir.** *(Escala 1 al 5)*
+* **7. ¿Encontraste algún texto que permaneciera en inglés durante tu recorrido?**
+  * [ ] Sí | [ ] No — *(si la respuesta es Sí, indicar dónde)*
+
+**Sección 3: Billetera Livria (H3 — User Flows E3.1, E3.2)**
+* **8. El proceso de recarga de saldo fue claro y pude completarlo sin ayuda.** *(Escala 1 al 5)*
+* **9. Pagar con la billetera me resultó más rápido y sencillo que el método de transferencia con comprobante.** *(Escala 1 al 5)*
+* **10. Me sentiría seguro(a) manteniendo saldo en la billetera de Livria para futuras compras.** *(Escala 1 al 5)*
+* **11. ¿Completaste la compra con billetera sin experimentar errores ni bloqueos?**
+  * [ ] Sí | [ ] No
+
+**Sección 4: Vitrina Literaria en el Perfil (H4 — User Flows E4.1, E4.2)**
+* **12. Marcar un libro como leído fue una acción fácil de encontrar y ejecutar.** *(Escala 1 al 5)*
+* **13. La sección "My Books" representa bien mi identidad como lector(a).** *(Escala 1 al 5)*
+* **14. Ver la vitrina literaria de otros lectores me motiva a interactuar más con la comunidad.** *(Escala 1 al 5)*
+
+**Sección 5: Imágenes y GIFs en Comunidades (H5 — User Flows E5.1, E5.2)**
+* **15. Adjuntar una imagen o GIF a una publicación fue un proceso intuitivo.** *(Escala 1 al 5)*
+* **16. La previsualización del adjunto antes de publicar me dio control sobre lo que compartía.** *(Escala 1 al 5)*
+* **17. Poder responder con imágenes y GIFs hace que las conversaciones en las comunidades sean más expresivas y atractivas.** *(Escala 1 al 5)*
+
+**Sección 6: Métricas Globales Comparativas**
+* **18. Las nuevas funciones (billetera, vitrina, imágenes en comunidades) se sienten bien integradas con el resto de la aplicación.** *(Escala 1 al 5)*
+* **19. Fui capaz de completar todas las tareas asignadas sin necesidad de consultar ayuda técnica o instrucciones adicionales.** *(Escala 1 al 5)*
+* **20. De las siguientes opciones, ¿qué funcionalidad nueva de Livria te generó MAYOR interés?**
+  * *Opciones (Elegir una):* Aplicación en español | Billetera Livria | Vitrina literaria (My Books) | Imágenes y GIFs en comunidades
+* **21. Del 1 al 10, ¿qué tan probable es que recomiendes la descarga de Livria a otro lector?** *(Escala 1 al 10 - Net Promoter Score)*
+
+La pregunta 21 replica exactamente la pregunta NPS de la ronda As-Is (NPS base: -17.9), y las preguntas de las secciones 2 a 5 operacionalizan las measures de la sección [8.2.3](#823-measures), permitiendo contrastar cada hipótesis en el análisis de resultados de la sección [8.4.1](#841-analysis-and-interpretation-of-results).
 
 ---
 
