@@ -103,6 +103,21 @@ Commits
   <img src="https://imgur.com/uZWUWbH.png" alt="Commits Report">
 </p>
 
+**TF1**
+
+Insights:
+
+<p align="center">
+  <img src="https://imgur.com/FYpeZqT.png" alt="Commits Report">
+</p>
+
+
+Commits
+
+<p align="center">
+  <img src="https://imgur.com/3Sn9dCp.png" alt="Commits Report">
+</p>
+
 ---
 
 ## Contenido
@@ -8028,13 +8043,13 @@ Durante el Sprint 4 el equipo trabajó de forma colaborativa sobre los dos repos
 URL del repositorio experimental (cliente Flutter): https://github.com/upc-pre-202610-1asi0732-12278-defontes/livria-experimental
 
 <p align="center">
-  <img src="https://imgur.com/A10KXqx.jpg" alt="Diagrama de Flujo">
+  <img src="https://imgur.com/A10KXqx.jpg" alt="Repositorio App">
 </p>
 
 URL del repositorio experimental (backend .NET): https://github.com/upc-pre-202610-1asi0732-12278-defontes/livria-backend-experimental
 
 <p align="center">
-  <img src="https://imgur.com/undefined.jpg" alt="Diagrama de Flujo">
+  <img src="https://imgur.com/bLIgldG.jpg" alt="Repositorio Backend">
 </p>
 
 
