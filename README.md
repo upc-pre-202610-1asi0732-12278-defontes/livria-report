@@ -3,26 +3,37 @@
 </p>
 
 <h1 align="center">Universidad Peruana de Ciencias Aplicadas</h1>
-<h2 align="center">Facultad de Ingeniería</h2>
+<p align="center" style="font-size: 24px; font-weight: bold; margin: 0;">
+  Facultad de Ingeniería
+</p>
 <h3 align="center">Carrera de Ingeniería de Software</h3>
 <h3 align="center">Ciclo 2026-10</h3>
 
----
+<br>
+<br>
 
 <p align="center"><strong>Código y Nombre del Curso:</strong> 1ASI0732 – Diseño de Experimentos de Ingeniería de Software</p>
 <p align="center"><strong>NRC:</strong> 12278</p>
 <p align="center"><strong>Nombre del Profesor:</strong> Julio Manuel Noriega Melendez</p>
 
----
+<br>
+<br>
+<br>
 
-<h1 align="center">Informe del Avance 2 del proyecto</h1>
-
+<p align="center" style="font-size: 28px; margin: 0;">
+  Informe del Trabajo Final
+</p>
+<br>
 <p align="center"><strong>Nombre del Startup:</strong> Defontes</p>
 <p align="center"><strong>Nombre del Producto:</strong> Livria</p>
 
----
+<br>
+<br>
 
-<h2 align="center">Relación de Integrantes</h2>
+<p align="center" style="font-size: 24px; font-weight: bold; margin: 0;">
+  Relación de Integrantes
+</p>
+<br>
 
 <div align="center">
 
@@ -37,9 +48,21 @@
 
 </div>
 
----
+<br>
 
-<p align="center"><strong>Mes y Año:</strong> Junio 2026</p>
+<p align="center"><strong>Mes y Año:</strong> Julio 2026</p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
 
 ## Registro de Versiones del Informe
 
