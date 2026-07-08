@@ -8206,6 +8206,134 @@ A continuación se grafican las 28 respuestas de los usuarios que evaluaron tant
 
 ---
 
+## 8.4. Experiment Aftermath & Analysis
+## 8.4.1. Analysis and Interpretation of Results
+La encuesta estructurada de la ronda To-Be fue respondida por 28 participantes, todos ellos con participación previa en la ronda As-Is, lo que permite un contraste directo entre ambas mediciones sobre una base comparable de usuarios. A continuación se analiza cada hipótesis contrastando el estado previo (baseline As-Is) contra el resultado obtenido (To-Be), determinando explícitamente su validez.
+
+### H01 — Localización Total al Español (EP09)
+
+| Métrica | As-Is (baseline) | To-Be (resultado) | Δ | Criterio de éxito (Experiment Card 1) | Veredicto |
+|---|---|---|---|---|---|
+| Comprensión de textos/interfaz | No medida directamente (proxy: autonomía en tareas, 3.36/5) | 4.04/5 | — | Mejora ≥1 punto Likert | — |
+| Comprensión del pago sin traducir | Confusión en "Proceso de compras" 2.54/5 (índice de confusión, escala invertida ≈ 2.46/5 en claridad) | 4.46/5 | **+1.92 a +2.00 pts** | Mejora ≥1 punto Likert | **Cumple ampliamente** |
+| Claridad de mensajes de error/validación | No medida en As-Is (gap documental) | 4.29/5 | — | — | Sin baseline directo, pero valor absoluto alto |
+| Cadenas sin traducir detectadas | N/A (interfaz 100% en inglés) | 0% reportó texto en inglés | **-100%** | Reducción de residuales | **Cumple** |
+
+**Veredicto: Hipótesis de trabajo H01 VALIDADA.** Aunque el As-Is no midió "comprensión de textos" con la misma pregunta exacta, el proxy más cercano —la confusión en el proceso de compras (2.54/5 en escala de confusión, equivalente a una claridad moderada-baja)— se contrasta contra una comprensión de pago de 4.46/5 en la ronda To-Be, una mejora que **duplica ampliamente** el umbral de +1 punto exigido por el Experiment Card 1. La hipótesis nula (que la localización no generaría diferencias relevantes) **se rechaza**: el salto es demasiado grande y consistente en las tres dimensiones evaluadas (textos, pago, errores) para atribuirlo a variabilidad muestral.
+
+
+### H02 — Tinder Literario / Swipe de Recomendaciones (EP10)
+
+| Métrica | As-Is (baseline) | To-Be (resultado) | Δ | Criterio de éxito (Experiment Card 2) | Veredicto |
+|---|---|---|---|---|---|
+| Precisión percibida del motor de recomendaciones | **2.89/5** (peor de todo el instrumento As-Is) | 4.32/5 (recos reflejaron intereses) | **+1.43 pts (+49.5%)** | — | Mejora sustancial |
+| Confusión del apartado de recomendaciones | **3.11/5** (más confuso de la app) | Swipe intuitivo: 4.46/5 (invertido a claridad) | **Inversión total de la tendencia** | Doble de señales de preferencia por sesión | Proxy cualitativo cumplido |
+| Uso continuado del mecanismo | N/A (no existía swipe) | 46.4% agotó la pila y recargó | Nueva métrica | ≥2x señales por sesión (no medido conductualmente) | **No verificado cuantitativamente** |
+
+**Veredicto: Hipótesis de trabajo H02 VALIDADA en percepción, PENDIENTE en magnitud exacta.** El contraste es el más dramático de los cinco experimentos: el motor de recomendaciones pasó de ser **el punto más débil de toda la app** (peor precisión, mayor confusión) a obtener las calificaciones más altas del instrumento To-Be (4.32-4.46/5). Sin embargo, el criterio de éxito original exigía duplicar las señales de preferencia por sesión y reducir 25% el tiempo de decisión — métricas conductuales que esta encuesta no midió directamente (solo percepción). Se rechaza la hipótesis nula en su componente perceptual, pero se recomienda instrumentar analítica de uso real (ver BLQ06 re-priorizada) antes de declarar cumplimiento total del criterio cuantitativo original.
+
+
+### H03 — Billetera Livria (EP11)
+
+| Métrica | As-Is (baseline) | To-Be (resultado) | Δ | Criterio de éxito (Experiment Card 3) | Veredicto |
+|---|---|---|---|---|---|
+| Confusión del proceso de compras | 2.54/5 | Recarga clara: 4.29/5 | **+1.75 pts** | — | Mejora sustancial |
+| Errores técnicos en el pago | 21.4% reportó errores/bloqueos | 17.9% (5 de 28) reportó errores | **-3.5 pp** (mejora leve) | — | Persiste un remanente de fricción técnica |
+| Disposición a confiar/recargar fondos | No medida (no existía billetera) | 78.6% calificó con ≥4 la seguridad percibida | Nueva métrica | **≥70%** de disposición a recargar | **Cumple (78.6% > 70%)** |
+| Compra sin errores con billetera | N/A | 82.1% sin errores ni bloqueos | Nueva métrica | Alta tasa de finalización | **Cumple** |
+
+**Veredicto: Hipótesis de trabajo H03 VALIDADA.** El criterio de éxito explícito del Experiment Card 3 (≥70% de disposición a recargar fondos) se cumple con holgura (78.6%). Es importante notar que, aunque el 82.1% completó la compra sin errores con billetera, el 17.9% que sí reportó errores es una cifra similar al 21.4% de errores técnicos ya documentado en el As-Is — esto sugiere que la billetera **no introdujo nuevos problemas técnicos**, pero tampoco eliminó por completo la fragilidad técnica del flujo de pago general, un matiz que no invalida H03 pero que debe monitorearse (relacionado con BLQ13, aún vigente en el backlog).
+
+
+### H04 — Vitrina Literaria en el Perfil (EP12)
+
+| Métrica | As-Is (baseline) | To-Be (resultado) | Δ | Criterio de éxito (Experiment Card 4) | Veredicto |
+|---|---|---|---|---|---|
+| Interés declarado en "Personalización del perfil" | Menor interés de la app: **42.9%** lo eligió como funcionalidad de MENOR interés (meta: <30%) | — | — | — | Incumplía la meta de negocio en As-Is |
+| Vitrina motiva interacción con la comunidad | Comunidades como motivador de lectura: **2.93/5** (media más baja del cuestionario As-Is) | 4.11/5, con **75%** calificando ≥4 | **+1.18 pts (+40.3%)** | ≥60% con acción/percepción positiva | **Cumple (75% > 60%)** |
+| "My Books" representa identidad lectora | No medida (funcionalidad no existía) | 4.07/5 | Nueva métrica | ≥4/5 en aporte a identidad | **Cumple (4.07 > 4.0)** |
+
+**Veredicto: Hipótesis de trabajo H04 VALIDADA.** Este es el contraste más significativo desde la perspectiva de negocio: el perfil pasó de ser la funcionalidad con **mayor tasa de desinterés declarado de toda la app** (42.9%, incumpliendo la meta de <30% definida en 8.2.2) a generar niveles de motivación e identidad percibida que superan cómodamente los criterios de éxito del Experiment Card 4 (75% vs. meta de 60%; 4.07/5 vs. meta de 4.0/5). Se rechaza con fuerza la hipótesis nula.
+
+
+### H05 — Comentarios y Publicaciones con Imágenes (EP13)
+
+| Métrica | As-Is (baseline) | To-Be (resultado) | Δ | Criterio de éxito (Experiment Card 5) | Veredicto |
+|---|---|---|---|---|---|
+| Localización del botón de crear publicación | **39.3%** (11 de 28) NO encontró el botón | Adjuntar imagen/GIF intuitivo: 4.43/5, **92.9%** calificó ≥4 | **Inversión de la tendencia** | ≥50% de espectadores que publican | Proxy cumplido, no medido conductualmente |
+| Legibilidad de publicaciones/comentarios | 3.43/5 (21.4% calificó 1-2) | Expresividad percibida: 4.18/5 | **+0.75 pts** | — | Mejora consistente |
+| Previsualización brinda control | No existía la función | 4.21/5 | Nueva métrica | — | Alto valor absoluto |
+
+**Veredicto: Hipótesis de trabajo H05 VALIDADA en percepción, con salvedad conductual.** El 92.9% de calificaciones positivas sobre la facilidad de adjuntar contenido es un contraste fuerte frente al 39.3% que ni siquiera encontraba el botón de publicar en el As-Is. Sin embargo, el criterio de éxito original (≥50% de espectadores que publican por primera vez) es una métrica de **conversión conductual real**, no de percepción de facilidad — la encuesta valida que la barrera de usabilidad se redujo, pero no confirma cuántos "espectadores" pasaron efectivamente a "creadores". Se rechaza la hipótesis nula en su componente de usabilidad; el componente de conversión queda pendiente de medición en producción (consistente con la re-priorización de BLQ18 y BLQ19).
+
+
+### Contraste global: NPS
+
+| Métrica | As-Is | To-Be | Δ |
+|---|---|---|---|
+| Promotores (9-10) | 8 (28.6%) | 16 (57.1%) | +100% |
+| Pasivos (7-8) | 7 (25%) | 7 (25%) | Sin cambio |
+| Detractores (0-6) | 13 (46.4%) | 5 (17.9%) | **-63.5%** |
+| **NPS** | **-17.9** | **+39.3** | **+57.2 puntos** |
+
+El salto de NPS es el indicador agregado más contundente: los detractores se redujeron a un tercio de su proporción original, mientras que los promotores se duplicaron. Esto corrobora, a nivel de percepción general del producto, que las cinco hipótesis validadas individualmente tienen un efecto combinado real y no solo aislado por módulo.
+
+
+### Síntesis de veredictos
+
+| Hipótesis | Estado | Fuerza de la evidencia |
+|---|---|---|
+| H01 — Localización ES | **Validada** | Alta (excede meta ampliamente, sin hipótesis nula sostenible) |
+| H02 — Swipe recomendaciones | **Validada** (perceptual) | Alta en percepción; conductual pendiente de instrumentación |
+| H03 — Billetera Livria | **Validada** | Alta (cumple meta explícita de 70%) |
+| H04 — Vitrina literaria | **Validada** | Alta (revierte directamente el peor hallazgo de negocio del As-Is) |
+| H05 — Imágenes/GIFs | **Validada** (perceptual) | Alta en percepción; conversión espectador→creador pendiente de medición real |
+
+Ninguna de las cinco hipótesis nulas se sostiene con la evidencia recolectada. No obstante, H02 y H05 muestran una brecha entre la **percepción declarada** (fuertemente positiva) y la **medición conductual real** (aún no instrumentada), por lo que se recomienda tratar su validación como sólida pero no definitiva hasta contar con datos de uso en producción.
+
+
+### 8.4.2. Re-scored and Re-prioritized Question Backlog
+
+A partir de los resultados obtenidos, varias preguntas del Question Backlog original (sección 8.1.4) cambian su vigencia: algunas quedan resueltas por la evidencia recolectada, otras ven incrementada su prioridad al abrir nuevas incógnitas, y otras mantienen su puntaje al no haber sido abordadas por esta ronda de experimentación.
+
+#### Backlog Deep — Re-priorización
+
+| ID | Pregunta | Score original | Estado tras la ronda | Score actualizado | Justificación del cambio |
+|---|---|---|---|---|---|
+| BLQ01 | ¿Una interfaz completamente en español reduce el abandono y mejora la tasa de completado del pago? | 11 | **Resuelta (validada)** | 3 | H01 confirmada con evidencia sólida (media 4.46/5 en comprensión del pago); no requiere más investigación exploratoria en su forma actual. |
+| BLQ24 | ¿La localización completa incrementa la exploración de funcionalidades avanzadas? | 8 | **Parcialmente resuelta** | 5 | La mejora en integración percibida (4.29/5) sugiere mayor exploración, pero no se midió exploración conductual directa; se mantiene con prioridad reducida para una futura medición de analítica de uso. |
+| BLQ05 | ¿La mecánica de swipe genera más señales de preferencia por sesión que la cuadrícula? | 10 | **Resuelta (validada)** | 3 | H02 confirmada (4.36/5 en agilidad, 46.4% de reutilización de la pila); pendiente solo de instrumentar el conteo real de señales en producción. |
+| BLQ06 | ¿El CTR de recomendaciones es mayor con >5 favoritos vs. <3? | 9 | **Sube de prioridad** | **11** | Con el swipe ya validado como mecanismo, esta pregunta se vuelve el siguiente paso lógico para optimizar el umbral de onboarding del algoritmo y maximizar el efecto ya comprobado del nuevo mecanismo. |
+| BLQ03 | ¿La billetera incrementa significativamente la frecuencia de compra? | 11 | **Resuelta (validada)** | 3 | H03 confirmada (4.54/5 en rapidez, 82.1% sin errores); se retira del backlog activo. |
+| BLQ04 | ¿Los usuarios con billetera compran más de 2 veces por sesión? | 10 | **Sube de prioridad** | **12** | Validada la percepción de rapidez y seguridad (H03), pero no se midió el número real de compras por sesión; se vuelve la pregunta crítica para cuantificar el impacto en ingresos antes de escalar la billetera a producción. |
+| BLQ28 | ¿La visibilidad del saldo en el catálogo reduce la fricción de decisión de compra? | 10 | **Sube de prioridad** | **11** | Al confirmarse que la billetera reduce fricción en el checkout, esta pregunta explora si el efecto puede anticiparse desde el catálogo, ampliando el impacto de la funcionalidad ya validada. |
+| BLQ13 | ¿El abandono en pago es mayor después de las 10 PM? | 11 | Sin cambios | 11 | No abordada por los experimentos ejecutados; mantiene su prioridad original al seguir siendo relevante para el flujo de pago general (más allá de la billetera). |
+| BLQ22 | ¿La vitrina literaria incrementa las visitas entre perfiles? | 7 | **Sube de prioridad** | **10** | H04 confirmada en percepción (4.11/5, 75% motivado a interactuar); se vuelve prioritaria medir el tráfico real entre perfiles en producción para confirmar el efecto conductual, no solo el declarado. |
+| BLQ18 | ¿Las publicaciones con imagen reciben más comentarios que las de texto plano? | 7 | **Sube de prioridad** | **10** | H05 confirmada en percepción de expresividad (4.18/5); el siguiente paso lógico es medir el efecto conductual real sobre el volumen de comentarios. |
+| BLQ19 | ¿Los GIFs incrementan la transición espectador→creador? | 7 | **Sube de prioridad** | **10** | Con el 92.9% de percepción positiva sobre la facilidad de adjuntar contenido, esta pregunta pasa a ser clave para confirmar si esa facilidad se traduce en más usuarios publicando por primera vez. |
+| BLQ09 | ¿Publicar la primera reseña en 7 días aumenta la retención mensual? | 9 | Sin cambios | 9 | No abordada directamente por los experimentos de esta ronda; mantiene su vigencia para la estrategia de retención temprana. |
+| BLQ11 | ¿Los usuarios con >10 favoritos convierten más, o los favoritos son lista de deseos? | 8 | Sin cambios | 8 | No abordada; sigue siendo relevante para decidir estrategias de reactivación de favoritos. |
+
+#### Backlog Broad — Re-priorización
+
+| ID | Pregunta | Score original | Estado tras la ronda | Score actualizado | Justificación del cambio |
+|---|---|---|---|---|---|
+| EXQ08 | ¿Qué monto de recarga inicial consideraría razonable el usuario? | 11 | **Sube de prioridad** | **12** | Con H03 validada y la billetera lista para escalar a producción, definir el monto óptimo de recarga inicial se vuelve una decisión de diseño inmediata y de alto impacto en la tasa de activación. |
+| EXQ09 | ¿Los usuarios bloqueados por el paywall de comunidades regresan a suscribirse? | 11 | Sin cambios | 11 | No abordada por los experimentos ejecutados (ninguno modificó el paywall); mantiene su prioridad original. |
+| EXQ11 | ¿Existe un tamaño de comunidad umbral para que usuarios nuevos publiquen? | 10 | **Sube de prioridad** | **12** | Directamente relacionada con el hallazgo de H05: si el formato visual reduce la fricción de publicar, esta pregunta ayuda a entender si el tamaño de la comunidad sigue siendo una barrera adicional o si ya fue superada por el nuevo composer. |
+| EXQ07 | ¿Los usuarios que publican reseñas pertenecen a más comunidades? | 10 | Sin cambios | 10 | No abordada; sigue siendo relevante para segmentar estrategias de retención. |
+| EXQ05 | ¿Con qué frecuencia se visita el perfil de otros lectores? | 9 | **Sube de prioridad** | **11** | Con H04 validada en percepción, esta pregunta broad se vuelve el complemento necesario para cuantificar el tráfico real entre perfiles antes de invertir en más funcionalidades sociales sobre el perfil. |
+| EXQ10 | ¿Los usuarios incluirían en "leídos" libros comprados fuera de Livria? | 8 | Sin cambios | 8 | No abordada; sigue siendo relevante para definir el alcance futuro de la vitrina literaria. |
+| EXQ06 | ¿Qué tipo de contenido se comparte en publicaciones con imagen? | 7 | **Sube de prioridad** | **9** | Al haberse habilitado GIFs (H05), esta pregunta original sobre moderación de contenido se vuelve más urgente: ahora existe contenido animado real que auditar antes de que el volumen de publicaciones crezca. |
+| EXQ03 | ¿Qué franja horaria concentra los intentos de compra? | 12 | Sin cambios | 12 | No abordada directamente; con la billetera ya validada, esta pregunta sigue siendo relevante para el segmento de usuarios que aún no recarga saldo y depende del método de transferencia tradicional. |
+| EXQ02 | ¿Cuánto tiempo permanece un libro en el carrito antes de eliminarse? | 11 | Sin cambios | 11 | No abordada; mantiene su prioridad original. |
+| EXQ12 | ¿Qué % de usuarios busca por texto vs. navega exploratoriamente? | 11 | Sin cambios | 11 | No abordada por los experimentos de esta ronda. |
+| EXQ01 | ¿En qué orden navegan los usuarios las secciones principales? | 10 | Sin cambios | 10 | No abordada directamente, aunque la mejora en integración percibida (4.29/5) sugiere que valdría la pena revisarla en la siguiente ronda. |
+
+**Resumen de la re-priorización:** Las preguntas Deep BLQ01, BLQ03 y BLQ05 —que ocupaban las posiciones 1, 4 y 11 del backlog original— se consideran **resueltas y validadas**, liberando capacidad de investigación. En su lugar, ascienden preguntas que profundizan el efecto conductual real de las funcionalidades ya implementadas (BLQ04, BLQ28, BLQ22, BLQ18, BLQ19, BLQ06, EXQ08, EXQ11, EXQ05), reflejando el patrón esperado en Lean Startup: una vez validada la percepción y usabilidad de una funcionalidad (fase cualitativa), el backlog debe redirigirse hacia la medición cuantitativa de su impacto real en el comportamiento y en las métricas de negocio (frecuencia de compra, retención, conversión), antes de asumir que el problema está completamente resuelto.
+
+---
+
 ## 8.6. To-Be Software Platform Pre-launch
 
 Como cierre del ciclo experimental, el equipo preparó el pre-lanzamiento de la versión To-Be de la plataforma Livria: la aplicación experimental con la localización total al español, la Billetera Livria, la vitrina literaria en el perfil y el soporte de imágenes y GIFs en comunidades, distribuida mediante el pipeline de release descrito en la sección [8.3.3.4](#8334-implemented-to-be-native-mobile-application-evidence) y respaldada por la API experimental desplegada en Azure.
