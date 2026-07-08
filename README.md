@@ -245,12 +245,13 @@ Commits
     - [8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle](#833-pipeline-supported-experiment-driven-to-be-software-platform-lifecycle)
       - [8.3.3.1. To-Be Sprint Backlogs](#8331-to-be-sprint-backlogs)
       - [8.3.3.2. Implemented To-Be Landing Page Evidence](#8332-implemented-to-be-landing-page-evidence)
-      - [8.3.3.3. Implemented To-Be Frontend-Web Application Evidence](#8333-implemented-to-be-frontend-web-application-evidence)
+      - [8.3.3.3. Implemented To-Be Frontend Application Evidence](#8333-implemented-to-be-frontend-application-evidence)
       - [8.3.3.4. Implemented To-Be Native-Mobile Application Evidence](#8334-implemented-to-be-native-mobile-application-evidence)
       - [8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence](#8335-implemented-to-be-restful-api-andor-serverless-backend-evidence)
       - [8.3.3.6. Team Collaboration Insights](#8336-team-collaboration-insights)
     - [8.3.4. To-Be Validation Interviews](#834-to-be-validation-interviews)
       - [8.3.4.1. Diseño de Entrevistas](#8341-diseño-de-entrevistas)
+      - [8.3.4.1. Registro de Entrevistas](#8342-registro-de-entrevistas)
   - [8.6. To-Be Software Platform Pre-launch](#86-to-be-software-platform-pre-launch)
     - [8.6.1. About-the-Product Intro Video](#861-about-the-product-intro-video)
 - [Conclusiones](#conclusiones)
@@ -299,7 +300,7 @@ Visión: Convertirse en la plataforma líder en América Latina para la compra y
 | Alva Abanto, Luis Andres <p align="center"> <img src="https://imgur.com/j4tnSmM.png" alt="luis"> </p> | U202310877 | Ingeniería de Software | Mi nombre es Luis Andrés Alva Abanto, tengo 20 años y estudio ingeniería de software. |
 | Binda Arbañil, Marcelo Alejandro <p align="center"> <img src="https://imgur.com/9XWdym2.jpg" alt="luis"> </p> | U202311157 | Ingeniería de Software | Mi nombre es Marcelo Binda y soy estudiante de séptimo ciclo de la carrera de Ingeniería de Software. Me defino como un profesional proactivo y orientado a resultados, con una capacidad natural para el trabajo colaborativo y la resolución de problemas complejos. Me caracteriza mi alto sentido de la responsabilidad y un compromiso inquebrantable con la calidad técnica en cada proyecto que emprendo. Busco siempre la eficiencia en el código y la excelencia en la experiencia del usuario, manteniendo una comunicación fluida y constante con mi equipo de trabajo. |
 | Castillo Garay, Ainhoa Lucía <p align="center"> <img src="https://imgur.com/2UE04dl.jpg" alt="luis"> </p> | U202311701 | Ingeniería de Software | Mi nombre es Ainhoa Castillo y estoy cursando mi séptimo ciclo en la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC). Me considero una persona activa y responsable. Me gusta trabajar en un ambiente tranquilo y divertido, pero siempre eficaz. Me gusta programar y resolver problemas mediante soluciones creativas. |
-| Martel Andrade, Cassius Estefano <p align="center"> <img src="https://imgur.com/DNdObuQ.jpg" alt="luis"> </p> | U202312287 | Ingeniería de Software | Mi nombre es Cassius Martel y soy estudiante de séptimo de la carrera de Ingeniería de Software. Me caracterizo por ser líder nato que siempre busca sacar lo mejor de cada uno de sus compañeros de equipo, así como por ser sumamente responsable y atento con los requerimientos de cada proyecto en el que me involucro. Tengo conocimientos técnicos en lenguajes y diversos frameworks de desarrollo Frontend, bases de datos y metodologías ágiles. |
+| Martel Andrade, Cassius Estefano <p align="center"> <img src="https://imgur.com/DNdObuQ.jpg" alt="luis"> </p> | U202312287 | Ingeniería de Software | Mi nombre es Cassius Martel y soy estudiante de séptimo de la carrera de Ingeniería de Software. Me caracterizo por ser líder nato que siempre busca sacar lo mejor de cada uno de sus compañeros de equipo, así como por ser sumamente responsable y atento con los requisitos de cada proyecto en el que me involucro. Tengo conocimientos técnicos en lenguajes y diversos frameworks de desarrollo Frontend, bases de datos y metodologías ágiles. |
 | Nakamurakare Teruya, Alex Tomio <p align="center"> <img src="https://imgur.com/Z8IWHJL.jpg" alt="luis"> </p> | U20201f855 | Ingeniería de Software | Mi nombre es Tomio Nakamurakare, estudiante de séptimo ciclo de la carrera de Ingeniería de Software. Me defino como un profesional en formación con una fuerte inclinación hacia el aprendizaje continuo y la aplicación práctica de nuevas tecnologías. Poseo una mentalidad orientada a la resolución de problemas complejos, viendo en los retos técnicos una oportunidad para fortalecer mi pensamiento crítico. Mi enfoque de trabajo se caracteriza por la persistencia y la resiliencia, cualidades que me permiten afrontar y superar las dificultades inherentes al desarrollo de software. |
 | Yalán Zhang, Angie Christina <p align="center"> <img src="https://imgur.com/37xqvzq.png" alt="angie"> </p> | U202312504 | Ingeniería de Software | Mi nombre es Angie Yalán. Soy estudiante de la carrera Ingeniería de Software y tengo 20 años. Me considero una persona proactiva que le gustan nuevas experiencias y aprender cosas diferentes. Sigo en el proceso de mejora en cuanto a la programación y cuento con toda la iniciativa para ser cada día mejor en ello.|
 
@@ -6732,7 +6733,7 @@ Esta sección documenta la auditoría que Livria recibió por parte del equipo a
 | **Integrantes** | Valverde Mozo, Andre Gabriel (U202218899); Anampa Lavado, Luis Angel (u202218664); Fernandez, Alexander Piero (u202019498); Rocca Leon, Anhelo Rodrigo (U20221C803) |
 | **Objetivo de la auditoría** | Verificar el cumplimiento de los requisitos establecidos en el Project Statement y evaluar la consistencia entre la documentación, la implementación del software y la evidencia presentada por Defontes. Asimismo, identificar fortalezas, observaciones y no conformidades que puedan afectar la funcionalidad, seguridad, trazabilidad y calidad del producto Livria. |
 | **Alcance de la auditoría** | Revisión del informe final de Defontes con énfasis en las User Stories y criterios de aceptación de las secciones 3.2 (As-Is) y 8.3.1 (To-Be), y en las Experiment Cards de la sección 8.1.5, evaluando la trazabilidad entre lo declarado y la implementación observable. La auditoría se realizó desde la perspectiva de un usuario final de la aplicación móvil, sin acceso al panel administrativo/backend, cubriendo Gestión de Catálogo y Comercialización, Seguridad y Transparencia de Acceso, Portal del Lector, Landing Page y las funcionalidades derivadas de la experimentación (localización al español, swipe de recomendaciones, billetera Livria, vitrina literaria y comentarios/publicaciones con imágenes). |
-| **Artefactos revisados** | Informe final del proyecto, Historias de Usuario y Requerimientos (As-Is), To-Be User Stories, Experiment Cards, Project Statement / contexto del proyecto. |
+| **Artefactos revisados** | Informe final del proyecto, Historias de Usuario y requisitos (As-Is), To-Be User Stories, Experiment Cards, Project Statement / contexto del proyecto. |
 | **Criterio de referencia** | Project Statement, User Stories (As-Is y To-Be) y criterios de aceptación documentados, priorizando la correspondencia entre lo declarado en el informe, la implementación observable desde la perspectiva de usuario final, y las limitaciones del MVP (pagos manuales, logística restringida a Lima Metropolitana, carga de datos manual, sin recuperación de contraseña ni moderación automática). |
 
 #### 6.4.2.2. Cronograma de auditoría recibida
@@ -7257,109 +7258,47 @@ En esta sección se organiza las preguntas de investigación de Livria en funci�
 
 Las *Experiment Cards* permiten estructurar cada experimento antes de su ejecución. Su propósito es capturar la pregunta principal, la razón de investigación, la hipótesis de trabajo, la cosa más simple y útil a construir o probar, así como las medidas, condiciones y escala del experimento.
 
+
 #### Experiment Card 1: Localización Total al Español
 
-**Lado frontal**
-
-| Campo | Descripción |
+| **Question Backlog** | ¿Una interfaz completamente en español reduce el abandono durante el proceso de compra y aumenta la exploración de funcionalidades avanzadas entre usuarios hispanohablantes? (BLQ01, BLQ24) |
 |---|---|
-| Pregunta | ¿Una interfaz completamente en español reduce el abandono durante el proceso de compra y aumenta la exploración de funcionalidades avanzadas entre usuarios hispanohablantes? (BLQ01, BLQ24) |
-| Por qué | La totalidad de la interfaz está implementada en inglés. Para el segmento de lectores peruanos hispanohablantes, esto impone una capa de carga cognitiva en cada interacción, especialmente crítica en pantallas de alta acción como el checkout, donde la confusión puede traducirse en abandono. |
-| Hipótesis | Si se migra la interfaz completa al español (es_419), priorizando checkout, catálogo y comunidades, entonces disminuirá la tasa de abandono en el proceso de compra y aumentará la exploración de funcionalidades avanzadas. |
-| Qué: Simplest Useful Thing | Crear un prototipo comparativo A/B de los flujos de checkout y comunidades en dos versiones: la versión actual en inglés y una versión completamente localizada al español. |
-
-**Lado posterior**
-
-| Campo | Descripción |
-|---|---|
-| Medidas | Tasa de abandono en el checkout, tiempo de completado de formularios, número de funcionalidades avanzadas exploradas por sesión, comprensión percibida de etiquetas y errores de validación. |
-| Condiciones | Los participantes completan una tarea de compra y una de exploración de comunidades. El grupo de control usa la versión en inglés y el grupo experimental la versión en español. Se mantienen los mismos títulos y tareas para todos. |
-| Escala | 10 a 15 participantes del segmento “Lectores en Desarrollo”. Duración aproximada: 15 minutos por sesión. |
-| Criterio de éxito | La versión en español será considerada favorable si reduce al menos en 20% el abandono en el checkout o si mejora en al menos 1 punto (escala Likert 1 a 5) la comprensión percibida de la interfaz. |
+| **Why?** | La totalidad de la interfaz está implementada en inglés. Para el segmento de lectores peruanos hispanohablantes, esto impone una capa de carga cognitiva en cada interacción, especialmente crítica en pantallas de alta acción como el checkout, donde la confusión puede traducirse en abandono. |
+| **What?** | Crear un prototipo comparativo A/B de los flujos de checkout y comunidades en dos versiones: la versión actual en inglés y una versión completamente localizada al español (es_419). |
+| **Hypothesis** | Creemos que migrar la interfaz completa al español, priorizando checkout, catálogo y comunidades, reducirá en al menos 20% la tasa de abandono en el checkout o mejorará en al menos 1 punto (escala Likert 1 a 5) la comprensión percibida de la interfaz, frente a la versión en inglés. |
 
 #### Experiment Card 2: Tinder Literario (Swipe de Recomendaciones)
 
-**Lado frontal**
-
-| Campo | Descripción |
+| **Question Backlog** | ¿Un sistema de recomendaciones basado en tarjetas deslizables (swipe) genera más señales de preferencia por sesión que la cuadrícula estática actual? (BLQ05) |
 |---|---|
-| Pregunta | ¿Un sistema de recomendaciones basado en tarjetas deslizables (swipe) genera más señales de preferencia por sesión que la cuadrícula estática actual? (BLQ05) |
-| Por qué | El sistema actual exige entrar a cada ficha técnica, leer la sinopsis y marcar el libro como favorito o excluido mediante íconos. Este flujo requiere múltiples taps por decisión, desincentivando la alimentación continua del algoritmo. |
-| Hipótesis | Si se reemplaza la cuadrícula estática por tarjetas apiladas donde el usuario deslice a la derecha (“me interesa”) o a la izquierda (“no me interesa”), entonces aumentará el número de señales de preferencia capturadas por sesión y se reducirá el tiempo de decisión por libro. |
-| Qué: Simplest Useful Thing | Crear un prototipo funcional de una pila de tarjetas de libros con gestos de swipe, comparado con la cuadrícula estática actual de recomendaciones. |
-
-**Lado posterior**
-
-| Campo | Descripción |
-|---|---|
-| Medidas | Número de señales de preferencia por sesión (swipes), tiempo de decisión por libro, satisfacción percibida del motor de recomendaciones, libros agregados al carrito tras la sesión. |
-| Condiciones | Los usuarios realizan una tarea de descubrimiento: “Encuentra libros que leerías o comprarías”. El grupo de control usa la cuadrícula actual y el grupo experimental la mecánica de swipe. Mismo set de libros para ambos. |
-| Escala | 10 a 15 participantes de los segmentos “Lectores en Desarrollo” y “Lectores Comunitarios”. Encuesta posterior con escala de Likert de 1 a 5. |
-| Criterio de éxito | La mecánica de swipe será considerada favorable si genera al menos el doble de señales de preferencia por sesión y reduce en al menos 25% el tiempo de decisión por libro frente a la cuadrícula actual. |
+| **Why?** | El sistema actual exige entrar a cada ficha técnica, leer la sinopsis y marcar el libro como favorito o excluido mediante íconos. Este flujo requiere múltiples taps por decisión, desincentivando la alimentación continua del algoritmo. |
+| **What?** | Crear un prototipo funcional de una pila de tarjetas de libros con gestos de swipe (derecha "me interesa" / izquierda "no me interesa"), comparado con la cuadrícula estática actual de recomendaciones. |
+| **Hypothesis** | Creemos que reemplazar la cuadrícula estática por tarjetas deslizables generará al menos el doble de señales de preferencia por sesión y reducirá en al menos 25% el tiempo de decisión por libro, frente a la cuadrícula actual. |
 
 #### Experiment Card 3: Billetera Livria
 
-**Lado frontal**
-
-| Campo | Descripción |
+| **Question Backlog** | ¿Una billetera virtual interna que permita pre-cargar fondos mediante una única transferencia incrementa la frecuencia de compra al eliminar la transferencia manual por cada pedido? (BLQ03, BLQ04) |
 |---|---|
-| Pregunta | ¿Una billetera virtual interna que permita pre-cargar fondos mediante una única transferencia incrementa la frecuencia de compra al eliminar la transferencia manual por cada pedido? (BLQ03, BLQ04) |
-| Por qué | El modelo de pago actual exige salir de la app, transferir al CCI, capturar el comprobante y subirlo nuevamente en cada compra individual (3 a 8 minutos por transacción). La evidencia del embudo señala este paso como el principal cuello de botella de conversión. |
-| Hipótesis | Si el usuario puede recargar fondos una sola vez y realizar compras posteriores con un solo toque, entonces aumentará la frecuencia de compra y el número de compras por sesión frente al flujo de transferencia por CCI repetitivo. |
-| Qué: Simplest Useful Thing | Crear un prototipo del flujo de recarga de la billetera y compra con saldo disponible (un toque), comparado con el flujo actual de transferencia bancaria y subida de comprobante. |
-
-**Lado posterior**
-
-| Campo | Descripción |
-|---|---|
-| Medidas | Número de compras por sesión, tiempo de completado de la compra, tasa de finalización del pago, intención declarada de recargar fondos, monto de recarga inicial considerado razonable. |
-| Condiciones | Los participantes simulan dos compras consecutivas. El grupo de control usa el flujo de CCI actual y el grupo experimental la billetera con saldo precargado. No se realizan pagos reales. |
-| Escala | 10 a 12 participantes con historial de compra previo simulado. Sesiones moderadas de 15 a 20 minutos. |
-| Criterio de éxito | La billetera será considerada favorable si incrementa en al menos 40% las compras por sesión o si al menos el 70% de los participantes declara que recargaría fondos para futuras compras. |
+| **Why?** | El modelo de pago actual exige salir de la app, transferir al CCI, capturar el comprobante y subirlo nuevamente en cada compra individual (3 a 8 minutos por transacción). La evidencia del embudo señala este paso como el principal cuello de botella de conversión. |
+| **What?** | Crear un prototipo del flujo de recarga de la billetera y compra con saldo disponible (un toque), comparado con el flujo actual de transferencia bancaria y subida de comprobante. |
+| **Hypothesis** | Creemos que permitir recargar fondos una sola vez y comprar con un solo toque incrementará en al menos 40% las compras por sesión, o logrará que al menos el 70% de los participantes declare que recargaría fondos para futuras compras, frente al flujo de transferencia por CCI repetitivo. |
 
 #### Experiment Card 4: Vitrina Literaria en el Perfil
 
-**Lado frontal**
-
-| Campo | Descripción |
+| **Question Backlog** | ¿Una sección pública de "Libros Leídos" y reseñas en el perfil incrementa las visitas entre perfiles y el sentido de identidad literaria del usuario? (BLQ22) |
 |---|---|
-| Pregunta | ¿Una sección pública de “Libros Leídos” y reseñas en el perfil incrementa las visitas entre perfiles y el sentido de identidad literaria del usuario? (BLQ22) |
-| Por qué | Los perfiles actuales solo exponen datos básicos de cuenta e historial de órdenes. No reflejan el recorrido literario del usuario, eliminando el componente de identidad social que en plataformas similares actúa como motor de retención a largo plazo. |
-| Hipótesis | Si el perfil expone públicamente el historial de libros leídos, las reseñas publicadas y los géneros predominantes, entonces aumentarán las visitas entre perfiles dentro de una comunidad y el usuario percibirá mayor identidad y pertenencia. |
-| Qué: Simplest Useful Thing | Diseñar un prototipo de perfil con una sección “Vitrina Literaria” (libros leídos, reseñas y géneros predominantes), comparado con el perfil básico actual. |
-
-**Lado posterior**
-
-| Campo | Descripción |
-|---|---|
-| Medidas | Visitas entre perfiles por sesión, acciones realizadas tras visitar un perfil (unirse a una comunidad, explorar el catálogo), identidad y pertenencia percibidas, intención de completar el propio historial. |
-| Condiciones | Los participantes exploran el perfil de otro lector. El grupo de control ve el perfil básico actual y el grupo experimental el perfil con vitrina literaria. |
-| Escala | 8 a 12 participantes, priorizando usuarios del segmento “Lectores Comunitarios”. Sesiones de 15 minutos. |
-| Criterio de éxito | Se considerará favorable si al menos el 60% de los usuarios realiza una acción tras visitar un perfil enriquecido o califica con un mínimo de 4/5 el aporte de la vitrina a su identidad lectora. |
+| **Why?** | Los perfiles actuales solo exponen datos básicos de cuenta e historial de órdenes. No reflejan el recorrido literario del usuario, eliminando el componente de identidad social que en plataformas similares actúa como motor de retención a largo plazo. |
+| **What?** | Diseñar un prototipo de perfil con una sección "Vitrina Literaria" (libros leídos, reseñas y géneros predominantes), comparado con el perfil básico actual. |
+| **Hypothesis** | Creemos que exponer públicamente el historial de libros leídos, reseñas y géneros predominantes logrará que al menos el 60% de los usuarios realice una acción tras visitar un perfil enriquecido, o que califique con un mínimo de 4/5 el aporte de la vitrina a su identidad lectora, frente al perfil básico actual. |
 
 #### Experiment Card 5: Comentarios y Publicaciones con Imágenes
 
-**Lado frontal**
-
-| Campo | Descripción |
+| **Question Backlog** | ¿Habilitar imágenes (y GIFs) en publicaciones y comentarios de comunidades incrementa la frecuencia de interacción y la proporción de espectadores que pasan a creadores de contenido? (BLQ18, BLQ19) |
 |---|---|
-| Pregunta | ¿Habilitar imágenes (y GIFs) en publicaciones y comentarios de comunidades incrementa la frecuencia de interacción y la proporción de espectadores que pasan a creadores de contenido? (BLQ18, BLQ19) |
-| Por qué | Los hilos de conversación de las comunidades carecen de soporte expresivo para contenido visual dinámico. Esta limitación hace que los debates literarios se perciban rígidos y menos atractivos que otras plataformas sociales de referencia para el segmento. |
-| Hipótesis | Si se habilita el soporte de imágenes y GIFs en posts y comentarios, entonces aumentará la frecuencia de publicaciones por usuario activo y la proporción de espectadores que publican por primera vez. |
-| Qué: Simplest Useful Thing | Crear un prototipo de hilo de comunidad con un composer que permita adjuntar imágenes y GIFs en posts y comentarios, comparado con el composer de solo texto e imagen estática actual. |
+| **Why?** | Los hilos de conversación de las comunidades carecen de soporte expresivo para contenido visual dinámico. Esta limitación hace que los debates literarios se perciban rígidos y menos atractivos que otras plataformas sociales de referencia para el segmento. |
+| **What?** | Crear un prototipo de hilo de comunidad con un composer que permita adjuntar imágenes y GIFs en posts y comentarios, comparado con el composer de solo texto e imagen estática actual. |
+| **Hypothesis** | Creemos que habilitar imágenes y GIFs en posts y comentarios incrementará en al menos 30% la frecuencia de publicación por usuario activo, o logrará que al menos el 50% de los espectadores publique al menos una vez durante la sesión, frente al composer de solo texto actual. |
 
-**Lado posterior**
-
-| Campo | Descripción |
-|---|---|
-| Medidas | Publicaciones y comentarios por usuario activo, proporción de transición espectador→creador, comentarios por publicación con imagen frente a texto plano, expresividad percibida del hilo. |
-| Condiciones | Los participantes realizan una tarea de participación en un hilo de comunidad. El grupo de control usa el composer de solo texto y el grupo experimental el composer con imágenes y GIFs. |
-| Escala | 10 a 15 participantes del segmento “Lectores Comunitarios”. Sesiones de 15 minutos. |
-| Criterio de éxito | El composer con imágenes será considerado favorable si incrementa en al menos 30% la frecuencia de publicación o si al menos el 50% de los espectadores publica al menos una vez durante la sesión. |
-
-## 8.2. Experiment Design
-
-El diseño del experimento define cómo se responderán las preguntas priorizadas en el Question Backlog. Esta fase es fundamental porque permite establecer un proceso ordenado para obtener evidencia útil, comparable y confiable sobre las principales suposiciones de Livria.
 
 ### 8.2.1. Hypotheses
 
@@ -7898,7 +7837,7 @@ Link de la Landing Page desplegada: https://upc-pre-202610-1asi0732-12278-defont
 
 Mantener la Landing Page fuera del alcance experimental es consistente con la regla de aislamiento de experimentos definida en la sección [8.2.6](#826-methods-selection): los tratamientos se aplican únicamente sobre la versión experimental de la aplicación, de modo que las métricas de los experimentos no se contaminen con cambios en el canal de adquisición.
 
-#### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
+#### 8.3.3.3. Implemented To-Be Frontend Application Evidence
 
 La versión To-Be del cliente Livria se desarrolló en el repositorio experimental `livria-experimental`, construido con Flutter con soporte multiplataforma (web y móvil). Esto permitió implementar cada experimento una sola vez y exponerlo tanto en la aplicación web como en la nativa móvil, manteniendo la paridad de tratamientos entre plataformas exigida por el diseño experimental.
 
@@ -7982,7 +7921,9 @@ La aplicación nativa móvil To-Be corresponde al mismo cliente Flutter del repo
 
 A diferencia del empaquetado manual empleado en la versión As-Is (sección [5.2.4](#524-implemented-native-mobile-application-evidence)), la versión experimental incorpora un **pipeline de release automatizado con GitHub Actions** (`.github/workflows/release-apk.yml`): al publicar un tag de versión (`v*`), el workflow compila el APK en modo release inyectando la URL del backend experimental mediante `--dart-define=API_BASE` (gestionada como secret del repositorio), nombra el artefacto con el tag y lo publica en GitHub Releases. De este modo, cada iteración del experimento genera una build distribuible y trazable a su versión, alineado con el enfoque *pipeline-supported* de esta sección.
 
-<!-- SCREENSHOT: ejecución del workflow Release APK en GitHub Actions y/o página de Releases con el APK publicado -->
+<p align="center">
+  <img src="https://imgur.com/2073B53.jpg" alt="Diagrama de Flujo">
+</p>
 
 El APK experimental se distribuye a los participantes de las entrevistas de validación To-Be (sección [8.3.4](#834-to-be-validation-interviews)) desde la página de Releases del repositorio:
 
@@ -8044,7 +7985,9 @@ Durante el Sprint 4 el equipo trabajó de forma colaborativa sobre los dos repos
 
 URL del repositorio experimental (cliente Flutter): https://github.com/upc-pre-202610-1asi0732-12278-defontes/livria-experimental
 
-<!-- SCREENSHOT: gráfico de contributors/commits (Insights) del repositorio livria-experimental -->
+<p align="center">
+  <img src="https://imgur.com/A10KXqx.jpg" alt="Diagrama de Flujo">
+</p>
 
 URL del repositorio experimental (backend .NET): https://github.com/upc-pre-202610-1asi0732-12278-defontes/livria-backend-experimental
 
@@ -8122,30 +8065,144 @@ Escala tipo Likert del 1 al 5 (1 = Muy en desacuerdo / Muy difícil; 5 = Muy de 
   * [ ] Sí | [ ] No
 
 **Sección 4: Billetera Livria (H3 — User Flows E3.1, E3.2)**
-* **8. El proceso de recarga de saldo fue claro y pude completarlo sin ayuda.** *(Escala 1 al 5)*
-* **9. Pagar con la billetera me resultó más rápido y sencillo que el método de transferencia con comprobante.** *(Escala 1 al 5)*
-* **10. Me sentiría seguro(a) manteniendo saldo en la billetera de Livria para futuras compras.** *(Escala 1 al 5)*
-* **11. ¿Completaste la compra con billetera sin experimentar errores ni bloqueos?**
+* **13. El proceso de recarga de saldo fue claro y pude completarlo sin ayuda.** *(Escala 1 al 5)*
+* **14. Pagar con la billetera me resultó más rápido y sencillo que el método de transferencia con comprobante.** *(Escala 1 al 5)*
+* **15. Me sentiría seguro(a) manteniendo saldo en la billetera de Livria para futuras compras.** *(Escala 1 al 5)*
+* **16. ¿Completaste la compra con billetera sin experimentar errores ni bloqueos?**
   * [ ] Sí | [ ] No
 
 **Sección 5: Vitrina Literaria en el Perfil (H4 — User Flows E4.1, E4.2)**
-* **12. Marcar un libro como leído fue una acción fácil de encontrar y ejecutar.** *(Escala 1 al 5)*
-* **13. La sección "My Books" representa bien mi identidad como lector(a).** *(Escala 1 al 5)*
-* **14. Ver la vitrina literaria de otros lectores me motiva a interactuar más con la comunidad.** *(Escala 1 al 5)*
+* **17. Marcar un libro como leído fue una acción fácil de encontrar y ejecutar.** *(Escala 1 al 5)*
+* **18. La sección "My Books" representa bien mi identidad como lector(a).** *(Escala 1 al 5)*
+* **19. Ver la vitrina literaria de otros lectores me motiva a interactuar más con la comunidad.** *(Escala 1 al 5)*
 
 **Sección 6: Imágenes y GIFs en Comunidades (H5 — User Flows E5.1, E5.2)**
-* **15. Adjuntar una imagen o GIF a una publicación fue un proceso intuitivo.** *(Escala 1 al 5)*
-* **16. La previsualización del adjunto antes de publicar me dio control sobre lo que compartía.** *(Escala 1 al 5)*
-* **17. Poder responder con imágenes y GIFs hace que las conversaciones en las comunidades sean más expresivas y atractivas.** *(Escala 1 al 5)*
+* **20. Adjuntar una imagen o GIF a una publicación fue un proceso intuitivo.** *(Escala 1 al 5)*
+* **21. La previsualización del adjunto antes de publicar me dio control sobre lo que compartía.** *(Escala 1 al 5)*
+* **22. Poder responder con imágenes y GIFs hace que las conversaciones en las comunidades sean más expresivas y atractivas.** *(Escala 1 al 5)*
 
 **Sección 7: Métricas Globales Comparativas**
-* **18. Las nuevas funciones (billetera, vitrina, imágenes en comunidades) se sienten bien integradas con el resto de la aplicación.** *(Escala 1 al 5)*
-* **19. Fui capaz de completar todas las tareas asignadas sin necesidad de consultar ayuda técnica o instrucciones adicionales.** *(Escala 1 al 5)*
-* **20. De las siguientes opciones, ¿qué funcionalidad nueva de Livria te generó MAYOR interés?**
+* **23. Las nuevas funciones (billetera, vitrina, imágenes en comunidades) se sienten bien integradas con el resto de la aplicación.** *(Escala 1 al 5)*
+* **24. Fui capaz de completar todas las tareas asignadas sin necesidad de consultar ayuda técnica o instrucciones adicionales.** *(Escala 1 al 5)*
+* **25. De las siguientes opciones, ¿qué funcionalidad nueva de Livria te generó MAYOR interés?**
   * *Opciones (Elegir una):* Aplicación en español | Billetera Livria | Vitrina literaria (My Books) | Imágenes y GIFs en comunidades
-* **21. Del 1 al 10, ¿qué tan probable es que recomiendes la descarga de Livria a otro lector?** *(Escala 1 al 10 - Net Promoter Score)*
+* **26. Del 1 al 10, ¿qué tan probable es que recomiendes la descarga de Livria a otro lector?** *(Escala 1 al 10 - Net Promoter Score)*
 
 La pregunta 21 replica exactamente la pregunta NPS de la ronda As-Is (NPS base: -17.9), y las preguntas de las secciones 2 a 5 operacionalizan las measures de la sección [8.2.3](#823-measures), permitiendo contrastar cada hipótesis en el análisis de resultados de la sección [8.4.1](#841-analysis-and-interpretation-of-results).
+
+<p align="center">
+  <img src="https://imgur.com/Dpvx0VL.jpg" alt="forms">
+</p>
+
+
+#### 8.3.4.2. Registro de Entrevistas
+
+A continuación se grafican las 28 respuestas de los usuarios que evaluaron tanto la versión original como la experimental, obtenidas para cada pregunta diseñada.
+
+<p align="center">
+  <img src="https://imgur.com/18jOUfQ.jpg" alt="p1">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/kfXZml4.jpg" alt="p2">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/bC42Drz.jpg" alt="p3">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/o1MqxVu.jpg" alt="p4">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/6PLU0UP.jpg" alt="p5">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/N2xs67q.jpg" alt="p6">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/HcCMbjj.jpg" alt="p7">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/fcBSYoz.jpg" alt="p8">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/KVHdtSW.jpg" alt="p9">
+</p> 
+
+<p align="center">
+  <img src="https://imgur.com/26dxXlW.jpg" alt="p10">
+</p> 
+
+<p align="center">
+  <img src="https://imgur.com/qS6IOeP.jpg" alt="p11">
+</p> 
+
+<p align="center">
+  <img src="https://imgur.com/3hDr4E8.jpg" alt="p12">
+</p> 
+
+<p align="center">
+  <img src="https://imgur.com/V0mxMsq.jpg" alt="p13">
+</p> 
+
+<p align="center">
+  <img src="https://imgur.com/IG5SQyV.jpg" alt="p14">
+</p> 
+
+<p align="center">
+  <img src="https://imgur.com/zhIi18C.jpg" alt="p15">
+</p> 
+
+<p align="center">
+  <img src="https://imgur.com/AZUdGgd.jpg" alt="p16">
+</p> 
+
+<p align="center">
+  <img src="https://imgur.com/KagRtnx.jpg" alt="p17">
+</p> 
+
+<p align="center">
+  <img src="https://imgur.com/iWdS6DH.jpg" alt="p18">
+</p> 
+
+<p align="center">
+  <img src="https://imgur.com/r65eUl4.jpg" alt="p19">
+</p> 
+
+<p align="center">
+  <img src="https://imgur.com/xhQ2to5.jpg" alt="p20">
+</p> 
+
+<p align="center">
+  <img src="https://imgur.com/sBl7Gg8.jpg" alt="p21">
+</p>
+
+<p align="center">
+  <img src="https://imgur.com/ypxbcsG.jpg" alt="p22">
+</p> 
+
+<p align="center">
+  <img src="https://imgur.com/cJk1xIO.jpg" alt="p23">
+</p> 
+
+<p align="center">
+  <img src="https://imgur.com/jiIg5EN.jpg" alt="p24">
+</p> 
+
+<p align="center">
+  <img src="https://imgur.com/O3Ft5Fj.jpg" alt="p25">
+</p> 
+
+<p align="center">
+  <img src="https://imgur.com/2tPneI4.jpg" alt="p26">
+</p> 
+
 
 ---
 
