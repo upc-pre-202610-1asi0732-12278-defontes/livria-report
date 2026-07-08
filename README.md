@@ -6719,25 +6719,75 @@ Como resultado de la evaluación de la evidencia frente a los criterios de audit
 
 En la reunión de cierre, el auditor líder presentó los hallazgos al equipo CaféLab y se establecieron los acuerdos de subsanación, priorizando las no conformidades NC-02 (backend caído) y NC-03 (secciones 8.3.3–8.6 sin contenido) por su impacto directo en la entrega final del curso.
 
+
 ### 6.4.2. Auditoría recibida
 
-*Esta sección documenta la auditoría que Livria recibió por parte del equipo auditor asignado. Se completará al recibir el informe de auditoría correspondiente.*
+Esta sección documenta la auditoría que Livria recibió por parte del equipo auditor asignado (CargoSystems, Grupo 4), realizada del 04 al 05 de julio de 2026.
 
 #### 6.4.2.1. Información del grupo auditor
 
-*Pendiente de recepción del plan de auditoría del equipo auditor.*
+| Elemento | Información |
+| :--- | :--- |
+| **Equipo auditor** | CargoSystems (Grupo 4) |
+| **Integrantes** | Valverde Mozo, Andre Gabriel (U202218899); Anampa Lavado, Luis Angel (u202218664); Fernandez, Alexander Piero (u202019498); Rocca Leon, Anhelo Rodrigo (U20221C803) |
+| **Objetivo de la auditoría** | Verificar el cumplimiento de los requisitos establecidos en el Project Statement y evaluar la consistencia entre la documentación, la implementación del software y la evidencia presentada por Defontes. Asimismo, identificar fortalezas, observaciones y no conformidades que puedan afectar la funcionalidad, seguridad, trazabilidad y calidad del producto Livria. |
+| **Alcance de la auditoría** | Revisión del informe final de Defontes con énfasis en las User Stories y criterios de aceptación de las secciones 3.2 (As-Is) y 8.3.1 (To-Be), y en las Experiment Cards de la sección 8.1.5, evaluando la trazabilidad entre lo declarado y la implementación observable. La auditoría se realizó desde la perspectiva de un usuario final de la aplicación móvil, sin acceso al panel administrativo/backend, cubriendo Gestión de Catálogo y Comercialización, Seguridad y Transparencia de Acceso, Portal del Lector, Landing Page y las funcionalidades derivadas de la experimentación (localización al español, swipe de recomendaciones, billetera Livria, vitrina literaria y comentarios/publicaciones con imágenes). |
+| **Artefactos revisados** | Informe final del proyecto, Historias de Usuario y Requerimientos (As-Is), To-Be User Stories, Experiment Cards, Project Statement / contexto del proyecto. |
+| **Criterio de referencia** | Project Statement, User Stories (As-Is y To-Be) y criterios de aceptación documentados, priorizando la correspondencia entre lo declarado en el informe, la implementación observable desde la perspectiva de usuario final, y las limitaciones del MVP (pagos manuales, logística restringida a Lima Metropolitana, carga de datos manual, sin recuperación de contraseña ni moderación automática). |
 
 #### 6.4.2.2. Cronograma de auditoría recibida
 
-*Pendiente de recepción del plan de auditoría del equipo auditor.*
+| Fecha | Horario | Actividad de auditoría | Evidencia revisada | Técnica aplicada | Resultado esperado |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 04/07/2026 | 09:00 - 10:00 | Definición del alcance y criterios | Project Statement, informe final y guía de auditoría | Revisión documental | Determinar artefactos, alcance y estructura del informe. |
+| 04/07/2026 | 10:00 - 13:00 | Revisión del informe y User Stories | Secciones 3.2 (As-Is) y 8.3.1 (To-Be) | Análisis de trazabilidad | Identificar criterios funcionales y técnicos auditables. |
+| 04/07/2026 | 15:00 - 18:00 | Revisión de Experiment Cards | Experiment Cards (sección 8.1.5): localización, swipe, billetera, vitrina literaria, multimedia | Análisis de trazabilidad | Contrastar hipótesis, mediciones y criterios de éxito frente a las To-Be User Stories. |
+| 05/07/2026 | 09:00 - 12:00 | Verificación de criterios de aceptación | Criterios de aceptación de US01-US26 y US27-US41 | Análisis de consistencia documental | Verificar coherencia entre descripción, escenarios de aceptación e implementación declarada. |
+| 05/07/2026 | 12:00 - 13:00 | Consolidación de hallazgos | Registros de no conformidades, observaciones y oportunidades de mejora identificadas | Revisión técnica | Comprobar la existencia y cobertura de los hallazgos frente al alcance definido. |
 
 #### 6.4.2.3. Contenido de auditoría recibida
 
-*Pendiente de recepción del informe de hallazgos del equipo auditor.*
+La revisión de 24 criterios (User Stories As-Is, To-Be User Stories y Experiment Cards) por parte del equipo auditor produjo 13 cumplimientos totales, 5 cumplimientos parciales y 6 criterios que no pudieron verificarse por restricciones de acceso (suscripción premium y versión experimental).
+
+| Resultado | Cantidad | Porcentaje | Interpretación |
+| :--- | :--- | :--- | :--- |
+| Fortaleza | 13 | 54.2% | Funcionalidad o criterio implementado de manera consistente. |
+| Observación | 5 | 20.8% | Cumplimiento parcial o detalle menor que requiere ajuste. |
+| No conformidad | 0 | 0% | Incumplimiento relevante del criterio o riesgo técnico significativo. |
+| No se pudo verificar | 6 | 25% | Sin acceso a la evidencia necesaria (suscripción premium o versión experimental) para emitir un juicio. |
+
+**Hallazgos reportados:**
+
+| Código | Hallazgo | Evidencia | Clasificación |
+| :--- | :--- | :--- | :--- |
+| H01 | El sistema de recomendaciones muestra el detalle del primer libro seleccionado al intentar acceder a un segundo libro distinto. | Aplicación móvil Livria, sección de recomendaciones (ejecución en vivo). | Observación |
+| H02 | La app acepta cualquier imagen como comprobante de pago en la compra de libros, sin validar que corresponda a una transferencia real, antes de registrar el pedido como "pendiente". | Aplicación móvil Livria, flujo de compra vía CCI (ejecución en vivo). | Observación |
+| H03 | El inicio de sesión no especifica si el campo acepta el correo electrónico (solicitado en el registro) o un nombre de usuario distinto, generando confusión. | Aplicación móvil Livria, pantalla de login (ejecución en vivo). | Observación |
+| H04 | La activación del plan premium no especifica el método de pago (CCI u otro), a diferencia del flujo de compra de libros que sí lo indica. | Aplicación móvil Livria, sección de suscripción (ejecución en vivo). | Observación |
+| H05 | No se pudo auditar la funcionalidad de comunidades por exigir suscripción premium activa, sin opción gratuita de acceso limitado. | Aplicación móvil Livria, sección de comunidades (ejecución en vivo). | No se pudo verificar |
+| H06 | No se tuvo acceso a la versión experimental donde se implementan las funcionalidades derivadas de la experimentación (localización ES, swipe, billetera, vitrina literaria, multimedia en comunidades). | Experiment Cards / To-Be User Stories (documentación); sin evidencia en ejecución. | No se pudo verificar |
+
+**Conclusiones del equipo auditor:**
+
+1. Livria cumple de forma sólida con los requisitos funcionales declarados en las User Stories As-Is y en la landing page, sin no conformidades detectadas.
+2. Se identificaron 5 observaciones vinculadas a la validación del comprobante de pago (H02), la confusión entre correo/username en el login (H03), el defecto de navegación en recomendaciones (H01) y la ausencia de método de pago explícito en la suscripción premium (H04).
+3. No fue posible verificar 6 criterios (comunidades y las 5 funcionalidades derivadas de la experimentación) por restricciones de acceso ajenas al desempeño del sistema, lo que no debe interpretarse como incumplimiento.
+4. La documentación del Project Statement y del alcance del MVP es completa y consistente con lo observado en la aplicación.
+5. El equipo auditor recomienda: (a) priorizar la corrección de los hallazgos de seguridad relacionados con la validación de comprobantes de pago, (b) habilitar acceso a la versión experimental y a las funciones que requieren suscripción para futuras auditorías, y (c) mantener el criterio de trazabilidad documental evidenciado durante esta revisión.
 
 #### 6.4.2.4. Resumen de modificaciones para subsanar hallazgos
 
-*Pendiente: se documentarán las modificaciones realizadas para subsanar los hallazgos reportados por el equipo auditor.*
+En respuesta a las 5 observaciones reportadas por el equipo auditor (no se registraron no conformidades), Defontes implementó las siguientes modificaciones:
+
+| Código | Hallazgo | Modificación realizada |
+| :--- | :--- | :--- |
+| H01 | El sistema de recomendaciones muestra el detalle del primer libro seleccionado al intentar acceder a un segundo libro distinto. | Se piensa cambiar por completo el flujo de las recomendaciones, mejorando el algoritmo y eliminando fallas como los detalles incorrectos de los libros recomendados. |
+| H02 | La app acepta cualquier imagen como comprobante de pago sin validar que corresponda a una transferencia real, antes de registrar el pedido como "pendiente". | El método de Livria es aprobar manualmente la compra desde la aplicación de Administrador, pues es a su cuenta que se realiza la transferencia. La imagen llega al correo del adminsitrador, quien puede procesar la orden/subscripción de ser verdadera la transacción. Es un flujo explicado por Defontes en exposiciones de Livria y está colocado en el alcance del proyecto. |
+| H03 | El inicio de sesión no especifica si el campo acepta el correo electrónico o un nombre de usuario distinto. | Se actualizó la pantalla de login para indicar explícitamente mediante el placeholder y una etiqueta de ayuda, eliminando la ambigüedad reportada. |
+| H04 | La activación del plan premium no especifica el método de pago (CCI u otro). | Se alineó el flujo de suscripción premium con el de compra de libros, mostrando explícitamente el número de CCI y las instrucciones de pago antes de solicitar la carga del comprobante. |
+| H05 | No se pudo auditar la funcionalidad de comunidades por exigir suscripción premium activa. | El equipo auditor realizó la compra de la subscripción premium un domingo en la noche, fuera de horario de trabajo de Livria, por lo que no se pudo activar antes de culminar la auditoría. Las comunidades son funcionales y se harán mejoras para aumentar la interactividad con ellas.|
+
+---
 
 # Capítulo VII: DevOps Practices
 ## 7.1. Continuous Integration
