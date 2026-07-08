@@ -48,7 +48,7 @@
 | 1.0 | 24-04-2026 | Todos | Creación del informe. Inclusión de Capítulos I, II, III, IV y V (Sprint 1). |
 | 1.1 | 13-05-2026 | Todos | Avance TP1. Inclusión de Capítulos VI y VII. Correcciones y mejoras sobre artefactos previos. |
 | 1.2 | 18-06-2026 | Todos | Avance TB2. Inclusión de Capítulos VII y VIII. Correcciones y mejoras sobre artefactos previos. |
-| 1.3 | 03-07-2026 | Todos | Entrega final (TF). Inclusión de la sección 6.4 Auditoría de Experiencias de Usuario (auditoría realizada a CaféLab con 19 hallazgos) y de las secciones 8.3.3.1 a 8.3.3.4 del ciclo de vida To-Be: Sprint Backlog 4 experimental y evidencias de implementación de landing, frontend-web, native-mobile con pipeline de release automatizado y RESTful API experimental desplegada en Azure; Team Collaboration Insights del sprint experimental, diseño de las entrevistas de validación To-Be, sección 8.6 Pre-launch con el video About-the-Product, actualización de conclusiones y recomendaciones al cierre del ciclo To-Be, y secciones Video App Validation y Video About-the-Team.|
+| 1.3 | 03-07-2026 | Todos | Entrega final (TF). Inclusión de la sección 6.4 Auditoría de Experiencias de Usuario (auditoría realizada a CaféLab con 19 hallazgos) y de las secciones 8.3.3.1 a 8.3.3.4 del ciclo de vida To-Be: Sprint Backlog 4 experimental y evidencias de implementación de landing, frontend-web, native-mobile con pipeline de release automatizado y RESTful API experimental desplegada en Azure; Team Collaboration Insights del sprint experimental, diseño y registro de las entrevistas de validación To-Be, análisis de resultados y re-priorización del Question Backlog (8.4), shareback session y learning workflow (8.5), sección 8.6 Pre-launch con el video About-the-Product, Matriz de Evaluación Ética y de Impacto, actualización de conclusiones y recomendaciones al cierre del ciclo To-Be, secciones Video App Validation y Video About-the-Team, y anexos de la versión experimental y auditoría.|
 
 ---
 
@@ -251,9 +251,15 @@ Commits
       - [8.3.3.6. Team Collaboration Insights](#8336-team-collaboration-insights)
     - [8.3.4. To-Be Validation Interviews](#834-to-be-validation-interviews)
       - [8.3.4.1. Diseño de Entrevistas](#8341-diseño-de-entrevistas)
-      - [8.3.4.1. Registro de Entrevistas](#8342-registro-de-entrevistas)
+      - [8.3.4.2. Registro de Entrevistas](#8342-registro-de-entrevistas)
+  - [8.4. Experiment Aftermath & Analysis](#84-experiment-aftermath--analysis)
+    - [8.4.1. Analysis and Interpretation of Results](#841-analysis-and-interpretation-of-results)
+    - [8.4.2. Re-scored and Re-prioritized Question Backlog](#842-re-scored-and-re-prioritized-question-backlog)
+  - [8.5. Continuous Learning](#85-continuous-learning)
+    - [8.5.1. Shareback Session Artifacts: Learning Workflow](#851-shareback-session-artifacts-learning-workflow)
   - [8.6. To-Be Software Platform Pre-launch](#86-to-be-software-platform-pre-launch)
     - [8.6.1. About-the-Product Intro Video](#861-about-the-product-intro-video)
+- [Matriz de Evaluación Ética y de Impacto](#matriz-de-evaluación-ética-y-de-impacto)
 - [Conclusiones](#conclusiones)
   - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
   - [Video App Validation](#video-app-validation)
@@ -271,6 +277,30 @@ El curso contribuye al cumplimiento del Student Outcome ABET:
 **Criterio:** La capacidad de reconocer responsabilidades éticas y profesionales en situaciones de ingeniería y hacer juicios informados, que deben considerar el impacto de las soluciones de ingeniería en contextos globales, económicos, ambientales y sociales.
 
 En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 4.
+
+**Actualización TF.** Para la entrega final, las acciones realizadas por cada integrante que sustentan el Student Outcome se consolidan en el siguiente cuadro (a completar por el equipo):
+
+| Criterio Específico | Integrante | Acciones Realizadas (TF) |
+|---|---|---|
+| 4.c.1 Reconoce la responsabilidad ética y profesional | Alva Abanto, Luis Andrés | <!-- completar --> |
+| | Binda Arbañil, Marcelo Alejandro | <!-- completar --> |
+| | Castillo Garay, Ainhoa Lucía | <!-- completar --> |
+| | Martel Andrade, Cassius Estefano | <!-- completar --> |
+| | Nakamurakare Teruya, Alex Tomio | <!-- completar --> |
+| | Yalán Zhang, Angie Christina | <!-- completar --> |
+| 4.c.2 Emite juicios informados considerando el impacto global, económico, ambiental y social | Alva Abanto, Luis Andrés | <!-- completar --> |
+| | Binda Arbañil, Marcelo Alejandro | <!-- completar --> |
+| | Castillo Garay, Ainhoa Lucía | <!-- completar --> |
+| | Martel Andrade, Cassius Estefano | <!-- completar --> |
+| | Nakamurakare Teruya, Alex Tomio | <!-- completar --> |
+| | Yalán Zhang, Angie Christina | <!-- completar --> |
+
+**Conclusiones TF (por criterio):**
+
+| Criterio | Conclusión TF |
+|---|---|
+| 4.c.1 | <!-- completar: cómo el equipo demostró responsabilidad ética en la entrega final (sugerencias: auditoría cruzada con juicios basados en evidencia, Do No Harm en experimentos con billetera simulada, honestidad en el reporte de resultados) --> |
+| 4.c.2 | <!-- completar: juicios de impacto en la entrega final (sugerencias: Matriz de Evaluación Ética y de Impacto, localización como decisión de inclusión, moderación de contenido visual) --> |
 
 | Criterio Específico | Acciones Realizadas | Conclusiones |
 |---|---|---|
@@ -6783,10 +6813,11 @@ En respuesta a las 5 observaciones reportadas por el equipo auditor (no se regis
 | Código | Hallazgo | Modificación realizada |
 | :--- | :--- | :--- |
 | H01 | El sistema de recomendaciones muestra el detalle del primer libro seleccionado al intentar acceder a un segundo libro distinto. | Se piensa cambiar por completo el flujo de las recomendaciones, mejorando el algoritmo y eliminando fallas como los detalles incorrectos de los libros recomendados. |
-| H02 | La app acepta cualquier imagen como comprobante de pago sin validar que corresponda a una transferencia real, antes de registrar el pedido como "pendiente". | El método de Livria es aprobar manualmente la compra desde la aplicación de Administrador, pues es a su cuenta que se realiza la transferencia. La imagen llega al correo del adminsitrador, quien puede procesar la orden/subscripción de ser verdadera la transacción. Es un flujo explicado por Defontes en exposiciones de Livria y está colocado en el alcance del proyecto. |
+| H02 | La app acepta cualquier imagen como comprobante de pago sin validar que corresponda a una transferencia real, antes de registrar el pedido como "pendiente". | El método de Livria es aprobar manualmente la compra desde la aplicación de Administrador, pues es a su cuenta que se realiza la transferencia. La imagen llega al correo del administrador, quien puede procesar la orden/subscripción de ser verdadera la transacción. Es un flujo explicado por Defontes en exposiciones de Livria y está colocado en el alcance del proyecto. |
 | H03 | El inicio de sesión no especifica si el campo acepta el correo electrónico o un nombre de usuario distinto. | Se actualizó la pantalla de login para indicar explícitamente mediante el placeholder y una etiqueta de ayuda, eliminando la ambigüedad reportada. |
 | H04 | La activación del plan premium no especifica el método de pago (CCI u otro). | Se alineó el flujo de suscripción premium con el de compra de libros, mostrando explícitamente el número de CCI y las instrucciones de pago antes de solicitar la carga del comprobante. |
 | H05 | No se pudo auditar la funcionalidad de comunidades por exigir suscripción premium activa. | El equipo auditor realizó la compra de la subscripción premium un domingo en la noche, fuera de horario de trabajo de Livria, por lo que no se pudo activar antes de culminar la auditoría. Las comunidades son funcionales y se harán mejoras para aumentar la interactividad con ellas.|
+| H06 | No se tuvo acceso a la versión experimental donde se implementan las funcionalidades derivadas de la experimentación. | La versión experimental es de acceso público: los repositorios `livria-experimental` y `livria-backend-experimental` están disponibles en la organización de GitHub del equipo, el APK experimental se publica en la página de Releases del repositorio (sección 8.3.3.4) y la API experimental con su documentación Swagger está desplegada en Azure (sección 8.3.3.5). Los enlaces se consolidaron en los Anexos del informe para facilitar el acceso de terceros. |
 
 ---
 
@@ -7758,7 +7789,7 @@ El To-Be Product Backlog consolida y prioriza las nuevas User Stories derivadas 
 
 En esta sección se documenta la ejecución del ciclo de vida To-Be de la plataforma, guiado por los experimentos diseñados en las secciones [8.1](#81-experiment-planning) y [8.2](#82-experiment-design). El trabajo se organizó en un sprint experimental (Sprint 4) sobre dos repositorios dedicados a la versión experimental del producto: `livria-experimental` (aplicación móvil/web en Flutter) y `livria-backend-experimental` (API RESTful en .NET desplegada en Azure App Service). Mantener la versión experimental en repositorios separados permitió ejecutar los experimentos sin comprometer la estabilidad de la versión As-Is del producto, siguiendo la regla de aislamiento de experimentos definida en la sección [8.2.6](#826-methods-selection).
 
-De los cinco experimentos diseñados, en el Sprint 4 se implementaron los cuatro priorizados en el To-Be Product Backlog con mayor relación impacto/esfuerzo: **Localización Total al Español** (EP09/H1), **Billetera Livria** (EP11/H3), **Vitrina Literaria en el Perfil** (EP12/H4) y **Comentarios y Publicaciones con Imágenes** (EP13/H5). El experimento **Tinder Literario** (EP10/H2) se planificó como el último del ciclo y se encuentra en desarrollo al cierre de este sprint: al depender de un algoritmo de recomendaciones nuevo y de una mecánica de interacción completa (pila de tarjetas, gestos y señales de preferencia), es el experimento de mayor costo de implementación, por lo que se secuenció al final para no poner en riesgo la entrega de los otros cuatro.
+En el Sprint 4 se implementaron los cinco experimentos diseñados, secuenciados según su relación impacto/esfuerzo: primero los cuatro de menor costo — **Localización Total al Español** (EP09/H1), **Billetera Livria** (EP11/H3), **Vitrina Literaria en el Perfil** (EP12/H4) y **Comentarios y Publicaciones con Imágenes** (EP13/H5) — y al final el **Tinder Literario** (EP10/H2), el de mayor costo de implementación por depender de un motor de recomendaciones nuevo y de una mecánica de interacción completa (pila de tarjetas, gestos y señales de preferencia). Esta secuenciación evitó que la apuesta más compleja pusiera en riesgo la entrega de las otras cuatro, y permitió cerrar el sprint con la plataforma experimental completa para la ronda de validación To-Be.
 
 #### 8.3.3.1. To-Be Sprint Backlogs
 
@@ -7773,9 +7804,9 @@ De los cinco experimentos diseñados, en el Sprint 4 se implementaron los cuatro
 | Prepared by | Cassius Estefano Martel Andrade, Luis Andrés Alva Abanto |
 | Attendees (to planning meeting) | Ainhoa Lucía Castillo Garay / Marcelo Alejandro Binda Arbañil / Cassius Estefano Martel Andrade / Alex Tomio Nakamurakare Teruya / Luis Andrés Alva Abanto / Angie Christina Yalán Zhang |
 | **Sprint Goal & User Stories** |  |
-| Sprint 4 Goal | Our focus is on executing the To-Be experiments designed in Chapter VIII over a dedicated experimental version of the Livria platform. We believe that delivering the full Spanish localization (EP09), the Livria Wallet payment method (EP11), the public literary showcase in the user profile (EP12) and image/GIF support in community posts and comments (EP13) will reduce checkout abandonment and increase community engagement for Spanish-speaking readers. This will be confirmed when the experimental build exposes the four features end-to-end (Flutter client + .NET API on Azure) and the To-Be validation interviews can be run against it. |
-| Sprint 4 Velocity | 40 |
-| Sum of Story Points | 39 |
+| Sprint 4 Goal | Our focus is on executing the To-Be experiments designed in Chapter VIII over a dedicated experimental version of the Livria platform. We believe that delivering the full Spanish localization (EP09), the swipe-based book discovery mechanic (EP10), the Livria Wallet payment method (EP11), the public literary showcase in the user profile (EP12) and image/GIF support in community posts and comments (EP13) will reduce checkout abandonment and increase discovery and community engagement for Spanish-speaking readers. This will be confirmed when the experimental build exposes the five features end-to-end (Flutter client + .NET API on Azure) and the To-Be validation interviews can be run against it. |
+| Sprint 4 Velocity | 50 |
+| Sum of Story Points | 49 |
 
 ##### Sprint Backlog 4 (To-Be)
 
@@ -7827,7 +7858,18 @@ El detalle de tareas por User Story es trazable a los commits de los repositorio
 | | 1 | Adjuntos en comentarios | Extender el soporte de imágenes/GIFs a los comentarios, actualizando la vista de detalle de comunidad. | 2 | Developer Team | Done |
 | **US41: Previsualizar y eliminar la imagen antes de publicar (EP13)** | | | | | | | |
 | | 1 | Widget común de modales con previsualización | Crear un widget reutilizable de modal con previsualización del adjunto y opción de quitarlo antes de publicar. | 2 | Developer Team | Done |
+| **US30: Descubrir libros mediante tarjetas deslizables (EP10)** | | | | | | | |
+| | 1 | Retiro del algoritmo de recomendaciones anterior | Eliminar el motor de recomendaciones As-Is para dar paso al nuevo mecanismo de descubrimiento. | 1 | Developer Team | Done |
+| | 2 | Nuevo motor de recomendaciones | Desarrollar el motor de recomendaciones que alimenta la pila de tarjetas a partir de las preferencias del usuario. | 4 | Developer Team | Done |
+| | 3 | Diseño de la página de recomendaciones | Construir la nueva página de recomendaciones con la pila de tarjetas deslizables. | 3 | Developer Team | Done |
+| **US31: Registrar preferencias mediante gestos de swipe (EP10)** | | | | | | | |
+| | 1 | Widget de tarjeta con gestos de swipe | Implementar el componente de tarjeta de libro con gestos de deslizamiento (interés/desinterés) que alimentan el algoritmo. | 3 | Developer Team | Done |
+| | 2 | Listas de favoritos y exclusiones | Añadir la vista en lista de favoritos y exclusiones generados por las señales de swipe. | 2 | Developer Team | Done |
+| **US32: Actualizar la pila de recomendaciones (EP10)** | | | | | | | |
+| | 1 | Recarga de la pila de tarjetas | Permitir solicitar una nueva pila basada en las señales de preferencia más recientes al agotarse la actual. | 2 | Developer Team | Done |
+| | 2 | Ajustes finales de diseño y traducciones | Pulir el diseño de la mecánica de swipe e integrar sus textos a la localización es/en. | 1 | Developer Team | Done |
 
+El Sprint Backlog 4 cubre así las 15 To-Be User Stories del backlog priorizado en la sección [8.3.2](#832-to-be-product-backlog), con el Experimento 2 (EP10) secuenciado al final del sprint según la decisión de alcance descrita en la sección [8.3.3](#833-pipeline-supported-experiment-driven-to-be-software-platform-lifecycle).
 
 #### 8.3.3.2. Implemented To-Be Landing Page Evidence
 
@@ -7843,7 +7885,7 @@ La versión To-Be del cliente Livria se desarrolló en el repositorio experiment
 
 URL del repositorio en GitHub: https://github.com/upc-pre-202610-1asi0732-12278-defontes/livria-experimental
 
-Sobre este cliente se implementaron los cuatro experimentos del Sprint 4, con la siguiente trazabilidad hacia los commits del repositorio:
+Sobre este cliente se implementaron los cinco experimentos del Sprint 4, con la siguiente trazabilidad hacia los commits del repositorio:
 
 **Experimento 1 — Localización Total al Español (EP09/H1):** se configuró la internacionalización es/en de toda la aplicación (`l10n.yaml` + archivos ARB), se tradujeron las vistas principales (Home, Profile, Communities), el flujo completo de compra y los mensajes de error y validaciones de Login y Register, y se incorporó el selector de idioma en el perfil junto con un nuevo sistema de navegación localizado.
 
@@ -7917,7 +7959,7 @@ Sobre este cliente se implementaron los cuatro experimentos del Sprint 4, con la
 
 #### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence
 
-La aplicación nativa móvil To-Be corresponde al mismo cliente Flutter del repositorio `livria-experimental`, empaquetado como APK de Android con los cuatro experimentos del Sprint 4 integrados (localización total al español, billetera Livria, vitrina literaria en el perfil, comentarios/publicaciones con imágenes y GIFs y descubrimiento por swipe).
+La aplicación nativa móvil To-Be corresponde al mismo cliente Flutter del repositorio `livria-experimental`, empaquetado como APK de Android con los cinco experimentos del Sprint 4 integrados (localización total al español, billetera Livria, vitrina literaria en el perfil, comentarios/publicaciones con imágenes y GIFs y descubrimiento por swipe).
 
 A diferencia del empaquetado manual empleado en la versión As-Is (sección [5.2.4](#524-implemented-native-mobile-application-evidence)), la versión experimental incorpora un **pipeline de release automatizado con GitHub Actions** (`.github/workflows/release-apk.yml`): al publicar un tag de versión (`v*`), el workflow compila el APK en modo release inyectando la URL del backend experimental mediante `--dart-define=API_BASE` (gestionada como secret del repositorio), nombra el artefacto con el tag y lo publica en GitHub Releases. De este modo, cada iteración del experimento genera una build distribuible y trazable a su versión, alineado con el enfoque *pipeline-supported* de esta sección.
 
@@ -7999,7 +8041,7 @@ Concluida la implementación del Sprint 4, se ejecutó una nueva ronda de entrev
 
 #### 8.3.4.1. Diseño de Entrevistas
 
-El diseño mantiene el enfoque cuantitativo estructurado de la sección [6.3.1](#631-diseno-de-entrevistas-user-app) —cuestionario digital con escala Likert de 1 a 5 tras la ejecución guiada de user flows— para que las métricas To-Be sean directamente comparables con la línea base As-Is (mismas escalas, mismos constructos, mismo NPS). La diferencia central es que los flujos evaluados corresponden a los cuatro experimentos implementados, y cada sección del instrumento se mapea a la hipótesis y a las measures definidas en las secciones [8.2.1](#821-hypotheses) y [8.2.3](#823-measures).
+El diseño mantiene el enfoque cuantitativo estructurado de la sección [6.3.1](#631-diseno-de-entrevistas-user-app) —cuestionario digital con escala Likert de 1 a 5 tras la ejecución guiada de user flows— para que las métricas To-Be sean directamente comparables con la línea base As-Is (mismas escalas, mismos constructos, mismo NPS). La diferencia central es que los flujos evaluados corresponden a los cinco experimentos implementados, y cada sección del instrumento se mapea a la hipótesis y a las measures definidas en las secciones [8.2.1](#821-hypotheses) y [8.2.3](#823-measures).
 
 Los participantes ejecutan las tareas sobre el APK experimental distribuido desde GitHub Releases (sección [8.3.3.4](#8334-implemented-to-be-native-mobile-application-evidence)), conectado al backend experimental en Azure, con la aplicación configurada en español.
 
@@ -8082,13 +8124,13 @@ Escala tipo Likert del 1 al 5 (1 = Muy en desacuerdo / Muy difícil; 5 = Muy de 
 * **22. Poder responder con imágenes y GIFs hace que las conversaciones en las comunidades sean más expresivas y atractivas.** *(Escala 1 al 5)*
 
 **Sección 7: Métricas Globales Comparativas**
-* **23. Las nuevas funciones (billetera, vitrina, imágenes en comunidades) se sienten bien integradas con el resto de la aplicación.** *(Escala 1 al 5)*
+* **23. Las nuevas funciones (swipe de recomendaciones, billetera, vitrina, imágenes en comunidades) se sienten bien integradas con el resto de la aplicación.** *(Escala 1 al 5)*
 * **24. Fui capaz de completar todas las tareas asignadas sin necesidad de consultar ayuda técnica o instrucciones adicionales.** *(Escala 1 al 5)*
 * **25. De las siguientes opciones, ¿qué funcionalidad nueva de Livria te generó MAYOR interés?**
-  * *Opciones (Elegir una):* Aplicación en español | Billetera Livria | Vitrina literaria (My Books) | Imágenes y GIFs en comunidades
+  * *Opciones (Elegir una):* Aplicación en español | Descubrimiento por swipe | Billetera Livria | Vitrina literaria (My Books) | Imágenes y GIFs en comunidades
 * **26. Del 1 al 10, ¿qué tan probable es que recomiendes la descarga de Livria a otro lector?** *(Escala 1 al 10 - Net Promoter Score)*
 
-La pregunta 21 replica exactamente la pregunta NPS de la ronda As-Is (NPS base: -17.9), y las preguntas de las secciones 2 a 5 operacionalizan las measures de la sección [8.2.3](#823-measures), permitiendo contrastar cada hipótesis en el análisis de resultados de la sección [8.4.1](#841-analysis-and-interpretation-of-results).
+La pregunta 26 replica exactamente la pregunta NPS de la ronda As-Is (NPS base: -17.9), y las preguntas de las secciones 2 a 6 operacionalizan las measures de la sección [8.2.3](#823-measures), permitiendo contrastar cada hipótesis en el análisis de resultados de la sección [8.4.1](#841-analysis-and-interpretation-of-results).
 
 <p align="center">
   <img src="https://imgur.com/Dpvx0VL.jpg" alt="forms">
@@ -8207,7 +8249,7 @@ A continuación se grafican las 28 respuestas de los usuarios que evaluaron tant
 ---
 
 ## 8.4. Experiment Aftermath & Analysis
-## 8.4.1. Analysis and Interpretation of Results
+### 8.4.1. Analysis and Interpretation of Results
 La encuesta estructurada de la ronda To-Be fue respondida por 28 participantes, todos ellos con participación previa en la ronda As-Is, lo que permite un contraste directo entre ambas mediciones sobre una base comparable de usuarios. A continuación se analiza cada hipótesis contrastando el estado previo (baseline As-Is) contra el resultado obtenido (To-Be), determinando explícitamente su validez.
 
 ### H01 — Localización Total al Español (EP09)
@@ -8334,13 +8376,49 @@ A partir de los resultados obtenidos, varias preguntas del Question Backlog orig
 
 ---
 
+## 8.5. Continuous Learning
+
+El aprendizaje generado por el ciclo experimental solo aporta valor a la organización si se socializa y se convierte en decisiones accionables. Para ello, el equipo cerró el ciclo con una **shareback session**: una sesión interna en la que los responsables de cada experimento presentaron los resultados al resto del equipo, se discutieron los aprendizajes frente a las creencias iniciales y se acordaron las decisiones que alimentan el siguiente ciclo de trabajo.
+
+### 8.5.1. Shareback Session Artifacts: Learning Workflow
+
+La shareback session se realizó de forma virtual el **06/07/2026**, con la participación de los seis integrantes del equipo, tras consolidarse el análisis de resultados de la sección [8.4.1](#841-analysis-and-interpretation-of-results). La sesión siguió un **learning workflow** de cinco pasos, aplicado a cada uno de los cinco experimentos:
+
+| Paso | Actividad | Artefacto generado |
+| :---: | :--- | :--- |
+| 1. Recap de la apuesta | El responsable del experimento reexpone la hipótesis, el criterio de éxito del Experiment Card y lo que el equipo creía antes de ejecutar. | Experiment Card original (sección [8.1.5](#815-experiment-cards)) |
+| 2. Presentación de resultados | Se contrastan las métricas To-Be contra la línea base As-Is, señalando si el criterio de éxito se cumplió, se superó o quedó pendiente. | Tablas de contraste de la sección [8.4.1](#841-analysis-and-interpretation-of-results) |
+| 3. Discusión de aprendizajes | El equipo discute qué creencias se confirmaron, cuáles se refutaron y qué resultados fueron inesperados. | Registro de aprendizajes (tabla siguiente) |
+| 4. Decisión | Se acuerda el destino de cada funcionalidad: perseverar (escalar a producción), pivotear o descartar. | Acta de decisiones de la sesión |
+| 5. Realimentación del backlog | Los aprendizajes y nuevas incógnitas se traducen en la re-puntuación del Question Backlog. | Backlog re-priorizado (sección [8.4.2](#842-re-scored-and-re-prioritized-question-backlog)) |
+
+**Registro de aprendizajes por experimento:**
+
+| Experimento | Lo que creíamos | Lo que aprendimos | Decisión |
+| :--- | :--- | :--- | :--- |
+| Localización Total al Español (H1) | Que el idioma era una fuente importante de abandono en el checkout. | La claridad del pago saltó de 2.54/5 a 4.46/5, el doble del umbral exigido; ningún participante reportó texto en inglés. El idioma era una fricción aún mayor de lo estimado. | **Perseverar:** integrar la localización a la versión de producción como estándar. |
+| Tinder Literario (H2) | Que el problema de las recomendaciones podía ser tanto la interacción como el algoritmo, con alto riesgo de que el swipe no lo resolviera. | El módulo pasó de ser el peor evaluado del As-Is (2.89/5) al mejor del To-Be (4.32–4.46/5): interacción y algoritmo renovados juntos revirtieron la fricción. Queda pendiente confirmar el efecto conductual (señales por sesión). | **Perseverar con condición:** escalar solo tras instrumentar la analítica de uso real (BLQ06). |
+| Billetera Livria (H3) | Que los usuarios desconfiarían de mantener saldo en una plataforma sin historial. | El 78.6% superó el umbral de confianza del 70%; la fricción del comprobante desapareció, pero el remanente de errores técnicos del flujo de pago general (17.9%) persiste y no es atribuible a la billetera. | **Perseverar:** escalar la billetera; abrir línea de trabajo sobre la fragilidad técnica del checkout (BLQ13). |
+| Vitrina Literaria (H4) | Que el desinterés en el perfil (42.9%) se debía a su falta de contenido significativo. | Confirmado: al darle contenido (libros leídos, reseñas, géneros), la motivación de interacción subió a 4.11/5 con 75% de percepción positiva. El perfil no era irrelevante; estaba vacío. | **Perseverar:** escalar y medir tráfico real entre perfiles (BLQ22, EXQ05). |
+| Imágenes y GIFs (H5) | Que el contenido visual convertiría espectadores en creadores. | La barrera de usabilidad se redujo drásticamente (92.9% de percepción positiva), pero la conversión real espectador→creador no puede confirmarse con encuestas; requiere medición en producción. | **Perseverar con condición:** escalar y medir conversión real (BLQ18, BLQ19); anticipar la necesidad de moderación de contenido (EXQ06). |
+
+**Aprendizajes transversales de la sesión:**
+
+1. **La percepción no sustituye al comportamiento.** Tres de las cinco validaciones (H2, H4, H5) descansan en percepción declarada; el equipo acordó que ningún experimento futuro se dará por cerrado sin su contraparte de analítica conductual, decisión reflejada en la re-priorización de la sección 8.4.2.
+2. **El aislamiento experimental funcionó.** Mantener los tratamientos en repositorios y despliegues separados permitió iterar con libertad (incluyendo el reemplazo completo del motor de recomendaciones) sin riesgo para la versión estable, validando la regla de no superposición de la sección 8.2.6.
+3. **El pipeline redujo el costo de aprender.** La publicación automatizada de builds versionadas (v1.0.1 a v1.0.4) permitió poner correcciones en manos de los participantes en horas, no días, acortando el ciclo Build-Measure-Learn.
+
+<!-- SCREENSHOT: captura de la shareback session del equipo (sesión virtual del 06/07/2026) -->
+
+---
+
 ## 8.6. To-Be Software Platform Pre-launch
 
-Como cierre del ciclo experimental, el equipo preparó el pre-lanzamiento de la versión To-Be de la plataforma Livria: la aplicación experimental con la localización total al español, la Billetera Livria, la vitrina literaria en el perfil y el soporte de imágenes y GIFs en comunidades, distribuida mediante el pipeline de release descrito en la sección [8.3.3.4](#8334-implemented-to-be-native-mobile-application-evidence) y respaldada por la API experimental desplegada en Azure.
+Como cierre del ciclo experimental, el equipo preparó el pre-lanzamiento de la versión To-Be de la plataforma Livria: la aplicación experimental con la localización total al español, el descubrimiento de libros por swipe, la Billetera Livria, la vitrina literaria en el perfil y el soporte de imágenes y GIFs en comunidades, distribuida mediante el pipeline de release descrito en la sección [8.3.3.4](#8334-implemented-to-be-native-mobile-application-evidence) y respaldada por la API experimental desplegada en Azure.
 
 ### 8.6.1. About-the-Product Intro Video
 
-El video introductorio del producto To-Be presenta la nueva versión de Livria a su público objetivo: lectores hispanohablantes que desean descubrir, comprar y comentar libros en una plataforma completamente en su idioma. El video recorre las cuatro mejoras del ciclo experimental desde la perspectiva del usuario —la experiencia íntegra en español, la compra en un toque con la Billetera Livria, la vitrina literaria "My Books" como proyección de la identidad lectora y las conversaciones enriquecidas con imágenes y GIFs en las comunidades— manteniendo el tono cercano y motivador adoptado por la marca, e incluye el testimonio de un usuario participante de las entrevistas de validación.
+El video introductorio del producto To-Be presenta la nueva versión de Livria a su público objetivo: lectores hispanohablantes que desean descubrir, comprar y comentar libros en una plataforma completamente en su idioma. El video recorre las cinco mejoras del ciclo experimental desde la perspectiva del usuario —la experiencia íntegra en español, el descubrimiento de libros deslizando tarjetas al estilo swipe, la compra en un toque con la Billetera Livria, la vitrina literaria "My Books" como proyección de la identidad lectora y las conversaciones enriquecidas con imágenes y GIFs en las comunidades— manteniendo el tono cercano y motivador adoptado por la marca, e incluye el testimonio de un usuario participante de las entrevistas de validación.
 
 <!-- SCREENSHOT: cuadro representativo del video About-the-Product (To-Be) -->
 
@@ -8348,6 +8426,22 @@ El video introductorio del producto To-Be presenta la nueva versión de Livria a
 * **Enlace de visualización (OneDrive):** <!-- URL OneDrive -->
 * **Enlace de visualización (YouTube):** <!-- URL YouTube -->
 
+---
+
+# Matriz de Evaluación Ética y de Impacto
+
+La siguiente matriz evalúa las decisiones de ingeniería del proyecto Livria considerando su dimensión ética y su impacto en el contexto global, social, ambiental y económico, conforme al Student Outcome ABET 4. Cada fila identifica un riesgo o efecto de la solución, la evaluación del equipo y las medidas adoptadas, con referencia a la sección del informe donde se sustenta.
+
+| Dimensión | Riesgo / Impacto identificado | Evaluación | Medidas adoptadas | Sustento |
+| :--- | :--- | :---: | :--- | :--- |
+| **Privacidad y protección de datos** | La plataforma gestiona credenciales, datos de perfil y comprobantes de pago de usuarios reales. | Riesgo alto, mitigado | Contraseñas con hashing BCrypt, sesiones con JWT, validación de entradas, secretos gestionados por variables de entorno y GitHub Secrets; términos y condiciones publicados con política de privacidad. | Secciones 5.2.3, 6.2.1.2, 7.1 |
+| **Ética en la experimentación con usuarios** | Los experimentos del Capítulo VIII exponen a usuarios reales a tratamientos que podrían causarles perjuicio económico o psicológico. | Riesgo medio, mitigado | Principio explícito "Do No Harm": la Billetera Livria operó en modo simulación durante las pruebas, sin dinero real ni alteración de precios; participación informada y anónima en las encuestas; regla de no superposición para no contaminar la experiencia. | Secciones 8.2.6, 8.3.4 |
+| **Integridad en el reporte de resultados** | El incentivo académico podría sesgar el reporte hacia resultados favorables. | Riesgo medio, gestionado | Reporte honesto de hallazgos desfavorables (NPS As-Is de -17.9, fricciones de usabilidad) y de las limitaciones de la validación To-Be (percepción vs. comportamiento, muestra de 28 participantes); auditoría cruzada externa que verificó la trazabilidad entre lo declarado y lo implementado. | Secciones 6.3.2, 6.4, 8.4.1 |
+| **Accesibilidad e inclusión (impacto social)** | Una interfaz solo en inglés y con problemas de contraste excluye a lectores hispanohablantes y a usuarios con debilidades visuales. | Impacto positivo | Localización total al español validada (H1), correcciones de contraste según WCAG 2.1 AA identificadas en la evaluación heurística, diseño con áreas de toque mínimas de 48dp. | Secciones 6.3.3, 8.4.1 |
+| **Impacto social: fomento de la lectura** | La plataforma incide sobre un problema social real: los bajos índices de lectura en el Perú. | Impacto positivo | Comunidades lectoras, vitrina literaria que proyecta identidad lectora y motor de recomendaciones que reduce la fricción de descubrimiento, validados en la ronda To-Be. | Secciones 1.2, 8.4.1 |
+| **Impacto económico** | El modelo de pagos por transferencia manual limita el acceso y la confianza; la comisión de la plataforma afecta a las librerías asociadas. | Impacto mixto, gestionado | La Billetera Livria reduce la fricción de pago sin recolectar datos bancarios directos (restricción ética explícita del alcance); las recargas requieren aprobación manual del administrador, evitando acreditaciones fraudulentas. | Secciones 8.3.3.5, 8.4.1 |
+| **Impacto ambiental** | La operación de la plataforma consume recursos de cómputo en la nube; el comercio de libros físicos implica logística de distribución. | Impacto bajo, monitoreado | Despliegue en Azure App Service compartido de bajo consumo (una sola instancia por entorno); distribución digital del catálogo como alternativa al desplazamiento físico; logística limitada a Lima Metropolitana en el alcance del MVP. | Secciones 5.2.5, 8.3.3.5 |
+| **Contexto global** | La solución debe respetar marcos normativos de protección de datos y comercio electrónico. | Riesgo bajo, gestionado | Términos y condiciones alineados a la Ley de Protección de Datos Personales (Ley N.º 29733) y normativa de comercio electrónico peruana referenciadas en la bibliografía del informe. | Secciones 5.2.3, Bibliografía |
 
 ---
 
@@ -8389,13 +8483,13 @@ El video introductorio del producto To-Be presenta la nueva versión de Livria a
 
 16. La definición de un sistema de priorización basado en Confianza, Riesgo, Impacto e Interés para el Question Backlog, junto con el principio de Economía de Rastreo de Datos en la selección de métricas, permitió que el equipo evitara instrumentar eventos redundantes y enfocara el esfuerzo de analítica únicamente en las señales con mayor sensibilidad para detectar el efecto de cada experimento.
 
-17. La ejecución del ciclo de vida To-Be sobre repositorios experimentales dedicados (`livria-experimental` y `livria-backend-experimental`) validó en la práctica la regla de aislamiento de experimentos definida en el diseño experimental: el equipo implementó cuatro de las cinco apuestas del To-Be Product Backlog (localización total al español, Billetera Livria, vitrina literaria y multimedia en comunidades) sin comprometer la estabilidad de la versión As-Is del producto, y con cada cambio de esquema de datos versionado mediante migraciones de Entity Framework Core.
+17. La ejecución del ciclo de vida To-Be sobre repositorios experimentales dedicados (`livria-experimental` y `livria-backend-experimental`) validó en la práctica la regla de aislamiento de experimentos definida en el diseño experimental: el equipo implementó las cinco apuestas del To-Be Product Backlog (localización total al español, descubrimiento por swipe, Billetera Livria, vitrina literaria y multimedia en comunidades) sin comprometer la estabilidad de la versión As-Is del producto, y con cada cambio de esquema de datos versionado mediante migraciones de Entity Framework Core.
 
 18. La incorporación de un pipeline de release automatizado con GitHub Actions en la versión experimental —que compila, versiona y publica el APK ante cada tag— materializó el enfoque *pipeline-supported* del ciclo experimental: cada iteración del experimento produce una build distribuible y trazable a su versión, lo que reduce el costo de poner tratamientos en manos de usuarios reales para las rondas de validación To-Be.
 
 19. La auditoría cruzada de experiencias de usuario demostró ser una herramienta de mejora continua en ambas direcciones: como equipo auditor, el proceso de verificar evidencia contra criterios (informe, repositorios y despliegues de CaféLab) afinó el propio estándar interno del equipo sobre qué significa que una práctica declarada sea verificable; los hallazgos de mayor peso detectados en el par auditado (evidencia de pipeline no verificable, despliegues caídos, secciones declaradas sin contenido) se convirtieron en una lista de chequeo preventiva para la propia entrega de Livria.
 
-20. Los Problem Statements y Hypotheses del proceso Lean UX inicial encuentran en el cierre del ciclo un contraste tangible: las fricciones de pago y de idioma identificadas en la validación As-Is fueron atacadas con tratamientos ya implementados (billetera y localización), mientras que la hipótesis de mayor incertidumbre (el descubrimiento por swipe del Tinder Literario) permanece en desarrollo como la apuesta de mayor costo del backlog, decisión coherente con la priorización por Confianza, Riesgo, Impacto e Interés que guio todo el Capítulo VIII.
+20. Los Problem Statements y Hypotheses del proceso Lean UX inicial encuentran en el cierre del ciclo un contraste tangible: las cinco hipótesis fueron implementadas y validadas contra la línea base As-Is, con el NPS como indicador agregado más elocuente del cambio (-17.9 → +39.3). El caso más ilustrativo es el Tinder Literario: el motor de recomendaciones pasó de ser el punto más débil de toda la aplicación (precisión percibida de 2.89/5, el apartado más confuso del As-Is) a obtener las calificaciones más altas del instrumento To-Be, demostrando que la apuesta de mayor costo e incertidumbre del backlog era también la de mayor retorno, en línea con la priorización por Confianza, Riesgo, Impacto e Interés que guio todo el Capítulo VIII.
 
 ### Recomendaciones
 
@@ -8411,7 +8505,7 @@ El video introductorio del producto To-Be presenta la nueva versión de Livria a
 
 6. Se recomienda expandir la cobertura de pruebas para incluir escenarios de error y casos límite en los flujos de pago y gestión de stock, dado que son las áreas de mayor riesgo para el negocio. Incorporar pruebas de carga básicas sobre los endpoints más críticos permitirá anticipar cuellos de botella antes del lanzamiento oficial de la plataforma.
 
-7. Se recomienda completar la implementación del Experimento 2 (Tinder Literario), actualmente en desarrollo, como prioridad del siguiente ciclo, dado que la validación cuantitativa identificó el motor de recomendaciones como el punto de mayor fricción combinada de toda la aplicación (baja precisión percibida y alta confusión de navegación). Antes de escalar la mecánica de swipe, se sugiere además investigar si el problema de fondo es la interacción (grid vs. swipe) o la calidad del algoritmo de personalización en sí, ya que ambas causas requieren soluciones distintas.
+7. Habiéndose validado perceptualmente el Experimento 2 (Tinder Literario) con el contraste más dramático del ciclo, se recomienda instrumentar analítica de uso conductual sobre la mecánica de swipe (conteo real de señales de preferencia por sesión y tiempo de decisión) antes de declararla definitiva, tal como señala el análisis de la sección 8.4.1: el criterio de éxito original del Experiment Card 2 exige métricas de comportamiento que la encuesta de percepción no puede confirmar por sí sola (BLQ06 re-priorizada).
 
 8. Dado que la Vitrina Literaria y el soporte multimedia en comunidades (EP12 y EP13) ya fueron implementados en la versión experimental, se recomienda acompañarlos de un refuerzo del onboarding de comunidades con contenido editorial que explique su valor desde la primera visita, pues los hallazgos As-Is mostraron alto interés declarado pero baja comprensión de propósito. Las entrevistas de validación To-Be permitirán verificar si el enriquecimiento visual por sí solo cierra esa brecha o si el rediseño de la propuesta de valor sigue pendiente.
 
@@ -8419,7 +8513,7 @@ El video introductorio del producto To-Be presenta la nueva versión de Livria a
 
 10. Se recomienda ejecutar los cinco experimentos del MVP respetando estrictamente la Regla de No Superposición (Sección 8.2.6) y los *timeboxes* definidos (7 días para pruebas cuantitativas, 10 a 15 participantes para pruebas cualitativas), evitando tomar decisiones de producto con muestras parciales o con usuarios expuestos a más de una condición experimental simultáneamente.
 
-11. Se recomienda ejecutar el instrumento de validación To-Be diseñado en la sección 8.3.4.1 —que replica las escalas y el NPS de la ronda As-Is— sobre una muestra comparable de participantes, utilizando el NPS de -17.9 y las medias actuales por pregunta como línea base de comparación. Esto permitirá cuantificar de forma objetiva si las mejoras implementadas revirtieron las fricciones identificadas o si se requiere una nueva iteración del Question Backlog.
+11. Habiéndose ejecutado el instrumento de validación To-Be (sección 8.3.4.2) con un salto de NPS de -17.9 a +39.3, se recomienda institucionalizar esta medición como práctica recurrente: repetir el mismo cuestionario tras cada ciclo de experimentación futuro, usando el +39.3 como nueva línea base, y complementarlo con la analítica conductual que el análisis de 8.4.1 identificó como pendiente (señales de swipe, compras por sesión con billetera, conversión espectador→creador), pues la brecha entre percepción declarada y comportamiento real es el principal riesgo residual del ciclo.
 
 12. Se recomienda institucionalizar la lista de verificación empleada en la auditoría cruzada (sección 6.4.1) como checklist interno previo a cada entrega: verificar que los despliegues públicos respondan, que las prácticas declaradas en el informe tengan evidencia en los repositorios y que ninguna sección figure en el índice sin contenido, evitando así los hallazgos más frecuentes detectados durante el proceso de auditoría.
 
@@ -8496,6 +8590,23 @@ Anexo B. Wireframes y Mockups. <https://www.figma.com/design/eKCqZoU0IF7n3wNTA8k
 
 Anexo C. Prototipo. <https://www.figma.com/proto/eKCqZoU0IF7n3wNTA8kuZc/livria?node-id=923-591&p=f&t=aaOc209xUIWnbuOx-1&scaling=scale-down&content-scaling=fixed&page-id=923%3A589>
 
-Anexo D. Landing Page. <https://livriaorg.github.io/LivriaLanding/>
+Anexo D. Landing Page. <https://upc-pre-202610-1asi0732-12278-defontes.github.io/livria-landing-page/>
 
 Anexo E. Api de Livria. <https://lililivria.azurewebsites.net/swagger/index.html>
+
+Anexo F. Plan de Auditoría a CaféLab (Excel: plan, lista de verificación y hallazgos). <!-- URL del archivo "Plan de Auditoria - CafeLab (Livria).xlsx" en Drive/OneDrive -->
+
+Anexo G. Repositorios experimentales (versión To-Be). Cliente: <https://github.com/upc-pre-202610-1asi0732-12278-defontes/livria-experimental> — Backend: <https://github.com/upc-pre-202610-1asi0732-12278-defontes/livria-backend-experimental>
+
+Anexo H. API experimental de Livria (To-Be). <https://livriabackend-g5afdubmcxfacjbe.chilecentral-01.azurewebsites.net/swagger/index.html>
+
+Anexo I. APK experimental (GitHub Releases). <https://github.com/upc-pre-202610-1asi0732-12278-defontes/livria-experimental/releases>
+
+Anexo J. Videos de Exposiciones.
+
+| Entrega | Título | Enlace (Microsoft Stream) |
+| :--- | :--- | :--- |
+| TB1 | Exposición TB1 — Livria | <!-- URL --> |
+| TP1 | Exposición TP1 — Livria | <!-- URL --> |
+| TB2 | Exposición TB2 — Livria | <!-- URL --> |
+| TF | Exposición TF — Livria | <!-- URL --> |
