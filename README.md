@@ -8426,7 +8426,10 @@ La shareback session se realizó de forma virtual el **06/07/2026**, con la part
 2. **El aislamiento experimental funcionó.** Mantener los tratamientos en repositorios y despliegues separados permitió iterar con libertad (incluyendo el reemplazo completo del motor de recomendaciones) sin riesgo para la versión estable, validando la regla de no superposición de la sección 8.2.6.
 3. **El pipeline redujo el costo de aprender.** La publicación automatizada de builds versionadas (v1.0.1 a v1.0.4) permitió poner correcciones en manos de los participantes en horas, no días, acortando el ciclo Build-Measure-Learn.
 
-<!-- SCREENSHOT: captura de la shareback session del equipo (sesión virtual del 06/07/2026) -->
+<p align="center">
+  <img src="https://imgur.com/ATrMcU3.jpg" alt="shareback session">
+</p> 
+
 
 ---
 
@@ -8564,7 +8567,6 @@ El video About-the-Team resume el proceso de trabajo realizado por el equipo Def
 <p align="center">
   <img src="https://imgur.com/qChmB52.jpg" alt="about the team">
 </p> 
-
 
 * **Duración del video:** 09 minutos con 38 segundos
 * **Enlace de visualización (Microsoft Stream):** [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312504_upc_edu_pe/IQAZwIMLTXkySJPwngwi7wgwAcgtvv4jJ-1r1N5pm0s13VI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=TZ7goe](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312504_upc_edu_pe/IQAZwIMLTXkySJPwngwi7wgwAcgtvv4jJ-1r1N5pm0s13VI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=TZ7goe)
