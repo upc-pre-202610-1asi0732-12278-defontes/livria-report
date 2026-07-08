@@ -7701,18 +7701,6 @@ Dado que un usuario visita el perfil de otro lector, **Cuando** el sistema carga
 | **Acceptance Criteria – Escenario 2: Navegación desde la vitrina** 
 Dado que un usuario visualiza la vitrina literaria de otro lector, **Cuando** selecciona uno de los libros, **Entonces** el sistema debe llevarlo a la ficha del libro en el catálogo. |
 
-| Campo | Valor |
-|---|---|
-| **Story ID** | US38 |
-| **User** | Lector |
-| **Priority** | 2 – Should Have |
-| **Epic** | EP12: Vitrina Literaria |
-| **Title** | Mostrar reseñas publicadas y géneros predominantes en el perfil |
-| **Description** | Como lector, quiero que mi perfil exhiba las reseñas que he publicado y mis géneros predominantes, para enriquecer mi identidad literaria con mi actividad y mis preferencias. |
-| **Acceptance Criteria – Escenario 1: Reseñas publicadas visibles** 
-Dado que un usuario visita un perfil, **Cuando** el sistema carga la vitrina literaria, **Entonces** debe mostrar las reseñas publicadas por ese lector. |
-| **Acceptance Criteria – Escenario 2: Géneros predominantes** 
-Dado que el lector tiene un historial de libros leídos, **Cuando** se carga su perfil, **Entonces** el sistema debe calcular y mostrar los géneros predominantes de su actividad. |
 
 #### EP13: Comentarios y Publicaciones con Imágenes
 
@@ -7818,6 +7806,16 @@ El detalle de tareas por User Story es trazable a los commits de los repositorio
 | **US29: Localización de mensajes de error y validaciones (EP09)** | | | | | | | |
 | | 1 | Traducción de mensajes de error en Login y Register | Localizar validaciones y mensajes de error de los flujos de autenticación. | 2 | Developer Team | Done |
 | | 2 | Revisión final de cadenas sin traducir | Barrido completo de la interfaz para detectar y traducir cadenas residuales en flujos secundarios. | 2 | Developer Team | Done |
+| **US30: Descubrir libros mediante tarjetas deslizables (EP10)** | | | | | | | |
+| | 1 | Modelo y endpoint de recomendaciones (API) | Implementar el endpoint que retorna la pila de libros recomendados para el sistema de swipe. | 3 | Developer Team | Done |
+| | 2 | Componente de pila de tarjetas (Flutter) | Construir el widget de tarjetas deslizables con portada, título, autor y sinopsis. | 4 | Developer Team | Done |
+| | 3 | Lógica de avance entre tarjetas | Implementar el descarte y avance de tarjetas sin recargar la pantalla al deslizar. | 2 | Developer Team | Done |
+| **US31: Registrar preferencias mediante gestos de swipe (EP10)** | | | | | | | |
+| | 1 | Endpoint de registro de señales (API) | Crear el endpoint para registrar señales de interés/descarte por libro y usuario. | 2 | Developer Team | Done |
+| | 2 | Captura de gestos swipe (Flutter) | Detectar dirección del swipe (derecha/izquierda) y enviar la señal correspondiente al backend. | 3 | Developer Team | Done |
+| **US32: Actualizar la pila de recomendaciones (EP10)** | | | | | | | |
+| | 1 | Endpoint de recarga de pila | Extender el endpoint de recomendaciones para generar una nueva pila basada en señales recientes. | 2 | Developer Team | Done |
+| | 2 | Botón de recarga en el cliente | Mostrar la opción de cargar nueva pila cuando el usuario termine de deslizar todas las tarjetas. | 1 | Developer Team | Done |
 | **US33: Recargar saldo en la billetera virtual (EP11)** | | | | | | | |
 | | 1 | Atributo de saldo en la entidad User | Extender la entidad de usuario (cliente y API) con el atributo de saldo de billetera y su migración EF Core. | 2 | Developer Team | Done |
 | | 2 | Endpoint de recarga de billetera | Implementar en la API el endpoint de recarga de saldo con validación de montos. | 3 | Developer Team | Done |
@@ -7833,8 +7831,6 @@ El detalle de tareas por User Story es trazable a los commits de los repositorio
 | **US37: Visualizar la vitrina literaria pública en el perfil (EP12)** | | | | | | | |
 | | 1 | Sección "My Books" en el perfil | Construir la sección de libros leídos dentro del perfil del usuario. | 3 | Developer Team | Done |
 | | 2 | Perfil público | Crear la vista de perfil público accesible por otros usuarios, exponiendo la vitrina literaria. | 3 | Developer Team | Done |
-| **US38: Mostrar reseñas y géneros predominantes en el perfil (EP12)** | | | | | | | |
-| | 1 | Enriquecimiento del perfil público | Incorporar reseñas y géneros predominantes derivados del historial de lectura a la vista de perfil. | 2 | Developer Team | Done |
 | **US39: Adjuntar imágenes en publicaciones de comunidad (EP13)** | | | | | | | |
 | | 1 | Atributo de imagen en posts y comentarios (API) | Extender el modelo de publicaciones y comentarios con soporte de imagen adjunta. | 2 | Developer Team | Done |
 | | 2 | Adjuntar imágenes y GIFs en posts (Flutter) | Implementar la selección y carga de imágenes/GIFs en publicaciones de comunidades. | 3 | Developer Team | Done |
@@ -7843,7 +7839,6 @@ El detalle de tareas por User Story es trazable a los commits de los repositorio
 | **US41: Previsualizar y eliminar la imagen antes de publicar (EP13)** | | | | | | | |
 | | 1 | Widget común de modales con previsualización | Crear un widget reutilizable de modal con previsualización del adjunto y opción de quitarlo antes de publicar. | 2 | Developer Team | Done |
 
-Las User Stories US30, US31 y US32 (EP10: Tinder Literario) se encuentran en desarrollo al cierre de este backlog, según la secuenciación descrita en la sección [8.3.3](#833-pipeline-supported-experiment-driven-to-be-software-platform-lifecycle).
 
 #### 8.3.3.2. Implemented To-Be Landing Page Evidence
 
@@ -7869,10 +7864,12 @@ Sobre este cliente se implementaron los cuatro experimentos del Sprint 4, con la
 | `e9c5c54`, `7a64df7`, `57369af` | Traducción de vistas principales (Home, Profile) |
 | `817a769`, `b49e28d` | Traducción de Communities y botón selector de idioma en el perfil |
 | `3b13c38` | Nuevo sistema de navegación localizado |
-| `376db4b` | Feature #1 Complete: Translation of UI |
 | `8f1990a`, `f3029c6` | Traducción de mensajes de error y validaciones en Login y Register; barrido final de cadenas |
+| `376db4b` | Feature #1 Complete: Translation of UI |
 
-<!-- SCREENSHOT: vista de la app en español (checkout y selector de idioma) -->
+<p align="center">
+  <img src="https://imgur.com/tE6laV2.jpg" alt="Diagrama de Flujo">
+</p>
 
 **Experimento 5 — Comentarios y Publicaciones con Imágenes (EP13/H5):** se añadió la selección, previsualización y carga de imágenes y GIFs en publicaciones y comentarios de comunidades, con un widget común de modales que permite previsualizar y retirar el adjunto antes de publicar.
 
@@ -7880,10 +7877,12 @@ Sobre este cliente se implementaron los cuatro experimentos del Sprint 4, con la
 | :--- | :--- |
 | `5a3e25b` | Imágenes y GIFs en posts y comentarios |
 | `d1cf4e5` | Actualización de la vista de detalle de comunidad |
-| `3bbe400` | Feature #2 Complete: Introduction of Images and GIFs to Communities |
 | `67c9076` | Widget común de modales con previsualización de adjuntos |
+| `3bbe400` | Feature #2 Complete: Introduction of Images and GIFs to Communities |
 
-<!-- SCREENSHOT: publicación con imagen/GIF en una comunidad -->
+<p align="center">
+  <img src="https://imgur.com/K90HcYv.jpg" alt="Diagrama de Flujo">
+</p>
 
 **Experimento 3 — Billetera Livria (EP11/H3):** se extendió la entidad de usuario con el saldo de billetera, se creó la capa de datos (repository + datasource) para las operaciones de billetera, la pestaña Wallet en el perfil con saldo y recargas, y la billetera como método de pago de un toque en el flujo de órdenes.
 
@@ -7892,10 +7891,12 @@ Sobre este cliente se implementaron los cuatro experimentos del Sprint 4, con la
 | `e2770c8` | Nuevo atributo de billetera en la entidad User |
 | `ba0640a` | Repository y datasource de Wallet |
 | `de4b3ba`, `99c38bf` | Profile Provider con métodos de Wallet y pestaña Wallet en el perfil |
-| `d655c4f` | Feature #3 Complete: Livria Wallet |
 | `9e461b7` | Método de pago Wallet en el flujo de órdenes |
+| `d655c4f` | Feature #3 Complete: Livria Wallet |
 
-<!-- SCREENSHOT: pestaña Wallet en el perfil y pago con billetera en el checkout -->
+<p align="center">
+  <img src="https://imgur.com/8cEDveq.jpg" alt="Diagrama de Flujo">
+</p>
 
 **Experimento 4 — Vitrina Literaria en el Perfil (EP12/H4):** se implementó la sección "My Books" con el marcado de libros leídos y la vista de perfil público que expone la vitrina literaria del usuario ante otros lectores.
 
@@ -7905,11 +7906,29 @@ Sobre este cliente se implementaron los cuatro experimentos del Sprint 4, con la
 | `c37684b` | Vista de perfil público |
 | `709d6ee` | Feature #4 Complete: My Books and Public Profile |
 
-<!-- SCREENSHOT: sección My Books y perfil público con la vitrina literaria -->
+<p align="center">
+  <img src="https://imgur.com/7LVdjpH.jpg" alt="Diagrama de Flujo">
+</p>
+
+**Experimento 2 — Tinder Literario / Descubrimiento por Swipe (EP10/H2):** se implementó el motor de recomendaciones y su algoritmo, el diseño inicial de la página de recomendaciones, el componente de pila de tarjetas deslizables con portada, título, autor y sinopsis, la captura de gestos de swipe para registrar señales de interés/descarte, la vista de lista de favoritos y exclusiones, y la opción de recargar la pila cuando se agotan las tarjetas disponibles.
+
+| Commit | Descripción |
+| :--- | :--- |
+| `d39e7c6` | Inital development of Recommendations Engine |
+| `a4ec42e` | Inital Design of Recommendations Page |
+| `009468f` | Implementing the algorithm in Recommendations |
+| `1cb1b42` | Deleting Old Recommendations Algorithm |
+| `08ffe06` | Adding List view of favorites and exclusions |
+| `6017d67` | Extra translations and design fixing |
+| `813373f` | Feature #5 Complete: Swipe Gesture Recommendations |
+
+<p align="center">
+  <img src="https://imgur.com/6dSGRv8.jpg" alt="Diagrama de Flujo">
+</p>
 
 #### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence
 
-La aplicación nativa móvil To-Be corresponde al mismo cliente Flutter del repositorio `livria-experimental`, empaquetado como APK de Android con los cuatro experimentos del Sprint 4 integrados (localización total al español, billetera Livria, vitrina literaria en el perfil y comentarios/publicaciones con imágenes y GIFs).
+La aplicación nativa móvil To-Be corresponde al mismo cliente Flutter del repositorio `livria-experimental`, empaquetado como APK de Android con los cuatro experimentos del Sprint 4 integrados (localización total al español, billetera Livria, vitrina literaria en el perfil, comentarios/publicaciones con imágenes y GIFs y descubrimiento por swipe).
 
 A diferencia del empaquetado manual empleado en la versión As-Is (sección [5.2.4](#524-implemented-native-mobile-application-evidence)), la versión experimental incorpora un **pipeline de release automatizado con GitHub Actions** (`.github/workflows/release-apk.yml`): al publicar un tag de versión (`v*`), el workflow compila el APK en modo release inyectando la URL del backend experimental mediante `--dart-define=API_BASE` (gestionada como secret del repositorio), nombra el artefacto con el tag y lo publica en GitHub Releases. De este modo, cada iteración del experimento genera una build distribuible y trazable a su versión, alineado con el enfoque *pipeline-supported* de esta sección.
 
@@ -7929,9 +7948,11 @@ URL del repositorio en GitHub: https://github.com/upc-pre-202610-1asi0732-12278-
 
 Link de Swagger UI (backend experimental): https://livriabackend-g5afdubmcxfacjbe.chilecentral-01.azurewebsites.net/swagger/index.html
 
-<!-- SCREENSHOT: Swagger UI del backend experimental desplegado en Azure -->
+<p align="center">
+  <img src="https://imgur.com/pELv7x4.jpg" alt="Diagrama de Flujo">
+</p>
 
-Sobre esta base se implementaron los servicios que dan soporte a los experimentos del Sprint 4. La localización total al español (EP09) no requirió endpoints nuevos, pues se resuelve en el cliente; los otros tres experimentos sí extendieron la API:
+Sobre esta base se implementaron los servicios que dan soporte a los experimentos del Sprint 4. La localización total al español (EP09) no requirió endpoints nuevos, pues se resuelve en el cliente; el Tinder Literario (EP10) tampoco requirió cambios en el backend, ya que se reutilizaron los endpoints existentes y el trabajo se centró en rediseñar el engine de sugerencias y las vistas de recomendaciones. Los siguientes experimentos sí extendieron la API:
 
 **Billetera Livria (EP11/H3) — nuevo bounded context `wallet`:** gestiona el saldo del usuario, las solicitudes de recarga por transferencia (con comprobante) y su aprobación por un administrador, además del historial de transacciones. Adicionalmente, el bounded context commerce se extendió para aceptar `wallet` como método de pago: las órdenes pagadas con billetera descuentan el saldo y se registran directamente en estado "in progress", eliminando el paso de subir comprobante en cada compra.
 
@@ -7954,6 +7975,7 @@ Sobre esta base se implementaron los servicios que dan soporte a los experimento
 
 **Comentarios y Publicaciones con Imágenes (EP13/H5) — extensión del bounded context communities:** los recursos de publicaciones y comentarios (`PostResource`, `CommentResource` y sus variantes de creación/actualización) se extendieron con el atributo `Img`, permitiendo adjuntar una imagen o GIF en los endpoints existentes de posts y comentarios.
 
+**Trazabilidad de Commits**
 La trazabilidad de estos servicios hacia los commits del repositorio es la siguiente:
 
 | Commit | Descripción |
@@ -7961,7 +7983,7 @@ La trazabilidad de estos servicios hacia los commits del repositorio es la sigui
 | `1f74423` | Atributo de imagen en posts y comentarios (EP13), con migración `AddCommentImg` |
 | `9c3c553` | Bounded context wallet y método de pago wallet en órdenes (EP11), con migraciones `AddWallet` y `AddWalletProofUrl` |
 | `391805d` | Feature de libros leídos (EP12), con migración `AddUserReadBooks` |
-| `e8e8bc7` | Las órdenes pagadas con wallet inician en estado "in progress" (EP11) |
+| `e8e8bc7` | Las órdenes pagadas con wallet inician en estado "approved" (EP11) |
 | `59e085e`–`a5cd061` | Consolidación de migraciones EF Core para el despliegue |
 
 Cada extensión del modelo de datos se acompañó de su **migración de Entity Framework Core** (`AddCommentImg`, `AddWallet`, `AddWalletProofUrl`, `AddUserReadBooks`), de modo que el esquema de la base de datos del entorno experimental evoluciona de forma versionada y reproducible junto con el código, en línea con el enfoque *pipeline-supported* del ciclo de vida To-Be.
@@ -7996,6 +8018,12 @@ Los participantes ejecutan las tareas sobre el APK experimental distribuido desd
 * **User Flow E1.2: Checkout en español.** El usuario completa una compra simulada con todo el flujo de pago localizado, incluyendo mensajes de validación y error.
   * *Flujo:* Carrito -> Checkout -> Confirmación de orden.
 
+**Experimento 2 — Tinder Literario / Descubrimiento por Swipe (H2)**
+* **User Flow E2.1: Descubrimiento mediante swipe.** El usuario explora la pila de tarjetas de libros recomendados, deslizando para avanzar entre portada, título, autor y sinopsis de cada título.
+  * *Flujo:* Pantalla de Recomendaciones -> Pila de tarjetas -> Swipe entre libros.
+* **User Flow E2.2: Registro de preferencias por gesto.** El usuario desliza a la derecha para marcar interés o a la izquierda para descartar, y posteriormente revisa la lista de favoritos y exclusiones o recarga la pila al agotarse.
+  * *Flujo:* Tarjeta de libro -> Swipe derecha/izquierda -> Lista de favoritos/exclusiones -> Recargar pila.
+
 **Experimento 3 — Billetera Livria (H3)**
 * **User Flow E3.1: Recarga de saldo.** El usuario registra una solicitud de recarga con comprobante de transferencia y visualiza el saldo acreditado.
   * *Flujo:* Perfil -> Pestaña Wallet -> Recargar saldo -> Confirmación.
@@ -8014,7 +8042,7 @@ Los participantes ejecutan las tareas sobre el APK experimental distribuido desd
 * **User Flow E5.2: Comentario con imagen.** El usuario responde a una publicación con un comentario que incluye una imagen o GIF.
   * *Flujo:* Publicación -> Comentar -> Adjuntar -> Publicar.
 
-El experimento 2 (Tinder Literario, H2) no forma parte de esta ronda de validación por encontrarse en desarrollo al cierre del Sprint 4; será evaluado con el mismo instrumento en la siguiente iteración.
+
 
 #### B. Instrumento de Medición (Cuestionario Estructurado)
 
@@ -8035,24 +8063,32 @@ Escala tipo Likert del 1 al 5 (1 = Muy en desacuerdo / Muy difícil; 5 = Muy de 
 * **7. ¿Encontraste algún texto que permaneciera en inglés durante tu recorrido?**
   * [ ] Sí | [ ] No — *(si la respuesta es Sí, indicar dónde)*
 
-**Sección 3: Billetera Livria (H3 — User Flows E3.1, E3.2)**
+**Sección 3: Tinder Literario / Descubrimiento por Swipe (H2 — User Flows E2.1, E2.2)**
+* **8. Deslizar entre las tarjetas de libros recomendados fue una forma rápida e intuitiva de descubrir nuevos títulos.** *(Escala 1 al 5)*
+* **9. La información mostrada en cada tarjeta (portada, título, autor, sinopsis) fue suficiente para decidir si me interesaba el libro.** *(Escala 1 al 5)*
+* **10. Sentí que marcar interés o descarte mediante el swipe (derecha/izquierda) era más ágil que otros métodos de búsqueda de libros.** *(Escala 1 al 5)*
+* **11. Las recomendaciones posteriores reflejaron los libros que había marcado como interesantes.** *(Escala 1 al 5)*
+* **12. ¿Llegaste a agotar la pila de tarjetas y usar la opción de recargarla?**
+  * [ ] Sí | [ ] No
+
+**Sección 4: Billetera Livria (H3 — User Flows E3.1, E3.2)**
 * **8. El proceso de recarga de saldo fue claro y pude completarlo sin ayuda.** *(Escala 1 al 5)*
 * **9. Pagar con la billetera me resultó más rápido y sencillo que el método de transferencia con comprobante.** *(Escala 1 al 5)*
 * **10. Me sentiría seguro(a) manteniendo saldo en la billetera de Livria para futuras compras.** *(Escala 1 al 5)*
 * **11. ¿Completaste la compra con billetera sin experimentar errores ni bloqueos?**
   * [ ] Sí | [ ] No
 
-**Sección 4: Vitrina Literaria en el Perfil (H4 — User Flows E4.1, E4.2)**
+**Sección 5: Vitrina Literaria en el Perfil (H4 — User Flows E4.1, E4.2)**
 * **12. Marcar un libro como leído fue una acción fácil de encontrar y ejecutar.** *(Escala 1 al 5)*
 * **13. La sección "My Books" representa bien mi identidad como lector(a).** *(Escala 1 al 5)*
 * **14. Ver la vitrina literaria de otros lectores me motiva a interactuar más con la comunidad.** *(Escala 1 al 5)*
 
-**Sección 5: Imágenes y GIFs en Comunidades (H5 — User Flows E5.1, E5.2)**
+**Sección 6: Imágenes y GIFs en Comunidades (H5 — User Flows E5.1, E5.2)**
 * **15. Adjuntar una imagen o GIF a una publicación fue un proceso intuitivo.** *(Escala 1 al 5)*
 * **16. La previsualización del adjunto antes de publicar me dio control sobre lo que compartía.** *(Escala 1 al 5)*
 * **17. Poder responder con imágenes y GIFs hace que las conversaciones en las comunidades sean más expresivas y atractivas.** *(Escala 1 al 5)*
 
-**Sección 6: Métricas Globales Comparativas**
+**Sección 7: Métricas Globales Comparativas**
 * **18. Las nuevas funciones (billetera, vitrina, imágenes en comunidades) se sienten bien integradas con el resto de la aplicación.** *(Escala 1 al 5)*
 * **19. Fui capaz de completar todas las tareas asignadas sin necesidad de consultar ayuda técnica o instrucciones adicionales.** *(Escala 1 al 5)*
 * **20. De las siguientes opciones, ¿qué funcionalidad nueva de Livria te generó MAYOR interés?**
@@ -8060,6 +8096,8 @@ Escala tipo Likert del 1 al 5 (1 = Muy en desacuerdo / Muy difícil; 5 = Muy de 
 * **21. Del 1 al 10, ¿qué tan probable es que recomiendes la descarga de Livria a otro lector?** *(Escala 1 al 10 - Net Promoter Score)*
 
 La pregunta 21 replica exactamente la pregunta NPS de la ronda As-Is (NPS base: -17.9), y las preguntas de las secciones 2 a 5 operacionalizan las measures de la sección [8.2.3](#823-measures), permitiendo contrastar cada hipótesis en el análisis de resultados de la sección [8.4.1](#841-analysis-and-interpretation-of-results).
+
+---
 
 ## 8.6. To-Be Software Platform Pre-launch
 
