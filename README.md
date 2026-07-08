@@ -7991,7 +7991,10 @@ URL del repositorio experimental (cliente Flutter): https://github.com/upc-pre-2
 
 URL del repositorio experimental (backend .NET): https://github.com/upc-pre-202610-1asi0732-12278-defontes/livria-backend-experimental
 
-<!-- SCREENSHOT: gráfico de contributors/commits (Insights) del repositorio livria-backend-experimental -->
+<p align="center">
+  <img src="https://imgur.com/undefined.jpg" alt="Diagrama de Flujo">
+</p>
+
 
 ### 8.3.4. To-Be Validation Interviews
 
@@ -8434,23 +8437,29 @@ En esta sección se documenta la evaluación de la versión experimental (To-Be)
 
 ## Video About-the-Team
 
-El video About-the-Team resume el proceso de trabajo realizado por el equipo Defontes a lo largo del proyecto Livria: la conformación del equipo y la distribución de roles, las sesiones de trabajo colaborativo sobre los repositorios del ecosistema, el ciclo experimental del Capítulo VIII y los aprendizajes del proceso de auditoría cruzada. Incluye escenas de sesiones de trabajo reales del equipo con narración en off, así como el testimonio ante cámara de cada integrante describiendo las actividades realizadas, el logro de outcomes y las competencias desarrolladas durante el curso.
+El video About-the-Team resume el proceso de trabajo realizado por el equipo Defontes a lo largo del proyecto Livria: la conformación del equipo y la distribución de roles, las sesiones de trabajo colaborativo sobre los repositorios del ecosistema, el ciclo experimental del Capítulo VIII y los aprendizajes del proceso de auditoría cruzada. Incluye el testimonio ante cámara de cada integrante describiendo las actividades realizadas, el logro de outcomes y las competencias desarrolladas durante el curso.
 
 **Pauta de secuencias de contenido:**
 
 | Inicio (hh:mm:ss) | Sección |
-| :---: | :--- |
-| <!-- 00:00:00 --> | Presentación del equipo y roles |
-| <!-- --> | Proceso de trabajo y sesiones colaborativas |
-| <!-- --> | Ciclo experimental To-Be y resultados |
-| <!-- --> | Testimonios individuales de los integrantes |
-| <!-- --> | Cierre y aprendizajes |
+| :---: | :---: |
+| 00:00:00 | Animación de introducción |
+| 00:00:17 | Proceso y aprendizaje de Luis Alva |
+| 00:02:01 | Proceso y aprendizaje de Marcelo Binda |
+| 00:03:55 | Proceso y aprendizaje de Ainhoa Castillo |
+| 00:05:17 | Proceso y aprendizaje de Cassius Martel |
+| 00:07:15 | Proceso y aprendizaje de Tomio Nakamurakare |
+| 00:08:06 | Proceso y aprendizaje de Angie Yalán |
+| 00:09:31 | Animación de salida |
 
-<!-- SCREENSHOT: cuadro representativo del video About-the-Team -->
+<p align="center">
+  <img src="https://imgur.com/qChmB52.jpg" alt="about the team">
+</p> 
 
-* **Duración del video:** <!-- hh:mm:ss -->
-* **Enlace de visualización (Microsoft Stream):** <!-- URL Stream -->
-* **Enlace de visualización (YouTube):** <!-- URL YouTube -->
+
+* **Duración del video:** 09 minutos con 38 segundos
+* **Enlace de visualización (Microsoft Stream):** [https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312504_upc_edu_pe/IQAZwIMLTXkySJPwngwi7wgwAcgtvv4jJ-1r1N5pm0s13VI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=TZ7goe](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312504_upc_edu_pe/IQAZwIMLTXkySJPwngwi7wgwAcgtvv4jJ-1r1N5pm0s13VI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=TZ7goe)
+* **Enlace de visualización (YouTube):** [https://youtu.be/603HnoYsD1M](https://youtu.be/603HnoYsD1M)
 
 ---
 
