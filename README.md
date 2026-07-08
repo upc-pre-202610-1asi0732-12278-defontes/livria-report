@@ -8618,7 +8618,7 @@ Anexo D. Landing Page. <https://upc-pre-202610-1asi0732-12278-defontes.github.io
 
 Anexo E. Api de Livria. <https://lililivria.azurewebsites.net/swagger/index.html>
 
-Anexo F. Plan de Auditoría a CaféLab (Excel: plan, lista de verificación y hallazgos). <!-- URL del archivo "Plan de Auditoria - CafeLab (Livria).xlsx" en Drive/OneDrive -->
+Anexo F. Auditorías realizadas. Plan de Auditoría a CaféLab (Excel: plan, lista de verificación y hallazgos) y Auditoría Recibida. <https://upcedupe-my.sharepoint.com/:f:/g/personal/u202311701_upc_edu_pe/IgDcne6ISFL_SIn8p7ffslgXAUfVdA6dvV_Ldil_vip5-QI?e=ORB41P>
 
 Anexo G. Repositorios experimentales (versión To-Be). Cliente: <https://github.com/upc-pre-202610-1asi0732-12278-defontes/livria-experimental> — Backend: <https://github.com/upc-pre-202610-1asi0732-12278-defontes/livria-backend-experimental>
 
