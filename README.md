@@ -8649,9 +8649,11 @@ Anexo G. Repositorios experimentales (versión To-Be). Cliente: <https://github.
 
 Anexo H. API experimental de Livria (To-Be). <https://livriabackend-g5afdubmcxfacjbe.chilecentral-01.azurewebsites.net/swagger/index.html>
 
-Anexo I. APK experimental (GitHub Releases). <https://github.com/upc-pre-202610-1asi0732-12278-defontes/livria-experimental/releases>
+Anexo I. APK user experimental (GitHub Releases). <https://github.com/upc-pre-202610-1asi0732-12278-defontes/livria-experimental/releases>
 
-Anexo J. Videos de Exposiciones.
+Anexo J. APK admin experimental (GitHub Releases). <https://github.com/upc-pre-202610-1asi0732-12278-defontes/livria-admin-experimental/releases>
+
+Anexo K. Videos de Exposiciones.
 
 | Entrega | Título | Enlace (Microsoft Stream) |
 | :--- | :--- | :--- |
