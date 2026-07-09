@@ -8460,11 +8460,13 @@ Como cierre del ciclo experimental, el equipo preparó el pre-lanzamiento de la 
 
 El video introductorio del producto To-Be presenta la nueva versión de Livria a su público objetivo: lectores hispanohablantes que desean descubrir, comprar y comentar libros en una plataforma completamente en su idioma. El video recorre las cinco mejoras del ciclo experimental desde la perspectiva del usuario —la experiencia íntegra en español, el descubrimiento de libros deslizando tarjetas al estilo swipe, la compra en un toque con la Billetera Livria, la vitrina literaria "My Books" como proyección de la identidad lectora y las conversaciones enriquecidas con imágenes y GIFs en las comunidades— manteniendo el tono cercano y motivador adoptado por la marca, e incluye el testimonio de un usuario participante de las entrevistas de validación.
 
-<!-- SCREENSHOT: cuadro representativo del video About-the-Product (To-Be) -->
+<p align="center">
+  <img src="https://imgur.com/Lufi3es.jpg" alt="youtube about the product">
+</p> 
 
-* **Duración del video:** <!-- hh:mm:ss -->
-* **Enlace de visualización (OneDrive):** <!-- URL OneDrive -->
-* **Enlace de visualización (YouTube):** <!-- URL YouTube -->
+* **Duración del video:** 00:03:01
+* **Enlace de visualización (OneDrive):** <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311701_upc_edu_pe/IQC-4DLKOiwOTpC5PKjbdDVOARDicnTvk_obxEuAUC0h8KA?e=6RRHsA>
+* **Enlace de visualización (YouTube):** <https://youtu.be/-KLY8r9At9Q>
 
 ---
 
