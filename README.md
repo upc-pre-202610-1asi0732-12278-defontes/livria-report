@@ -8275,7 +8275,7 @@ A continuación se grafican las 28 respuestas de los usuarios que evaluaron tant
 </p> 
 
 <p align="center">
-  <img src="https://imgur.com/O3Ft5Fj.jpg" alt="p25">
+  <img src="https://imgur.com/kZ816Tt.jpg" alt="p25">
 </p> 
 
 <p align="center">
@@ -8563,10 +8563,12 @@ La siguiente matriz evalúa las decisiones de ingeniería del proyecto Livria co
 
 En esta sección se documenta la evaluación de la versión experimental (To-Be) de la aplicación a través de pruebas con usuarios reales. La aplicación fue distribuida a los participantes en sus propios dispositivos Android mediante el APK publicado por el pipeline de release del repositorio experimental, y las sesiones de validación —en las que los participantes ejecutan los user flows definidos en la sección [8.3.4.1](#8341-diseño-de-entrevistas)— fueron registradas en video como evidencia del proceso.
 
-<!-- SCREENSHOT: cuadro representativo del video App Validation -->
+<p align="center">
+  <img src="https://imgur.com/RA1C42M.jpg" alt="app validation">
+</p> 
 
-* **Duración del video:** <!-- hh:mm:ss -->
-* **Enlace de visualización (OneDrive/Stream):** <!-- URL -->
+* **Duración del video:** 00:03:41 
+* **Enlace de visualización (OneDrive/Stream):** <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311701_upc_edu_pe/IQDdVahdbGJGQ5bZo4xVhCPHAUlrY9cCAProm2fMtZndh7c?e=IdsLDZ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
 
 ## Video About-the-Team
 
