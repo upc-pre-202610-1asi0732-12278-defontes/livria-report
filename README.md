@@ -8655,7 +8655,7 @@ Anexo J. Videos de Exposiciones.
 
 | Entrega | Título | Enlace (Microsoft Stream) |
 | :--- | :--- | :--- |
-| TB1 | Exposición TB1 — Livria | <!-- URL --> |
+| TB1 | Exposición TB1 — Livria | No se realizó video de exposición. |
 | TP1 | Exposición TP1 — Livria | <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312504_upc_edu_pe/IQC4nWcpJTjxSIxhCvjZasw0AZv9fdvfakE8mWzrQwQb0SQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=6ThBTj> |
 | TB2 | Exposición TB2 — Livria | <https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201f855_upc_edu_pe/IQBg4HNog56MTKCdTOf_3lT6AdBQK0Y6sV_7g24b6U1lBgY?e=xhgXJk> |
 | TF | Exposición TF — Livria | <!-- URL --> |
