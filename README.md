@@ -8013,7 +8013,7 @@ El backend To-Be se desarrolló en el repositorio experimental `livria-backend-e
 
 URL del repositorio en GitHub: https://github.com/upc-pre-202610-1asi0732-12278-defontes/livria-backend-experimental
 
-Link de Swagger UI (backend experimental): https://livriabackend-g5afdubmcxfacjbe.chilecentral-01.azurewebsites.net/swagger/index.html
+Link de Swagger UI (backend experimental): https://livriaexperimental-hccmatatddgvh9fg.chilecentral-01.azurewebsites.net/swagger
 
 <p align="center">
   <img src="https://imgur.com/pELv7x4.jpg" alt="Diagrama de Flujo">
@@ -8641,13 +8641,13 @@ Anexo C. Prototipo. <https://www.figma.com/proto/eKCqZoU0IF7n3wNTA8kuZc/livria?n
 
 Anexo D. Landing Page. <https://upc-pre-202610-1asi0732-12278-defontes.github.io/livria-landing-page/>
 
-Anexo E. Api de Livria. <https://lililivria.azurewebsites.net/swagger/index.html>
+Anexo E. Api de Livria. <https://livriabackend-g5afdubmcxfacjbe.chilecentral-01.azurewebsites.net/swagger>
 
 Anexo F. Auditorías realizadas. Plan de Auditoría a CaféLab (Excel: plan, lista de verificación y hallazgos) y Auditoría Recibida. <https://upcedupe-my.sharepoint.com/:f:/g/personal/u202311701_upc_edu_pe/IgDcne6ISFL_SIn8p7ffslgXAUfVdA6dvV_Ldil_vip5-QI?e=ORB41P>
 
 Anexo G. Repositorios experimentales (versión To-Be). Cliente: <https://github.com/upc-pre-202610-1asi0732-12278-defontes/livria-experimental> — Backend: <https://github.com/upc-pre-202610-1asi0732-12278-defontes/livria-backend-experimental>
 
-Anexo H. API experimental de Livria (To-Be). <https://livriabackend-g5afdubmcxfacjbe.chilecentral-01.azurewebsites.net/swagger/index.html>
+Anexo H. API experimental de Livria (To-Be). <https://livriaexperimental-hccmatatddgvh9fg.chilecentral-01.azurewebsites.net/swagger>
 
 Anexo I. APK user experimental (GitHub Releases). <https://github.com/upc-pre-202610-1asi0732-12278-defontes/livria-experimental/releases>
 
